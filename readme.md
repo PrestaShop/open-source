@@ -6,7 +6,7 @@ This repository aims to improve the overall maturity of the PrestaShop open sour
 
 ![DashBoard](images/2019-march.png)
 
-The Dashboard will updated when tasks are completed and a status has changed.
+The Dashboard will be updated when tasks are completed and a status has changed.
 
 # Resources
 
