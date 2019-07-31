@@ -12,22 +12,22 @@ The Code of Conduct aims to provide a positive, inspiring and welcoming communit
 
 This Code of Conduct applies to all people contributing to the Project, namely by online contributions, whether it is repositories, forum posts or on social media. 
 
-It also applies to public spaces, during PrestaShop event, namely the PSD, PS Connect, meet-up or any other event during which an individual or a group of individuals represent the Project. 
+It also applies to public spaces, during PrestaShop event, namely the PSD, PS Connect, meet-up or any other event during which an individual or a group of individuals represents the Project. 
 
 The Code of Conduct applies to any member of the PrestaShop community, whether it is PrestaShop employees, partners, ambassadors, moderators or any other members on the contributory sites and PrestaShop social media. 
 
 ## Expected behaviours 
 
-The Code of conduct aiming to create a positive and benevolent community, the following principles must be ensured in order to have constructive and respectful exchanges : 
+The Code of conduct aims to create a positive and benevolent community, the following principles must be ensured in order to have constructive and respectful exchanges : 
 
 - If you want to help others, be patient and benevolent. It may be difficult to learn to participate in our community, especially for new members. Be supportive while they learn;
  - If you need help, make it easy for other members to help you. The community is made possible thanks to all its volunteers. Don’t worry if other members or moderators suggest changes, edit or reformulate your question: they try to make your question understandable and interesting to as many people as possible;
 - Be respectful, courteous and polite. It is essential that community members show respect for each other, even when there are different opinions.  The community welcomes any person, of different backgrounds and identities, interested in the Project and wishing to participate in its development;
 - If someone points out that your behaviour is making others uncomfortable, stop doing it. Sometimes, people unconsciously say things that negatively affect others. Even if it wasn’t your intent, apologize. When you share feedback, avoid sarcasm and jokes. Be open to receiving constructive feedback;
 - You are requested to ensure that any interaction you have within the community remains lawful. Share content that you own or that you have the right to share and please do not share any sensitive information, content that you do not own, etc;
-- You are requested to stay within the framework of the Project during a discussion with other members of the community. Except for the case where a module can resolve a problem encountered in the use of PrestaShop solution, or event sponsorship, spam or advertising messages are not welcome. 
+- You are requested to stay within the framework of the Project during a discussion with other members of the community. Except for the case where a module can resolve a problem encountered in the use of PrestaShop solution, or as part of an official event sponsorship, spam or advertising messages are not welcome. 
 
-This list is not exhaustive or comprehensive. We expect the code to be followed in spirit as much as in the letter. 
+This list is not exhaustive or comprehensive. We expect the code to be followed in spirit as much as in acts. 
 
 ## Unacceptable behaviours
 
@@ -49,17 +49,17 @@ If you experience or witness misconduct, you may:
 
 - Flag it thanks to the “report content” button on the contributory sites; 
 - Address it directly, and let the person know how this behaviour affects you or others;
-- If the situation is an online event, you may flag the content to the following address: [https://www.prestashop.com/en/abuse](https://www.prestashop.com/en/abus);
+- If the situation is an online event, you may flag the content to the following address: [https://www.prestashop.com/en/abuse](https://www.prestashop.com/en/abuse);
 - If the situation happens during a physical event, you may address it directly to a member of the organization or a security officer. 
 
 Your report must include the following details: 
 
-- Your contact information, so that we can reach you. Anonymous report cannot be treated; 
+- Your contact information, so that we can reach out to you. Anonymous report cannot be treated; 
 - Your name and the name of the person or the people involved;
 - A description of what occurred, and if you believe the situation is ongoing; don’t forget to provide the link of the webpage or the discussion; 
 - Any additional information that may be helpful.
 
-After filing a report, the most adapted person will handle the situation in order to check it. This person may ask you additional questions and will determine, with you, how to respond and handle the situation. 
+Once the report filled, it will be assigned to the most competent person. This person may ask you additional questions and will determine, with you, how to respond. 
 
 If the person harassing you is a moderator, they will be asked to recuse themselves. If the report is filed by a moderator, another moderator will handle the situation. 
 
@@ -71,8 +71,8 @@ In the event of a non-compliance with the principles in the Code of Conduct, the
 
 - On the first occurrence, the moderator will send a public or private warning, and the content may be modified or deleted;
 - According to the situation, the account of the person may be temporarily suspended;
-- For certain cases, such as extreme behaviours that affect the community, threats, acts of violence, a ban of the community may be applied as well as a prohibition to participate in an event;
-- In case of participation in an event, a member of the organization will contact the alleged perpetrator directly to explain the facts alleged and to inform him of the actions that may be taken against him;
+- For certain extreme behaviours, such as threats or acts of violence, the offender may be banned from the community and be denied the right to participate in the community events;
+- In case of participation in an event, a member of the organization will contact the alleged perpetrator directly to explain the facts alleged and to inform him/her of the actions that may be taken against him/her;
 - In the event of repetitive behaviours, the member of the organization reserves the right to exclude a participant. 
 
 If you have any doubts about how the situation has been handled, you can contact PrestaShop via this [contact form](https://www.prestashop.com/en/abuse). 
