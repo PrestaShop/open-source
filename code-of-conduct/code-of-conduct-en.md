@@ -49,7 +49,7 @@ If you experience or witness misconduct, you may:
 
 - Flag it thanks to the “report content” button on the contributory sites; 
 - Address it directly, and let the person know how this behaviour affects you or others;
-- If the situation is an online event, you may flag the content to the following address: [https://www.prestashop.com/en/abuse](https://www.prestashop.com/en/abus);
+- If the situation is an online event, you may flag the content to the following address: [https://www.prestashop.com/en/abuse](https://www.prestashop.com/en/abuse);
 - If the situation happens during a physical event, you may address it directly to a member of the organization or a security officer. 
 
 Your report must include the following details: 
