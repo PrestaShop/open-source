@@ -63,7 +63,7 @@ Your report must include the followings:
 
 After filing a report, the most adapted person will handle the situation in order to check it. This person may ask you additional questions and will determine, with you, how to respond and handle the situation. 
 
-If the person harassing you is a moderator, he will be asked to recuse himself/herself. If the report is filed by a moderator, another moderator will handle the situation. 
+If the person harassing you is a moderator, they will be asked to recuse themselves. If the report is filed by a moderator, another moderator will handle the situation. 
 
 
 ## Sanction 
