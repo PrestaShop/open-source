@@ -39,7 +39,8 @@ Certain behaviours are considered unacceptable and constitute a violation of thi
 - Insults, discriminations or personal attacks. This includes any language likely to offend or alienate people based on race, gender identity or expression, language, sexual orientation, disability, nationality, age, profession, physical appearance, religion, minority background,
 - Sexual or mental harassment, 
 - Verbal or physical violence, threats, intimidation, bullying, etc. This includes subtle belittlement message or unwelcoming language. No matter the intent, such behaviour can have a negative impact on others. 
-- This Code of Conduct is not intended to be exhaustive or to detail all forms of unacceptable behaviours. It is not designed to rank the behaviours or to consider that some behaviours do not deserve to be punished. 
+
+This Code of Conduct is not intended to be exhaustive or to detail all forms of unacceptable behaviours. It is not designed to rank the behaviours or to consider that some behaviours do not deserve to be punished. 
 - If a member feels harassed or in an uncomfortable situation, they will be asked to report the situation according to the procedure described hereafter. 
 
 Every report will be examined. 
