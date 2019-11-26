@@ -1,4 +1,6 @@
-# Charte Code de Conduite Contributeurs
+# Charte Code de Conduite PrestaShop v1.0
+
+Version française.
 
 ## Notre engagement
 
