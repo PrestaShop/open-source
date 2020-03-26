@@ -6,7 +6,7 @@ When you join this Slack instance, please fill your profile with your personnal 
 
 A solution to request an invitation is also on the roadmap, something like Slackin.
 
-Created a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. 
+Created a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted.
 
 **#channel-name**
 - Description: explain the purpose of the channel
@@ -18,8 +18,20 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 ## Active Channels
 
 **#dev-core**
-- Description: For discussions about PrestaShop development: core, modules, API, ... 
-- Users: For developers of the community
+- Description: For discussions about PrestaShop core development
+- Users: For core developers of the community
+- Owners: PrestaShop project maintainers
+- Status: Public
+
+**#dev-modules**
+- Description: The best place on earth to discuss about module development for PrestaShop
+- Users: For modules developers of the community
+- Owners: PrestaShop project maintainers
+- Status: Public
+
+**#dev-themes**
+- Description: The best place on earth to discuss about theme development for PrestaShop
+- Users: For themes developers of the community
 - Owners: PrestaShop project maintainers
 - Status: Public
 
@@ -35,3 +47,14 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 - Owners: PrestaShop product management team
 - Status: Public
 
+**#sf-migration-dev**
+- Description: For technical discussions about the Symfony migration
+- Users: For people involved in the Symfony migration
+- Owners: PrestaShop project maintainers
+- Status: Private
+
+**#sf-migration-product**
+- Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration
+- Users: For people involved in the Symfony migration
+- Owners: PrestaShop project maintainers
+- Status: Private
