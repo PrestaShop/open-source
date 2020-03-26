@@ -18,8 +18,20 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 ## Active Channels
 
 **#dev-core**
-- Description: For discussions about PrestaShop development: core, modules, API, ... 
-- Users: For developers of the community
+- Description: For discussions about PrestaShop core development
+- Users: For core developers of the community
+- Owners: PrestaShop project maintainers
+- Status: Public
+
+**#dev-modules**
+- Description: The best place on earth to discuss about module development for PrestaShop
+- Users: For modules developers of the community
+- Owners: PrestaShop project maintainers
+- Status: Public
+
+**#dev-themes**
+- Description: The best place on earth to discuss about theme development for PrestaShop
+- Users: For themes developers of the community
 - Owners: PrestaShop project maintainers
 - Status: Public
 
