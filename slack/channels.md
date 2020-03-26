@@ -17,7 +17,7 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 
 ## Active Channels
 
-**#dev**
+**#dev-core**
 - Description: For discussions about PrestaShop development: core, modules, API, ... 
 - Users: For developers of the community
 - Owners: PrestaShop project maintainers
