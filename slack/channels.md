@@ -13,6 +13,7 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 - Users: Category of people targeted (eg: devs, product management
 - Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, ...), Firstname Name (contact info), ...
 - Status: Private/Public
+- Language: EN (or FR, or use a two letter code)
 
 
 ## Active Channels
@@ -22,39 +23,46 @@ Created a new channel is reserved to the administrators. If you want to add a ne
 - Users: For core developers of the community
 - Owners: PrestaShop project maintainers
 - Status: Public
+- Language: EN
 
 **#dev-modules**
 - Description: The best place on earth to discuss about module development for PrestaShop
 - Users: For modules developers of the community
 - Owners: PrestaShop project maintainers
 - Status: Public
+- Language: EN
 
 **#dev-themes**
 - Description: The best place on earth to discuss about theme development for PrestaShop
 - Users: For themes developers of the community
 - Owners: PrestaShop project maintainers
 - Status: Public
+- Language: EN
 
 **#general**
 - Description: General discussions about the PrestaShop open source project. This channel will be used for announcement.
 - Users: For the community at large
 - Owners: PrestaShop project administrators
 - Status: Public
+- Language: EN
 
 **#product**
 - Description: Features, roadmap, and everything about product management around the open source project
 - Users: People with questions or working on this topic
 - Owners: PrestaShop product management team
 - Status: Public
+- Language: EN
 
 **#sf-migration-dev**
 - Description: For technical discussions about the Symfony migration
 - Users: For people involved in the Symfony migration
 - Owners: PrestaShop project maintainers
 - Status: Private
+- Language: EN
 
 **#sf-migration-product**
 - Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration
 - Users: For people involved in the Symfony migration
 - Owners: PrestaShop project maintainers
 - Status: Private
+- Language: EN
