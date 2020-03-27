@@ -8,6 +8,8 @@ A solution to request an invitation is also on the roadmap, something like Slack
 
 Created a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted.
 
+Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.
+
 **#channel-name**
 - Description: explain the purpose of the channel
 - Users: Category of people targeted (eg: devs, product management
