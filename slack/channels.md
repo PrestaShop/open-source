@@ -55,6 +55,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
+**#maintainers-core**
+- Description: For core maintainers, to discuss the project management
+- Users: For core maintainers
+- Owners: PrestaShop project maintainers
+- Status: Private
+- Language: EN
+
 **#product**
 - Description: Features, roadmap, and everything about product management around the open source project
 - Users: People with questions or working on this topic
