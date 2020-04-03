@@ -21,7 +21,7 @@ Please note that like any open source project, the main language on this Slack i
 ## Active Channels
 
 **#ambassadors**
-- Description: A channel to discuss about ambassadors about meetups and other topics related to their activity
+- Description: A channel to discuss about ambassadors, meetups and other topics related to their activity
 - Users: For ambassadors and their contacts
 - Owners: Ambassador program manager
 - Status: Public
