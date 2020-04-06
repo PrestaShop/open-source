@@ -7,6 +7,6 @@ It allows the product managers to transform a Slack message (and its comments) i
 More info on the productboard website: https://www.productboard.com/
 - **Access:** Limited
 - **Users:** Only the PrestaShop's productboard users can create note from Slack
-- **Owners:** PrestaShop Core's product management team, coreproduct@prestashop.com
+- **Owners:** PrestaShop Core's product management team, coreproduct@prestashop.com, currently composed by PrestaShop employees only.
 - **Language:** EN 
 - **Channels perimeter:** all channels
