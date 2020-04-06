@@ -20,6 +20,13 @@ Please note that like any open source project, the main language on this Slack i
 
 ## Active Channels
 
+**#ambassadors**
+- Description: A channel to discuss about ambassadors, meetups and other topics related to their activity
+- Users: For ambassadors and their contacts
+- Owners: Ambassador program manager
+- Status: Public
+- Language: EN
+
 **#dev-core**
 - Description: For discussions about PrestaShop core development
 - Users: For core developers of the community
@@ -46,6 +53,13 @@ Please note that like any open source project, the main language on this Slack i
 - Users: For the community at large
 - Owners: PrestaShop project administrators
 - Status: Public
+- Language: EN
+
+**#maintainers-core**
+- Description: For core maintainers, to discuss the project management
+- Users: For core maintainers
+- Owners: PrestaShop project maintainers
+- Status: Private
 - Language: EN
 
 **#product**
