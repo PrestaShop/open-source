@@ -28,4 +28,4 @@ When you join this Slack instance, please fill your profile with your personnal 
 
 - [List of current active channels](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#active-channels)
 - [Request a new channel](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#request-a-new-channel)
-- List of active applications
+- [List of active applications](https://github.com/PrestaShop/open-source/blob/master/slack/apps-and-integrationsapps-and-integrations.md)
