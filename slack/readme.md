@@ -1,6 +1,6 @@
 # About the PrestaShop open source project's Slack
 
-## Joining the PrestaShop open source project's Slack
+## General presentation
 
 A chat has always been a good way to communicate around an open source project. In the past, IRC would have been the default choice. But nowadays, in the PrestaShop ecosystem, folks really like Slack, so, that's why it has been chosen.
 
@@ -17,13 +17,15 @@ This communication channel is open to anyone who wants to help and contribute to
 
 The objective is to grow the ecosystem around the software, and of course, to improve the software itself.
 
-If you are an active contributor, or want to become one, then this is definitevely a place to be. To join prestashop.slack.com, please click on the link below:
+If you are an active contributor, or want to become one, then this is definitevely a place to be. 
 
-[Request an invitation for prestashop.slack.com](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg)
+More information:
 
-When you join this Slack instance, please fill your profile with your personnal information. If you have a GitHub account, don't forget it, for it will be very useful to identify you in the discussions with developers.
+- [List of current active channels](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#active-channels)
+- [Request a new channel](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#request-a-new-channel)
+- [List of active applications](https://github.com/PrestaShop/open-source/blob/master/slack/apps-and-integrationsapps-and-integrations.md)
 
-## Discussion
+## Foster great discussions between many people
 
 Please keep in mind that the main language on the PrestaShop open source Slack in English, as it is an international project.
 
@@ -45,8 +47,12 @@ That's why it is asked community membes that when they have a technical question
 The answers will then be used to improve the technical documentation.
 
 
-## More information
+## Joining the PrestaShop open source project's Slack
 
-- [List of current active channels](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#active-channels)
-- [Request a new channel](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#request-a-new-channel)
-- [List of active applications](https://github.com/PrestaShop/open-source/blob/master/slack/apps-and-integrationsapps-and-integrations.md)
+If you read the information on this document and you agree to follow them, you are ready to join prestashop.slack.com. Please click on the link below:
+
+[Request an invitation for prestashop.slack.com](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg)
+
+When you join this Slack instance, don't forget to fill your profile with some personnal information so it is possible to indentify you, like you real name, your company, and of course, your GitHub account if you are a developer.
+
+Enjoy!
