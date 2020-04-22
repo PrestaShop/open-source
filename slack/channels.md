@@ -2,7 +2,7 @@
 
 A Slack dedicated to the PrestaShop open source project is going to be available soon. It's purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose, by invitation only. Once done, it will be open more progressively to other needs, like community management, business, etc.
 
-More information about prestashop.slack.com
+[More information about prestashop.slack.com](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md)
 
 ## Request a new channel
 
