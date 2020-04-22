@@ -1,12 +1,12 @@
-# List of Slack channels
+# Slack channels
 
 A Slack dedicated to the PrestaShop open source project is going to be available soon. It's purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose, by invitation only. Once done, it will be open more progressively to other needs, like community management, business, etc.
 
-When you join this Slack instance, please fill your profile with your personnal information. If you have a GitHub account, don't forget it, for it will be very useful to identify you in discussions.
+More information about prestashop.slack.com
 
-A solution to request an invitation is also on the roadmap, something like Slackin.
+## Request a new channel
 
-Created a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted.
+Creating a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted. You can also contact one of the admnistrator on Slack.
 
 Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.
 
