@@ -38,9 +38,11 @@ Community members with bad behavior will be banned.
 
 Slack, and chat in general, is an ephemeral communication channel. It means this is a good place to create links between people and have open discussions on a large range of topics.
 
-But this is not the good place for technical support.
+But this is not the good place for technical support, as answers will quickly be lost in archives and threads. And new people will come and ask the same questions again.
 
-If you have a technical question, please [create an issue on the Devdocs](https://github.com/PrestaShop/docs/issues). The answers will then be used to improve the technical documentation.
+That's why it is asked community membes that when they have a technical question, please [create an issue on the Devdocs](https://github.com/PrestaShop/docs/issues). The link to the issue will then be shared on the relevant Slack channel.
+
+The answers will then be used to improve the technical documentation.
 
 
 ## More information
