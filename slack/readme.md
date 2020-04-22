@@ -23,6 +23,16 @@ If you are an active contributor, or want to become one, then this is definiteve
 
 When you join this Slack instance, please fill your profile with your personnal information. If you have a GitHub account, don't forget it, for it will be very useful to identify you in the discussions with developers.
 
+## Discussion
+
+Please keep in mind that the main language on the PrestaShop open source Slack in English, as it is an international project.
+
+In order to foster respectful discussions, everybody is invited to read and follow the [Code of Conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+
+Quick reminder: if you feel that someone is agressive, please take in account that not everyone is a native English speaker. They might just write basic English or don't find the good words to be polite. Let's be tolerant and try to understand and collaborate.
+
+Community members with bad behavior will be banned.
+
 
 ## More information
 
