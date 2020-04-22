@@ -34,6 +34,15 @@ Quick reminder: if you feel that someone is agressive, please take in account th
 Community members with bad behavior will be banned.
 
 
+## Creating a knowledge base
+
+Slack, and chat in general, is an ephemeral communication channel. It means this is a good place to create links between people and have open discussions on a large range of topics.
+
+But this is not the good place for technical support.
+
+If you have a technical question, please [create an issue on the Devdocs](https://github.com/PrestaShop/docs/issues). The answers will then be used to improve the technical documentation.
+
+
 ## More information
 
 - [List of current active channels](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#active-channels)
