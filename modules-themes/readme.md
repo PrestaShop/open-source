@@ -1,6 +1,6 @@
 # Listing third party open source and free of charge modules and themes for the PrestaShop e-commerce solution
 
-There are plenty of useful themes and modules available on the web from third party developers and company for the PrestaShop e-commerce solution. But unfortunately, there is no place currently to list them and find them.
+There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
 
 So, let's build a knowledge base. If you want to contribute to this page, please create a pull request with your modules and themes, following the example:
 
