@@ -30,7 +30,7 @@ This will also be used as a base to create content for a dedicated website in th
 
 
 
-<hr />
+---
 
 ## Themes
 
