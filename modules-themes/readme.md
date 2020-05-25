@@ -12,7 +12,7 @@ So, let's build a knowledge base. If you want to contribute to this page, please
 
 This will also be used as a base to create content for a dedicated website in the future.
 
-<hr />
+---
 
 ## Modules
 
@@ -39,4 +39,3 @@ This will also be used as a base to create content for a dedicated website in th
 * https://github.com/prestarocket/prestarockettheme
 * https://github.com/prestarocket/prestarockettheme/releases
 * Classic, Speed, Light, Fast
-
