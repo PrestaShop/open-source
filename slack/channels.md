@@ -28,7 +28,7 @@ Please note that like any open source project, the main language on this Slack i
 - Language: EN
 
 **#community-help**
-- Description: A place for folks who need helps while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.
+- Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.
 - Users: For the community at large
 - Owners: PrestaShop project maintainers
 - Status: Public
