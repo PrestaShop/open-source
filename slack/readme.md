@@ -53,6 +53,6 @@ If you read the information on this document and you agree to follow them, you a
 
 [Request an invitation for prestashop.slack.com](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg)
 
-When you join this Slack instance, do not forget to fill your profile with some personnal information in order to ease identifying you, like you real name, your company, and of course, your GitHub account if you are a developer.
+When you join this Slack instance, do not forget to fill your profile with some personnal information in order to ease identifying you, like your real name, your company, and of course, your GitHub account if you are a developer.
 
 Enjoy!
