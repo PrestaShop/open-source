@@ -76,6 +76,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Private
 - Language: EN
 
+**#million-club-members-fr**
+- Description: A chat to discuss between big merchants of big shops
+- Users: Merchans only with invitation
+- Owners: Nicolas Rateau (PrestaShop)
+- Status: Private
+- Language: FR
+
 **#product**
 - Description: Features, roadmap, and everything about product management around the open source project
 - Users: People with questions or working on this topic
@@ -96,10 +103,3 @@ Please note that like any open source project, the main language on this Slack i
 - Owners: PrestaShop project maintainers
 - Status: Private
 - Language: EN
-
-**#top-shops-owners-fr**
-- Description: A chat to discuss between big merchants of big shops
-- Users: Merchans only with invitation
-- Owners: Nicolas Rateau (PrestaShop)
-- Status: Private
-- Language: FR
