@@ -12,7 +12,7 @@ Please read carefully [IP Right Policies document](ip-rights-policy/ip-right-pol
 
 ## Step 2, use the templates
 
-When you have read the guidelines and you are ready to follow them, you can then download the [ZIP archive with all the templates](PrestaShop_Privacy_Policies-20200917T134341Z-001.zip).
+When you have read the guidelines and you are ready to follow them, you can then download the [ZIP archive with all the templates](PrestaShop_Privacy_Policies.zip).
 
 You will find in it:
 - A copy of the guidelines in PDF, for reference
