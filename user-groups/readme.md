@@ -1,4 +1,4 @@
-#Using PrestaShop brand and logo
+# Using PrestaShop brand and logo
 
 You have created a user group about PrestaShop, or you are creating content like blog articles or videos about PrestaShop, and you would like to know how to use the PrestaShop brand and logo. You are in the right place.
 
