@@ -34,7 +34,7 @@ The aim is to use this data as a base to create content for a dedicated website 
 
 ## Themes
 
-**Classic Rocket**
+<span class="x x-first x-last">### </span>Classic Rocket
 - Description: A theme based on "Classic", improved to be very light and fast like a rocket
 - Keywords: Classic, Speed, Light, Fast
 - Source code: https://github.com/prestarocket/prestarockettheme
