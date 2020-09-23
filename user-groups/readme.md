@@ -18,9 +18,9 @@ You will find in it:
 - A copy of the guidelines in PDF, for reference
 - The Montserrat-Bold.ttf text font, used for the logo
 - Horizontal user group logo template, one line, EPS
-- Horizontal user group logo template, two linew, EPS
+- Horizontal user group logo template, two lines, EPS
 - User group single logo, SVG
-- User group sigle logo, EPS
+- User group single logo, EPS
 - Vertical user group logo template, one line, EPS
 - Vertical user group logo template, two lines, EPS
 
