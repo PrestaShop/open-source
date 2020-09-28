@@ -6,6 +6,7 @@ So, let's build a knowledge base. If you want to contribute to this page, please
 
 ```
 ### Module/theme name
+- Developer: (name of the company or developer)
 - Description: (one or two lines max)
 - Keywords: (topics, features, separated by a comma)
 - Source code: (like a GitHub repository link for support, issues, and source code)
@@ -28,12 +29,14 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 ## Modules
 
 ### Console for PrestaShop 1.7
+- Developer: Friends of Presta
 - Description: A Command line tool that better supports PrestaShop legacy classes using the current PrestaShop Console and a list of useful commands that you can use and reuse for learning purposes
 - Keywords: sysadmin, tool
 - Source code: https://github.com/friends-of-presta/fop_console
 - Download link: 
 
 ### Image Regenerator
+- Developer: Jeremy Besson
 - Description: Regenerate safely prestashop images with async process (works on low performance server)
 - Keywords: pictures, images, thumbnails, regenerator, products, catalog
 - Source code: https://github.com/meetjey/imageRegeneratorPrestashop
@@ -45,6 +48,7 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 ## Themes
 
 ### Classic Rocket
+- Developer: Prestarocket
 - Description: A theme based on "Classic", improved to be very light and fast like a rocket
 - Keywords: Classic, Speed, Light, Fast, lazy loading
 - Source code: https://github.com/prestarocket/prestarockettheme
