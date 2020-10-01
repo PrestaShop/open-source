@@ -28,12 +28,13 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 
 ## Modules
 
-### Console for PrestaShop 1.7
-- Developer: Friends of Presta
-- Description: A Command line tool that better supports PrestaShop legacy classes using the current PrestaShop Console and a list of useful commands that you can use and reuse for learning purposes
-- Keywords: sysadmin, tool
-- Source code: https://github.com/friends-of-presta/fop_console
-- Download link: 
+### Prestashop Quality Checklist Opquast
+- Developer: Constantin Boulanger
+- Description: This Prestashop extension allows you to obtain the 240 criteria of Opquast's Web Quality checklist in your Prestashop back-office.
+- Keywords: Accessibility, referencing, performance, navigation, mobile, video, security, good practice, opquast
+- Source code: https://github.com/Sinepel/ps_quality_checklist_opquast
+- Download link: https://github.com/Sinepel/ps_quality_checklist_opquast/releases
+
 
 ### Image Regenerator
 - Developer: Jeremy Besson
