@@ -12,7 +12,7 @@ Please note that like any open source project, the main language on this Slack i
 
 **#channel-name**
 - Description: explain the purpose of the channel
-- Users: Category of people targeted (eg: devs, product management
+- Users: Category of people targeted (eg: devs, product management)
 - Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, ...), Firstname Name (contact info), ...
 - Status: Private/Public
 - Language: EN (or FR, or use a two letter code)
@@ -56,7 +56,7 @@ Please note that like any open source project, the main language on this Slack i
 - Language: EN
 
 **#general**
-- Description: General discussions about the PrestaShop open source project. This channel will be used for announcement.
+- Description: General discussions about the PrestaShop open source project. This channel will be used for announcements.
 - Users: For the community at large
 - Owners: PrestaShop project administrators
 - Status: Public
