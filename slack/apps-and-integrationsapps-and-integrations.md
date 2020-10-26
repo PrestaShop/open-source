@@ -1,8 +1,8 @@
 # List of apps and integrations used
 
 ## Productboard
-- **Description:** Productboard is a product management tool, used by the PrestaShop Core's product team to gather feedback, organize and pritoritize features and improvements to build, and to follow their development.
-These feedback are used grouped together to create "features ideas" that you can see at http://feedback.prestashop.com/.
+- **Description:** Productboard is a product management tool, used by the PrestaShop Core's product team to gather feedback, organize and prioritize features and improvements to build, and to follow their development.
+These feedback are grouped together to create "features ideas" that you can see at http://feedback.prestashop.com/.
 The Productboard app connects this Slack to the PrestaShop's Productboard.  
 It allows the product managers to transform a Slack message (and its comments) into a feedback "note" on productboard.  
 More info on the [productboard website](https://www.productboard.com/)
