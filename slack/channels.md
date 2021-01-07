@@ -69,6 +69,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
+**#maintainers-and-core**
+- Description: For core maintainers, Product team and QA team, to discuss QA and Product topics
+- Users: For core maintainers, QA team and Product team
+- Owners: PrestaShop project maintainers
+- Status: Private
+- Language: EN
+
 **#maintainers-core**
 - Description: For core maintainers, to discuss the project management
 - Users: For core maintainers
@@ -90,11 +97,11 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
-**#qa-core**
-- Description: For core maintainers and QA team, to discuss QA topics
-- Users: For core maintainers and QA team
-- Owners: PrestaShop project maintainers
-- Status: Private
+**#random**
+- Description: Random topics
+- Users: For the community at large
+- Owners: PrestaShop project administrators
+- Status: Public
 - Language: EN
 
 **#sf-migration-dev**
@@ -110,3 +117,4 @@ Please note that like any open source project, the main language on this Slack i
 - Owners: PrestaShop project maintainers
 - Status: Private
 - Language: EN
+
