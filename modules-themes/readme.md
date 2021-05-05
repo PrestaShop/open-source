@@ -50,7 +50,7 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 
 ### Classic Rocket
 - Developer: Prestarocket
-- Description: Classic Rocket is a rework of "classic theme". It has been built keeping in mind : performance, accessibility and SEO.
+- Description: Classic Rocket is a rework of "classic theme". It has been built keeping in mind: performance, accessibility, and SEO.
 - Keywords: Classic, Speed, Light, Fast, lazy loading
 - Source code: https://github.com/prestarocket-agence/classic-rocket
 - Download link: https://github.com/prestarocket-agence/classic-rocket/releases
