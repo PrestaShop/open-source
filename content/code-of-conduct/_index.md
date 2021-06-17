@@ -1,4 +1,10 @@
-# PrestaShop Code of Conduct v1.0
+---
+title: PrestaShop Code of Conduct
+menu:
+  main:
+    parent: 'Resources'
+    name: 'Code of Conduct'
+---
 
 ## Our Pledge
 

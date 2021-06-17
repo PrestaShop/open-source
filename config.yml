@@ -1,0 +1,30 @@
+#baseURL: "https://www.prestashop-oroject.org/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "PrestaShop Project - Open Source e-Commerce platform"
+
+theme: "ps-org-theme"
+enableGitInfo: true
+enableRobotsTXT: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 1

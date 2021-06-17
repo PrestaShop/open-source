@@ -1,0 +1,25 @@
+
+logo: "images/prestashop-logo.png"
+logo_width: "200px"
+
+copyright: >
+    Content distributed under the [Creative Commons BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode).<br>
+    "PrestaShop" and the PrestaShop logos are international trademarks of PrestaShop SA.
+
+variables:
+    primary_color: "#442CC7"
+    text_color: "#777"
+    text_color_dark: "#222"
+    body_color: "#fff"
+    border_color: "#ECECEC"
+    black: "#000"
+    white: "#fff"
+    light: "#E5E1F9"
+
+pluralizeListTitles: false
+
+projectUrls:
+    gitHub: "https://github.com/PrestaShop/PrestaShop/"
+    reportBug: "https://github.com/PrestaShop/PrestaShop/issues"
+    slack: "https://github.com/PrestaShop/open-source/blob/master/slack/readme.md"
+
