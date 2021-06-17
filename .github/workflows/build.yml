@@ -27,8 +27,8 @@ jobs:
             - name: Build site
               run: hugo
 
-            #- name: Create a CNAME file which mapping to our custom domain
-            #  run: cd src/ && echo 'devdocs.prestashop.com' > public/CNAME
+            - name: Create a CNAME file which mapping to our custom domain
+              run: cd src/ && echo 'www.prestashop-project.org' > public/CNAME
 
             - name: Return to root directory
               run: cd ..
