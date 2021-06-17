@@ -28,7 +28,7 @@ feature:
 call_to_action:
   enable: true
   title: "Ready to get started?"
-  image: "images/open-source.png"
+  image: "images/download.png"
   content: "PrestaShop is freely available on GitHub."
   button:
     enable: true
