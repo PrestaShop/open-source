@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modules-themes on PrestaShop Project - Open Source e-Commerce platform</title>
+    <link>https://www.prestashop-project.org/modules-themes/</link>
+    <description>Recent content in Modules-themes on PrestaShop Project - Open Source e-Commerce platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/modules-themes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.prestashop-project.org/modules-themes/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/modules-themes/readme/</guid>
+      <description>List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
+So, let&amp;rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:</description>
+    </item>
+    
+  </channel>
+</rss>
