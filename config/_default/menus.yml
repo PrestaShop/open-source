@@ -1,0 +1,17 @@
+main:
+  #- name: "About"
+  #  url: "about"
+  #  enable: false
+  #  weight: 1
+  - name: "Blog"
+    url: "https://build.prestashop.com"
+    weight: 1
+  - name: "GitHub"
+    url: "https://github.com/PrestaShop/PrestaShop/"
+    weight: 2
+  - name: "Contribute"
+    url: "https://devdocs.prestashop.com/1.7/contribute/"
+    weight: 3
+  - name: "Resources"
+    weight: 4
+
