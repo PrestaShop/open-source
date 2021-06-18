@@ -31,7 +31,7 @@ jobs:
               run: echo 'www.prestashop-project.org' > public/CNAME
 
             - name: Deploy
-              if: ${{ github.event_name == 'push' && github.ref != 'refs/heads/master' }}
+              if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
