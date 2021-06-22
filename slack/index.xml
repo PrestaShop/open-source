@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Slacks on PrestaShop Project - Open Source e-Commerce platform</title>
+    <title>PrestaShop Project - Open Source e-Commerce platform</title>
     <link>https://www.prestashop-project.org/slack/</link>
-    <description>Recent content in Slacks on PrestaShop Project - Open Source e-Commerce platform</description>
+    <description>Recent content on PrestaShop Project - Open Source e-Commerce platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/slack/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/slack/apps-and-integrationsapps-and-integrations/</guid>
-      <description>List of apps and integrations used Productboard  Description: Productboard is a product management tool, used by the PrestaShop Core&amp;rsquo;s product team to gather feedback, organize and prioritize features and improvements to build, and to follow their development. These feedback are grouped together to create &amp;ldquo;features ideas&amp;rdquo; that you can see at http://feedback.prestashop.com/. The Productboard app connects this Slack to the PrestaShop&amp;rsquo;s Productboard.
+      <description>List of apps and integrations used in Slack Productboard  Description: Productboard is a product management tool, used by the PrestaShop Core&amp;rsquo;s product team to gather feedback, organize and prioritize features and improvements to build, and to follow their development. These feedback are grouped together to create &amp;ldquo;features ideas&amp;rdquo; that you can see at http://feedback.prestashop.com/. The Productboard app connects this Slack to the PrestaShop&amp;rsquo;s Productboard.
 It allows the product managers to transform a Slack message (and its comments) into a feedback &amp;ldquo;note&amp;rdquo; on productboard.</description>
     </item>
     
@@ -25,16 +25,6 @@ It allows the product managers to transform a Slack message (and its comments) i
       <description>Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
 More information about prestashop.slack.com
 Request a new channel Creating a new channel is reserved to the administrators.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.prestashop-project.org/slack/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/slack/readme/</guid>
-      <description>About the PrestaShop open source project&amp;rsquo;s Slack General presentation A chat has always been a good way to communicate around an open source project. In the past, IRC would have been the default choice. But nowadays, in PrestaShop ecosystem, people really enjoy Slack, which is why it has been chosen.
-This communication channel is open to anyone who wants to help and contribute to the PrestaShop open source project. There are many ways to contribute:</description>
     </item>
     
   </channel>
