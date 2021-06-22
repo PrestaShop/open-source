@@ -1,4 +1,14 @@
-# About the PrestaShop open source project's Slack
+---
+menu:
+  main:
+    parent: 'Resources'
+    name: 'Slack'
+
+aliases:
+  - /slack/readme/
+---
+
+# About the project's Slack
 
 ## General presentation
 
@@ -21,15 +31,15 @@ If you are an active contributor, or want to become one, then this is definitely
 
 More information:
 
-- [List of current active channels](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#active-channels)
-- [Request a new channel](https://github.com/PrestaShop/open-source/blob/master/slack/channels.md#request-a-new-channel)
-- [List of active applications](https://github.com/PrestaShop/open-source/blob/master/slack/apps-and-integrationsapps-and-integrations.md)
+- [List of current active channels]({{< ref "channels.md#active-channels" >}})
+- [Request a new channel]({{< ref "channels.md#request-a-new-channel" >}})
+- [List of active applications]({{< ref "apps-and-integrationsapps-and-integrations" >}})
 
 ## Foster great discussions between many people
 
 Please keep in mind that the main language on the PrestaShop open source Slack in English, as it is an international project.
 
-In order to foster respectful discussions, everybody is invited to read and follow the [Code of Conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+In order to foster respectful discussions, everybody is invited to read and follow the [Code of Conduct]({{< ref "/code-of-conduct" >}}).
 
 Quick reminder: if you feel that someone is agressive, please take in account that not everyone is a native English speaker. They might just write basic English or do not find the good words to be polite. Let's be tolerant and try to understand each other and collaborate.
 
