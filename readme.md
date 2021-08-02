@@ -1,6 +1,6 @@
 Hello,
 
-This repository aims to improve the overall maturity of the PrestaShop open source project.
+This repository contains source code and content for www.prestashop-project.org
 
 # The Dashboard
 
