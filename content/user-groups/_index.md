@@ -14,12 +14,12 @@ You have created a user group about PrestaShop, or you are creating content like
 
 The PrestaShop company legal team and brand team took time to design and write guidelines about how to use the PrestaShop brand and logo the right way. And, they also created templates that you can use to create a visual identity for your group.
 
-Please read carefully [IP Right Policies document](ip-right-policies.pdf).
+Please read carefully [IP Right Policies document](/files/ip-right-policies.pdf).
 
 
 ## Step 2, use the templates
 
-When you have read the guidelines and you are ready to follow them, you can then download the [ZIP archive with all the templates](PrestaShop_Privacy_Policies.zip).
+When you have read the guidelines and you are ready to follow them, you can then download the [ZIP archive with all the templates](/files/PrestaShop_Privacy_Policies.zip).
 
 You will find in it:
 - A copy of the guidelines in PDF, for reference
