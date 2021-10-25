@@ -8,7 +8,7 @@ copyright: >
 
 variables:
     primary_color: "#442CC7"
-    text_color: "#777"
+    text_color: "#444"
     text_color_dark: "#222"
     body_color: "#fff"
     border_color: "#ECECEC"

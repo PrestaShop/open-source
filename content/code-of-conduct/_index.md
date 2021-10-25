@@ -1,10 +1,12 @@
 ---
-title: PrestaShop Code of Conduct
+title: Code of Conduct
 menu:
   main:
     parent: 'Resources'
     name: 'Code of Conduct'
 ---
+
+# PrestaShop Code of Conduct
 
 ## Our Pledge
 
