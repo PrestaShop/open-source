@@ -7,6 +7,9 @@ theme: "ps-org-theme"
 enableGitInfo: true
 enableRobotsTXT: true
 
+params:
+  devdocs: "https://devdocs.prestashop.com/"
+
 markup:
   highlight:
     codeFences: true
