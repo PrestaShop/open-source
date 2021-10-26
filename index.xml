@@ -7,6 +7,101 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to become a maintainer</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-maintainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-maintainer/</guid>
+      <description>How to become a maintainer In the PrestaShop project, maintainers are contributors with merge rights.
+The maintainer status is a position of great power, but it also carries great responsibility. As gatekeepers to the project&amp;rsquo;s code, maintainers are ultimately responsible for every contribution that is included in the project.
+Requirements to become a maintainer  Active participation in the project  Display a record of several accepted, quality Pull Requests having received little or no objections from maintainers.</description>
+    </item>
+    
+    <item>
+      <title>Preliminary tasks</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/</guid>
+      <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
+1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
+ This only needs to be done once per release.
+(i.e. if done for a beta, it doesn&amp;rsquo;t need to be performed again for the final release).</description>
+    </item>
+    
+    <item>
+      <title>Create the build</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</guid>
+      <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
+1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
+2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request.</description>
+    </item>
+    
+    <item>
+      <title>Summary of how GitHub Issues and Pull Requests are processed</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/summary-github-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/summary-github-lifecycle/</guid>
+      <description>Summary of how GitHub Issues and Pull Requests are processed GitHub is the main tool used by maintainers to manage the PrestaShop project.
+This page quickly describes how Issues and Pull Requests are processed on GitHub.
+The teams On GitHub, there are mainly three teams working together on the project.
+ Product Team: this team takes care of the product vision of the software. It has Product Managers, UX Designers and Wording Managers.</description>
+    </item>
+    
+    <item>
+      <title>Release publicly</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/</guid>
+      <description>Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
+    </item>
+    
+    <item>
+      <title>Reviewing Pull Requests</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</guid>
+      <description>Reviewing Pull Requests The code review process is generally regarded as a good practice and is adopted by hundreds of software projects around the world.
+It provides lot of benefits:
+ it helps spotting errors in the code, because we all make mistakes and it can be hard to find one&amp;rsquo;s own mistakes. it helps improving code quality not only by ensuring it&amp;rsquo;s readable and understandable, but also by pinpointing design, performance or security issues that may have been unintentionally introduced by the author.</description>
+    </item>
+    
+    <item>
+      <title>Final steps</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/</guid>
+      <description>Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
+(i.e. if not for betas and RCs).
+ This step requires special rights.
+Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
+ Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
+2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions.</description>
+    </item>
+    
+    <item>
+      <title>Release a native PrestaShop module</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/</guid>
+      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
+This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
+This page explains what is needed to release these modules.
+Requirements Mandatory requirements The module should be valid which means:</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://www.prestashop-project.org/code-of-conduct/code-de-conduite-fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,7 +132,38 @@ It allows the product managers to transform a Slack message (and its comments) i
     </item>
     
     <item>
-      <title></title>
+      <title>About the PrestaShop Project</title>
+      <link>https://www.prestashop-project.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/about/</guid>
+      <description>What is PrestaShop? PrestaShop is an open-source e-Commerce content management system.</description>
+    </item>
+    
+    <item>
+      <title>License &amp; license compatibility</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/license/</guid>
+      <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
+    </item>
+    
+    <item>
+      <title>Processes</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/</guid>
+      <description>Processes Security recommendations Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
+We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
+ enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
+    </item>
+    
+    <item>
+      <title>Slack channels</title>
       <link>https://www.prestashop-project.org/slack/channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -45,15 +171,6 @@ It allows the product managers to transform a Slack message (and its comments) i
       <description>Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
 More information about prestashop.slack.com
 Request a new channel Creating a new channel is reserved to the administrators.</description>
-    </item>
-    
-    <item>
-      <title>About the PrestaShop Project</title>
-      <link>https://www.prestashop-project.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/about/</guid>
-      <description>What is PrestaShop? PrestaShop is an open-source e-Commerce content management system.</description>
     </item>
     
   </channel>

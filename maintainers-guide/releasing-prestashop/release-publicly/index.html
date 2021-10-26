@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Slack channels | PrestaShop Project - Open Source e-Commerce platform</title>
+<title>Release publicly | PrestaShop Project - Open Source e-Commerce platform</title>
 
 
 
@@ -26,25 +26,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
-<meta property="og:title" content="Slack channels" />
-<meta property="og:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators." />
+<meta name="twitter:title" content="Release publicly"/>
+<meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
+<meta property="og:title" content="Release publicly" />
+<meta property="og:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/slack/channels/" /><meta property="article:section" content="slack" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T17:49:45+02:00" />
+<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
+<meta name="twitter:title" content="Release publicly"/>
+<meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
 
 
 
@@ -203,18 +203,26 @@ Request a new channel Creating a new channel is reserved to the administrators."
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item"><a href="/slack/">About the project&#39;s Slack</a></li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Slack channels</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/releasing-prestashop/">Releasing a new PS version</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Release publicly</li>
       
     
   </ol>
@@ -224,135 +232,130 @@ Request a new channel Creating a new channel is reserved to the administrators."
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#release-the-version-publicly">Release the version publicly</a>
+      <ul>
+        <li><a href="#1-merge-security-prs-on-github">1. Merge security PRs on GitHub</a></li>
+        <li><a href="#2-merge-the-updated-changelog-and-contributors-list">2. Merge the updated changelog and contributors list</a></li>
+        <li><a href="#3-tag--release-on-github">3. Tag &amp; release on GitHub</a>
+          <ul>
+            <li><a href="#tag-the-version-using-git">Tag the version using git</a></li>
+            <li><a href="#publish-the-release-on-github">Publish the release on GitHub</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-release-on-prestashopcom">4. Release on prestashop.com</a></li>
+        <li><a href="#5-communicate">5. Communicate</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="slack-channels">Slack channels</h1>
-<p>A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.</p>
-<p><a href="https://github.com/PrestaShop/open-source/blob/master/slack/readme.md">More information about prestashop.slack.com</a></p>
-<h2 id="request-a-new-channel">Request a new channel</h2>
-<p>Creating a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted. You can also contact one of the administrator on Slack.</p>
-<p>Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.</p>
-<p><strong>#channel-name</strong></p>
+        <div class="content"><h1 id="release-the-version-publicly">Release the version publicly</h1>
+<p>Once the QA team has greenlighted your build, you can move forward with the public release.</p>
+
+<div class="notices warning" ><strong>Make certain you have go for publish!</strong> Also, avoid starting this process after 4 PM or on a Friday.</div>
+
+<h2 id="1-merge-security-prs-on-github">1. Merge security PRs on GitHub</h2>
+<p>If there are unmerged security PRs:</p>
 <ul>
-<li>Description: explain the purpose of the channel</li>
-<li>Users: Category of people targeted (eg: devs, product management)</li>
-<li>Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, &hellip;), Firstname Name (contact info), &hellip;</li>
-<li>Status: Private/Public</li>
-<li>Language: EN (or FR, or use a two letter code)</li>
+<li><strong>Merge them on GitHub</strong> and publishing their security advisories.</li>
+<li><strong>Rebase the local build branch</strong> that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</li>
 </ul>
-<h2 id="active-channels">Active Channels</h2>
-<p><strong>#ambassadors</strong></p>
+<h2 id="2-merge-the-updated-changelog-and-contributors-list">2. Merge the updated changelog and contributors list</h2>
+<p>Starting from your local build branch:</p>
 <ul>
-<li>Description: A channel to discuss about ambassadors, meetups and other topics related to their activity</li>
-<li>Users: For ambassadors and their contacts</li>
-<li>Owners: Ambassador program manager</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><strong>Double check your branch</strong> and verify it contains only the updated contributors list and the new changelog.<br>
+<em>The commit named <code>// Changelog [version]</code> should be the last one.</em></li>
+<li><strong>Create a Pull Request</strong> to merge this change.</li>
 </ul>
-<p><strong>#community-help</strong></p>
+<h2 id="3-tag--release-on-github">3. Tag &amp; release on GitHub</h2>
+<h3 id="tag-the-version-using-git">Tag the version using git</h3>
+
+<div class="notices tip" >You can do this step using Git or directly on GitHub on the next step.</div>
+
 <ul>
-<li>Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>Check out the commit named <code>// Changelog [version]</code></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tag</a> the new version:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git tag 1.7.2.0 <span class="c1"># replace by your version</span>
+git push 1.7.2.0 <span class="c1"># replace by your version</span>
+<span class="c1"># Alternatively (mainly to solve tag/branch name clashes), you could use</span>
+git push origin refs/tags/1.7.7.2
+</code></pre></div></li>
 </ul>
-<p><strong>#dev-core</strong></p>
+<h3 id="publish-the-release-on-github">Publish the release on GitHub</h3>
+<p>Create a <a href="https://github.com/PrestaShop/PrestaShop/releases/new">new Release Draft on GitHub</a></p>
 <ul>
-<li>Description: For discussions about PrestaShop core development</li>
-<li>Users: For core developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#dev-modules</strong></p>
+<li>
+<p>Either:</p>
 <ul>
-<li>Description: The best place on earth to discuss about module development for PrestaShop</li>
-<li>Users: For modules developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><strong>Pick</strong> the tag that you created in the previous step</li>
+<li><strong>Create</strong> the tag by picking the Changelog commit that you just merged.<br>
+⚠️ <em>Make sure you pick the Changelog commit itself, not the PR&rsquo;s merge commit!</em></li>
 </ul>
-<p><strong>#dev-themes</strong></p>
+</li>
+<li>
+<p>Paste the change log as a description</p>
 <ul>
-<li>Description: The best place on earth to discuss about theme development for PrestaShop</li>
-<li>Users: For themes developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#general</strong></p>
+<li>
+<p>If you&rsquo;re publishing a version (including beta and RC releases) that includes changes from a previous pre-release version:</p>
 <ul>
-<li>Description: General discussions about the PrestaShop open source project. This channel will be used for announcements.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>Include a note explaining what other changes are included (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0">Example</a>)</li>
+<li>Precede the changelog with the title <em>&ldquo;Changes since beta XX / RC YY&hellip;&quot;</em> (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-rc.1">Example</a>)</li>
 </ul>
-<p><strong>#governance</strong></p>
+</li>
+<li>
+<p>If you&rsquo;re publishing a pre-release version:</p>
 <ul>
-<li>Description: About the governance of the PrestaShop open source project</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>Make sure to add a <em>&ldquo;Known issues&rdquo;</em> section (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-beta.1">Example</a>)</li>
+<li>Don&rsquo;t forget to check the <em>&ldquo;This a pre-release&rdquo;</em> checkbox at the bottom of the form</li>
 </ul>
-<p><strong>#maintainers-and-core</strong></p>
+</li>
+<li>
+<p>If you&rsquo;re publishing a patch version:</p>
 <ul>
-<li>Description: For core maintainers, Product team and QA team, to discuss QA and Product topics</li>
-<li>Users: For core maintainers, QA team and Product team</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
+<li>Write a short intro explaining what the release fixes – especially if it&rsquo;s a security release! (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.5.1">Example</a>)</li>
 </ul>
-<p><strong>#maintainers-core</strong></p>
-<ul>
-<li>Description: For core maintainers, to discuss the project management</li>
-<li>Users: For core maintainers</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
+</li>
 </ul>
-<p><strong>#million-club-members-fr</strong></p>
-<ul>
-<li>Description: A chat to discuss between big merchants of big shops</li>
-<li>Users: Merchants only with invitation</li>
-<li>Owners: Nicolas Rateau (PrestaShop)</li>
-<li>Status: Private</li>
-<li>Language: FR</li>
+</li>
+<li>
+<p>Upload the new version zip archive (the one that has been validated by QA).<br>
+Remove the build number from the file name to avoid confusions.</p>
+</li>
 </ul>
-<p><strong>#product</strong></p>
-<ul>
-<li>Description: Features, roadmap, and everything about product management around the open source project</li>
-<li>Users: People with questions or working on this topic</li>
-<li>Owners: PrestaShop product management team</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#random</strong></p>
-<ul>
-<li>Description: Random topics</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-dev</strong></p>
-<ul>
-<li>Description: For technical discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-product</strong></p>
-<ul>
-<li>Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
+
+<div class="callout">
+<h5 id="if-the-changelog-content-is-too-long">If the Changelog content is too long</h5>
+<p>It&rsquo;s not unusual to have very long changelogs, especially in minor versions. To reduce its size, we recommend putting it in a collapsable paragraph:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"># Full Changelog
+ 
+<span class="p">&lt;</span><span class="nt">details</span><span class="p">&gt;&lt;</span><span class="nt">summary</span><span class="p">&gt;</span>Click here to see<span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+- Back Office:
+  - New feature:
+    - #xxxxx .....
+...
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+
+<h2 id="4-release-on-prestashopcom">4. Release on prestashop.com</h2>
+
+<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
+<p>Ask a maintainer from the PrestaShop Company with admin access to prestashop.com to perform this step.</p>
+</div>
+
+<h2 id="5-communicate">5. Communicate</h2>
+<p>Congratulations! You can now update the Release Tracker GitHub issue: tick the &ldquo;QA&rdquo; and &ldquo;Development&rdquo; boxes and <a href="https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656">add a comment</a>.</p>
 </div>
       </div>
     </div>

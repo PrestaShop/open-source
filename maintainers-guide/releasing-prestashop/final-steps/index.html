@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Slack channels | PrestaShop Project - Open Source e-Commerce platform</title>
+<title>Final steps | PrestaShop Project - Open Source e-Commerce platform</title>
 
 
 
@@ -26,25 +26,34 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
-<meta property="og:title" content="Slack channels" />
-<meta property="og:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators." />
+<meta name="twitter:title" content="Final steps"/>
+<meta name="twitter:description" content="Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
+(i.e. if not for betas and RCs).
+ This step requires special rights.
+Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
+ Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
+2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions."/>
+<meta property="og:title" content="Final steps" />
+<meta property="og:description" content="Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
+(i.e. if not for betas and RCs).
+ This step requires special rights.
+Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
+ Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
+2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/slack/channels/" /><meta property="article:section" content="slack" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T17:49:45+02:00" />
+<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
+<meta name="twitter:title" content="Final steps"/>
+<meta name="twitter:description" content="Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
+(i.e. if not for betas and RCs).
+ This step requires special rights.
+Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
+ Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
+2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions."/>
 
 
 
@@ -203,18 +212,26 @@ Request a new channel Creating a new channel is reserved to the administrators."
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item"><a href="/slack/">About the project&#39;s Slack</a></li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Slack channels</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/releasing-prestashop/">Releasing a new PS version</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Final steps</li>
       
     
   </ol>
@@ -226,133 +243,84 @@ Request a new channel Creating a new channel is reserved to the administrators."
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="slack-channels">Slack channels</h1>
-<p>A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.</p>
-<p><a href="https://github.com/PrestaShop/open-source/blob/master/slack/readme.md">More information about prestashop.slack.com</a></p>
-<h2 id="request-a-new-channel">Request a new channel</h2>
-<p>Creating a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted. You can also contact one of the administrator on Slack.</p>
-<p>Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.</p>
-<p><strong>#channel-name</strong></p>
+        <div class="content"><h1 id="final-steps">Final steps</h1>
+<h2 id="1-update-api-stream-for-1-click-upgrade">1. Update API stream for 1-click upgrade</h2>
+
+<div class="notices note" ><p><strong>This should only be done for stable releases.</strong></p>
+<p><em>(i.e. if not for betas and RCs).</em></p>
+</div>
+
+
+<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
+<p>Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.</p>
+</div>
+
+<p>Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.</p>
+<h2 id="2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</h2>
 <ul>
-<li>Description: explain the purpose of the channel</li>
-<li>Users: Category of people targeted (eg: devs, product management)</li>
-<li>Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, &hellip;), Firstname Name (contact info), &hellip;</li>
-<li>Status: Private/Public</li>
-<li>Language: EN (or FR, or use a two letter code)</li>
+<li>Checkout the <a href="https://github.com/PrestaShop/docker">project</a> and create a new branch</li>
+<li>Modify the file <code>versions.py</code> to add the new version and the related php matrix compatibility</li>
+<li>Commit these changes</li>
+<li>Run <code>prestashop_docker.py generate</code> to generate the new Dockerfiles in the folder <code>images/</code> (See <a href="https://github.com/PrestaShop/docker/blob/master/HOW-TO-USE.md">documentation</a>)</li>
+<li>Commit these changes</li>
+<li>Push to your fork or the original repository, create a PR and wait for the tests to pass before merging.</li>
+<li>Someone with owner access to <a href="https://hub.docker.com/r/prestashop/prestashop/">PrestaShop Docker Hub</a> organization will have to push the new images to Docker Registry.</li>
 </ul>
-<h2 id="active-channels">Active Channels</h2>
-<p><strong>#ambassadors</strong></p>
+<p>This process is manual, but the <a href="https://hub.docker.com/r/prestashop/docker-internal-images">Docker images</a> and the projects using them are automatically updated.</p>
+<p>It may take a few hours for the images to be updated.</p>
+<p>You can update the Release Tracker GitHub issue: step &ldquo;Docker image&rdquo; is done.</p>
+<h2 id="3-go-through-the-checklist">3. Go through the checklist</h2>
 <ul>
-<li>Description: A channel to discuss about ambassadors, meetups and other topics related to their activity</li>
-<li>Users: For ambassadors and their contacts</li>
-<li>Owners: Ambassador program manager</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#community-help</strong></p>
+<li>
+<p>Check the PrestaShop API content for auto-upgrade module is correct:</p>
 <ul>
-<li>Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><a href="https://api.prestashop.com/xml/channel.xml">channel.xml</a></li>
+<li><a href="https://api.prestashop.com/xml/channel17.xml">channel17.xml</a></li>
+<li><a href="https://api.prestashop.com/xml/md5/1.7.6.0.xml">1.7.6.0.xml</a> (replace with the version you have just released)</li>
 </ul>
-<p><strong>#dev-core</strong></p>
+</li>
+<li>
+<p>Check the PrestaShop localization packs are correct (only needed for major and minor releases):</p>
 <ul>
-<li>Description: For discussions about PrestaShop core development</li>
-<li>Users: For core developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><a href="https://github.com/PrestaShop/TranslationFiles/tree/master/1.7/translations/">Repository</a></li>
+<li><a href="http://i18n.prestashop.com/translations/1.7.6.0/es-ES/es-ES.zip">Example download link</a> (replace 1.7.6.0 with the version you just released)</li>
 </ul>
-<p><strong>#dev-modules</strong></p>
+</li>
+<li>
+<p>Check the Addons API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):</p>
 <ul>
-<li>Description: The best place on earth to discuss about module development for PrestaShop</li>
-<li>Users: For modules developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><a href="http://api-addons.prestashop.com?format=json&amp;iso_lang=en&amp;iso_code=FR&amp;version=1.7.6.0&amp;method=listing&amp;action=native">Native modules</a></li>
+<li><a href="http://api-addons.prestashop.com?format=json&amp;iso_lang=en&amp;iso_code=FR&amp;version=1.7.6.0&amp;method=listing&amp;action=install-modules">Pushed modules</a></li>
 </ul>
-<p><strong>#dev-themes</strong></p>
+</li>
+<li>
+<p>Check the new release can be downloaded from the prestashop.com website and GitHub:</p>
 <ul>
-<li>Description: The best place on earth to discuss about theme development for PrestaShop</li>
-<li>Users: For themes developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/releases">GitHub releases</a></li>
+<li><a href="https://www.prestashop.com/en/previous-versions">PrestaShop.com archives</a></li>
 </ul>
-<p><strong>#general</strong></p>
-<ul>
-<li>Description: General discussions about the PrestaShop open source project. This channel will be used for announcements.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+</li>
+<li>
+<p>Check that if you try to install PrestaShop 1.7.5 from the archive, the installer suggests you install the latest version instead</p>
+</li>
+<li>
+<p>Check that the release note has been published on the <a href="http://build.prestashop.com">Build Blog</a></p>
+</li>
+<li>
+<p>Check that the <a href="https://www.prestashop.com">PrestaShop.com</a> shows the right &ldquo;latest version&rdquo;, and the links are correct</p>
+</li>
+<li>
+<p>Check that the latest release has an available docker image on the <a href="https://github.com/PrestaShop/docker">Docker repository</a></p>
+</li>
+<li>
+<p>Check that the <a href="https://demo.prestashop.com">public demo</a> runs on the latest version (a few hours after the docker image release)</p>
+</li>
 </ul>
-<p><strong>#governance</strong></p>
-<ul>
-<li>Description: About the governance of the PrestaShop open source project</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#maintainers-and-core</strong></p>
-<ul>
-<li>Description: For core maintainers, Product team and QA team, to discuss QA and Product topics</li>
-<li>Users: For core maintainers, QA team and Product team</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#maintainers-core</strong></p>
-<ul>
-<li>Description: For core maintainers, to discuss the project management</li>
-<li>Users: For core maintainers</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#million-club-members-fr</strong></p>
-<ul>
-<li>Description: A chat to discuss between big merchants of big shops</li>
-<li>Users: Merchants only with invitation</li>
-<li>Owners: Nicolas Rateau (PrestaShop)</li>
-<li>Status: Private</li>
-<li>Language: FR</li>
-</ul>
-<p><strong>#product</strong></p>
-<ul>
-<li>Description: Features, roadmap, and everything about product management around the open source project</li>
-<li>Users: People with questions or working on this topic</li>
-<li>Owners: PrestaShop product management team</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#random</strong></p>
-<ul>
-<li>Description: Random topics</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-dev</strong></p>
-<ul>
-<li>Description: For technical discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-product</strong></p>
-<ul>
-<li>Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
+
+<div class="notices tip" ><p><strong>Congratulations!</strong></p>
+<p>The release is now complete, you can close the Relese Tracker GitHub issue.</p>
+</div>
+
 </div>
       </div>
     </div>

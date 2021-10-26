@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Slack channels | PrestaShop Project - Open Source e-Commerce platform</title>
+<title>How to release a new PrestaShop version | PrestaShop Project - Open Source e-Commerce platform</title>
 
 
 
@@ -26,25 +26,17 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
-<meta property="og:title" content="Slack channels" />
-<meta property="og:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/slack/channels/" /><meta property="article:section" content="slack" />
-
-<meta property="article:modified_time" content="2021-10-25T17:49:45+02:00" />
+<meta name="twitter:title" content="How to release a new PrestaShop version"/>
+<meta name="twitter:description" content=""/>
+<meta property="og:title" content="How to release a new PrestaShop version" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
+<meta name="twitter:title" content="How to release a new PrestaShop version"/>
+<meta name="twitter:description" content=""/>
 
 
 
@@ -186,7 +178,7 @@ Request a new channel Creating a new channel is reserved to the administrators."
 
 
 
-
+  
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -209,12 +201,12 @@ Request a new channel Creating a new channel is reserved to the administrators."
     
       
       
-        <li class="breadcrumb-item"><a href="/slack/">About the project&#39;s Slack</a></li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Slack channels</li>
+        <li class="breadcrumb-item active" aria-current="page">Releasing a new PS version</li>
       
     
   </ol>
@@ -226,139 +218,103 @@ Request a new channel Creating a new channel is reserved to the administrators."
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="slack-channels">Slack channels</h1>
-<p>A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.</p>
-<p><a href="https://github.com/PrestaShop/open-source/blob/master/slack/readme.md">More information about prestashop.slack.com</a></p>
-<h2 id="request-a-new-channel">Request a new channel</h2>
-<p>Creating a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted. You can also contact one of the administrator on Slack.</p>
-<p>Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.</p>
-<p><strong>#channel-name</strong></p>
+        <div class="content"><h1 id="how-to-release-a-new-prestashop-version">How to release a new PrestaShop version</h1>
+<p>This section describes the release process, step by step. A PrestaShop version release requires all these steps to be completed.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To perform a build, you will need the following:</p>
 <ul>
-<li>Description: explain the purpose of the channel</li>
-<li>Users: Category of people targeted (eg: devs, product management)</li>
-<li>Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, &hellip;), Firstname Name (contact info), &hellip;</li>
-<li>Status: Private/Public</li>
-<li>Language: EN (or FR, or use a two letter code)</li>
+<li><a href="https://git-scm.com/">Git</a>, so you can clone <a href="https://github.com/prestashop/prestashop">the project&rsquo;s Git repository</a> on your computer.</li>
+<li>The <a href="https://www.php.net/">PHP CLI</a> executable (within the <a href="https://devdocs.prestashop.com//8/basics/installation/system-requirements.md#php-requirements
+">compatible version range</a> of the PrestaShop version you will be building), so you can create a build.</li>
+<li>The <a href="https://getcomposer.org/">Composer</a> executable, to fetch PHP dependencies.</li>
+<li>The <a href="https://nodejs.org/">NodeJs CLI</a> executable (within the <a href="https://devdocs.prestashop.com//8/development/compile-assets.md#requirements
+">compatible version range</a>) and NPM, to compile assets.</li>
 </ul>
-<h2 id="active-channels">Active Channels</h2>
-<p><strong>#ambassadors</strong></p>
+
+<div class="notices note" >Some of steps will require special tools or access rights which are currently not accessible for maintainers outside the PrestaShop Company. A notice indicates when this is the case.</div>
+
+<h2 id="process-overview">Process overview</h2>
+<ol>
+<li>
+<p><strong><a href="/maintainers-guide/releasing-prestashop/preliminary-tasks/">Perform preliminary tasks</a></strong>:</p>
 <ul>
-<li>Description: A channel to discuss about ambassadors, meetups and other topics related to their activity</li>
-<li>Users: For ambassadors and their contacts</li>
-<li>Owners: Ambassador program manager</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>
+<p><strong>Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.</strong><br>
+<em>To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version.</em></p>
+</li>
+<li>
+<p><strong>Update the version number in the Core.</strong></p>
+</li>
+<li>
+<p><strong>Make sure the default translation catalogue has been updated and pushed to Crowdin.</strong><br>
+<em>To make any new wordings translatable.</em></p>
+</li>
+<li>
+<p><strong>Perform manual verifications.</strong><br>
+<em>To make sure that the project is ready to be built.</em></p>
+</li>
 </ul>
-<p><strong>#community-help</strong></p>
+</li>
+<li>
+<p><strong><a href="/maintainers-guide/releasing-prestashop/create-build/">Create a new build</a></strong>:</p>
 <ul>
-<li>Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>
+<p><strong>Merge security PRs locally.</strong><br>
+<em>Any security PRs must be merged on a local branch before making them public.</em></p>
+</li>
+<li>
+<p><strong>Update the Changelog and Contributors list.</strong><br>
+<em>These files must be included in the build.</em></p>
+</li>
+<li>
+<p><strong>Build the zip archive.</strong><br>
+<em>The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies &amp; tests.</em></p>
+</li>
 </ul>
-<p><strong>#dev-core</strong></p>
+</li>
+<li>
+<p><strong><a href="/maintainers-guide/releasing-prestashop/release-publicly/">Release the version publicly</a></strong>:</p>
 <ul>
-<li>Description: For discussions about PrestaShop core development</li>
-<li>Users: For core developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>
+<p><strong>Merge security PRs on GitHub.</strong><br>
+<em>And publish the security advisories.</em></p>
+</li>
+<li>
+<p><strong>Merge the updated Changelog and Contributors list on GitHub.</strong></p>
+</li>
+<li>
+<p><strong>Tag the version using Git and publish the release on GitHub.</strong></p>
+</li>
+<li>
+<p><strong>Release the archive on PrestaShop.com.</strong></p>
+</li>
+<li>
+<p><strong>Communicate.</strong></p>
+</li>
 </ul>
-<p><strong>#dev-modules</strong></p>
+</li>
+<li>
+<p><strong><a href="/maintainers-guide/releasing-prestashop/final-steps/">Final steps</a></strong>:</p>
 <ul>
-<li>Description: The best place on earth to discuss about module development for PrestaShop</li>
-<li>Users: For modules developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>
+<p><strong>Update API stream for 1-click upgrade.</strong><br>
+<em>So that the 1-Click Upgrade (autoupgrade) module becomes aware of the new release.</em></p>
+</li>
+<li>
+<p><strong>Create Docker images for the new version.</strong></p>
+</li>
+<li>
+<p><strong>Go through the checklist.</strong><br>
+<em>To make sure everything went all right.</em></p>
+</li>
 </ul>
-<p><strong>#dev-themes</strong></p>
-<ul>
-<li>Description: The best place on earth to discuss about theme development for PrestaShop</li>
-<li>Users: For themes developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#general</strong></p>
-<ul>
-<li>Description: General discussions about the PrestaShop open source project. This channel will be used for announcements.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#governance</strong></p>
-<ul>
-<li>Description: About the governance of the PrestaShop open source project</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#maintainers-and-core</strong></p>
-<ul>
-<li>Description: For core maintainers, Product team and QA team, to discuss QA and Product topics</li>
-<li>Users: For core maintainers, QA team and Product team</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#maintainers-core</strong></p>
-<ul>
-<li>Description: For core maintainers, to discuss the project management</li>
-<li>Users: For core maintainers</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#million-club-members-fr</strong></p>
-<ul>
-<li>Description: A chat to discuss between big merchants of big shops</li>
-<li>Users: Merchants only with invitation</li>
-<li>Owners: Nicolas Rateau (PrestaShop)</li>
-<li>Status: Private</li>
-<li>Language: FR</li>
-</ul>
-<p><strong>#product</strong></p>
-<ul>
-<li>Description: Features, roadmap, and everything about product management around the open source project</li>
-<li>Users: People with questions or working on this topic</li>
-<li>Owners: PrestaShop product management team</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#random</strong></p>
-<ul>
-<li>Description: Random topics</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-dev</strong></p>
-<ul>
-<li>Description: For technical discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-product</strong></p>
-<ul>
-<li>Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
+</li>
+</ol>
 </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
