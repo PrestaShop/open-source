@@ -1,3 +1,7 @@
+---
+title: Slack channels
+---
+
 # Slack channels
 
 A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.

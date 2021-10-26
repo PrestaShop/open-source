@@ -1,8 +1,9 @@
 ---
+title: Using PrestaShop brand and logo for a user group
 menu:
   main:
     parent: "Resources"
-    name: "User groups"
+    name: "User groups & branding"
 ---
 
 # Using PrestaShop brand and logo for a user group

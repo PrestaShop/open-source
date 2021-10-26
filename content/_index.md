@@ -1,4 +1,6 @@
 ---
+menuTitle: Home
+
 ####################### Banner #########################
 banner:
   title: "Welcome to the PrestaShop Project"

@@ -1,4 +1,6 @@
 ---
+title: About the project's Slack
+
 menu:
   main:
     parent: 'Resources'
