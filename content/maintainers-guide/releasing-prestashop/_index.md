@@ -24,7 +24,9 @@ Some of steps will require special tools or access rights which are currently no
 
 ## Process overview
 
-1. **[Perform preliminary tasks][preliminary-tasks]**:
+1. **[Perform preliminary tasks][preliminary-tasks]**: (click to see the full step)
+
+Short summary:
 
     - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
       _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
@@ -37,7 +39,9 @@ Some of steps will require special tools or access rights which are currently no
     - **Perform manual verifications.**  
       _To make sure that the project is ready to be built._
 
-2. **[Create a new build][create-build]**:
+2. **[Create a new build][create-build]**: (click to see the full step)
+
+Short summary:
    
    - **Merge security PRs locally.**  
      _Any security PRs must be merged on a local branch before making them public._
@@ -48,7 +52,9 @@ Some of steps will require special tools or access rights which are currently no
    - **Build the zip archive.**  
      _The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies & tests._
 
-3. **[Release the version publicly][release-publicly]**:
+3. **[Release the version publicly][release-publicly]**: (click to see the full step)
+
+Short summary:
 
    - **Merge security PRs on GitHub.**  
      _And publish the security advisories._
@@ -61,7 +67,9 @@ Some of steps will require special tools or access rights which are currently no
 
    - **Communicate.**
 
-4. **[Final steps][final-steps]**:
+4. **[Final steps][final-steps]**: (click to see the full step)
+
+Short summary:
 
    - **Update API stream for 1-click upgrade.**  
      _So that the 1-Click Upgrade (autoupgrade) module becomes aware of the new release._
