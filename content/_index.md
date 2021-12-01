@@ -13,7 +13,7 @@ feature:
   title: "Project documentation"
   feature_item:
     - name: "User documentation"
-      link: "https://prestashop.gitbook.io/english-documentation-1-7/"
+      link: "https://docs.prestashop-project.org/"
       icon: "fas fa-book"
       content: "For merchants and end users"
     - name: "Developer documentation"
