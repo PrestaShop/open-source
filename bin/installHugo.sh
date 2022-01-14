@@ -27,4 +27,3 @@ fi
 
 hugo version
 
-hugo server
