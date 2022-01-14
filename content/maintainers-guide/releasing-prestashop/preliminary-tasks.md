@@ -75,20 +75,45 @@ It is usually only done once per release as well.
 
 Make sure that in the current branch:
 
-* All license headers are correct
-    * `php bin/console prestashop:licenses:update`
-* All controllers are secured by annotations, and legacy link are provided for Symfony routes
-    * `php bin/console prestashop:linter:security-annotation`
-    * `php bin/console prestashop:linter:legacy-link`
+* All license headers are correct:
+  
+  ```bash
+  php bin/console prestashop:licenses:update
+  ```
+  
+* All controllers are secured by annotations, and legacy link are provided for Symfony routes:
+  
+  ```bash
+  php bin/console prestashop:linter:security-annotation
+  php bin/console prestashop:linter:legacy-link
+  ```
+  
 * There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]
+
 * _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
+
 * All new hooks have been [registered][register-new-hook]
-* The generated [FOS JSON routing][fos-js-routing] file is up-to-date
-    * `php bin/console fos:js-routing:dump --format=json --target=admin-dev/themes/new-theme/js/fos_js_routes.json`
-* Any new native modules have been added into `composer.json` and their latest versions have been updated in `composer.lock`
-    * `composer outdated -D "prestashop/*"`
-* _(1.7.7.x patch releases only)_ – Static assets have been [built, updated and committed][how-to-build-assets]
-    * `./tools/assets/build.sh`
+
+* The generated [FOS JSON routing][fos-js-routing] file is up-to-date:
+  
+  ```bash
+  php bin/console fos:js-routing:dump \
+      --format=json \
+      --target=admin-dev/themes/new-theme/js/fos_js_routes.json
+  ```
+
+* Any new native modules have been added into `composer.json` and their latest versions have been updated in `composer.lock`:
+  
+  ```bash
+  composer outdated -D "prestashop/*"
+  ```
+  
+* _(1.7.7.x patch releases only)_ – Static assets have been [built, updated and committed][how-to-build-assets]:
+  
+  ```bash
+  ./tools/assets/build.sh
+  ```
+  
 * [Nightly builds][nightly-build-board] are green
 
 

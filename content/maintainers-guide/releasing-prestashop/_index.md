@@ -25,23 +25,23 @@ Some of steps will require special tools or access rights which are currently no
 ## Process overview
 
 1. **[Perform preliminary tasks][preliminary-tasks]**: (click to see the full step)
-
-Short summary:
-
-    - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
-      _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
-      
-    - **Update the version number in the Core.**
+   
+   Short summary:
+   
+   - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
+    _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
     
-    - **Make sure the default translation catalogue has been updated and pushed to Crowdin.**  
-      _To make any new wordings translatable._
-      
-    - **Perform manual verifications.**  
-      _To make sure that the project is ready to be built._
+   - **Update the version number in the Core.**
+   
+   - **Make sure the default translation catalogue has been updated and pushed to Crowdin.**  
+   _To make any new wordings translatable._
+    
+   - **Perform manual verifications.**  
+   _To make sure that the project is ready to be built._
 
 2. **[Create a new build][create-build]**: (click to see the full step)
 
-Short summary:
+   Short summary:
    
    - **Merge security PRs locally.**  
      _Any security PRs must be merged on a local branch before making them public._
@@ -54,7 +54,7 @@ Short summary:
 
 3. **[Release the version publicly][release-publicly]**: (click to see the full step)
 
-Short summary:
+   Short summary:
 
    - **Merge security PRs on GitHub.**  
      _And publish the security advisories._
@@ -69,7 +69,7 @@ Short summary:
 
 4. **[Final steps][final-steps]**: (click to see the full step)
 
-Short summary:
+   Short summary:
 
    - **Update API stream for 1-click upgrade.**  
      _So that the 1-Click Upgrade (autoupgrade) module becomes aware of the new release._
