@@ -16,15 +16,15 @@ Once the QA team has greenlighted your build, you can move forward with the publ
 If there are unmerged security PRs:
 
 - **Merge them on GitHub** and publishing their security advisories.
-- **Rebase the local build branch** that you created on the previous step to remove the merge commits from the security PRs you merged manually before. 
+- **Rebase the build branch** that you created on the previous step to remove the merge commits from the security PRs you merged manually before. 
 
-## 2. Merge the updated changelog and contributors list
+## 2. Merge the build branch
 
-Starting from your local build branch:
-
-- **Double check your branch** and verify it contains only the updated contributors list and the new changelog.  
-  _The commit named `// Changelog [version]` should be the last one._ 
-- **Create a Pull Request** to merge this change.
+- **Double check your build branch**
+  - Verify that it contains only the updated contributors list and the new changelog, as well as any fix that was merged during QA validation.
+  - The commit named "// Changelog [version]" should be the last one.  
+    If it's not, you have probably forgotten to build it again after merging a bug fix. In that case, you will have to build again. 
+- **Create a Pull Request** to merge the branch (if you haven't done it already), and have it merged.
 
 ## 3. Tag & release on GitHub
 
@@ -34,12 +34,16 @@ Starting from your local build branch:
 You can do this step using Git or directly on GitHub on the next step.
 {{% /notice %}}
 
-- Check out the commit named `// Changelog [version]`
+- Check out the commit named "// Changelog [version]"
 - [Tag][git-tag] the new version:
-    ```shell
-    git tag 1.7.2.0 # replace by your version
-    git push 1.7.2.0 # replace by your version
-    # Alternatively (mainly to solve tag/branch name clashes), you could use
+    ```bash
+    git tag 1.7.2.0 # replace with your version
+    ```
+- Push the tag:
+    ```bash
+    git push 1.7.2.0 # replace with your version
+  
+    # Alternatively (e.g. if you need to overwrite an existing tag)
     git push origin refs/tags/1.7.7.2
     ```
 
