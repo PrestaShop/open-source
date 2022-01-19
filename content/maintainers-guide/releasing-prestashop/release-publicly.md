@@ -56,7 +56,7 @@ Create a [new Release Draft on GitHub](https://github.com/PrestaShop/PrestaShop/
   Alternatively, you can **create** the tag by picking the Changelog commit that you just merged.  
     ⚠️ _Make sure you pick the Changelog commit itself, and **not** the PR's merge commit!_
 
-- **Paste** the change log as a description
+- **Paste** the changelog as a description
    
   If you're publishing a version that includes changes from a previous pre-release version (including beta and RC releases):
 
