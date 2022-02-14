@@ -2,8 +2,7 @@
 title: Maintainer's guide
 menu:
   main:
-    parent: "Resources"
-    name: "Maintainer's guide"
+    name: "Support"
 ---
 
 # PrestaShop maintainer's guide
