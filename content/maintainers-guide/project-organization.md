@@ -14,7 +14,6 @@ Product Managers provide the project's product vision, ensuring that the softwar
 Current product managers:
 
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
-- Marion François ([@marionf](https://github.com/marionf))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 
 ### Maintainer
