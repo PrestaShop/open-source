@@ -9,7 +9,9 @@ Once preliminary tasks have been completed, the project is ready to be built.
 
 ## 1. Communicate
 
-Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the "Development" box in the Release Tracker GitHub issue (there is one per version, see the [1.7.6.6 example][release-tracker-issue]).
+Starting this step means that the Development phase of this release is over. 
+
+Before you go further, make sure to **tick the "Development" box** in the Release Tracker GitHub issue (there is one per version, see the [1.7.6.6 example][release-tracker-issue]).
 
 ## 2. Create a local branch for your build
 
@@ -27,13 +29,9 @@ The following tasks will require you to perform changes and submit them as a Pul
 
 * **Create a local branch for your work.** Keep it! You will need to go back to it later. 
 
-## 3. Merge any not-yet published security fixes
+## 3. Merge any not-yet merged security fixes into your branch
 
-{{% notice note %}}
-**About security advisories.**
-
-To avoid disclosing security issues, security Pull Request are merged _after_ the build has been done and validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.
-{{% /notice %}}
+To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub _after_ the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.
 
 If this release includes security PRs:
 
@@ -43,7 +41,7 @@ If this release includes security PRs:
 
 ## 4. Update the Changelog & Contributors list
 
-### Use the changelog tool to extract the data
+### Extract list of changes and contributors using the changelog tool
 
 {{% notice warning %}}
 **This step requires special rights.**
@@ -56,18 +54,36 @@ After this step, you should obtain two files:
 - the Changelog file – including a list of all the merged Pull Requests. Make sure to keep this file, you'll need it later.
 - the New Contributors file – a list of all the people who contributed code for this version for their first time.
 
-### Update the files in the project
+### Update the project's files
 
-- Add the contents of the changelog at the top end of PrestaShop's [Changelog file][changelog-file].
+- Add the contents of the changelog at the top of PrestaShop's [Changelog file][changelog-file].
 - Update PrestaShop's [Contributors file][contributors-file] by adding the new contributors. Keep the alphabetical order.
-- Commit your changed files with following message: `// Changelog [version]`
-- You may push this branch to your own (private) fork, if you wish to.
+- Commit your changed files with following message: "// Changelog [version]"
 
-{{% notice tip %}}
-If you're lost, see [this example][update-author-pr-example] from the 1.7.6.6 release.
+## 5. Push your work into a build branch
 
-[update-author-pr-example]: https://github.com/PrestaShop/PrestaShop/pull/20032
+The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.
+
+If your build is rejected because of a bug, the fixes will have to be merged into your build branch, instead of the base branch.
+
+### If the branch does not contain security fixes
+
+- Push your changes to a new branch in the public repository.  
+  Name your branch following this scheme: `[version]-build` (for example: "1.7.8.1-build")
+- Create a new pull request to merge your changes. If you're lost, see [this example](https://github.com/PrestaShop/PrestaShop/pull/20032) from the 1.7.6.6 release.
+
+{{% notice warning %}}
+**Make sure your PR is not merged accidentally!** 
+
+The build must be validated before the PR can be merged.
 {{% /notice %}}
+
+
+### If the branch contains security fixes 
+
+
+- Push your local branch into a private repository, in order to avoid disclosing the security bugs.
+- Share access to your private repository with other maintainers so that they can verify your work.
 
 ## 5. Build the ZIP archive
 
@@ -98,7 +114,7 @@ By default, the release package will create two files in a new subdirectory in `
 
 As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.
 
-## 6. Upload your build for archiving
+## 6. Archive your build
 
 ### Rename files
 
@@ -146,12 +162,10 @@ At this point, the build process is over.
 In case the QA team finds blocking defects in the build, then these issues _must_ be fixed and merged before the branch can be built again.
 
 - **Communicate** that the build validation has failed by updating the Release Tracker GitHub issue. 
-- **Fix the issues** or wait for them to be fixed and merged in the version branch.
+- **Fix the issues** or wait for them to be fixed and merged in the **build** branch you created above _(and **NOT** in the base branch!)_.
 - **Repeat the build process from the top**. Make sure that you have checked out the head of the updated version branch.
 
-{{% notice tip %}}
 Once the QA has greenlighted the build, you can move on to publishing the version.
-{{% /notice %}}
 
 [release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/19959
 [changelog-file]: https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt
