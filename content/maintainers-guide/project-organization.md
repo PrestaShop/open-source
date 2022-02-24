@@ -43,7 +43,6 @@ Current UX designers:
 - Scott Cosio ([@prestascott](https://github.com/prestascott))
 - Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
 
-### Quality Assurance (QA)
 ### Issue Managers
 
 Issue managers reproduce and qualify new issues to avoid duplicates and, if they are indeed defects in the software, their severity. They also redirect new improvement suggestions to the right Product Manager.
@@ -85,5 +84,13 @@ Current Software Developers in Test:
 Wording managers ensure that wordings are adequate, follow the project's tone of voice, and are categorized properly.
 
 Current wording managers:
+
+- Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+
+### User Documentation Managers
+
+User documentation managers ensure the quality and consistency of the [user documentation](https://docs.prestashop-project.org/).
+
+Current user documentation managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
