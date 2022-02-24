@@ -21,13 +21,13 @@ PrestaShop has a sizeable community, and there are many volunteers willing to he
 
 If you need serious help with your project, your best choice is to get contact a professional. There are thousands of agencies and freelance experts located around the globe:
 
-* [PrestaShop partner agencies and experts](https://www.prestashop.com/experts)
+* [List of agencies and experts](https://www.prestashop.com/experts) (sponsored by PrestaShop SA)
 * [Find a community expert on Slack]({{< relref "/slack" >}}) (within the `#jobs` channel)
 
 ## Learn PrestaShop
 
 "Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime."
 
-* [Training courses](https://www.prestashop.com/training)
+* [Training courses](https://www.prestashop.com/training) (sponsored by PrestaShop SA)
 * [User documentation](https://docs.prestashop-project.org/)
 * [Developer documentation](https://devdocs.prestashop.com)
