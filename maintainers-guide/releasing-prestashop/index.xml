@@ -26,7 +26,8 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
       
       <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</guid>
       <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
+1. Communicate Starting this step means that the Development phase of this release is over.
+Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
 2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request.</description>
     </item>
     
@@ -38,7 +39,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
       <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/</guid>
       <description>Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
 Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
     </item>
     
     <item>

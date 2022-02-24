@@ -24,22 +24,22 @@
 <meta name="twitter:title" content="Release publicly"/>
 <meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
 Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
 <meta property="og:title" content="Release publicly" />
 <meta property="og:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
 Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before." />
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
+<meta property="article:modified_time" content="2022-01-19T15:14:49+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Release publicly"/>
 <meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
 Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
 
 
 
@@ -235,7 +235,7 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
     <li><a href="#release-the-version-publicly">Release the version publicly</a>
       <ul>
         <li><a href="#1-merge-security-prs-on-github">1. Merge security PRs on GitHub</a></li>
-        <li><a href="#2-merge-the-updated-changelog-and-contributors-list">2. Merge the updated changelog and contributors list</a></li>
+        <li><a href="#2-merge-the-build-branch">2. Merge the build branch</a></li>
         <li><a href="#3-tag--release-on-github">3. Tag &amp; release on GitHub</a>
           <ul>
             <li><a href="#tag-the-version-using-git">Tag the version using git</a></li>
@@ -262,14 +262,18 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
 <p>If there are unmerged security PRs:</p>
 <ul>
 <li><strong>Merge them on GitHub</strong> and publishing their security advisories.</li>
-<li><strong>Rebase the local build branch</strong> that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</li>
+<li><strong>Rebase the build branch</strong> that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</li>
 </ul>
-<h2 id="2-merge-the-updated-changelog-and-contributors-list">2. Merge the updated changelog and contributors list</h2>
-<p>Starting from your local build branch:</p>
+<h2 id="2-merge-the-build-branch">2. Merge the build branch</h2>
 <ul>
-<li><strong>Double check your branch</strong> and verify it contains only the updated contributors list and the new changelog.<br>
-<em>The commit named <code>// Changelog [version]</code> should be the last one.</em></li>
-<li><strong>Create a Pull Request</strong> to merge this change.</li>
+<li><strong>Double check your build branch</strong>
+<ul>
+<li>Verify that it contains only the updated contributors list and the new changelog, as well as any fix that was merged during QA validation.</li>
+<li>The commit named &ldquo;// Changelog [version]&rdquo; should be the last one.<br>
+If it&rsquo;s not, you have probably forgotten to build it again after merging a bug fix. In that case, you will have to build again.</li>
+</ul>
+</li>
+<li><strong>Create a Pull Request</strong> to merge the branch (if you haven&rsquo;t done it already), and have it merged.</li>
 </ul>
 <h2 id="3-tag--release-on-github">3. Tag &amp; release on GitHub</h2>
 <h3 id="tag-the-version-using-git">Tag the version using git</h3>
@@ -277,11 +281,14 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
 <div class="notices tip" >You can do this step using Git or directly on GitHub on the next step.</div>
 
 <ul>
-<li>Check out the commit named <code>// Changelog [version]</code></li>
+<li>Check out the commit named &ldquo;// Changelog [version]&rdquo;</li>
 <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tag</a> the new version:
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git tag 1.7.2.0 <span class="c1"># replace by your version</span>
-git push 1.7.2.0 <span class="c1"># replace by your version</span>
-<span class="c1"># Alternatively (mainly to solve tag/branch name clashes), you could use</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git tag 1.7.2.0 <span class="c1"># replace with your version</span>
+</code></pre></div></li>
+<li>Push the tag:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git push 1.7.2.0 <span class="c1"># replace with your version</span>
+
+<span class="c1"># Alternatively (e.g. if you need to overwrite an existing tag)</span>
 git push origin refs/tags/1.7.7.2
 </code></pre></div></li>
 </ul>
@@ -289,40 +296,29 @@ git push origin refs/tags/1.7.7.2
 <p>Create a <a href="https://github.com/PrestaShop/PrestaShop/releases/new">new Release Draft on GitHub</a></p>
 <ul>
 <li>
-<p>Either:</p>
-<ul>
-<li><strong>Pick</strong> the tag that you created in the previous step</li>
-<li><strong>Create</strong> the tag by picking the Changelog commit that you just merged.<br>
-⚠️ <em>Make sure you pick the Changelog commit itself, not the PR&rsquo;s merge commit!</em></li>
-</ul>
+<p>To start, <strong>choose</strong> the tag that you created in the previous step.</p>
+<p>Alternatively, you can <strong>create</strong> the tag by picking the Changelog commit that you just merged.<br>
+⚠️ <em>Make sure you pick the Changelog commit itself, and <strong>not</strong> the PR&rsquo;s merge commit!</em></p>
 </li>
 <li>
-<p>Paste the change log as a description</p>
-<ul>
-<li>
-<p>If you&rsquo;re publishing a version (including beta and RC releases) that includes changes from a previous pre-release version:</p>
+<p><strong>Paste</strong> the changelog as a description</p>
+<p>If you&rsquo;re publishing a version that includes changes from a previous pre-release version (including beta and RC releases):</p>
 <ul>
 <li>Include a note explaining what other changes are included (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0">Example</a>)</li>
 <li>Precede the changelog with the title <em>&ldquo;Changes since beta XX / RC YY&hellip;&quot;</em> (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-rc.1">Example</a>)</li>
 </ul>
-</li>
-<li>
 <p>If you&rsquo;re publishing a pre-release version:</p>
 <ul>
 <li>Make sure to add a <em>&ldquo;Known issues&rdquo;</em> section (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-beta.1">Example</a>)</li>
 <li>Don&rsquo;t forget to check the <em>&ldquo;This a pre-release&rdquo;</em> checkbox at the bottom of the form</li>
 </ul>
-</li>
-<li>
 <p>If you&rsquo;re publishing a patch version:</p>
 <ul>
 <li>Write a short intro explaining what the release fixes – especially if it&rsquo;s a security release! (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.5.1">Example</a>)</li>
 </ul>
 </li>
-</ul>
-</li>
 <li>
-<p>Upload the new version zip archive (the one that has been validated by QA).<br>
+<p><strong>Upload</strong> the new version zip archive (the one that has been validated by QA).<br>
 Remove the build number from the file name to avoid confusions.</p>
 </li>
 </ul>

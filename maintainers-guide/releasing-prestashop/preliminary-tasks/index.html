@@ -36,7 +36,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
+<meta property="article:modified_time" content="2022-01-14T18:37:28-03:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -307,38 +307,43 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <h2 id="4-manual-verifications">4. Manual verifications</h2>
 <p>Make sure that in the current branch:</p>
 <ul>
-<li>All license headers are correct
-<ul>
-<li><code>php bin/console prestashop:licenses:update</code></li>
-</ul>
+<li>
+<p>All license headers are correct:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php bin/console prestashop:licenses:update
+</code></pre></div></li>
+<li>
+<p>All controllers are secured by annotations, and legacy link are provided for Symfony routes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php bin/console prestashop:linter:security-annotation
+php bin/console prestashop:linter:legacy-link
+</code></pre></div></li>
+<li>
+<p>There are no known vulnerabilities in composer dependencies using <a href="https://github.com/fabpot/local-php-security-checker">Fabpot Local PHP Security Checker</a></p>
 </li>
-<li>All controllers are secured by annotations, and legacy link are provided for Symfony routes
-<ul>
-<li><code>php bin/console prestashop:linter:security-annotation</code></li>
-<li><code>php bin/console prestashop:linter:legacy-link</code></li>
-</ul>
+<li>
+<p><em>(Minor and major releases only)</em> – No important <code>@todo</code> annotations have been left forgotten in new code</p>
 </li>
-<li>There are no known vulnerabilities in composer dependencies using <a href="https://github.com/fabpot/local-php-security-checker">Fabpot Local PHP Security Checker</a></li>
-<li><em>(Minor and major releases only)</em> – No important <code>@todo</code> annotations have been left forgotten in new code</li>
-<li>All new hooks have been <a href="https://devdocs.prestashop.com//8/development/components/hook/register-new-hook/
-">registered</a></li>
-<li>The generated <a href="https://github.com/FriendsOfSymfony/FOSJsRoutingBundle">FOS JSON routing</a> file is up-to-date
-<ul>
-<li><code>php bin/console fos:js-routing:dump --format=json --target=admin-dev/themes/new-theme/js/fos_js_routes.json</code></li>
-</ul>
+<li>
+<p>All new hooks have been <a href="https://devdocs.prestashop.com//8/development/components/hook/register-new-hook/
+">registered</a></p>
 </li>
-<li>Any new native modules have been added into <code>composer.json</code> and their latest versions have been updated in <code>composer.lock</code>
-<ul>
-<li><code>composer outdated -D &quot;prestashop/*&quot;</code></li>
-</ul>
+<li>
+<p>The generated <a href="https://github.com/FriendsOfSymfony/FOSJsRoutingBundle">FOS JSON routing</a> file is up-to-date:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php bin/console fos:js-routing:dump <span class="se">\
+</span><span class="se"></span>    --format<span class="o">=</span>json <span class="se">\
+</span><span class="se"></span>    --target<span class="o">=</span>admin-dev/themes/new-theme/js/fos_js_routes.json
+</code></pre></div></li>
+<li>
+<p>Any new native modules have been added into <code>composer.json</code> and their latest versions have been updated in <code>composer.lock</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer outdated -D <span class="s2">&#34;prestashop/*&#34;</span>
+</code></pre></div></li>
+<li>
+<p><em>(1.7.7.x patch releases only)</em> – Static assets have been <a href="https://devdocs.prestashop.com//8/development/compile-assets/
+">built, updated and committed</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">./tools/assets/build.sh
+</code></pre></div></li>
+<li>
+<p><a href="https://nightly.prestashop.com/">Nightly builds</a> are green</p>
 </li>
-<li><em>(1.7.7.x patch releases only)</em> – Static assets have been <a href="https://devdocs.prestashop.com//8/development/compile-assets/
-">built, updated and committed</a>
-<ul>
-<li><code>./tools/assets/build.sh</code></li>
-</ul>
-</li>
-<li><a href="https://nightly.prestashop.com/">Nightly builds</a> are green</li>
 </ul>
 
 <div class="notices warning" >If any of above verifications fails, it MUST be addressed in a Pull Requests and merged before moving forward.</div>

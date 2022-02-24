@@ -23,22 +23,25 @@
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Create the build"/>
 <meta name="twitter:description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
+1. Communicate Starting this step means that the Development phase of this release is over.
+Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
 2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request."/>
 <meta property="og:title" content="Create the build" />
 <meta property="og:description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
+1. Communicate Starting this step means that the Development phase of this release is over.
+Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
 2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
+<meta property="article:modified_time" content="2022-01-14T19:46:00-03:00" />
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Create the build"/>
 <meta name="twitter:description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
+1. Communicate Starting this step means that the Development phase of this release is over.
+Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
 2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request."/>
 
 
@@ -236,15 +239,21 @@
       <ul>
         <li><a href="#1-communicate">1. Communicate</a></li>
         <li><a href="#2-create-a-local-branch-for-your-build">2. Create a local branch for your build</a></li>
-        <li><a href="#3-merge-any-not-yet-published-security-fixes">3. Merge any not-yet published security fixes</a></li>
+        <li><a href="#3-merge-any-not-yet-merged-security-fixes-into-your-branch">3. Merge any not-yet merged security fixes into your branch</a></li>
         <li><a href="#4-update-the-changelog--contributors-list">4. Update the Changelog &amp; Contributors list</a>
           <ul>
-            <li><a href="#use-the-changelog-tool-to-extract-the-data">Use the changelog tool to extract the data</a></li>
-            <li><a href="#update-the-files-in-the-project">Update the files in the project</a></li>
+            <li><a href="#extract-list-of-changes-and-contributors-using-the-changelog-tool">Extract list of changes and contributors using the changelog tool</a></li>
+            <li><a href="#update-the-projects-files">Update the project&rsquo;s files</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-push-your-work-into-a-build-branch">5. Push your work into a build branch</a>
+          <ul>
+            <li><a href="#if-the-branch-does-not-contain-security-fixes">If the branch does not contain security fixes</a></li>
+            <li><a href="#if-the-branch-contains-security-fixes">If the branch contains security fixes</a></li>
           </ul>
         </li>
         <li><a href="#5-build-the-zip-archive">5. Build the ZIP archive</a></li>
-        <li><a href="#6-upload-your-build-for-archiving">6. Upload your build for archiving</a>
+        <li><a href="#6-archive-your-build">6. Archive your build</a>
           <ul>
             <li><a href="#rename-files">Rename files</a></li>
             <li><a href="#upload-files-to-the-archive">Upload files to the archive</a></li>
@@ -267,7 +276,8 @@
         <div class="content"><h1 id="create-a-build-package">Create a build package</h1>
 <p>Once preliminary tasks have been completed, the project is ready to be built.</p>
 <h2 id="1-communicate">1. Communicate</h2>
-<p>Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the <a href="https://github.com/PrestaShop/PrestaShop/issues/19959">1.7.6.6 example</a>).</p>
+<p>Starting this step means that the Development phase of this release is over.</p>
+<p>Before you go further, make sure to <strong>tick the &ldquo;Development&rdquo; box</strong> in the Release Tracker GitHub issue (there is one per version, see the <a href="https://github.com/PrestaShop/PrestaShop/issues/19959">1.7.6.6 example</a>).</p>
 <h2 id="2-create-a-local-branch-for-your-build">2. Create a local branch for your build</h2>
 <p>The following tasks will require you to perform changes and submit them as a Pull Request.</p>
 <ul>
@@ -285,19 +295,15 @@
 <p><strong>Create a local branch for your work.</strong> Keep it! You will need to go back to it later.</p>
 </li>
 </ul>
-<h2 id="3-merge-any-not-yet-published-security-fixes">3. Merge any not-yet published security fixes</h2>
-
-<div class="notices note" ><p><strong>About security advisories.</strong></p>
-<p>To avoid disclosing security issues, security Pull Request are merged <em>after</em> the build has been done and validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.</p>
-</div>
-
+<h2 id="3-merge-any-not-yet-merged-security-fixes-into-your-branch">3. Merge any not-yet merged security fixes into your branch</h2>
+<p>To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub <em>after</em> the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.</p>
 <p>If this release includes security PRs:</p>
 <ul>
 <li>Add the different private temporary repositories for each Security Advisory as remotes of your local git repository.</li>
 <li>Merge each one of those PRs into your working local branch.</li>
 </ul>
 <h2 id="4-update-the-changelog--contributors-list">4. Update the Changelog &amp; Contributors list</h2>
-<h3 id="use-the-changelog-tool-to-extract-the-data">Use the changelog tool to extract the data</h3>
+<h3 id="extract-list-of-changes-and-contributors-using-the-changelog-tool">Extract list of changes and contributors using the changelog tool</h3>
 
 <div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
 <p>Ask a maintainer from the PrestaShop Company with access to the Changelog Tool to perform this step.</p>
@@ -308,16 +314,31 @@
 <li>the Changelog file – including a list of all the merged Pull Requests. Make sure to keep this file, you&rsquo;ll need it later.</li>
 <li>the New Contributors file – a list of all the people who contributed code for this version for their first time.</li>
 </ul>
-<h3 id="update-the-files-in-the-project">Update the files in the project</h3>
+<h3 id="update-the-projects-files">Update the project&rsquo;s files</h3>
 <ul>
-<li>Add the contents of the changelog at the top end of PrestaShop&rsquo;s <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt">Changelog file</a>.</li>
+<li>Add the contents of the changelog at the top of PrestaShop&rsquo;s <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt">Changelog file</a>.</li>
 <li>Update PrestaShop&rsquo;s <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTORS.md">Contributors file</a> by adding the new contributors. Keep the alphabetical order.</li>
-<li>Commit your changed files with following message: <code>// Changelog [version]</code></li>
-<li>You may push this branch to your own (private) fork, if you wish to.</li>
+<li>Commit your changed files with following message: &ldquo;// Changelog [version]&rdquo;</li>
+</ul>
+<h2 id="5-push-your-work-into-a-build-branch">5. Push your work into a build branch</h2>
+<p>The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.</p>
+<p>If your build is rejected because of a bug, the fixes will have to be merged into your build branch, instead of the base branch.</p>
+<h3 id="if-the-branch-does-not-contain-security-fixes">If the branch does not contain security fixes</h3>
+<ul>
+<li>Push your changes to a new branch in the public repository.<br>
+Name your branch following this scheme: <code>[version]-build</code> (for example: &ldquo;1.7.8.1-build&rdquo;)</li>
+<li>Create a new pull request to merge your changes. If you&rsquo;re lost, see <a href="https://github.com/PrestaShop/PrestaShop/pull/20032">this example</a> from the 1.7.6.6 release.</li>
 </ul>
 
-<div class="notices tip" >If you&rsquo;re lost, see <a href="https://github.com/PrestaShop/PrestaShop/pull/20032">this example</a> from the 1.7.6.6 release.</div>
+<div class="notices warning" ><p><strong>Make sure your PR is not merged accidentally!</strong></p>
+<p>The build must be validated before the PR can be merged.</p>
+</div>
 
+<h3 id="if-the-branch-contains-security-fixes">If the branch contains security fixes</h3>
+<ul>
+<li>Push your local branch into a private repository, in order to avoid disclosing the security bugs.</li>
+<li>Share access to your private repository with other maintainers so that they can verify your work.</li>
+</ul>
 <h2 id="5-build-the-zip-archive">5. Build the ZIP archive</h2>
 <p>Use the <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/tools/build/README.md">Release Creator CLI script</a> included with PrestaShop&rsquo;s sources to create the ZIP archive.</p>
 <p>From the root path of your repository, execute:</p>
@@ -336,7 +357,7 @@
 <div class="notices warning" ><strong>Make sure to keep them both!</strong> You will need them later on.</div>
 
 <p>As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.</p>
-<h2 id="6-upload-your-build-for-archiving">6. Upload your build for archiving</h2>
+<h2 id="6-archive-your-build">6. Archive your build</h2>
 <h3 id="rename-files">Rename files</h3>
 <p>Rename both files according to our naming convention:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">prestashop_&lt;version&gt;-[beta.&lt;beta number&gt;|rc.&lt;rc number&gt;]+build.&lt;build number&gt;.&lt;zip|xml&gt;
@@ -374,12 +395,10 @@
 <p>In case the QA team finds blocking defects in the build, then these issues <em>must</em> be fixed and merged before the branch can be built again.</p>
 <ul>
 <li><strong>Communicate</strong> that the build validation has failed by updating the Release Tracker GitHub issue.</li>
-<li><strong>Fix the issues</strong> or wait for them to be fixed and merged in the version branch.</li>
+<li><strong>Fix the issues</strong> or wait for them to be fixed and merged in the <strong>build</strong> branch you created above <em>(and <strong>NOT</strong> in the base branch!)</em>.</li>
 <li><strong>Repeat the build process from the top</strong>. Make sure that you have checked out the head of the updated version branch.</li>
 </ul>
-
-<div class="notices tip" >Once the QA has greenlighted the build, you can move on to publishing the version.</div>
-
+<p>Once the QA has greenlighted the build, you can move on to publishing the version.</p>
 </div>
       </div>
     </div>
