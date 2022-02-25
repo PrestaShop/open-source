@@ -19,7 +19,7 @@ PrestaShop has a sizeable community, and there are many volunteers willing to he
 
 ## Contact a professional
 
-If you need serious help with your project, your best choice is to get contact a professional. There are thousands of agencies and freelance experts located around the globe:
+If you need serious help with your project, your best choice is to contact a professional. There are thousands of agencies and freelance experts located around the globe:
 
 * [List of agencies and experts](https://www.prestashop.com/experts) (sponsored by PrestaShop SA)
 * [Find a community expert on Slack]({{< relref "/slack" >}}) (within the `#jobs` channel)
