@@ -2,7 +2,7 @@
 title: "Support"
 ---
 
-# I need help with PrestaShop
+# Get help with PrestaShop
 
 The PrestaShop open-source project can be freely downloaded and used by anyone, but it is provided "as is", with no warranty or dedicated support. 
 
