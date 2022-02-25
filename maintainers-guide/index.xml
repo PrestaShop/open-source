@@ -7,6 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/maintainers-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Project organization</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/project-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/project-organization/</guid>
+      <description>Project organization Project roles Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+Current product managers:
+ Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir)  Maintainers Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.
+Current maintainers:
+ Franck Lefèvre (@Progi1984) Ibrahima Sow (@sowbiba) Jonathan Lelièvre (@jolelievre) Krystian Podemski (@kpodemski) Mathieu Ferment (@matks) Matthieu Rolland (@matthieu-rolland) Pablo Borowicz (@eternoendless) Pierre Rambaud (@PierreRambaud) Pululu Kinanga André (@PululuK) Thomas Baccelli (@atomiix) Valentin Szczupak (@NeOMakinG)  UX Designers UX Designers make sure that interfaces follow the best practices in usability and design.</description>
+    </item>
+    
+    <item>
       <title>How to become a maintainer</title>
       <link>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-maintainer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

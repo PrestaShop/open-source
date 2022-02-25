@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.prestashop-project.org/maintainers-guide/project-organization/</loc>
+    <lastmod>2022-02-24T20:12:15+01:00</lastmod>
+  </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-maintainer/</loc>
     <lastmod>2021-10-25T18:00:32+02:00</lastmod>
   </url><url>

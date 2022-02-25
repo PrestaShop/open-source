@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Maintainer&#39;s guide | PrestaShop Project - Open Source e-Commerce platform</title>
+<title>Project organization | PrestaShop Project - Open Source e-Commerce platform</title>
 
 
 
@@ -21,17 +21,31 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="Maintainer&#39;s guide" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/" />
+<meta name="twitter:title" content="Project organization"/>
+<meta name="twitter:description" content="Project organization Project roles Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+Current product managers:
+ Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir)  Maintainers Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.
+Current maintainers:
+ Franck Lefèvre (@Progi1984) Ibrahima Sow (@sowbiba) Jonathan Lelièvre (@jolelievre) Krystian Podemski (@kpodemski) Mathieu Ferment (@matks) Matthieu Rolland (@matthieu-rolland) Pablo Borowicz (@eternoendless) Pierre Rambaud (@PierreRambaud) Pululu Kinanga André (@PululuK) Thomas Baccelli (@atomiix) Valentin Szczupak (@NeOMakinG)  UX Designers UX Designers make sure that interfaces follow the best practices in usability and design."/>
+<meta property="og:title" content="Project organization" />
+<meta property="og:description" content="Project organization Project roles Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+Current product managers:
+ Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir)  Maintainers Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.
+Current maintainers:
+ Franck Lefèvre (@Progi1984) Ibrahima Sow (@sowbiba) Jonathan Lelièvre (@jolelievre) Krystian Podemski (@kpodemski) Mathieu Ferment (@matks) Matthieu Rolland (@matthieu-rolland) Pablo Borowicz (@eternoendless) Pierre Rambaud (@PierreRambaud) Pululu Kinanga André (@PululuK) Thomas Baccelli (@atomiix) Valentin Szczupak (@NeOMakinG)  UX Designers UX Designers make sure that interfaces follow the best practices in usability and design." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/project-organization/" /><meta property="article:section" content="maintainers-guide" />
+
+<meta property="article:modified_time" content="2022-02-24T20:12:15+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Project organization"/>
+<meta name="twitter:description" content="Project organization Project roles Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+Current product managers:
+ Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir)  Maintainers Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.
+Current maintainers:
+ Franck Lefèvre (@Progi1984) Ibrahima Sow (@sowbiba) Jonathan Lelièvre (@jolelievre) Krystian Podemski (@kpodemski) Mathieu Ferment (@matks) Matthieu Rolland (@matthieu-rolland) Pablo Borowicz (@eternoendless) Pierre Rambaud (@PierreRambaud) Pululu Kinanga André (@PululuK) Thomas Baccelli (@atomiix) Valentin Szczupak (@NeOMakinG)  UX Designers UX Designers make sure that interfaces follow the best practices in usability and design."/>
 
 
 
@@ -173,7 +187,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -187,13 +201,21 @@
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Maintainer&#39;s guide</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Project organization</li>
       
     
   </ol>
@@ -203,157 +225,114 @@
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-organization">Project organization</a>
+      <ul>
+        <li><a href="#project-roles">Project roles</a>
+          <ul>
+            <li><a href="#product-managers">Product Managers</a></li>
+            <li><a href="#maintainers">Maintainers</a></li>
+            <li><a href="#ux-designers">UX Designers</a></li>
+            <li><a href="#issue-managers">Issue Managers</a></li>
+            <li><a href="#software-testers">Software Testers</a></li>
+            <li><a href="#software-developers-in-test">Software Developers in Test</a></li>
+            <li><a href="#wording-manager">Wording Manager</a></li>
+            <li><a href="#user-documentation-managers">User Documentation Managers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="prestashop-maintainers-guide">PrestaShop maintainer&rsquo;s guide</h1>
-<p>This section describes processes and guidelines for project maintainers.</p>
-
-
-
-
-
-
-
-
-<ul class='children children-li'>
-	
-
-  
-		
-			
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/project-organization/" >Project organization</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/how-to-become-a-maintainer/" >How to become a maintainer</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/summary-github-lifecycle/" >Summary of how GitHub Issues and Pull Requests are processed</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/reviewing-pull-requests/" >Reviewing Pull Requests</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/releasing-prestashop/" >How to release a new PrestaShop version</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/release-a-native-ps-module/" >Release a native PrestaShop module</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/license/" >License &amp; license compatibility</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/" >Processes</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-
-	
+        <div class="content"><h1 id="project-organization">Project organization</h1>
+<h2 id="project-roles">Project roles</h2>
+<h3 id="product-managers">Product Managers</h3>
+<p>Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.</p>
+<p>Current product managers:</p>
+<ul>
+<li>Fabien Vallon (<a href="https://github.com/fabienvallon">@fabienvallon</a>)</li>
+<li>Mateus Shirlaw (<a href="https://github.com/MatShir">@MatShir</a>)</li>
 </ul>
-
-
-
-
-
+<h3 id="maintainers">Maintainers</h3>
+<p>Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.</p>
+<p>Current maintainers:</p>
+<ul>
+<li>Franck Lefèvre (<a href="https://github.com/Progi1984">@Progi1984</a>)</li>
+<li>Ibrahima Sow (<a href="https://github.com/sowbiba">@sowbiba</a>)</li>
+<li>Jonathan Lelièvre (<a href="https://github.com/jolelievre">@jolelievre</a>)</li>
+<li>Krystian Podemski (<a href="https://github.com/kpodemski">@kpodemski</a>)</li>
+<li>Mathieu Ferment (<a href="https://github.com/matks">@matks</a>)</li>
+<li>Matthieu Rolland (<a href="https://github.com/matthieu-rolland">@matthieu-rolland</a>)</li>
+<li>Pablo Borowicz (<a href="https://github.com/eternoendless">@eternoendless</a>)</li>
+<li>Pierre Rambaud (<a href="https://github.com/PierreRambaud">@PierreRambaud</a>)</li>
+<li>Pululu Kinanga André (<a href="https://github.com/PululuK">@PululuK</a>)</li>
+<li>Thomas Baccelli (<a href="https://github.com/atomiix">@atomiix</a>)</li>
+<li>Valentin Szczupak (<a href="https://github.com/NeOMakinG">@NeOMakinG</a>)</li>
+</ul>
+<h3 id="ux-designers">UX Designers</h3>
+<p>UX Designers make sure that interfaces follow the best practices in usability and design.</p>
+<p>Current UX designers:</p>
+<ul>
+<li>Scott Cosio (<a href="https://github.com/prestascott">@prestascott</a>)</li>
+<li>Tristan Lehot (<a href="https://github.com/TristanLDD">@TristanLDD</a>)</li>
+</ul>
+<h3 id="issue-managers">Issue Managers</h3>
+<p>Issue managers reproduce and qualify new issues to avoid duplicates and, if they are indeed defects in the software, their severity. They also redirect new improvement suggestions to the right Product Manager.</p>
+<p>Current issue managers:</p>
+<ul>
+<li>Florine Hea (<a href="https://github.com/florine2623">@florine2623</a>)</li>
+<li>Hana Rebai (<a href="https://github.com/HanaRebaiQA">@HanaRebaiQA</a>)</li>
+<li>Hibatallah Aouadni (<a href="https://github.com/hibatallahAouadni">@hibatallahAouadni</a>)</li>
+<li>Khouloud Belguith (<a href="https://github.com/khouloudbelguith">@khouloudbelguith</a>)</li>
+<li>Marwa Chelly (<a href="https://github.com/marwachelly">@marwachelly</a>)</li>
+</ul>
+<h3 id="software-testers">Software Testers</h3>
+<p>Software Testers make sure that the quality of the software improves over time, by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop&rsquo;s releases and its built-in modules.</p>
+<p>Current Software Testers:</p>
+<ul>
+<li>Florine Hea (<a href="https://github.com/florine2623">@florine2623</a>)</li>
+<li>Hana Rebai (<a href="https://github.com/HanaRebaiQA">@HanaRebaiQA</a>)</li>
+<li>Hibatallah Aouadni (<a href="https://github.com/hibatallahAouadni">@hibatallahAouadni</a>)</li>
+<li>Khouloud Belguith (<a href="https://github.com/khouloudbelguith">@khouloudbelguith</a>)</li>
+<li>Marwa Chelly (<a href="https://github.com/marwachelly">@marwachelly</a>)</li>
+<li>Robin Fischer (<a href="https://github.com/Robin-Fischer-PS">@Robin-Fischer-PS</a>)</li>
+<li>Sarah Dib (<a href="https://github.com/sarahdib">@sarahdib</a>)</li>
+</ul>
+<h3 id="software-developers-in-test">Software Developers in Test</h3>
+<p>Software Developers in Test provide technical vision, review contribution and write automated tests, which help accelerate the testing process.</p>
+<p>Current Software Developers in Test:</p>
+<ul>
+<li>Nesrine Abdmouleh (<a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a>)</li>
+<li>Stéphane Decisy (<a href="https://github.com/SD1982">@SD1982</a>)</li>
+<li>Boubker Bribri (<a href="https://github.com/boubkerbribri">@boubkerbribri</a>)</li>
+</ul>
+<h3 id="wording-manager">Wording Manager</h3>
+<p>Wording managers ensure that wordings are adequate, follow the project&rsquo;s tone of voice, and are categorized properly.</p>
+<p>Current wording managers:</p>
+<ul>
+<li>Julie Varisellaz (<a href="https://github.com/Julievrz">@Julievrz</a>)</li>
+</ul>
+<h3 id="user-documentation-managers">User Documentation Managers</h3>
+<p>User documentation managers ensure the quality and consistency of the <a href="https://docs.prestashop-project.org/">user documentation</a>.</p>
+<p>Current user documentation managers:</p>
+<ul>
+<li>Julie Varisellaz (<a href="https://github.com/Julievrz">@Julievrz</a>)</li>
+</ul>
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
