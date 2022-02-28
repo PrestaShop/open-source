@@ -73,6 +73,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
+**#jobs**
+- Description: Find a community expert to help you on your projects
+- Users: For the community at large
+- Owners: PrestaShop project administrators
+- Status: Public
+- Language: EN
+
 **#maintainers-and-core**
 - Description: For core maintainers, Product team and QA team, to discuss QA and Product topics
 - Users: For core maintainers, QA team and Product team
