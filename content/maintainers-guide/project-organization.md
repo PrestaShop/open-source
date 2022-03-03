@@ -42,6 +42,15 @@ If the scope is larger (example: being in charge of a folder inside a repository
 
 _(There are no scoped maintainers yet)_
 
+### Reviewers
+
+Reviewers help maintainers review code contributions.
+
+Current reviewers:
+
+- Hugues Gobet ([@tegbessou](https://github.com/tegbessou))
+- David Oury ([@saulaski](https://github.com/saulaski))
+
 ### UX Designers
 
 UX Designers make sure that interfaces follow the best practices in usability and design.

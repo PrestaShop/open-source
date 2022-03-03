@@ -28,7 +28,7 @@ Approving a Pull Request is a meaningful act. It carries multiple messages:
 
 2. **The resulting behavior is desired.** Some Pull Requests might be technically correct, but are not merged because they aren't considered useful for the project. For example a Pull Request implementing support for the XCF format for images is likely to be rejected as this esoteric image format is rarely used for the web.
 
-3. **Maintainers agree to maintain the added code.** Code that is merged inside the project becomes part of it. It means the project maintainers agree to maintain, manage, test, document and update this code as if it was their own.
+3. **Maintainers and reviewers agree to maintain the added code.** Code that is merged inside the project becomes part of it. It means the project maintainers agree to maintain, manage, test, document and update this code as if it was their own.
 
 Everybody in the community can and is encouraged to review submitted Pull Requests. However, only some project members have the ability to accept or reject contributions.
 
@@ -127,9 +127,13 @@ Pull Requests may be closed after 30 days of inactivity following a request for 
 
 A Pull Request may only be merged after the following requirements have been fulfilled:
 
-- The change has received all the required approvals.
+- The change has received all the required approvals
 - The change does not have any outstanding merge conflicts.
 - Automated checks (including automated tests) are passing.
+
+On the [PrestaShop Core repository][prestashop-core-repository]), two approvals are required:
+- either two approvals set by two maintainers
+- or one approval by a committer and one approval by a reviewer
 
 ### After merging
 
