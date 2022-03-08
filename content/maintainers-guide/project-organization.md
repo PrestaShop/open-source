@@ -48,9 +48,6 @@ Reviewers help maintainers review code contributions.
 
 Current reviewers:
 
-- Hugues Gobet ([@tegbessou](https://github.com/tegbessou))
-- David Oury ([@saulaski](https://github.com/saulaski))
-
 ### UX Designers
 
 UX Designers make sure that interfaces follow the best practices in usability and design.
