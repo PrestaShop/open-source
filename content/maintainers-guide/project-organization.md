@@ -42,11 +42,11 @@ If the scope is larger (example: being in charge of a folder inside a repository
 
 _(There are no scoped maintainers yet)_
 
-### Reviewers
+### Committers
 
-Reviewers help maintainers review code contributions.
+Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
 
-Current reviewers:
+Current committers: No one yet.
 
 ### UX Designers
 
