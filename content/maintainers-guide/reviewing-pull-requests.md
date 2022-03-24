@@ -128,6 +128,17 @@ It is also recommended to :
 - Thank the Pull Request author and anybody else who invested notable energy into the Pull Request (code review, code suggestions, QA validation, usecase specification ...).
 - If the Pull Request is related to an issue, check whether the issue is fixed and closed (it might be done automatically depending on the Pull Request) and whether it should be.
 
+### Pull Requests that need an update of the [developer documentation][dev-doc]
+
+If a Pull Request contains changes that need an update of the developer documentation, please add the label "Needs documentation" when the PR is accepted.
+
+Later, when the documentation has been updated, we can remove the previous label and add "Documentation ✓".
+
+Example of such Pull Requests:
+- If it contains [BC breaks][bc-break], BC breaks need to be listed
+- If it introduces a new component or system, it must be documented, especially if we expect theme or module developers to use it
+- If it modifies an item document, so that the documention becomes erroneous or outdated
+
 ## Stale Pull Requests
 
 Pull Requests may be closed after 30 days of inactivity following a request for modifications.
@@ -142,3 +153,4 @@ Pull Requests may be closed after 30 days of inactivity following a request for 
 [RTL]: {{< devdocs "themes/reference/rtl/" >}}
 [pull-request-process]: {{< devdocs "contribute/contribution-process/how-pull-requests-are-processed/" >}}
 [semver]: https://semver.org/
+[dev-doc]: https://github.com/prestashop/docs
