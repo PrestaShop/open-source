@@ -32,7 +32,7 @@ It provides lot of benefits:
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
+<meta property="article:modified_time" content="2022-03-24T10:44:10+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -248,6 +248,7 @@ It provides lot of benefits:
         <li><a href="#merging-pull-requests">Merging Pull Requests</a>
           <ul>
             <li><a href="#marking-merged-pull-requests">Marking merged Pull Requests</a></li>
+            <li><a href="#pull-requests-that-need-an-update-of-the-developer-documentationdev-doc">Pull Requests that need an update of the <a href="https://github.com/prestashop/docs">developer documentation</a></a></li>
           </ul>
         </li>
         <li><a href="#stale-pull-requests">Stale Pull Requests</a></li>
@@ -357,6 +358,15 @@ Conversely, non-compliant contributions <strong>should not</strong> be accepted.
 <ul>
 <li>Thank the Pull Request author and anybody else who invested notable energy into the Pull Request (code review, code suggestions, QA validation, usecase specification &hellip;).</li>
 <li>If the Pull Request is related to an issue, check whether the issue is fixed and closed (it might be done automatically depending on the Pull Request) and whether it should be.</li>
+</ul>
+<h3 id="pull-requests-that-need-an-update-of-the-developer-documentationdev-doc">Pull Requests that need an update of the <a href="https://github.com/prestashop/docs">developer documentation</a></h3>
+<p>If a Pull Request contains changes that need an update of the developer documentation, please add the label &ldquo;Needs documentation&rdquo; when the PR is accepted.</p>
+<p>Later, when the documentation has been updated, we can remove the previous label and add &ldquo;Documentation ✓&rdquo;.</p>
+<p>Example of such Pull Requests:</p>
+<ul>
+<li>If it contains <a href="https://stackoverflow.com/questions/8891005/what-does-bc-break-mean">BC breaks</a>, BC breaks need to be listed</li>
+<li>If it introduces a new component or system, it must be documented, especially if we expect theme or module developers to use it</li>
+<li>If it modifies an item document, so that the documention becomes erroneous or outdated</li>
 </ul>
 <h2 id="stale-pull-requests">Stale Pull Requests</h2>
 <p>Pull Requests may be closed after 30 days of inactivity following a request for modifications.</p>
