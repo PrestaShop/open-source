@@ -40,7 +40,6 @@ UX Designers make sure that interfaces follow the best practices in usability an
 
 Current UX designers:
 
-- Scott Cosio ([@prestascott](https://github.com/prestascott))
 - Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
 
 ### Issue Managers
@@ -61,6 +60,7 @@ Software Testers make sure that the quality of the software improves over time, 
 
 Current Software Testers:
 
+- Aurélien Rita ([@AureRita](https://github.com/AureRita))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
