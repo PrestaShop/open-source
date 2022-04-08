@@ -16,9 +16,9 @@ Current product managers:
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 
-### Maintainers
+### Project Maintainers
 
-Maintainers provide the technical vision for the project, review code contributions, and ensure that the software is developed according to the product vision.
+Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.
 
 Current maintainers:
 
@@ -33,6 +33,12 @@ Current maintainers:
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 - Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
+
+#### Scoped Maintainers
+
+Scoped Maintainers have the same mission as Project Maintainers, but over a limited scope (e.g. a project, a repository, or a technology).
+
+_(There are no scoped maintainers yet)_
 
 ### UX Designers
 

@@ -10,6 +10,7 @@ In the PrestaShop project, maintainers are contributors with merge rights.
 The maintainer status is a position of great power, but it also carries great responsibility.
 As gatekeepers to the project's code, maintainers are ultimately responsible for every contribution that is included in the project. 
 
+Candidates can apply to become maintainer over the whole project, or just a scope (a project, a repository, or a technology).
 
 ## Requirements to become a maintainer
 
