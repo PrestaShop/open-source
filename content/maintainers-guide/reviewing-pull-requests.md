@@ -185,18 +185,18 @@ The following labels are added when an action is required:
 
 The following labels provide metadata and are essentially informative:
 
-| Label                                          | Meaning                                                      |
-|:-----------------------------------------------|:-------------------------------------------------------------|
-| <label type="type">Bug fix</label>             | This PR fixes a bug                                          |
-| <label type="type">Feature</label>             | This PR introduces a new feature                             |
-| <label type="type">Improvement</label>         | This PR is an improvement (e.g. performance)                 |
-| <label type="type">Refactoring</label>         | This PR is a refactoring                                     |
-| <label type="branch">1.7.8.x</label>           | Destination branch (e.g. 1.7.8.x, develop, ...)              |
-| <label type="bcbreak">BC break</label>         | This PR includes breaking changes                            |
-| <label type="keyfeature">Key feature</label>   | This PR includes a feature to be highlighted in this release |
-| <label type="wip">WIP</label>                  | This PR is a work in progress                                |
-| <label type="e2e">E2E</label>                  | This PR is about end-to-end automated tests                  |
-| <label type="migration">migration</label>      | This PR is about the Symfony migration project               |
+| Label                                        | Meaning                                                      |
+|:---------------------------------------------|:-------------------------------------------------------------|
+| <label type="type">Bug fix</label>           | This PR fixes a bug                                          |
+| <label type="type">Feature</label>           | This PR introduces a new feature                             |
+| <label type="type">Improvement</label>       | This PR is an improvement (e.g. performance)                 |
+| <label type="type">Refactoring</label>       | This PR is a refactoring                                     |
+| <label type="branch">1.7.8.x</label>         | Destination branch (e.g. 1.7.8.x, develop, ...)              |
+| <label type="bcbreak">BC break</label>       | This PR includes breaking changes                            |
+| <label type="keyfeature">Key feature</label> | This PR includes a feature to be highlighted in this release |
+| <label type="wip">WIP</label>                | This PR is a work in progress                                |
+| <label type="e2e">E2E Tests</label>          | This PR is about UI automated tests                          |
+| <label type="migration">migration</label>    | This PR is about the Symfony migration project               |
 
 
 
