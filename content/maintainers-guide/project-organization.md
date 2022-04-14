@@ -38,6 +38,9 @@ Current maintainers:
 
 Scoped Maintainers have the same mission as Project Maintainers, but over a limited scope (e.g. a project, a repository, or a technology).
 
+If the scope is one or multiple repositories, maintainers rights are granted only on these repositories.
+If the scope is larger (example: being in charge of a folder inside a repository) maintainer rights are granted on the repository and the scoped maintainer is trusted not to abuse.
+
 _(There are no scoped maintainers yet)_
 
 ### UX Designers
