@@ -43,14 +43,12 @@ The teams On GitHub, there are mainly three teams working together on the projec
     </item>
     
     <item>
-      <title>Reviewing Pull Requests</title>
+      <title>Reviewing and approving Pull Requests</title>
       <link>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</guid>
-      <description>Reviewing Pull Requests The code review process is generally regarded as a good practice and is adopted by hundreds of software projects around the world.
-It provides lot of benefits:
- it helps spotting errors in the code, because we all make mistakes and it can be hard to find one&amp;rsquo;s own mistakes. it helps improving code quality not only by ensuring it&amp;rsquo;s readable and understandable, but also by pinpointing design, performance or security issues that may have been unintentionally introduced by the author.</description>
+      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
     </item>
     
     <item>
