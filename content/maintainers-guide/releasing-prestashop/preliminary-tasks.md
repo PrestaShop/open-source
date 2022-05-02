@@ -88,7 +88,7 @@ Make sure that in the current branch:
   php bin/console prestashop:linter:legacy-link
   ```
   
-* There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]
+* There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]. Consider using [this][security-checker-installer] if installing Fabpot Security Checker proves troublesome.
 
 * _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
 
@@ -126,3 +126,4 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [fos-js-routing]: https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
 [how-to-build-assets]: {{< devdocs "development/compile-assets/" >}}
 [nightly-build-board]: https://nightly.prestashop.com/
+[security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
