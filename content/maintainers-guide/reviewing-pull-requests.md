@@ -127,7 +127,7 @@ Pull Requests may be closed after 30 days of inactivity following a request for 
 
 A Pull Request may only be merged after the following requirements have been fulfilled:
 
-- The change has received all the required approvals
+- The change has received all the required approvals.
 - The change does not have any outstanding merge conflicts.
 - Automated checks (including automated tests) are passing.
 
