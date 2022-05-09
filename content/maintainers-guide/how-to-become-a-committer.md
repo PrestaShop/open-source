@@ -50,7 +50,7 @@ At the end of the 90-day trial period, the committer is confirmed in his positio
 
 ## How to lose the committer status
 
-A project maintainer can be revoked for any of the following reasons:
+A project committer status can be revoked for any of the following reasons:
 
 - Refusal to follow the rules and policies stated in this document.
 - Lack of activity for the past three months.
