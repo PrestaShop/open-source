@@ -31,6 +31,17 @@ Candidates can apply to become maintainer over the whole project, or just a scop
     </item>
     
     <item>
+      <title>How to become a committer</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-committer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-committer/</guid>
+      <description>How to become a committer In the PrestaShop project, committer are contributors with partial merge rights.
+Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
+Requirements to become a committer  Active participation in the project  Display a record of several accepted, quality Pull Requests having received little or no objections from maintainers. Display a record of Pull Request reviews.</description>
+    </item>
+    
+    <item>
       <title>Summary of how GitHub Issues and Pull Requests are processed</title>
       <link>https://www.prestashop-project.org/maintainers-guide/summary-github-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
