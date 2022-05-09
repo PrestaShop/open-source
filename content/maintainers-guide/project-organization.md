@@ -40,7 +40,7 @@ Scoped Maintainers have the same mission as Project Maintainers, but over a limi
 If the scope is one or multiple repositories, maintainers rights are granted only on these repositories.
 If the scope is larger (example: being in charge of a folder inside a repository) maintainer rights are granted on the repository and the scoped maintainer is trusted not to abuse.
 
-_(There are no scoped maintainers yet)_
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) is maintainer for [Classic](https://github.com/prestashop/classic-theme) and [Hummingbird](https://github.com/prestashop/hummingbird) themes
 
 ### Committers
 
