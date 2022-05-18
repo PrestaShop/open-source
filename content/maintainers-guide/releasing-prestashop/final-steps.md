@@ -74,7 +74,7 @@ If during the process you encountered issues or there was some information not 1
 {{% notice tip %}}
 **Congratulations!**
 
-The release is now complete, you can close the Relese Tracker GitHub issue.
+The release is now complete, you can close the Release Tracker GitHub issue.
 {{% /notice %}}
 
 [docker-repository]: https://github.com/PrestaShop/docker
