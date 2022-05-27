@@ -53,7 +53,7 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
  Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions.</description>
+2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions.</description>
     </item>
     
   </channel>

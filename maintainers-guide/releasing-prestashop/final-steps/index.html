@@ -27,18 +27,18 @@
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
  Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions."/>
+2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions."/>
 <meta property="og:title" content="Final steps" />
 <meta property="og:description" content="Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
  Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions." />
+2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-10-25T18:00:32+02:00" />
+<meta property="article:modified_time" content="2022-05-18T10:39:12+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -48,7 +48,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
  Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions."/>
+2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions."/>
 
 
 
@@ -242,6 +242,24 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#final-steps">Final steps</a>
+      <ul>
+        <li><a href="#1-update-api-stream-for-1-click-upgrade">1. Update API stream for 1-click upgrade</a></li>
+        <li><a href="#2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</a></li>
+        <li><a href="#3-go-through-the-checklist">3. Go through the checklist</a></li>
+        <li><a href="#4-improve-the-process">4. Improve the process</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
         <div class="content"><h1 id="final-steps">Final steps</h1>
@@ -259,15 +277,15 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 <p>Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.</p>
 <h2 id="2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</h2>
 <ul>
-<li>Checkout the <a href="https://github.com/PrestaShop/docker">project</a> and create a new branch</li>
+<li>Checkout the <a href="https://github.com/PrestaShop/docker">project</a>, install the project and create a new branch</li>
 <li>Modify the file <code>versions.py</code> to add the new version and the related php matrix compatibility</li>
 <li>Commit these changes</li>
 <li>Run <code>prestashop_docker.py generate</code> to generate the new Dockerfiles in the folder <code>images/</code> (See <a href="https://github.com/PrestaShop/docker/blob/master/HOW-TO-USE.md">documentation</a>)</li>
 <li>Commit these changes</li>
-<li>Push to your fork or the original repository, create a PR and wait for the tests to pass before merging.</li>
-<li>Someone with owner access to <a href="https://hub.docker.com/r/prestashop/prestashop/">PrestaShop Docker Hub</a> organization will have to push the new images to Docker Registry.</li>
+<li>Push to your fork or the original repository, create a PR and wait for the tests to pass before merging (see this <a href="https://github.com/PrestaShop/docker/pull/287">example</a>)</li>
+<li>Once the PR has been merged, a GitHub Action will publish the new images on Docker</li>
 </ul>
-<p>This process is manual, but the <a href="https://hub.docker.com/r/prestashop/docker-internal-images">Docker images</a> and the projects using them are automatically updated.</p>
+<p>Some other registries depend on this registry to be updated (like <a href="https://hub.docker.com/r/prestashop/docker-internal-images">Docker internal images</a>). The update will be automatic.</p>
 <p>It may take a few hours for the images to be updated.</p>
 <p>You can update the Release Tracker GitHub issue: step &ldquo;Docker image&rdquo; is done.</p>
 <h2 id="3-go-through-the-checklist">3. Go through the checklist</h2>
@@ -317,9 +335,11 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 <p>Check that the <a href="https://demo.prestashop.com">public demo</a> runs on the latest version (a few hours after the docker image release)</p>
 </li>
 </ul>
+<h2 id="4-improve-the-process">4. Improve the process</h2>
+<p>If during the process you encountered issues or there was some information not 100% clear, please improve this process documentation.</p>
 
 <div class="notices tip" ><p><strong>Congratulations!</strong></p>
-<p>The release is now complete, you can close the Relese Tracker GitHub issue.</p>
+<p>The release is now complete, you can close the Release Tracker GitHub issue.</p>
 </div>
 
 </div>
