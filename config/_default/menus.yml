@@ -9,14 +9,17 @@ main:
   - name: "GitHub"
     url: "https://github.com/PrestaShop/PrestaShop/"
     weight: 2
-  - name: "Contribute"
-    url: "https://devdocs.prestashop.com/1.7/contribute/"
+  - name: "Get Involved"
+    url: "https://devdocs.prestashop.com/8/contribute/"
     weight: 3
   - name: "Contributors"
     url: "https://contributors.prestashop.com/"
-    weight: 4    
-  - name: "Resources"
+    weight: 4
+  - name: "Support"
+    pageRef: "support"
     weight: 5
+  - name: "Resources"
+    weight: 6
 
 footer_left:
   - name: Blog

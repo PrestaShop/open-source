@@ -23,15 +23,15 @@ Once this step is done, update the Release Tracker GitHub issue by ticking the "
 
 ## 2. Create Docker images for the new version
 
-* Checkout the [project][docker-repository] and create a new branch
+* Checkout the [project][docker-repository], install the project and create a new branch
 * Modify the file `versions.py` to add the new version and the related php matrix compatibility
 * Commit these changes
 * Run `prestashop_docker.py generate` to generate the new Dockerfiles in the folder `images/` (See [documentation][docker-generate-doc])
 * Commit these changes
-* Push to your fork or the original repository, create a PR and wait for the tests to pass before merging.
-* Someone with owner access to [PrestaShop Docker Hub][docker-hub-prestashop] organization will have to push the new images to Docker Registry.
+* Push to your fork or the original repository, create a PR and wait for the tests to pass before merging (see this [example][docker-release-pr-example])
+* Once the PR has been merged, a GitHub Action will publish the new images on Docker
 
-This process is manual, but the [Docker images](https://hub.docker.com/r/prestashop/docker-internal-images) and the projects using them are automatically updated.
+Some other registries depend on this registry to be updated (like [Docker internal images](https://hub.docker.com/r/prestashop/docker-internal-images)). The update will be automatic.
 
 It may take a few hours for the images to be updated.
 
@@ -66,14 +66,18 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
 * Check that the latest release has an available docker image on the [Docker repository][docker-repository]
 * Check that the [public demo](https://demo.prestashop.com) runs on the latest version (a few hours after the docker image release)
 
+## 4. Improve the process
+
+If during the process you encountered issues or there was some information not 100% clear, please improve this process documentation.
+
 
 {{% notice tip %}}
 **Congratulations!**
 
-The release is now complete, you can close the Relese Tracker GitHub issue.
+The release is now complete, you can close the Release Tracker GitHub issue.
 {{% /notice %}}
 
 [docker-repository]: https://github.com/PrestaShop/docker
 [docker-hub-prestashop]: https://hub.docker.com/r/prestashop/prestashop/
-[docker-release-pr-example]: https://github.com/PrestaShop/docker/pull/255
+[docker-release-pr-example]: https://github.com/PrestaShop/docker/pull/287
 [docker-generate-doc]: https://github.com/PrestaShop/docker/blob/master/HOW-TO-USE.md
