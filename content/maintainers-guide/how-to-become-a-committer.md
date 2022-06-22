@@ -38,6 +38,8 @@ All the above, plus:
 2. If three maintainers approve the application, the new committer is approved.
 3. After 30 days, if the issue did not receive three positive votes, it is considered rejected and closed.
 
+Note: the above process is not mandatory for individuals who are offered the committer role by maintainers, as long as the candidate is supported by at least three maintainers.
+
 Upon approval, new committer is granted full committer rights and accesses for a 90-day trial period. This period aims to provide both the maintainer team and the new committer a better understanding of this new arrival and to validate whether expectations meet reality. Both maintainer team or new committer can express their wish for this situation to end before the 90-day trial period, revoking the committer status.
 
 At the end of the 90-day trial period, the committer is confirmed in his position.
