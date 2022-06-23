@@ -10,18 +10,13 @@ In the PrestaShop project, committer are contributors with partial merge rights.
 Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
 
 
-## Requirements to become a committer
+## Prerequisites to become a committer
 
 1. **Active participation in the project**
-    - Display a record of several accepted, quality Pull Requests having received little or no objections from maintainers.
+    - Have at least one accepted, quality Pull Request.
     - Display a record of Pull Request reviews.
-    - Be active in the project’s [Slack][slack] chat.
-    - Real interest in getting involved.
-2. **Demonstrate a good level of technical knowledge**
-    - Justify a good level of technical skills (SOLID, readable, well-documented, stable, testable code) – in discussions and in code contributions.
-    - Display a good understanding of the project, its architecture, its ecosystem, its constraints (transparency, license, backwards compatibility, dependencies, expected behavior...)
-    - Be competent with git and the GitHub workflow (use a fork, be able to rebase, be able to fetch and update a remote branch...)
-3. **Cultural convergence**
+    - Real interest in getting involved in code review.
+2. **Cultural convergence**
     - Respect the Code of Conduct; behave respectfully and in good faith.
     - Agree to work together with the rest of the maintainer team towards main goals (see [The Future Architecture][future-architecture]): migration to Symfony, adoption of VueJS ...
 
@@ -40,9 +35,10 @@ All the above, plus:
 ## How to apply to be a committer
 
 1. [Open an issue on the open source repository](https://github.com/PrestaShop/open-source/issues/new) explaining why you apply to become a committer, and on what part of the project (Core or module/subproject).
-2. Discuss with current maintainers on this issue; particularly, this will be the time for maintainers to analyze the candidate's motivation and skills on the different parts of the project that they applied for.
-3. Once all questions have been answered, current maintainers vote.
-4. If the simple majority of positive votes is achieved, the new committer is approved.
+2. If three maintainers approve the application, the new committer is approved.
+3. After 30 days, if the issue did not receive three positive votes, it is considered rejected and closed.
+
+Note: the above process is not mandatory for individuals who are offered the committer role by maintainers, as long as the candidate is supported by at least three maintainers.
 
 Upon approval, new committer is granted full committer rights and accesses for a 90-day trial period. This period aims to provide both the maintainer team and the new committer a better understanding of this new arrival and to validate whether expectations meet reality. Both maintainer team or new committer can express their wish for this situation to end before the 90-day trial period, revoking the committer status.
 
@@ -56,6 +52,7 @@ A project committer status can be revoked for any of the following reasons:
 - Lack of activity for the past three months.
 - Willful negligence or intent to harm the PrestaShop project.
 - On their demand, for personal reasons.
+- On request of at least three maintainers.
 
 [future-architecture]: https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
 [slack]: {{< param ProjectUrls.Slack >}}
