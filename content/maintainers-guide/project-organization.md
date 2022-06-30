@@ -22,7 +22,6 @@ Project maintainers provide the technical vision for the whole project, reviewin
 
 Current maintainers:
 
-- Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
 - Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
