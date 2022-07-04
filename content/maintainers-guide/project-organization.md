@@ -45,7 +45,9 @@ If the scope is larger (example: being in charge of a folder inside a repository
 
 Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
 
-Current committers: No one yet.
+Current committers:
+
+- Thomas Roux ([@okom3pom](https://github.com/okom3pom))
 
 ### UX Designers
 
