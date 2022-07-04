@@ -112,3 +112,11 @@ User documentation managers ensure the quality and consistency of the [user docu
 Current user documentation managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+
+### Technical Documentation Managers
+
+Tech documentation manageres ensure the quality and consistency of the [developer documentation](https://devdocs.prestashop-project.org/)
+
+Current user documentation managers:
+
+_No one yet_
