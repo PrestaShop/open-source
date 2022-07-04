@@ -62,11 +62,13 @@ Issue managers reproduce and qualify new issues to avoid duplicates and, if they
 
 Current issue managers:
 
+- Aurélien Rita ([@AureRita](https://github.com/AureRita))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
 - Marwa Chelly ([@marwachelly](https://github.com/marwachelly))
+- Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 
 ### Software Testers
 
@@ -81,6 +83,7 @@ Current Software Testers:
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
 - Marwa Chelly ([@marwachelly](https://github.com/marwachelly))
 - Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
+- Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
 
 ### Software Developers in Test
