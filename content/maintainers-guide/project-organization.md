@@ -115,8 +115,8 @@ Current user documentation managers:
 
 ### Technical Documentation Managers
 
-Tech documentation manageres ensure the quality and consistency of the [developer documentation](https://devdocs.prestashop-project.org/)
+Tech documentation managers ensure the quality and consistency of the [developer documentation](https://devdocs.prestashop-project.org/)
 
-Current user documentation managers:
+Current tech documentation managers:
 
 _No one yet_
