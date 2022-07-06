@@ -47,7 +47,11 @@ Committers participate in reviewing code contributions and are able to include t
 
 Current committers:
 
+- Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
+- Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
+- Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Thomas Roux ([@okom3pom](https://github.com/okom3pom))
+- Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 
 ### UX Designers
 
