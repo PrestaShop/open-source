@@ -31,6 +31,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
+**#committers**
+- Description: For committers, to discuss the project management
+- Users: For core maintainers and committers
+- Owners: PrestaShop project maintainers
+- Status: Private
+- Language: EN
+
 **#community-help**
 - Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.
 - Users: For the community at large
@@ -80,13 +87,6 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
-**#maintainers-and-core**
-- Description: For core maintainers, Product team and QA team, to discuss QA and Product topics
-- Users: For core maintainers, QA team and Product team
-- Owners: PrestaShop project maintainers
-- Status: Private
-- Language: EN
-
 **#maintainers-core**
 - Description: For core maintainers, to discuss the project management
 - Users: For core maintainers
@@ -100,6 +100,13 @@ Please note that like any open source project, the main language on this Slack i
 - Owners: Nicolas Rateau (PrestaShop)
 - Status: Private
 - Language: FR
+
+**#project-members**
+- Description: For all project members to discuss any topic
+- Users: For core maintainers and committers, QA team and Product team
+- Owners: PrestaShop project administrators
+- Status: Private
+- Language: EN
 
 **#product**
 - Description: Features, roadmap, and everything about product management around the open source project
@@ -129,3 +136,9 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Private
 - Language: EN
 
+**#translation**
+- Description: For discussions about translating the project
+- Users: For the community at large
+- Owners: Translation managers
+- Status: Public
+- Language: EN
