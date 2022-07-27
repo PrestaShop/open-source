@@ -36,7 +36,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2022-04-15T15:22:26+02:00" />
+<meta property="article:modified_time" content="2022-07-27T19:00:07+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -341,11 +341,6 @@ php bin/console prestashop:linter:legacy-link
 <li>
 <p>Any new native modules have been added into <code>composer.json</code> and their latest versions have been updated in <code>composer.lock</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">composer outdated -D <span class="s2">&#34;prestashop/*&#34;</span>
-</code></pre></div></li>
-<li>
-<p><em>(1.7.7.x patch releases only)</em> – Static assets have been <a href="https://devdocs.prestashop.com//8/development/compile-assets/
-">built, updated and committed</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">./tools/assets/build.sh
 </code></pre></div></li>
 <li>
 <p><a href="https://nightly.prestashop.com/">Nightly builds</a> are green</p>
