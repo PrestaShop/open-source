@@ -107,13 +107,7 @@ Make sure that in the current branch:
   ```bash
   composer outdated -D "prestashop/*"
   ```
-  
-* _(1.7.7.x patch releases only)_ – Static assets have been [built, updated and committed][how-to-build-assets]:
-  
-  ```bash
-  ./tools/assets/build.sh
-  ```
-  
+    
 * [Nightly builds][nightly-build-board] are green
 
 
