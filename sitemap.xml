@@ -50,9 +50,6 @@
     <loc>https://www.prestashop-project.org/about/</loc>
     <lastmod>2021-06-17T15:01:25-03:00</lastmod>
   </url><url>
-    <loc>https://www.prestashop-project.org/slack/</loc>
-    <lastmod>2021-10-25T17:49:45+02:00</lastmod>
-  </url><url>
     <loc>https://www.prestashop-project.org/categories/</loc>
   </url><url>
     <loc>https://www.prestashop-project.org/code-of-conduct/</loc>
@@ -66,6 +63,9 @@
   </url><url>
     <loc>https://www.prestashop-project.org/modules-themes/</loc>
     <lastmod>2021-06-16T14:36:06-03:00</lastmod>
+  </url><url>
+    <loc>https://www.prestashop-project.org/slack/</loc>
+    <lastmod>2022-08-05T11:14:15+02:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/</loc>
     <lastmod>2021-10-25T18:00:32+02:00</lastmod>
