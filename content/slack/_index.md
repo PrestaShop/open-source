@@ -1,5 +1,5 @@
 ---
-title: PrestaShop Project's Slack chat
+title: PrestaShop Project's Slack Chat
 
 menu:
   main:
@@ -10,9 +10,9 @@ aliases:
   - /slack/readme/
 ---
 
-# PrestaShop Project's Slack chat
+# PrestaShop Project's Slack Chat
 
-The project's Slack chat is open to anyone who wants to discuss, help and contribute to the PrestaShop open source project. If you are an active contributor, or want to become one, this is definitely a place to be!
+The project's Slack chat is open to anyone who wants to discuss, help and contribute to the PrestaShop open source project. If you are an active contributor, or want to become one, this is definitely the place to be!
 
 <a class="btn btn-primary" style="margin: 2rem auto" href="https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg">Request an invitation for PrestaShop's Slack chat</a>
 {.text-center}
