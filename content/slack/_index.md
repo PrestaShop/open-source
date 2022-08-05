@@ -1,70 +1,37 @@
 ---
-title: About the project's Slack
+title: PrestaShop Project's Slack Chat
 
 menu:
   main:
     parent: 'Resources'
-    name: 'Slack'
+    name: 'Slack chat'
 
 aliases:
   - /slack/readme/
 ---
 
-# About the project's Slack
+# PrestaShop Project's Slack Chat
 
-## General presentation
+The project's Slack chat is open to anyone who wants to discuss, help and contribute to the PrestaShop open source project. If you are an active contributor, or want to become one, this is definitely the place to be!
 
-A chat has always been a good way to communicate around an open source project. In the past, IRC would have been the default choice. But nowadays, in PrestaShop ecosystem, people really enjoy Slack, which is why it has been chosen.
+<a class="btn btn-primary" style="margin: 2rem auto" href="https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg">Request an invitation for PrestaShop's Slack chat</a>
+{.text-center}
 
-This communication channel is open to anyone who wants to help and contribute to the PrestaShop open source project. There are many ways to contribute:
+## Ground rules & good practices
 
-- Using the software
-- Planning, sponsorising, or speaking at events (meetups, conferences, ...)
-- Designing (specifications, UX/UI, ...)
-- Writing (documentation, blog posts, tutorials, video, ...)
-- Gardening (sorting GitHub issues, moderating community forum, ...)
-- Helping community members
-- Reporting bugs
-- Writing code (require coding skills)
+- Communicate respectfully and constructively. The project's [Code of Conduct]({{< relref "/code-of-conduct" >}}) applies to Slack as well. Disrespectful behavior will not be tolerated.
+- English is the project's official working language. When discussing in public channels, please use English only.
+- Help people know who you are by filling out your Slack user profile. Consider adding your real name, your company, and of course, your GitHub account if you have one.
+- If you need help, see [Get help with PrestaShop]({{< relref "/support" >}}).
+- If you find a bug in the project, don't forget to [report it on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
+- If you find the solution to your question, consider [improving the docs](https://github.com/PrestaShop/docs).
 
-The objective is to grow the ecosystem around the software, and of course, to improve the software itself.
+{{% notice tip %}}
+**Tip:** If you feel that someone is being aggressive, consider the possibility that English might not be their native language, and thus they might be having a hard time expressing themselves effectively. Keep a cool head and assume good intentions until proven otherwise.
+{{% /notice %}}
 
-If you are an active contributor, or want to become one, then this is definitely a place to be. 
+## More information
 
-More information:
-
-- [List of current active channels]({{< ref "channels.md#active-channels" >}})
-- [Request a new channel]({{< ref "channels.md#request-a-new-channel" >}})
-- [List of active applications]({{< ref "apps-and-integrationsapps-and-integrations" >}})
-
-## Foster great discussions between many people
-
-Please keep in mind that the main language on the PrestaShop open source Slack in English, as it is an international project.
-
-In order to foster respectful discussions, everybody is invited to read and follow the [Code of Conduct]({{< ref "/code-of-conduct" >}}).
-
-Quick reminder: if you feel that someone is agressive, please take in account that not everyone is a native English speaker. They might just write basic English or do not find the good words to be polite. Let's be tolerant and try to understand each other and collaborate.
-
-Community members with bad behavior will be banned.
-
-
-## Creating a knowledge base
-
-Slack, and chats in general, is an ephemeral communication channel. It means this is a good place to create links between people and have open discussions on a large range of topics.
-
-But this is not the good place for technical support, as answers will quickly be lost in archives and threads. And new people will come and ask the same questions again.
-
-This is why it is asked to community members that, when submitting a technical question, please [create an issue on the Devdocs](https://github.com/PrestaShop/docs/issues). The link to the issue will then be shared on the relevant Slack channel.
-
-The answers will then be used to improve the technical documentation.
-
-
-## Joining the PrestaShop open source project's Slack
-
-If you read the information on this document and you agree to follow them, you are ready to join prestashop.slack.com. Please click on the link below:
-
-[Request an invitation for prestashop.slack.com](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg)
-
-When you join this Slack instance, do not forget to fill your profile with some personnal information in order to ease identifying you, like your real name, your company, and of course, your GitHub account if you are a developer.
-
-Enjoy!
+- [List of current active channels]({{< relref "channels.md#active-channels" >}})
+- [Request a new channel]({{< relref "channels.md#request-a-new-channel" >}})
+- [List of active applications]({{< relref "apps-and-integrationsapps-and-integrations" >}})
