@@ -19,8 +19,8 @@ then
   wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_OS}.tar.gz
 
   rm -rf hugo
-  tar -xzf hugo_${HUGO_VERSION}_${HUGO_OS}.tar.gz hugo
-  rm hugo_${HUGO_VERSION}_${HUGO_OS}.tar.gz
+  tar -xzf hugo_extended_${HUGO_VERSION}_${HUGO_OS}.tar.gz hugo
+  rm hugo_extended_${HUGO_VERSION}_${HUGO_OS}.tar.gz
 else
   echo 'Hugo is already installed in this environment'
 fi
