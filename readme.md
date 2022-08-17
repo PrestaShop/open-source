@@ -23,9 +23,22 @@ Follow the work on the Kanban: https://github.com/PrestaShop/open-source/project
 
 # Rendering the site locally
 
-Change PrestaShop by your Fork 
+1. Clone the repository somewhere on your system:
+    ```
+    git clone --recurse-submodules https://github.com/PrestaShop/open-source.git
+    ```
 
-`git clone --recurse-submodules https://github.com/PrestaShop/open-source.git`
+2. Switch to the `open-source` directory:
+    ```
+    cd open-source
+    ```
 
-`hugo server`
+3. Install Hugo (optional if already installed):
+    ```
+    ./bin/installHugo.sh
+    ```
 
+4. Launch Hugo:
+    ```
+    hugo server
+    ```
