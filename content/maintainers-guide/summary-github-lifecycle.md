@@ -52,7 +52,7 @@ This is why so much Issues cannot be reproducted on our side, but to find it out
 
 ### Support request
 
-We sometimes receive support requests on GitHub, ranging from questions about the software to "please help me to do X in my shop" requests. GitHub is for the software development so we usually redirect users to [other channels](/support/).
+We sometimes receive support requests on GitHub, ranging from questions about the software to "please help me to do X in my shop" requests. GitHub is for the software development so we usually redirect users to [other channels]({{< relref "/support" >}}).
 
 ### Other
 
