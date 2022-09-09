@@ -35,6 +35,8 @@ Some of steps will require special tools or access rights which are currently no
    
    - **Make sure the default translation catalogue has been updated and pushed to Crowdin.**  
    _To make any new wordings translatable._
+
+   - **Lock the theme version.**  
     
    - **Perform manual verifications.**  
    _To make sure that the project is ready to be built._
