@@ -4,13 +4,13 @@ main:
   #  enable: false
   #  weight: 1
   - name: "Blog"
-    url: "https://build.prestashop.com"
+    url: "https://build.prestashop-project.org/"
     weight: 1
   - name: "GitHub"
     url: "https://github.com/PrestaShop/PrestaShop/"
     weight: 2
   - name: "Get Involved"
-    url: "https://devdocs.prestashop.com/8/contribute/"
+    url: "https://devdocs.prestashop-project.org/8/contribute/"
     weight: 3
   - name: "Contributors"
     url: "https://contributors.prestashop.com/"
@@ -23,7 +23,7 @@ main:
 
 footer_left:
   - name: Blog
-    url: "https://build.prestashop.com"
+    url: "https://build.prestashop-project.org/"
   - name: GitHub
     url: "https://github.com/PrestaShop/PrestaShop/"
   - name: Slack
@@ -34,10 +34,10 @@ footer_middle:
     url: "https://prestashop.gitbook.io/english-documentation-1-7/"
     weight: 1
   - name: "Developer documentation"
-    url: "https://devdocs.prestashop.com"
+    url: "https://devdocs.prestashop-project.org/"
     weight: 2
   - name: "Specifications"
-    url: "https://build.prestashop.com/prestashop-specs/"
+    url: "https://build.prestashop-project.org/prestashop-specs/"
     weight: 3
 
 footer_right:
