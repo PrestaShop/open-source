@@ -8,7 +8,7 @@ enableGitInfo: true
 enableRobotsTXT: true
 
 params:
-  devdocs: "https://devdocs.prestashop.com/"
+  devdocs: "https://devdocs.prestashop-project.org/"
 
 markup:
   highlight:
