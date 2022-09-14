@@ -17,11 +17,11 @@ feature:
       icon: "fas fa-book"
       content: "For merchants and end users"
     - name: "Developer documentation"
-      link: "https://devdocs.prestashop.com"
+      link: "https://devdocs.prestashop-project.org"
       icon: "fas fa-file-code"
       content: "For integrators, core and module developers"
     - name: "Specifications"
-      link: "https://build.prestashop.com/prestashop-specs/"
+      link: "https://build.prestashop-project.org/prestashop-specs/"
       icon: "fas fa-map"
       content: "For integrators, core and module developers"
 
