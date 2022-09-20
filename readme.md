@@ -3,7 +3,7 @@ Hello,
 This repository aims to improve the overall maturity of the PrestaShop open source project.
 
 It contains:
-- source code and content for www.prestashop-project.org
+- source code and content for www.prestashop-project.org [![Build](https://github.com/PrestaShop/open-source/actions/workflows/build.yml/badge.svg)](https://github.com/PrestaShop/open-source/actions/workflows/build.yml)
 - materials about the open source project evolution
 
 # The Dashboard
