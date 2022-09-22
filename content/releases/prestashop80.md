@@ -20,6 +20,10 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
        content: none!important;
     }
 
+    .toc-current {
+        font-weight: bold;
+    }
+
     .image-with-shadow {
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
@@ -28,22 +32,56 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
         max-width: 100%;
     }
 </style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          
+          if (entry.intersectionRatio > 0) {
+            let currentEl = document.querySelector('.toc-current');
+            if (currentEl) {
+                currentEl.classList.remove('toc-current');
+            }
+            document.querySelector(`.toc-links li a[href="#${id}"]`).parentElement.
+            classList.add('toc-current');
+          } else {
+            document.querySelector(`.toc-links li a[href="#${id}"]`).parentElement.classList.remove('toc-current');
+          }
+        });
+      });
+
+      document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+      });
+  
+    });
+</script>
 <div class="container-fluid">
+<div class="test"><div></div></div>
     <div class="row">
         <div class="col-md-2 toc-sidebar">
             <div class="toc-sidebar-content">
                 <p class="h4">What's new in PrestaShop 8?</p>
                 <ul class="toc-links">
-                    <li><a href="#">Chapter 1</a></li>
-                    <li><a href="#">Chapter 2</a></li>
-                    <li><a href="#">Chapter 3</a></li>
-                    <li><a href="#">Chapter 4</a></li>
-                    <li><a href="#">Chapter 5</a></li>
+                    <li><a href="#security-page">Security Page</a></li>
+                    <li><a href="#password-strength-indicator">Password Strength Indicator</a></li>
+                    <li><a href="#image-formats">Image Formats</a></li>
+                    <li><a href="#product-page">Product Page (Experimental)</a></li>
+                    <li><a href="#seo-optimization">SEO Optimization</a></li>
+                    <li><a href="#multistore">Multistore</a></li>
+                    <li><a href="#dkim">DKIM</a></li>
+                    <li><a href="#installer">Installer</a></li>
+                    <li><a href="#webservice">Webservice</a></li>
+                    <li><a href="#media-versioning">Media versioning</a></li>
+                    <li><a href="#cli">CLI</a></li>
+                    <li><a href="#partial-updates">Partial updates in ObjectModel</a></li>
+                    <li><a href="#under-the-hood">Under the hood</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-10 px-0">
-            <section class="section">
+            <section class="section" id="security-page">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -71,7 +109,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section bg-light">
+            <section class="section bg-light" id="password-strength-indicator">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -91,25 +129,29 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="image-formats">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col">
                             <h2 class="section-title">Image formats</h2>
                             <p>
                                 <strong>Uploaded images can now be saved in the modern WebP format.</strong> WebP provides better compression than JPEG and PNG for the same image quality: smaller files means pages will load faster. You can be configure this option in <em>Design > Image Settings > Image generation options</em>
                             </p>
                             <p><strong>It is now possible to use SVG files for your shop’s logo</strong> in addition to classic bitmap images. <a href="https://github.com/PrestaShop/PrestaShop/pull/23959">Learn more about this feature here.</a> 
                         </div>
-                        <div class="col-md-8">
-                            <p class="mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <p>
                                 <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/webp.jpeg">
+                            </p>
+                            <p>
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/svglogo.jpeg">
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section bg-dark">
+            <section class="section bg-dark" id="product-page">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -143,7 +185,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="seo-optimization">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -174,13 +216,16 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                                 <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_extra_description.jpeg">
                             </p>
                             <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_extra_description.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_410gone.jpeg">
+                            </p>
+                            <p>
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_cms.jpeg">
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section bg-light">
+            <section class="section bg-light" id="multistore">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -197,7 +242,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="dkim">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -208,13 +253,13 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section bg-light">
+            <section class="section bg-light" id="installer">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -238,6 +283,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                                 <strong>Extend the installation process.</strong> Modules now include a callback <code>postInstall()</code>, allowing them to executed code after the shop’s installation is finished. This provides the developers with new possibilities, like add extra steps to the installation, preload assets, or preprocess data.
                             </p>
                         </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <p>
                                 <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
@@ -251,7 +297,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="webservice">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -263,32 +309,47 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="media-versioning">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col">
                             <h2 class="section-title">Media versioning</h2>
                             <p>
                                 <strong>Developers can use media versioning to prevent outdated javascript and stylesheet files from being loaded from the browser’s cache.</strong>
                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
                             <p>A new parameter has been added to <code>registerJavascript</code> and <code>registrerStylesheet</code> methods, allowing module developers to add a version parameter. This parameter will be appended to the asset’s URL, so if the version changes, browsers will download the new asset instead of loading the old version from local cache. <a href="https://github.com/PrestaShop/PrestaShop/pull/24656">Learn more about this change here</a>
                             </p>
                         </div>
                         <div class="col-md-8">
-                            <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                            <p>
+                                {{< highlight php "linenos=table" >}}
+                                public function hookActionFrontControllerSetMedia()
+                                {
+                                    $this->context->controller->registerJavascript(
+                                        $this->name . '-front-js',
+                                        'modules/' . $this->name . '/views/js/front.js',
+                                        [
+                                            'version' => $this->version,
+                                        ]
+                                    );
+                                }
+                                {{< / highlight >}}
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="cli">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -301,13 +362,13 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/cli.png">
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section bg-light">
+            <section class="section bg-light" id="partial-updates">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -333,7 +394,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="under-the-hood">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -390,7 +451,23 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                {{< highlight ts "linenos=table" >}}
+                                const {$} = window;
+
+                                export interface CartAddressIds {
+                                  deliveryAddressId: string;
+                                  invoiceAddressId: string;
+                                }
+
+                                export interface CartProduct {
+                                  attributeId: number;
+                                  customizationId: number;
+                                  productId: number;
+                                  price?: string;
+                                  newQty?: string;
+                                  prevQty?: number;
+                                }
+                                {{< / highlight >}}
                             </p>
                         </div>
                     </div>
@@ -403,7 +480,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/terminal.png">
                             </p>
                         </div>
                     </div>
