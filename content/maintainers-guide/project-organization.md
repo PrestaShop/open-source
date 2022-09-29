@@ -15,6 +15,8 @@ Current product managers:
 
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
+- Eshane Rawat ([@eshraw](https://github.com/eshraw))
+
 
 ### Project Maintainers
 
@@ -52,6 +54,8 @@ Current committers:
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Thomas Roux ([@okom3pom](https://github.com/okom3pom))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
+- Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
+
 
 ### UX Designers
 
@@ -108,6 +112,8 @@ Wording managers ensure that wordings are adequate, follow the project's tone of
 Current wording managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+- Léa Delin ([@l-delin](https://github.com/l-delin))
+
 
 ### User Documentation Managers
 
@@ -116,6 +122,7 @@ User documentation managers ensure the quality and consistency of the [user docu
 Current user documentation managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+- Léa Delin ([@l-delin](https://github.com/l-delin))
 
 ### Technical Documentation Managers
 
