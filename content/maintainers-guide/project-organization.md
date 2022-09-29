@@ -17,7 +17,6 @@ Current product managers:
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 - Eshane Rawat ([@eshraw](https://github.com/eshraw))
 
-
 ### Project Maintainers
 
 Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.
@@ -55,7 +54,6 @@ Current committers:
 - Thomas Roux ([@okom3pom](https://github.com/okom3pom))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
-
 
 ### UX Designers
 
@@ -113,7 +111,6 @@ Current wording managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
 - Léa Delin ([@l-delin](https://github.com/l-delin))
-
 
 ### User Documentation Managers
 
