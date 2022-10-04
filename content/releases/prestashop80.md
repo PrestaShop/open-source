@@ -31,6 +31,16 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
     .video-wrapper {
         max-width: 100%;
     }
+
+    .php-logo {
+        max-width: 450px; margin: auto;
+        display: flex; height: 100%;
+        padding: 50px; background: #4F5B93;
+    }
+
+    .os-logo {
+        max-height: 250px; max-width: 100%;
+    }
 </style>
 <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -132,20 +142,19 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
             <section class="section" id="image-formats">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-6">
                             <h2 class="section-title">Image formats</h2>
                             <p>
                                 <strong>Uploaded images can now be saved in the modern WebP format.</strong> WebP provides better compression than JPEG and PNG for the same image quality: smaller files means pages will load faster. You can be configure this option in <em>Design > Image Settings > Image generation options</em>
                             </p>
                             <p><strong>It is now possible to use SVG files for your shop’s logo</strong> in addition to classic bitmap images. <a href="https://github.com/PrestaShop/PrestaShop/pull/23959">Learn more about this feature here.</a> 
                         </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/webp.jpeg">
+                        <div class="col-md-6">
+                            <p class="text-center">
+                                <img loading="lazy" src="/releases/images/ps8/logo_svg.svg" style="max-width: 200px;">
                             </p>
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/svglogo.jpeg">
+                            <p class="text-center">
+                                <img loading="lazy" src="/releases/images/ps8/logo_webp.png" style="max-width: 275px;">
                             </p>
                         </div>
                     </div>
@@ -166,9 +175,6 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental1.jpeg">
-                            </p>
                             <p>
                                 <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental2.jpeg">
                             </p>
@@ -236,7 +242,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/multistore.jpeg">
                             </p>
                         </div>
                     </div>
@@ -286,12 +292,12 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     <div class="row">
                         <div class="col-md-6">
                             <p>
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/installer_select_modules.jpeg">
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/installer_errors.jpeg">
                             </p>
                         </div>
                     </div>
@@ -309,7 +315,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/webservice.jpeg">
                             </p>
                         </div>
                     </div>
@@ -333,16 +339,21 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         <div class="col-md-8">
                             <p>
                                 {{< highlight php "linenos=table" >}}
-                                public function hookActionFrontControllerSetMedia()
-                                {
-                                    $this->context->controller->registerJavascript(
-                                        $this->name . '-front-js',
-                                        'modules/' . $this->name . '/views/js/front.js',
-                                        [
-                                            'version' => $this->version,
-                                        ]
-                                    );
-                                }
+                                $this->context->controller->registerJavascript(
+                                    $this->name . '-front-js',
+                                    'modules/' . $this->name . '/views/js/front.js',
+                                    [
+                                        'version' => $this->version,
+                                    ]
+                                );
+                                {{< / highlight >}}
+                            </p>
+                            <p>
+                                {{< highlight html "linenos=table" >}}
+                                <script
+                                    type="text/javascript"
+                                    src="http://domain.test/modules/modulename/views/js/front.js?1.0.0"
+                                ></script>
                                 {{< / highlight >}}
                             </p>
                         </div>
@@ -410,7 +421,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <div class="php-logo">
+                                    <img loading="lazy" src="/releases/images/ps8/logo_php.svg">
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -424,7 +437,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                                <img width="100%" loading="lazy" src="/releases/images/ps8/logo_symfony.svg">
                             </p>
                         </div>
                     </div>
@@ -436,8 +449,8 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                             </p>
                         </div>
                         <div class="col-md-7">
-                            <p class="mt-5">
-                                <img src="https://placehold.jp/3d4070/ffffff/700x450.png">
+                            <p class="mt-5 text-center">
+                                <img loading="lazy" src="/releases/images/ps8/logo_oss.svg" class="os-logo">
                             </p>
                         </div>
                     </div>
@@ -473,7 +486,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <h2 class="section-title">Assets building</h2>
+                            <h2 class="section-title">Faster assets building</h2>
                             <p>
                                 Webpack configurations have been updated to use <strong><em>esbuild-loader</em></strong> instead of <strong><em>babel-loader</em></strong>, which has proven to speed up the build time significantly. In our tests, build time was reduced by a third!
                             </p>
