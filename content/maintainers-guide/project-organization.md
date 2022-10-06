@@ -74,7 +74,6 @@ Current issue managers:
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
-- Marwa Chelly ([@marwachelly](https://github.com/marwachelly))
 - Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 
 ### Software Testers
@@ -84,11 +83,13 @@ Software Testers make sure that the quality of the software improves over time, 
 Current Software Testers:
 
 - Aurélien Rita ([@AureRita](https://github.com/AureRita))
+- Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
+- Ines sallemi ([@sallemiines](https://github.com/sallemiines))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
-- Marwa Chelly ([@marwachelly](https://github.com/marwachelly))
+- Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
 - Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
 - Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
@@ -99,9 +100,12 @@ Software Developers in Test provide technical vision, review contribution and wr
 
 Current Software Developers in Test:
 
+
+- Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
+- Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
+- Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
 - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
 - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
-- Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
 
 ### Wording Manager
 
