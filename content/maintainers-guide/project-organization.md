@@ -70,10 +70,13 @@ Issue managers reproduce and qualify new issues to avoid duplicates and, if they
 Current issue managers:
 
 - Aurélien Rita ([@AureRita](https://github.com/AureRita))
+- Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
+- Ines sallemi ([@sallemiines](https://github.com/sallemiines))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
+- Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
 - Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 
 ### Software Testers
