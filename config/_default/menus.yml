@@ -43,5 +43,10 @@ footer_middle:
 footer_right:
   - name: "Code of conduct"
     pageRef: "code-of-conduct"
+    weight: 10
   - name: "Maintainer's guide"
     pageRef: "maintainers-guide"
+    weight: 20
+  - name: "Legal notice"
+    pageRef: "legal"
+    weight: 30
