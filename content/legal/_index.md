@@ -8,18 +8,18 @@ menu:
 
 # Legal notice
 
-## PrestaShop Project
+The website [www.prestashop-project.org/](https://www.prestashop-project.org/) is owned by PrestaShop SA, corporation company with a capital of 380 645,55 euros.
+The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
 
-The website [www.prestashop-project.org/](https://www.prestashop-project.org/) is owned by PrestaShop SA, corporation company with a capital of 380 645,55 euros. The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
-RCS registration number: B 497 916 635
-VAT number: FR66497916635
-Publication director: Paolo Fiorelli
-Phone number: +33 (0)1 76 23 25 25
-E-mail: contact@prestashop.com
-Hosting: Jaguar Network – 71 Avenue André Roussin BP 50067 – 13321 Marseille Cedex 16
-Number : +33 (0)1 83 65 99 00
-© 2007-2022 PrestaShop SA
-PrestaShop is a registered trademark.
+- CS registration number: B 497 916 635
+- VAT number: FR66497916635
+- Publication director: Paolo Fiorelli
+- Phone number: +33 (0)1 76 23 25 25
+- E-mail: contact@prestashop.com
+- Hosting: Jaguar Network – 71 Avenue André Roussin BP 50067 – 13321 Marseille Cedex 16
+- Number : +33 (0)1 83 65 99 00
+
+&copy; 2007-2022 PrestaShop SA. PrestaShop is a registered trademark.
 
 ### Preamble
 
@@ -99,26 +99,26 @@ Cookies are small text files (usually consisting of letters and numbers) that ar
 **Cookie set by Google Analytics ([Privacy of Google Analytics](https://policies.google.com/privacy/partners?hl=en))**:
 
 **_ga**
-Analytical cookie
-Allows us to broadcast our advertising messages on the Google network.
-This cookie has a lifetime of 13 months.
+- Analytical cookie
+- Allows us to broadcast our advertising messages on the Google network.
+- This cookie has a lifetime of 13 months.
 
 **_gat**
-Analytical cookie
-Used to limit the rate of demand.
-This cookie has a lifetime of 1 minute.
+- Analytical cookie
+- Used to limit the rate of demand.
+- This cookie has a lifetime of 1 minute.
 
 **_gid**
-Analytical cookie
-Allows us to broadcast our advertising messages on the Google network.
-This cookie has a lifetime of 1 day.
+- Analytical cookie
+- Allows us to broadcast our advertising messages on the Google network.
+- This cookie has a lifetime of 1 day.
 
 **Cookie set by Cloudflare ([Privacy of Cloudflare](https://www.cloudflare.com/privacypolicy/))**:
 
 **__cf_bm**
-Technical and necessary cookie
-This cookie is necessary to protect the bots.
-This cookie has a lifetime of 30 minutes.
+- Technical and necessary cookie
+- This cookie is necessary to protect the bots.
+- This cookie has a lifetime of 30 minutes.
 
 **How to manage the deposit and reading of cookies?** 
 
