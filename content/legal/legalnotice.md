@@ -1,6 +1,14 @@
-**LEGAL NOTICE**
+---
+title: Legal notice
+menu:
+  main:
+    parent: 'Resources'
+    name: 'Legal notice'
+---
 
-**PrestaShop Project**
+# Legal notice
+
+## PrestaShop Project
 
 The website [www.prestashop-project.org/](https://www.prestashop-project.org/) is owned by PrestaShop SA, corporation company with a capital of 380 645,55 euros. The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
 RCS registration number: B 497 916 635
@@ -13,7 +21,9 @@ Number : +33 (0)1 83 65 99 00
 © 2007-2022 PrestaShop SA
 PrestaShop is a registered trademark.
 
-**Preamble**. These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 4, rue Jules Lefebvre - 75009 Paris ("PrestaShop"), as well as the offer and acquisition of products and services of the latter, which are available on the Website.
+### Preamble
+
+These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 4, rue Jules Lefebvre - 75009 Paris ("PrestaShop"), as well as the offer and acquisition of products and services of the latter, which are available on the Website.
 
 The user of the Website (the "User") is informed that by browsing the Website he or she has (i) had the opportunity to access the T&Cs and the documents to which they refer and (ii) has agreed to abide by them.
 
@@ -24,11 +34,15 @@ The User is invited to consult them regularly.
 
 The use of the Website is free.
 
-**1. Purpose of the Website.** The purpose of the Website is to provide documentation to the PrestaShop project contributors.
+**1. Purpose of the Website.**
+
+The purpose of the Website is to provide documentation to the PrestaShop project contributors.
 
 The PrestaShop project is a universal open-source software platform to build your e-commerce solution.
  
-**2. Intellectual Property.** All Website elements and their design, selection, presentation and organization are protected by intellectual property rights owned by PrestaShop. 
+**2. Intellectual Property.**
+
+All Website elements and their design, selection, presentation and organization are protected by intellectual property rights owned by PrestaShop. 
 
 The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop.
 
@@ -40,7 +54,9 @@ Using the PrestaShop trademark in a domain name may result in legal proceedings.
 
 Using the Website does not transfer any intellectual property rights, including those relating to its content, the PrestaShop trademark or the software.
 
-**3. PrestaShop’s liability and guarantees.** PrestaShop will do its best to ensure the Website is accessible 24 hours a day and 7 days a week, without however being bound by an obligation to achieve specific results.
+**3. PrestaShop’s liability and guarantees.**
+
+PrestaShop will do its best to ensure the Website is accessible 24 hours a day and 7 days a week, without however being bound by an obligation to achieve specific results.
 
 However, PrestaShop may suspend, restrict or interrupt access to the Website or certain pages on it at any time in order to carry out updates, content modification and any other action deemed necessary for the Website to operate correctly.
 
@@ -60,36 +76,45 @@ More generally, PrestaShop shall not be held liable for:
 
 The User is solely liable for all property or consequential financial loss or damage resulting from the use of the Website.
 
-**4. Hyperlinks.** The Website may contain hyperlinks to redirect User to third party websites, including to agency or partner websites, or social networks.
+**4. Hyperlinks.**
+
+The Website may contain hyperlinks to redirect User to third party websites, including to agency or partner websites, or social networks.
 
 PrestaShop accepts no liability for the websites to which these links lead as it has no control over the various third party websites.
 
 Websites linking to pages on our Website may not reproduce its pages in any way.
 
 **5.  Personal data.**
-**5.1. Personal data collected directly on the Website.** We do not collect personal data directly on the Website.
 
-**5.2. Personal data collected indirectly on the Website.** We collect some of your personal information indirectly through cookies or other tracking devices. 
+**5.1. Personal data collected directly on the Website.** We do not collect personal data directly on the Website.**
 
-**What is a cookie?** Cookies are small text files (usually consisting of letters and numbers) that are stored in the memory of your browser or device when you visit a website or view a message. 
+**5.2. Personal data collected indirectly on the Website.** We collect some of your personal information indirectly through cookies or other tracking devices. **
+
+**What is a cookie?**
+
+Cookies are small text files (usually consisting of letters and numbers) that are stored in the memory of your browser or device when you visit a website or view a message. 
 
 **What cookies do we use on our Website?** 
 
-**Cookie set by Google Analytics ([Privacy of Google Analytics](https://policies.google.com/privacy/partners?hl=fr))** :
-_ga
+**Cookie set by Google Analytics ([Privacy of Google Analytics](https://policies.google.com/privacy/partners?hl=en))**:
+
+**_ga**
 Analytical cookie
 Allows us to broadcast our advertising messages on the Google network.
 This cookie has a lifetime of 13 months.
-_gat
+
+**_gat**
 Analytical cookie
 Used to limit the rate of demand.
 This cookie has a lifetime of 1 minute.
-_gid
+
+**_gid**
 Analytical cookie
 Allows us to broadcast our advertising messages on the Google network.
 This cookie has a lifetime of 1 day.
 
-**Cookie set by Cloudflare ([Privacy of Cloudflare](https://www.cloudflare.com/fr-fr/privacypolicy/))** :
+**Cookie set by Cloudflare ([Privacy of Cloudflare](https://www.cloudflare.com/privacypolicy/))**:
+
 **__cf_bm**
 Technical and necessary cookie
 This cookie is necessary to protect the bots.
@@ -112,6 +137,8 @@ For Opera, check [this link](https://help.opera.com/en/latest/security-and-priva
 For Internet Explorer, check [this link](https://support.microsoft.com/en-gb/help/17442/windows-Internet-explorer-delete-manage-cookies#).
 For Apple Safari, check [this link](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac.).
 
-**6.  Applicable law.** These T&Cs are subject to French law.
+**6.  Applicable law.**
+
+These T&Cs are subject to French law.
 
 The parties submit to the jurisdiction of the Commercial Court of Paris (France), notwithstanding the plurality of defendants or guarantee appeals, emergency procedures or protective procedures.
