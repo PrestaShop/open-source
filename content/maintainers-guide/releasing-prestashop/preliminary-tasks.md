@@ -50,7 +50,7 @@ Check the following files and update them if necessary:
     ```
     
 {{% notice tip %}}
-Starting of Prestashop 8.1, version, contants have now changed location and are now located in `src/Core/Version.php`
+Starting of Prestashop 8.1, version contants have now changed location and are now located in `src/Core/Version.php`
 
 
 Make a pull request and have it merged.
