@@ -19,7 +19,7 @@ The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
 - Hosting: Jaguar Network – 71 Avenue André Roussin BP 50067 – 13321 Marseille Cedex 16
 - Number : +33 (0)1 83 65 99 00
 
-&copy; 2007-2022 PrestaShop SA. PrestaShop is a registered trademark.
+&copy; 2007-2022 PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
 
 ### Preamble
 
