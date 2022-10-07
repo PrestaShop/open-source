@@ -29,7 +29,7 @@ _(i.e. if done for a beta, it doesn't need to be performed again for the final r
 PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless if the release is alpha, beta, RC or stable.
 {{% /notice %}}
 
-Check the following files it update them if necessary:
+Check the following files and update them if necessary:
 
 * `/install-dev/install_version.php`:
 
