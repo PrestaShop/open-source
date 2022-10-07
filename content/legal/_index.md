@@ -38,7 +38,7 @@ The use of the Website is free.
 
 The purpose of the Website is to raise awareness of the PrestaShop project and keep its community updated with news, documentation, and any other information related to the project.
 
-The PrestaShop project is a universal open-source software platform to build your e-commerce solution.
+The PrestaShop project is an open-source software platform to build e-commerce solutions.
  
 **2. Intellectual Property.**
 
