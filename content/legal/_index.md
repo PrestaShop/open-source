@@ -36,7 +36,7 @@ The use of the Website is free.
 
 **1. Purpose of the Website.**
 
-The purpose of the Website is to provide documentation to the PrestaShop project contributors.
+The purpose of the Website is to raise awareness of the PrestaShop project and keep its community updated with news, documentation, and any other information related to the project.
 
 The PrestaShop project is a universal open-source software platform to build your e-commerce solution.
  
