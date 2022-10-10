@@ -41,6 +41,56 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
     .os-logo {
         max-height: 250px; max-width: 100%;
     }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        filter: invert(100%);
+        color: #000;
+        border-bottom: 0 !important;
+    }
+
+    .carousel-indicators li:before {
+        display: none;
+    }
+
+   .carousel-control-prev {
+        left: -110px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 35px; height: 35px;
+    }
+ 
+   .carousel-control-next {
+        right: -110px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .display-4 {
+            font-size: 36px;
+        }
+
+        .toc-sidebar {
+            padding: 15px 25px 0;
+        }
+
+        .section {
+            padding-top: 15px; padding-bottom: 15px;
+        }
+
+        .content * {
+            margin-bottom: 10px;
+        }
+
+        .carousel-control-prev {
+            left: -35px;
+        }
+
+        .carousel-control-next {
+            right: -35px;
+        }
+    }
 </style>
 <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -113,7 +163,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8 text-right">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/security_page.jpeg">
+                                <a href="/releases/images/ps8/security_page.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/security_page.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -133,7 +185,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8 text-right">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/password_indicator.jpeg">
+                                <a href="/releases/images/ps8/password_indicator.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/password_indicator.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -151,10 +205,14 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-6">
                             <p class="text-center">
-                                <img loading="lazy" src="/releases/images/ps8/logo_svg.svg" style="max-width: 200px;">
+                                <a href="/releases/images/ps8/logo_svg.svg">
+                                    <img loading="lazy" src="/releases/images/ps8/logo_svg.svg" style="max-width: 200px;">
+                                </a>
                             </p>
                             <p class="text-center">
-                                <img loading="lazy" src="/releases/images/ps8/logo_webp.png" style="max-width: 275px;">
+                                <a href="/releases/images/ps8/logo_webp.png">
+                                    <img loading="lazy" src="/releases/images/ps8/logo_webp.png" style="max-width: 275px;">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -176,7 +234,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     <div class="row">
                         <div class="col">
                             <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental2.jpeg">
+                                <a href="/releases/images/ps8/product_experimental2.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental2.jpeg">
+                                </a>
                             </p>
                             <p>
                                 <video loading="eager" class="video-wrapper image-with-shadow" autoplay loop controls>
@@ -185,7 +245,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                                 </video>
                             </p>
                             <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental3.jpeg">
+                                <a href="/releases/images/ps8/product_experimental3.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental3.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -209,7 +271,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-6">
                             <p>
-                                <strong>Page number is now included in meta title tags</strong> on paginated pages, like _new products_, _best sales_, _prices drop_, and others. This should help search engines understand these pages better.
+                                <strong>Page number is now included in meta title tags</strong> on paginated pages, like <em>new products</em>, <em>best sales</em>, <em>prices drop</em>, and others. This should help search engines understand these pages better.
                             </p>
                             <p>
                                 <strong>Content length suggestions.</strong> Some text fields in SEO, traffic and CMS sections now include live character counters to help merchants avoid going over the recommended content length limit.
@@ -218,15 +280,39 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_extra_description.jpeg">
-                            </p>
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_410gone.jpeg">
-                            </p>
-                            <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_cms.jpeg">
-                            </p>
+                            <div id="seo-optimization-carousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ul class="carousel-indicators">
+                                <li data-target="#seo-optimization-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#seo-optimization-carousel" data-slide-to="1"></li>
+                                <li data-target="#seo-optimization-carousel" data-slide-to="2"></li>
+                              </ul>
+                              <!-- The slideshow -->
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="/releases/images/ps8/seo_extra_description.jpeg">
+                                        <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_extra_description.jpeg">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/releases/images/ps8/seo_410gone.jpeg">
+                                        <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_410gone.jpeg">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/releases/images/ps8/seo_cms.jpeg">
+                                        <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/seo_cms.jpeg">
+                                    </a>
+                                </div>
+                              </div>
+                              <!-- Left and right controls -->
+                              <a class="carousel-control-prev" href="#seo-optimization-carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#seo-optimization-carousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,7 +328,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/multistore.jpeg">
+                                <a href="/releases/images/ps8/multistore.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/multistore.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -259,7 +347,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
+                                <a href="/releases/images/ps8/dkim.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -289,15 +379,20 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                                 <strong>Extend the installation process.</strong> Modules now include a callback <code>postInstall()</code>, allowing them to execute code after the shop’s installation is finished. This provides the developers with new possibilities, like add extra steps to the installation, preload assets, or preprocess data.
                             </p>
                         </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/installer_select_modules.jpeg">
+                                <a href="/releases/images/ps8/dkim.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/dkim.jpeg">
+                                </a>
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/installer_errors.jpeg">
+                                <a href="/releases/images/ps8/installer_errors.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/installer_errors.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -315,7 +410,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/webservice.jpeg">
+                                <a href="/releases/images/ps8/webservice.jpeg">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/webservice.jpeg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -373,7 +470,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/cli.png">
+                                <a href="/releases/images/ps8/cli.png">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/cli.png">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -437,7 +536,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img width="100%" loading="lazy" src="/releases/images/ps8/logo_symfony.svg">
+                                <a href="/releases/images/ps8/logo_symfony.svg">
+                                    <img width="100%" loading="lazy" src="/releases/images/ps8/logo_symfony.svg">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -450,7 +551,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5 text-center">
-                                <img loading="lazy" src="/releases/images/ps8/logo_oss.svg" class="os-logo">
+                                <a href="/releases/images/ps8/logo_oss.svg">
+                                    <img loading="lazy" src="/releases/images/ps8/logo_oss.svg" class="os-logo">
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -493,7 +596,9 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/terminal.png">
+                                <a href="/releases/images/ps8/terminal.png">
+                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/terminal.png">
+                                </a>
                             </p>
                         </div>
                     </div>
