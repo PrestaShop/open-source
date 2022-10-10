@@ -152,7 +152,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                         <div class="col-md-4">
                             <h2 class="section-title">Security page</p>
                             <p class="mb-5">
-                                PrestaShop 8 brings a new Security page, with two important new features.
+                                PrestaShop 8 brings a new security page, with two important new features.
                             </p>
                             <p>
                                 <strong>Configure your shop password policy</strong> by choosing between five increasing levels of complexity. This will allow shop administrators to fine-tune how strict they want to be about their users' passwords and find the exact balance between rememberability and security.
