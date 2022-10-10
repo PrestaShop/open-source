@@ -2,7 +2,7 @@
 title: What's New in PrestaShop 8.0
 weight: 12
 subtitle: PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.
-downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-beta.1/prestashop_8.0.0-beta.1.zip'
+downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-beta.1/prestashop_8.0.0-beta.1.zip
 ---
 <style>
     p { font-size: 18px; }
@@ -406,7 +406,7 @@ downloadUrl: 'https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-b
                             <p>
                                 <strong>The status and URL to your shop’s webservice is now displayed</strong> at the top of the page in <em>Advanced parameters > Webservice</em>. This should be useful to new users and help them troubleshoot common problems.
                             </p>
-                            <p><strong>*It is now possible to perform partial updates on webservice endpoints using the PATCH method.</strong> This allows integrations to update only part of an entity instead of all the fields at once. <a href="https://github.com/PrestaShop/PrestaShop/pull/27952">Learn more about this change here</a>.
+                            <p><strong>It is now possible to perform partial updates on webservice endpoints using the PATCH method.</strong> This allows integrations to update only part of an entity instead of all the fields at once. <a href="https://github.com/PrestaShop/PrestaShop/pull/27952">Learn more about this change here</a>.
                         </div>
                         <div class="col-md-8">
                             <p class="mt-5">
