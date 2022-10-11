@@ -42,13 +42,6 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
         max-height: 250px; max-width: 100%;
     }
 
-    .carousel-control-next,
-    .carousel-control-prev {
-        filter: invert(100%);
-        color: #000;
-        border-bottom: 0 !important;
-    }
-
     .carousel-indicators li:before {
         display: none;
     }
@@ -64,6 +57,37 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
  
    .carousel-control-next {
         right: -110px;
+    }
+
+    .carousel-inner {
+        text-align: center;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        border-bottom: 0 !important;
+    }
+
+    .release-page a {
+        border-bottom: 0 !important;
+    }
+
+    #seo-optimization-carousel .carousel-control-next,
+    #seo-optimization-carousel .carousel-control-prev {
+        filter: invert(100%);
+        color: #000;
+    }
+
+    .carousel-inner img {
+        width: auto;
+        height: 500px;
+        max-height: 500px;
+    }
+
+    .carousel-inner video {
+        width: auto;
+        height: 497px;
+        max-height: 497px;
     }
 
     @media only screen and (max-width: 767px) {
@@ -89,6 +113,18 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
 
         .carousel-control-next {
             right: -35px;
+        }
+
+        .carousel-inner img {
+            width: auto;
+            height: 250px;
+            max-height: 250px;
+        }
+
+        .carousel-inner video {
+            width: auto;
+            height: 248px;
+            max-height: 248px;
         }
     }
 </style>
@@ -117,8 +153,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
   
     });
 </script>
-<div class="container-fluid">
-<div class="test"><div></div></div>
+<div class="container-fluid release-page">
     <div class="row">
         <div class="col-md-2 toc-sidebar">
             <div class="toc-sidebar-content">
@@ -233,22 +268,40 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>
-                                <a href="/releases/images/ps8/product_experimental2.jpeg">
-                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental2.jpeg">
-                                </a>
-                            </p>
-                            <p>
-                                <video loading="eager" class="video-wrapper image-with-shadow" autoplay loop controls>
-                                    <source src="/releases/images/ps8/product_experimental.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </p>
-                            <p>
-                                <a href="/releases/images/ps8/product_experimental3.jpeg">
-                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental3.jpeg">
-                                </a>
-                            </p>
+                            <div id="experimental-product-page-carousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ul class="carousel-indicators">
+                                <li data-target="#experimental-product-page-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#experimental-product-page-carousel" data-slide-to="1"></li>
+                                <li data-target="#experimental-product-page-carousel" data-slide-to="2"></li>
+                              </ul>
+                              <!-- The slideshow -->
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <video loading="eager" class="video-wrapper image-with-shadow" autoplay loop controls>
+                                        <source src="/releases/images/ps8/product_experimental.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/releases/images/ps8/product_experimental2.jpeg">
+                                        <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental2.jpeg">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/releases/images/ps8/product_experimental3.jpeg">
+                                        <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/product_experimental3.jpeg">
+                                    </a>
+                                </div>
+                              </div>
+                              <!-- Left and right controls -->
+                              <a class="carousel-control-prev" href="#experimental-product-page-carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#experimental-product-page-carousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -471,7 +524,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         <div class="col-md-8">
                             <p class="mt-5">
                                 <a href="/releases/images/ps8/cli.png">
-                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/cli.png">
+                                    <img loading="lazy" src="/releases/images/ps8/cli.png">
                                 </a>
                             </p>
                         </div>
@@ -551,8 +604,8 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5 text-center">
-                                <a href="/releases/images/ps8/logo_oss.svg">
-                                    <img loading="lazy" src="/releases/images/ps8/logo_oss.svg" class="os-logo">
+                                <a href="/releases/images/ps8/oss.png">
+                                    <img loading="lazy" src="/releases/images/ps8/oss.png" class="os-logo">
                                 </a>
                             </p>
                         </div>
@@ -597,7 +650,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         <div class="col-md-7">
                             <p class="mt-5">
                                 <a href="/releases/images/ps8/terminal.png">
-                                    <img loading="lazy" class="image-with-shadow" src="/releases/images/ps8/terminal.png">
+                                    <img loading="lazy" src="/releases/images/ps8/terminal.png">
                                 </a>
                             </p>
                         </div>
