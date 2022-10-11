@@ -488,23 +488,23 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         </div>
                         <div class="col-md-8">
                             <p>
-                                {{< highlight php "linenos=table" >}}
-                                $this->context->controller->registerJavascript(
-                                    $this->name . '-front-js',
-                                    'modules/' . $this->name . '/views/js/front.js',
-                                    [
-                                        'version' => $this->version,
-                                    ]
-                                );
-                                {{< / highlight >}}
+{{< highlight php "linenos=table" >}}
+$this->context->controller->registerJavascript(
+    $this->name . '-front-js',
+    'modules/' . $this->name . '/views/js/front.js',
+    [
+        'version' => $this->version,
+    ]
+);
+{{< / highlight >}}
                             </p>
                             <p>
-                                {{< highlight html "linenos=table" >}}
-                                <script
-                                    type="text/javascript"
-                                    src="http://domain.test/modules/modulename/views/js/front.js?1.0.0"
-                                ></script>
-                                {{< / highlight >}}
+{{< highlight html "linenos=table" >}}
+<script
+    type="text/javascript"
+    src="http://domain.test/modules/modulename/views/js/front.js?1.0.0"
+></script>
+{{< / highlight >}}
                             </p>
                         </div>
                     </div>
@@ -542,16 +542,16 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         </div>
                         <div class="col-md-6">
                             <p class="mt-5">
-                                {{< highlight php "linenos=table" >}}
-                                $instance = new SomeEntity($entityId);
-                                $instance->some_field = 'value1';
-                                $instance->some_other_field = 'value2';
-                                $instance->setFieldsToUpdate([
-                                    'some_field' => true,
-                                    'some_other_field' => true
-                                ]);
-                                $instance->update();
-                                {{< / highlight >}}
+{{< highlight php "linenos=table" >}}
+$instance = new SomeEntity($entityId);
+$instance->some_field = 'value1';
+$instance->some_other_field = 'value2';
+$instance->setFieldsToUpdate([
+    'some_field' => true,
+    'some_other_field' => true
+]);
+$instance->update();
+{{< / highlight >}}
                             </p>
                         </div>
                     </div>
@@ -620,23 +620,23 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
                         </div>
                         <div class="col-md-7">
                             <p class="mt-5">
-                                {{< highlight ts "linenos=table" >}}
-                                const {$} = window;
+{{< highlight ts "linenos=table" >}}
+const {$} = window;
 
-                                export interface CartAddressIds {
-                                  deliveryAddressId: string;
-                                  invoiceAddressId: string;
-                                }
+export interface CartAddressIds {
+    deliveryAddressId: string;
+    invoiceAddressId: string;
+}
 
-                                export interface CartProduct {
-                                  attributeId: number;
-                                  customizationId: number;
-                                  productId: number;
-                                  price?: string;
-                                  newQty?: string;
-                                  prevQty?: number;
-                                }
-                                {{< / highlight >}}
+export interface CartProduct {
+    attributeId: number;
+    customizationId: number;
+    productId: number;
+    price?: string;
+    newQty?: string;
+    prevQty?: number;
+}
+{{< / highlight >}}
                             </p>
                         </div>
                     </div>
