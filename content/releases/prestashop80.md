@@ -9,7 +9,6 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
     .toc-sidebar {
         padding: 50px; margin: -30px 0 0 0;
         border-right: 1px solid #f0f0f0;
-       
     }
 
     .toc-sidebar-content { 
@@ -33,9 +32,18 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/download/8.0.0-be
     }
 
     .php-logo {
-        max-width: 450px; margin: auto;
-        display: flex; height: 100%;
-        padding: 50px; background: #4F5B93;
+        max-width: 450px;
+        margin: auto;
+        display: flex; 
+        height: 50%;
+        padding: 10%; 
+        background: #4F5B93;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .php-logo > img {
+        margin-bottom: 0;
     }
 
     .os-logo {
