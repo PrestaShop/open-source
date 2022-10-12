@@ -16,8 +16,8 @@ The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
 - Publication director: Paolo Fiorelli
 - Phone number: +33 (0)1 76 23 25 25
 - E-mail: contact@prestashop.com
-- Hosting: Jaguar Network – 71 Avenue André Roussin BP 50067 – 13321 Marseille Cedex 16
-- Number : +33 (0)1 83 65 99 00
+- Hosting: GitHub - 88 Colin P Kelly Jr St, San Francisco, CA 94107 - United States
+- Number : +1 (877) 958-8742
 
 &copy; 2007-2022 PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
 
