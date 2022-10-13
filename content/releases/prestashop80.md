@@ -327,7 +327,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                                 <strong>Additional description for categories:</strong> enhance your category pages’ visibility by including a block of search engine optimized text at the bottom of the page.
                             </p>
                             <p>
-                                <strong>Prevent search engine crawlers from indexing discontinued products</strong> by setting up the “410 – Gone” status code on your discontinued products, instead of using “404 – Not Found”.
+                                <strong>Prevent search engine crawlers from indexing discontinued products</strong> by setting up the “410 – Gone” status code on your discontinued products, instead of using “404 – Not Found”. (Only with Product page v2)
                             </p>
                         </div>
                         <div class="col-md-6">
