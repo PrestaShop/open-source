@@ -6,6 +6,7 @@ title: "PrestaShop Project - Open Source e-Commerce platform"
 theme: "ps-org-theme"
 enableGitInfo: true
 enableRobotsTXT: true
+googleAnalytics: "G-KK4ZZ04Y2S"
 
 params:
   devdocs: "https://devdocs.prestashop-project.org"
