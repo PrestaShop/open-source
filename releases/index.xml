@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/releases/prestashop80/</guid>
-      <description>p { font-size: 18px; } .toc-sidebar { padding: 50px; margin: -30px 0 0 0; border-right: 1px solid #f0f0f0; } .toc-sidebar-content { position: sticky; top: 25px; } .toc-links li:before { content: none!important; } .toc-current { font-weight: bold; } .image-with-shadow { box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; } .video-wrapper { max-width: 100%; } .php-logo { max-width: 450px; margin: auto; display: flex; height: 50%; padding: 10%; background: #4F5B93; align-content: center; justify-content: center; } .</description>
+      <description>PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.</description>
     </item>
     
   </channel>
