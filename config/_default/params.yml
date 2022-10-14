@@ -23,3 +23,9 @@ projectUrls:
     reportBug: "https://github.com/PrestaShop/PrestaShop/issues"
     slack: "https://github.com/PrestaShop/open-source/blob/master/slack/readme.md"
 
+devdocs: "https://devdocs.prestashop-project.org"
+
+privacy:
+    googleAnalytics:
+        defaultGtagStorageDenied: true
+        waitForUpdate: 500
