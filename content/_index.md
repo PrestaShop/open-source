@@ -1,5 +1,6 @@
 ---
 menuTitle: Home
+description: The PrestaShop project is a universal open-source software platform to build your e-commerce solution.
 
 ####################### Banner #########################
 banner:
