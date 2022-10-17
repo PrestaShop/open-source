@@ -50,7 +50,7 @@ Users are further informed that using the PrestaShop trademark in a domain name 
 
 Consequently, Users agree not to use this trademark in a domain name.
 
-Using the PrestaShop trademark in a domain name may result in legal proceedings.
+Using the PrestaShop SA trademark in a domain name may result in legal proceedings.
 
 Using the Website does not transfer any intellectual property rights, including those relating to its content (released under the Creative Commons Attribution-ShareAlike 4.0 International license), the PrestaShop trademark or the software.
 
