@@ -82,7 +82,6 @@ The Website may contain hyperlinks to redirect User to third-party websites.
 
 PrestaShop accepts no liability for the websites to which these links lead as it has no control over the various third party websites.
 
-Websites linking to pages on our Website may not reproduce its pages in any way.
 
 **5.  Personal data.**
 
