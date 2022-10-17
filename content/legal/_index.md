@@ -46,7 +46,7 @@ All Website elements and their design, selection, presentation and organization 
 
 The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop.
 
-Users are further informed that using the PrestaShop trademark in a domain name is strictly prohibited.
+Users are further informed that using the PrestaShop SA trademark in a domain name is strictly prohibited.
 
 Consequently, Users agree not to use this trademark in a domain name.
 
