@@ -64,7 +64,7 @@ As such, PrestaShop in no way guarantees the availability, access to or continui
 
 Should it become unavailable for any reason, this will not give rise to any compensation for the User.
 
-PrestaShop is only responsible for the content it has published itself.
+PrestaShop SA is only responsible for the content it has published itself.
 
 PrestaShop SA shall not be held liable for any damage or loss suffered by the User in accessing and using the Website.
 
