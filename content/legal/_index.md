@@ -44,7 +44,7 @@ The PrestaShop project is an open-source software platform to build e-commerce s
 
 All Website elements and their design, selection, presentation and organization are protected by intellectual property rights owned by PrestaShop. 
 
-The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop.
+The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop SA.
 
 Users are further informed that using the PrestaShop SA trademark in a domain name is strictly prohibited.
 
