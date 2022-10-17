@@ -42,7 +42,7 @@ The PrestaShop project is an open-source software platform to build e-commerce s
  
 **2. Intellectual Property.**
 
-All Website elements and their design, selection, presentation and organization are protected by intellectual property rights owned by PrestaShop. 
+All Website elements, their design, selection, presentation, organization are open-source and released under the [MIT](https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE) license and designed by [Themefisher](https://themefisher.com/), developed by [Gethugothemes](https://gethugothemes.com/).
 
 The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop SA.
 
