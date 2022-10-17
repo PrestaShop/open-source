@@ -28,7 +28,7 @@ These general terms and conditions of use (the "T&Cs") are intended to define th
 The user of the Website (the "User") is informed that by browsing the Website he or she has (i) had the opportunity to access the T&Cs and the documents to which they refer and (ii) has agreed to abide by them.
 
 If the User does not accept the T&Cs, he must not use the Website.
-The present T&Cs can be modified by PrestaShop at any time, without notice, to take into account the evolution of the Website and the applicable regulations. The new version of the T&Cs will be made available on the Website.
+The present T&Cs can be modified by PrestaShop SA at any time, without notice, to take into account the evolution of the Website and the applicable regulations. The new version of the T&Cs will be made available on the Website.
 
 The User is invited to consult them regularly.
 
