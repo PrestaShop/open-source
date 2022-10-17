@@ -23,7 +23,7 @@ The headquarters are located at 4, rue Jules Lefebvre 75009 Paris, France.
 
 ### Preamble
 
-These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 4, rue Jules Lefebvre - 75009 Paris ("PrestaShop"), as well as the offer and acquisition of products and services of the latter, which are available on the Website.
+These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 4, rue Jules Lefebvre - 75009 Paris ("PrestaShop").
 
 The user of the Website (the "User") is informed that by browsing the Website he or she has (i) had the opportunity to access the T&Cs and the documents to which they refer and (ii) has agreed to abide by them.
 
