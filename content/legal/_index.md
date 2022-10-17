@@ -54,7 +54,7 @@ Using the PrestaShop trademark in a domain name may result in legal proceedings.
 
 Using the Website does not transfer any intellectual property rights, including those relating to its content, the PrestaShop trademark or the software.
 
-**3. PrestaShop’s liability and guarantees.**
+**3. PrestaShop SA’s liability and guarantees.**
 
 PrestaShop SA will do its best to ensure the Website is accessible 24 hours a day and 7 days a week, without however being bound by an obligation to achieve specific results.
 
