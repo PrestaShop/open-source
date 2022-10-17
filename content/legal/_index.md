@@ -60,7 +60,7 @@ PrestaShop will do its best to ensure the Website is accessible 24 hours a day a
 
 However, PrestaShop may suspend, restrict or interrupt access to the Website or certain pages on it at any time in order to carry out updates, content modification and any other action deemed necessary for the Website to operate correctly.
 
-As such, PrestaShop in no way guarantees the availability, access to or continuity of the Website.
+As such, PrestaShop SA in no way guarantees the availability, access to or continuity of the Website.
 
 Should it become unavailable for any reason, this will not give rise to any compensation for the User.
 
