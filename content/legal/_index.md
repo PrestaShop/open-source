@@ -56,7 +56,7 @@ Using the Website does not transfer any intellectual property rights, including 
 
 **3. PrestaShop’s liability and guarantees.**
 
-PrestaShop will do its best to ensure the Website is accessible 24 hours a day and 7 days a week, without however being bound by an obligation to achieve specific results.
+PrestaShop SA will do its best to ensure the Website is accessible 24 hours a day and 7 days a week, without however being bound by an obligation to achieve specific results.
 
 However, PrestaShop SA may suspend, restrict or interrupt access to the Website or certain pages on it at any time in order to carry out updates, content modification and any other action deemed necessary for the Website to operate correctly.
 
