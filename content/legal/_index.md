@@ -68,7 +68,7 @@ PrestaShop is only responsible for the content it has published itself.
 
 PrestaShop shall not be held liable for any damage or loss suffered by the User in accessing and using the Website.
 
-More generally, PrestaShop shall not be held liable for:
+More generally, PrestaShop SA shall not be held liable for:
 
 * The use made by the User of the Website,
 * Any activity that constitutes a breach of these T&Cs by the User,
