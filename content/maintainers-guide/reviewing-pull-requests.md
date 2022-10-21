@@ -202,7 +202,29 @@ The following labels provide metadata and are essentially informative:
 | <label type="e2e">E2E Tests</label>          | This PR is about UI automated tests                          |
 | <label type="migration">migration</label>    | This PR is about the Symfony migration project               |
 
+## Process breakdown
 
+Following the above items, here is an example of a PR workflow
+
+Upon opening a PR and you are the first reviewer, please verify:
+
+1. Is the The Pull Request form correctly filled with relevant informations, especially `How to test`?
+2. Does the CI pass?
+3. When relevant, is there a linked GitHub issue (for bugfixes or new features)?
+
+If any of the above items are missing, you can ask the PR author to provide them. Else, you can review the code.
+
+While reviewing, an action might be required, then add the right label (see above section `Action required`), for example
+- If the code needs changes, you can add `Waiting for author` label.
+- If the PR introduced visual changes, you can add `Waiting for UX` label.
+
+If no action is needed and the code is correct, you can approve the PR.
+
+If it has the right number of approvals (Pull Requests submitted to the [PrestaShop Core repository](https://github.com/PrestaShop/PrestaShop/) require approval from at least two different maintainers while other repositories require approval from at least one maintainer), the last step for most PRs is QA validation.
+
+You can add `Waiting for QA` label to request a validation from QA team. Some PRs do not need QA testing, for example fixing a typo or a code change that only impacts CI.
+
+If the PR behavior is confirmed by QA Team, the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
 
 [contribution-guidelines]: {{< devdocs "contribute/contribution-guidelines/" >}}
 [prestashop-core-repository]: https://github.com/PrestaShop/PrestaShop/
