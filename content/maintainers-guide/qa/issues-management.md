@@ -6,6 +6,7 @@ weight: 10
 # How to manage Issues
 
 This document details the processes in place for the position of "Issues Manager", a rotating position within the QA community members.
+
 ## The Issue Manager job
 
 Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules.These are the tree questions you must ask yourself:
@@ -452,5 +453,4 @@ Thanks in advance!
 4. Don't hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label ("Waiting for PM", "Waiting for Dev", etc).
     - If you ping someone, ask a direct question! Don't waste their time by making them read the whole thread and guess why did you ping them.
     - If the issue is too technical to reproduce, ping the Sheriff on Slack (DM) while adding the “TBR” and “Waiting for Dev” labels. ([Sheriff's Calendar](https://www.notion.so/Open-Source-Sheriff-be69f240a64e46f892ae75d233cc00b6))
-
 5. If you don’t know if the issue `Major` or `Minor`, please post it in [##qa-core](https://app.slack.com/client/T029HS3DQ/C89MEQ2CB) and ping PM (@core-pm) and [QA lead](https://www.notion.so/Robin-Fischer-PS-3a6751548f414904beaca65af7adfdb7), so they can settle the severity.
