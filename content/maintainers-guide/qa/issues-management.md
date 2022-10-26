@@ -73,9 +73,7 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
 
 #### Flow overview
 
-[(Source: [https://miro.com/app/board/o9J_kwzVdW0=/](https://miro.com/app/board/o9J_kwzVdW0=/))](How%20to%20manage%20Issues%2024997d171a8d44529619ec756d474df4/Issue_state_flow_-_Issue_flow.pdf)
-
-(Source: [https://miro.com/app/board/o9J_kwzVdW0=/](https://miro.com/app/board/o9J_kwzVdW0=/))
+<img loading="lazy" class="image-with-shadow" src="/maintainers-guide/qa/images/Issue_state_flow.jpg">
 
 ## Your routine
 
@@ -85,7 +83,6 @@ The first thing to do is to deal with the new issues. This can be done by [filte
 
 <aside>
 ⚠️ This step should be repeated regularly during the day, to deal with issues as they arise.
-
 </aside>
 
 #### Issues with the NMI label
@@ -94,7 +91,6 @@ The second step is to deal with issues labelled `NMI` (Need More Info) without `
 
 <aside>
 ⚠️ Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
-
 </aside>
 
 #### Issues to be closed
@@ -171,7 +167,6 @@ If it is a suggestion for feature, all mandatory fields in the [template](https:
 
 <aside>
 ⚠️ Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
-
 </aside>
 
 #### Duplicated issues
@@ -216,12 +211,10 @@ If the issue is not reproduced: **It’s a regression!** Test all the latest pat
 
 <aside>
 📌 The regression of the last minor or major stable version must be placed in the [patch backlog](https://github.com/PrestaShop/PrestaShop/projects/20) kanban, in the first column.
-
 </aside>
 
 <aside>
 📌 The regression of the develop branch must be placed in the Kanban of the corresponding next minor or major version.
-
 </aside>
 
 #### Labelling
@@ -243,7 +236,6 @@ A list of labels and their use is [available here](https://docs.google.com/sprea
 
 <aside>
 ⚠️ When the issue is a **bug that was reproduced** (meaning with the `Verified` label), it MUST in most cases be connected to an Epic if it already exists.
-
 </aside>
 
 To do this, perform a search in the [Bug classification board](https://github.com/PrestaShop/PrestaShop/projects/11) where all EPIC are listed. If there is a related EPIC, add the issue to the EPIC (by editing the description) and ping the product team.
