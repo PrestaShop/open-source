@@ -5,7 +5,7 @@ chapter: true
 weight: 120
 ---
 
-# PrestaShop maintainer's guide
+# QA Team processes
 
 This section describes processes and guidelines for QA members.
 
