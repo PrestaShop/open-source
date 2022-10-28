@@ -1,12 +1,10 @@
 ---
-title: Qa team processes
-menuTitle: Defining QA processes
+title: QA processes
 chapter: true
-weight: 120
 ---
 
-# QA Team processes
+# QA processes
 
-This section describes processes and guidelines for QA members.
+This section describes processes and guidelines for Quality Assurance.
 
 {{% children /%}}

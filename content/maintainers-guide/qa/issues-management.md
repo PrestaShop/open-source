@@ -1,6 +1,5 @@
 ---
 title: How to manage Issues
-weight: 10
 ---
 
 # How to manage Issues
@@ -9,11 +8,11 @@ This document details the processes in place for the position of "Issues Manager
 
 ## The Issue Manager job
 
-Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules.These are the tree questions you must ask yourself:
+Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the tree questions you must ask yourself:
 
-- **Is the issue valid?** The issue must be either a bug report or a request for feature. We only cover the PrestaShop project (Core + native modules).
+- **Is the issue valid?** The issue must be either a bug report or a feature request. We only cover the PrestaShop project (Core + native modules).
 - **Has all the needed information been provided?** The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.
-- **Can it be reproduced?** An issue can't be fixed if we can't reproduce it.
+- **Can it be reproduced?** An issue can't be fixed if it can't be reproduced.
 
 Here are some tips:
 
@@ -28,26 +27,26 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
 #### Main Labels
 
 1. **Type**
-    - **`Bug`** – a defect in the software
-    - **`Feature`** – a new feature, a change in an existing functionality
-    - `**Task**`  ****– an issue to track an action that’s not a fix or improve the software like to release a module or network infrastructure change. It’s a task mainly to be done by the maintainer dev.
-    - `**Epic`** - an epic is a group of issue that are going to
+   - **`Bug`** – a defect in the software
+   - **`Feature`** – a request for a new feature, a change in an existing functionality
+   - **`Task`** – an issue to track an action that’s not a fix or improve the software like to release a module or network infrastructure change. It’s a task mainly to be done by a maintainer dev.
+   - **`Epic`** - an epic is a group of issues around a bigger topic.
 2. **Status**
-    - **`NMI`** – "Need More Info" - the issue is waiting for its author to provide more details about their request
-    - **`Needs specs`**– the issue is waiting for specification, the development should not start until it's ready.
-    - **`Ready`** – the issue has been specified and is ready to be picked up by a dev
-    - **`WIP`** – a dev has claimed the issue and is working on it
-    - `**TBR**` – “To Be Reproduced” -
+   - **`NMI`** – "Need More Info" - the issue is waiting for its author to provide more details about their request.
+   - **`Needs specs`**– the issue is waiting for specification, the development should not start until it's ready.
+   - **`Ready`** – the issue has been specified and is ready to be picked up by a dev.
+   - **`WIP`** – a dev has claimed the issue and is working on it
+   - **`TBR`** – “To Be Reproduced” -
 3. **Resolution**
-    - `**Fixed**` – the issue been resolved
-    - `**Rejected**` – the issue has been analyzed, and it was decided no to do it (for whatever reason)
-    - `**Invalid**` – the issue is incomplete, cannot be reproduced, or its author is unresponsive
-
-      In addition to this label, additional labels can be added for informative purposes:
-
-        - **`Can't reproduce`** – the reported bug cannot be reproduced
-        - **`Duplicate`** – the issue has already been reported
-4. **Severity** *(only for bugs), example [here](https://devdocs.prestashop.com/1.7/contribute/contribution-process/how-issues-are-sorted/)*
+   - **`Fixed`** – the issue been resolved.
+   - **`Rejected`** – the issue has been analyzed, and it was decided no to do it (for whatever reason).
+   - **`Invalid`** – the issue is incomplete, cannot be reproduced, or its author is unresponsive.
+     
+     In addition to this label, additional labels can be added for informative purposes:
+   
+     - **`Can't reproduce`** – the reported bug cannot be reproduced
+     - **`Duplicate`** – the issue has already been reported
+4. **Severity** *(only for bugs, more details [here][how-issues-are-sorted])*
     - **`Trivial`** – cosmetic, low impact bugs
     - **`Minor`** – low severity bugs
     - **`Major`** – high severity bugs
@@ -55,26 +54,25 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
 
 #### Ad-hoc labels
 
-1. `**Verified**` – the bug report has been successfully reproduced
-2. `**Regression**` – the bug breaks a feature that was working well before
+1. **`Verified`** – the bug report has been successfully reproduced
+2. **`Regression`** – the bug breaks a feature that was working well before
 3. **`Developer Feature`** – technical feature, targeting developers
 4. [Reproduced in] **`<version>`** – the earliest stable version where the bug has been reproduced or the dev branch if it’s a regression
-5. Solution available – known solution for a bug that hasn't been fixed/released yet
+5. If a known solution exists for a bug that hasn't been fixed/released yet:
     - **`PR available`** – a PR fixing the bug is available
     - **`Workaround available`** – a workaround for the bug has been shared
     - **`Addons module available`** – a module that solves this bug or that provides this feature is available in the marketplace
-6. `**<Category>**` - **`BO`** (Back-office), **`FO`** (Front-office) or  **`WS`** (Webservices) ... - Which part of the software the feature bug/feature is applied
-7. `**<Page / Section>**` - e.g. **`Product`** Which page/section the feature bug/feature is applied
+6. **`<Category>`** - **`BO`** (Back-office), **`FO`** (Front-office) or  **`WS`** (Webservices) ... - Which part of the software the feature bug/feature is applied
+7. **`<Page / Section>`** - e.g. **`Product`** Which page/section the feature bug/feature is applied
 8. **`Module`** and **`<Module name>`** – Name of the native module the bug / feature belongs to
 
-<aside>
-⚠️ Don’t use the **`develop`**  label, try to specify the branch like `**1.7.8.x**` or `**8.x**`
-
-</aside>
+{{% notice warning %}}
+ Don’t use the **`develop`**  label, try to specify the branch like **`1.7.8.x`** or **`8.x`**
+{{% /notice %}}
 
 #### Flow overview
 
-<img loading="lazy" class="image-with-shadow" src="/maintainers-guide/qa/images/Issue_state_flow.jpg">
+{{< figure src="../images/Issue_state_flow.jpg" alt="Issue state flow" >}} 
 
 ## Your routine
 
@@ -82,17 +80,17 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
 
 The first thing to do is to deal with the new issues. This can be done by [filtering out New issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3ANew). Each of these issues must be managed according to the issue processing protocol.
 
-<aside>
-⚠️ This step should be repeated regularly during the day, to deal with issues as they arise.
-</aside>
+{{% notice note %}}
+This step should be repeated regularly during the day, to deal with issues as they arise.
+{{% /notice %}}
 
 #### Issues with the NMI label
 
 The second step is to deal with issues labelled `NMI` (Need More Info) without `Waiting for author` label, which could have been updated by the author. To do this, you have to display the [NMI labeled issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+sort%3Aupdated-asc) without `Waiting for author` and sort them by decreasing date of update. NMI issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author has replied and provided the requested details, the issue will proceed according to the issue handling protocol.
 
-<aside>
-⚠️ Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
-</aside>
+{{% notice tip %}}
+Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
+{{% /notice %}}
 
 #### Issues to be closed
 
@@ -112,13 +110,13 @@ Hello,
 
 Here is the report of the day xx/xx/2020
 
-##Verified
+## Verified
 - [##18338](https://github.com/PrestaShop/PrestaShop/issues/18338): BO - Module permissions are not updated for restriction groupIssues fermées car doublons
 
-##NMI
+## NMI
 - [##28275](https://github.com/PrestaShop/PrestaShop/issues/28275): Context CurrentLocale not initialised when running a module update
 
-##Closed
+## Closed
 - [##18345](https://github.com/PrestaShop/PrestaShop/issues/18345): Duplicate of [##12556](https://github.com/PrestaShop/PrestaShop/issues/12556) => Installation Error: the % symbol is doubled on the parameters.php file generation
 
 Kind regards, xx
@@ -133,7 +131,7 @@ The handling of issues follows a detailed process. Here are the different steps,
 **Check that the report is really an issue!**
 
 - **If it's a feature request**, redirect to the [appropriate template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Feature%2CNew&template=2_feature_request.yml).
-- **If it's a question** you're not obliged to answer it. Remember that the issues section is not a Q&A forum and that your job isn't to provide free support. Redirect the reporter to a support plan using the "Issue is a support request" response.
+- **If it's a question** you're not obliged to answer it. Remember that the issues section is not a Q&A forum and that your job isn't to provide free support. Redirect the reporter to the support page using the "Issue is a support request" response.
 - **If it's something that you think should be described in documentation**, consider pinging the developers or moving the issue to the [docs project](https://github.com/PrestaShop/docs).
 - **If it is a clearly incomprehensible request**, close the issue by adding the `Invalid` label and answer using the "Issue not completed" response.
 
@@ -149,7 +147,7 @@ Issues must be written in English. If that’s not the case:
 The issue (Bug) must be complete. In particular, all mandatory fields in the [template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Bug%2CNew&template=1_bug_report.yml) must be completed:
 
 - **Describe the bug and add screenshots:** full details about the bug. This part represents the "observed behavior" following user manipulations.
-- **Expected behavior:** the "behavior expected" by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.
+- **Expected behavior:** the behavior expected by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.
 - **Steps to Reproduce:** the steps to reproduce the problem. This is the most important part and must be completed in a comprehensive manner.
 - **PrestaShop version(s) where the bug happened:** all affected versions
 - **PHP version(s) where the bug happened:** PHP version
@@ -166,9 +164,9 @@ If it is a suggestion for feature, all mandatory fields in the [template](https:
 2. If the issue seems properly specified, set the status label to `Ready`. Otherwise, set it to `Needs specs`.
 3. Answer using the "Issue is a functional feature request" template.
 
-<aside>
-⚠️ Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
-</aside>
+{{% notice tip %}}
+Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
+{{% /notice %}}
 
 #### Duplicated issues
 
@@ -208,15 +206,13 @@ Now we have to go back up the chain to find the source of the problem. To do thi
 
 If the issue is reproduced: the bug follows the normal course: go to the next step.
 
-If the issue is not reproduced: **It’s a regression!** Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762...) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on ##qa-core channel (PS Slack) and ##dev-core (Public Slack). The Project must then be labeled by selecting the **label corresponding to the version in which the regression was detected.**
+If the issue is not reproduced: **It’s a regression!** Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762...) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on `#qa-core` channel (Corp Slack) and `#dev-core` (Public Slack). The Project must then be labeled by selecting the **label corresponding to the version in which the regression was detected.**
 
-<aside>
-📌 The regression of the last minor or major stable version must be placed in the [patch backlog](https://github.com/PrestaShop/PrestaShop/projects/20) kanban, in the first column.
-</aside>
+{{% notice note %}}
+Regressions for the l**ast minor or major stable version** must be placed in the [patch backlog](https://github.com/PrestaShop/PrestaShop/projects/20) kanban, in the first column.
 
-<aside>
-📌 The regression of the develop branch must be placed in the Kanban of the corresponding next minor or major version.
-</aside>
+Regression for the **develop branch** must be placed in the Kanban of the corresponding next minor or major version.
+{{% /notice %}}
 
 #### Labelling
 
@@ -235,9 +231,7 @@ A list of labels and their use is [available here](https://docs.google.com/sprea
 
 #### Connecting an issue to an EPIC
 
-<aside>
-⚠️ When the issue is a **bug that was reproduced** (meaning with the `Verified` label), it MUST in most cases be connected to an Epic if it already exists.
-</aside>
+When the issue is a **bug that was reproduced** (meaning with the `Verified` label), it MUST in most cases be connected to an Epic if it already exists.
 
 To do this, perform a search in the [Bug classification board](https://github.com/PrestaShop/PrestaShop/projects/11) where all EPIC are listed. If there is a related EPIC, add the issue to the EPIC (by editing the description) and ping the product team.
 
@@ -247,7 +241,7 @@ Note that the product team must be able to understand the bug to be able to clas
 
 #### Rewriting the issue
 
-Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue!It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug.Pay special attention to the **reproduction steps** ("how to reproduce")!
+Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue!It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug. Pay special attention to the **reproduction steps** ("how to reproduce")!
 
 #### Validating the issue
 
@@ -282,7 +276,7 @@ Thank you
 ```
 Hello,
 
-Could you please provide us with more info ?
+Could you please provide us with more info?
 We need more details to understand how we can reproduce your issue:
 - host
 - server setup and configuration
@@ -316,7 +310,8 @@ Thank you
 ```
 Hello,
 
-We are aware of this issue, it is already in our debug backlog. This issue is a duplicate of ##Issue_number.
+We are aware of this issue, it is already in our debug backlog. This issue is a duplicate of #Issue_number.
+
 To be informed when it's fixed, please subscribe to the issue mentioned above.
 
 Thank you
@@ -325,7 +320,7 @@ Thank you
 **In addition to the message above, add a second comment containing the following sentence:**
 
 ```
-Duplicate of ##Issue_number
+Duplicate of #Issue_number
 ```
 
 This message is special and will trigger a GitHub tag to mark the issue as "duplicate" and link it to the original issue.
@@ -349,7 +344,7 @@ I reproduce the issue with PrestaShop version x.x.x, I'll add this to the backlo
 
 Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project’s own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you.
 
-If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop.com/1.7/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
+If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
 
 Thank you
 ```
@@ -359,7 +354,7 @@ You can personalize the message according to your needs, for example:
 For active contributors, it’s not necessary to add this block:
 
 ```
-If this one is important to you [...] , the better PrestaShop becomes for everyone.
+If this one is important to you [...], the better PrestaShop becomes for everyone.
 ```
 
 Instead, you can add this:
@@ -373,7 +368,7 @@ We’re waiting for your PR 🚀
 If it’s a regression, add this sentence:
 
 ```
-I didn’t manage to reproduce the issue with PSx.x.x, I only reproduce it with PSx.x.x. So it’s a regression!
+I didn’t manage to reproduce the issue with PS x.x.x, I only reproduce it with PS x.x.x. So it’s a regression!
 ```
 
 #### Issue not completed
@@ -381,7 +376,8 @@ I didn’t manage to reproduce the issue with PSx.x.x, I only reproduce it with 
 ```
 Hello [name],
 
-Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. ****You must follow the template and provide clear and concise steps to reproduce the bug****.
+Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. **You must follow the template and provide clear and concise steps to reproduce the bug**.
+
 Read more about how we expect the issues to be handled [here](https://build.prestashop.com/news/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it.
 
 Thank you
@@ -429,7 +425,7 @@ Thank you
 Hello,
 
 Thanks for reporting this issue!
-Ping @PrestaShop/prestashop-core-developers : Could someone please try to reproduce the issue, it's too technical!
+Ping @PrestaShop/prestashop-core-developers: Could someone please try to reproduce the issue, it's too technical!
 
 Thanks in advance!
 ```
@@ -440,7 +436,8 @@ Thanks in advance!
 Hello,
 
 This module has been archived, it’s no longer maintained but you still can fork it if you need it for your shop.
-Also let us know if you are voluntary to maintain this module.
+
+Also let us know if you are willing to maintain this module.
 
 Thanks in advance!
 ```
@@ -449,8 +446,10 @@ Thanks in advance!
 
 1. The "NMI" (Need More Info) tag is used at the beginning of the life of the issue, when there are still questions about the issue (quality, completeness, etc).
 2. "Waiting for Author" is used for conversations with the author and for NMI issues when we answer. The issue-bot will delete the label when the author answers (to help us filter the issues that needs answers, check the [filter](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22)).
-3. In case of regression discovery, it is essential to share the regressions on ##qa-core (PS Slack) and ##dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 1.7.8.5, we put it in the project 1.7.8.5 and in the project [Maxi Kanban](https://github.com/orgs/PrestaShop/projects/7)n, then the PM will prioritize it).
+3. In case of regression discovery, it is essential to share the regressions on #qa-core (Corp Slack) and #dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 1.7.8.5, we put it in the project 1.7.8.5 and in the project [Maxi Kanban](https://github.com/orgs/PrestaShop/projects/7), then the PM will prioritize it).
 4. Don't hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label ("Waiting for PM", "Waiting for Dev", etc).
     - If you ping someone, ask a direct question! Don't waste their time by making them read the whole thread and guess why did you ping them.
     - If the issue is too technical to reproduce, ping the Sheriff on Slack (DM) while adding the “TBR” and “Waiting for Dev” labels. ([Sheriff's Calendar](https://www.notion.so/Open-Source-Sheriff-be69f240a64e46f892ae75d233cc00b6))
-5. If you don’t know if the issue `Major` or `Minor`, please post it in [##qa-core](https://app.slack.com/client/T029HS3DQ/C89MEQ2CB) and ping PM (@core-pm) and [QA lead](https://www.notion.so/Robin-Fischer-PS-3a6751548f414904beaca65af7adfdb7), so they can settle the severity.
+5. If you don’t know if the issue `Major` or `Minor`, please post it in `#qa-core`]` (Corp Slack) and ping PM (@core-pm) and QA lead, so they can settle the severity.
+
+[how-issues-are-sorted]: {{< devdocs "contribute/contribution-process/how-issues-are-sorted/" >}}
