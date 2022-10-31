@@ -1,0 +1,49 @@
+main:
+    #- name: "About"
+    #  url: "about"
+    #  enable: false
+    #  weight: 1
+    - name: "Blog"
+      url: "https://build.prestashop-project.org"
+      weight: 1
+    - name: "GitHub"
+      url: "https://github.com/PrestaShop/PrestaShop/"
+      weight: 2
+    - name: "Come contribuire?"
+      url: "https://devdocs.prestashop-project.org/8/contribute/"
+      weight: 3
+    - name: "Contributors"
+      url: "https://contributors.prestashop.com/"
+      weight: 4
+    - name: "Supporto"
+      pageRef: "support"
+      weight: 5
+    - name: "Risorse"
+      weight: 6
+
+footer_left:
+    - name: Blog
+      url: "https://build.prestashop-project.org"
+    - name: GitHub
+      url: "https://github.com/PrestaShop/PrestaShop/"
+    - name: Slack
+      pageRef: "slack"
+
+footer_middle:
+    - name: "Documentazione Utente"
+      url: "https://prestashop.gitbook.io/english-documentation-1-7/"
+      weight: 1
+    - name: "Documentazione Sviluppatori"
+      url: "https://devdocs.prestashop-project.org"
+      weight: 2
+    - name: "Specifiche"
+      url: "https://build.prestashop-project.org/prestashop-specs/"
+      weight: 3
+
+footer_right:
+    - name: "Codice di condotta"
+      pageRef: "code-of-conduct"
+      weight: 10
+    - name: "Guida per Maintainer"
+      pageRef: "maintainers-guide"
+      weight: 20

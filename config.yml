@@ -1,7 +1,17 @@
 baseURL: "https://www.prestashop-project.org/"
 languageCode: "en-us"
 defaultContentLanguage: "en"
-title: "PrestaShop Project - Open Source e-Commerce platform"
+languages:
+  en:
+    title: "PrestaShop Project - Open Source e-Commerce platform"
+    languageCode: "en-us"
+    languageName: "English"
+    weight: 1
+  it:
+    title: "PrestaShop Project - Piattaforma e-Commerce Open Source"
+    languageCode: "it-it"
+    languageName: "Italiano"
+    weight: 2
 
 theme: "ps-org-theme"
 enableGitInfo: true
