@@ -40,7 +40,8 @@ Scoped Maintainers have the same mission as Project Maintainers, but over a limi
 If the scope is one or multiple repositories, maintainers rights are granted only on these repositories.
 If the scope is larger (example: being in charge of a folder inside a repository) maintainer rights are granted on the repository and the scoped maintainer is trusted not to abuse.
 
-- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) is a scoped maintainer for [Classic](https://github.com/prestashop/classic-theme) and [Hummingbird](https://github.com/prestashop/hummingbird) themes
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) – [Classic](https://github.com/prestashop/classic-theme) and [Hummingbird](https://github.com/prestashop/hummingbird) themes
+- Boubker Bribri (([@boubkerbribri](https://github.com/boubkerbribri))) – UI tests
 
 ### Committers
 
@@ -103,7 +104,6 @@ Software Developers in Test provide technical vision, review contribution and wr
 
 Current Software Developers in Test:
 
-
 - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
 - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
 - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
@@ -116,7 +116,6 @@ Wording managers ensure that wordings are adequate, follow the project's tone of
 
 Current wording managers:
 
-- Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
 - Léa Delin ([@l-delin](https://github.com/l-delin))
 
 ### User Documentation Managers
@@ -125,7 +124,6 @@ User documentation managers ensure the quality and consistency of the [user docu
 
 Current user documentation managers:
 
-- Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
 - Léa Delin ([@l-delin](https://github.com/l-delin))
 
 ### Technical Documentation Managers
@@ -134,4 +132,4 @@ Tech documentation managers ensure the quality and consistency of the [developer
 
 Current tech documentation managers:
 
-_No one yet_
+- Thomas Nares ([@thomasnares](https://github.com/thomasnares))
