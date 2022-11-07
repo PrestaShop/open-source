@@ -1,9 +1,5 @@
 ---
 title: Legal notice
-menu:
-  main:
-    parent: 'Resources'
-    name: 'Legal notice'
 ---
 
 # Legal notice
@@ -42,7 +38,7 @@ The PrestaShop project is an open-source software platform to build e-commerce s
  
 **2. Intellectual Property.**
 
-All Website elements, their design, selection, presentation, organization are open-source and released under the [MIT](https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE) license and designed by [Themefisher](https://themefisher.com/), developed by [Gethugothemes](https://gethugothemes.com/).
+All Website elements, their design, selection, presentation, and organization are open-source and released under the [MIT](https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE) license. Some elements are based on original work designed by [Themefisher](https://themefisher.com/) and developed by [Gethugothemes](https://gethugothemes.com/).
 
 The trademarks, domain names, acronyms, logos, drawings and other elements that appear on the Website are the exclusive property of PrestaShop SA.
 
@@ -85,9 +81,13 @@ PrestaShop SA accepts no liability for the websites to which these links lead as
 
 **5.  Personal data.**
 
-**5.1. Personal data collected directly on the Website.** We do not collect personal data directly on the Website.**
+**5.1. Personal data collected directly on the Website.** 
 
-**5.2. Personal data collected indirectly on the Website.** We collect some of your personal information indirectly through cookies or other tracking devices. **
+We do not collect personal data directly on the Website.
+
+**5.2. Personal data collected indirectly on the Website.** 
+
+We collect some of your personal information indirectly through cookies or other tracking devices. 
 
 **What is a cookie?**
 
