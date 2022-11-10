@@ -47,3 +47,6 @@ footer_right:
   - name: "Maintainer's guide"
     pageRef: "maintainers-guide"
     weight: 20
+  - name: "Legal notice"
+    pageRef: "legal"
+    weight: 30
