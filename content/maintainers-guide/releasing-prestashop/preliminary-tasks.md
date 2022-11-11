@@ -77,7 +77,7 @@ It is usually only done once per release as well.
 You can do this step using Git or directly on GitHub on the next step.
 {{% /notice %}}
 
-The theme has been moved outside of the Core repository since 8.0.0 .
+The theme has been moved outside of the Core repository since version 8.0.0.
 
 * Create git tag on the Theme repository
 
