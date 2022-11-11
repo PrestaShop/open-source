@@ -76,7 +76,31 @@ Ask a maintainer from the PrestaShop Company with access to the Translation Tool
 It is usually only done once per release as well.
 {{% /notice %}}
 
-## 4. Manual verifications
+## 4. Lock the theme version.
+
+{{% notice tip %}}
+You can do this step using Git or directly on GitHub on the next step.
+{{% /notice %}}
+
+The theme has been moved outside of the Core repository since version 8.0.0.
+
+* Create git tag on the Theme repository
+
+When a new release is built, this tag is needed to lock the theme version.
+
+- [Tag][git-tag] the new version:
+    ```bash
+    git tag 2.0.0-rc1 # replace with your version
+    ```
+- Push the tag:
+    ```bash
+    git push 2.0.0-rc1 # replace with your version
+    ```
+
+* Update `composer.lock` to target the new tag
+
+
+## 5. Manual verifications
 
 Make sure that in the current branch:
 
@@ -126,3 +150,5 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [how-to-build-assets]: {{< devdocs "development/compile-assets/" >}}
 [nightly-build-board]: https://nightly.prestashop.com/
 [security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
+[git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
+
