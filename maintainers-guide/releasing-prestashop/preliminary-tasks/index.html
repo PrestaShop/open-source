@@ -41,7 +41,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2022-10-10T11:41:22+02:00" />
+<meta property="article:modified_time" content="2022-11-11T21:54:30+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -271,7 +271,8 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
         <li><a href="#1-create-the-new-version-in-addons-marketplace-and-update-native-module-compatibility">1. Create the new version in Addons Marketplace and update native module compatibility</a></li>
         <li><a href="#2-make-sure-the-version-number-has-been-updated-in-the-core">2. Make sure the version number has been updated in the Core</a></li>
         <li><a href="#3-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">3. Make sure the default translation catalogue has been updated and pushed to Crowdin</a></li>
-        <li><a href="#4-manual-verifications">4. Manual verifications</a></li>
+        <li><a href="#4-lock-the-theme-version">4. Lock the theme version.</a></li>
+        <li><a href="#5-manual-verifications">5. Manual verifications</a></li>
       </ul>
     </li>
   </ul>
@@ -335,7 +336,27 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <p>It is usually only done once per release as well.</p>
 </div>
 
-<h2 id="4-manual-verifications">4. Manual verifications</h2>
+<h2 id="4-lock-the-theme-version">4. Lock the theme version.</h2>
+
+<div class="notices tip" >You can do this step using Git or directly on GitHub on the next step.</div>
+
+<p>The theme has been moved outside of the Core repository since version 8.0.0.</p>
+<ul>
+<li>Create git tag on the Theme repository</li>
+</ul>
+<p>When a new release is built, this tag is needed to lock the theme version.</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tag</a> the new version:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git tag 2.0.0-rc1 <span class="c1"># replace with your version</span>
+</code></pre></div></li>
+<li>Push the tag:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git push 2.0.0-rc1 <span class="c1"># replace with your version</span>
+</code></pre></div></li>
+</ul>
+<ul>
+<li>Update <code>composer.lock</code> to target the new tag</li>
+</ul>
+<h2 id="5-manual-verifications">5. Manual verifications</h2>
 <p>Make sure that in the current branch:</p>
 <ul>
 <li>
