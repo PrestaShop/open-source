@@ -55,6 +55,9 @@ Current committers:
 - Thomas Roux ([@okom3pom](https://github.com/okom3pom))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
+- Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
+- Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
+- Salim Benouamer ([@lartist](https://github.com/lartist))
 
 ### UX Designers
 
