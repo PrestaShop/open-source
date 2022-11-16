@@ -82,6 +82,14 @@ Attach to GitHub release a stand-alone ready-to-use ZIP archive of the module.
 
 This archive must be a stand-alone running module, which means it musts embeds all necessary files for its correct behavior. This includes bundled frontend assets (JS, CSS), NPM dependencies or Composer dependencies.
 
+### Create a new milestone
+
+Once the GitHub release is done, you can create a new milestone and close the old one.
+
+In the module's repository, click on `pull requests`, and then on `milestones` next to the search field.
+
+To create a new milestone, click `new milestone` and fill out the form, you can leave the `due date` field empty if it is not relevant. Once the new milestone is created you can close the old one.
+
 ### Addons API
 
 PrestaShop instances are able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository https://github.com/PrestaShop/PrestaShop-modules
