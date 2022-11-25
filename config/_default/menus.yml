@@ -3,23 +3,34 @@ main:
   #  url: "about"
   #  enable: false
   #  weight: 1
-  - name: "Blog"
+  - name: "News"
     url: "https://build.prestashop-project.org"
     weight: 1
-  - name: "GitHub"
-    url: "https://github.com/PrestaShop/PrestaShop/"
+  - name: "Download"
     weight: 2
-  - name: "Get Involved"
-    url: "https://devdocs.prestashop-project.org/8/contribute/"
+  - name: "Latest Releases"
+    parent: "Download"
+    url: "https://github.com/PrestaShop/PrestaShop/releases"
+    weight: 1
+  - name: "Community"
     weight: 3
+  - name: "GitHub"
+    parent: "Community"
+    url: "https://github.com/PrestaShop/PrestaShop/"
+    weight: 1
+  - name: "Get Involved"
+    parent: "Community"
+    url: "get-involved"
+    weight: 2
   - name: "Contributors"
+    parent: "Community"
     url: "https://contributors.prestashop.com/"
-    weight: 4
+    weight: 3
   - name: "Support"
     pageRef: "support"
-    weight: 5
+    weight: 4
   - name: "Resources"
-    weight: 6
+    weight: 5
 
 footer_left:
   - name: Blog
