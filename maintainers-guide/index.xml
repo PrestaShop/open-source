@@ -35,9 +35,9 @@ Candidates can apply to become maintainer over the whole project, or just a scop
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/how-to-become-a-committer/</guid>
-      <description>How to become a committer In the PrestaShop project, committer are contributors with partial merge rights.
-Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
-Prerequisites to become a committer  Active participation in the project  Have at least one accepted, quality Pull Request. Display a record of Pull Request reviews. Real interest in getting involved in code review.</description>
+      <description>How to become a committer In the PrestaShop project, committers are contributors with merge rights.
+Committers participate in reviewing code contributions.
+Prerequisites to become a committer  Active participation in the project  Have at least one accepted, quality Pull Request. Display a record of Pull Request reviews. Real interest in getting involved in code review.   Cultural convergence  Respect the Code of Conduct; behave respectfully and in good faith.</description>
     </item>
     
     <item>
