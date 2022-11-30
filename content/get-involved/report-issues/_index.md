@@ -43,6 +43,6 @@ In that case, the bug will receive a severity classification, and be marked as "
 
 Although higher severity bugs are more likely to be fixed quickly, PrestaShop remains a community-built project, and therefore there is no guarantee about when a given bug will be fixed by a contributor. Consequently, the best way to make sure that a bug is fixed quickly is to fix it yourself, or hire a specialist to do it for you. 
 
-If you get a bug fixed, please consider submitting a Pull Request to integrate it in the project. 
+If you get a bug fixed, please consider submitting a Pull Request to integrate it into the project. 
 
 To find out more, read [How issues are sorted]({{< relref "how-issues-are-sorted" >}}).

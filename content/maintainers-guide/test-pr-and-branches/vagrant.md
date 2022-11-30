@@ -26,7 +26,6 @@ If you're using Windows, we recommend you to download [Git bash](https://git-scm
 
 ## Getting started
 
-The process is pretty simple.
 
 First, you must clone the repository [https://github.com/PrestaShop/vagrant](https://github.com/PrestaShop/vagrant).
 

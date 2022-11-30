@@ -20,7 +20,7 @@ Here are the main ways you can get involved in the project:
 
 ### Other ways to contribute
 
-- **Raise awareness about the project.** You can write about the project blogs, discuss about it on social media, meetups, conferences, etc.
+- **Raise awareness about the project.** You can write blog articles about the project and discuss it on social media, meetups, conferences, etc.
 - **Help community members.** You can answer questions on [Slack][slack], participate in [GitHub][github], create tutorials on your blog or on Youtube, etc.
 - **... or simply use the software.** Just being a user is also helpful!
 
