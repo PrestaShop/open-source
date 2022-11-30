@@ -131,9 +131,7 @@ A Pull Request may only be merged after the following requirements have been ful
 - The change does not have any outstanding merge conflicts.
 - Automated checks (including automated tests) are passing.
 
-On the [PrestaShop Core repository][prestashop-core-repository]), two approvals are required:
-- either two approvals set by two maintainers
-- or one approval by a committer and one approval by a maintainer
+On the [PrestaShop Core repository][prestashop-core-repository]), two approvals are required.
 
 ### After merging
 

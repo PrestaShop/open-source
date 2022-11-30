@@ -45,7 +45,7 @@ If the scope is larger (example: being in charge of a folder inside a repository
 
 ### Committers
 
-Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
+Committers review and merge code contributions, while ensuring that the software is developed according to the product vision.
 
 Current committers:
 

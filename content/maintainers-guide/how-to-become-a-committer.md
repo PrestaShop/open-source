@@ -5,10 +5,9 @@ weight: 12
 
 # How to become a committer
 
-In the PrestaShop project, committer are contributors with partial merge rights. 
+In the PrestaShop project, committers are contributors with merge rights.
 
-Committers participate in reviewing code contributions and are able to include them in the project once they have been accepted and verified.
-
+Committers participate in reviewing code contributions.
 
 ## Prerequisites to become a committer
 
