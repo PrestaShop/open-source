@@ -3,7 +3,7 @@ title: PrestaShop Project's Slack Chat
 
 menu:
   main:
-    parent: 'Resources'
+    parent: 'Community'
     name: 'Slack chat'
 
 aliases:
