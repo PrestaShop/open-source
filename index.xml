@@ -54,15 +54,6 @@ Prerequisites to become a committer  Active participation in the project  Have a
     </item>
     
     <item>
-      <title>What&#39;s New in PrestaShop 8.0</title>
-      <link>https://www.prestashop-project.org/releases/prestashop80/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/releases/prestashop80/</guid>
-      <description>PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.</description>
-    </item>
-    
-    <item>
       <title>Create the build</title>
       <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -172,6 +163,16 @@ It allows the product managers to transform a Slack message (and its comments) i
     </item>
     
     <item>
+      <title>How issues are sorted</title>
+      <link>https://www.prestashop-project.org/get-involved/report-issues/how-issues-are-sorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/get-involved/report-issues/how-issues-are-sorted/</guid>
+      <description>How issues are sorted What happens to the issue you have reported PrestaShop Quality Assurance team (aka QA) uses a transparent definition for the criteria used to qualify issues&#39; severity, and how they should be applied through labels on GitHub issues.
+Please note that severity is to be distinguished from priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development.</description>
+    </item>
+    
+    <item>
       <title>License &amp; license compatibility</title>
       <link>https://www.prestashop-project.org/maintainers-guide/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -202,6 +203,27 @@ We require from maintainers to take the necessary steps to make sure this accoun
       <description>Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
 More information about prestashop.slack.com
 Request a new channel Creating a new channel is reserved to the administrators.</description>
+    </item>
+    
+    <item>
+      <title>Using the Vagrant virtual machine</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/</guid>
+      <description>Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New in PrestaShop 8.0</title>
+      <link>https://www.prestashop-project.org/releases/prestashop80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/releases/prestashop80/</guid>
+      <description>PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.</description>
     </item>
     
   </channel>

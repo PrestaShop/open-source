@@ -3,9 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
-<title>PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
-So, let&rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:"/>
+<title>Using the Vagrant virtual machine | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
 
 
 
@@ -23,22 +25,28 @@ So, let&rsquo;s build a knowledge base. If you want to contribute to this page, 
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="PrestaShop Project - Open Source e-Commerce platform"/>
-<meta name="twitter:description" content="List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
-So, let&rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:"/>
-<meta property="og:title" content="" />
-<meta property="og:description" content="List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
-So, let&rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:" />
+<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
+<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+<meta property="og:title" content="Using the Vagrant virtual machine" />
+<meta property="og:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/modules-themes/readme/" /><meta property="article:section" content="modules-themes" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2021-06-16T14:36:06-03:00" />
+<meta property="article:modified_time" content="2022-11-30T17:10:41+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.
-So, let&rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:"/>
+<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
+<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
 
 
 
@@ -234,18 +242,26 @@ So, let&rsquo;s build a knowledge base. If you want to contribute to this page, 
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item"><a href="/modules-themes/">Modules-themes</a></li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page"></li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/test-pr-and-branches/">How to test Pull Requests and branches</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Using the Vagrant virtual machine</li>
       
     
   </ol>
@@ -260,17 +276,21 @@ So, let&rsquo;s build a knowledge base. If you want to contribute to this page, 
     <div class="toc-title">Table of Contents</div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#list-of-third-party-open-source-and-free-of-charge-modules-and-themes-for-the-prestashop-e-commerce-solution">List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution</a>
+    <li><a href="#using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</a>
       <ul>
-        <li><a href="#modules">Modules</a>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#what-is-installed">What is installed</a></li>
+        <li><a href="#getting-started">Getting started</a>
           <ul>
-            <li><a href="#prestashop-quality-checklist-opquast">Prestashop Quality Checklist Opquast</a></li>
-            <li><a href="#image-regenerator">Image Regenerator</a></li>
-          </ul>
-        </li>
-        <li><a href="#themes">Themes</a>
-          <ul>
-            <li><a href="#classic-rocket">Classic Rocket</a></li>
+            <li><a href="#environments">Environments</a>
+              <ul>
+                <li><a href="#available-php-versions">Available PHP versions</a></li>
+                <li><a href="#prestashop">PrestaShop</a></li>
+                <li><a href="#mysql">MySQL</a></li>
+                <li><a href="#ssh">SSH</a></li>
+              </ul>
+            </li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
           </ul>
         </li>
       </ul>
@@ -282,52 +302,83 @@ So, let&rsquo;s build a knowledge base. If you want to contribute to this page, 
 
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="list-of-third-party-open-source-and-free-of-charge-modules-and-themes-for-the-prestashop-e-commerce-solution">List of third party, open source and free of charge modules and themes for the PrestaShop e-commerce solution</h1>
-<p>There are plenty of useful themes and modules available on the web from third party developers for the PrestaShop e-commerce solution. Unfortunately, there is no place currently to list them so people can find them.</p>
-<p>So, let&rsquo;s build a knowledge base. If you want to contribute to this page, please create a pull request for each module or theme you would like to propose, following the example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">### Module/theme name
-- Developer: (name of the company or developer)
-- Description: (one or two lines max)
-- Keywords: (topics, features, separated by a comma)
-- Source code: (like a GitHub repository link for support, issues, and source code)
-- Download link: (where to find a ready to use zip file: direct link, or link to the release page of your repository, or to a page on your website where people can download the zip file)
-</code></pre></div><p>The aim is to use this data as a base to create content for a dedicated website in the future. That&rsquo;s why respecting the template is very important, so it can be processed by a script.</p>
-<p>To be accepted in the list, check that your modules and themes are open source and respect the intellectual property of the PrestaShop open source project:</p>
+        <div class="content"><h1 id="using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</h1>
+<p>We recommend using our virtual machine to quickly get a testing environment in place.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This is what you need to run this project:</p>
 <ul>
-<li>Licensed and distributed under AFL</li>
-<li>Dependencies, librairies and artwork distributed in the ZIP for installation must be in <a href="https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/compatible-licenses/">compatible licenses</a></li>
-<li>The terms of use don&rsquo;t include restrictions incompatible with the <a href="https://en.wikipedia.org/wiki/Academic_Free_License">AFL</a> or the <a href="https://opensource.org/osd">Open Source Definition</a></li>
-<li>The module is not tight to a commercial service (e.g logistic, payment)</li>
+<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></li>
 </ul>
-<p>Please keep in mind that the current rules are a proposal, and they may evolve depending on feedback and discussions.</p>
-<hr>
-<h2 id="modules">Modules</h2>
-<h3 id="prestashop-quality-checklist-opquast">Prestashop Quality Checklist Opquast</h3>
+<p>If you&rsquo;re using Windows, we recommend you to download <a href="https://git-scm.com/downloads">Git bash</a> and execute all commands under this shell.</p>
+<h2 id="what-is-installed">What is installed</h2>
 <ul>
-<li>Developer: Constantin Boulanger</li>
-<li>Description: This Prestashop extension allows you to obtain the 240 criteria of Opquast&rsquo;s Web Quality checklist in your Prestashop back-office.</li>
-<li>Keywords: Accessibility, referencing, performance, navigation, mobile, video, security, good practice, opquast</li>
-<li>Source code: <a href="https://github.com/Sinepel/ps_quality_checklist_opquast">https://github.com/Sinepel/ps_quality_checklist_opquast</a></li>
-<li>Download link: <a href="https://github.com/Sinepel/ps_quality_checklist_opquast/releases">https://github.com/Sinepel/ps_quality_checklist_opquast/releases</a></li>
+<li>Debian 10 Buster</li>
+<li>Git</li>
+<li>Apache 2.4</li>
+<li>Multiple PHP versions (7.1, 7.2, 7.3, 7.4)</li>
+<li>MariaDB 10</li>
+<li>NodeJS</li>
 </ul>
-<h3 id="image-regenerator">Image Regenerator</h3>
+<h2 id="getting-started">Getting started</h2>
+<p>First, you must clone the repository <a href="https://github.com/PrestaShop/vagrant">https://github.com/PrestaShop/vagrant</a>.</p>
+<p>Second, execute the script <code>run.sh</code> (or <code>run.bat</code> if you&rsquo;re under Windows) and follow instructions.</p>
+<p>Most of the time, there is a prompt asking for a network interface, remember it&rsquo;s the communication between the virtual machine and the network card.</p>
+<figure><img src="img/vagrant/run-script.png"
+         alt="Running the run.sh script"/>
+</figure>
+
+<p>The first installation will take a while, because it needs to download the vagrant box, installs all needed packages and configures the system to make it compatible with PrestaShop.
+<figure><img src="img/vagrant/script-ended-successful.png"
+         alt="Script running successfuly"/>
+</figure>
+</p>
+<p>Then, visit <a href="http://192.168.42.42/prestashop">http://192.168.42.42/prestashop</a>.</p>
+<p>phpMyAdmin is also available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
+<h3 id="environments">Environments</h3>
+<h4 id="available-php-versions">Available PHP versions</h4>
 <ul>
-<li>Developer: Jeremy Besson</li>
-<li>Description: Regenerate safely prestashop images with async process (works on low performance server)</li>
-<li>Keywords: pictures, images, thumbnails, regenerator, products, catalog</li>
-<li>Source code: <a href="https://github.com/meetjey/imageRegeneratorPrestashop">https://github.com/meetjey/imageRegeneratorPrestashop</a></li>
-<li>Download link:</li>
+<li>7.1</li>
+<li>7.2</li>
+<li>7.3</li>
+<li>7.4</li>
 </ul>
-<hr>
-<h2 id="themes">Themes</h2>
-<h3 id="classic-rocket">Classic Rocket</h3>
+
+<div class="notices tip" >Be aware that some PrestaShop versions are not compatible with all the above environments. See <a href="https://devdocs.prestashop-project.org/8/basics/installation/system-requirements">System requirements</a> to find out which version is compatible with which PHP version.</div>
+
+<h4 id="prestashop">PrestaShop</h4>
 <ul>
-<li>Developer: Prestarocket</li>
-<li>Description: Classic Rocket is a rework of &ldquo;classic theme&rdquo;. It has been built keeping in mind: performance, accessibility, and SEO.</li>
-<li>Keywords: Classic, Speed, Light, Fast, lazy loading</li>
-<li>Source code: <a href="https://github.com/prestarocket-agence/classic-rocket">https://github.com/prestarocket-agence/classic-rocket</a></li>
-<li>Download link: <a href="https://github.com/prestarocket-agence/classic-rocket/releases">https://github.com/prestarocket-agence/classic-rocket/releases</a></li>
-<li>Demo at: <a href="https://demoprestashop.prestarocket.com/">https://demoprestashop.prestarocket.com/</a></li>
+<li>Username: <code>demo@prestashop.com</code></li>
+<li>Password: <code>prestashop_demo</code></li>
+</ul>
+<h4 id="mysql">MySQL</h4>
+<p>phpMyAdmin is available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
+<ul>
+<li>MySQL Host: <code>127.0.0.1</code></li>
+<li>Database name: <code>prestashop</code></li>
+<li>Username: <code>prestashop</code></li>
+<li>Password: <code>prestashop</code></li>
+<li>Port: <code>3306</code></li>
+</ul>
+<h4 id="ssh">SSH</h4>
+<p>You can login into the virtual machine with <code>vagrant ssh</code></p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If something went wrong during the installation, the error is displayed explaining which command is failing.</p>
+<ul>
+<li>
+<p>Invalid branch name:
+<figure><img src="img/vagrant/build-failed.png"
+         alt="Invalid git branch name"/>
+</figure>
+</p>
+</li>
+<li>
+<p>Invalid PHP version:
+<figure><img src="img/vagrant/invalid-php-version.png"
+         alt="Invalid PHP version"/>
+</figure>
+</p>
+</li>
 </ul>
 </div>
       </div>
