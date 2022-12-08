@@ -49,6 +49,7 @@ Committers review and merge code contributions, while ensuring that the software
 
 Current committers:
 
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
