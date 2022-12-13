@@ -13,6 +13,8 @@ label[type=category] {}
 label[type=bcbreak] { background-color: #FF7854; }
 label[type=keyfeature] { background-color: #FFB33A; }
 label[type=needsdoc] { background-color: #D93E0B; color: #fff; }
+label[type=needsupgrade] { background-color: #D93E0B; color: #fff; }
+label[type=needstheme] { background-color: #D93E0B; color: #fff; }
 label[type=wip] { background-color: #FF8800; }
 label[type=e2e] { background-color: #EDEDED; }
 label[type=migration] { background-color: #00E031; }
@@ -141,6 +143,8 @@ After merging a Pull Request on the Core Repository, maintainers must make sure 
 - Add the label <label type="keyfeature">Key feature</label> if the Pull Request must be mentioned in the Release Note.
 - Add the label <label type="bcbreak">BC break</label> if the Pull Request introduces a [BC Break][bc-break].
 - Add the label <label type="needsdoc">Needs documentation</label> if the Pull Request introduces changes that need to be documented in [DevDocs][dev-doc].
+- Add the label <label type="needsupgrade">Needs autoupgrade PR</label> if the Pull Request introduces changes in configuration or data structure and existing installs need to be modified.
+- Add the label <label type="needstheme">Needs theme PR</label> if the Pull Request introduces changes that need theme modification to work.
 
 These actions are very important as they will be key to writing a good Release Note and ChangeLog for the next version.
 
@@ -175,13 +179,15 @@ The following labels are added when an action is required:
 
 | When                                                                                       | Who is concerned |     Label<br><small>(action required)</small>      |       Label<br><small>(done)</small>        |
 |--------------------------------------------------------------------------------------------|:----------------:|:--------------------------------------------------:|:-------------------------------------------:|
-| The PR is waiting for the author to address feedback                                       | The PR's author  |   <label type="needs">Waiting for author</label>   |                _(no label)_                 |
-| The PR must be rebased<br><small>(because of merge conflicts or wrong base branch)</small> | The PR's author  |   <label type="needs">Waiting for rebase</label>   |                _(no label)_                 |
-| The PR introduced functional changes                                                       | Product Managers |     <label type="needs">Waiting for PM</label>     |      <label type="check">PM ✓</label>       |
-| The PR introduced visual changes                                                           |   UX Designers   |     <label type="needs">Waiting for UX</label>     |      <label type="check">UX ✓</label>       |
-| The PR introduced wording changes                                                          | Wording Managers |  <label type="needs">Waiting for Wording</label>   |    <label type="check">Wording ✓</label>    |
-| The PR is ready for QA verification                                                        | Software Testers |     <label type="needs">Waiting for QA</label>     |      <label type="check">QA ✓</label>       |
-| The PR needs to be documented in DevDocs                                                   |   Maintainers    | <label type="needsdoc">Needs documentation</label> | <label type="check">Documentation ✓</label> |
+| The PR is waiting for the author to address feedback                                       | The PR's author   | <label type="needs">Waiting for author</label>   |                _(no label)_                     |
+| The PR must be rebased<br><small>(because of merge conflicts or wrong base branch)</small> | The PR's author   | <label type="needs">Waiting for rebase</label>   |                _(no label)_                     |
+| The PR introduced functional changes                                                       | Product Managers  | <label type="needs">Waiting for PM</label>     |      <label type="check">PM ✓</label>             |
+| The PR introduced visual changes                                                           |   UX Designers    | <label type="needs">Waiting for UX</label>     |      <label type="check">UX ✓</label>             |
+| The PR introduced wording changes                                                          | Wording Managers  | <label type="needs">Waiting for Wording</label>   |    <label type="check">Wording ✓</label>      |
+| The PR is ready for QA verification                                                        | Software Testers  | <label type="needs">Waiting for QA</label>     |      <label type="check">QA ✓</label>             |
+| The PR needs to be documented in DevDocs                                                   |   Maintainers     | <label type="needsdoc">Needs documentation</label> | <label type="check">Documentation ✓</label>   |
+| The PR needs PR for autoupgrade module                                                     |   The PR's author | <label type="needsupgrade">Needs autoupgrade PR</label> | _(no label)_                     |
+| The PR needs PR for default theme                                                          |   The PR's author | <label type="needstheme">Needs theme PR</label>    | _(no label)_                                  |
 
 ### Meta labels
 
