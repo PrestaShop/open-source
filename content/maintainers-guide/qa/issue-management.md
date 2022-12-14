@@ -73,9 +73,9 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
 8. **`Module`** and **`<Module name>`** – Name of the native module the bug / feature belongs to
 
 
----
-> Don’t use the **`develop`**  label, try to specify the branch like **`1.7.8.x`** or **`8.x`**
-
+{{% notice warning %}}
+Don’t use the **`develop`**  label, try to specify the branch like **`1.7.8.x`** or **`8.x`**
+{{% /notice %}}
 
 #### Flow overview
 
@@ -95,8 +95,9 @@ The first thing to do is to deal with the new issues. This can be done by [filte
 
 The second step is to deal with issues labelled `NMI` (Need More Info) without `Waiting for author` label, which could have been updated by the author. To do this, you have to display the [NMI labeled issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+sort%3Aupdated-asc) without `Waiting for author` and sort them by decreasing date of update. `NMI` issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author has replied and provided the requested details, the issue will proceed according to the issue handling protocol.
 
----
-> Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
+{{% notice tip %}}
+Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
+{{% /notice %}}
 
 
 #### Issues to be closed
@@ -151,8 +152,9 @@ If it is a suggestion for feature, all mandatory fields in the [template](https:
 2. If the issue seems properly specified, set the status label to `Ready`. Otherwise, set it to `Needs specs`.
 3. Answer using the "Issue is a functional feature request" template.
 
----
-> Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
+{{% notice tip %}}
+Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
+{{% /notice %}}
 
 #### Duplicated issues
 
@@ -194,12 +196,11 @@ If the issue is reproduced: the bug follows the normal course: go to the next st
 
 If the issue is not reproduced: **It’s a regression!** Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762...) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on `#qa-core` channel (Corp Slack) and `#dev-core` (Public Slack). The Project must then be labeled by selecting the **label corresponding to the version in which the regression was detected.**
 
----
-> Regressions for the **last minor or major stable version** must be placed in the Maxi Kanban, in the first column. 
+{{% notice note %}}
+Regressions for the **last minor or major stable version** must be placed in the Maxi Kanban, in the first column. 
 
----
-> Regression for the **develop branch** must be placed in the Kanban of the corresponding next minor or major version. 
-
+Regression for the **develop branch** must be placed in the Kanban of the corresponding next minor or major version.
+{{% /notice %}}
 
 #### Labelling
 
