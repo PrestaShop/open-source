@@ -52,7 +52,7 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
      - **`Duplicate`** – the issue has already been reported
 
 
-4. **Severity** *(only for bugs, more details [here](https://devdocs.prestashop-project.org/1.7/contribute/contribution-process/how-issues-are-sorted/))*
+4. **Severity** *(only for bugs, more details [here][how-issues-are-sorted])*
     - **`Trivial`** – cosmetic, low impact bugs
     - **`Minor`** – low severity bugs
     - **`Major`** – high severity bugs
@@ -153,7 +153,7 @@ If it is a suggestion for feature, all mandatory fields in the [template](https:
 3. Answer using the "Issue is a functional feature request" template.
 
 {{% notice tip %}}
-Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/)!
+Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements]({{< devdocs "basics/installation/system-requirements/" >}})!
 {{% /notice %}}
 
 #### Duplicated issues
@@ -207,7 +207,7 @@ Regression for the **develop branch** must be placed in the Kanban of the corres
 **This step is crucial.** Labelling consists on tagging the issue according to its different characteristics. This step is **critical** because it helps us find a bug when we’re looking for a duplicate. The different tags are:
 
 - Type (bug or feature),
-- [Severity (major, minor, ...)](https://devdocs.prestashop.com/1.7/contribute/contribution-process/how-issues-are-sorted/),
+- [Severity (major, minor, ...)][how-issues-are-sorted],
 - Regression or not,
 - Verified (if we reproduce the issue)
 - Category (FO/BO + affected page or concerned feature),
@@ -330,9 +330,9 @@ Hello,
 
 I reproduce the issue with PrestaShop version x.x.x, I'll add this to the backlog so it can be fixed.
 
-Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project’s own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you.
+Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project's own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you.
 
-If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
+If you fix the issue on your end, please [contribute it back to the project]({{< devdocs "contribute/contribute-pull-requests/" >}}). Remember that the more people contribute, the better PrestaShop becomes for everyone.
 
 Thank you
 ```
@@ -348,7 +348,7 @@ If this one is important to you [...], the better PrestaShop becomes for everyon
 Instead, you can add this:
 
 ```
-We’re waiting for your PR 🚀
+We're waiting for your PR 🚀
 ```
 
 ###### Regression
@@ -356,7 +356,7 @@ We’re waiting for your PR 🚀
 If it’s a regression, add this sentence:
 
 ```
-I didn’t manage to reproduce the issue with PS x.x.x, I only reproduce it with PS x.x.x. So it’s a regression!
+I didn't manage to reproduce the issue with PS x.x.x, I only reproduce it with PS x.x.x. So it's a regression!
 ```
 
 #### Issue not completed
@@ -380,7 +380,7 @@ Thank you for your suggestion. The Maintainer Team will take it into considerati
 
 Please be aware that there is no guarantee that this feature will be developed anytime soon. If this is important to you, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you create it.
 
-If you or anyone else is willing to [contribute this feature](https://devdocs.prestashop.com/1.7/contribute/contribute-pull-requests/) to the PrestaShop Project, the teams will be happy to help by ensuring that it fits well within the project. Please let us know if that is the case!
+If you or anyone else is willing to [contribute this feature]({{< devdocs "contribute/contribute-pull-requests/" >}}) to the PrestaShop Project, the teams will be happy to help by ensuring that it fits well within the project. Please let us know if that is the case!
 
 Thank you
 ```
@@ -394,7 +394,7 @@ If this one is important to you [...] Please let us know if that is the case!
 Instead, you can add this:
 
 ```
-We’re waiting for your PR 🚀
+We're waiting for your PR 🚀
 ```
 
 #### Issue is a support request
@@ -420,10 +420,10 @@ Thanks in advance!
 
 #### Issue about an archived module
 
-```
+```text
 Hello,
 
-This module has been archived, it’s no longer maintained but you still can fork it if you need it for your shop.
+This module has been archived, it's no longer maintained but you still can fork it if you need it for your shop.
 
 Also let us know if you are willing to maintain this module.
 
@@ -438,4 +438,6 @@ Thanks in advance!
 4. Don't hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label (`Waiting for PM`, `Waiting for Dev`, etc).
     - If you ping someone, ask a direct question! Don't waste their time by making them read the whole thread and guess why did you ping them.
     - If the issue is too technical to reproduce, ping the Sheriff on Slack (DM) while adding the `TBR` and `Waiting for Dev` labels.
-5. If you don’t know if the issue is `Major` or `Minor`, please post it in `#dev-core` (Public Slack) and ping PM and QA lead, so they can settle the severity. Otherwise, you can check this doc [how-issues-are-sorted](https://devdocs.prestashop-project.org/1.7/contribute/contribution-process/how-issues-are-sorted/).
+5. If you don’t know if the issue is `Major` or `Minor`, please post it in `#dev-core` (Public Slack) and ping PM and QA lead, so they can settle the severity. Otherwise, you can check [how issues are sorted][how-issues-are-sorted].
+
+[how-issues-are-sorted]: {{< relref "/get-involved/report-issues/how-issues-are-sorted" >}}
