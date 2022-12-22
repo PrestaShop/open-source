@@ -5,7 +5,6 @@ menu:
   main:
     parent: 'Community'
     name: 'Office hours'
-    weight: 100
 ---
 
 # PrestaShop Project's Office Hours
