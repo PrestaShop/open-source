@@ -10,6 +10,10 @@ Before you can start your build, you must make sure that the project is ready to
 ## 1. Create the new version in Addons Marketplace and update native module compatibility
 
 {{% notice warning %}}
+**Only for PrestaShop 1.7.x releases.**
+{{% /notice %}}
+
+{{% notice warning %}}
 **This step requires special rights.**
 
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
