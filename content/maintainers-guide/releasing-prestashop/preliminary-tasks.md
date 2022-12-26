@@ -48,11 +48,6 @@ Check the following files and update them if necessary:
     const MINOR_VERSION = 6;
     const RELEASE_VERSION = 2;
     ```
-    
-{{% notice tip %}}
-Starting with Prestashop 8.1, version constants are located in `src/Core/Version.php`.
-{{% /notice %}}
-
 
 Make a pull request and have it merged.
 
