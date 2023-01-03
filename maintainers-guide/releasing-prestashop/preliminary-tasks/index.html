@@ -5,10 +5,9 @@
 	<meta charset="utf-8">
 <title>Preliminary tasks | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+1. Create the new version in Addons Marketplace and update native module compatibility Only for PrestaShop 1.7.x releases. This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&rsquo;t need to be performed again for the final release)."/>
+ This only needs to be done once per release."/>
 
 
 
@@ -28,29 +27,26 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Preliminary tasks"/>
 <meta name="twitter:description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+1. Create the new version in Addons Marketplace and update native module compatibility Only for PrestaShop 1.7.x releases. This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&rsquo;t need to be performed again for the final release)."/>
+ This only needs to be done once per release."/>
 <meta property="og:title" content="Preliminary tasks" />
 <meta property="og:description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+1. Create the new version in Addons Marketplace and update native module compatibility Only for PrestaShop 1.7.x releases. This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&rsquo;t need to be performed again for the final release)." />
+ This only needs to be done once per release." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2022-11-11T21:54:30+01:00" />
+<meta property="article:modified_time" content="2022-12-26T12:52:10+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Preliminary tasks"/>
 <meta name="twitter:description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+1. Create the new version in Addons Marketplace and update native module compatibility Only for PrestaShop 1.7.x releases. This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&rsquo;t need to be performed again for the final release)."/>
+ This only needs to be done once per release."/>
 
 
 
@@ -302,6 +298,9 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <p>Before you can start your build, you must make sure that the project is ready to be built.</p>
 <h2 id="1-create-the-new-version-in-addons-marketplace-and-update-native-module-compatibility">1. Create the new version in Addons Marketplace and update native module compatibility</h2>
 
+<div class="notices warning" ><strong>Only for PrestaShop 1.7.x releases.</strong></div>
+
+
 <div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
 <p>Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.</p>
 </div>
@@ -334,9 +333,6 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <span class="k">const</span> <span class="no">RELEASE_VERSION</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div></li>
 </ul>
-
-<div class="notices tip" >Starting with Prestashop 8.1, version constants are located in <code>src/Core/Version.php</code>.</div>
-
 <p>Make a pull request and have it merged.</p>
 
 <div class="notices tip" >If you&rsquo;re lost, check out <a href="https://github.com/PrestaShop/PrestaShop/pull/19980">this example</a> from the 1.7.6.6 release.</div>
