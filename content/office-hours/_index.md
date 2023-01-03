@@ -9,9 +9,7 @@ menu:
 
 # PrestaShop Project's Office Hours
 
-The Office Hours initiative is about project members making themselves available to the community (almost) every Tuesday at [11 am (Paris time)](https://time.is/1100_in_Paris), to discuss everything related to the project.
-
-These meetings have already proven they were a great idea. There have been constructive discussions about many ongoing projects, pull requests, architectural decisions, etc. This is also a chance to answer some community questions and help them finish their contributions.
+The Office Hours initiative is about project members making themselves available to the community (almost) every Tuesday at [11 am (Paris time)](https://time.is/1100_in_Paris), to discuss ongoing projects, pull requests, architectural decisions, etc. This is also a chance to answer some community questions and help them finish their contributions.
 
 ## Join the next meeting!
 
