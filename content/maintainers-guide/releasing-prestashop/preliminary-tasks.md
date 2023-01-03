@@ -10,6 +10,10 @@ Before you can start your build, you must make sure that the project is ready to
 ## 1. Create the new version in Addons Marketplace and update native module compatibility
 
 {{% notice warning %}}
+**Only for PrestaShop 1.7.x releases.**
+{{% /notice %}}
+
+{{% notice warning %}}
 **This step requires special rights.**
 
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
@@ -48,11 +52,6 @@ Check the following files and update them if necessary:
     const MINOR_VERSION = 6;
     const RELEASE_VERSION = 2;
     ```
-    
-{{% notice tip %}}
-Starting with Prestashop 8.1, version constants are located in `src/Core/Version.php`.
-{{% /notice %}}
-
 
 Make a pull request and have it merged.
 
