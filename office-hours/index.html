@@ -3,11 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Using the Vagrant virtual machine | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
-Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+<title>Office hours | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content=""/>
 
 
 
@@ -25,28 +22,17 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
-<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
-Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
-<meta property="og:title" content="Using the Vagrant virtual machine" />
-<meta property="og:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
-Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/" /><meta property="article:section" content="maintainers-guide" />
-
-<meta property="article:modified_time" content="2022-11-30T17:10:41+01:00" />
+<meta name="twitter:title" content="Office hours"/>
+<meta name="twitter:description" content=""/>
+<meta property="og:title" content="Office hours" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.prestashop-project.org/office-hours/" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
-<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
-Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+<meta name="twitter:title" content="Office hours"/>
+<meta name="twitter:description" content=""/>
 
 
 
@@ -227,7 +213,7 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 
 
 
-
+  
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -241,29 +227,13 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
         
       
       
-        
-      
-      
-        
-      
-      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
-      
-    
-      
-      
-        <li class="breadcrumb-item"><a href="/maintainers-guide/test-pr-and-branches/">How to test Pull Requests and branches</a></li>
-      
-    
-      
-      
-        <li class="breadcrumb-item active" aria-current="page">Using the Vagrant virtual machine</li>
+        <li class="breadcrumb-item active" aria-current="page">Office hours</li>
       
     
   </ol>
@@ -273,121 +243,19 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
     </div>
     <div class="row mx-xl-2">
       
-<div id="toc" class="col-xl-2 order-xl-1">
-  <div class="wrapper">
-    <div class="toc-title">Table of Contents</div>
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</a>
-      <ul>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#what-is-installed">What is installed</a></li>
-        <li><a href="#getting-started">Getting started</a>
-          <ul>
-            <li><a href="#environments">Environments</a>
-              <ul>
-                <li><a href="#available-php-versions">Available PHP versions</a></li>
-                <li><a href="#prestashop">PrestaShop</a></li>
-                <li><a href="#mysql">MySQL</a></li>
-                <li><a href="#ssh">SSH</a></li>
-              </ul>
-            </li>
-            <li><a href="#troubleshooting">Troubleshooting</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</h1>
-<p>We recommend using our virtual machine to quickly get a testing environment in place.</p>
-<h2 id="requirements">Requirements</h2>
-<p>This is what you need to run this project:</p>
-<ul>
-<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
-<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></li>
-</ul>
-<p>If you&rsquo;re using Windows, we recommend you to download <a href="https://git-scm.com/downloads">Git bash</a> and execute all commands under this shell.</p>
-<h2 id="what-is-installed">What is installed</h2>
-<ul>
-<li>Debian 10 Buster</li>
-<li>Git</li>
-<li>Apache 2.4</li>
-<li>Multiple PHP versions (7.1, 7.2, 7.3, 7.4)</li>
-<li>MariaDB 10</li>
-<li>NodeJS</li>
-</ul>
-<h2 id="getting-started">Getting started</h2>
-<p>First, you must clone the repository <a href="https://github.com/PrestaShop/vagrant">https://github.com/PrestaShop/vagrant</a>.</p>
-<p>Second, execute the script <code>run.sh</code> (or <code>run.bat</code> if you&rsquo;re under Windows) and follow instructions.</p>
-<p>Most of the time, there is a prompt asking for a network interface, remember it&rsquo;s the communication between the virtual machine and the network card.</p>
-<figure><img src="img/vagrant/run-script.png"
-         alt="Running the run.sh script"/>
-</figure>
-
-<p>The first installation will take a while, because it needs to download the vagrant box, installs all needed packages and configures the system to make it compatible with PrestaShop.
-<figure><img src="img/vagrant/script-ended-successful.png"
-         alt="Script running successfuly"/>
-</figure>
-</p>
-<p>Then, visit <a href="http://192.168.42.42/prestashop">http://192.168.42.42/prestashop</a>.</p>
-<p>phpMyAdmin is also available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
-<h3 id="environments">Environments</h3>
-<h4 id="available-php-versions">Available PHP versions</h4>
-<ul>
-<li>7.1</li>
-<li>7.2</li>
-<li>7.3</li>
-<li>7.4</li>
-</ul>
-
-<div class="notices tip" >Be aware that some PrestaShop versions are not compatible with all the above environments. See <a href="https://devdocs.prestashop-project.org/8/basics/installation/system-requirements">System requirements</a> to find out which version is compatible with which PHP version.</div>
-
-<h4 id="prestashop">PrestaShop</h4>
-<ul>
-<li>Username: <code>demo@prestashop.com</code></li>
-<li>Password: <code>prestashop_demo</code></li>
-</ul>
-<h4 id="mysql">MySQL</h4>
-<p>phpMyAdmin is available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
-<ul>
-<li>MySQL Host: <code>127.0.0.1</code></li>
-<li>Database name: <code>prestashop</code></li>
-<li>Username: <code>prestashop</code></li>
-<li>Password: <code>prestashop</code></li>
-<li>Port: <code>3306</code></li>
-</ul>
-<h4 id="ssh">SSH</h4>
-<p>You can login into the virtual machine with <code>vagrant ssh</code></p>
-<h3 id="troubleshooting">Troubleshooting</h3>
-<p>If something went wrong during the installation, the error is displayed explaining which command is failing.</p>
-<ul>
-<li>
-<p>Invalid branch name:
-<figure><img src="img/vagrant/build-failed.png"
-         alt="Invalid git branch name"/>
-</figure>
-</p>
-</li>
-<li>
-<p>Invalid PHP version:
-<figure><img src="img/vagrant/invalid-php-version.png"
-         alt="Invalid PHP version"/>
-</figure>
-</p>
-</li>
-</ul>
+        <div class="content"><h1 id="prestashop-projects-office-hours">PrestaShop Project&rsquo;s Office Hours</h1>
+<p>The Office Hours initiative is about project members making themselves available to the community (almost) every Tuesday at <a href="https://time.is/1100_in_Paris">11 am (Paris time)</a>, to discuss ongoing projects, pull requests, architectural decisions, etc. This is also a chance to answer questions from the community and help contributors finish their contributions.</p>
+<h2 id="join-the-next-meeting">Join the next meeting!</h2>
+<p>Would you like to discuss a pull request you are working on? Or the future of the project? Do you just want to listen to the discussion? If so, joining the meeting will be a great idea.</p>
+<p>Office Hours are held on <a href="https://meet.google.com/fer-hcgk-wti">this Google Meet room</a> every Tuesday at <a href="https://time.is/1100_in_Paris">11 am (Paris time)</a>, except for bank holiday days in most European countries.</p>
+<p>If you want to suggest topics for discussion, please consider <a href="https://forms.gle/2r7jPp5WxhFSUQme8">filling out this form</a>.</p>
 </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
