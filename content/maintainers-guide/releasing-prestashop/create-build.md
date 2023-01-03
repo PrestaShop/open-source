@@ -146,7 +146,7 @@ For patch versions, the beta and RC phase can be skipped (example: `prestashop_1
 {{% notice warning %}}
 **This step requires special rights.**
 
-Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step.
+Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step. If the branch does not contain security fixes, the maintainer must share publicly the ZIP file. 
 {{% /notice %}}
 
 ## 7. Communicate and wait for QA validation
