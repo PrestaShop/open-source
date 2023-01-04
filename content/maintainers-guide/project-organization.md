@@ -77,12 +77,12 @@ Current issue managers:
 - Aurélien Rita ([@AureRita](https://github.com/AureRita))
 - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
+- Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-- Ines sallemi ([@sallemiines](https://github.com/sallemiines))
+- Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
 - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-- Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 
 ### Software Testers
 
@@ -94,12 +94,12 @@ Current Software Testers:
 - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
 - Florine Hea ([@florine2623](https://github.com/florine2623))
 - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
+- Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
 - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-- Ines sallemi ([@sallemiines](https://github.com/sallemiines))
+- Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
 - Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
 - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
 - Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
-- Sarah Lorenzini Cavrot ([@sLorenzini](https://github.com/sLorenzini))
 - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
 
 ### Software Developers in Test
