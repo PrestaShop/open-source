@@ -38,7 +38,7 @@ Requirements Mandatory requirements The module should be valid which means:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2022-11-16T18:09:50+01:00" />
+<meta property="article:modified_time" content="2023-01-05T18:41:21+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -285,7 +285,7 @@ Requirements Mandatory requirements The module should be valid which means:"/>
             <li><a href="#merge-dev-into-master">Merge dev into master</a></li>
             <li><a href="#create-a-github-release">Create a GitHub Release</a></li>
             <li><a href="#create-a-new-milestone">Create a new milestone</a></li>
-            <li><a href="#addons-api">Addons API</a></li>
+            <li><a href="#addons-and-distribution-api">Addons and Distribution API</a></li>
           </ul>
         </li>
       </ul>
@@ -349,9 +349,10 @@ In the content section, write a small changelog: list the PRs merged since the l
 <p>Once the GitHub release is done, you can create a new milestone and close the old one.</p>
 <p>In the module&rsquo;s repository, click on <code>pull requests</code>, and then on <code>milestones</code> next to the search field.</p>
 <p>To create a new milestone, click <code>new milestone</code> and fill out the form, you can leave the <code>due date</code> field empty if it is not relevant. Once the new milestone is created you can close the old one.</p>
-<h3 id="addons-api">Addons API</h3>
-<p>PrestaShop instances are able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository <a href="https://github.com/PrestaShop/PrestaShop-modules">https://github.com/PrestaShop/PrestaShop-modules</a></p>
+<h3 id="addons-and-distribution-api">Addons and Distribution API</h3>
+<p>PrestaShop 1.7 and 1.6 instances were able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository <a href="https://github.com/PrestaShop/PrestaShop-modules">https://github.com/PrestaShop/PrestaShop-modules</a></p>
 <p>When a <code>master</code> branch of one of these modules receives an update, Addons API will update the ZIP it delivers with the new content within 24 hours.</p>
+<p>PrestaShop 8 now relies on <a href="https://github.com/PrestaShop/distribution-api">PrestaShop Modules Distribution API</a> that monitors GitHub releases and allow PrestaShop instances to poll for new module versions and download them.</p>
 </div>
       </div>
     </div>
