@@ -90,11 +90,12 @@ In the module's repository, click on `pull requests`, and then on `milestones` n
 
 To create a new milestone, click `new milestone` and fill out the form, you can leave the `due date` field empty if it is not relevant. Once the new milestone is created you can close the old one.
 
-### Addons API
+### Addons and Distribution API
 
-PrestaShop instances are able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository https://github.com/PrestaShop/PrestaShop-modules
+PrestaShop 1.7 and 1.6 instances were able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository https://github.com/PrestaShop/PrestaShop-modules
 
 When a `master` branch of one of these modules receives an update, Addons API will update the ZIP it delivers with the new content within 24 hours.
 
+PrestaShop 8 now relies on [PrestaShop Modules Distribution API](https://github.com/PrestaShop/distribution-api) that monitors GitHub releases and allow PrestaShop instances to poll for new module versions and download them.
 
 [contribution-guidelines]: {{< devdocs "contribute/contribution-guidelines/project-modules/" >}}
