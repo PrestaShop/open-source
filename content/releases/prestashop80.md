@@ -612,7 +612,7 @@ $instance->update();
                         <div class="col-md-5">
                             <h2 class="section-title">Open source neutrality</h2>
                             <p>
-                                PrestaShop 8 is a turning point as the project moves towards <a href="https://build.prestashop-project.org/news/prestashop-beyond-1-7/">company neutrality</a>: the Addons Marketplace is no longer bundled with the project (but can be <a href="https://github.com/PrestaShopCorp/ps_mbo/releases">installed separately</a>). The project is mostly free of all company products as well as services.
+                                PrestaShop 8 is a turning point as the project moves towards <a href="https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/">company neutrality</a>: the Addons Marketplace is no longer bundled with the project (but can be <a href="https://github.com/PrestaShopCorp/ps_mbo/releases">installed separately</a>). The project is mostly free of all company products as well as services.
                             </p>
                         </div>
                         <div class="col-md-7">
