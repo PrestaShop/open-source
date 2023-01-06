@@ -53,5 +53,5 @@ A project committer status can be revoked for any of the following reasons:
 - On their demand, for personal reasons.
 - On request of at least three maintainers.
 
-[future-architecture]: https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
+[future-architecture]: https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
 [slack]: {{< param ProjectUrls.Slack >}}
