@@ -61,7 +61,7 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
     - [PrestaShop.com archives](https://www.prestashop.com/en/previous-versions)
 
 * Check that if you try to install PrestaShop 1.7.5 from the archive, the installer suggests you install the latest version instead
-* Check that the release note has been published on the [Build Blog](http://build.prestashop.com)
+* Check that the release note has been published on the [Build Blog](https://build.prestashop-project.org)
 * Check that the [PrestaShop.com](https://www.prestashop.com) shows the right "latest version", and the links are correct
 * Check that the latest release has an available docker image on the [Docker repository][docker-repository]
 * Check that the [public demo](https://demo.prestashop.com) runs on the latest version (a few hours after the docker image release)

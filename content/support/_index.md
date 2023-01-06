@@ -31,4 +31,4 @@ If you need serious help with your project, your best choice is to contact a pro
 
 * [Training courses](https://www.prestashop.com/training) (sponsored by PrestaShop SA)
 * [User documentation](https://docs.prestashop-project.org/)
-* [Developer documentation](https://devdocs.prestashop.com)
+* [Developer documentation](https://devdocs.prestashop-project.org/)

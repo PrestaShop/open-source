@@ -17,7 +17,7 @@ The aim is to use this data as a base to create content for a dedicated website 
 
 To be accepted in the list, check that your modules and themes are open source and respect the intellectual property of the PrestaShop open source project:
 - Licensed and distributed under AFL
-- Dependencies, librairies and artwork distributed in the ZIP for installation must be in [compatible licenses](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/compatible-licenses/)
+- Dependencies, librairies and artwork distributed in the ZIP for installation must be in [compatible licenses](https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/compatible-licenses/)
 - The terms of use don't include restrictions incompatible with the [AFL](https://en.wikipedia.org/wiki/Academic_Free_License) or the [Open Source Definition](https://opensource.org/osd)
 - The module is not tight to a commercial service (e.g logistic, payment)
 

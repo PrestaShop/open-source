@@ -252,7 +252,7 @@ Thank you
 ```
 Hello,
 
-PrestaShop 1.6 has reached end of life and is no longer officially maintained ([see announcement](http://build.prestashop.com/news/1.6.1.x-what-s-next/)).
+PrestaShop 1.6 has reached end of life and is no longer officially maintained ([see announcement](https://build.prestashop-project.org/news/2019/1.6.1.x-what-s-next/)).
 
 Maintenance for this version is now being performed exclusively by volunteers on a very limited scope. You can open an issue on its [dedicated repository](https://github.com/PrestaShop/PrestaShop-1.6/issues), but please keep in mind that only absolutely critical issues may be acknowledged.
 
@@ -276,7 +276,7 @@ We need more details to understand how we can reproduce your issue:
 - screenshots
 - ...
 
-You don't know how to get this information? Please read the following article: [How to create a bug report](http://build.prestashop.com/howtos/misc/how-to-create-bug-report/).
+You don't know how to get this information? Please read the following article: [How to create a bug report](https://build.prestashop-project.org/howtos/misc/how-to-create-bug-report/).
 
 Thank you
 ```
@@ -366,7 +366,7 @@ Hello [name],
 
 Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. **You must follow the template and provide clear and concise steps to reproduce the bug**.
 
-Read more about how we expect the issues to be handled [here](https://build.prestashop.com/news/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it.
+Read more about how we expect the issues to be handled [here](https://build.prestashop-project.org/news/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it.
 
 Thank you
 ```
