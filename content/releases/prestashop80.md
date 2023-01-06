@@ -628,7 +628,7 @@ $instance->update();
                             <h2 class="section-title">Typescript</h2>
                             <p>
                                 <strong>All scripts from Symfony-based pages are now built in TypeScript.</strong> TypeScript provides many language features not included in Javascript, the most important one being strong typing. This change should help make the code more robust, reduce the number of bugs, and increase 
-                                the project’s long-term maintainability. <a href="https://build.prestashop-project.org/news/introducing-typescript/">Read more about it here</a>.
+                                the project’s long-term maintainability. <a href="https://build.prestashop-project.org/news/2021/introducing-typescript/">Read more about it here</a>.
                             </p>
                         </div>
                         <div class="col-md-7">
