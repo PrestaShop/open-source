@@ -24,7 +24,7 @@ main:
     weight: 2
   - name: "Contributors"
     parent: "Community"
-    url: "https://contributors.prestashop.com/"
+    url: "https://contributors.prestashop-project.org/"
     weight: 3
   - name: "Support"
     pageRef: "support"
