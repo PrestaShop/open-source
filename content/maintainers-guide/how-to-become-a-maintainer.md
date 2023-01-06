@@ -62,5 +62,5 @@ A project maintainer can be revoked for any of the following reasons:
 - Willful negligence or intent to harm the PrestaShop project.
 - On their demand, for personal reasons.
 
-[future-architecture]: https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
+[future-architecture]: https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
 [slack]: {{< param ProjectUrls.Slack >}}

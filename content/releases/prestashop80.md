@@ -612,7 +612,7 @@ $instance->update();
                         <div class="col-md-5">
                             <h2 class="section-title">Open source neutrality</h2>
                             <p>
-                                PrestaShop 8 is a turning point as the project moves towards <a href="https://build.prestashop.com/news/prestashop-beyond-1-7/">company neutrality</a>: the Addons Marketplace is no longer bundled with the project (but can be <a href="https://github.com/PrestaShopCorp/ps_mbo/releases">installed separately</a>). The project is mostly free of all company products as well as services.
+                                PrestaShop 8 is a turning point as the project moves towards <a href="https://build.prestashop-project.org/news/prestashop-beyond-1-7/">company neutrality</a>: the Addons Marketplace is no longer bundled with the project (but can be <a href="https://github.com/PrestaShopCorp/ps_mbo/releases">installed separately</a>). The project is mostly free of all company products as well as services.
                             </p>
                         </div>
                         <div class="col-md-7">
@@ -628,7 +628,7 @@ $instance->update();
                             <h2 class="section-title">Typescript</h2>
                             <p>
                                 <strong>All scripts from Symfony-based pages are now built in TypeScript.</strong> TypeScript provides many language features not included in Javascript, the most important one being strong typing. This change should help make the code more robust, reduce the number of bugs, and increase 
-                                the project’s long-term maintainability. <a href="https://build.prestashop.com/news/introducing-typescript/">Read more about it here</a>.
+                                the project’s long-term maintainability. <a href="https://build.prestashop-project.org/news/introducing-typescript/">Read more about it here</a>.
                             </p>
                         </div>
                         <div class="col-md-7">
