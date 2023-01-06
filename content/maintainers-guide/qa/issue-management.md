@@ -252,7 +252,7 @@ Thank you
 ```
 Hello,
 
-PrestaShop 1.6 has reached end of life and is no longer officially maintained ([see announcement](https://build.prestashop-project.org/news/1.6.1.x-what-s-next/)).
+PrestaShop 1.6 has reached end of life and is no longer officially maintained ([see announcement](https://build.prestashop-project.org/news/2019/1.6.1.x-what-s-next/)).
 
 Maintenance for this version is now being performed exclusively by volunteers on a very limited scope. You can open an issue on its [dedicated repository](https://github.com/PrestaShop/PrestaShop-1.6/issues), but please keep in mind that only absolutely critical issues may be acknowledged.
 
