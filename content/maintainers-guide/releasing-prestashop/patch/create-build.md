@@ -9,9 +9,9 @@ Once preliminary tasks have been completed, the project is ready to be built.
 
 ## 1. Communicate
 
-Starting this step means that the Development phase of this release is over. 
+Starting this step means that the Build phase of this release begins.
 
-Before you go further, make sure to **tick the "Development" box** in the Release Tracker GitHub issue (there is one per version, see the [1.7.6.6 example][release-tracker-issue]).
+Before you go further, make sure to **tick the "Development" box** in the Release Tracker GitHub issue (there is one per version, see the [8.0.2 example][release-tracker-issue]).
 
 ## 2. Create a local branch for your build
 
@@ -23,7 +23,7 @@ The following tasks will require you to perform changes and submit them as a Pul
     git clone git@github.com:PrestaShop/PrestaShop.git
     ```
 
-* **Make sure that you switch to the appropriate branch** regarding the version you'll be building (e.g. you must be on branch 1.7.7.x if you're building a 1.7.7 release).
+* **Make sure that you switch to the build branch** regarding the version you'll be building (e.g. you must be on branch 8.0.x if you're building a 8.0.2 release).
 
 * **Make sure your branch is up-to-date with upstream.** Especially if you already had a local clone of the repository.
 
@@ -54,13 +54,17 @@ After this step, you should obtain two files:
 - the Changelog file – including a list of all the merged Pull Requests. Make sure to keep this file, you'll need it later.
 - the New Contributors file – a list of all the people who contributed code for this version for their first time.
 
+{{% notice tip %}}
+Make sure the tool targets the build branch
+{{% /notice %}}
+
 ### Update the project's files
 
-- Add the contents of the changelog at the top of PrestaShop's [Changelog file][changelog-file].
+- Add the contents of the changelog at the top of PrestaShop's [Changelog file][changelog-file] in build branch.
 - Update PrestaShop's [Contributors file][contributors-file] by adding the new contributors. Keep the alphabetical order.
 - Commit your changed files with following message: "// Changelog [version]"
 
-## 5. Push your work into a build branch
+## 5. Push your work into the build branch
 
 The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.
 
@@ -69,7 +73,7 @@ If your build is rejected because of a bug, the fixes will have to be merged int
 ### If the branch does not contain security fixes
 
 - Push your changes to a new branch in the public repository.  
-  Name your branch following this scheme: `[version]-build` (for example: "1.7.8.1-build")
+  Name your branch following this scheme: `[version]-build` (for example: "8.0.1-build")
 - Create a new pull request to merge your changes. If you're lost, see [this example](https://github.com/PrestaShop/PrestaShop/pull/20032) from the 1.7.6.6 release.
 
 {{% notice warning %}}
@@ -92,7 +96,7 @@ Use the [Release Creator CLI script][release-creator-readme] included with Prest
 From the root path of your repository, execute:
 
 ```shell
-php tools/build/CreateRelease.php --version="1.7.6.6"
+php tools/build/CreateRelease.php --version="8.0.2"
 ```
 
 {{% notice note %}}
@@ -127,18 +131,16 @@ prestashop_<version>-[beta.<beta number>|rc.<rc number>]+build.<build number>.<z
 {{% callout %}}
 ##### Examples
 
-* `prestashop_1.7.4.0-beta.1+build.1.zip` – First build of beta 1
-* `prestashop_1.7.4.0-beta.1+build.2.zip` – Second build of beta 1
-* `prestashop_1.7.4.0-beta.2+build.1.zip` – First build of beta 2
-* `prestashop_1.7.4.0-rc.1+build.1.zip`  – First build of RC 1
-* `prestashop_1.7.4.0+build.1.zip` – First build of final version
-* `prestashop_1.7.4.0+build.2.zip` – Second build of final version
+* `prestashop_8.0.0-beta.1+build.1.zip` – First build of beta 1
+* `prestashop_8.0.0-beta.1+build.2.zip` – Second build of beta 1
+* `prestashop_8.0.0-beta.2+build.1.zip` – First build of beta 2
+* `prestashop_8.0.0-rc.1+build.1.zip`  – First build of RC 1
+* `prestashop_8.0.0+build.1.zip` – First build of final version
+* `prestashop_8.0.0+build.2.zip` – Second build of final version
 
-For major versions, we may build a Beta Version (example: `prestashop_1.7.4.0-beta.1+build.1.zip`).
+For major versions, we may build a Beta Version (example: `prestashop_8.0.0-beta.1+build.1.zip`).
 
-When the beta testing phase is over, we build one Release Candidate (example: `prestashop_1.7.4.0-rc.1+build.1.zip`).
-
-For patch versions, the beta and RC phase can be skipped (example: `prestashop_1.7.4.1+build.1.zip`)
+For patch versions, the beta and RC phase are skipped (example: `prestashop_8.0.1+build.1.zip`)
 {{% /callout %}}
 
 ### Upload files to the archive
@@ -167,7 +169,7 @@ In case the QA team finds blocking defects in the build, then these issues _must
 
 Once the QA has greenlighted the build, you can move on to publishing the version.
 
-[release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/19959
+[release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/31143
 [changelog-file]: https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt
 [contributors-file]: https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTORS.md
 [release-creator-readme]: https://github.com/PrestaShop/PrestaShop/blob/develop/tools/build/README.md

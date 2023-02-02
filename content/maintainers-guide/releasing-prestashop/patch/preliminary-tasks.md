@@ -7,6 +7,18 @@ weight: 10
 
 Before you can start your build, you must make sure that the project is ready to be built.
 
+These actions do not have to be done on release day. They can be anticipated and done some days before.
+
+### Target the build branch
+
+The actions below that request to submit a Pull Request must be done against the right branch.
+
+For example
+- if the target version is PrestaShop 8.0.2, submit your Pull Requests against branch `8.0.x`
+- if the target version is PrestaShop 8.1.4, submit your Pull Requests against branch `8.1.x`
+
+In this process this branch will be called "the build branch".
+
 ## 1. Create the new version in Addons Marketplace and update native module compatibility
 
 {{% notice warning %}}
@@ -19,12 +31,6 @@ Before you can start your build, you must make sure that the project is ready to
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
 {{% /notice %}}
 
-{{% notice note %}}
-**This only needs to be done once per release.**
-
-_(i.e. if done for a beta, it doesn't need to be performed again for the final release)._
-{{% /notice %}}
-
 ## 2. Make sure the version number has been updated in the Core
 
 {{% notice note %}}
@@ -33,7 +39,7 @@ _(i.e. if done for a beta, it doesn't need to be performed again for the final r
 PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless if the release is alpha, beta, RC or stable.
 {{% /notice %}}
 
-Check the following files and update them if necessary:
+Check the following files in build branch and update them if necessary:
 
 * `/install-dev/install_version.php`:
 
@@ -53,7 +59,7 @@ Check the following files and update them if necessary:
     const RELEASE_VERSION = 2;
     ```
 
-Make a pull request and have it merged.
+Submit a pull request against build branch and have it merged.
 
 {{% notice tip %}}
 If you're lost, check out [this example][bump-core-version-pr-example] from the 1.7.6.6 release.
@@ -61,21 +67,11 @@ If you're lost, check out [this example][bump-core-version-pr-example] from the 
 [bump-core-version-pr-example]: https://github.com/PrestaShop/PrestaShop/pull/19980
 {{% /notice %}}
 
-## 3. Make sure the default translation catalogue has been updated and pushed to Crowdin
-
-{{% notice warning %}}
-**This step requires special rights.**
-
-Ask a maintainer from the PrestaShop Company with access to the Translation Tool to perform this step.
+{{% notice tip %}}
+It is possible a maintainer already updated the version numbers before: if the version numbers are already correct, you do not need to update the files.
 {{% /notice %}}
 
-{{% notice note %}}
-**This step is only needed for minor and major releases.**
-
-It is usually only done once per release as well.
-{{% /notice %}}
-
-## 4. Lock the theme version.
+## 3. Lock the theme version.
 
 {{% notice tip %}}
 You can do this step using Git or directly on GitHub on the next step.
@@ -83,25 +79,31 @@ You can do this step using Git or directly on GitHub on the next step.
 
 The theme has been moved outside of the Core repository since version 8.0.0.
 
-* Create git tag on the Theme repository
+* Create git tag on the [Theme repository][theme-repository]
 
 When a new release is built, this tag is needed to lock the theme version.
 
-- [Tag][git-tag] the new version:
+The tag must be created from the branch dedicated to the Core version. For example
+- branch `2.0.x` of the theme contains changes made for branch `8.0.x` of the Core
+- branch `2.1.x` of the theme contains changes made for branch `8.1.x` of the Core
+
+Choose the right Theme build branch that matches the Core build branch.
+
+- [Tag][git-tag] the new version using latest commit of Theme build branch:
     ```bash
-    git tag 2.0.0-rc1 # replace with your version
+    git tag 2.0.8 # replace with your version
     ```
 - Push the tag:
     ```bash
-    git push 2.0.0-rc1 # replace with your version
+    git push 2.0.8 # replace with your version
     ```
 
-* Update `composer.lock` to target the new tag
+* Update the Core `composer.lock` on target build branch to target the new tag: this will lock the version of the theme used in the Core.
 
 
-## 5. Manual verifications
+## 4. Manual verifications
 
-Make sure that in the current branch:
+Make sure that in the build branch:
 
 * All license headers are correct:
   
@@ -117,8 +119,6 @@ Make sure that in the current branch:
   ```
   
 * There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]. Consider using [this][security-checker-installer] if installing Fabpot Security Checker proves troublesome.
-
-* _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
 
 * All new hooks have been [registered][register-new-hook]
 
@@ -150,4 +150,5 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [nightly-build-board]: https://nightly.prestashop.com/
 [security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
+[theme-repository]: https://github.com/prestashop/classic-theme
 

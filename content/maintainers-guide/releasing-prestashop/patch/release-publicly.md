@@ -11,9 +11,11 @@ Once the QA team has greenlighted your build, you can move forward with the publ
 **Make certain you have go for publish!** Also, avoid starting this process after 4 PM or on a Friday.
 {{% /notice %}}
 
+Update the Release Tracker GitHub issue: tick the "QA validation" box.
+
 ## 1. Merge security PRs on GitHub
 
-If there are unmerged security PRs:
+If there are unmerged security Pull Requests:
 
 - **Merge them on GitHub** and publishing their security advisories.
 - **Rebase the build branch** that you created on the previous step to remove the merge commits from the security PRs you merged manually before. 
@@ -34,17 +36,17 @@ If there are unmerged security PRs:
 You can do this step using Git or directly on GitHub on the next step.
 {{% /notice %}}
 
-- Check out the commit named "// Changelog [version]"
+- Check out the commit named "// Changelog [version]" you created before
 - [Tag][git-tag] the new version:
     ```bash
-    git tag 1.7.2.0 # replace with your version
+    git tag 8.0.2 # replace with your version
     ```
 - Push the tag:
     ```bash
-    git push 1.7.2.0 # replace with your version
+    git push 8.0.2 # replace with your version
   
     # Alternatively (e.g. if you need to overwrite an existing tag)
-    git push origin refs/tags/1.7.7.2
+    git push origin refs/tags/8.0.2
     ```
 
 ### Publish the release on GitHub
@@ -58,22 +60,12 @@ Create a [new Release Draft on GitHub](https://github.com/PrestaShop/PrestaShop/
 
 - **Paste** the changelog as a description
    
-  If you're publishing a version that includes changes from a previous pre-release version (including beta and RC releases):
-
-  - Include a note explaining what other changes are included ([Example](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0))
-  - Precede the changelog with the title _"Changes since beta XX / RC YY..."_ ([Example](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-rc.1))
-        
-  If you're publishing a pre-release version:
-  
-  - Make sure to add a _"Known issues"_ section ([Example](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-beta.1))
-  - Don't forget to check the _"This a pre-release"_ checkbox at the bottom of the form
-  
-  If you're publishing a patch version:
-  
   - Write a short intro explaining what the release fixes – especially if it's a security release! ([Example](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.5.1))
 
 - **Upload** the new version zip archive (the one that has been validated by QA).  
   Remove the build number from the file name to avoid confusions.
+
+  - **Upload** the new version XML file. 
 
 {{% callout %}}
 ##### If the Changelog content is too long
@@ -94,17 +86,9 @@ It's not unusual to have very long changelogs, especially in minor versions. To 
 ```
 {{% /callout %}}
 
-## 4. Release on prestashop.com
+## 4. Communicate
 
-{{% notice warning %}}
-**This step requires special rights.**
-
-Ask a maintainer from the PrestaShop Company with admin access to prestashop.com to perform this step.
-{{% /notice %}}
-
-## 5. Communicate
-
-Congratulations! You can now update the Release Tracker GitHub issue: tick the "QA" and "Development" boxes and [add a comment](https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656).
+Congratulations! You can now update the Release Tracker GitHub issue: tick the "Release" box and [add a comment](https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656).
 
 
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
