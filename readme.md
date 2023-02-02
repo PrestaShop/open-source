@@ -1,11 +1,11 @@
 Hello,
 
-[![Build](https://github.com/PrestaShop/open-source/actions/workflows/build.yml/badge.svg)]
+[![Build](https://github.com/PrestaShop/open-source/actions/workflows/build.yml/badge.svg)](https://github.com/PrestaShop/open-source/actions/workflows/build.yml)
 
 This repository aims to improve the overall maturity of the PrestaShop open source project.
 
 It contains:
-- source code and content for www.prestashop-project.org (https://github.com/PrestaShop/open-source/actions/workflows/build.yml)
+- source code and content for www.prestashop-project.org 
 - materials about the open source project evolution
 
 # The Dashboard
