@@ -1,9 +1,11 @@
 Hello,
 
+[![Build](https://github.com/PrestaShop/open-source/actions/workflows/build.yml/badge.svg)]
+
 This repository aims to improve the overall maturity of the PrestaShop open source project.
 
 It contains:
-- source code and content for www.prestashop-project.org [![Build](https://github.com/PrestaShop/open-source/actions/workflows/build.yml/badge.svg)](https://github.com/PrestaShop/open-source/actions/workflows/build.yml)
+- source code and content for www.prestashop-project.org (https://github.com/PrestaShop/open-source/actions/workflows/build.yml)
 - materials about the open source project evolution
 
 # The Dashboard
@@ -31,6 +33,9 @@ Follow the work on the Kanban: https://github.com/PrestaShop/open-source/project
     ```
     git clone --recurse-submodules https://github.com/PrestaShop/open-source.git
     ```
+
+**Note** normal cloning will not work. You _must_ recurse the submodules or hugo will not understand shortcodes and you will see errors such as: 
+  `failed to extract shortcode: template for shortcode "children" not found`
 
 2. Switch to the `open-source` directory:
     ```
