@@ -40,3 +40,16 @@ In order to edit them, you will need a vector graphic software like Inkscape (fr
 When you have created you user group logo and published it on your forum, group, chat, or your favourite communication channel, please tell the world about it: add it to the list in the dedicated document (coming soon).
 
 This way, interested people will be able to find your group easily and join it with a few clicks.
+
+## Official user groups
+
+![Friends of Presta](fop_logotype-horizontal-blanc-avec-fond.svg)
+Friends of Presta is a French community that unites developers and integrators who work with the open-source e-commerce platform PrestaShop.
+
+Every year, Friends of Presta (FoP) organizes a day of conferences and workshops that bring together developers, integrators, and members of the PrestaShop open-source team.
+
+FoP manages a Slack channel and a Facebook page that has attracted thousands of members who share a passion for PrestaShop
+
+You can also join our security team for a safer e-commerce (more than 50 flaws reported on third party modules). And many projects on our [Github](https://github.com/friends-of-presta) including the [FoP Console](https://github.com/friends-of-presta/fop_console).
+
+[Join us to become a part of this community and help us improve PrestaShop!](https://friendsofpresta.org/en)
