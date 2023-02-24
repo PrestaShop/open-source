@@ -97,6 +97,16 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
     </item>
     
     <item>
+      <title>Creating merge Pull Requests for all active branches</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/</guid>
+      <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version.</description>
+    </item>
+    
+    <item>
       <title>Final steps</title>
       <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

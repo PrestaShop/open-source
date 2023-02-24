@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Maintainer&#39;s guide | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=""/>
+<title>Creating merge Pull Requests for all active branches | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
 
 
 
@@ -22,17 +23,22 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="Maintainer&#39;s guide" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/" />
+<meta name="twitter:title" content="Creating merge Pull Requests for all active branches"/>
+<meta name="twitter:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
+<meta property="og:title" content="Creating merge Pull Requests for all active branches" />
+<meta property="og:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/" /><meta property="article:section" content="maintainers-guide" />
+
+<meta property="article:modified_time" content="2023-02-23T18:01:16+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Creating merge Pull Requests for all active branches"/>
+<meta name="twitter:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
 
 
 
@@ -213,7 +219,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -227,13 +233,21 @@
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Maintainer&#39;s guide</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Creating merge Pull Requests for all active branches</li>
       
     
   </ol>
@@ -243,213 +257,85 @@
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-merge-pull-requests-for-all-active-branches">Creating merge Pull Requests for all active branches</a>
+      <ul>
+        <li><a href="#what-it-is">What it is</a></li>
+        <li><a href="#what-is-the-job">What is the job</a></li>
+        <li><a href="#merge-pull-request">Merge Pull Request</a></li>
+        <li><a href="#running-automatic-tests-on-a-pull-request">Running automatic tests on a Pull Request</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="prestashop-maintainers-guide">PrestaShop maintainer&rsquo;s guide</h1>
-<p>This section describes processes and guidelines for project maintainers.</p>
-
-
-
-
-
-
-
-
-<ul class='children children-li'>
-	
-
-  
-		
-			
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/project-organization/" >Project organization</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/how-to-become-a-maintainer/" >How to become a maintainer</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/how-to-become-a-committer/" >How to become a committer</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/summary-github-lifecycle/" >Summary of how GitHub Issues and Pull Requests are processed</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/reviewing-pull-requests/" >Reviewing and approving Pull Requests</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/creating-merge-pull-requests/" >Creating merge Pull Requests for all active branches</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/releasing-prestashop/" >How to release a new PrestaShop version</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/release-a-native-ps-module/" >Release a native PrestaShop module</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/test-pr-and-branches/" >How to test Pull Requests and branches</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/license/" >License &amp; license compatibility</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/" >Processes</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/qa/" >QA processes</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-
-	
+        <div class="content"><h1 id="creating-merge-pull-requests-for-all-active-branches">Creating merge Pull Requests for all active branches</h1>
+<h2 id="what-it-is">What it is</h2>
+<p>We need to progress on the next minor/major version and the maintained patch version.</p>
+<h2 id="what-is-the-job">What is the job</h2>
+<ul>
+<li>Create a Merge Pull Request for all active branches version by version (ex: <code>1.7.8.x</code> to <code>8.0.x</code>, <code>8.0.x</code> to <code>8.1.x</code>, and so on until everything is merged back into <code>develop</code>) (or if there are already some, see if they are blocked and if you can unblock them)</li>
+<li>Work on the bugs scoped for the next patch version. You can find them in the <code>8.0.{...}</code> Kanban. See if the bugs already in progress for the patch version are making progress. If you see a topic blocked see if you can unblock it.</li>
+<li>The QA by dev : PR with label “Waiting for dev” must be tested by a developer, the person in charge of this Pull Request can focus on it</li>
+<li>The QA team can ping the person in charge of this Pull Request for checking PRs without reproducible issues or verified issues or ask questions</li>
 </ul>
-
-
-
-
-
+<h2 id="merge-pull-request">Merge Pull Request</h2>
+<p>Here is the explanation of how you should create your merge pull request (from the <code>1.7.8.x</code> to <code>8.0.x</code> branch in this example):</p>
+<ul>
+<li>Clone the repository locally</li>
+<li>You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally
+<ul>
+<li><code>git checkout -b 1.7.8.x origin/1.7.8.x &amp;&amp; git checkout -b 8.0.x origin/8.0.x</code></li>
+<li><code>git checkout 1.7.8.x &amp;&amp; git pull &amp;&amp; git checkout 8.0.x &amp;&amp; git pull</code></li>
+</ul>
+</li>
+<li>Once both the required branches are fetched locally and up to date you can create your merge branch (recommended) and merge the source branch in your target branch
+<ul>
+<li><code>git checkout 8.0.x &amp;&amp; git checkout -b merge-178-80 &amp;&amp; git merge 1.7.8.x</code></li>
+</ul>
+</li>
+<li>At this point, you may have some conflicts that you will need to fix before you can commit them. Finally, you’ll have to push your merge branch to your fork repository.
+<ul>
+<li><code>git push fork merge-178-80 -u</code></li>
+</ul>
+</li>
+<li>⚠️ About <code>docs/CHANGELOG.txt</code> on <code>8.0.x</code> branch, you don’t have to retrieve the changes from <code>1.7.8.x</code> branch.</li>
+<li>You can now create the Pull Request on GitHub, one important detail in the description table you must <strong>use ME as the category</strong></li>
+<li>Usually, these Merge pull requests are performed frequently to keep them as small as possible, if we respect this frequency the content shouldn’t be too important and we have a few risks that they can create some unexpected side effects. So most of the time we don’t need functional QA on those PRs. But of course, the PR’s CI must be fully green and you should run the automatic campaign test on your merge PR (see the section below).</li>
+</ul>
+<h2 id="running-automatic-tests-on-a-pull-request">Running automatic tests on a Pull Request</h2>
+<p>In some cases to help the QA team or to allow the validation of a PR more quickly, you may need to run the automatic test for a specific PR. Lucky for us we have a very convenient tool that allows doing this, so let’s say you need to validate a PR with ID number #12345:</p>
+<ul>
+<li>Go to the tool repository <a href="https://github.com/PrestaShop/ga.tests.ui.pr">https://github.com/PrestaShop/ga.tests.ui.pr</a></li>
+<li>You need to clone this repository on your own organization (for example <a href="https://github.com/jolelievre/ga.tests.ui.pr">https://github.com/jolelievre/ga.tests.ui.pr</a>)</li>
+<li>Make sure you always keep your fork up to date by syncing the branches</li>
+<li>Go to your fork repository and then go to <strong>Actions</strong> and select <strong>Testing PrestaShop pull requests</strong> workflow</li>
+<li>You can now launch a manual workflow by clicking on <strong>Run workflow</strong> where you need to specify a few parameters:
+<ul>
+<li><strong>Pull request Id</strong>: The id of the PR you wish to test (in our example <code>12345</code>)</li>
+<li><strong>Base branch to rebase the PR:</strong> The branch used as a target for your PR</li>
+<li><strong>Rebase or merge the pull request:</strong> For regular contributions PR you can leave the default choice <code>rebase</code> For merge Pull Requests you should select <code>merge</code></li>
+<li><strong>PHP version</strong>: select the one you need or keep the default value</li>
+<li><strong>Node version</strong>: select the one you need or keep the default value</li>
+</ul>
+</li>
+<li>Now you can let the workflow run, it is strongly advised to copy the URL to your created run and post it as a comment in the related PR because it’s hard to tell runs apart from your list so it will save time for everyone.</li>
+<li>You can now wait for the workflow to run. Be aware that some tests may be failing but you should <strong>always compare them to the nightly run reports</strong> <a href="https://nightly.prestashop.com/">https://nightly.prestashop.com/</a> Because some branches may be in an unstable state during development, it doesn’t necessarily mean that your PR has introduced a bug, the bug may have already present. In case of doubts always ask for the QA team’s opinion.</li>
+</ul>
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
