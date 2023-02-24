@@ -50,6 +50,6 @@ Every year, Friends of Presta (FoP) organizes a day of conferences and workshops
 
 FoP manages a Slack channel and a Facebook page, attracting thousands of members who share a passion for PrestaShop.
 
-You can also join our security team for a safer e-commerce (more than 50 flaws reported on third party modules). And many projects on our [Github](https://github.com/friends-of-presta) including the [FoP Console](https://github.com/friends-of-presta/fop_console).
+You can also join the organization's security team for a safer e-commerce (more than 50 flaws reported on third party modules). And many projects on [GitHub](https://github.com/friends-of-presta) including the [FoP Console](https://github.com/friends-of-presta/fop_console).
 
 [Join FoP to become a part of the community and help improve PrestaShop!](https://friendsofpresta.org/en)
