@@ -44,7 +44,7 @@ This way, interested people will be able to find your group easily and join it w
 ## Official user groups
 
 ![Friends of Presta](fop_logotype-horizontal-blanc-avec-fond.svg)
-Friends of Presta is a French community that unites developers and integrators who work with the open-source e-commerce platform PrestaShop.
+Friends of Presta is a French community that connects developers and integrators who work with the open-source e-commerce platform PrestaShop.
 
 Every year, Friends of Presta (FoP) organizes a day of conferences and workshops that bring together developers, integrators, and members of the PrestaShop open-source team.
 
