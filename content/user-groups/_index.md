@@ -48,7 +48,7 @@ Friends of Presta is a French community that unites developers and integrators w
 
 Every year, Friends of Presta (FoP) organizes a day of conferences and workshops that bring together developers, integrators, and members of the PrestaShop open-source team.
 
-FoP manages a Slack channel and a Facebook page that has attracted thousands of members who share a passion for PrestaShop
+FoP manages a Slack channel and a Facebook page, attracting thousands of members who share a passion for PrestaShop.
 
 You can also join our security team for a safer e-commerce (more than 50 flaws reported on third party modules). And many projects on our [Github](https://github.com/friends-of-presta) including the [FoP Console](https://github.com/friends-of-presta/fop_console).
 
