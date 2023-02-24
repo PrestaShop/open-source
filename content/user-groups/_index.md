@@ -52,4 +52,4 @@ FoP manages a Slack channel and a Facebook page that has attracted thousands of 
 
 You can also join our security team for a safer e-commerce (more than 50 flaws reported on third party modules). And many projects on our [Github](https://github.com/friends-of-presta) including the [FoP Console](https://github.com/friends-of-presta/fop_console).
 
-[Join us to become a part of this community and help us improve PrestaShop!](https://friendsofpresta.org/en)
+[Join FoP to become a part of the community and help improve PrestaShop!](https://friendsofpresta.org/en)
