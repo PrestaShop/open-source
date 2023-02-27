@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 <title>Creating merge Pull Requests for all active branches | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1."/>
 
 
 
@@ -25,20 +26,23 @@ What is the job  Create a Merge Pull Request for all active branches version by 
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Creating merge Pull Requests for all active branches"/>
 <meta name="twitter:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1."/>
 <meta property="og:title" content="Creating merge Pull Requests for all active branches" />
 <meta property="og:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version." />
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-02-23T18:01:16+01:00" />
+<meta property="article:modified_time" content="2023-02-27T10:22:06+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating merge Pull Requests for all active branches"/>
 <meta name="twitter:description" content="Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version."/>
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1."/>
 
 
 
@@ -257,36 +261,11 @@ What is the job  Create a Merge Pull Request for all active branches version by 
     </div>
     <div class="row mx-xl-2">
       
-<div id="toc" class="col-xl-2 order-xl-1">
-  <div class="wrapper">
-    <div class="toc-title">Table of Contents</div>
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#creating-merge-pull-requests-for-all-active-branches">Creating merge Pull Requests for all active branches</a>
-      <ul>
-        <li><a href="#what-it-is">What it is</a></li>
-        <li><a href="#what-is-the-job">What is the job</a></li>
-        <li><a href="#merge-pull-request">Merge Pull Request</a></li>
-        <li><a href="#running-automatic-tests-on-a-pull-request">Running automatic tests on a Pull Request</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-
 
       <div class="col-xl ml-auto">
         <div class="content"><h1 id="creating-merge-pull-requests-for-all-active-branches">Creating merge Pull Requests for all active branches</h1>
 <h2 id="what-it-is">What it is</h2>
 <p>We need to progress on the next minor/major version and the maintained patch version.</p>
-<h2 id="what-is-the-job">What is the job</h2>
-<ul>
-<li>Create a Merge Pull Request for all active branches version by version (ex: <code>1.7.8.x</code> to <code>8.0.x</code>, <code>8.0.x</code> to <code>8.1.x</code>, and so on until everything is merged back into <code>develop</code>) (or if there are already some, see if they are blocked and if you can unblock them)</li>
-<li>Work on the bugs scoped for the next patch version. You can find them in the <code>8.0.{...}</code> Kanban. See if the bugs already in progress for the patch version are making progress. If you see a topic blocked see if you can unblock it.</li>
-<li>The QA by dev : PR with label “Waiting for dev” must be tested by a developer, the person in charge of this Pull Request can focus on it</li>
-<li>The QA team can ping the person in charge of this Pull Request for checking PRs without reproducible issues or verified issues or ask questions</li>
-</ul>
 <h2 id="merge-pull-request">Merge Pull Request</h2>
 <p>Here is the explanation of how you should create your merge pull request (from the <code>1.7.8.x</code> to <code>8.0.x</code> branch in this example):</p>
 <ul>

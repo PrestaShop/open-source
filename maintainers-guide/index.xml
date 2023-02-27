@@ -68,7 +68,8 @@ The teams On GitHub, there are mainly three teams working together on the projec
       
       <guid>https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/</guid>
       <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-What is the job  Create a Merge Pull Request for all active branches version by version (ex: 1.7.8.x to 8.0.x, 8.0.x to 8.1.x, and so on until everything is merged back into develop) (or if there are already some, see if they are blocked and if you can unblock them) Work on the bugs scoped for the next patch version.</description>
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1.</description>
     </item>
     
     <item>
