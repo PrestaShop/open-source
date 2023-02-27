@@ -59,6 +59,7 @@ Current committers:
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
+- Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 
 ### UX Designers
 
