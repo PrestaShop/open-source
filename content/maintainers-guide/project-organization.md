@@ -41,7 +41,7 @@ If the scope is one or multiple repositories, maintainers rights are granted onl
 If the scope is larger (example: being in charge of a folder inside a repository) maintainer rights are granted on the repository and the scoped maintainer is trusted not to abuse.
 
 - Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) – [Classic](https://github.com/prestashop/classic-theme) and [Hummingbird](https://github.com/prestashop/hummingbird) themes
-- Boubker Bribri (([@boubkerbribri](https://github.com/boubkerbribri))) – UI tests
+- Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri)) – UI tests
 
 ### Committers
 
