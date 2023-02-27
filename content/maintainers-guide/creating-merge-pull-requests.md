@@ -7,12 +7,6 @@ weight: 35
 ## What it is
 We need to progress on the next minor/major version and the maintained patch version. 
 
-## What is the job
-- Create a Merge Pull Request for all active branches version by version (ex: `1.7.8.x` to `8.0.x`, `8.0.x` to `8.1.x`, and so on until everything is merged back into `develop`) (or if there are already some, see if they are blocked and if you can unblock them)
-- Work on the bugs scoped for the next patch version. You can find them in the `8.0.{...}` Kanban. See if the bugs already in progress for the patch version are making progress. If you see a topic blocked see if you can unblock it.
-- The QA by dev : PR with label “Waiting for dev” must be tested by a developer, the person in charge of this Pull Request can focus on it
-- The QA team can ping the person in charge of this Pull Request for checking PRs without reproducible issues or verified issues or ask questions
-
 ## Merge Pull Request
 
 Here is the explanation of how you should create your merge pull request (from the `1.7.8.x` to `8.0.x` branch in this example):
