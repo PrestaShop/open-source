@@ -6,3 +6,6 @@
 /public/
 **/node_modules/
 /resources/
+
+## Ignore Hugo in bin dir
+/bin/hugo

@@ -5,7 +5,7 @@ Hello,
 This repository aims to improve the overall maturity of the PrestaShop open source project.
 
 It contains:
-- source code and content for www.prestashop-project.org 
+- source code and content for www.prestashop-project.org
 - materials about the open source project evolution
 
 # Rendering the site locally
