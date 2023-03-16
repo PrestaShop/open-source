@@ -27,7 +27,11 @@ PrestaShop provides a free-of-charge service allowing stores to receive updates 
 
 Note: The PrestaShop software version will still be sent even if data sharing is turned off as it necessary to provide the service. However, this information won't be traced back to the store's URL when data sharing is disabled.
 
-### How to opt-out from data sharing
+### Who has access to the data
+
+The raw data, including URLs, is accessible by a limited number of PrestaShop SA employees (notably to prevent abuse). Analytic digests not including URLs may be shared with all project members and sponsors.
+
+### How to opt-out from data collection
 
 ##### Option 1: Do not use _Distribution API client_
 
