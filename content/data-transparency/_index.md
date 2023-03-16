@@ -36,7 +36,4 @@ Note: The PrestaShop software version will still be sent even if data sharing is
 
 ##### Option 2: Disable data sharing
 
-1. In your Back office, go to Module mananager > Distribution API client > Configure.
-2. Turn "Share this store's public URL with PrestaShop" to _off_.
-3. Save.
-
+Set the `PS_URL_TRACKING` environment variable to `false`. You can do this using the `SetEnv` Apache directive in a .htaccess file, for example.
