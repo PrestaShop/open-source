@@ -19,7 +19,7 @@ PrestaShop does not collect any personal information.
 
 ### Concerned versions
 
-PrestaShop 8 or over, running the [Distribution API client module](https://github.com/PrestaShop/ps_distributionapiclient/) v1.0.3 and above.
+PrestaShop 8 or over, running the [Distribution API client module](https://github.com/PrestaShop/ps_distributionapiclient/) v1.1.0 and above.
 
 ### When and how the data is collected
 
