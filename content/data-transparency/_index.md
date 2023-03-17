@@ -25,7 +25,7 @@ PrestaShop 8 or over, running the [Distribution API client module](https://githu
 
 PrestaShop provides a free-of-charge service allowing stores to receive updates to the project's modules directly in the store's Back Office, through the _Distribution API client_ module. When this module is active, it will regularly ping our services to retrieve the latest available version for the project's modules. Unless you opt-out to data sharing, the aforementioned store information will be sent over to our services during this process.
 
-Note: The PrestaShop software version will still be sent even if data sharing is turned off as it necessary to provide the service. However, this information won't be traced back to the store's URL when data sharing is disabled.
+Note: The PrestaShop software version will still be sent even if data sharing is turned off as it is necessary to provide the service. However, this information won't be traced back to the store's URL when data sharing is disabled.
 
 ### Who has access to the data
 
