@@ -11,7 +11,7 @@ The PrestaShop project follows the [Semantic Versioning convention](https://semv
 Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
 
 * **Release cycle:** every 12–18 months.
-* **Support:** Bug fixes until the next minor release.  
+* **Support:** bug fixes until the next minor release.  
 
 {{% notice note %}}
 Example: v8.0 receives bug fixes until v8.1 is released.
@@ -22,10 +22,10 @@ Example: v8.0 receives bug fixes until v8.1 is released.
 Minor versions (eg. 8.1.0, 9.1.0) are incremental updates on the previous major release. These versions contain bug fixes and new features, while ensuring full backward compatibility. Only one minor version is published following a major version.
 
 * **Release cycle:** 6-9 months following the previous major release.
-* **Support:** Bug fixes until the next major release. Critical bug fixes until the major release following it.
+* **Support:** bug fixes until the next major release. Critical bug fixes until the major release following it.
 
 {{% notice note %}}
-Example: v8.1 receives bugs fixes until v9.0 is released. Afterward, it may only receive critical bug fixes until v10.0 is released.
+Example: v8.1 receives bug fixes until v9.0 is released. Afterward, it may only receive critical bug fixes until v10.0 is released.
 {{% /notice %}}
 
 
