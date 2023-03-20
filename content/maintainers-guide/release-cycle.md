@@ -21,7 +21,7 @@ Example: v8.0 receives bug fixes until v8.1 is released.
 
 Minor versions (eg. 8.1.0, 9.1.0) are incremental updates on the previous major release. These versions contain bug fixes and new features, while ensuring full backward compatibility. Only one minor version is published following a major version.
 
-* **Release cycle:** 6-9 months following the previous minor release.
+* **Release cycle:** 6-9 months following the previous major release.
 * **Support:** Bug fixes until the next major release. Critical bug fixes until the major release following it.
 
 {{% notice note %}}
