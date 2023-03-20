@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Maintainer&#39;s guide | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=""/>
+<title>PrestaShop&#39;s release and support cycle | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="PrestaShop&rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
+Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
+ Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released."/>
 
 
 
@@ -22,17 +24,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="Maintainer&#39;s guide" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/" />
+<meta name="twitter:title" content="PrestaShop&#39;s release and support cycle"/>
+<meta name="twitter:description" content="PrestaShop&rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
+Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
+ Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released."/>
+<meta property="og:title" content="PrestaShop&#39;s release and support cycle" />
+<meta property="og:description" content="PrestaShop&rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
+Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
+ Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/release-cycle/" /><meta property="article:section" content="maintainers-guide" />
+
+<meta property="article:modified_time" content="2023-03-20T15:56:03+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Maintainer&#39;s guide"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="PrestaShop&#39;s release and support cycle"/>
+<meta name="twitter:description" content="PrestaShop&rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
+Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
+ Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released."/>
 
 
 
@@ -213,7 +223,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -227,13 +237,21 @@
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Maintainer&#39;s guide</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/">Maintainer&#39;s guide</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">PrestaShop&#39;s release and support cycle</li>
       
     
   </ol>
@@ -245,225 +263,39 @@
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="prestashop-maintainers-guide">PrestaShop maintainer&rsquo;s guide</h1>
-<p>This section describes processes and guidelines for project maintainers.</p>
-
-
-
-
-
-
-
-
-<ul class='children children-li'>
-	
-
-  
-		
-			
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/project-organization/" >Project organization</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/how-to-become-a-maintainer/" >How to become a maintainer</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/how-to-become-a-committer/" >How to become a committer</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/summary-github-lifecycle/" >Summary of how GitHub Issues and Pull Requests are processed</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/reviewing-pull-requests/" >Reviewing and approving Pull Requests</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/creating-merge-pull-requests/" >Creating merge Pull Requests for all active branches</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/releasing-prestashop/" >How to release a new PrestaShop version</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/release-a-native-ps-module/" >Release a native PrestaShop module</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/test-pr-and-branches/" >How to test Pull Requests and branches</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/license/" >License &amp; license compatibility</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/release-cycle/" >PrestaShop&#39;s release and support cycle</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/" >Processes</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/qa/" >QA processes</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-
-	
+        <div class="content"><h1 id="prestashops-release-and-support-cycle">PrestaShop&rsquo;s release and support cycle</h1>
+<p>The PrestaShop project follows the <a href="https://semver.org">Semantic Versioning convention</a> and alternates between major and minor releases.</p>
+<h5 id="major-versions">Major versions</h5>
+<p>Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.</p>
+<ul>
+<li><strong>Release cycle:</strong> every 12–18 months.</li>
+<li><strong>Support:</strong> bug fixes until the next minor release.</li>
 </ul>
 
+<div class="notices note" >Example: v8.0 receives bug fixes until v8.1 is released.</div>
 
+<h5 id="minor-versions">Minor versions</h5>
+<p>Minor versions (eg. 8.1.0, 9.1.0) are incremental updates on the previous major release. These versions contain bug fixes and new features, while ensuring full backward compatibility. Only one minor version is published following a major version.</p>
+<ul>
+<li><strong>Release cycle:</strong> 6-9 months following the previous major release.</li>
+<li><strong>Support:</strong> bug fixes until the next major release. Critical bug fixes until the major release following it.</li>
+</ul>
 
+<div class="notices note" >Example: v8.1 receives bug fixes until v9.0 is released. Afterward, it may only receive critical bug fixes until v10.0 is released.</div>
 
-
+<h5 id="patch-versions">Patch versions</h5>
+<p>Patch versions (eg. 8.0.1, 9.1.3) are incremental updates to a previous release, containing bug fixes. Only supported versions are subject to patch releases.</p>
+<ul>
+<li><strong>Release cycle:</strong> about every 6 weeks, depending on the bugs' severity and the team&rsquo;s bandwidth.</li>
+</ul>
+<h2 id="roadmap">Roadmap</h2>
+<p><img src="../images/release-cycle.svg" alt="Release cycle"></p>
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
