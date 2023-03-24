@@ -52,6 +52,13 @@ Please note that like any open source project, the main language on this Slack i
 - Status: Public
 - Language: EN
 
+**#dev-french**
+- Description: For discussions in french 🥖
+- Users: For the french community at large
+- Owners: PrestaShop project maintainers
+- Status: Public
+- Language: FR
+
 **#dev-modules**
 - Description: The best place on earth to discuss about module development for PrestaShop
 - Users: For modules developers of the community
