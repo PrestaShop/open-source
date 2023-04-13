@@ -143,7 +143,7 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [register-new-hook]: {{< devdocs "development/components/hook/register-new-hook/" >}}
 [fos-js-routing]: https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
 [how-to-build-assets]: {{< devdocs "development/compile-assets/" >}}
-[nightly-build-board]: https://nightly.prestashop.com/
+[nightly-build-board]: https://nightly.prestashop-project.org/
 [security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 
