@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+if ! command -v hugo >/dev/null 2>&1; then
+
+  hugo_install_path="$(cd "${0%/*}" && pwd)"
+
+  # Downloads Hugo if needed
+  # shellcheck source=/dev/null
+  [ -f "${hugo_install_path}/hugo" ] ||
+    . "${hugo_install_path}/downloadHugo"
+
+  local_bin="${HOME}/.local/bin"
+  # Hugo needs be made available in local bin path
+  mkdir -p -- "${local_bin}" &&
+    ln -sf -- "${hugo_install_path}/hugo" "${local_bin}/" &&
+    case ":$PATH:" in
+    *:${local_bin}:*) ;;
+    *)
+      export PATH="${local_bin}${PATH:+":${PATH#:}"}"
+      cat >>"$HOME/.profile" <<'EOF'
+[ -d "${HOME}/.local/bin" ] && export PATH="${HOME}/.local/bin${PATH:+":${PATH#:}"}"
+EOF
+      ;;
+    esac
+  printf 'The hugo command has been installed to the PATH: %s\n\n' \
+    "${local_bin}/hugo"
+else
+  printf 'Hugo is already installed in this PATH: %s\n' \
+    "$(command -v hugo)"
+fi
+
+hugo version
