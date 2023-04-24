@@ -1,5 +1,7 @@
 ---
 title: Using the Vagrant virtual machine
+aliases:
+  - /maintainers-guide/test-pr-and-branches/vagrant/
 ---
 
 # Using the Vagrant virtual machine

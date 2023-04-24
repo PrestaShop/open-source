@@ -1,5 +1,7 @@
 ---
 title: License & license compatibility
+aliases:
+  - /maintainers-guide/license/
 ---
 
 # License & license compatibility

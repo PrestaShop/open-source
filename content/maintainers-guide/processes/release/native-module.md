@@ -1,6 +1,7 @@
 ---
-title: Release a native PrestaShop module
-weight: 80
+title: How to release a native module
+aliases:
+  - /maintainers-guide/release-a-native-PS-module/
 ---
 
 # Release a new version of a native PrestaShop module

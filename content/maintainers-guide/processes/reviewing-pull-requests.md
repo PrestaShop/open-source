@@ -1,6 +1,7 @@
 ---
-title: Reviewing and approving Pull Requests
-weight: 30
+title: How to review and approve Pull Requests
+aliases:
+  - /maintainers-guide/reviewing-pull-requests/
 ---
 
 <style>

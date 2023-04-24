@@ -1,6 +1,8 @@
 ---
 title: Release publicly
 weight: 30
+aliases:
+  - /maintainers-guide/releasing-prestashop/release-publicly/
 ---
 
 # Release the version publicly

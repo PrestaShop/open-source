@@ -1,5 +1,7 @@
 ---
 title: How to manage Issues
+aliases:
+   - /maintainers-guide/qa/issue-management/
 ---
 
 # How to manage Issues
