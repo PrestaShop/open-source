@@ -1,6 +1,7 @@
 ---
-title: Creating merge Pull Requests for all active branches
-weight: 35
+title: How to create merge Pull Requests active branches
+aliases:
+  - /maintainers-guide/creating-merge-pull-requests/
 ---
 # Creating merge Pull Requests for all active branches
 

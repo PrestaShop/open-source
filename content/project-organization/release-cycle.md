@@ -1,5 +1,8 @@
 ---
 title: PrestaShop's release and support cycle
+weight: 1
+aliases:
+  - /maintainers-guide/release-cycle/
 ---
 
 # PrestaShop's release and support cycle

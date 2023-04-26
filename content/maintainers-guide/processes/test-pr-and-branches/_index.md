@@ -1,5 +1,7 @@
 ---
 title: How to test Pull Requests and branches
+aliases:
+  - /maintainers-guide/test-pr-and-branches/
 ---
 
 # How to test Pull Requests

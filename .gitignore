@@ -7,5 +7,7 @@
 **/node_modules/
 /resources/
 
+/.hugo_build.lock
+
 ## Ignore Hugo in bin dir
 /bin/hugo

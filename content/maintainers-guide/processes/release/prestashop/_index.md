@@ -1,8 +1,8 @@
 ---
 title: How to release a new PrestaShop version
 menuTitle: Releasing a new PS version
-chapter: true
-weight: 40
+aliases:
+  - /maintainers-guide/releasing-prestashop/
 ---
 
 # How to release a new PrestaShop version

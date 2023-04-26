@@ -1,6 +1,8 @@
 ---
 title: Final steps
 weight: 40
+aliases:
+  - /maintainers-guide/releasing-prestashop/final-steps/
 ---
 
 # Final steps

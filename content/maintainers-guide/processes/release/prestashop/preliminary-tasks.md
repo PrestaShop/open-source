@@ -1,6 +1,8 @@
 ---
 title: Preliminary tasks
 weight: 10
+aliases:
+  - /maintainers-guide/releasing-prestashop/preliminary-tasks/
 ---
 
 # Preliminary tasks

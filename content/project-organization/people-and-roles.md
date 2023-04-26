@@ -1,11 +1,11 @@
 ---
-title: Project organization
-weight: 1
+title: People & roles
+weight: 2
+aliases:
+  - /maintainers-guide/project-organization/
 ---
 
-# Project organization
-
-## Project roles
+# People and roles in the project
 
 ### Product Managers
 

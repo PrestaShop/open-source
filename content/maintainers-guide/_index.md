@@ -12,3 +12,6 @@ This section describes processes and guidelines for project maintainers.
 
 {{% children /%}}
 
+### Related content
+
+* [Project organization]({{< relref "/project-organization/" >}})

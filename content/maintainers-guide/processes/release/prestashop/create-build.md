@@ -1,6 +1,8 @@
 ---
 title: Create the build
 weight: 20
+aliases:
+  - /maintainers-guide/releasing-prestashop/create-build/
 ---
 
 # Create a build package
