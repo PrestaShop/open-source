@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General guidelines on PrestaShop Project - Open Source e-Commerce platform</title>
+    <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/</link>
+    <description>Recent content in General guidelines on PrestaShop Project - Open Source e-Commerce platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/maintainers-guide/general-guidelines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github account security</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/github-account-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/general-guidelines/github-account-security/</guid>
+      <description>Github account security guidelines Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
+We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
+ enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
+    </item>
+    
+    <item>
+      <title>License &amp; license compatibility</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/general-guidelines/license/</guid>
+      <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
+    </item>
+    
+  </channel>
+</rss>

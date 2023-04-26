@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processes on PrestaShop Project - Open Source e-Commerce platform</title>
+    <link>https://www.prestashop-project.org/maintainers-guide/processes/</link>
+    <description>Recent content in Processes on PrestaShop Project - Open Source e-Commerce platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/maintainers-guide/processes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create merge Pull Requests active branches</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</guid>
+      <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1.</description>
+    </item>
+    
+    <item>
+      <title>How to manage Issues</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/issue-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/issue-management/</guid>
+      <description>How to manage Issues This document details the processes in place for the position of &amp;ldquo;Issues Manager&amp;rdquo;, a rotating position within the QA community members.
+The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+ Is the issue valid? The issue must be either a bug report or a feature request.</description>
+    </item>
+    
+    <item>
+      <title>How to review and approve Pull Requests</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</guid>
+      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=needsupgrade] { background-color: #D93E0B; color: #fff; } label[type=needstheme] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
+    </item>
+    
+  </channel>
+</rss>

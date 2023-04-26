@@ -7,15 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project organization</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/project-organization/</link>
+      <title>PrestaShop&#39;s release and support cycle</title>
+      <link>https://www.prestashop-project.org/project-organization/release-cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/project-organization/</guid>
-      <description>Project organization Project roles Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+      <guid>https://www.prestashop-project.org/project-organization/release-cycle/</guid>
+      <description>PrestaShop&amp;rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
+Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
+ Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released.</description>
+    </item>
+    
+    <item>
+      <title>People &amp; roles</title>
+      <link>https://www.prestashop-project.org/project-organization/people-and-roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/people-and-roles/</guid>
+      <description>People and roles in the project Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
 Current product managers:
- Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir) Eshane Rawat (@eshraw)  Project Maintainers Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.
-Current maintainers:</description>
+ Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir) Eshane Rawat (@eshraw)  Project Maintainers Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.</description>
     </item>
     
     <item>
@@ -31,10 +41,10 @@ Candidates can apply to become maintainer over the whole project, or just a scop
     
     <item>
       <title>Preliminary tasks</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/</link>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/preliminary-tasks/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</guid>
       <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
 1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
@@ -55,10 +65,10 @@ Prerequisites to become a committer  Active participation in the project  Have a
     
     <item>
       <title>Create the build</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</link>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/create-build/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/</guid>
       <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
 1. Communicate Starting this step means that the Development phase of this release is over.
 Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
@@ -79,59 +89,27 @@ The teams On GitHub, there are mainly three teams working together on the projec
     
     <item>
       <title>Release publicly</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/</link>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/release-publicly/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/release-publicly/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/release-publicly/</guid>
       <description>Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
 Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
  Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
     </item>
     
     <item>
-      <title>Reviewing and approving Pull Requests</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/maintainers-guide/reviewing-pull-requests/</guid>
-      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=needsupgrade] { background-color: #D93E0B; color: #fff; } label[type=needstheme] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
-    </item>
-    
-    <item>
-      <title>Creating merge Pull Requests for all active branches</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/maintainers-guide/creating-merge-pull-requests/</guid>
-      <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
-Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
- Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1.</description>
-    </item>
-    
-    <item>
       <title>Final steps</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/</link>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/releasing-prestashop/final-steps/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/</guid>
       <description>Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
  Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
 2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions.</description>
-    </item>
-    
-    <item>
-      <title>Release a native PrestaShop module</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/</guid>
-      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:</description>
     </item>
     
     <item>
@@ -165,13 +143,14 @@ It allows the product managers to transform a Slack message (and its comments) i
     </item>
     
     <item>
-      <title>About the PrestaShop Project</title>
-      <link>https://www.prestashop-project.org/about/</link>
+      <title>Github account security</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/github-account-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/about/</guid>
-      <description>About the PrestaShop Project The PrestaShop project is an open-source e-commerce solution powering over 300,000 websites around the world since 2007.
-Built by a global community of thousands of contributors and sponsored by PrestaShop SA, the project is freely available on GitHub to download, modify, and use to build your e-commerce website.</description>
+      <guid>https://www.prestashop-project.org/maintainers-guide/general-guidelines/github-account-security/</guid>
+      <description>Github account security guidelines Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
+We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
+ enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
     </item>
     
     <item>
@@ -185,47 +164,57 @@ Please note that severity is to be distinguished from priority. Indeed, severity
     </item>
     
     <item>
-      <title>How to manage Issues</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/qa/issue-management/</link>
+      <title>How to create merge Pull Requests active branches</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/qa/issue-management/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</guid>
+      <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
+Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
+ Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1.</description>
+    </item>
+    
+    <item>
+      <title>How to manage Issues</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/issue-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/issue-management/</guid>
       <description>How to manage Issues This document details the processes in place for the position of &amp;ldquo;Issues Manager&amp;rdquo;, a rotating position within the QA community members.
 The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
  Is the issue valid? The issue must be either a bug report or a feature request.</description>
     </item>
     
     <item>
-      <title>License &amp; license compatibility</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/license/</link>
+      <title>How to release a native module</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/native-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/license/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/native-module/</guid>
+      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
+This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
+This page explains what is needed to release these modules.
+Requirements Mandatory requirements The module should be valid which means:</description>
+    </item>
+    
+    <item>
+      <title>How to review and approve Pull Requests</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</guid>
+      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=needsupgrade] { background-color: #D93E0B; color: #fff; } label[type=needstheme] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
+    </item>
+    
+    <item>
+      <title>License &amp; license compatibility</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/general-guidelines/license/</guid>
       <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
 The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
 PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop&#39;s release and support cycle</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/release-cycle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/maintainers-guide/release-cycle/</guid>
-      <description>PrestaShop&amp;rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
-Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
- Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released.</description>
-    </item>
-    
-    <item>
-      <title>Processes</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/processes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/maintainers-guide/processes/</guid>
-      <description>Processes Security recommendations Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
-We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
- enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
     </item>
     
     <item>
@@ -241,10 +230,10 @@ Request a new channel Creating a new channel is reserved to the administrators.<
     
     <item>
       <title>Using the Vagrant virtual machine</title>
-      <link>https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/</link>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/test-pr-and-branches/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/maintainers-guide/test-pr-and-branches/vagrant/</guid>
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/test-pr-and-branches/vagrant/</guid>
       <description>Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
  Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.

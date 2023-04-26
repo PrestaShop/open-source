@@ -3,11 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Release a native PrestaShop module | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &ldquo;native PrestaShop modules&rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:"/>
+<title>License &amp; license compatibility | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="License &amp; license compatibility In order to protect PrestaShop users from patent trolls, it&rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&rsquo;s Native Modules and the Classic theme are released under the AFL 3."/>
 
 
 
@@ -25,28 +24,25 @@ Requirements Mandatory requirements The module should be valid which means:"/>
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Release a native PrestaShop module"/>
-<meta name="twitter:description" content="Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &ldquo;native PrestaShop modules&rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:"/>
-<meta property="og:title" content="Release a native PrestaShop module" />
-<meta property="og:description" content="Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &ldquo;native PrestaShop modules&rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:" />
+<meta name="twitter:title" content="License &amp; license compatibility"/>
+<meta name="twitter:description" content="License &amp; license compatibility In order to protect PrestaShop users from patent trolls, it&rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&rsquo;s Native Modules and the Classic theme are released under the AFL 3."/>
+<meta property="og:title" content="License &amp; license compatibility" />
+<meta property="og:description" content="License &amp; license compatibility In order to protect PrestaShop users from patent trolls, it&rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&rsquo;s Native Modules and the Classic theme are released under the AFL 3." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/release-a-native-ps-module/" /><meta property="article:section" content="maintainers-guide" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/general-guidelines/license/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-01-05T18:41:21+01:00" />
+<meta property="article:modified_time" content="2023-04-24T17:02:58+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Release a native PrestaShop module"/>
-<meta name="twitter:description" content="Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &ldquo;native PrestaShop modules&rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:"/>
+<meta name="twitter:title" content="License &amp; license compatibility"/>
+<meta name="twitter:description" content="License &amp; license compatibility In order to protect PrestaShop users from patent trolls, it&rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
+The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
+PrestaShop&rsquo;s Native Modules and the Classic theme are released under the AFL 3."/>
 
 
 
@@ -145,6 +141,12 @@ Requirements Mandatory requirements The module should be valid which means:"/>
           
           
           <li class="nav-item">
+            <a class="nav-link" href="/about" title="About">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://build.prestashop-project.org" title="News">News</a>
           </li>
           
@@ -202,6 +204,8 @@ Requirements Mandatory requirements The module should be valid which means:"/>
               
               <a class="dropdown-item" href="/maintainers-guide/" title="Maintainer&#39;s guide">Maintainer&#39;s guide</a>
               
+              <a class="dropdown-item" href="/project-organization/" title="Project organization">Project organization</a>
+              
               <a class="dropdown-item" href="/user-groups/" title="User groups &amp; branding">User groups &amp; branding</a>
               
             </div>
@@ -244,6 +248,9 @@ Requirements Mandatory requirements The module should be valid which means:"/>
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
@@ -255,7 +262,12 @@ Requirements Mandatory requirements The module should be valid which means:"/>
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Release a native PrestaShop module</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/general-guidelines/">General guidelines</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">License &amp; license compatibility</li>
       
     
   </ol>
@@ -265,94 +277,16 @@ Requirements Mandatory requirements The module should be valid which means:"/>
     </div>
     <div class="row mx-xl-2">
       
-<div id="toc" class="col-xl-2 order-xl-1">
-  <div class="wrapper">
-    <div class="toc-title">Table of Contents</div>
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#release-a-new-version-of-a-native-prestashop-module">Release a new version of a native PrestaShop module</a>
-      <ul>
-        <li><a href="#requirements">Requirements</a>
-          <ul>
-            <li><a href="#mandatory-requirements">Mandatory requirements</a></li>
-            <li><a href="#recommended-requirements">Recommended requirements</a></li>
-          </ul>
-        </li>
-        <li><a href="#release-process">Release process</a>
-          <ul>
-            <li><a href="#choosing-the-new-version-number">Choosing the new version number</a></li>
-            <li><a href="#update-version-number-in-the-code">Update version number in the code</a></li>
-            <li><a href="#merge-dev-into-master">Merge dev into master</a></li>
-            <li><a href="#create-a-github-release">Create a GitHub Release</a></li>
-            <li><a href="#create-a-new-milestone">Create a new milestone</a></li>
-            <li><a href="#addons-and-distribution-api">Addons and Distribution API</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="release-a-new-version-of-a-native-prestashop-module">Release a new version of a native PrestaShop module</h1>
-<p>Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the <code>composer.json</code> of the Core project.</p>
-<p>This is what we call &ldquo;native PrestaShop modules&rdquo;. The source code of these modules is hosted on GitHub.</p>
-<p>This page explains what is needed to release these modules.</p>
-<h2 id="requirements">Requirements</h2>
-<h3 id="mandatory-requirements">Mandatory requirements</h3>
-<p>The module should be valid which means:</p>
-<ul>
-<li>it works as expected</li>
-<li>it complies with modules <a href="https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/project-modules/
-">contribution guidelines</a>: license headers must be valid and necessary files (LICENSE, CONTRIBUTORS) must be embedded</li>
-</ul>
-<h3 id="recommended-requirements">Recommended requirements</h3>
-<p>It is recommended:</p>
-<ul>
-<li>to have enabled <a href="https://github.com/release-drafter/release-drafter">Release Drafter</a> on the module to automatize the process of creating a new GitHub release</li>
-<li>have enabled some Continous Integration tools such as phpstan or php-cs-fixer on the module</li>
-</ul>
-<p>These tools will help releasing a clean module in a smooth manner but the release can happen without them.</p>
-<h2 id="release-process">Release process</h2>
-<p>When multiple improvements (bug fixes, enhancements or new features) have been merged into the <code>dev</code> branch of a module, we can merge them into <code>master</code> to deliver a new release of the module.</p>
-<h3 id="choosing-the-new-version-number">Choosing the new version number</h3>
-<p>We follow <a href="https://semver.org/">SemVer</a> guidelines:</p>
-<p>If the new version of the module is backward compatible, you can increase the version number either by a minor version or by a patch version.</p>
-<p>However, if the new version of the module breaks backward compatibility, it must be a new major version.</p>
-<h3 id="update-version-number-in-the-code">Update version number in the code</h3>
-<p>Create a Pull Request targeting <code>dev</code> branch. In this PR:</p>
-<p>Update the module version in the following files:</p>
-<ul>
-<li><code>config.xml</code></li>
-<li><code>&lt;module_name&gt;.php</code></li>
-</ul>
-<p>Commit the changes with git message:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">// Version updated to v&lt;new_version&gt;
-</code></pre></div><p>Get this PR approved and merge it into <code>dev</code>. See an <a href="https://github.com/PrestaShop/ps_shoppingcart/pull/50/">example</a> of such PR.</p>
-<h3 id="merge-dev-into-master">Merge dev into master</h3>
-<p>Create a new PR to merge branch <code>dev</code> into branch <code>master</code>. See an <a href="https://github.com/PrestaShop/ps_shoppingcart/pull/51">example</a> of such PR.</p>
-<p>Kindly ask the QA team to perform a release test on this PR, warning them that this PR is a release PR and consequently they need to check the whole module behavior.</p>
-<p>If QA validates the PR, it can be merged, which will update the <code>master</code> branch with the new code changes from <code>dev</code>.</p>
-<h3 id="create-a-github-release">Create a GitHub Release</h3>
-<p>If you have enabled Release Drafter, it will create a draft release for you. You can review it and publish it.</p>
-<p>Else, you need to do it manually:</p>
-<p>Create a new tag with &ldquo;v&lt;new_version&gt;&rdquo; that targets the last commit on <code>master</code> and push it. This will publish the module version on <a href="https://packagist.org/">https://packagist.org/</a> .</p>
-<p>Create a release on Github based on the tag you just pushed.
-In the content section, write a small changelog: list the PRs merged since the last version so that people can know what is included in the release (see this <a href="https://github.com/PrestaShop/ps_shoppingcart/releases/tag/v2.0.3">example</a>).</p>
-<p>(by the way, GitHub is able to create the release <em>and</em> the tag at the same time from the &ldquo;create a new release&rdquo; page)</p>
-<p>Attach to GitHub release a stand-alone ready-to-use ZIP archive of the module.</p>
-<p>This archive must be a stand-alone running module, which means it musts embeds all necessary files for its correct behavior. This includes bundled frontend assets (JS, CSS), NPM dependencies or Composer dependencies.</p>
-<h3 id="create-a-new-milestone">Create a new milestone</h3>
-<p>Once the GitHub release is done, you can create a new milestone and close the old one.</p>
-<p>In the module&rsquo;s repository, click on <code>pull requests</code>, and then on <code>milestones</code> next to the search field.</p>
-<p>To create a new milestone, click <code>new milestone</code> and fill out the form, you can leave the <code>due date</code> field empty if it is not relevant. Once the new milestone is created you can close the old one.</p>
-<h3 id="addons-and-distribution-api">Addons and Distribution API</h3>
-<p>PrestaShop 1.7 and 1.6 instances were able to download new versions of modules through the Addons API. Addons API monitors the modules listed into the GitHub repository <a href="https://github.com/PrestaShop/PrestaShop-modules">https://github.com/PrestaShop/PrestaShop-modules</a></p>
-<p>When a <code>master</code> branch of one of these modules receives an update, Addons API will update the ZIP it delivers with the new content within 24 hours.</p>
-<p>PrestaShop 8 now relies on <a href="https://github.com/PrestaShop/distribution-api">PrestaShop Modules Distribution API</a> that monitors GitHub releases and allow PrestaShop instances to poll for new module versions and download them.</p>
+        <div class="content"><h1 id="license--license-compatibility">License &amp; license compatibility</h1>
+<p>In order to protect PrestaShop users from patent trolls, it&rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.</p>
+<p>The <strong>PrestaShop Core</strong> software is released under the <a href="https://opensource.org/licenses/OSL-3.0">OSL 3.0 license</a>. Therefore, all original work included in PrestaShop itself must be released under that license as well.</p>
+<p>PrestaShop&rsquo;s <a href="https://devdocs.prestashop-project.org/8/development/native-modules/
+">Native Modules</a> and the <strong>Classic theme</strong> are released under the <a href="https://opensource.org/licenses/AFL-3.0">AFL 3.0 license</a>. Similarly, this license applies to all original work contributed to these projects.</p>
+<h2 id="third-party-content">Third party content</h2>
+<p>Third party content may be included in PrestaShop as long as its original authors have released it under a <a href="https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/compatible-licenses/
+">compatible license</a>. If the proposed content is available with a compliant license, a last check must be done to make sure that there is no additional clause that would introduce a restriction of use.</p>
 </div>
       </div>
     </div>

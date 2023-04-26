@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-<title>QA processes | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=""/>
+<title>Release publicly | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
 
 
 
@@ -22,17 +24,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="QA processes"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="QA processes" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/qa/" />
+<meta name="twitter:title" content="Release publicly"/>
+<meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
+<meta property="og:title" content="Release publicly" />
+<meta property="og:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/release-publicly/" /><meta property="article:section" content="maintainers-guide" />
+
+<meta property="article:modified_time" content="2023-04-24T17:02:58+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QA processes"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Release publicly"/>
+<meta name="twitter:description" content="Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
+Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
+ Merge them on GitHub and publishing their security advisories. Rebase the build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before."/>
 
 
 
@@ -131,6 +141,12 @@
           
           
           <li class="nav-item">
+            <a class="nav-link" href="/about" title="About">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://build.prestashop-project.org" title="News">News</a>
           </li>
           
@@ -188,6 +204,8 @@
               
               <a class="dropdown-item" href="/maintainers-guide/" title="Maintainer&#39;s guide">Maintainer&#39;s guide</a>
               
+              <a class="dropdown-item" href="/project-organization/" title="Project organization">Project organization</a>
+              
               <a class="dropdown-item" href="/user-groups/" title="User groups &amp; branding">User groups &amp; branding</a>
               
             </div>
@@ -213,7 +231,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -222,6 +240,15 @@
   <ol class="breadcrumb">
     
     
+      
+      
+        
+      
+      
+        
+      
+      
+        
       
       
         
@@ -241,7 +268,22 @@
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">QA processes</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/processes/">Processes</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item"><a href="/maintainers-guide/processes/release/">How to release</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item"><a href="/maintainers-guide/processes/release/prestashop/">Releasing a new PS version</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Release publicly</li>
       
     
   </ol>
@@ -251,57 +293,132 @@
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#release-the-version-publicly">Release the version publicly</a>
+      <ul>
+        <li><a href="#1-merge-security-prs-on-github">1. Merge security PRs on GitHub</a></li>
+        <li><a href="#2-merge-the-build-branch">2. Merge the build branch</a></li>
+        <li><a href="#3-tag--release-on-github">3. Tag &amp; release on GitHub</a>
+          <ul>
+            <li><a href="#tag-the-version-using-git">Tag the version using git</a></li>
+            <li><a href="#publish-the-release-on-github">Publish the release on GitHub</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-release-on-prestashopcom">4. Release on prestashop.com</a></li>
+        <li><a href="#5-communicate">5. Communicate</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="qa-processes">QA processes</h1>
-<p>This section describes processes and guidelines for Quality Assurance.</p>
+        <div class="content"><h1 id="release-the-version-publicly">Release the version publicly</h1>
+<p>Once the QA team has greenlighted your build, you can move forward with the public release.</p>
 
+<div class="notices warning" ><strong>Make certain you have go for publish!</strong> Also, avoid starting this process after 4 PM or on a Friday.</div>
 
+<h2 id="1-merge-security-prs-on-github">1. Merge security PRs on GitHub</h2>
+<p>If there are unmerged security PRs:</p>
+<ul>
+<li><strong>Merge them on GitHub</strong> and publishing their security advisories.</li>
+<li><strong>Rebase the build branch</strong> that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</li>
+</ul>
+<h2 id="2-merge-the-build-branch">2. Merge the build branch</h2>
+<ul>
+<li><strong>Double check your build branch</strong>
+<ul>
+<li>Verify that it contains only the updated contributors list and the new changelog, as well as any fix that was merged during QA validation.</li>
+<li>The commit named &ldquo;// Changelog [version]&rdquo; should be the last one.<br>
+If it&rsquo;s not, you have probably forgotten to build it again after merging a bug fix. In that case, you will have to build again.</li>
+</ul>
+</li>
+<li><strong>Create a Pull Request</strong> to merge the branch (if you haven&rsquo;t done it already), and have it merged.</li>
+</ul>
+<h2 id="3-tag--release-on-github">3. Tag &amp; release on GitHub</h2>
+<h3 id="tag-the-version-using-git">Tag the version using git</h3>
 
+<div class="notices tip" >You can do this step using Git or directly on GitHub on the next step.</div>
 
+<ul>
+<li>Check out the commit named &ldquo;// Changelog [version]&rdquo;</li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tag</a> the new version:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git tag 1.7.2.0 <span class="c1"># replace with your version</span>
+</code></pre></div></li>
+<li>Push the tag:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git push 1.7.2.0 <span class="c1"># replace with your version</span>
 
-
-
-
-<ul class='children children-li'>
-	
-
-  
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/qa/issue-management/" >How to manage Issues</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-
-	
+<span class="c1"># Alternatively (e.g. if you need to overwrite an existing tag)</span>
+git push origin refs/tags/1.7.7.2
+</code></pre></div></li>
+</ul>
+<h3 id="publish-the-release-on-github">Publish the release on GitHub</h3>
+<p>Create a <a href="https://github.com/PrestaShop/PrestaShop/releases/new">new Release Draft on GitHub</a></p>
+<ul>
+<li>
+<p>To start, <strong>choose</strong> the tag that you created in the previous step.</p>
+<p>Alternatively, you can <strong>create</strong> the tag by picking the Changelog commit that you just merged.<br>
+⚠️ <em>Make sure you pick the Changelog commit itself, and <strong>not</strong> the PR&rsquo;s merge commit!</em></p>
+</li>
+<li>
+<p><strong>Paste</strong> the changelog as a description</p>
+<p>If you&rsquo;re publishing a version that includes changes from a previous pre-release version (including beta and RC releases):</p>
+<ul>
+<li>Include a note explaining what other changes are included (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0">Example</a>)</li>
+<li>Precede the changelog with the title <em>&ldquo;Changes since beta XX / RC YY&hellip;&quot;</em> (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-rc.1">Example</a>)</li>
+</ul>
+<p>If you&rsquo;re publishing a pre-release version:</p>
+<ul>
+<li>Make sure to add a <em>&ldquo;Known issues&rdquo;</em> section (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.0-beta.1">Example</a>)</li>
+<li>Don&rsquo;t forget to check the <em>&ldquo;This a pre-release&rdquo;</em> checkbox at the bottom of the form</li>
+</ul>
+<p>If you&rsquo;re publishing a patch version:</p>
+<ul>
+<li>Write a short intro explaining what the release fixes – especially if it&rsquo;s a security release! (<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.5.1">Example</a>)</li>
+</ul>
+</li>
+<li>
+<p><strong>Upload</strong> the new version zip archive (the one that has been validated by QA).<br>
+Remove the build number from the file name to avoid confusions.</p>
+</li>
 </ul>
 
+<div class="callout">
+<h5 id="if-the-changelog-content-is-too-long">If the Changelog content is too long</h5>
+<p>It&rsquo;s not unusual to have very long changelogs, especially in minor versions. To reduce its size, we recommend putting it in a collapsable paragraph:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"># Full Changelog
+ 
+<span class="p">&lt;</span><span class="nt">details</span><span class="p">&gt;&lt;</span><span class="nt">summary</span><span class="p">&gt;</span>Click here to see<span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+- Back Office:
+  - New feature:
+    - #xxxxx .....
+...
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
 
+<h2 id="4-release-on-prestashopcom">4. Release on prestashop.com</h2>
 
+<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
+<p>Ask a maintainer from the PrestaShop Company with admin access to prestashop.com to perform this step.</p>
+</div>
 
-
+<h2 id="5-communicate">5. Communicate</h2>
+<p>Congratulations! You can now update the Release Tracker GitHub issue: tick the &ldquo;QA&rdquo; and &ldquo;Development&rdquo; boxes and <a href="https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656">add a comment</a>.</p>
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to release on PrestaShop Project - Open Source e-Commerce platform</title>
+    <link>https://www.prestashop-project.org/maintainers-guide/processes/release/</link>
+    <description>Recent content in How to release on PrestaShop Project - Open Source e-Commerce platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/maintainers-guide/processes/release/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to release a native module</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/native-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/native-module/</guid>
+      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
+This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
+This page explains what is needed to release these modules.
+Requirements Mandatory requirements The module should be valid which means:</description>
+    </item>
+    
+  </channel>
+</rss>
