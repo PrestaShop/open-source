@@ -172,7 +172,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-title">Improved image management</p>
                             <p>
-                                Handling product images has been made more efficient. It's now possible to replace existing images, saving merchants the trouble of having to rewrite captions and reassigning images to combinations or shops. The introduction of bulk actions for image management now makes performing repetitive tasks much faster.
+                                Handling product images has been made more efficient. It's now possible to replace existing images, saving merchants the trouble of having to rewrite captions and reassigning images to combinations or stores. The introduction of bulk actions for image management now makes performing repetitive tasks much faster.
                             </p>
                         </div>
                     </div>
@@ -227,9 +227,9 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <!-- MULTISTORE -->
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Manage multi-store products like never before</p>
+                            <h2 class="section-title">Manage multistore products like never before</p>
                             <p>
-                                Assigning products to a specific store, understanding when you are accessing products not associated with the current shop, and managing products across multiple stores has been made easier and more clear.
+                                Assigning products to a specific store, understanding when you are accessing products not associated with the current store, and managing products across multiple stores has been made easier and more clear.
                             </p>
                             <p>
                                 A dedicated checkbox allows to choose whether to apply changes to the current store or to all stores. Assigning a product to a store is now done through the new multistore header, ensuring that no products are accidentally created in a new store accidentally.
