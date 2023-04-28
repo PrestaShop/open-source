@@ -96,22 +96,19 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <div class="row">
                         <div class="col">
                             <p class="display-4 text-center">
-                                PrestaShop 8.1 is much more than you could have imagined
+                                Discover the amazing new features in PrestaShop 8.1
                             </p>
                         </div>
                     </div>
                     <hr class="mb-5">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2 class="section-title">New product page</p>
+                            <h2 class="section-title">All-new product page</p>
                             <p class="mb-5">
-                                Managing your store's catalog has never been easier, thanks to our redesigned product edit page. All elements are now clearly visible and intuitively placed, allowing you to easily find the buttons and functions you need to update and organize your products.
+                                Managing the store's catalog has never been easier, thanks to a completely redesigned product management page. The page has been rebuilt from the ground up for increased usability and performance, allowing merchants to find their way across the page more easily, and help them work more efficiently.
                             </p>
                             <p>
-                                Our new edit page offers a clutter-free layout, ensuring quick access to the features you use the most. This smart organization saves you time and effort, making your catalog management a breeze.
-                            </p>
-                            <p>
-                                Our new edit page is the result of an extensive product discovery process, involving in-depth interviews and collaboration between PrestaShop's product team and merchants from a diverse range of e-commerce backgrounds. This valuable feedback has helped us craft an edit page that addresses the needs of various users, making it truly versatile and efficient.
+                                The new product management page is the result of years-long work involving in-depth interviews and collaboration with merchants from a diverse range of e-commerce backgrounds. This valuable feedback has helped craft a new page that addresses the needs of big and small businesses, making it truly versatile and efficient.
                             </p>
                         </div>
                         <div class="col-md-8 text-right">
@@ -124,18 +121,15 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <div class="row">
                         <div class="col">
                             <p class="display-3 text-center">
-                                A detailed look at the page
+                                Main improvements
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Product types</p>
+                            <h2 class="section-title">Choosing & changing product type</p>
                             <p>
-                                Navigating different product types has never been more seamless in PrestaShop. Whether you're editing normal products, products with combinations, packs of products, or virtual products, it's now easier than ever to identify the type of product you're working with. Our redesigned interface provides clear visual cues, ensuring you always know the product type at a glance.
-                            </p>
-                            <p>
-                                Creating a new product has also been simplified, thanks to a handy popup that allows you to choose the product type right from the start. This thoughtful feature streamlines the process and helps you avoid confusion, making it a breeze to set up and manage your store's diverse offerings.
+                                Creating a new product is now easier than ever. A handy new popup helps choose and understand the product type that best fits your need – right from the start. If you change your mind later on, modifying a product's type has also been made easier.
                             </p>
                         </div>
                     </div>
@@ -155,13 +149,10 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-title">Improved price and stock management</p>
                             <p>
-                                The redesigned Summary clearly displays your margin, helping merchants optimize pricing, while the separation of specific and catalog prices streamlines your understanding of pricing structure. The updated price input area simplifies tax calculations by showcasing the impact of taxes as an operation.
+                                Merchants can optimize their pricing thanks to a redesigned price section. Information is now organized more clearly, and tax calculation has been simplified by showcasing the impact of taxes as an operation. The new summary also highlights key price information, including the calculated gross profit margin.
                             </p>
                             <p>
-                                The new subtraction and addition functionality ensures accurate stock calculations, preventing discrepancies when sales and updates occur simultaneously. This improvement assures better reliability in stock management.
-                            </p>
-                            <p>
-                                Stay informed with a preview of the last five stock movements, including order-related stock changes such as sales and product returns. This comprehensive overview provides valuable context for merchants, streamlining stock tracking and offering a clearer summary of your inventory situation.
+                                Stock management has also been significantly improved. Quantities are now handled through addition and subtraction, ensuring accurate stock calculation even when a sale occurs while the merchant is working on their product. To help understand the product's stock situation, this section now also displays the last five stock movements, including order-related stock changes such as sales and product returns.
                             </p>
                         </div>
                     </div>
@@ -181,10 +172,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-title">Improved image management</p>
                             <p>
-                                Effortlessly manage your product images with our improved image management features. Now, instead of deleting and adding new images, which causes the loss of links and data associated with the image, you can simply replace the existing image, preserving vital information.
-                            </p>
-                            <p>
-                                Take advantage of the added convenience with bulk actions for image deletion, making it more practical to manage your product visuals.
+                                Handling product images has been made more efficient. It's now possible to replace existing images, saving merchants the trouble of having to rewrite captions and reassigning images to combinations or shops. The introduction of bulk actions for image management now makes performing repetitive tasks much faster.
                             </p>
                         </div>
                     </div>
@@ -203,15 +191,12 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <!-- COMBINATIONS -->
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">A new way of managing product with combinations</p>
+                            <h2 class="section-title">Radically improved management of products with combinations</p>
                             <p>
-                                Quickly find attributes with the new filtering system, and enjoy the huge performance improvements brought by pagination. The combination list now functions as an Edition mode, which activates when editing the list, ensuring that only the displayed content is editable. This prevents large form submissions that may cause errors.
+                                The completely renewed combination management interface brings more efficient navigation and edition, coupled with spectacular performance improvements compared to previous PrestaShop versions. Quickly select attributes thanks to filters in the new combination generator interface, and generate hundreds of them in only a few seconds.
                             </p>
                             <p>
-                                Experience the convenience of bulk editing with "select all" and "select the page" options. Assigning images to combinations is now simpler, requiring just a few clicks, eliminating the need to go through each combination individually. Our new progress bar detects errors, which can be exported as a text file for easy troubleshooting.
-                            </p>
-                            <p>
-                                The combination attributes are now displayed in a modal, decluttering the page and improving the overall user experience. Upgrade to the new PrestaShop version and enjoy the enhanced efficiency and convenience of managing products with combinations.
+                                Editing combinations has been made easier and more powerful than ever, with a modal interface to edit individual combinations, and new and improved filter-based bulk actions, which make tasks like assigning images to combinations based on attributes a matter of only a few clicks. In addition, a new progress bar is displayed while PrestaShop is crunching data, keeping the user informed of what's going on, and providing helpful information if something goes wrong.
                             </p>
                         </div>
                     </div>
@@ -242,14 +227,12 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <!-- MULTISTORE -->
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Manage your multi-store products like never before</p>
+                            <h2 class="section-title">Manage multi-store products like never before</p>
                             <p>
-                                In 8.1 you can efficiently manage your products across multiple stores with our improved multistore features. Assign products to a specific store, access other stores not associated with the product, or manage all stores with ease. This approach helps avoid errors and ensures secure product assignments. To associate a product with a new store, simply select it in the multistore header, eliminating the risk of accidentally creating products in new shops without your knowledge.
+                                Assigning products to a specific store, understanding when you are accessing products not associated with the current shop, and managing products across multiple stores has been made easier and more clear.
                             </p>
                             <p>
-                                The new "Apply changes to all stores" checkbox offers flexibility by impacting content only on the selected input of the associated stores. This safer, more controlled approach enables you to manage changes across your stores with precision.</p>
-                            <p>
-                                To associate a product with a new store, simply select it in the multistore header. This secure method ensures that no products are accidentally created in a new shop without your knowledge.
+                                A dedicated checkbox allows to choose whether to apply changes to the current store or to all stores. Assigning a product to a store is now done through the new multistore header, ensuring that no products are accidentally created in a new store accidentally.
                             </p>
                         </div>
                     </div>
