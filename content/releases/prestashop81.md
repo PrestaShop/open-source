@@ -72,7 +72,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
 <div class="container-fluid release-page">
     <div class="hero-banner" style="background-image: url('/releases/images/ps81/banner.png');">
         <div class="hero-text">
-            <p>The next PrestaShop 8 is now ready, (not so) minor version 8.1 is available to download!</p>
+            <p>PrestaShop 8.1. Minor version. Major changes.</p>
             <a href="" class="btn btn-primary btn-lg">Download Now</a>
         </div>
     </div>
