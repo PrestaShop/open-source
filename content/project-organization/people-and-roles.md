@@ -59,6 +59,7 @@ Current committers:
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
+- Boris Hermans ([@boherm](https://github.com/boherm))
 
 ### UX Designers
 
