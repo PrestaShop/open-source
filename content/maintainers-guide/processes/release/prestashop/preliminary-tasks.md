@@ -73,6 +73,16 @@ Ask a maintainer from the PrestaShop Company with access to the Translation Tool
 It is usually only done once per release as well.
 {{% /notice %}}
 
+1. [Use the command to extract wordings from the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
+
+2. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
+
+3. If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.
+
+4. If the wording to be corrected is found in /mails, you should first correct it in https://github.com/PrestaShop/mjml-theme-converter and the mail templates in the Prestashop CORE should also be regenerated (using https://github.com/PrestaShop/mjml-theme-converter ).
+
+5. Once all the wordings have been corrected, validated, merged, module released, mail regenerated, bumping done, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml) to push the catalogs to Crowdin (the reposiroty need right access).
+
 ## 4. Lock the theme version.
 
 {{% notice tip %}}
