@@ -41,7 +41,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-04-24T17:02:58+02:00" />
+<meta property="article:modified_time" content="2023-05-10T16:42:24+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -373,6 +373,24 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <p>It is usually only done once per release as well.</p>
 </div>
 
+<ol>
+<li>
+<p><a href="https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml">Use the command to extract wordings from the TranslationTool repository</a>. This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
+<a href="https://github.com/PrestaShopCorp/TranslationTool">https://github.com/PrestaShopCorp/TranslationTool</a> is PRIVATE, and then you need a special right access to use it.</p>
+</li>
+<li>
+<p>If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.</p>
+</li>
+<li>
+<p>If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.</p>
+</li>
+<li>
+<p>If the wording to be corrected is found in /mails/themes/modern, you should first correct it in <a href="https://github.com/PrestaShop/mjml-theme-converter">https://github.com/PrestaShop/mjml-theme-converter</a> and the mail templates in the Prestashop CORE should also be regenerated (using <a href="https://github.com/PrestaShop/mjml-theme-converter">https://github.com/PrestaShop/mjml-theme-converter</a> ).</p>
+</li>
+<li>
+<p>Once all the wordings have been corrected, validated and merged, <a href="https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml">a Github Action can be used on the TranslationTool repository</a> to push the catalogs to Crowdin (the repository need right access).</p>
+</li>
+</ol>
 <h2 id="4-lock-the-theme-version">4. Lock the theme version.</h2>
 
 <div class="notices tip" >You can do this step using Git or directly on GitHub on the next step.</div>
