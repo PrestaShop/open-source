@@ -28,8 +28,8 @@ More information: [How to contribute (DevDocs)][how-to-contribute]
 
 [report-bug]: {{< relref "report-issues" >}}
 [request-feature]: {{< relref "request-features" >}}
-[review-code]: {{< relref "/maintainers-guide/processes/reviewing-pull-requests.md" >}}
-[test-code]: {{< relref "/maintainers-guide/processes/test-pr-and-branches/" >}}
+[review-code]: {{< relref "/quality-council/processes/reviewing-pull-requests.md" >}}
+[test-code]: {{< relref "/quality-council/processes/test-pr-and-branches/" >}}
 [slack]: {{< relref "/slack/" >}}
 [github]: https://github.com/PrestaShop/PrestaShop/
 [how-to-contribute]: {{< devdocs "contribute/" >}}
