@@ -69,51 +69,57 @@ Current UX designers:
 
 - Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
 
-### Issue Managers
+### Quality Council
+#### Issue Managers
 
 Issue managers reproduce and qualify new issues to avoid duplicates and, if they are indeed defects in the software, their severity. They also redirect new improvement suggestions to the right Product Manager.
 
 Current issue managers:
 
-- Aurélien Rita ([@AureRita](https://github.com/AureRita))
-- Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
-- Florine Hea ([@florine2623](https://github.com/florine2623))
-- Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
-- Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
-- Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-- Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
-- Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
-- Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
+* Maintainers :
+  - Aurélien Rita ([@AureRita](https://github.com/AureRita))
+  - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
+  - Florine Hea ([@florine2623](https://github.com/florine2623))
+  - Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
+  - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
+  - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
+  - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
+  - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
+* Committers : 
+  - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
 
-### Software Testers
+#### Software Testers
 
 Software Testers make sure that the quality of the software improves over time, by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop's releases and its built-in modules.
 
 Current Software Testers:
 
-- Aurélien Rita ([@AureRita](https://github.com/AureRita))
-- Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
-- Florine Hea ([@florine2623](https://github.com/florine2623))
-- Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
-- Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
-- Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-- Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
-- Khouloud Belguith ([@khouloudbelguith](https://github.com/khouloudbelguith))
-- Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-- Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
-- Sarah Dib ([@sarahdib](https://github.com/sarahdib))
+* Maintainers :
+  - Aurélien Rita ([@AureRita](https://github.com/AureRita))
+  - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
+  - Florine Hea ([@florine2623](https://github.com/florine2623))
+  - Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
+  - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
+  - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
+  - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
+  - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
+  - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
+* Committers : 
+  - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
 
-### Software Developers in Test
+#### Software Developers in Test
 
 Software Developers in Test provide technical vision, review contribution and write automated tests, which help accelerate the testing process.
 
 Current Software Developers in Test:
 
-- Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
-- Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
-- Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
-- Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
-- Stéphane Decisy ([@SD1982](https://github.com/SD1982))
+* Maintainers :
+  - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
+  - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
+* Committers : 
+  - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
+  - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
+  - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
 
 ### Wording Manager
 
