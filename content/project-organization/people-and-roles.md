@@ -106,6 +106,7 @@ Current Software Testers:
   - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
 * Committers : 
   - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
+  - Serhii Zavadskyi ([@szavadskiy](https://github.com/szavadskiy))
 
 #### Software Developers in Test
 

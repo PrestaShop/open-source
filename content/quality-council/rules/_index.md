@@ -6,14 +6,14 @@ title: Rules of the Council
 
 ### Members
 
-There are 3 profiles which are members of the Quality Coucil :
+There are 3 profiles which are members of the Quality Council :
 * Issue Manager
 * Software Developer in Test
 * Software Tester
 
 Each member can be : 
-* either a maintainer (can participate and vote during the Quality Coucil),
-* or a committer (can participate during the Quality Coucil).
+* either a maintainer (can participate and vote during the Quality Council),
+* or a committer (can participate during the Quality Council).
 
 Members are available on the [organization project page]({{< relref "/project-organization/people-and-roles#quality-council" >}}) with their role.
 
