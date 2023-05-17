@@ -10,6 +10,11 @@ GitHub is the main tool used by maintainers to manage the PrestaShop project.
 
 This page quickly describes how [Issues](https://guides.github.com/features/issues/) and [Pull Requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) are processed on GitHub.
 
+Please note that some repositories has specific rules.
+These rules will be found in a CONTRIBUTION_PROCESS.md file in `.github` folder.
+
+This file has priority over the general rules applied on this page.
+
 ## The teams
 
 On GitHub, there are mainly three teams working together on the project.
