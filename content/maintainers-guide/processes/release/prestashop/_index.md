@@ -65,8 +65,6 @@ Some of steps will require special tools or access rights which are currently no
    
    - **Tag the version using Git and publish the release on GitHub.**
 
-   - **Release the archive on PrestaShop.com.**
-
    - **Communicate.**
 
 4. **[Final steps][final-steps]**: (click to see the full step)
