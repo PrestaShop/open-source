@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Slack channels | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
+<title>Using the Vagrant virtual machine | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
 
 
 
@@ -24,25 +25,28 @@ Request a new channel Creating a new channel is reserved to the administrators."
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
-<meta property="og:title" content="Slack channels" />
-<meta property="og:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators." />
+<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
+<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+<meta property="og:title" content="Using the Vagrant virtual machine" />
+<meta property="og:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/slack/channels/" /><meta property="article:section" content="slack" />
+<meta property="og:url" content="https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/vagrant/" /><meta property="article:section" content="quality-council" />
 
-<meta property="article:modified_time" content="2023-03-24T14:02:53+01:00" />
+<meta property="article:modified_time" content="2023-05-11T11:53:33+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Slack channels"/>
-<meta name="twitter:description" content="Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
-More information about prestashop.slack.com
-Request a new channel Creating a new channel is reserved to the administrators."/>
+<meta name="twitter:title" content="Using the Vagrant virtual machine"/>
+<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+Requirements This is what you need to run this project:
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
+What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
 
 
 
@@ -250,18 +254,34 @@ Request a new channel Creating a new channel is reserved to the administrators."
         
       
       
+        
+      
+      
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
     
       
       
-        <li class="breadcrumb-item"><a href="/slack/">PrestaShop Project&#39;s Slack Chat</a></li>
+        <li class="breadcrumb-item"><a href="/quality-council/">Quality Council</a></li>
       
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Slack channels</li>
+        <li class="breadcrumb-item"><a href="/quality-council/processes/">Processes</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item"><a href="/quality-council/processes/test-pr-and-branches/">How to test Pull Requests and branches</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Using the Vagrant virtual machine</li>
       
     
   </ol>
@@ -271,166 +291,114 @@ Request a new channel Creating a new channel is reserved to the administrators."
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#what-is-installed">What is installed</a></li>
+        <li><a href="#getting-started">Getting started</a>
+          <ul>
+            <li><a href="#environments">Environments</a>
+              <ul>
+                <li><a href="#available-php-versions">Available PHP versions</a></li>
+                <li><a href="#prestashop">PrestaShop</a></li>
+                <li><a href="#mysql">MySQL</a></li>
+                <li><a href="#ssh">SSH</a></li>
+              </ul>
+            </li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="slack-channels">Slack channels</h1>
-<p>A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.</p>
-<p><a href="https://github.com/PrestaShop/open-source/blob/master/slack/readme.md">More information about prestashop.slack.com</a></p>
-<h2 id="request-a-new-channel">Request a new channel</h2>
-<p>Creating a new channel is reserved to the administrators. If you want to add a new channel, please create an issue in this repository, or a pull request, to add a new entry in this file, and explain your need. Below is a template to follow. Please keep the list alphabetically sorted. You can also contact one of the administrator on Slack.</p>
-<p>Please note that like any open source project, the main language on this Slack in English, to foster a global collaboration around the PrestaShop project. If special needs require another language, please explain why in your request.</p>
-<p><strong>#channel-name</strong></p>
+        <div class="content"><h1 id="using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</h1>
+<p>We recommend using our virtual machine to quickly get a testing environment in place.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This is what you need to run this project:</p>
 <ul>
-<li>Description: explain the purpose of the channel</li>
-<li>Users: Category of people targeted (eg: devs, product management)</li>
-<li>Owners: Firstname Name (add also a way to contact you, like Twitter, Linkedin, email, &hellip;), Firstname Name (contact info), &hellip;</li>
-<li>Status: Private/Public</li>
-<li>Language: EN (or FR, or use a two letter code)</li>
+<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></li>
 </ul>
-<h2 id="active-channels">Active Channels</h2>
-<p><strong>#ambassadors</strong></p>
+<p>If you&rsquo;re using Windows, we recommend you to download <a href="https://git-scm.com/downloads">Git bash</a> and execute all commands under this shell.</p>
+<h2 id="what-is-installed">What is installed</h2>
 <ul>
-<li>Description: A channel to discuss about ambassadors, meetups and other topics related to their activity</li>
-<li>Users: For ambassadors and their contacts</li>
-<li>Owners: Ambassador program manager</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>Debian 10 Buster</li>
+<li>Git</li>
+<li>Apache 2.4</li>
+<li>Multiple PHP versions (7.1, 7.2, 7.3, 7.4)</li>
+<li>MariaDB 10</li>
+<li>NodeJS</li>
 </ul>
-<p><strong>#committers</strong></p>
+<h2 id="getting-started">Getting started</h2>
+<p>First, you must clone the repository <a href="https://github.com/PrestaShop/vagrant">https://github.com/PrestaShop/vagrant</a>.</p>
+<p>Second, execute the script <code>run.sh</code> (or <code>run.bat</code> if you&rsquo;re under Windows) and follow instructions.</p>
+<p>Most of the time, there is a prompt asking for a network interface, remember it&rsquo;s the communication between the virtual machine and the network card.</p>
+<figure><img src="img/vagrant/run-script.png"
+         alt="Running the run.sh script"/>
+</figure>
+
+<p>The first installation will take a while, because it needs to download the vagrant box, installs all needed packages and configures the system to make it compatible with PrestaShop.
+<figure><img src="img/vagrant/script-ended-successful.png"
+         alt="Script running successfuly"/>
+</figure>
+</p>
+<p>Then, visit <a href="http://192.168.42.42/prestashop">http://192.168.42.42/prestashop</a>.</p>
+<p>phpMyAdmin is also available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
+<h3 id="environments">Environments</h3>
+<h4 id="available-php-versions">Available PHP versions</h4>
 <ul>
-<li>Description: For committers, to discuss the project management</li>
-<li>Users: For core maintainers and committers</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
+<li>7.1</li>
+<li>7.2</li>
+<li>7.3</li>
+<li>7.4</li>
 </ul>
-<p><strong>#community-help</strong></p>
+
+<div class="notices tip" >Be aware that some PrestaShop versions are not compatible with all the above environments. See <a href="https://devdocs.prestashop-project.org/8/basics/installation/system-requirements">System requirements</a> to find out which version is compatible with which PHP version.</div>
+
+<h4 id="prestashop">PrestaShop</h4>
 <ul>
-<li>Description: A place for folks who need help while using the PrestaShop project to build online shops. Please open an issue on the devdocs when this is about a missing information.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>Username: <code>demo@prestashop.com</code></li>
+<li>Password: <code>prestashop_demo</code></li>
 </ul>
-<p><strong>#dev-core</strong></p>
+<h4 id="mysql">MySQL</h4>
+<p>phpMyAdmin is available at <a href="http://192.168.42.42/phpmyadmin">http://192.168.42.42/phpmyadmin</a>.</p>
 <ul>
-<li>Description: For discussions about PrestaShop core development</li>
-<li>Users: For core developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>MySQL Host: <code>127.0.0.1</code></li>
+<li>Database name: <code>prestashop</code></li>
+<li>Username: <code>prestashop</code></li>
+<li>Password: <code>prestashop</code></li>
+<li>Port: <code>3306</code></li>
 </ul>
-<p><strong>#dev-french</strong></p>
+<h4 id="ssh">SSH</h4>
+<p>You can login into the virtual machine with <code>vagrant ssh</code></p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If something went wrong during the installation, the error is displayed explaining which command is failing.</p>
 <ul>
-<li>Description: For discussions in french 🥖</li>
-<li>Users: For the french community at large</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: FR</li>
-</ul>
-<p><strong>#dev-modules</strong></p>
-<ul>
-<li>Description: The best place on earth to discuss about module development for PrestaShop</li>
-<li>Users: For modules developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#dev-themes</strong></p>
-<ul>
-<li>Description: The best place on earth to discuss about theme development for PrestaShop</li>
-<li>Users: For themes developers of the community</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#general</strong></p>
-<ul>
-<li>Description: General discussions about the PrestaShop open source project. This channel will be used for announcements.</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#governance</strong></p>
-<ul>
-<li>Description: About the governance of the PrestaShop open source project</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#jobs</strong></p>
-<ul>
-<li>Description: Find a community expert to help you on your projects</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#maintainers-core</strong></p>
-<ul>
-<li>Description: For core maintainers, to discuss the project management</li>
-<li>Users: For core maintainers</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#million-club-members-fr</strong></p>
-<ul>
-<li>Description: A chat to discuss between big merchants of big shops</li>
-<li>Users: Merchants only with invitation</li>
-<li>Owners: Nicolas Rateau (PrestaShop)</li>
-<li>Status: Private</li>
-<li>Language: FR</li>
-</ul>
-<p><strong>#project-members</strong></p>
-<ul>
-<li>Description: For all project members to discuss any topic</li>
-<li>Users: For core maintainers and committers, QA team and Product team</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#product</strong></p>
-<ul>
-<li>Description: Features, roadmap, and everything about product management around the open source project</li>
-<li>Users: People with questions or working on this topic</li>
-<li>Owners: PrestaShop product management team</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#random</strong></p>
-<ul>
-<li>Description: Random topics</li>
-<li>Users: For the community at large</li>
-<li>Owners: PrestaShop project administrators</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-dev</strong></p>
-<ul>
-<li>Description: For technical discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#sf-migration-product</strong></p>
-<ul>
-<li>Description: For roadmap, features, specs and other product management oriented discussions about the Symfony migration</li>
-<li>Users: For people involved in the Symfony migration</li>
-<li>Owners: PrestaShop project maintainers</li>
-<li>Status: Private</li>
-<li>Language: EN</li>
-</ul>
-<p><strong>#translation</strong></p>
-<ul>
-<li>Description: For discussions about translating the project</li>
-<li>Users: For the community at large</li>
-<li>Owners: Translation managers</li>
-<li>Status: Public</li>
-<li>Language: EN</li>
+<li>
+<p>Invalid branch name:
+<figure><img src="img/vagrant/build-failed.png"
+         alt="Invalid git branch name"/>
+</figure>
+</p>
+</li>
+<li>
+<p>Invalid PHP version:
+<figure><img src="img/vagrant/invalid-php-version.png"
+         alt="Invalid PHP version"/>
+</figure>
+</p>
+</li>
 </ul>
 </div>
       </div>
