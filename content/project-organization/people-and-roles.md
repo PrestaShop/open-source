@@ -76,7 +76,7 @@ Issue managers reproduce and qualify new issues to avoid duplicates and, if they
 
 Current issue managers:
 
-* Maintainers :
+* Maintainers:
   - Aurélien Rita ([@AureRita](https://github.com/AureRita))
   - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
   - Florine Hea ([@florine2623](https://github.com/florine2623))
@@ -85,7 +85,7 @@ Current issue managers:
   - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
   - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
   - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-* Committers : 
+* Committers: 
   - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
 
 #### Software Testers
@@ -94,7 +94,7 @@ Software Testers make sure that the quality of the software improves over time, 
 
 Current Software Testers:
 
-* Maintainers :
+* Maintainers:
   - Aurélien Rita ([@AureRita](https://github.com/AureRita))
   - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
   - Florine Hea ([@florine2623](https://github.com/florine2623))
@@ -104,7 +104,7 @@ Current Software Testers:
   - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
   - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
   - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
-* Committers : 
+* Committers: 
   - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
   - Serhii Zavadskyi ([@szavadskiy](https://github.com/szavadskiy))
 
@@ -114,10 +114,10 @@ Software Developers in Test provide technical vision, review contribution and wr
 
 Current Software Developers in Test:
 
-* Maintainers :
+* Maintainers:
   - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
   - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
-* Committers : 
+* Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
   - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
