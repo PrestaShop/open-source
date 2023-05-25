@@ -96,15 +96,7 @@ It's not unusual to have very long changelogs, especially in minor versions. To 
 ```
 {{% /callout %}}
 
-## 4. Release on prestashop.com
-
-{{% notice warning %}}
-**This step requires special rights.**
-
-Ask a maintainer from the PrestaShop Company with admin access to prestashop.com to perform this step.
-{{% /notice %}}
-
-## 5. Communicate
+## 4. Communicate
 
 Congratulations! You can now update the Release Tracker GitHub issue: tick the "QA" and "Development" boxes and [add a comment](https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656).
 
