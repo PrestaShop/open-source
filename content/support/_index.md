@@ -30,6 +30,6 @@ If you need serious help with your project, your best choice is to contact a pro
 
 "Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime."
 
-* [Training courses](https://www.prestashop.com/training) (sponsored by PrestaShop SA)
 * [User documentation](https://docs.prestashop-project.org/)
 * [Developer documentation](https://devdocs.prestashop-project.org/)
+* [PrestaShop Academy](https://prestashop.com/prestashop-academy/) (sponsored by PrestaShop SA)
