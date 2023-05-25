@@ -13,7 +13,8 @@ Rest assured, there are many resources to help you if you need assistance.
 PrestaShop has a sizeable community, and there are many volunteers willing to help each other on the web:
 
 * [Report a bug on GitHub]({{< devdocs "contribute/contribute-reporting-issues/" >}})
-* [Join the community forums](https://www.prestashop.com/forums/)
+* [Join the GitHub discussions](https://github.com/PrestaShop/PrestaShop/discussions)
+* [Join the community forums](https://www.prestashop.com/forums/) (managed by PrestaShop SA)
 * [Ask on Stack Overflow](https://stackoverflow.com/questions/tagged/prestashop)
 * [Discuss on Slack]({{< relref "/slack" >}})
 
@@ -21,14 +22,14 @@ PrestaShop has a sizeable community, and there are many volunteers willing to he
 
 If you need serious help with your project, your best choice is to contact a professional. There are thousands of agencies and freelance experts located around the globe:
 
-* [Commercial support](https://www.prestashop.com/support) (sponsored by PrestaShop SA)
-* [List of agencies and experts](https://www.prestashop.com/experts) (sponsored by PrestaShop SA)
+* [Paid technical support](https://www.prestashop.com/support) (sponsored by PrestaShop SA)
+* [List of agencies and experts](https://prestashop.com/prestashop-experts/) (sponsored by PrestaShop SA)
 * [Find a community expert on Slack]({{< relref "/slack" >}}) (within the `#jobs` channel)
 
 ## Learn PrestaShop
 
 "Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime."
 
-* [Training courses](https://www.prestashop.com/training) (sponsored by PrestaShop SA)
 * [User documentation](https://docs.prestashop-project.org/)
 * [Developer documentation](https://devdocs.prestashop-project.org/)
+* [PrestaShop Academy](https://prestashop.com/prestashop-academy/) (sponsored by PrestaShop SA)
