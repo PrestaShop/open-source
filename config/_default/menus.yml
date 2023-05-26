@@ -41,7 +41,7 @@ footer_left:
 
 footer_middle:
   - name: "User documentation"
-    url: "https://prestashop.gitbook.io/english-documentation-1-7/"
+    url: "https://docs.prestashop-project.org/v.8-documentation/v/english/"
     weight: 1
   - name: "Developer documentation"
     url: "https://devdocs.prestashop-project.org"
