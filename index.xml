@@ -155,6 +155,18 @@ Members of the council There are 3 profiles which are members of the Quality Cou
     </item>
     
     <item>
+      <title>Bug Bounty</title>
+      <link>https://www.prestashop-project.org/security/bug-bounty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/security/bug-bounty/</guid>
+      <description>Bug bounty A bug bounty for security flaws is hosted on YesWeHack platform.
+On the 25th of May 2023, due to a high number of vulnerabilities reported recently, we are pausing the program for now in order to be able to process them qualitatively. Visit the Bug Bounty page
+This bounty program covers code from the GitHub repository PrestaShop/PrestaShop and all PrestaShop modules defined in the composer.json file.
+Informations about qualifying and non-qualifying vulnerabilities can be read on the bug bounty page.</description>
+    </item>
+    
+    <item>
       <title>Github account security</title>
       <link>https://www.prestashop-project.org/maintainers-guide/general-guidelines/github-account-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -227,6 +239,29 @@ Requirements Mandatory requirements The module should be valid which means:</des
       <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
 The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
 PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
+    </item>
+    
+    <item>
+      <title>Security policy</title>
+      <link>https://www.prestashop-project.org/security/security-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/security/security-policy/</guid>
+      <description>Security Policy Obviously, PrestaShop project security is a critical matter. Project members are dedicated to keeping a high level of security in every aspect of the software.
+However a software without vulnerability does not exist, which is why there is a security report process. If you find a security issue, please follow it to responsibly disclose your findings.
+Reporting a Vulnerability Security issues can be reported by sending an email to security-core@prestashop.</description>
+    </item>
+    
+    <item>
+      <title>Security release process</title>
+      <link>https://www.prestashop-project.org/security/security-release-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/security/security-release-process/</guid>
+      <description>Security release process Here is a short summary of the steps followed by the security team:
+  Security issues are reported to security-core@prestashop.com or through the Bug Bounty Program.
+  Security issues are assessed to identify their criticality level.
+   Minor issues are scoped to be fixed in the next scheduled minor release Critical issues are scoped to be fixed as soon as possible   For both minor and critical issues, a GitHub Security Advisory will be created to register the issue in GitHub CVE database.</description>
     </item>
     
     <item>
