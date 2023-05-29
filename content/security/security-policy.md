@@ -16,12 +16,12 @@ When the security team receives a security bug report, the report will be assign
 This person will coordinate the fix and release process, involving the following steps:
 
  - Confirm the problem and determine the affected versions.
- - Audit code to find any potential similar problems.
+ - Audit the code to find any potential similar problems.
  - Prepare fixes for all releases still under maintenance. These fixes will be released as fast as possible.
 
 The security team will follow up with a response indicating the next steps in handling the report.
 
-If the issue is confirmed, the security team will keep you informed of the progress towards a fix and full announcement, and may ask for additional information or guidance.
+If the issue is confirmed, the security team will keep you informed of the progress towards a fix, and full announcement, and may ask for additional information or guidance.
 
 ### Disclosure Policy
 

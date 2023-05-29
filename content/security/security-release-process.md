@@ -14,7 +14,7 @@ Here is a short summary of the steps followed by the security team:
 - Critical issues are scoped to be fixed as soon as possible
 
 3) For both minor and critical issues, a [GitHub Security Advisory](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-security-advisory
-) will be created to register the issue in GitHub CVE database.
+) will be created to register the issue in GitHub's CVE database.
 
 4) A [Private Security Fork](https://docs.github.com/en/github/managing-security-vulnerabilities/collaborating-in-a-temporary-private-fork-to-resolve-a-security-vulnerability) is used to prepare a patch Pull Request for the advisory. The Pull Request then reviewed and tested by QA.
 
