@@ -20,4 +20,6 @@ Here is a short summary of the steps followed by the security team:
 
 5) When all patch Pull Requests are ready (in the event that multiple issues are reported), they are all merged and a new patch release is built and delivered. Security Advisories are published and the vulnerabilities are disclosed in a Release Note, urging all PrestaShop users to upgrade in order to protect their shops.
 
+<img src="../img/security-process-2023.png" alt="Security release workflow">
+
 [bug-bounty]: {{< relref "bug-bounty.md" >}}
