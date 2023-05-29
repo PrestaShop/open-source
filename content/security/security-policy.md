@@ -4,7 +4,7 @@ title: Security policy
 
 # Security Policy
 
-Obviously, PrestaShop project security is a critical matter. PrestaShop teams are dedicated to keep a high level of security in every aspects of the software.
+Obviously, PrestaShop project security is a critical matter. Project members are dedicated to keeping a high level of security in every aspect of the software.
 
 However a software without vulnerability does not exist, which is why there is a security report process. If you find a security issue, please follow it to [responsibly disclose](https://en.wikipedia.org/wiki/Responsible_disclosure) your findings.
 
