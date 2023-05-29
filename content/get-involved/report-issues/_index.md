@@ -27,7 +27,7 @@ Now fill out the form and click the "Submit new issue" button when you are done.
 When writing a bug report, please use these guidelines:
 
 - **Make sure you can reproduce your bug every time.** A bug that can't be reproduced reliably cannot be fixed.
-- **Make sure your software is up to date.** Ideally, test the latest [nightly build development version](https://nightly.prestashop.com/) to see whether your bug has already been fixed.
+- **Make sure your software is up to date.** Ideally, test the latest [nightly build development version](https://nightly.prestashop-project.org/) to see whether your bug has already been fixed.
 - **Search in GitHub issues to see if your bug has already been reported.**
 - **Write a clear summary** and describe what is wrong with the observed result. Above all, remember to explain what you would expect to happen instead!
 - **Write precise steps to reproduce.** Be specific and verbose: do not fear to give details on how you did reproduce the bug.
