@@ -68,7 +68,11 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
 * Check that the latest release has an available docker image on the [Docker repository][docker-repository]
 * Check that the [public demo](https://demo.prestashop.com) runs on the latest version (a few hours after the docker image release)
 
-## 4. Improve the process
+## 4. Store the ZIP archive
+
+Submit a Pull Request to add the ZIP archive to the [Archives repository](https://github.com/PrestaShop/zip-archives).
+
+## 5. Improve the process
 
 If during the process you encountered issues or there was some information not 100% clear, please improve this process documentation.
 
