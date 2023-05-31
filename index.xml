@@ -261,7 +261,7 @@ Reporting a Vulnerability Security issues can be reported by sending an email to
       <description>Security release process Here is a short summary of the steps followed by the security team:
   Security issues are reported to security-core@prestashop.com or through the Bug Bounty Program.
   Security issues are assessed to identify their criticality level.
-   Minor issues are scoped to be fixed in the next scheduled minor release Critical issues are scoped to be fixed as soon as possible   For both minor and critical issues, a GitHub Security Advisory will be created to register the issue in GitHub CVE database.</description>
+   Minor issues are scoped to be fixed in the next scheduled minor release Critical issues are scoped to be fixed as soon as possible   For both minor and critical issues, a GitHub Security Advisory will be created to register the issue in GitHub&amp;rsquo;s CVE database.</description>
     </item>
     
     <item>
