@@ -79,6 +79,9 @@ Some of steps will require special tools or access rights which are currently no
    - **Go through the checklist.**  
      _To make sure everything went all right._
 
+   - **Store the ZIP archive.**  
+     _To keep track of all published versions._
+
 
 [git-scm]: https://git-scm.com/
 [github-repository]: https://github.com/prestashop/prestashop
