@@ -145,6 +145,9 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-6 text-center">
                             <img loading="lazy" src="/releases/images/ps81/product-page/product-with-combinations-loadtime.svg">
                         </div>
+                        <div class="col-12">
+                            <p class="text-muted text-center small">All results are based on tests performed on a local machine with Apple M1 Max processor and 32GB RAM. Clean PrestaShop installation, no multi-store.</p>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 text-right">
