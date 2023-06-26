@@ -19,6 +19,26 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
         margin-bottom: 10px;
     }
 
+    @media (max-width: 767px) {
+        .hero-banner {
+            background-position: initial;
+            height: 345px;
+        }
+
+        body .hero-text  {
+            left: 50%;
+            max-width: 180px; 
+        }
+
+        .display-3 {
+            font-size: 32px;
+        }
+
+        #image-formats img {
+            max-width: 100% !important; height: auto;
+        }
+    }
+
     .hero-text {
       position: absolute;
       bottom: 20px;
@@ -298,12 +318,8 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 Other notable features in PrestaShop 8.1
             </p>
             <section class="section" id="product-availability">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="section-title">Product availability control and SEO</h2>
-                        </div>
-                    </div>
+                <div class="container-fluid release-page-content">
+                    <h2 class="section-title">Product availability control and SEO</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <p>
@@ -345,7 +361,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 </div>
             </section>
             <section class="section bg-light" id="image-formats">
-                <div class="container">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-6">
                             <h2 class="section-title">Experimental feature: new image formats</h2>
@@ -372,7 +388,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 </div>
             </section>
             <section class="section section-wide" id="maintenance-mode">
-                <div class="container-fluid">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-10 mx-auto">
                             <h2 class="section-title">Simpler access to shops when in maintenance mode</h2>
@@ -398,7 +414,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <p class="display-4 text-center">Developer features</h2>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-fluid release-page-content">
                      <div class="row">
                         <div class="col-md-4">
                             <h2 class="section-title">Easier access to performance profiler</h2>
@@ -445,7 +461,7 @@ services:
                 </div>
             </section>
             <section class="section" id="under-the-hood">
-                <div class="container">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col">
                             <p class="display-4 text-center">Under the hood</h2>
