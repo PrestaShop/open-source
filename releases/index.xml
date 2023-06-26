@@ -15,5 +15,14 @@
       <description>PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.</description>
     </item>
     
+    <item>
+      <title>What&#39;s New in PrestaShop 8.1</title>
+      <link>https://www.prestashop-project.org/releases/prestashop81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/releases/prestashop81/</guid>
+      <description>.hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .container-fluid.release-page { padding-left: 0; padding-right: 0; } .container-fluid.release-page-content { padding-left: 75px; padding-right: 75px; } .release-page-content .display-4 { font-weight: bolder; } .toc-sidebar { margin: -10px 0 0 0; } .</description>
+    </item>
+    
   </channel>
 </rss>
