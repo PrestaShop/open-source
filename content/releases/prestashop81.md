@@ -7,7 +7,6 @@ menu:
 showIntroductionBanner: false
 
 subtitle: 
-summary: PrestaShop 8 is a major update that brings an updated Symfony 4.4 version, compatibility with PHP 8.1, new password policy and session management features, support for WebP, and more.
 downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
 ---
 
