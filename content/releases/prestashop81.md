@@ -110,7 +110,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                             <p>
                                 The new product management page is the result of years-long work involving in-depth interviews and collaboration with merchants from a diverse range of ecommerce backgrounds. This valuable feedback has helped craft a new page that addresses the needs of big and small businesses, making it truly versatile and efficient.
                             </p>
-                            <p>In PrestaShop 8.1, if you want, you can keep your old product page. In PrestaShop 9.0 this will be one and only product management page.</p>
+                            <p>In PrestaShop 8.1, if you would like, you can keep your old product page. In PrestaShop 9.0, there will be only one product management page.</p>
                         </div>
                         <div class="col-md-8 text-right">
                             <a href="/releases/images/ps81/product-page/product-page-overview.jpeg">
