@@ -7,7 +7,7 @@ menu:
 showIntroductionBanner: false
 
 subtitle: 
-downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
+downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0
 ---
 
 <style>
@@ -92,7 +92,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
     <div class="hero-banner" style="background-image: url('/releases/images/ps81/banner.png');">
         <div class="hero-text">
             <p>PrestaShop 8.1. Minor version. Major changes.</p>
-            <a href="" class="btn btn-primary btn-lg">Download Now</a>
+            <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0" class="btn btn-primary btn-lg">Download Now</a>
         </div>
     </div>
     <div class="row">
