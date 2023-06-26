@@ -440,7 +440,7 @@ services:
     TestModule\InstanceofConditionals\Collection\ElementInterface:
       tags: [ test_module.instance_of.instance_of_tagged ]{{< / highlight >}}
                             </p>
-                            <p>Check the <a href="https://devdocs.prestashop-project.org/8/modules/concepts/services/#advanced-services-parameters-_instanceof-or-interface-binding-manual-tags">developer documentation</a> for more infromation</p>
+                            <p>Check the <a href="https://devdocs.prestashop-project.org/8/modules/concepts/services/#advanced-services-parameters-_instanceof-or-interface-binding-manual-tags">developer documentation</a> for more information</p>
                         </div>
                     </div>
                 </div>
