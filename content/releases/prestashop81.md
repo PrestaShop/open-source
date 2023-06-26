@@ -95,20 +95,20 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col">
-                            <p class="display-4 text-center">
-                                Discover the amazing new features in PrestaShop 8.1
+                            <p class="text-center">
+                                This new release brings along many time-saving features and more.
                             </p>
                         </div>
                     </div>
                     <hr class="mb-5">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2 class="section-title">All-new product page</p>
+                            <h2 class="section-title">All-new product management page</p>
                             <p class="mb-5">
-                                Managing the store's catalog has never been easier, thanks to a completely redesigned product management page. The page has been rebuilt from the ground up for increased usability and performance, allowing merchants to find their way across the page more easily, and help them work more efficiently.
+                                Managing the store's catalog has never been easier, thanks to a completely redesigned product management page. The page has been rebuilt from the ground up for increased usability and performance, allowing merchants to find their way across the page more easily and help them work more efficiently.
                             </p>
                             <p>
-                                The new product management page is the result of years-long work involving in-depth interviews and collaboration with merchants from a diverse range of e-commerce backgrounds. This valuable feedback has helped craft a new page that addresses the needs of big and small businesses, making it truly versatile and efficient.
+                                The new product management page is the result of years-long work involving in-depth interviews and collaboration with merchants from a diverse range of ecommerce backgrounds. This valuable feedback has helped craft a new page that addresses the needs of big and small businesses, making it truly versatile and efficient.
                             </p>
                         </div>
                         <div class="col-md-8 text-right">
@@ -125,78 +125,15 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Choosing & changing product type</p>
-                            <p>
-                                Creating a new product is now easier than ever. A handy new popup helps choose and understand the product type that best fits your need – right from the start. If you change your mind later on, modifying a product's type has also been made easier.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-types-1.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-types-1.jpeg">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-types-2.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-types-2.jpeg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Improved price and stock management</p>
-                            <p>
-                                Merchants can optimize their pricing thanks to a redesigned price section. Information is now organized more clearly, and tax calculation has been simplified by showcasing the impact of taxes as an operation. The new summary also highlights key price information, including the calculated gross profit margin.
-                            </p>
-                            <p>
-                                Stock management has also been significantly improved. Quantities are now handled through addition and subtraction, ensuring accurate stock calculation even when a sale occurs while the merchant is working on their product. To help understand the product's stock situation, this section now also displays the last five stock movements, including order-related stock changes such as sales and product returns.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-prices.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-prices.jpeg">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-stock.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-stock.jpeg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Improved image management</p>
-                            <p>
-                                Handling product images has been made more efficient. It's now possible to replace existing images, saving merchants the trouble of having to rewrite captions and reassigning images to combinations or stores. The introduction of bulk actions for image management now makes performing repetitive tasks much faster.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-images-1.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-images-1.jpeg">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <a href="/releases/images/ps81/product-page/product-images-2.jpeg">
-                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-images-2.jpeg">
-                            </a>
-                        </div>
-                    </div>
                     <!-- COMBINATIONS -->
                     <div class="row">
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-title">Radically improved management of products with combinations</p>
                             <p>
-                                The completely renewed combination management interface brings more efficient navigation and edition, coupled with spectacular performance improvements compared to previous PrestaShop versions. Quickly select attributes thanks to filters in the new combination generator interface, and generate hundreds of them in only a few seconds.
+                                The completely renewed combination management interface brings more efficient navigation and edition, coupled with spectacular performance improvements compared to previous PrestaShop versions. Quickly select attributes thanks to filters in the new combination generator interface, and generate hundreds of them in just a few seconds.
                             </p>
                             <p>
-                                Editing combinations has been made easier and more powerful than ever, with a modal interface to edit individual combinations, and new and improved filter-based bulk actions, which make tasks like assigning images to combinations based on attributes a matter of only a few clicks. In addition, a new progress bar is displayed while PrestaShop is crunching data, keeping the user informed of what's going on, and providing helpful information if something goes wrong.
+                                Editing combinations has also been made easier and more powerful than ever, with a modal interface to edit individual combinations, as well as new, improved filter-based bulk actions. They make tasks like assigning images to combinations based on attributes a matter of only a few clicks. In addition, PrestaShop now displays a new progress bar while processing data, keeping the user informed of what's going on, and providing helpful information if something goes wrong.
                             </p>
                         </div>
                     </div>
@@ -224,15 +161,58 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                             </a>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2 class="section-title">Refined price, taxes, and stock management</p>
+                            <p>
+                                Merchants can optimize their pricing thanks to a redesigned price section. Information is now organized more clearly, and tax calculation has been simplified by showcasing the impact of taxes as an operation. The new summary also highlights key price information, including the calculated gross profit margin.
+                            </p>
+                            <p>
+                                Stock management has also been significantly improved. Quantities are now modified through addition and subtraction, ensuring accurate stock calculation even when a sale occurs while the merchant is working on their product. To help understand the product's stock situation, this section now also displays the last five stock movements, including order-related stock changes such as sales and product returns.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-prices.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-prices.jpeg">
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-stock.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-stock.jpeg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2 class="section-title">More efficient and quicker image management</p>
+                            <p>
+                                Bulk actions for image management now make performing repetitive tasks much faster. In addition, replacing existing images is now possible, saving merchants the trouble of having to rewrite captions and reassigning images to combinations or stores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-images-1.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-images-1.jpeg">
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-images-2.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-images-2.jpeg">
+                            </a>
+                        </div>
+                    </div>
                     <!-- MULTISTORE -->
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-title">Manage multistore products like never before</p>
+                            <h2 class="section-title">Manage multistore products is now easier and more intuitive</p>
                             <p>
-                                Assigning products to a specific store, understanding when you are accessing products not associated with the current store, and managing products across multiple stores has been made easier and more clear.
+                                Assigning products to a specific store, understanding when you are accessing products not associated with the current store, and managing products across multiple stores have been made easier and more intuitive.
                             </p>
                             <p>
-                                A dedicated checkbox allows to choose whether to apply changes to the current store or to all stores. Assigning a product to a store is now done through the new multistore header, ensuring that no products are accidentally created in a new store accidentally.
+                                A dedicated checkbox allows you to choose whether to apply changes to the current store or to all stores. Assigning a product to a store is now done through the new multistore header, ensuring that no products are accidentally created in a new store.
                             </p>
                         </div>
                     </div>
@@ -251,10 +231,10 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     <div class="row">
                         <div class="col-md-8 mx-auto">
                             <p>
-                                Manage your products across multiple stores with our enhanced product list feature. In the all-store view, all products are consolidated into one line, enabling you to quickly preview and verify list information by store. This quick preview feature simplifies your multistore product management experience.
+                                The product listing experience has been enhanced for multistore. When in the all-store view, products are now consolidated into a single line for each product, which can be expanded to preview product details for each individual store, enabling merchants to see differences at a glance.
                             </p>
                             <p>
-                                The actions in the product list adapt dynamically based on your multistore selections. When managing products in multistore mode, any changes made will impact all associated stores, ensuring a consistent and seamless update across your entire store network.
+                                When in multistore mode, actions in the product list now adapt dynamically based on your multistore selection, and any change made will impact all associated stores, ensuring a consistent and seamless update across your entire store network.
                             </p>
                         </div>
                     </div>
@@ -262,6 +242,26 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-12">
                             <a href="/releases/images/ps81/product-page/multistore3.jpeg">
                                 <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/multistore3.jpeg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2 class="section-title">Choosing and changing product type</p>
+                            <p>
+                                Creating a new product is now easier than ever. A handy new popup helps you choose and understand the product type that best fits your needs – right from the start. If you change your mind, modifying a product's type has also been made easier.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-types-1.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-types-1.jpeg">
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="/releases/images/ps81/product-page/product-types-2.jpeg">
+                                <img loading="lazy" class="image-with-shadow" src="/releases/images/ps81/product-page/product-types-2.jpeg">
                             </a>
                         </div>
                     </div>
@@ -284,24 +284,24 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
             </section>
             <hr class="mb-5">
             <p class="display-3 text-center">
-                The rest of PrestaShop 8.1 features
+                Other notable features in PrestaShop 8.1
             </p>
             <section class="section" id="product-availability">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h2 class="section-title">Products availability control</h2>
+                            <h2 class="section-title">Product availability control and SEO</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <p>
-                                 PrestaShop 8.1 introduces the ability to set unique availability labels for each product combination, offering greater customization than ever before. For example, a merchant selling various sizes of a t-shirt can now display different availability information for each size. This added flexibility enables you to keep your customers better informed about product delivery times.
+                                PrestaShop 8.1 introduces the ability to set unique availability labels for each product combination. For example, a merchant selling various t-shirt sizes can now display different availability information for each size, allowing them to provide their customers with a more accurate estimation of delivery times.
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                Effortlessly manage your product availability with the improved configuration for inactive products. PrestaShop 8.1 adds a new field to the settings, allowing you to easily set a default value for all inactive products, such as "410 Gone." Customize the HTTP response to suit your SEO strategy, and gain better control over backorder statuses with our streamlined interface.
+                                It is now possible to globally configure the behavior for all disabled products, between an error page or a "discontinued product" page, and customize the HTTP response code to suit their SEO strategy.
                             </p>
                         </div>
                     </div>
@@ -337,15 +337,12 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="section-title">New image formats</h2>
+                            <h2 class="section-title">Experimental feature: new image formats</h2>
                             <p>
-                                PrestaShop 8.1 now supports converting existing images to WebP and the newly-added format Avif. Images are saved with their appropriate extensions, such as .webp for WebP and .png for PNG, providing a more efficient storage solution.
+                                PrestaShop 8.1 introduces experimental support for the Avif image format, as well as converting existing images to more than one format. Having images in multiple formats allows themes to implement the `<picture>` tag to let the browser choose the best image size and format according to the screen size and system support.
                             </p>
                             <p>
-                                New version also has multiple image format generation, allowing browsers to choose the optimal format for a seamless browsing experience.
-                            </p>
-                            <p>
-                                <b>Please note that this feature is currently experimental and can be enabled through the Advanced Parameters section under the "New & Experimental Features" option. </b>
+                                <b>Please note that experimental features can be enabled through the Advanced Parameters section under the "New & Experimental Features" option.</b>
                             </p>
                         </div>
                         <div class="col-md-6">
@@ -367,9 +364,9 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-10 mx-auto">
-                            <h2 class="section-title">Improved maintenance mode</h2>
+                            <h2 class="section-title">Simpler access to shops when in maintenance mode</h2>
                             <p>
-                                Starting from 8.1, employees can now access the front office even when maintenance mode is enabled. Previously, employees were required to provide their IP addresses to gain access to the front office during maintenance mode. It is no longer required, as you can simply allow all employees to access the front office during maintenance mode.
+                                In PrestaShop 8.1, authenticated back office users can now access the front office even when maintenance mode is enabled, without having to whitelist their IP addresses beforehand.
                             </p>
                         </div>
                     </div>
@@ -393,9 +390,9 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 <div class="container">
                      <div class="row">
                         <div class="col-md-4">
-                            <h2 class="section-title">Store profiler management from the back office</h2>
+                            <h2 class="section-title">Easier access to performance profiler</h2>
                             <p>
-                                In previous versions, it was only possible to enable the profiler by manually editing a file. PrestaShop 8.1 now allows developers to enable store profiler directly from the Back office, making the process quicker and more convenient.
+                                Developers can now enable the performance profiler directly from the Back office, instead of having to manually edit a file to activate this feature.
                             </p>
                         </div>
                         <div class="col-md-8">
@@ -416,7 +413,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <p>This version makes it possible to use some popular features introduced in Symfony 3.3, such as applying a <a href="https://symfony.com/blog/new-in-symfony-3-3-simpler-service-configuration#interface-based-service-configuration">configuration based on extended classes or implemented interfaces</a>, <a href="https://symfony.com/blog/new-in-symfony-3-3-simpler-service-configuration#interface-based-service-configuration">autoconfiguration</a>, and <a href="https://symfony.com/blog/new-in-symfony-3-3-psr-4-based-service-discovery">automatically registering classes found in specified directories as services</a>. It is possible to use them now!. Additionally, this new version also resolves the issue of <a href="https://symfony.com/doc/4.4/service_container/autowiring.html">autowiring</a> not being available in the front office and WebService context.</p>
+                            <p>This version makes it possible for modules to use some popular Symfony features, such as applying a <a href="https://symfony.com/blog/new-in-symfony-3-3-simpler-service-configuration#interface-based-service-configuration">configuration based on extended classes or implemented interfaces</a>, <a href="https://symfony.com/blog/new-in-symfony-3-3-simpler-service-configuration#interface-based-service-configuration">autoconfiguration</a>, and <a href="https://symfony.com/blog/new-in-symfony-3-3-psr-4-based-service-discovery">automatically registering classes found in specified directories as services</a>. It is possible to use them now! Additionally, this new version also resolves the issue of <a href="https://symfony.com/doc/4.4/service_container/autowiring.html">autowiring</a> not being available in the front office and WebService context.</p>
                         </div>
                         <div class="col-md-8">
                             <p>
