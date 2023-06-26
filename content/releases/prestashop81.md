@@ -95,8 +95,8 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                 <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col">
-                            <p class="text-center">
-                                This new release brings along many time-saving features and more.
+                            <p class="display-4 text-center">
+                                Discover the amazing new features in PrestaShop 8.1
                             </p>
                         </div>
                     </div>
@@ -110,6 +110,7 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                             <p>
                                 The new product management page is the result of years-long work involving in-depth interviews and collaboration with merchants from a diverse range of ecommerce backgrounds. This valuable feedback has helped craft a new page that addresses the needs of big and small businesses, making it truly versatile and efficient.
                             </p>
+                            <p>In PrestaShop 8.1, if you want, you can keep your old product page. In PrestaShop 9.0 this will be one and only product management page.</p>
                         </div>
                         <div class="col-md-8 text-right">
                             <a href="/releases/images/ps81/product-page/product-page-overview.jpeg">
@@ -130,11 +131,19 @@ downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-title">Radically improved management of products with combinations</p>
                             <p>
-                                The completely renewed combination management interface brings more efficient navigation and edition, coupled with spectacular performance improvements compared to previous PrestaShop versions. Quickly select attributes thanks to filters in the new combination generator interface, and generate hundreds of them in just a few seconds.
+                                The completely renewed combination management interface brings more efficient navigation and edition, coupled with spectacular performance improvements compared to previous PrestaShop versions. Quickly select attributes thanks to filters in the new combination generator interface, and generate hundreds of them in just a few seconds. Yes, in seconds!
                             </p>
                             <p>
                                 Editing combinations has also been made easier and more powerful than ever, with a modal interface to edit individual combinations, as well as new, improved filter-based bulk actions. They make tasks like assigning images to combinations based on attributes a matter of only a few clicks. In addition, PrestaShop now displays a new progress bar while processing data, keeping the user informed of what's going on, and providing helpful information if something goes wrong.
                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img loading="lazy" src="/releases/images/ps81/product-page/combination-generator.svg">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img loading="lazy" src="/releases/images/ps81/product-page/product-with-combinations-loadtime.svg">
                         </div>
                     </div>
                     <div class="row">
