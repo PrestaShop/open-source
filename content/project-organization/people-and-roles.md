@@ -61,6 +61,7 @@ Current committers:
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 - Boris Hermans ([@boherm](https://github.com/boherm))
 - Leemyongpakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
+- Thomas Leone ([@tleon](https://github.com/tleon))
 
 ### UX Designers
 
