@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 <title>What&#39;s New in PrestaShop 8.1 | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .container-fluid.release-page { padding-left: 0; padding-right: 0; } .container-fluid.release-page-content { padding-left: 75px; padding-right: 75px; } .release-page-content .display-4 { font-weight: bolder; } .toc-sidebar { margin: -10px 0 0 0; } ."/>
+<meta name="description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } @media (max-width: 767px) { .hero-banner { background-position: initial; height: 345px; } body .hero-text { left: 50%; max-width: 180px; } .display-3 { font-size: 32px; } #image-formats img { max-width: 100% !important; height: auto; } } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } ."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/releases/prestashop81/" itemprop="url" />
 
@@ -26,13 +26,13 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="What&#39;s New in PrestaShop 8.1"/>
-<meta name="twitter:description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .container-fluid.release-page { padding-left: 0; padding-right: 0; } .container-fluid.release-page-content { padding-left: 75px; padding-right: 75px; } .release-page-content .display-4 { font-weight: bolder; } .toc-sidebar { margin: -10px 0 0 0; } ."/>
+<meta name="twitter:description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } @media (max-width: 767px) { .hero-banner { background-position: initial; height: 345px; } body .hero-text { left: 50%; max-width: 180px; } .display-3 { font-size: 32px; } #image-formats img { max-width: 100% !important; height: auto; } } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } ."/>
 <meta property="og:title" content="What&#39;s New in PrestaShop 8.1" />
-<meta property="og:description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .container-fluid.release-page { padding-left: 0; padding-right: 0; } .container-fluid.release-page-content { padding-left: 75px; padding-right: 75px; } .release-page-content .display-4 { font-weight: bolder; } .toc-sidebar { margin: -10px 0 0 0; } ." />
+<meta property="og:description" content=".hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } @media (max-width: 767px) { .hero-banner { background-position: initial; height: 345px; } body .hero-text { left: 50%; max-width: 180px; } .display-3 { font-size: 32px; } #image-formats img { max-width: 100% !important; height: auto; } } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/releases/prestashop81/" /><meta property="article:section" content="releases" />
 
-<meta property="article:modified_time" content="2023-06-26T16:50:10+02:00" />
+<meta property="article:modified_time" content="2023-06-26T17:39:07+02:00" />
 
 
 
@@ -398,6 +398,26 @@
         margin-bottom: 10px;
     }
 
+    @media (max-width: 767px) {
+        .hero-banner {
+            background-position: initial;
+            height: 345px;
+        }
+
+        body .hero-text  {
+            left: 50%;
+            max-width: 180px; 
+        }
+
+        .display-3 {
+            font-size: 32px;
+        }
+
+        #image-formats img {
+            max-width: 100% !important; height: auto;
+        }
+    }
+
     .hero-text {
       position: absolute;
       bottom: 20px;
@@ -677,12 +697,8 @@
                 Other notable features in PrestaShop 8.1
             </p>
             <section class="section" id="product-availability">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="section-title">Product availability control and SEO</h2>
-                        </div>
-                    </div>
+                <div class="container-fluid release-page-content">
+                    <h2 class="section-title">Product availability control and SEO</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <p>
@@ -724,7 +740,7 @@
                 </div>
             </section>
             <section class="section bg-light" id="image-formats">
-                <div class="container">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-6">
                             <h2 class="section-title">Experimental feature: new image formats</h2>
@@ -751,7 +767,7 @@
                 </div>
             </section>
             <section class="section section-wide" id="maintenance-mode">
-                <div class="container-fluid">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-10 mx-auto">
                             <h2 class="section-title">Simpler access to shops when in maintenance mode</h2>
@@ -777,7 +793,7 @@
                         <p class="display-4 text-center">Developer features</h2>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-fluid release-page-content">
                      <div class="row">
                         <div class="col-md-4">
                             <h2 class="section-title">Easier access to performance profiler</h2>
@@ -838,7 +854,7 @@
                 </div>
             </section>
             <section class="section" id="under-the-hood">
-                <div class="container">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col">
                             <p class="display-4 text-center">Under the hood</h2>

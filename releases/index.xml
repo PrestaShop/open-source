@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/releases/prestashop81/</guid>
-      <description>.hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .container-fluid.release-page { padding-left: 0; padding-right: 0; } .container-fluid.release-page-content { padding-left: 75px; padding-right: 75px; } .release-page-content .display-4 { font-weight: bolder; } .toc-sidebar { margin: -10px 0 0 0; } .</description>
+      <description>.hero-banner { height: 524px; background-size: cover; background-position: bottom center; position: relative; margin-bottom: 10px; } @media (max-width: 767px) { .hero-banner { background-position: initial; height: 345px; } body .hero-text { left: 50%; max-width: 180px; } .display-3 { font-size: 32px; } #image-formats img { max-width: 100% !important; height: auto; } } .hero-text { position: absolute; bottom: 20px; left: 61%; transform: translateX(-50%); z-index: 1; color: white; text-align: center; } .hero-text p { color: white; font-size: 20px; font-weight: bold; margin-bottom: 40px; } .</description>
     </item>
     
   </channel>
