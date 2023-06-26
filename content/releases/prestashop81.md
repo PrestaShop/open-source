@@ -5,7 +5,8 @@ menu:
     parent: "Download"
     name: "What's new"
 showIntroductionBanner: false
-
+subtitle: PrestaShop 8.1 is a minor upgrade, with major improvements. This new release brings along many time-saving features and more.
+summary: PrestaShop 8.1 is a minor upgrade, with major improvements. This new release brings along many time-saving features and more.
 subtitle: 
 downloadUrl: https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0
 ---
