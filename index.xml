@@ -145,10 +145,10 @@ It allows the product managers to transform a Slack message (and its comments) i
     
     <item>
       <title>2023-05-16</title>
-      <link>https://www.prestashop-project.org/quality-council/meetings/2023-05-16-meeting/</link>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/meetings/2023-05-16-meeting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/quality-council/meetings/2023-05-16-meeting/</guid>
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/meetings/2023-05-16-meeting/</guid>
       <description>2023-05-16 Presents  @Robin-Fischer-PS : Member of the Quality Council @boubkerbribri : Member of the Quality Council @AureRita @florine2623 @Progi1984  Report Like Pablo Borowicz said, each council can organize like it wants. So this is the goal of this meeting : define rules for the Quality Council.
 Members of the council There are 3 profiles which are members of the Quality Council:
  Issue Manager Software Developer in Test Software Tester  Each member can be:</description>
@@ -200,10 +200,10 @@ Merge Pull Request Here is the explanation of how you should create your merge p
     
     <item>
       <title>How to manage Issues</title>
-      <link>https://www.prestashop-project.org/quality-council/processes/issue-management/</link>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/quality-council/processes/issue-management/</guid>
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/</guid>
       <description>How to manage Issues This document details the processes in place for the position of &amp;ldquo;Issues Manager&amp;rdquo;, a rotating position within the QA community members.
 The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
  Is the issue valid? The issue must be either a bug report or a feature request.</description>
@@ -277,10 +277,10 @@ Request a new channel Creating a new channel is reserved to the administrators.<
     
     <item>
       <title>Using the Vagrant virtual machine</title>
-      <link>https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/vagrant/</link>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/vagrant/</guid>
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</guid>
       <description>Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
  Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.

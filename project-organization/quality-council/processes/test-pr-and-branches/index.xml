@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to test Pull Requests and branches on PrestaShop Project - Open Source e-Commerce platform</title>
-    <link>https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/</link>
+    <link>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/</link>
     <description>Recent content in How to test Pull Requests and branches on PrestaShop Project - Open Source e-Commerce platform</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the Vagrant virtual machine</title>
-      <link>https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/vagrant/</link>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.prestashop-project.org/quality-council/processes/test-pr-and-branches/vagrant/</guid>
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</guid>
       <description>Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
  Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
