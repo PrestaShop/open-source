@@ -14,7 +14,7 @@ Here are the main ways you can get involved in the project:
 - **[Review code changes][review-code].** To ensure that suggested changes are correct and don't degrade the software's quality.
 - **[Test code changes][test-code].** To make sure that a change produces the desired effect and nothing else.
 - **[Improve the documentation]({{< devdocs "contribute/documentation/why/" >}}).** Help other people understand PrestaShop.
-- **Issue gardening.** All newly reported bugs must be reproduced before they can be accepted.
+- **[Issue gardening][issue-gardening].** All newly reported bugs must be reproduced before they can be accepted.
 - **[Translation](https://crowdin.com/project/prestashop-official).** Help translate PrestaShop into one (or more) of its 80 available languages.
 - **[Write specifications](https://github.com/PrestaShop/prestashop-specs).** To formally describe how the software is supposed to behave in different scenarios.
 
@@ -30,6 +30,7 @@ More information: [How to contribute (DevDocs)][how-to-contribute]
 [request-feature]: {{< relref "request-features" >}}
 [review-code]: {{< relref "/maintainers-guide/processes/reviewing-pull-requests.md" >}}
 [test-code]: {{< relref "/project-organization/quality-council/processes/test-pr-and-branches/" >}}
+[issue-gardening]: {{< relref "/project-organization/quality-council/processes/issue-management.md" >}}
 [slack]: {{< relref "/slack/" >}}
 [github]: https://github.com/PrestaShop/PrestaShop/
 [how-to-contribute]: {{< devdocs "contribute/" >}}
