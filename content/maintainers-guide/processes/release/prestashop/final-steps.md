@@ -57,11 +57,6 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
     - [Native modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=native)
     - [Pushed modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=install-modules)
 
-* Check the new release can be downloaded from the prestashop.com website and GitHub:
-
-    - [GitHub releases](https://github.com/PrestaShop/PrestaShop/releases)
-    - [PrestaShop.com archives](https://www.prestashop.com/en/previous-versions)
-
 * Check that if you try to install PrestaShop 1.7.5 from the archive, the installer suggests you install the latest version instead
 * Check that the release note has been published on the [Build Blog](https://build.prestashop-project.org)
 * Check that the [PrestaShop.com](https://www.prestashop.com) shows the right "latest version", and the links are correct
