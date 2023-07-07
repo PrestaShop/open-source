@@ -62,6 +62,7 @@ Current committers:
 - Boris Hermans ([@boherm](https://github.com/boherm))
 - Leemyongpakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
 - Thomas Leone ([@tleon](https://github.com/tleon))
+- Guyomar Alexis ([@ga-devfront](https://github.com/ga-devfront))
 
 ### UX Designers
 
