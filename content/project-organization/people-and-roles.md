@@ -63,6 +63,7 @@ Current committers:
 - Leemyongpakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Guyomar Alexis ([@ga-devfront](https://github.com/ga-devfront))
+- Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 
 ### UX Designers
 
