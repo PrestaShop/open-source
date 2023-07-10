@@ -21,7 +21,7 @@ title: Software Developer in Test
 
 - The contributor follows the project's Code Of Conduct
 - The contributor has contributed to the Software Developer in Test scope
-- The contributor has reviewed mulitples PRs in the Software Developer in Test scope
+- The contributor has reviewed multiples PRs in the Software Developer in Test scope
 - The contributor want to participate the involvement of the quality of the project
 
 #### Process
