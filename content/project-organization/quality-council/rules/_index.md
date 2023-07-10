@@ -8,8 +8,8 @@ title: Rules of the Council
 
 There are 3 profiles which are members of the Quality Council:
 * Issue Manager
-* Software Developer in Test
-* Software Tester
+* [Software Developer in Test](software-developer-in-test)
+* [Software Tester](software-tester)
 
 Each member can be: 
 * either a maintainer (can participate and vote during the Quality Council),
@@ -22,7 +22,7 @@ Members are available on the [organization project page]({{< relref "/project-or
 * Only maintainers can vote
 * Each maintainer has one vote
 * Results of the vote are public
-* Vote is accepted when a simple majority is reached
+* Vote is accepted when the threshold of 2/3 of votes is reached
 
 ### Lead Council
 
