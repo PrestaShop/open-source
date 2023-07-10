@@ -155,6 +155,15 @@ Members of the council There are 3 profiles which are members of the Quality Cou
     </item>
     
     <item>
+      <title>2023-07-10</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/meetings/2023-07-10-meeting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/meetings/2023-07-10-meeting/</guid>
+      <description>2023-07-10 Presents  Anis Zouari (@aniszr) Boubker Bribri (@boubkerbribri) : Member of the Quality Council Faten Mhiri (@MhiriFaten) : Member of the Quality Council Florine Hea (@florine2623) : Member of the Quality Council Franck Lefèvre (@Progi1984) Hibatallah Aouadni (@hibatallahAouadni) : Member of the Quality Council Ines Sallemi (@sallemiines) : Member of the Quality Council Nesrine Abdmouleh (@nesrineabdmouleh) : Member of the Quality Council Robin-Fischer-PS (@Robin-Fischer-PS) : Member of the Quality Council Stéphane Decisy (@SD1982)  Absents  Aurélien Rita (@AureRita) : Member of the Quality Council Hajer Elleuch (@djoelleuch) : Member of the Quality Council Hana Rebai (@HanaRebaiQA) : Member of the Quality Council Paul-Noël Cholot (@paulnoelcholot) : Member of the Quality Council  Report Rules about vote @Robin-Fischer-PS has called for changes to the Quality Council&amp;rsquo;s voting rules.</description>
+    </item>
+    
+    <item>
       <title>Bug Bounty</title>
       <link>https://www.prestashop-project.org/security/bug-bounty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -273,6 +282,24 @@ Reporting a Vulnerability Security issues can be reported by sending an email to
       <description>Slack channels A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
 More information about prestashop.slack.com
 Request a new channel Creating a new channel is reserved to the administrators.</description>
+    </item>
+    
+    <item>
+      <title>Software Developer in Test</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/rules/software-developer-in-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/rules/software-developer-in-test/</guid>
+      <description>Software Developer in Test Scope  Keep green the nightly Create issues when the nightly become red and it’s not false positives Keep updated dependencies for UI Tests Projects to maintain  UI Tests on Core &amp;amp; Modules Test Environment (Docker image, at the moment) ga.tests.ui.pr tests-scenarios    How to become a Committer ? Prerequisites  The contributor follows the project&amp;rsquo;s Code Of Conduct The contributor has contributed to the Software Developer in Test scope The contributor has reviewed mulitples PRs in the Software Developer in Test scope The contributor want to participate the involvement of the quality of the project  Process  Open an issue at the open-source repository to apply Reflection period  Quality Council members can ask questions to contributors The contributor has done peer testing with one or more Quality Council members   Voting period  Rules inherit from the council    How to become a Maintainer ?</description>
+    </item>
+    
+    <item>
+      <title>Software Tester</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/rules/software-tester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/rules/software-tester/</guid>
+      <description>Software Tester Scope How to become a Committer ? Prerequisites  The contributor follows the project&amp;rsquo;s Code Of Conduct The contributor knows Prestashop software The contributor knows how to correctly install a shop and a module The contributor knows the difference between a bug and a feature The contributor knows Git commands and understands how versioning works The contributor has already contributed to the project (via PR/issues/release) The contributor is able to follow the stages of an issue The contributor is aware of testing The contributor is able to describe an issue The contributor has tested PRs (other than his/her own)  Process  Open an issue at the open-source repository to apply Reflection period  Quality Council members can ask questions to contributors The contributor has done peer testing with one or more Quality Council members   Voting period  Rules inherit from the council    How to become a Maintainer ?</description>
     </item>
     
     <item>
