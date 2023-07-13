@@ -64,7 +64,7 @@ Current committers:
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Guyomar Alexis ([@ga-devfront](https://github.com/ga-devfront))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
-- Morgan Pichat ([@jokesterfr](https://github.com/M0rgan01))
+- Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 
 ### UX Designers
 
