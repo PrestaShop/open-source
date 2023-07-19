@@ -41,7 +41,14 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 - Description: Regenerate safely prestashop images with async process (works on low performance server)
 - Keywords: pictures, images, thumbnails, regenerator, products, catalog
 - Source code: https://github.com/meetjey/imageRegeneratorPrestashop
-- Download link: 
+- Download link:
+
+### PrettyBlocks
+- Developer: Guillaume Batier (PrestaSafe)
+- Description: Page builder for managing your content more easily.
+- Keywords: page builder, blocks, front office feature, editing
+- Source code: [https://github.com/PrestaSafe/prettyblocks](https://github.com/PrestaSafe/prettyblocks)
+- Download link: [https://github.com/PrestaSafe/prettyblocks/releases](https://github.com/PrestaSafe/prettyblocks/releases)
 
 
 ---
