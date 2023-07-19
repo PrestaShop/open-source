@@ -44,7 +44,7 @@ Please keep in mind that the current rules are a proposal, and they may evolve d
 - Download link:
 
 ### PrettyBlocks
-- Developer: Guillaume Batier (PrestaSafe)
+- Developer: Guillaume Batier [PrestaSafe](https://github.com/PrestaSafe)
 - Description: Page builder for managing your content more easily.
 - Keywords: page builder, blocks, front office feature, editing
 - Source code: [https://github.com/PrestaSafe/prettyblocks](https://github.com/PrestaSafe/prettyblocks)
