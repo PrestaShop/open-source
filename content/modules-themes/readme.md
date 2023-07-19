@@ -8,6 +8,7 @@ So, let's build a knowledge base. If you want to contribute to this page, please
 ### Module/theme name
 - Developer: (name of the company or developer)
 - Description: (one or two lines max)
+- GitHub username: @
 - Keywords: (topics, features, separated by a comma)
 - Source code: (like a GitHub repository link for support, issues, and source code)
 - Download link: (where to find a ready to use zip file: direct link, or link to the release page of your repository, or to a page on your website where people can download the zip file)
