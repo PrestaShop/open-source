@@ -219,6 +219,8 @@ Upon opening a PR and you are the first reviewer, please verify:
 
 If any of the above items are missing, you can ask the PR author to provide them. Else, you can review the code.
 
+Please note that [workflows on PRs from first-time contributors will not be run automatically](https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks), they will need to be approved first. While reviewing the PR, please approve running workflows to allow the CI to pass after having verified the PR content.
+
 While reviewing, an action might be required, then add the right label (see above section `Action required`), for example
 - If the code needs changes, you can add `Waiting for author` label.
 - If the PR introduced visual changes, you can add `Waiting for UX` label.
