@@ -32,7 +32,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-05-25T12:15:19+02:00" />
+<meta property="article:modified_time" content="2023-07-21T10:18:59+02:00" />
 
 
 
@@ -590,6 +590,7 @@ label[type=migration] { background-color: #00E031; }
 <li>When relevant, is there a linked GitHub issue (for bugfixes or new features)?</li>
 </ol>
 <p>If any of the above items are missing, you can ask the PR author to provide them. Else, you can review the code.</p>
+<p>Please note that <a href="https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks">workflows on PRs from first-time contributors will not be run automatically</a>, they will need to be approved first. While reviewing the PR, please approve running workflows to allow the CI to pass after having verified the PR content.</p>
 <p>While reviewing, an action might be required, then add the right label (see above section <code>Action required</code>), for example</p>
 <ul>
 <li>If the code needs changes, you can add <code>Waiting for author</code> label.</li>
