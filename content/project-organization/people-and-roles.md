@@ -7,24 +7,63 @@ aliases:
 
 # People and roles in the project
 
-### Product Managers
+The project is organized by councils who have authority over the different domains.
 
-Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
+To learn more about the project's organization, read [How we work]({{< relref "how-we-work.md" >}}).
 
-Current product managers:
+## Leadership Council
 
+The Leadership Council is in charge of providing structure and a general direction for the project. To that end, it oversees the other Councils and has final authority over them and their decisions, including the right to appoint and remove leads.
+
+Current members:
+
+- Pablo Borowicz ([@eternoendless](https://github.com/eternoendless)) - **Project Lead**
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
-- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
-- Eshane Rawat ([@eshraw](https://github.com/eshraw))
-
-### Project Maintainers
-
-Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.
-
-Current maintainers:
-
-- Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
+- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
+- Mathieu Ferment ([@matks](https://github.com/matks))
+- Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
+
+## Product Council
+
+The product council is in charge of product vision for the project, ensuring that the software meets the needs of its various users. It has authority over product management subjects, including what features belong in the project, specifications, UI/UX guidelines, and wordings.
+
+Current members:
+
+- Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon)) - **Council Lead**
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
+- Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier))
+- Krystian Podemski ([@kpodemski)[https://github.com/kpodemski))
+- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
+- Rosa Benouamer ([@RosaBenouamer](https://github.com/RosaBenouamer))
+- Zoé Finders ([@Zoefinders](https://github.com/Zoefinders))
+
+### UX Designers
+
+UX Designers make sure that interfaces follow the best practices in usability and design.
+
+Current UX designers:
+
+- Elodie Prokhoroff ([@ElodieOS](https://github.com/ElodieOS))
+- Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
+
+### Wording Manager
+
+Wording managers ensure that wordings are adequate, follow the project's tone of voice, and are categorized properly.
+
+Current wording managers:
+
+- Léa Delin ([@l-delin](https://github.com/l-delin))
+
+## Technical Council
+
+The technical council provides the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision. It decides on technical subjects, including architecture and implementation choices.
+
+Current members:
+
+- Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre)) - **Council Lead**
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
+- Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
@@ -33,49 +72,34 @@ Current maintainers:
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 - Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
-#### Scoped Maintainers
-
-Scoped Maintainers have the same mission as Project Maintainers, but over a limited scope (e.g. a project, a repository, or a technology).
-
-If the scope is one or multiple repositories, maintainers rights are granted only on these repositories.
-If the scope is larger (example: being in charge of a folder inside a repository) maintainer rights are granted on the repository and the scoped maintainer is trusted not to abuse.
-
-- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) – [Classic](https://github.com/prestashop/classic-theme) and [Hummingbird](https://github.com/prestashop/hummingbird) themes
-- Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri)) – UI tests
-
 ### Committers
 
-Committers review and merge code contributions, while ensuring that the software is developed according to the product vision.
+Committers can review and merge code contributions. They summon the technical council when important decisions need to be made.
 
 Current committers:
 
-- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
-- Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
-- Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
-- Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
-- Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
-- Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
-- Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
-- Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
-- Salim Benouamer ([@lartist](https://github.com/lartist))
+- Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 - Boris Hermans ([@boherm](https://github.com/boherm))
-- Leemyongpakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
-- Thomas Leone ([@tleon](https://github.com/tleon))
-- Guyomar Alexis ([@ga-devfront](https://github.com/ga-devfront))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
+- Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
+- Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
+- Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
+- Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
+- Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
+- Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
+- Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
+- Salim Benouamer ([@lartist](https://github.com/lartist))
+- Thomas Leone ([@tleon](https://github.com/tleon))
+- Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 
-### UX Designers
+## Quality Council
 
-UX Designers make sure that interfaces follow the best practices in usability and design.
+The quality council provides the quality assurance vision for the project and has authority on related subjects, such as verification of pull requests, test automation strategy, bug triage process, and quality assessment.
 
-Current UX designers:
-
-- Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
-
-### Quality Council
-#### Issue Managers
+### Issue Managers
 
 Issue managers reproduce and qualify new issues to avoid duplicates and, if they are indeed defects in the software, their severity. They also redirect new improvement suggestions to the right Product Manager.
 
@@ -93,7 +117,7 @@ Current issue managers:
 * Committers: 
   - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
 
-#### Software Testers
+### Software Testers
 
 Software Testers make sure that the quality of the software improves over time, by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop's releases and its built-in modules.
 
@@ -113,7 +137,7 @@ Current Software Testers:
   - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
   - Serhii Zavadskyi ([@szavadskiy](https://github.com/szavadskiy))
 
-#### Software Developers in Test
+### Software Developers in Test
 
 Software Developers in Test provide technical vision, review contribution and write automated tests, which help accelerate the testing process.
 
@@ -127,26 +151,9 @@ Current Software Developers in Test:
   - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
 
-### Wording Manager
+## Dedicated maintainers
 
-Wording managers ensure that wordings are adequate, follow the project's tone of voice, and are categorized properly.
+Some projects have dedicated maintainers who are responsible for them:
 
-Current wording managers:
-
-- Léa Delin ([@l-delin](https://github.com/l-delin))
-
-### User Documentation Managers
-
-User documentation managers ensure the quality and consistency of the [user documentation](https://docs.prestashop-project.org/).
-
-Current user documentation managers:
-
-- Léa Delin ([@l-delin](https://github.com/l-delin))
-
-### Technical Documentation Managers
-
-Tech documentation managers ensure the quality and consistency of the [developer documentation](https://devdocs.prestashop-project.org/)
-
-Current tech documentation managers:
-
-- Thomas Nares ([@thomasnares](https://github.com/thomasnares))
+* [User documentation](https://docs.prestashop-project.org/): Léa Delin ([@l-delin](https://github.com/l-delin))
+* [Developer documentation](https://devdocs.prestashop-project.org/): Thomas Nares ([@thomasnares](https://github.com/thomasnares))
