@@ -33,7 +33,7 @@ Current members:
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon)) - **Council Lead**
 - Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
 - Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier))
-- Krystian Podemski ([@kpodemski)[https://github.com/kpodemski))
+- Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 - Rosa Benouamer ([@RosaBenouamer](https://github.com/RosaBenouamer))
 - Zoé Finders ([@Zoefinders](https://github.com/Zoefinders))
