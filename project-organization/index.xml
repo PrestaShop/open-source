@@ -23,9 +23,19 @@ Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/project-organization/people-and-roles/</guid>
-      <description>People and roles in the project Product Managers Product Managers provide the product vision for the project, ensuring that the software meets the needs of its various users.
-Current product managers:
- Fabien Vallon (@fabienvallon) Mateus Shirlaw (@MatShir) Eshane Rawat (@eshraw)  Project Maintainers Project maintainers provide the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision.</description>
+      <description>People and roles in the project The project is organized by councils who have authority over the different domains.
+To learn more about the project&amp;rsquo;s organization, read How we work.
+Leadership Council The Leadership Council is in charge of providing structure and a general direction for the project. To that end, it oversees the other Councils and has final authority over them and their decisions, including the right to appoint and remove leads.</description>
+    </item>
+    
+    <item>
+      <title>How we work</title>
+      <link>https://www.prestashop-project.org/project-organization/how-we-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/how-we-work/</guid>
+      <description>How we work The project&amp;rsquo;s leadership is organized around project councils: self-organized, lightweight groups whose mission is to facilitate decision-making. Each council has authority over a defined domain.
+ Technical Council – decides on technical subjects, including architecture and implementation choices. Product Council – decides on product management subjects, including what features belong in the project, specifications, UI/UX guidelines, and wordings. Quality Council – decides on quality assurance subjects, including quality processes, verification of pull requests, and bug triage.</description>
     </item>
     
   </channel>
