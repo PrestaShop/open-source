@@ -170,7 +170,7 @@ Members of the council There are 3 profiles which are members of the Quality Cou
       
       <guid>https://www.prestashop-project.org/security/bug-bounty/</guid>
       <description>Bug bounty A bug bounty for security flaws is hosted on YesWeHack platform.
-On the 25th of May 2023, due to a high number of vulnerabilities reported recently, we are pausing the program for now in order to be able to process them qualitatively. Visit the Bug Bounty page
+The program is currently paused. Please report security issues to security-core@prestashop.com instead. Visit the Bug Bounty page
 This bounty program covers code from the GitHub repository PrestaShop/PrestaShop and all PrestaShop modules defined in the composer.json file.
 Informations about qualifying and non-qualifying vulnerabilities can be read on the bug bounty page.</description>
     </item>
