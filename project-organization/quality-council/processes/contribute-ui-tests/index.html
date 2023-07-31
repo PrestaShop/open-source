@@ -3,10 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Processes | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=""/>
+<title>How to contribute to UI tests | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="How to contribute to UI tests Introduction Branches The first question to ask when making a contribution is &ldquo;Which branch should I target?&rdquo;.
+The rules are as follows:
+ The development branch for UI testing is the current development branch. The branch changes as soon as the final release is out.  Differences between scenarios &amp; tests Scenarios are the base of UI Tests. They are available on the PrestaShop Tests Documentation."/>
 
-<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/" itemprop="url" />
+<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/" itemprop="url" />
 
 
 
@@ -25,12 +27,18 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Processes"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="Processes" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/" />
+<meta name="twitter:title" content="How to contribute to UI tests"/>
+<meta name="twitter:description" content="How to contribute to UI tests Introduction Branches The first question to ask when making a contribution is &ldquo;Which branch should I target?&rdquo;.
+The rules are as follows:
+ The development branch for UI testing is the current development branch. The branch changes as soon as the final release is out.  Differences between scenarios &amp; tests Scenarios are the base of UI Tests. They are available on the PrestaShop Tests Documentation."/>
+<meta property="og:title" content="How to contribute to UI tests" />
+<meta property="og:description" content="How to contribute to UI tests Introduction Branches The first question to ask when making a contribution is &ldquo;Which branch should I target?&rdquo;.
+The rules are as follows:
+ The development branch for UI testing is the current development branch. The branch changes as soon as the final release is out.  Differences between scenarios &amp; tests Scenarios are the base of UI Tests. They are available on the PrestaShop Tests Documentation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/" /><meta property="article:section" content="project-organization" />
+
+<meta property="article:modified_time" content="2023-07-31T14:21:10+02:00" />
 
 
 
@@ -226,7 +234,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -235,6 +243,9 @@
   <ol class="breadcrumb">
     
     
+      
+      
+        
       
       
         
@@ -262,7 +273,12 @@
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Processes</li>
+        <li class="breadcrumb-item"><a href="/project-organization/quality-council/processes/">Processes</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">How to contribute to UI tests</li>
       
     
   </ol>
@@ -272,26 +288,85 @@
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-contribute-to-ui-tests">How to contribute to UI tests</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a>
+          <ul>
+            <li><a href="#branches">Branches</a></li>
+            <li><a href="#differences-between-scenarios--tests">Differences between scenarios &amp; tests</a></li>
+          </ul>
+        </li>
+        <li><a href="#contribute-to-ui-tests">Contribute to UI tests</a>
+          <ul>
+            <li><a href="#choose-a-scenario-to-automate">Choose a scenario to automate</a></li>
+            <li><a href="#create-the-pr">Create the PR</a></li>
+            <li><a href="#review-the-pr">Review the PR</a></li>
+            <li><a href="#merge-of-the-pr">Merge of the PR</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="processes">Processes</h1>
-<h2 id="issue-management">Issue Management</h2>
+        <div class="content"><h1 id="how-to-contribute-to-ui-tests">How to contribute to UI tests</h1>
+<h2 id="introduction">Introduction</h2>
+<h3 id="branches">Branches</h3>
+<p>The first question to ask when making a contribution is &ldquo;Which branch should I target?&rdquo;.</p>
+<p>The rules are as follows:</p>
 <ul>
-<li><a href="./issue-management">How to manage Issues</a></li>
+<li>The development branch for UI testing is the current development branch.</li>
+<li>The branch changes as soon as the final release is out.</li>
 </ul>
-<h2 id="software-testing">Software Testing</h2>
+<h3 id="differences-between-scenarios--tests">Differences between scenarios &amp; tests</h3>
+<p>Scenarios are the base of UI Tests. They are available on the <a href="https://build.prestashop-project.org/test-scenarios/">PrestaShop Tests Documentation</a>.</p>
+<p>Tests are the code based on scenarios. They are available on the main repository <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tests/UI">in the tests/UI directory</a>.</p>
+<h2 id="contribute-to-ui-tests">Contribute to UI tests</h2>
+<h3 id="choose-a-scenario-to-automate">Choose a scenario to automate</h3>
+<p><em><strong>This part is only available for PrestaShopCorp employees.</strong></em></p>
 <ul>
-<li><a href="./test-pr-and-branches">How to test Pull Requests</a></li>
+<li>Go to the PrestaShop Forge</li>
+<li>Access to the Test Repositoy</li>
+<li>Find a test in the directory <code>Core</code> or <code>Modules</code> with the state &ldquo;TO BE AUTOMATED&rdquo;</li>
 </ul>
-<h2 id="software-development-in-test">Software Development in Test</h2>
+<h3 id="create-the-pr">Create the PR</h3>
 <ul>
-<li><a href="./contribute-ui-tests">How to contribute to UI tests</a></li>
+<li>The contributor create a PR targetting the development branch for UI tests.</li>
+<li>The contributor can check that the PR works with the <a href="https://github.com/PrestaShop/ga.tests.ui.pr">Github Action <code>ga.tests.ui.pr</code></a>.</li>
+</ul>
+<h3 id="review-the-pr">Review the PR</h3>
+<ul>
+<li>The review is done by <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Tests of the project</a>.</li>
+<li>Some checks are done :
+<ul>
+<li>The PR complies with <a href="https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/">contribution guidelines</a>;</li>
+<li>The CI is green (lint, typescript check);</li>
+<li>The scenario is followed;</li>
+<li>The test is executed without errors in the <a href="https://github.com/PrestaShop/ga.tests.ui.pr">nightly</a>;</li>
+<li>The test use the Page Object Model pattern.</li>
+</ul>
+</li>
+</ul>
+<h3 id="merge-of-the-pr">Merge of the PR</h3>
+<ul>
+<li>The merge is done after two approvals of <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Tests of the project</a> including a maintainer.</li>
+<li>After that, the contribution will be executed every night in the <a href="https://nightly.prestashop-project.org/">nightly of the project</a> to ensure continuity and stability of the project.</li>
 </ul>
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 

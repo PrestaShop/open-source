@@ -197,6 +197,17 @@ Please note that severity is to be distinguished from priority. Indeed, severity
     </item>
     
     <item>
+      <title>How to contribute to UI tests</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/</guid>
+      <description>How to contribute to UI tests Introduction Branches The first question to ask when making a contribution is &amp;ldquo;Which branch should I target?&amp;rdquo;.
+The rules are as follows:
+ The development branch for UI testing is the current development branch. The branch changes as soon as the final release is out.  Differences between scenarios &amp;amp; tests Scenarios are the base of UI Tests. They are available on the PrestaShop Tests Documentation.</description>
+    </item>
+    
+    <item>
       <title>How to create merge Pull Requests active branches</title>
       <link>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
