@@ -18,7 +18,7 @@ The rules are as follows:
 
 Scenarios are the base of UI Tests. They are available on the [PrestaShop Tests Documentation](https://build.prestashop-project.org/test-scenarios/).
 
-Tests are the code after scenarios. They are available on the main repository [in the tests/UI directory](https://github.com/PrestaShop/PrestaShop/tree/develop/tests/UI).
+Tests are the code based on scenarios. They are available on the main repository [in the tests/UI directory](https://github.com/PrestaShop/PrestaShop/tree/develop/tests/UI).
 
 ## Contribute to UI tests
 
@@ -31,16 +31,16 @@ _**This part is only available for PrestaShopCorp employees.**_
 
 ### Create the PR
 * The contributor create a PR targetting the development branch for UI tests.
-* The contributor can check that its PR works with the [Github Action `ga.tests.ui.pr`](https://github.com/PrestaShop/ga.tests.ui.pr).
+* The contributor can check that the PR works with the [Github Action `ga.tests.ui.pr`](https://github.com/PrestaShop/ga.tests.ui.pr).
 
 ### Review the PR
 * The review is done by [Software Developers in Tests of the project](/project-organization/people-and-roles/#software-developers-in-test).
 * Some checks are done :
-  * the PR complies with [contribution guidelines](https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/);
-  * the CI is green (lint, typescript check);
-  * the scenario is followed;
-  * the test is executed without errors in the [nightly](https://github.com/PrestaShop/ga.tests.ui.pr);
-  * the test use the Page Object Model pattern.
+  * The PR complies with [contribution guidelines](https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/);
+  * The CI is green (lint, typescript check);
+  * The scenario is followed;
+  * The test is executed without errors in the [nightly](https://github.com/PrestaShop/ga.tests.ui.pr);
+  * The test use the Page Object Model pattern.
 
 ### Merge of the PR
 * The merge is done after two approvals of [Software Developers in Tests of the project](/project-organization/people-and-roles/#software-developers-in-test) including a maintainer.
