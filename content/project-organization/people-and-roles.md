@@ -86,6 +86,7 @@ Current committers:
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
+- Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
