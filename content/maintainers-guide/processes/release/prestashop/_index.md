@@ -50,9 +50,14 @@ Some of steps will require special tools or access rights which are currently no
 
    - **Update the Changelog and Contributors list.**  
      _These files must be included in the build._
+
+   - **Push your work into a build branch.**  
+     _Allows the base branch to continue receiving merges while your build is being validated.._
    
-   - **Build the zip archive.**  
+   - **Build and store the zip archive.**  
      _The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies & tests._
+
+   - **Deliver to QA team.**
 
 3. **[Release the version publicly][release-publicly]**: (click to see the full step)
 
@@ -82,6 +87,7 @@ Some of steps will require special tools or access rights which are currently no
    - **Store the ZIP archive.**  
      _To keep track of all published versions._
 
+   - **Improve the process.**
 
 [git-scm]: https://git-scm.com/
 [github-repository]: https://github.com/prestashop/prestashop
