@@ -41,7 +41,7 @@ Before you go further, make sure to tick the &ldquo;Development&rdquo; box in th
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-04-24T17:02:58+02:00" />
+<meta property="article:modified_time" content="2023-08-07T17:36:13+02:00" />
 
 
 
@@ -321,14 +321,14 @@ Before you go further, make sure to tick the &ldquo;Development&rdquo; box in th
             <li><a href="#if-the-branch-contains-security-fixes">If the branch contains security fixes</a></li>
           </ul>
         </li>
-        <li><a href="#5-build-the-zip-archive">5. Build the ZIP archive</a></li>
-        <li><a href="#6-archive-your-build">6. Archive your build</a>
+        <li><a href="#6-build-the-zip-archive">6. Build the ZIP archive</a></li>
+        <li><a href="#7-archive-your-build">7. Archive your build</a>
           <ul>
             <li><a href="#rename-files">Rename files</a></li>
             <li><a href="#upload-files-to-the-archive">Upload files to the archive</a></li>
           </ul>
         </li>
-        <li><a href="#7-communicate-and-wait-for-qa-validation">7. Communicate and wait for QA validation</a>
+        <li><a href="#8-communicate-and-wait-for-qa-validation">8. Communicate and wait for QA validation</a>
           <ul>
             <li><a href="#if-the-qa-rejects-the-build">If the QA rejects the build</a></li>
           </ul>
@@ -408,7 +408,7 @@ Name your branch following this scheme: <code>[version]-build</code> (for exampl
 <li>Push your local branch into a private repository, in order to avoid disclosing the security bugs.</li>
 <li>Share access to your private repository with other maintainers so that they can verify your work.</li>
 </ul>
-<h2 id="5-build-the-zip-archive">5. Build the ZIP archive</h2>
+<h2 id="6-build-the-zip-archive">6. Build the ZIP archive</h2>
 <p>Use the <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/tools/build/README.md">Release Creator CLI script</a> included with PrestaShop&rsquo;s sources to create the ZIP archive.</p>
 <p>From the root path of your repository, execute:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">php tools/build/CreateRelease.php --version<span class="o">=</span><span class="s2">&#34;1.7.6.6&#34;</span>
@@ -426,7 +426,7 @@ Name your branch following this scheme: <code>[version]-build</code> (for exampl
 <div class="notices warning" ><strong>Make sure to keep them both!</strong> You will need them later on.</div>
 
 <p>As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.</p>
-<h2 id="6-archive-your-build">6. Archive your build</h2>
+<h2 id="7-archive-your-build">7. Archive your build</h2>
 <h3 id="rename-files">Rename files</h3>
 <p>Rename both files according to our naming convention:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">prestashop_&lt;version&gt;-[beta.&lt;beta number&gt;|rc.&lt;rc number&gt;]+build.&lt;build number&gt;.&lt;zip|xml&gt;
@@ -453,7 +453,7 @@ Name your branch following this scheme: <code>[version]-build</code> (for exampl
 <p>Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step. If the branch does not contain security fixes, the maintainer must share publicly the ZIP file.</p>
 </div>
 
-<h2 id="7-communicate-and-wait-for-qa-validation">7. Communicate and wait for QA validation</h2>
+<h2 id="8-communicate-and-wait-for-qa-validation">8. Communicate and wait for QA validation</h2>
 <p>At this point, the build process is over.</p>
 <ul>
 <li>Make sure the build files have been submitted to the QA team.</li>
