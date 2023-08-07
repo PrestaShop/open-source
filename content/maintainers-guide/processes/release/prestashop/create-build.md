@@ -87,7 +87,7 @@ The build must be validated before the PR can be merged.
 - Push your local branch into a private repository, in order to avoid disclosing the security bugs.
 - Share access to your private repository with other maintainers so that they can verify your work.
 
-## 5. Build the ZIP archive
+## 6. Build the ZIP archive
 
 Use the [Release Creator CLI script][release-creator-readme] included with PrestaShop's sources to create the ZIP archive.
 
@@ -116,7 +116,7 @@ By default, the release package will create two files in a new subdirectory in `
 
 As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.
 
-## 6. Archive your build
+## 7. Archive your build
 
 ### Rename files
 
@@ -151,7 +151,7 @@ For patch versions, the beta and RC phase can be skipped (example: `prestashop_1
 Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step. If the branch does not contain security fixes, the maintainer must share publicly the ZIP file. 
 {{% /notice %}}
 
-## 7. Communicate and wait for QA validation
+## 8. Communicate and wait for QA validation
 
 At this point, the build process is over. 
 
