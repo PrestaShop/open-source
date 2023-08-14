@@ -45,23 +45,26 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
    
    - [channel.xml](https://api.prestashop.com/xml/channel.xml)
    - [channel17.xml](https://api.prestashop.com/xml/channel17.xml)
-   - [1.7.6.0.xml](https://api.prestashop.com/xml/md5/1.7.6.0.xml) (replace with the version you have just released)
+   - [8.1.1.xml](https://api.prestashop-project.org/assets/prestashop/8.1.1/prestashop.xml) (replace with the version you have just released)
 
 * Check the PrestaShop localization packs are correct (only needed for major and minor releases):
 
    - [Repository](https://github.com/PrestaShop/TranslationFiles/tree/master/1.7/translations/)
-   - [Example download link](http://i18n.prestashop.com/translations/1.7.6.0/es-ES/es-ES.zip) (replace 1.7.6.0 with the version you just released)
+   - [Example download link](https://i18n.prestashop-project.org/translations/8.1.0/es-ES/es-ES.zip) (replace 8.1.1 with the version you just released)
 
-* Check the Addons API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):
+* For 1.7.x releases, check the Addons API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):
    
     - [Native modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=native)
     - [Pushed modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=install-modules)
+ 
+* For 8.x releases, check the Distribution API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):
+   
+    - https://api.prestashop-project.org/prestashop features the latest release, and informations are correct
+    - https://api.prestashop-project.org/modules/8.1.1 features the right modules, and informations are correct (replace 8.1.1 with the version you just released)
 
 * Check that if you try to install PrestaShop 1.7.5 from the archive, the installer suggests you install the latest version instead
 * Check that the release note has been published on the [Build Blog](https://build.prestashop-project.org)
-* Check that the [PrestaShop.com](https://www.prestashop.com) shows the right "latest version", and the links are correct
 * Check that the latest release has an available docker image on the [Docker repository][docker-repository]
-* Check that the [public demo](https://demo.prestashop.com) runs on the latest version (a few hours after the docker image release)
 
 ## 4. Store the ZIP archive
 
