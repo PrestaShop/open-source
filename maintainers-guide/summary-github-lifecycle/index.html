@@ -44,7 +44,7 @@ The teams On GitHub, there are mainly three teams working together on the projec
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/summary-github-lifecycle/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-05-17T11:25:38+02:00" />
+<meta property="article:modified_time" content="2023-09-04T13:08:07+02:00" />
 
 
 
@@ -376,6 +376,7 @@ These rules will be found in a CONTRIBUTION_PROCESS.md file in <code>.github</co
 <h3 id="testing-the-pull-request">Testing the Pull Request</h3>
 <p>On regular Pull Requests, the QA team is in charge of testing the Pull Request. They will use the &ldquo;How to test&rdquo; part of the Pull Request description to validate the behavior implemented, and also run some more tests to validate there are no regressions.</p>
 <p>Some Pull Requests however cannot be tested by QA team, the Developers team might validate them.</p>
+<p>PrestaShop project has UI tests. These tests can be executed on each Pull Request thanks to <a href="https://github.com/PrestaShop/ga.tests.ui.pr/"><code>ga.tests.ui.pr</code> tool</a>. Please read the README file of this tool and fill the Pull Request description with the execution URL.</p>
 <p>If the Pull Request is tested successfully, the label &ldquo;QA approved&rdquo; is applied. Else, the author is notified about the Issues found by the tests.</p>
 <h3 id="merging-the-pull-request">Merging the Pull Request</h3>
 <p>Pull Requests that have been validated by QA can be merged. They must also be milestoned, and if they fix an issue, the issue must be labelled, milestoned, and closed.</p>
