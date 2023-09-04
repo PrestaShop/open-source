@@ -102,6 +102,8 @@ On regular Pull Requests, the QA team is in charge of testing the Pull Request. 
 
 Some Pull Requests however cannot be tested by QA team, the Developers team might validate them.
 
+PrestaShop project has UI tests. These tests can be executed on each Pull Request thanks to [`ga.tests.ui.pr` tool](https://github.com/PrestaShop/ga.tests.ui.pr/). Please read the README file of this tool and fill the Pull Request description with the execution URL. 
+
 If the Pull Request is tested successfully, the label "QA approved" is applied. Else, the author is notified about the Issues found by the tests.
 
 ### Merging the Pull Request
