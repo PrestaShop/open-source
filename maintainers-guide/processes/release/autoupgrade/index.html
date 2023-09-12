@@ -3,10 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-<title>How to release | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content=""/>
+<title>How to release a new AutoUpgrade version | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
+However, after the release has been published, a last step is necessary.
+Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version."/>
 
-<link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/" itemprop="url" />
+<link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/" itemprop="url" />
 
 
 
@@ -25,12 +27,18 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="How to release"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="How to release" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/" />
+<meta name="twitter:title" content="How to release a new AutoUpgrade version"/>
+<meta name="twitter:description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
+However, after the release has been published, a last step is necessary.
+Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version."/>
+<meta property="og:title" content="How to release a new AutoUpgrade version" />
+<meta property="og:description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
+However, after the release has been published, a last step is necessary.
+Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/" /><meta property="article:section" content="maintainers-guide" />
+
+<meta property="article:modified_time" content="2023-09-12T09:42:53+02:00" />
 
 
 
@@ -226,7 +234,7 @@
 
 
 
-  
+
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -235,6 +243,9 @@
   <ol class="breadcrumb">
     
     
+      
+      
+        
       
       
         
@@ -262,7 +273,12 @@
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">How to release</li>
+        <li class="breadcrumb-item"><a href="/maintainers-guide/processes/release/">How to release</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">How to release a new AutoUpgrade version</li>
       
     
   </ol>
@@ -274,84 +290,25 @@
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="how-to-release">How to release</h1>
+        <div class="content"><h1 id="release-a-new-version-of-autoupgradehttpsgithubcomprestashopautoupgrade-module">Release a new version of <a href="https://github.com/PrestaShop/autoupgrade/">AutoUpgrade</a> module</h1>
+<p>The AutoUpgrade module is released following <a href="/maintainers-guide/processes/release/native-module/">the same process as the native modules</a>.</p>
+<p>However, after the release has been published, a last step is necessary.</p>
+<h2 id="mark-the-new-version-as-latest">Mark the new version as latest</h2>
+<p>The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version.</p>
+<p>For example if user is using module 4.16.1 and it detects that version 4.16.3 has been published, the module will inform the user that he is using an outdated version and should perform a module upgrade to version 4.16.3 .</p>
+<p>The detection mechanism is a simple verification of the file <a href="https://api.prestashop.com/xml/channel.xml">https://api.prestashop.com/xml/channel.xml</a> .</p>
+<p>Consequently when a new version of the AutoUpgrade module is published, the file <a href="https://api.prestashop.com/xml/channel.xml">https://api.prestashop.com/xml/channel.xml</a> must be modified. It is stored in the PrestaShop API repository.</p>
 
-
-
-
-
-
-
-
-<ul class='children children-li'>
-	
-
-  
-		
-			
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/release/native-module/" >How to release a native module</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/release/autoupgrade/" >How to release a new AutoUpgrade version</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-		
-			
-				
-					<li>
-					<a href="/maintainers-guide/processes/release/prestashop/" >How to release a new PrestaShop version</a>
-					
-					</li>
-				
-
-
-			
-			
-		
-	
-
-	
-</ul>
-
-
-
-
+<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
+<p>Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.</p>
+</div>
 
 </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 

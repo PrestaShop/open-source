@@ -18,5 +18,16 @@ This page explains what is needed to release these modules.
 Requirements Mandatory requirements The module should be valid which means:</description>
     </item>
     
+    <item>
+      <title>How to release a new AutoUpgrade version</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</guid>
+      <description>Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
+However, after the release has been published, a last step is necessary.
+Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version.</description>
+    </item>
+    
   </channel>
 </rss>
