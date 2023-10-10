@@ -10,7 +10,7 @@ This document details the processes in place for the position of "Issues Manager
 
 ## The Issue Manager job
 
-Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules.These are the tree questions you must ask yourself:
+Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
 
 - **Is the issue valid?** The issue must be either a bug report or a request for feature. We only cover the PrestaShop project (Core + native modules).
 - **Has all the needed information been provided?** The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.
@@ -24,7 +24,7 @@ Here are some tips:
 
 ## Issue state & labels
 
-Github has only two states for issues: open and closed. We use labels to keep track of issue type, intermediate state, severity and resolution.
+GitHub has only two states for issues: open and closed. We use labels to keep track of issue type, intermediate state, severity and resolution.
 
 ### Main Labels
 
@@ -188,7 +188,7 @@ If a duplicate is found:
 
 We must be able to reproduce the bug in a controlled environment. You can record your attempt, use a screen recorder (like [Screencastify](https://www.screencastify.com/), a Chrome extension), download it and then upload it on Github, post it in a comment so that the issue’s author can see the steps you used to reproduce their issue, either on the current branch or on develop branch, depending of what the author declared in his issue.
 
-#### If t**he issue cannot be reproduced**
+#### If the **issue cannot be reproduced**
 
 We were not able to reproduce the issue like the author described, even with all possible infos provided.
 
@@ -252,7 +252,7 @@ Note that the product team must be able to understand the bug to be able to clas
 
 ### Rewriting the issue
 
-Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue!It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug.Pay special attention to the **reproduction steps** ("how to reproduce")!
+Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue! It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug.Pay special attention to the **reproduction steps** ("how to reproduce")!
 
 ### Validating the issue
 
@@ -357,7 +357,7 @@ If you fix the issue on your end, please [contribute it back to the project](htt
 Thank you
 ```
 
-You can personalize the message according to your needs, for exemple:
+You can personalize the message according to your needs, for example:
 
 For active contributors, it’s not necessary to add this block:
 
@@ -371,20 +371,12 @@ Instead, you can add this:
 We’re waiting for your PR 🚀
 ```
 
-#### Regression
-
-If it’s a regression, add this sentence:
-
-```
- 
-```
-
 ### Issue not completed
 
 ```
 Hello [name],
 
-Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. ****You must follow the template and provide clear and concise steps to reproduce the bug****. 
+Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. **You must follow the template and provide clear and concise steps to reproduce the bug**. 
 Read more about how we expect the issues to be handled [here](https://build.prestashop-project.org/news/2020/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it. 
 
 Thank you
