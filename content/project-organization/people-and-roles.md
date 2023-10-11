@@ -17,7 +17,6 @@ The Leadership Council is in charge of providing structure and a general directi
 
 Current members:
 
-- Pablo Borowicz ([@eternoendless](https://github.com/eternoendless)) - **Project Lead**
 - Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
