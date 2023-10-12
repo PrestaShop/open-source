@@ -2,133 +2,164 @@
 title: How to Manage a release
 ---
 
+---
+title: How to Manage a release
+---
 
-Lorsqu’une nouvelle Release est effectuée par les développeurs, un Test Plan et un Release Plan doivent être créés du côté de la QA. 
+# How to create a Test Plan / Release Plan
 
-Cette page a pour but de vous expliquer comment créer ces différents tickets avant d’effectuer une release. 
 
-# 1. Connaître la release
+When a new release is made by the developers, a Test Plan and a Release Plan must be created on the QA side. 
 
-Avant même de commencer à faire un tickets dans Jira, vous devrez vous renseigner sur la release qui va être testée. 
+The purpose of this page is to explain how to create these different tickets before carrying out a release. 
 
-Pour ce faire, rien de plus simple, il suffit : 
+## 1. Know the release
 
-1. Aller dans les Pull request de Prestashop : 
+Before even starting to create a ticket in Jira, you need to find out about the release you're going to test. 
+
+To do this, simply : 
+
+1. Go to Prestashop Pull requests: 
 
 ![Untitled](images/release_manager_img_1.png)
 
-2. Cliquer sur Milestones
+2. Click on Milestones
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c545bf5d-1caf-4544-8870-7ffb4187a9c9/Untitled.png)
+![Untitled](images/release_manager_img_2.png)
 
-1. Cliquer sur la version qui vous convient (ici dans l’exemple ça sera la 1.7.8.9) 
+1. Click on the version you require (for this example, it will be 1.7.8.9) 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7ad8b8e-9fb3-4b69-88ef-9c0317edb616/Untitled.png)
+![Untitled](images/release_manager_img_3.png)
 
-4. Cliquer sur les Closed (ce sont les différentes PR mergées pour la version sélectionnée) 
+4. Click on Closed (these are the merged PRs for the selected version) 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cb52afb-f511-429a-9957-ab2c16683285/Untitled.png)
+![Untitled](images/release_manager_img_4.png)
 
-Vous connaissez à présent toutes les PR que comportent votre release. Il est fortement recommandé de tous les vérifier afin de savoir ce que ces PRs pourraient toucher. 
+You now know all the PRs in your release. It's highly recommended that you check them all to find out what these PRs might affect. 
 
-# 2. Répertorier les scénarios de tests
 
-Maintenant que vous savez de quoi parle votre release, vous allez répertorier les différents scénarios de test. Vous aurez besoin d’un support pour prendre des notes. 
+Translated with www.DeepL.com/Translator (free version)
 
-Nous allons de nouveau faire cela en quelques étapes : 
 
-1. Ouvrir Jira au niveau des scénarios de tests
+## 2. List the test scenarios
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3169a2-0f3a-4fc4-ba91-7a90e8588930/Untitled.png)
+Now that you know what your release is about, you're going to list the different test scenarios. You'll need support to take notes. 
 
-1. Sélectionner les divers repos touchés par les PRs (exemple : une modification sur la création d’un produit) 
+Again, we'll do this in a few steps: 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64fa6746-2c75-4da1-9de2-bc1ef2af3259/Untitled.png)
+1. Open Jira at test case level
 
-3. Une fois que vous avez repéré les différents scénarios qui vous intéressent, retenez les (ou marquez les dans votre support de notes). Pensez à ne pas prendre les scénarios déjà automatisés, ceux-ci seront tester via un test auto.
+![Untitled](images/release_manager_img_5.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d4cfeb8-57a4-4e28-b18b-f2d81b30b90c/Untitled.png)
+1. Select the various repository affected by the PRs (e.g. a change in product creation) 
 
-Une fois votre liste finie, vous pouvez passer à la création de votre Test plan et votre Release plan en découlera 
+![Untitled](images/release_manager_img_6.png)
 
-# 3. Créer votre Test plan
+3. Once you've identified the different scenarios that interest you, write them down (or mark them in your notepad). Remember not to use scenarios that have already been automated, as these will be tested via an automated test.
 
-1. Commencez par cliquer sur le bouton “Create”
+![Untitled](images/release_manager_img_7.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4aad5584-2824-4752-b560-33ff57a96dea/Untitled.png)
+Once you've finished your list, you can move on to creating your Test plan and your Release plan. 
 
-1. Remplissez les champs proposé de cette façon : 
-**Project** : Equipe QA 
+## 3. Creating your Test plan
+
+1. Start by clicking on the "Create" button
+
+![Untitled](images/release_manager_img_8.png)
+
+2. Fill in the fields as follows: 
+
+**Project** : QA Team 
+
 **Issue Type** : Test Plan 
-**Summary** : Campagne Ciblée - [votre_version] - Test Plan
-**Description** : Campagne Ciblée - [votre_version] - Test Plan 
-**Assignee** : Unassigned
-**Affect version** : [votre_version]
+
+**Summary**: Targeted Campaign - [your_version] - Test Plan
+
+**Description**: Targeted Campaign - [your_version] - Test Plan 
+
+**Assigned** : Unassigned
+
+**Affect version** : [your_version] - Test Plan
+
 **Label** : core
+
 **Component/s** : Core 
+
 **Affected Tribe** : Tribe Core Open source 
 
-et cliquer sur le bouton “Create”
+and click on the "Create" button
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6f624ef-9cc9-4c51-8159-c86943e0fc5b/Untitled.png)
+![Untitled](images/release_manager_img_9.png)
 
-1. Pour retrouver votre Test plan, cliquez rapidement sur la notification verte qui vient de s’afficher sinon : 
+1. To find your Test plan, click quickly on the green notification that has just appeared, otherwise : 
 
-3.1. Cliquez sur issues 
+3.1 Click on issues 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be916d69-33e6-44e5-b3b1-3afabb55acff/Untitled.png)
+![Untitled](images/release_manager_img_10.png)
 
-3.2. Filtrez par date de création 
+3.2 Filter by creation date 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c913d7b3-7196-432f-a0b0-528bd24bff4e/Untitled.png)
+![Untitled](images/release_manager_img_11.png)
 
-3.3. Votre Test Plan devrait être la dernière création, cliquez sur son numéro pour qu’il s’ouvre en plein écran 
+3.3. Your Test Plan should be the latest creation. Click on its number to open it in full screen mode. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd8f8083-1cfd-487c-9e56-f40233ee0489/Untitled.png)
+![Untitled](images/release_manager_img_12.png)
 
-1. Rajoutez les tests grâce à leurs noms (que vous aurez au préalable retenu) dans la case “Contain Text”
+1. Add the tests using their names (which you've chosen beforehand) in the "Contain Text" box.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56575756-b173-467e-a711-0b6c61f5a564/Untitled.png)
+![Untitled](images/release_manager_img_13.png)
 
--
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/02bd3d18-3174-450f-a9bd-3e9000cbac93/Untitled.png)
 
-5. Sélectionnez les scénarios qui correspondent à votre recherche 
+![Untitled](images/release_manager_img_14.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f90222b1-1112-44e4-a0fb-9098bcf22d86/Untitled.png)
+5. Select the scenarios that match your search 
 
-1. Une fois ces scénarios sélectionnés, cliquer sur “Add Selected” 
+![Untitled](images/release_manager_img_15.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/457684fb-c306-419a-a419-4c57bf07f8d6/Untitled.png)
+6. Once these scenarios have been selected, click on "Add Selected". 
 
-Reproduisez ces dernières étapes autant de fois qu’il le faut pour mettre tous les tests vu lors du deuxième chapitre. 
+![Untitled](images/release_manager_img_16.png)
 
-# 4. Créer votre Test Execution
+Repeat these last steps as many times as necessary to implement all the tests seen in the second chapter. 
 
-Maintenant que notre Test Plan est crée, nous devons nous occuper du Test Execution, celui-ci peut être créé très facilement 
+# 4. Create your Test Execution
 
-1. Cliquez sur “Create Test Execution” → All Test 
+Now that our Test Plan has been created, we need to take care of the Test Execution, which can be created very easily. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/022e20c0-f847-43dc-b890-f76afeb74c07/Untitled.png)
+1. Click on "Create Test Execution" → All Test 
 
-1. Remplissez les champs proposé de cette façon : 
-**Project** : Equipe QA 
+![Untitled](images/release_manager_img_17.png)
+
+2. Fill in the fields as follows: 
+
+**Project** : QA Team 
+
 **Issue Type** : Test Execution 
+
 **Assignee** : Unassigned
-**Summary** : Campagne Ciblée - [votre_version] - Test Execution
-**Description** : Campagne Ciblée - [votre_version] - Test Execution 
-**Affect version** : [votre_version]
+
+**Summary** : Targeted Campaign - [your_version] - Test Execution
+
+**Description** : Targeted Campaign - [your_version] - Test Execution 
+
+**Affect version** : [your_version]
+
 **Label** : core
+
 **Component/s** : Core 
+
 **Affected Tribe** : Tribe Core Open source 
 
-Gardez la case cochée "Redirect to Test Execution” et cliquez sur le bouton “Create”
+Keep "Redirect to Test Execution" checked and click on the "Create" button
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93cc777a-1ca7-4417-97f2-c995a914da21/Untitled.png)
+![Untitled](images/release_manager_img_18.png)
 
-1. Pour retrouver votre test plan, cliquez rapidement sur la notification verte qui vient de s’afficher sinon je vous conseille de vous référencer au chapitre 3, 3ème étape.
+3. To retrieve your test plan, click quickly on the green notification that has just been displayed. Otherwise, please refer to chapter 3, step 3.
 
-Si vous avez suivi toutes ces diverses étapes, vous devriez normalement avoir votre test Plan et le Test execution que vous pourrez partager avec les membres de l’équipe ainsi qu’avec l’équipe des développeurs. 
 
-Bonne Release.
+If you've followed all these steps, you should now have your Test Plan and Test Execution, which you can share with your team members and developers. 
+
+All that's left for you to do now is carry out the various tests and, at the end of the day, share with the team, made up of PMs and Developers, if we've encountered any issues during our work.
+
+Happy Release.
