@@ -2,9 +2,6 @@
 title: How to Manage a release
 ---
 
----
-title: How to Manage a release
----
 
 # How to create a Test Plan / Release Plan
 
@@ -21,24 +18,23 @@ To do this, simply :
 
 1. Go to Prestashop Pull requests: 
 
-![Untitled](images/release_manager_img_1.png)
+![Pull request](images/release_manager_img_1.png)
 
 2. Click on Milestones
 
-![Untitled](images/release_manager_img_2.png)
+![Milestones](images/release_manager_img_2.png)
 
 1. Click on the version you require (for this example, it will be 1.7.8.9) 
 
-![Untitled](images/release_manager_img_3.png)
+![Version](images/release_manager_img_3.png)
 
 4. Click on Closed (these are the merged PRs for the selected version) 
 
-![Untitled](images/release_manager_img_4.png)
+![Closed](images/release_manager_img_4.png)
 
 You now know all the PRs in your release. It's highly recommended that you check them all to find out what these PRs might affect. 
 
 
-Translated with www.DeepL.com/Translator (free version)
 
 
 ## 2. List the test scenarios
@@ -49,15 +45,15 @@ Again, we'll do this in a few steps:
 
 1. Open Jira at test case level
 
-![Untitled](images/release_manager_img_5.png)
+![Tests](images/release_manager_img_5.png)
 
 1. Select the various repository affected by the PRs (e.g. a change in product creation) 
 
-![Untitled](images/release_manager_img_6.png)
+![test repos](images/release_manager_img_6.png)
 
 3. Once you've identified the different scenarios that interest you, write them down (or mark them in your notepad). Remember not to use scenarios that have already been automated, as these will be tested via an automated test.
 
-![Untitled](images/release_manager_img_7.png)
+![Tests2](images/release_manager_img_7.png)
 
 Once you've finished your list, you can move on to creating your Test plan and your Release plan. 
 
@@ -65,7 +61,7 @@ Once you've finished your list, you can move on to creating your Test plan and y
 
 1. Start by clicking on the "Create" button
 
-![Untitled](images/release_manager_img_8.png)
+![Create](images/release_manager_img_8.png)
 
 2. Fill in the fields as follows: 
 
@@ -89,37 +85,37 @@ Once you've finished your list, you can move on to creating your Test plan and y
 
 and click on the "Create" button
 
-![Untitled](images/release_manager_img_9.png)
+![Create 2](images/release_manager_img_9.png)
 
 1. To find your Test plan, click quickly on the green notification that has just appeared, otherwise : 
 
 3.1 Click on issues 
 
-![Untitled](images/release_manager_img_10.png)
+![Issues](images/release_manager_img_10.png)
 
 3.2 Filter by creation date 
 
-![Untitled](images/release_manager_img_11.png)
+![Created](images/release_manager_img_11.png)
 
 3.3. Your Test Plan should be the latest creation. Click on its number to open it in full screen mode. 
 
-![Untitled](images/release_manager_img_12.png)
+![Number](images/release_manager_img_12.png)
 
 1. Add the tests using their names (which you've chosen beforehand) in the "Contain Text" box.
 
-![Untitled](images/release_manager_img_13.png)
+![Existing](images/release_manager_img_13.png)
 
 
 
-![Untitled](images/release_manager_img_14.png)
+![Search](images/release_manager_img_14.png)
 
 5. Select the scenarios that match your search 
 
-![Untitled](images/release_manager_img_15.png)
+![Select](images/release_manager_img_15.png)
 
 6. Once these scenarios have been selected, click on "Add Selected". 
 
-![Untitled](images/release_manager_img_16.png)
+![Add selected](images/release_manager_img_16.png)
 
 Repeat these last steps as many times as necessary to implement all the tests seen in the second chapter. 
 
@@ -129,7 +125,7 @@ Now that our Test Plan has been created, we need to take care of the Test Execut
 
 1. Click on "Create Test Execution" → All Test 
 
-![Untitled](images/release_manager_img_17.png)
+![Execution](images/release_manager_img_17.png)
 
 2. Fill in the fields as follows: 
 
@@ -153,7 +149,7 @@ Now that our Test Plan has been created, we need to take care of the Test Execut
 
 Keep "Redirect to Test Execution" checked and click on the "Create" button
 
-![Untitled](images/release_manager_img_18.png)
+![Create 3](images/release_manager_img_18.png)
 
 3. To retrieve your test plan, click quickly on the green notification that has just been displayed. Otherwise, please refer to chapter 3, step 3.
 
