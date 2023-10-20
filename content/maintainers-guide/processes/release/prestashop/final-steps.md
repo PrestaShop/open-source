@@ -18,8 +18,18 @@ _(i.e. if not for betas and RCs)._
 {{% notice warning %}}
 **This step requires special rights.**
 
-Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
+Ask a maintainer from the PrestaShop Company with administrative rights on the [PrestaShop API repository](https://stash.prestashop.com/projects/PA/repos/xml) to perform this step.
 {{% /notice %}}
+
+Here is an example of a PR that introduces a new version https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:
+- you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for `8.1.2` -> `8.1.2.xml`)
+- the `channel.xml` file needs to be updated, the `branch` node matching the minor version being released must be updated to indicate
+  - the latest patch version
+  - the link to the archive for this patch version
+  - the md5 checksum of this archive file
+  - the link to the build article for this patch version
+
+For new major/minor version you will have to create a new dedicated branch node.
 
 Once this step is done, update the Release Tracker GitHub issue by ticking the "Available for upgrade" box.
 
@@ -44,7 +54,6 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
 * Check the PrestaShop API content for auto-upgrade module is correct:
    
    - [channel.xml](https://api.prestashop.com/xml/channel.xml)
-   - [channel17.xml](https://api.prestashop.com/xml/channel17.xml)
    - [8.1.1.xml](https://api.prestashop-project.org/assets/prestashop/8.1.1/prestashop.xml) (replace with the version you have just released)
 
 * Check the PrestaShop localization packs are correct (only needed for major and minor releases):
@@ -57,7 +66,7 @@ You can update the Release Tracker GitHub issue: step "Docker image" is done.
     - [Native modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=native)
     - [Pushed modules](http://api-addons.prestashop.com?format=json&iso_lang=en&iso_code=FR&version=1.7.6.0&method=listing&action=install-modules)
  
-* For 8.x releases, check the Distribution API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):
+* For 8.x releases, check the Distribution API content for fresh installs is correct:
    
     - https://api.prestashop-project.org/prestashop features the latest release, and informations are correct
     - https://api.prestashop-project.org/modules/8.1.1 features the right modules, and informations are correct (replace 8.1.1 with the version you just released)
