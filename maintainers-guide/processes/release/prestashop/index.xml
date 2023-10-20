@@ -52,8 +52,8 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
-2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions.</description>
+ Here is an example of a PR that introduces a new version https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:
+ you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for 8.</description>
     </item>
     
   </channel>

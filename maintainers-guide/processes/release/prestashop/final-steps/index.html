@@ -8,8 +8,8 @@
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions."/>
+ Here is an example of a PR that introduces a new version https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:
+ you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for 8."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" itemprop="url" />
 
@@ -35,19 +35,19 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions."/>
+ Here is an example of a PR that introduces a new version https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:
+ you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for 8."/>
 <meta property="og:title" content="Final steps" />
 <meta property="og:description" content="Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  This step requires special rights.
 Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.
-2. Create Docker images for the new version  Checkout the project, install the project and create a new branch Modify the file versions." />
+ Here is an example of a PR that introduces a new version https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:
+ you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for 8." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-08-07T15:38:05+02:00" />
+<meta property="article:modified_time" content="2023-10-20T16:17:51+02:00" />
 
 
 
@@ -335,9 +335,22 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 
 
 <div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
-<p>Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.</p>
+<p>Ask a maintainer from the PrestaShop Company with administrative rights on the <a href="https://stash.prestashop.com/projects/PA/repos/xml">PrestaShop API repository</a> to perform this step.</p>
 </div>
 
+<p>Here is an example of a PR that introduces a new version <a href="https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:">https://stash.prestashop.com/projects/PA/repos/xml/pull-requests/138/diff:</a></p>
+<ul>
+<li>you will need to add the new XML checksum file that was generated with the zip archive, this XML file should be named after the version released (ex: for <code>8.1.2</code> -&gt; <code>8.1.2.xml</code>)</li>
+<li>the <code>channel.xml</code> file needs to be updated, the <code>branch</code> node matching the minor version being released must be updated to indicate
+<ul>
+<li>the latest patch version</li>
+<li>the link to the archive for this patch version</li>
+<li>the md5 checksum of this archive file</li>
+<li>the link to the build article for this patch version</li>
+</ul>
+</li>
+</ul>
+<p>For new major/minor version you will have to create a new dedicated branch node.</p>
 <p>Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.</p>
 <h2 id="2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</h2>
 <ul>
@@ -358,7 +371,6 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 <p>Check the PrestaShop API content for auto-upgrade module is correct:</p>
 <ul>
 <li><a href="https://api.prestashop.com/xml/channel.xml">channel.xml</a></li>
-<li><a href="https://api.prestashop.com/xml/channel17.xml">channel17.xml</a></li>
 <li><a href="https://api.prestashop-project.org/assets/prestashop/8.1.1/prestashop.xml">8.1.1.xml</a> (replace with the version you have just released)</li>
 </ul>
 </li>
@@ -377,7 +389,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 </ul>
 </li>
 <li>
-<p>For 8.x releases, check the Distribution API content for fresh installs is correct (replace 1.7.6.0 with the version you just released):</p>
+<p>For 8.x releases, check the Distribution API content for fresh installs is correct:</p>
 <ul>
 <li><a href="https://api.prestashop-project.org/prestashop">https://api.prestashop-project.org/prestashop</a> features the latest release, and informations are correct</li>
 <li><a href="https://api.prestashop-project.org/modules/8.1.1">https://api.prestashop-project.org/modules/8.1.1</a> features the right modules, and informations are correct (replace 8.1.1 with the version you just released)</li>
