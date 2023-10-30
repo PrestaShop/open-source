@@ -43,118 +43,20 @@ Now that you know what your release is about, you're going to list the different
 
 Again, we'll do this in a few steps: 
 
-1. Open Jira at test case level
+1. Open [Prestashop project](https://build.prestashop-project.org/test-scenarios/)
 
-![Tests](images/release_manager_img_5.png)
+![Tests](images/release_manager_img_19.png)
 
 1. Select the various repository affected by the PRs (e.g. a change in product creation) 
 
-![test repos](images/release_manager_img_6.png)
+![test repos](images/release_manager_img_20.png)
 
-3. Once you've identified the different scenarios that interest you, write them down (or mark them in your notepad). Remember not to use scenarios that have already been automated, as these will be tested via an automated test.
+3. Once you've identified the different scenarios that interest you, write them down (or mark them in your notepad). 
 
-![Tests2](images/release_manager_img_7.png)
-
-Once you've finished your list, you can move on to creating your Test plan and your Release plan. 
-
-## 3. Creating your Test plan
-
-1. Start by clicking on the "Create" button
-
-![Create](images/release_manager_img_8.png)
-
-2. Fill in the fields as follows: 
-
-**Project** : QA Team 
-
-**Issue Type** : Test Plan 
-
-**Summary**: Targeted Campaign - [your_version] - Test Plan
-
-**Description**: Targeted Campaign - [your_version] - Test Plan 
-
-**Assigned** : Unassigned
-
-**Affect version** : [your_version] - Test Plan
-
-**Label** : core
-
-**Component/s** : Core 
-
-**Affected Tribe** : Tribe Core Open source 
-
-and click on the "Create" button
-
-![Create 2](images/release_manager_img_9.png)
-
-1. To find your Test plan, click quickly on the green notification that has just appeared, otherwise : 
-
-3.1 Click on issues 
-
-![Issues](images/release_manager_img_10.png)
-
-3.2 Filter by creation date 
-
-![Created](images/release_manager_img_11.png)
-
-3.3. Your Test Plan should be the latest creation. Click on its number to open it in full screen mode. 
-
-![Number](images/release_manager_img_12.png)
-
-1. Add the tests using their names (which you've chosen beforehand) in the "Contain Text" box.
-
-![Existing](images/release_manager_img_13.png)
+![Tests2](images/release_manager_img_21.png)
 
 
-
-![Search](images/release_manager_img_14.png)
-
-5. Select the scenarios that match your search 
-
-![Select](images/release_manager_img_15.png)
-
-6. Once these scenarios have been selected, click on "Add Selected". 
-
-![Add selected](images/release_manager_img_16.png)
-
-Repeat these last steps as many times as necessary to implement all the tests seen in the second chapter. 
-
-# 4. Create your Test Execution
-
-Now that our Test Plan has been created, we need to take care of the Test Execution, which can be created very easily. 
-
-1. Click on "Create Test Execution" → All Test 
-
-![Execution](images/release_manager_img_17.png)
-
-2. Fill in the fields as follows: 
-
-**Project** : QA Team 
-
-**Issue Type** : Test Execution 
-
-**Assignee** : Unassigned
-
-**Summary** : Targeted Campaign - [your_version] - Test Execution
-
-**Description** : Targeted Campaign - [your_version] - Test Execution 
-
-**Affect version** : [your_version]
-
-**Label** : core
-
-**Component/s** : Core 
-
-**Affected Tribe** : Tribe Core Open source 
-
-Keep "Redirect to Test Execution" checked and click on the "Create" button
-
-![Create 3](images/release_manager_img_18.png)
-
-3. To retrieve your test plan, click quickly on the green notification that has just been displayed. Otherwise, please refer to chapter 3, step 3.
-
-
-If you've followed all these steps, you should now have your Test Plan and Test Execution, which you can share with your team members and developers. 
+If you've followed all these steps, you should now have your list for Test Plan and Test Execution, which you can share with your team members and developers. 
 
 All that's left for you to do now is carry out the various tests and, at the end of the day, share with the team, made up of PMs and Developers, if we've encountered any issues during our work.
 

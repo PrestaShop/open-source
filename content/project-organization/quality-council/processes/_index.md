@@ -15,3 +15,7 @@ title: Processes
 ## Software Development in Test
 
 * [How to contribute to UI tests](./contribute-ui-tests)
+
+## Release Manager
+
+* [How to contribute to Test and Release plan](./release-manager)
