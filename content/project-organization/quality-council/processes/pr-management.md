@@ -3,7 +3,7 @@
 
 ## How to test a PR manually
 
-You want to take care of a PR and you don't know how to handle it, or you've simply forgotten how. No problem, this github page is for you. 
+You want to take care of a PR and you don't know how to handle it, or you've simply forgotten how? No problem, this github page is for you. 
 
 
 ### 1. Taking information from a PR
@@ -18,7 +18,7 @@ To begin with, we have the **Branch**, which will be useful for preparing our sh
 To do this, go to your terminal and execute the commands below: 
 
 
-ℹ️ For your information, I recommend that you put it in the *Computer/var/www/html* folder.
+ℹ️ For your information, we recommend that you put it in the *Computer/var/www/html* folder.
 
 ![img.png](images/readme8.png)
 
@@ -40,9 +40,9 @@ Once on the issue, all you have to do is scroll down to find the "Steps to repro
 
 ![img.png](images/readme9.png)
 
-If the issue has been validated by our testers, ( ⚠️ any PR that mentions an issue must have this issue validated by the QA, otherwise the PR will not be taken into account ) the steps to reproduce must have been reviewed by them and is therefore easily reproducible. 
+If the issue has been validated by our testers, (⚠️ any PR that mentions an issue must have this issue validated by the QA, otherwise the PR will not be taken into account) the steps to reproduce must have been reviewed by them and are therefore easily reproducible. 
 
-ℹ️ If the issue has been validated by a Developer, the PR in question must be reviewed by a Dev, unless otherwise specified. 
+ℹ️ If the issue has been validated by a Developer, the PR in question should be reviewed and tested by a Dev, unless otherwise specified. 
 ℹ️ If you have installed your shop in *Computer/var/www/html,* you will be able to use your shop from a web browser and put the link : *localhost/PR_81x*
 
 ### 3 Installing the PR
@@ -64,6 +64,7 @@ We can find this **number** in the title of the PR, as you can see.
 
 
 All you have to do now is try to reproduce the issue again to see if the PR corrects it correctly.
+If it's all good, you can proceed to the next step of this documentation (step 4). If not, you can directly check step 5!
 
 ### 4. Check that the PR doesn't create another issue
 
@@ -77,7 +78,7 @@ You'll then have all the changes made to the PR. To do this, you'll get this vie
 
 ![img.png](images/readme13.png)
 
-Seen like this, it may seem rather difficult to see the differences and what might be impacted, so I advise you to modify the split view and save.
+Seen like this, it may seem rather difficult to see the differences and what might be impacted, so we advise you to modify the split view and save.
 
 ![img.png](images/readme14.png)
 
@@ -100,12 +101,13 @@ If you still have so many failures on the automated tests, you can test them man
 You've just finished testing the PR, and you're in two situations: 
 
 
-- The PR is valid, it doesn't create any other issue. In this case, I advise you to indicate that it works, to put a video proving it (you may think it's the desired behavior but it's not) and to put the link to the automated tests.
+- The PR is valid, it doesn't create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it's the desired behavior but it's not) and to put the link to the automated tests if you ran them.
 In your comment, you'll need to select the Approve option before submitting the review.
     
 ![img.png](images/readme16.png)
     
-- The PR is not valid. In this case, indicate that it doesn't work, put a video showing that it doesn't work and put the link to the automated tests (to prove that it brings issues). 
+- The PR is not valid. In this case, indicate that it doesn't work, put a video showing that it doesn't work and put the link to the automated tests if you ran them (to prove that it brings issues).
+If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
 In your comment, you'll need to select the Comment option before submitting the review. The Request changes option doesn't work properly.
     
 ![img.png](images/readme17.png)
@@ -146,7 +148,7 @@ compose install
 
 For the color code, we always use **violet** for the **Branch** and we'll use **green** for the **PR number**. 
 
-This is one of the few things that is different from a "normal" RP. We can now test the module PR and repeat the same process as in step 4.
+This is one of the few things that is different from a "normal" PR. We can now test the module PR and repeat the same process as in step 4.
 
 For your information ℹ️:
 
