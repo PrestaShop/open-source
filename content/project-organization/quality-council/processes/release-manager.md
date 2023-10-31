@@ -8,7 +8,7 @@ title: How to Manage a release
 
 When a new release is made by the developers, a Test Plan and a Release Plan must be created on the QA side. 
 
-The purpose of this page is to explain how to create these different tickets before carrying out a release. 
+Although these tickets are currently created on an internal company Jira, the purpose of this documentation is to explain what information is needed to prepare the release, and how to obtain it, before carrying out a release.
 
 ## 1. Know the release
 
