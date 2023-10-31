@@ -12,7 +12,7 @@ The purpose of this page is to explain how to create these different tickets bef
 
 ## 1. Know the release
 
-Before even starting to create a ticket in Jira, you need to find out about the release you're going to test. 
+The first thing to do is to find out about the release you're going to test. 
 
 To do this, simply : 
 
@@ -32,7 +32,7 @@ To do this, simply :
 
 ![Closed](images/release_manager_img_4.png)
 
-You now know all the PRs in your release. It's highly recommended that you check them all to find out what these PRs might affect. 
+You now have the list of all the PRs merged in your release. It's highly recommended that you check them all to find out what these PRs might affect. 
 
 
 
@@ -56,7 +56,7 @@ Again, we'll do this in a few steps:
 ![Tests2](images/release_manager_img_21.png)
 
 
-If you've followed all these steps, you should now have your list for Test Plan and Test Execution, which you can share with your team members and developers. 
+If you've followed all these steps, you should now have your list of test scenarios which should be tested for this release, which you can share with your team members and developers. 
 
 All that's left for you to do now is carry out the various tests and, at the end of the day, share with the team, made up of PMs and Developers, if we've encountered any issues during our work.
 
