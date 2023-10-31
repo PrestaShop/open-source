@@ -18,14 +18,16 @@ To begin with, we have the **Branch**, which will be useful for preparing our sh
 To do this, go to your terminal and execute the commands below: 
 
 
-ℹ️ For your information, we recommend that you put it in the *Computer/var/www/html* folder.
+ℹ️ For your information, we recommend that you put it in the *Computer/var/www/html* folder (this recommendation only applies to Linux users).
 
 ![img.png](images/readme8.png)
 
 
 We can see that in **violet** we've put the "**Branch "** we're interested in and in **brown** the name of our file, which can be modified as we wish. 
 
-Still with this **Branch**, I advise you to launch the automated Tests. To do this, I suggest you look at the end of this chapter dedicated to it.
+Still with this **Branch**, We advise you to launch the automated Tests.
+
+ℹ️ To start the automated tests, you can go to https://github.com/PrestaShop/ga.tests.ui.pr, on the readme.md file, you will have all the information you need to run the automated tests
 
 
 ### 2. Replicating the issue
@@ -43,7 +45,8 @@ Once on the issue, all you have to do is scroll down to find the "Steps to repro
 If the issue has been validated by our testers, (⚠️ any PR that mentions an issue must have this issue validated by the QA, otherwise the PR will not be taken into account) the steps to reproduce must have been reviewed by them and are therefore easily reproducible. 
 
 ℹ️ If the issue has been validated by a Developer, the PR in question should be reviewed and tested by a Dev, unless otherwise specified. 
-ℹ️ If you have installed your shop in *Computer/var/www/html,* you will be able to use your shop from a web browser and put the link : *localhost/PR_81x*
+
+ℹ️ If you have installed your shop in *Computer/var/www/html,* you will be able to use your shop from a web browser and put the link : *localhost/PR_81x* (this recommendation only applies to Linux users).
 
 ### 3 Installing the PR
 
@@ -53,6 +56,11 @@ Once we've reproduced the issue, we now need to check that the PR actually fixes
 
 ![img.png](images/readme10.png)
 
+
+ℹ️ prc here is an alias that we set up earlier like this :
+```
+prc = "!f() { git checkout $3 && git branch -D pr-$2; git fetch $1 pull/$2/head:pr-$2 && git checkout pr-$2 && git reset --hard && git clean -fd && git rebase $1/$3 && composer install;  }; f" 
+```
 
 For the color code, we always use **violet** for the **Branch** and this time we'll use **green** for the **PR number**. 
 
@@ -91,14 +99,14 @@ No computer skills? But you still need to check that it's not overflowing? There
 - From which **file** the modification was made. You can see on the screen the name of the **file** framed in **Orange**. By seeing the names, I can tell that it will be on the front by the name "FrontController".
 - Thanks to the **comments**. These are framed in **blue**, meaning that there won't necessarily be a **comment** in each PR. You just need to read them to find out what the changes are and see what incidents they might create.
 
-Following this search and the various checks, you should now have the results of the automated tests. If there are any fails, you can re-run the tests as indicated in the automated test tips. 
+Following this search and the various checks, you should now have the results of the automated tests. If there are any fails, you can re-run the failed tests.
 If you still have so many failures on the automated tests, you can test them manually on your shop. 
 
 
 ### 5. Responding to contributors
 
 
-You've just finished testing the PR, and you're in two situations: 
+Once the PR test has been completed, there are two possible situations:
 
 
 - The PR is valid, it doesn't create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it's the desired behavior but it's not) and to put the link to the automated tests if you ran them.
@@ -108,11 +116,11 @@ In your comment, you'll need to select the Approve option before submitting the 
     
 - The PR is not valid. In this case, indicate that it doesn't work, put a video showing that it doesn't work and put the link to the automated tests if you ran them (to prove that it brings issues).
 If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
-In your comment, you'll need to select the Comment option before submitting the review. The Request changes option doesn't work properly.
+In your comment, you'll need to select the Comment option before submitting the review. The Request changes option will force the same QA to respond to the same PR, whereas it would be preferable for someone else to test it once the changes have been made.
     
 ![img.png](images/readme17.png)
 
-As you can see, in both cases, you'll have to provide a video and a link to the car tests to show your good faith.
+As you can see, in both cases, you'll have to provide a video and a link to the automated tests to show your good faith.
 
 ℹ️ Yes, even when the PR is valid, it's better to offer a video. This will allow future QAs to see how we're supposed to behave with the PR. Very useful when we're doing test plans / release plans or when we have to go back on a PR. 
 
@@ -136,7 +144,7 @@ So we're going to run a special command in the terminal linked to our shop folde
 
 ℹ️ If your module includes a .json package, you need to add this command line for your module to function correctly
 
-jsx
+```jsx
 npm install && npm run build
 ```
 
