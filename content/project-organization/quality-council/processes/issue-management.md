@@ -12,7 +12,7 @@ This document details the processes in place for the position of "Issues Manager
 
 Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
 
-- **Is the issue valid?** The issue must be either a bug report or a request for feature. We only cover the PrestaShop project (Core + native modules).
+- **Is the issue valid?** The issue must be a bug report. We only cover the PrestaShop project (Core + native modules). Request for feature should be converted in GitHub Discussions.
 - **Has all the needed information been provided?** The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.
 - **Can it be reproduced?** An issue can't be fixed if we can't reproduce it.
 
@@ -32,7 +32,7 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
     - **`Bug`** – a defect in the software
     - **`Deprecated - Feature`** – a new feature, a change in an existing functionality (deprecated since April 2023)*
     - **`Task`** – an issue to track an action that’s not a fix or improve the software like to release a module or network infrastructure changement. It’s a task mainly to be done by the maintainer dev.
-    - **`Epic`** – a epic is a group of issue that are going to
+    - **`Epic`** – an Epic is a group of issue that are going to
 2. **Status**
     - **`NMI`** – "Need More Info" - the issue is waiting for its author to provide more details about their request
     - **`Needs specs`** – the issue is waiting for specification, the development should not start until it's ready.
@@ -40,7 +40,7 @@ GitHub has only two states for issues: open and closed. We use labels to keep tr
     - **`WIP`** – a dev has claimed the issue and is working on it
     - **`Deprecated - TBR`** – “To Be Reproduced” (deprecated since August 2023)*
 3. **Resolution**
-    - **`Fixed`** – the issue been resolved
+    - **`Fixed`** – the issue has been resolved
     - **`Rejected`** – the issue has been analyzed and it was decided no to do it (for whatever reason)
     - **`Invalid`** – the issue is incomplete, cannot be reproduced, or its author is unresponsive
         
@@ -212,7 +212,7 @@ Now we have to go back up the chain to find the source of the problem. To do th
 
 If the issue is reproduced: the bug follows the normal course: go to the next step.
 
-If the issue is not reproduced: **It’s a regression!** Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762...) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on #qa-core channel (PS Slack) and #dev-core (Public Slack). The Project must then be labeled by selecting the **label corresponding to the version in which the regression was detected.**
+If the issue is not reproduced: **It’s a regression!** Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762...) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on #dev-core (Public Slack). The Project must then be labeled by selecting the **label corresponding to the version in which the regression was detected.**
 
 {{% notice note %}}
 The regression of the last minor or major stable version must be placed in the [patch backlog](https://github.com/PrestaShop/PrestaShop/projects/20) kanban, in the first column.
@@ -244,11 +244,11 @@ A list of labels and their use is [available here](https://docs.google.com/spre
 When the issue is a **bug that was reproduced** (meaning with the `Verified` label), it MUST in most cases be connected to an Epic if it already exists.
 {{% /notice %}}
 
-To do this, perform a search in the [Bug classification board](https://github.com/PrestaShop/PrestaShop/projects/11) where all EPIC are listed. If there is a related EPIC, add the issue to the EPIC (by editing the description) and ping the product team.
+To do this, perform a search in the [Bug classification board](https://github.com/PrestaShop/PrestaShop/projects/11) where all Epic are listed. If there is a related EPIC, add the issue to the Epic (by editing the description) and ping the product team.
 
-If no Epic clearly corresponds to the issue (or in case of doubt), just add the bug issue to the 1st column of the kanban called "waiting for classification". The product team will regularly review the issues in this kanban and create new EPICs when needed.
+If no Epic clearly corresponds to the issue (or in case of doubt), just add the bug issue to the 1st column of the kanban called "waiting for classification". The product team will regularly review the issues in this kanban and create new Epics when needed.
 
-Note that the product team must be able to understand the bug to be able to classify it in an EPIC. This means that if the issue is not correctly described nor labelled, or if this is a very tech issue, it MUST NOT be added to the kanban.
+Note that the product team must be able to understand the bug to be able to classify it in an Epic. This means that if the issue is not correctly described nor labelled, or if this is a very tech issue, it MUST NOT be added to the kanban.
 
 ### Rewriting the issue
 
@@ -260,7 +260,7 @@ If the issue is complete and unique, it's time to validate it! For that, after h
 
 ## Messages templates
 
-### Issue not in english
+### Issue not in English
 
 ```
 Hello,
@@ -287,7 +287,7 @@ Thank you
 ```
 Hello,
 
-Could you please provide us with more info ?
+Could you please provide us with more info?
 We need more details to understand how we can reproduce your issue:
 - host
 - server setup and configuration
@@ -362,7 +362,7 @@ You can personalize the message according to your needs, for example:
 For active contributors, it’s not necessary to add this block:
 
 ```
-If this one is important to you [...] , the better PrestaShop becomes for everyone.
+If this one is important to you [...], the better PrestaShop becomes for everyone.
 ```
 
 Instead, you can add this:
@@ -443,10 +443,10 @@ Thanks in advance!
 ## Miscellaneous notes (to be read!)
 
 1. The "NMI" (Need More Info) tag is used at the beginning of the life of the issue, when there are still questions about the issue (quality, completeness, etc). 
-2. "Waiting for Author" is used for conversations with the author and for NMI issues when we answers. The issue-bot will delete the label when the author answers (to help us filtering the issues that needs answers, check the [filter](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22)).
-3. In case of regression discovery, it is essential to share the regressions on #qa-core (PS Slack) and #dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 1.7.8.5, we put it in the project 1.7.8.5 and in the project [Maxi Kanba](https://github.com/orgs/PrestaShop/projects/7)n, then the PM will prioritize it).
+2. "Waiting for Author" is used for conversations with the author and for NMI issues when we answers. The issue-bot will delete the label when the author answer (to help us filtering the issues that needs answers, check the [filter](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22)).
+3. In case of regression discovery, it is essential to share the regressions on #dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 1.7.8.5, we put it in the project 1.7.8.5 and in the project [Maxi Kanban](https://github.com/orgs/PrestaShop/projects/7), then the PM will prioritize it).
 4. Don't hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label ("Waiting for PM", "Waiting for Dev", etc).
     - If you ping someone, ask a direct question! Don't waste their time by making them read the whole thread and guess why did you ping them.
-    - If the issue is too technical to reproduce, ping the Sheriff on Slack (DM) while adding the “TBR” and “Waiting for Dev” labels. ([Sheriff's Calendar](https://www.notion.so/Open-Source-Sheriff-deprecated-be69f240a64e46f892ae75d233cc00b6?pvs=21))
+    - If the issue is too technical to reproduce, add the “TBR” and “Waiting for Dev” labels. You should also ping @PrestaShop/committers on the issue.
 
-5. If you don’t know if the issue `Major` or `Minor`, please post it in [#qa-core](https://app.slack.com/client/T029HS3DQ/C89MEQ2CB) and ping PM (@core-pm) and [QA lead](https://www.notion.so/Robin-Fischer-PS-3a6751548f414904beaca65af7adfdb7?pvs=21), so they can settle the severity.
+5. If you don’t know if the issue `Major` or `Minor`, please post it in [#quality-assurance](https://app.slack.com/client/TTJ6M3GPL/C05M16TEEGG) and ping QA lead (@Robin Fischer), so they can settle the severity.
