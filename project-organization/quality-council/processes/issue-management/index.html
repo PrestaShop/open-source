@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 <title>How to manage Issues | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content="How to manage Issues This document details the processes in place for the position of &ldquo;Issues Manager&rdquo;, a rotating position within the QA community members.
-The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
- Is the issue valid? The issue must be either a bug report or a feature request."/>
+The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+ Is the issue valid? The issue must be a bug report."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/" itemprop="url" />
 
@@ -29,16 +29,16 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="How to manage Issues"/>
 <meta name="twitter:description" content="How to manage Issues This document details the processes in place for the position of &ldquo;Issues Manager&rdquo;, a rotating position within the QA community members.
-The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
- Is the issue valid? The issue must be either a bug report or a feature request."/>
+The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+ Is the issue valid? The issue must be a bug report."/>
 <meta property="og:title" content="How to manage Issues" />
 <meta property="og:description" content="How to manage Issues This document details the processes in place for the position of &ldquo;Issues Manager&rdquo;, a rotating position within the QA community members.
-The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
- Is the issue valid? The issue must be either a bug report or a feature request." />
+The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+ Is the issue valid? The issue must be a bug report." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/" /><meta property="article:section" content="project-organization" />
 
-<meta property="article:modified_time" content="2023-07-04T09:50:25+02:00" />
+<meta property="article:modified_time" content="2023-11-03T15:23:40+01:00" />
 
 
 
@@ -298,60 +298,53 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
         <li><a href="#the-issue-manager-job">The Issue Manager job</a></li>
         <li><a href="#issue-state--labels">Issue state &amp; labels</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#main-labels">Main Labels</a></li>
-                <li><a href="#ad-hoc-labels">Ad-hoc labels</a></li>
-                <li><a href="#flow-overview">Flow overview</a></li>
-              </ul>
-            </li>
+            <li><a href="#main-labels">Main Labels</a></li>
+            <li><a href="#ad-hoc-labels">Ad-hoc labels</a></li>
+            <li><a href="#flow-overview">Flow overview</a></li>
           </ul>
         </li>
         <li><a href="#your-routine">Your routine</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#new-issues">New issues</a></li>
-                <li><a href="#issues-with-the-nmi-label">Issues with the NMI label</a></li>
-                <li><a href="#issues-to-be-closed">Issues to be closed</a></li>
-              </ul>
-            </li>
+            <li><a href="#new-issues">New issues</a></li>
+            <li><a href="#issues-with-the-nmi-label">Issues with the NMI label</a></li>
+            <li><a href="#issues-to-be-closed">Issues to be closed</a></li>
+            <li><a href="#end-of-the-day">End of the day</a></li>
           </ul>
         </li>
         <li><a href="#handling-issues">Handling issues</a>
           <ul>
-            <li><a href="#first-and-foremost">First and foremost</a>
+            <li><a href="#first-and-foremost">First and foremost</a></li>
+            <li><a href="#issue-language">Issue language</a></li>
+            <li><a href="#issue-content">Issue content</a></li>
+            <li><a href="#duplicated-issues">Duplicated issues</a></li>
+            <li><a href="#reproducing-the-issue">Reproducing the issue</a>
               <ul>
-                <li><a href="#issue-language">Issue language</a></li>
-                <li><a href="#issue-content">Issue content</a></li>
-                <li><a href="#duplicated-issues">Duplicated issues</a></li>
-                <li><a href="#reproducing-the-issue">Reproducing the issue</a></li>
-                <li><a href="#labelling">Labelling</a></li>
-                <li><a href="#connecting-an-issue-to-an-epic">Connecting an issue to an EPIC</a></li>
-                <li><a href="#rewriting-the-issue">Rewriting the issue</a></li>
-                <li><a href="#validating-the-issue">Validating the issue</a></li>
+                <li><a href="#if-the-issue-cannot-be-reproduced">If the <strong>issue cannot be reproduced</strong></a></li>
+                <li><a href="#if-the-issue-can-be-reproduced">If the <strong>issue CAN be reproduced</strong></a></li>
+                <li><a href="#the-issue-is-not-reproducedin-thenext-stableprestashopversion"><strong>The issue is not reproduced in the next stable PrestaShop version</strong></a></li>
+                <li><a href="#the-issue-is-reproducedin-thenext-stableprestashopversion"><strong>The issue is reproduced in the next stable PrestaShop version</strong></a></li>
               </ul>
             </li>
+            <li><a href="#labelling">Labelling</a></li>
+            <li><a href="#connecting-an-issue-to-an-epic">Connecting an issue to an EPIC</a></li>
+            <li><a href="#rewriting-the-issue">Rewriting the issue</a></li>
+            <li><a href="#validating-the-issue">Validating the issue</a></li>
           </ul>
         </li>
         <li><a href="#messages-templates">Messages templates</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#issue-not-in-english">Issue not in english</a></li>
-                <li><a href="#issue-for-16">Issue for 1.6</a></li>
-                <li><a href="#incomplete-issue">Incomplete issue</a></li>
-                <li><a href="#non-reproducible-issue">Non-reproducible issue</a></li>
-                <li><a href="#duplicate-issue">Duplicate issue</a></li>
-                <li><a href="#issue-unanswered">Issue unanswered</a></li>
-                <li><a href="#issue-validated">Issue validated</a></li>
-                <li><a href="#issue-not-completed">Issue not completed</a></li>
-                <li><a href="#issue-is-a-functional-feature-request">Issue is a functional feature request</a></li>
-                <li><a href="#issue-is-a-support-request">Issue is a support request</a></li>
-                <li><a href="#issue-is-too-technical-to-reproduce">Issue is too technical to reproduce</a></li>
-                <li><a href="#issue-about-an-archived-module">Issue about an archived module</a></li>
-              </ul>
-            </li>
+            <li><a href="#issue-not-in-english">Issue not in English</a></li>
+            <li><a href="#issue-for-16">Issue for 1.6</a></li>
+            <li><a href="#incomplete-issue">Incomplete issue</a></li>
+            <li><a href="#non-reproducible-issue">Non-reproducible issue</a></li>
+            <li><a href="#duplicate-issue">Duplicate issue</a></li>
+            <li><a href="#issue-unanswered">Issue unanswered</a></li>
+            <li><a href="#issue-validated">Issue validated</a></li>
+            <li><a href="#issue-not-completed">Issue not completed</a></li>
+            <li><a href="#issue-is-a-functional-feature-request">Issue is a functional feature request</a></li>
+            <li><a href="#issue-is-a-support-request">Issue is a support request</a></li>
+            <li><a href="#issue-is-too-technical-to-reproduce">Issue is too technical to reproduce</a></li>
+            <li><a href="#issue-about-an-archived-module">Issue about an archived module</a></li>
           </ul>
         </li>
         <li><a href="#miscellaneous-notes-to-be-read">Miscellaneous notes (to be read!)</a></li>
@@ -367,52 +360,49 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
         <div class="content"><h1 id="how-to-manage-issues">How to manage Issues</h1>
 <p>This document details the processes in place for the position of &ldquo;Issues Manager&rdquo;, a rotating position within the QA community members.</p>
 <h2 id="the-issue-manager-job">The Issue Manager job</h2>
-<p>Your job is to <strong>qualify issues</strong> submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:</p>
+<p>Your job is to <strong>qualify issues</strong> submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:</p>
 <ul>
-<li><strong>Is the issue valid?</strong> The issue must be either a bug report or a feature request. We only cover the PrestaShop project (Core + native modules).</li>
-<li><strong>Has all the needed information been provided?</strong> The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.</li>
-<li><strong>Can it be reproduced?</strong> An issue can&rsquo;t be fixed if it can&rsquo;t be reproduced.</li>
+<li><strong>Is the issue valid?</strong> The issue must be a bug report. We only cover the PrestaShop project (Core + native modules). Request for feature should be converted in GitHub Discussions.</li>
+<li><strong>Has all the needed information been provided?</strong> The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.</li>
+<li><strong>Can it be reproduced?</strong> An issue can&rsquo;t be fixed if we can&rsquo;t reproduce it.</li>
 </ul>
 <p>Here are some tips:</p>
 <ul>
-<li><strong>Don&rsquo;t provide free support.</strong> Your job isn&rsquo;t to help the reporter fix their problem, but to determine if the problem is caused by a defect in the software (or in documentation).</li>
-<li><strong>Be pragmatic about your efforts.</strong> It&rsquo;s the reporter&rsquo;s responsibility to provide the information needed to reproduce the problem in an understandable way. Don&rsquo;t waste your energy doing guesswork or waiting for a response.</li>
-<li><strong>Don&rsquo;t be a robot either.</strong> Don&rsquo;t take these guidelines to the letter. If the reporter makes an effort, try to be flexible.</li>
+<li><strong>Don&rsquo;t provide free support.</strong> Your job isn&rsquo;t to help the reporter fix their problem, but to determine if the problem is caused by a defect in the software (or in documentation).</li>
+<li><strong>Be pragmatic about your efforts.</strong> It&rsquo;s the reporter&rsquo;s responsibility to provide the information needed to reproduce the problem in an understandable way. Don&rsquo;t waste your energy doing guesswork or waiting for a response.</li>
+<li><strong>Don&rsquo;t be a robot either.</strong> Don&rsquo;t take these guidelines to the letter. If the reporter makes an effort, try to be flexible.</li>
 </ul>
 <h2 id="issue-state--labels">Issue state &amp; labels</h2>
 <p>GitHub has only two states for issues: open and closed. We use labels to keep track of issue type, intermediate state, severity and resolution.</p>
-<h4 id="main-labels">Main Labels</h4>
+<h3 id="main-labels">Main Labels</h3>
 <ol>
-<li>
-<p><strong>Type</strong></p>
+<li><strong>Type</strong>
 <ul>
 <li><strong><code>Bug</code></strong> – a defect in the software</li>
-<li><strong><code>Feature</code></strong> – a request for a new feature, a change in an existing functionality</li>
-<li><strong><code>Task</code></strong> – an issue to track an action that’s not a fix or improve the software like to release a module or network infrastructure change. It’s a task mainly to be done by a maintainer dev.</li>
-<li><strong><code>Epic</code></strong> - an epic is a group of issues around a bigger topic.</li>
+<li><strong><code>Deprecated - Feature</code></strong> – a new feature, a change in an existing functionality (deprecated since April 2023)*</li>
+<li><strong><code>Task</code></strong> – an issue to track an action that’s not a fix or improve the software like to release a module or network infrastructure changement. It’s a task mainly to be done by the maintainer dev.</li>
+<li><strong><code>Epic</code></strong> – an Epic is a group of issue that are going to</li>
 </ul>
 </li>
-<li>
-<p><strong>Status</strong></p>
+<li><strong>Status</strong>
 <ul>
-<li><strong><code>NMI</code></strong> – &ldquo;Need More Info&rdquo; - the issue is waiting for its author to provide more details about their request.</li>
-<li><strong><code>Needs specs</code></strong>– the issue is waiting for specification, the development should not start until it&rsquo;s ready.</li>
-<li><strong><code>Ready</code></strong> – the issue has been specified and is ready to be picked up by a dev.</li>
+<li><strong><code>NMI</code></strong> – &ldquo;Need More Info&rdquo; - the issue is waiting for its author to provide more details about their request</li>
+<li><strong><code>Needs specs</code></strong> – the issue is waiting for specification, the development should not start until it&rsquo;s ready.</li>
+<li><strong><code>Ready</code></strong> – the issue has been specified and is ready to be picked up by a dev</li>
 <li><strong><code>WIP</code></strong> – a dev has claimed the issue and is working on it</li>
-<li><strong><code>TBR</code></strong> – “To Be Reproduced” -</li>
+<li><strong><code>Deprecated - TBR</code></strong> – “To Be Reproduced” (deprecated since August 2023)*</li>
 </ul>
 </li>
-<li>
-<p><strong>Resolution</strong></p>
+<li><strong>Resolution</strong>
 <ul>
 <li>
-<p><strong><code>Fixed</code></strong> – the issue been resolved.</p>
+<p><strong><code>Fixed</code></strong> – the issue has been resolved</p>
 </li>
 <li>
-<p><strong><code>Rejected</code></strong> – the issue has been analyzed, and it was decided no to do it (for whatever reason).</p>
+<p><strong><code>Rejected</code></strong> – the issue has been analyzed and it was decided no to do it (for whatever reason)</p>
 </li>
 <li>
-<p><strong><code>Invalid</code></strong> – the issue is incomplete, cannot be reproduced, or its author is unresponsive.</p>
+<p><strong><code>Invalid</code></strong> – the issue is incomplete, cannot be reproduced, or its author is unresponsive</p>
 <p>In addition to this label, additional labels can be added for informative purposes:</p>
 <ul>
 <li><strong><code>Can't reproduce</code></strong> – the reported bug cannot be reproduced</li>
@@ -421,8 +411,7 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
 </li>
 </ul>
 </li>
-<li>
-<p><strong>Severity</strong> <em>(only for bugs, more details <a href="/get-involved/report-issues/how-issues-are-sorted/">here</a>)</em></p>
+<li><strong>Severity</strong> <em>(only for bugs), example <a href="../../../../get-involved/report-issues/how-issues-are-sorted/">here</a></em>
 <ul>
 <li><strong><code>Trivial</code></strong> – cosmetic, low impact bugs</li>
 <li><strong><code>Minor</code></strong> – low severity bugs</li>
@@ -431,17 +420,16 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
 </ul>
 </li>
 </ol>
-<h4 id="ad-hoc-labels">Ad-hoc labels</h4>
+<h3 id="ad-hoc-labels">Ad-hoc labels</h3>
 <ol>
 <li><strong><code>Verified</code></strong> – the bug report has been successfully reproduced</li>
-<li><strong><code>Regression</code></strong> – the bug breaks a feature that was working well before</li>
+<li><strong><code>Deprecated - Regression</code></strong> – the bug breaks a feature that was working well before (deprecated since August 2023)*</li>
 <li><strong><code>Developer Feature</code></strong> – technical feature, targeting developers</li>
-<li>[Reproduced in] <strong><code>&lt;version&gt;</code></strong> – the earliest stable version where the bug has been reproduced or the dev branch if it’s a regression</li>
-<li>If a known solution exists for a bug that hasn&rsquo;t been fixed/released yet:
+<li><strong><code>&lt;branch&gt;</code></strong> – where the bug has been reproduced on current branch like <code>8.1.x</code> or <code>develop</code> branch</li>
+<li>Solution available – known solution for a bug that hasn&rsquo;t been fixed/released yet
 <ul>
 <li><strong><code>PR available</code></strong> – a PR fixing the bug is available</li>
 <li><strong><code>Workaround available</code></strong> – a workaround for the bug has been shared</li>
-<li><strong><code>Addons module available</code></strong> – a module that solves this bug or that provides this feature is available in the marketplace</li>
 </ul>
 </li>
 <li><strong><code>&lt;Category&gt;</code></strong> - <strong><code>BO</code></strong> (Back-office), <strong><code>FO</code></strong> (Front-office) or  <strong><code>WS</code></strong> (Webservices) &hellip; - Which part of the software the feature bug/feature is applied</li>
@@ -449,56 +437,70 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
 <li><strong><code>Module</code></strong> and <strong><code>&lt;Module name&gt;</code></strong> – Name of the native module the bug / feature belongs to</li>
 </ol>
 
-<div class="notices warning" >Don’t use the <strong><code>develop</code></strong>  label, try to specify the branch like <strong><code>1.7.8.x</code></strong> or <strong><code>8.x</code></strong></div>
+<div class="notices warning" >Don’t use the <strong><code>develop</code></strong>  label, try to specify the branch like <strong><code>8.1.x</code></strong> or <strong><code>9.0.x</code></strong></div>
 
-<h4 id="flow-overview">Flow overview</h4>
-<figure><img src="../images/Issue_state_flow.jpg"
-         alt="Issue state flow"/>
-</figure>
-
+<h3 id="flow-overview">Flow overview</h3>
+<p>Source: <a href="https://miro.com/app/board/o9J_kwzVdW0=/">https://miro.com/app/board/o9J_kwzVdW0=/</a></p>
 <h2 id="your-routine">Your routine</h2>
-<h4 id="new-issues">New issues</h4>
-<p>The first thing to do is to deal with the new issues. This can be done by <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3ANew">filtering out New issues</a>. Each of these issues must be managed according to the issue processing protocol.</p>
-<hr>
-<blockquote>
-<p>This step should be repeated regularly during the day, to deal with issues as they arise.</p>
-</blockquote>
-<h4 id="issues-with-the-nmi-label">Issues with the NMI label</h4>
-<p>The second step is to deal with issues labelled <code>NMI</code> (Need More Info) without <code>Waiting for author</code> label, which could have been updated by the author. To do this, you have to display the <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+sort%3Aupdated-asc">NMI labeled issues</a> without <code>Waiting for author</code> and sort them by decreasing date of update. <code>NMI</code> issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author has replied and provided the requested details, the issue will proceed according to the issue handling protocol.</p>
+<h3 id="new-issues">New issues</h3>
+<p>The first thing to do is to deal with the new issues. This can be done by <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3ANew">filtering out New issues</a>. Each of these issues must be managed according to the issue processing protocol.</p>
 
-<div class="notices tip" >Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!</div>
+<div class="notices warning" >This step should be repeated regularly during the day, to deal with issues as they arise.</div>
 
-<h4 id="issues-to-be-closed">Issues to be closed</h4>
-<p>Finally, the third step consists in tracing the issues that have not been updated by the author for more than 20 days, and closing them. To do this, you have to <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+label%3A%22Waiting+for+author%22+sort%3Aupdated-asc">filter by increasing date</a> and on the <code>NMI</code> + <code>Waiting for author</code> filter. Steps :</p>
+<h3 id="issues-with-the-nmi-label">Issues with the NMI label</h3>
+<p>The second step is to deal with issues labelled <code>NMI</code> (Need More Info) without <code>Waiting for author</code> label, which could have been updated by the author or any member of the community. To do this, you have to display the <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+-label%3A%22Waiting+for+dev%22+sort%3Aupdated-asc+">NMI labeled issues</a> without <code>Waiting for author</code> and sort them by decreasing date of update. NMI issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author or any member of the community has replied and provided the requested details, the issue will proceed according to the issue handling protocol.</p>
+
+<div class="notices warning" >Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!</div>
+
+<h3 id="issues-to-be-closed">Issues to be closed</h3>
+<p>Finally, the third step consists in tracing the issues that have not been updated for more than 20 days, and closing them. To do this, you have to <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+label%3A%22Waiting+for+author%22+sort%3Aupdated-asc">filter by increasing date</a> and on the <code>NMI</code> + <code>Waiting for author</code>filter. Steps :</p>
 <ol>
 <li>Comment with the &ldquo;Issue without answer&rdquo; model</li>
-<li>Remove the <code>NMI</code> and <code>Waiting for author</code> labels</li>
+<li>Remove the <code>NMI</code> label</li>
 <li>Add the label <code>Invalid</code></li>
 <li>Close the issue</li>
 </ol>
-<h2 id="handling-issues">Handling issues</h2>
+<h3 id="end-of-the-day">End of the day</h3>
+<p>Take the time to list the issues reproduced and taken into account during the day.
+Send an email to <a href="mailto:coreteam@prestashop.com">coreteam@prestashop.com</a>, <a href="mailto:support-team@prestashop.com">support-team@prestashop.com</a>, <a href="mailto:qa-core@prestashop.com">qa-core@prestashop.com</a> AND <a href="mailto:coreproduct@prestashop.com">coreproduct@prestashop.com</a> with a brief report, with a list of validated issues (aka taken into account) and duplicated issues and share the same content on Public Slack with <strong><a href="https://app.slack.com/client/TTJ6M3GPL/G01D794JQTE">project-members</a></strong>. </p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
+
+Here is the report of the day xx/xx/2020
+
+#Verified
+- [#18338](https://github.com/PrestaShop/PrestaShop/issues/18338): BO - Module permissions are not updated for restriction groupIssues fermées car doublons
+
+#NMI
+- [#28275](https://github.com/PrestaShop/PrestaShop/issues/28275): Context CurrentLocale not initialised when running a module update
+
+#Closed
+- [#18345](https://github.com/PrestaShop/PrestaShop/issues/18345): Duplicate of [#12556](https://github.com/PrestaShop/PrestaShop/issues/12556) =&gt; Installation Error: the % symbol is doubled on the parameters.php file generation
+
+Kind regards, xx
+</code></pre></div><h2 id="handling-issues">Handling issues</h2>
 <p>The handling of issues follows a detailed process. Here are the different steps, to be followed in order</p>
 <h3 id="first-and-foremost">First and foremost</h3>
 <p><strong>Check that the report is really an issue!</strong></p>
 <ul>
-<li><strong>If it&rsquo;s a feature request</strong>, redirect to the <a href="https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&amp;labels=Feature%2CNew&amp;template=2_feature_request.yml">appropriate template</a>.</li>
-<li><strong>If it&rsquo;s a question</strong> you&rsquo;re not obliged to answer it. Remember that the issues section is not a Q&amp;A forum and that your job isn&rsquo;t to provide free support. Redirect the reporter to the support page using the &ldquo;Issue is a support request&rdquo; response.</li>
-<li><strong>If it&rsquo;s something that you think should be described in documentation</strong>, consider pinging the developers or moving the issue to the <a href="https://github.com/PrestaShop/docs">docs project</a>.</li>
+<li><em>Deprecated - if it&rsquo;s a feature request, redirect to the <a href="https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&amp;labels=Feature%2CNew&amp;template=2_feature_request.yml">appropriate template</a>. (since April 2023)</em></li>
+<li><strong>If it&rsquo;s a question</strong> you&rsquo;re not obliged to answer it. Remember that the issues section is not a Q&amp;A forum and that your job isn&rsquo;t to provide free support. Redirect the reporter to a support plan using the &ldquo;Issue is a support request&rdquo; response.</li>
+<li><strong>If it&rsquo;s something that you think should be described in documentation</strong>, consider pinging the developers or moving the issue to the <a href="https://github.com/PrestaShop/docs">docs project</a>.</li>
 <li><strong>If it is a clearly incomprehensible request</strong>, close the issue by adding the <code>Invalid</code> label and answer using the &ldquo;Issue not completed&rdquo; response.</li>
 </ul>
-<h4 id="issue-language">Issue language</h4>
+<h3 id="issue-language">Issue language</h3>
 <p>Issues must be written in English. If that’s not the case:</p>
 <ol>
 <li>Answer using the &ldquo;Issue not in English&rdquo; template.</li>
-<li>Set status label to <code>NMI</code> (Need More Info) with <code>Waiting for author</code> label.</li>
+<li>Set status label to <code>NMI</code> (Need More Info) + <code>Waiting for author</code>.</li>
 </ol>
-<h4 id="issue-content">Issue content</h4>
-<p>The issue <code>Bug</code> must be complete. In particular, all mandatory fields in the <a href="https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&amp;labels=Bug%2CNew&amp;template=1_bug_report.yml">template</a> must be completed:</p>
+<h3 id="issue-content">Issue content</h3>
+<p>The issue (Bug) must be complete. In particular, all mandatory fields in the <a href="https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&amp;labels=Bug%2CNew&amp;template=1_bug_report.yml">template</a> must be completed:</p>
 <ul>
-<li><strong>Describe the bug and add screenshots:</strong> full details about the bug. This part represents the &ldquo;observed behavior&rdquo; following user manipulations.</li>
-<li><strong>Expected behavior:</strong> the behavior expected by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.</li>
-<li><strong>Steps to Reproduce:</strong> the steps to reproduce the problem. This is the most important part and must be completed in a comprehensive manner.</li>
-<li><strong>PrestaShop version(s) where the bug happened:</strong> all affected versions</li>
+<li><strong>Describe the bug and add screenshots:</strong> full details about the bug. This part represents the &ldquo;observed behavior&rdquo; following user manipulations.</li>
+<li><strong>Expected behavior:</strong> the &ldquo;behavior expected&rdquo; by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.</li>
+<li><strong>Steps to Reproduce:</strong> the steps to reproduce the problem. This is the most important part and must be completed in a comprehensive manner.</li>
+<li><strong>PrestaShop version(s) where the bug happened:</strong> all affected versions</li>
 <li><strong>PHP version(s) where the bug happened:</strong> PHP version</li>
 <li><strong>If your bug is related to a module, specify its name and its version:</strong> the module name and its version</li>
 </ul>
@@ -506,77 +508,82 @@ The Issue Manager job Your job is to qualify issues submitted to the GitHub proj
 <ol>
 <li>Reply using the &ldquo;Incomplete Issue&rdquo; template.</li>
 <li>Set status label to <code>NMI</code> (Need More Info) with <code>Waiting for author</code> label.</li>
+<li><strong>Don’t forget</strong> to add the necessary labels like : <strong>version</strong> (<code>1.7.8.x</code>, <code>8.1.x</code>, …), <strong>Categoy</strong> (<code>BO</code>, <code>FO</code>, …), <strong>Pages</strong> (<code>Products</code>, <code>Module</code>, <code>Order</code>, …), …</li>
 </ol>
-<p>If it is a suggestion for feature, all mandatory fields in the <a href="https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&amp;labels=Feature%2CNew&amp;template=2_feature_request.yml">template</a> must be completed:</p>
+<p>If it is a <code>Task</code>, add the necessary labels and place it in Project Kanban:</p>
 <ol>
-<li>If the feature is dev oriented, add the <code>Developer Feature</code> label.</li>
+<li>If the task is dev oriented, add the <code>Developer Feature</code> label.</li>
 <li>If the issue seems properly specified, set the status label to <code>Ready</code>. Otherwise, set it to <code>Needs specs</code>.</li>
-<li>Answer using the &ldquo;Issue is a functional feature request&rdquo; template.</li>
+<li><strong>Don’t forget</strong> to add these labels like : <strong>Categoy</strong> (<code>BO</code>, <code>FO</code>, …), <strong>Pages</strong> (<code>Products</code>, <code>Module</code>, <code>Order</code>, …), ….</li>
 </ol>
 
-<div class="notices tip" >Take some time to verify that the contributor&rsquo;s environment satisfies <a href="https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/">PrestaShop&rsquo;s system requirements</a>!</div>
+<div class="notices warning" >Take some time to verify that the contributor&rsquo;s environment satisfies <a href="https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/">PrestaShop&rsquo;s system requirements</a> for 1.7 or <a href="https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/">PrestaShop&rsquo;s system requirements</a> for 8.</div>
 
-<h4 id="duplicated-issues">Duplicated issues</h4>
-<p>It is important to avoid creating a duplicate bug. To do this, we&rsquo;ll search GitHub to make sure the issue hasn&rsquo;t already been created. <strong>This step is crucial.</strong> To do this, use labels to filter as many issues as possible in GitHub. Be careful, remember to look at the closed issues.</p>
+<h3 id="duplicated-issues">Duplicated issues</h3>
+<p>It is important to avoid creating a duplicate bug. To do this, we must search in GitHub to make sure the issue hasn&rsquo;t already been created. <strong>This step is critical.</strong> To do this, use labels to filter as many issues as possible in GitHub. Be careful, remember to look at the closed issues.</p>
 <p>If a duplicate is found:</p>
 <ol>
 <li>Answer using the &ldquo;Duplicate Issue&rdquo; template.</li>
 <li>Add the <code>Invalid</code> and <code>Duplicate</code> labels.</li>
 <li>Close the issue.</li>
 </ol>
-<h4 id="reproducing-the-issue">Reproducing the issue</h4>
-<p>We must be able to reproduce the bug in a controlled environment. You can record your attempt, use a screen recorder (like <a href="https://www.screencastify.com/">Screencastify</a>, a Chrome extension), download it and then upload it on GitHub, post it in a comment so that the OP can see the steps you used to reproduce their issue.</p>
-<h5 id="if-the-issue-cannot-be-reproduced">If the issue cannot be reproduced</h5>
-<p>We were not able to reproduce the issue the OP described.</p>
+<h3 id="reproducing-the-issue">Reproducing the issue</h3>
+<p>We must be able to reproduce the bug in a controlled environment. You can record your attempt, use a screen recorder (like <a href="https://www.screencastify.com/">Screencastify</a>, a Chrome extension), download it and then upload it on Github, post it in a comment so that the issue’s author can see the steps you used to reproduce their issue, either on the current branch or on develop branch, depending of what the author declared in his issue.</p>
+<h4 id="if-the-issue-cannot-be-reproduced">If the <strong>issue cannot be reproduced</strong></h4>
+<p>We were not able to reproduce the issue like the author described, even with all possible infos provided.</p>
 <ol>
-<li>Answer using the template &ldquo;Non-reproducible issue&rdquo;.</li>
-<li>Add the label <code>Invalid</code> .</li>
-<li>Close the issue.</li>
+<li>Answer using the template &ldquo;Non reproducible issue&rdquo;.</li>
+<li>Add the label <code>Waiting for author</code> .</li>
+<li>Wait 20 days, if there is no new information, you can close the issue with the message “unanswered issue”.</li>
 </ol>
-<h5 id="if-the-issue-can-be-reproduced">If the issue CAN be reproduced</h5>
-<p>Once we have reproduced the issue with all the details given by the OP, we need to check if the bug exists in the <strong>next stable PrestaShop version to be released</strong>.</p>
-<h5 id="the-issue-is-not-reproduced-in-the-next-stable-prestashop-version">The issue is not reproduced in the next stable PrestaShop version</h5>
-<p>That means the issue has since been corrected. So you have to find the PR that fixes the problem (it can be a migration PR, or a PR that fixes something else and fixes the problem by side effect!). We then answer the author to give him the information about the PR that fixes the problem, and tell him to update his version of PrestaShop. The issue is then closed. Add the label &ldquo;Fixed&rdquo; and don’t forget to add the milestone.</p>
-<h5 id="the-issue-is-reproduced-in-the-next-stable-prestashop-version">The issue is reproduced in the next stable PrestaShop version</h5>
+<h4 id="if-the-issue-can-be-reproduced">If the <strong>issue CAN be reproduced</strong></h4>
+<p>Once we have reproduced the issue with all the details given by the author, we need to check if the bug exists in the <strong>next stable PrestaShop version to be released</strong>.</p>
+<h4 id="the-issue-is-not-reproducedin-thenext-stableprestashopversion"><strong>The issue is not reproduced in the next stable PrestaShop version</strong></h4>
+<p>That means the issue has since been corrected. So you have to find the PR that fixes the problem (it can be a migration PR, or a PR that fixes something else and fixes the problem by side effect!). We then answer the author to give him the information about the PR that fixes the problem, and tell him to update his version of PrestaShop. The issue is then closed. Add the label &ldquo;Fixed&rdquo; and don’t forget to add the milestone.</p>
+<h4 id="the-issue-is-reproducedin-thenext-stableprestashopversion"><strong>The issue is reproduced in the next stable PrestaShop version</strong></h4>
 <p>Now we can say that the report is indeed a bug: we now add the <code>Verified</code> label.</p>
-<p>Now we have to go back up the chain to find the source of the problem. To do this, test the latest stable version of the previous minor release.</p>
+<p>Now we have to go back up the chain to find the source of the problem. To do this, test the latest stable version of the previous minor release.</p>
 <p>If the issue is reproduced: the bug follows the normal course: go to the next step.</p>
-<p>If the issue is not reproduced: <strong>It’s a regression!</strong> Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762&hellip;) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on <code>#qa-core</code> channel (Corp Slack) and <code>#dev-core</code> (Public Slack). The Project must then be labeled by selecting the <strong>label corresponding to the version in which the regression was detected.</strong></p>
+<p>If the issue is not reproduced: <strong>It’s a regression!</strong> Test all the latest patch versions of the current minor version (e.g. 1760, 1761, 1762&hellip;) to find out in which version the issue has been introduced. If motivated, look for the PR in question. Then the issue follows the normal course: go to the next step. In addition, it has to be posted on #dev-core (Public Slack). The Project must then be labeled by selecting the <strong>label corresponding to the version in which the regression was detected.</strong></p>
 
-<div class="notices note" ><p>Regressions for the <strong>last minor or major stable version</strong> must be placed in the Maxi Kanban, in the first column.</p>
-<p>Regression for the <strong>develop branch</strong> must be placed in the Kanban of the corresponding next minor or major version.</p>
-</div>
+<div class="notices note" >The regression of the last minor or major stable version must be placed in the <a href="https://github.com/PrestaShop/PrestaShop/projects/20">patch backlog</a> kanban, in the first column.</div>
 
-<h4 id="labelling">Labelling</h4>
-<p><strong>This step is crucial.</strong> Labelling consists on tagging the issue according to its different characteristics. This step is <strong>critical</strong> because it helps us find a bug when we’re looking for a duplicate. The different tags are:</p>
+
+<div class="notices note" >The regression of the develop branch must be placed in the Kanban of the corresponding next minor or major version.</div>
+
+<h3 id="labelling">Labelling</h3>
+<p><strong>This step is critical</strong> cause <strong>labelling</strong> consists on tagging the issue according to its different characteristics and it helps us find a bug when we’re looking for a <code>duplicate</code>. The different tags are:</p>
 <ul>
-<li>Type (bug or feature),</li>
-<li><a href="/get-involved/report-issues/how-issues-are-sorted/">Severity (major, minor, &hellip;)</a>,</li>
-<li>Regression or not,</li>
-<li>Verified (if we reproduce the issue)</li>
-<li>Category (FO/BO + affected page or concerned feature),</li>
+<li>Type (<code>Bug</code> or <code>Task</code>),</li>
+<li><a href="../../../../get-involved/report-issues/how-issues-are-sorted/">Severity (major, minor, &hellip;)</a></li>
+<li><em>Deprecated - Regression or not (since August 2023),</em></li>
+<li><code>Verified</code> (if we reproduce the issue)</li>
+<li>Category (<code>FO</code>/<code>BO</code>),</li>
+<li>Affected page or concerned feature (ex: <code>Order</code>, <code>Module</code>, …),</li>
 <li>Affected version(s),</li>
 <li>Status (NMI, Needs Specs, Ready&hellip;)</li>
 <li>&hellip; (non-exhaustive list)</li>
 </ul>
-<p>A list of labels and their use is <a href="https://github.com/PrestaShop/PrestaShop/labels">available here</a>.</p>
-<h4 id="connecting-an-issue-to-an-epic">Connecting an issue to an EPIC</h4>
-<p>When the issue is a <strong>bug that was reproduced</strong> (meaning with the <code>Verified</code> label), it MUST in most cases be connected to an <code>EPIC</code> if it already exists.</p>
-<p>To do this, perform a search using this filter <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3AEPIC">EPIC list</a> where all <code>EPIC</code> are listed. If there is a related <code>EPIC</code>, add the issue to the <code>EPIC</code> (by editing the description) and ping the product team.</p>
-<p>If no <code>EPIC</code> clearly corresponds to the issue (or in case of doubt), just add the bug issue to the 1st column of the <a href="https://github.com/PrestaShop/PrestaShop/projects/6">kanban</a> called &ldquo;PrestaShop Next Major&rdquo;. The product team will regularly review the issues in this kanban and create new <code>EPIC</code>s when needed.</p>
-<p>Note that the product team must be able to understand the bug to be able to classify it in an <code>EPIC</code>. This means that if the issue is not correctly described nor labelled, or if this is a very tech issue, it <strong>MUST NOT be added</strong> to the kanban.</p>
-<h4 id="rewriting-the-issue">Rewriting the issue</h4>
-<p>Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue! It may be necessary <strong>to rewrite the title if it is too generic</strong> (e.g. &ldquo;Help! BUG!&quot;) or if it does not accurately reflect the bug. Pay special attention to the <strong>reproduction steps</strong> (&ldquo;how to reproduce&rdquo;)!</p>
-<h4 id="validating-the-issue">Validating the issue</h4>
+<p>A list of labels and their use is <a href="https://docs.google.com/spreadsheets/d/118iqWIkW24Rwn6eY8_7FnPhAacGXwA2RdGPzR_LXvy4/edit#gid=0">available here</a>.</p>
+<h3 id="connecting-an-issue-to-an-epic">Connecting an issue to an EPIC</h3>
+
+<div class="notices warning" >When the issue is a <strong>bug that was reproduced</strong> (meaning with the <code>Verified</code> label), it MUST in most cases be connected to an Epic if it already exists.</div>
+
+<p>To do this, perform a search in the <a href="https://github.com/PrestaShop/PrestaShop/projects/11">Bug classification board</a> where all Epic are listed. If there is a related EPIC, add the issue to the Epic (by editing the description) and ping the product team.</p>
+<p>If no Epic clearly corresponds to the issue (or in case of doubt), just add the bug issue to the 1st column of the kanban called &ldquo;waiting for classification&rdquo;. The product team will regularly review the issues in this kanban and create new Epics when needed.</p>
+<p>Note that the product team must be able to understand the bug to be able to classify it in an Epic. This means that if the issue is not correctly described nor labelled, or if this is a very tech issue, it MUST NOT be added to the kanban.</p>
+<h3 id="rewriting-the-issue">Rewriting the issue</h3>
+<p>Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue! It may be necessary to rewrite the title if it is too generic (e.g. &ldquo;Help! BUG!&quot;) or if it does not accurately reflect the bug.Pay special attention to the <strong>reproduction steps</strong> (&ldquo;how to reproduce&rdquo;)!</p>
+<h3 id="validating-the-issue">Validating the issue</h3>
 <p>If the issue is complete and unique, it&rsquo;s time to validate it! For that, after having correctly labelled it, we use the &ldquo;Issue validated&rdquo; model. It is important to ping the team best able to answer the author&rsquo;s questions: the devs, the product, the support, the qa&hellip;</p>
 <h2 id="messages-templates">Messages templates</h2>
-<h4 id="issue-not-in-english">Issue not in english</h4>
+<h3 id="issue-not-in-english">Issue not in English</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 Please send your request in English. English is the norm on GitHub.
 
 Thank you
-</code></pre></div><h4 id="issue-for-16">Issue for 1.6</h4>
+</code></pre></div><h3 id="issue-for-16">Issue for 1.6</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 PrestaShop 1.6 has reached end of life and is no longer officially maintained ([see announcement](https://build.prestashop-project.org/news/2019/1.6.1.x-what-s-next/)).
@@ -584,7 +591,7 @@ PrestaShop 1.6 has reached end of life and is no longer officially maintained ([
 Maintenance for this version is now being performed exclusively by volunteers on a very limited scope. You can open an issue on its [dedicated repository](https://github.com/PrestaShop/PrestaShop-1.6/issues), but please keep in mind that only absolutely critical issues may be acknowledged.
 
 Thank you
-</code></pre></div><h4 id="incomplete-issue">Incomplete issue</h4>
+</code></pre></div><h3 id="incomplete-issue">Incomplete issue</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 Could you please provide us with more info?
@@ -602,37 +609,34 @@ We need more details to understand how we can reproduce your issue:
 You don&#39;t know how to get this information? Please read the following article: [How to create a bug report](https://build.prestashop-project.org/howtos/misc/how-to-create-bug-report/).
 
 Thank you
-</code></pre></div><h4 id="non-reproducible-issue">Non-reproducible issue</h4>
+</code></pre></div><h3 id="non-reproducible-issue">Non-reproducible issue</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
-Despite our efforts, we were not able to reproduce your issue with the provided information. It seems that your issue is not a PrestaShop core bug but most likely a server configuration or customization problem.
+Despite our efforts, we were not able to reproduce your issue with the provided information. Let&#39;s wait up to 20 days if there will be another contributor who encounter the same issue and can provide new informations to help us reproducing the issue.
 
-We will close this issue.
-
-Thank you
-</code></pre></div><h4 id="duplicate-issue">Duplicate issue</h4>
+Thank you!
+</code></pre></div><h3 id="duplicate-issue">Duplicate issue</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 We are aware of this issue, it is already in our debug backlog. This issue is a duplicate of #Issue_number.
-
 To be informed when it&#39;s fixed, please subscribe to the issue mentioned above.
 
 Thank you
 </code></pre></div><p><strong>In addition to the message above, add a second comment containing the following sentence:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Duplicate of #Issue_number
 </code></pre></div><p>This message is special and will trigger a GitHub tag to mark the issue as &ldquo;duplicate&rdquo; and link it to the original issue.</p>
-<h4 id="issue-unanswered">Issue unanswered</h4>
+<h3 id="issue-unanswered">Issue unanswered</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello [name],
 
 Since we had no news from you for more than 20 days, I&#39;ll close this ticket to avoid cluttering up the backlog. Please note that you can always create a new one if further information pops up.
 
 Thank you
-</code></pre></div><h4 id="issue-validated">Issue validated</h4>
+</code></pre></div><h3 id="issue-validated">Issue validated</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 I reproduce the issue with PrestaShop version x.x.x, I&#39;ll add this to the backlog so it can be fixed.
 
-Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project&#39;s own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you.
+Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project’s own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you. 
 
 If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
 
@@ -641,24 +645,20 @@ Thank you
 <p>For active contributors, it’s not necessary to add this block:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">If this one is important to you [...], the better PrestaShop becomes for everyone.
 </code></pre></div><p>Instead, you can add this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">We&#39;re waiting for your PR 🚀
-</code></pre></div><h6 id="regression">Regression</h6>
-<p>If it’s a regression, add this sentence:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">I didn&#39;t manage to reproduce the issue with PS x.x.x, I only reproduce it with PS x.x.x. So it&#39;s a regression!
-</code></pre></div><h4 id="issue-not-completed">Issue not completed</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">We’re waiting for your PR 🚀
+</code></pre></div><h3 id="issue-not-completed">Issue not completed</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello [name],
 
-Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. **You must follow the template and provide clear and concise steps to reproduce the bug**.
-
-Read more about how we expect the issues to be handled [here](https://build.prestashop-project.org/news/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it.
+Thank you for submitting this issue. Unfortunately, there is not enough information provided to reproduce it and work on it. **You must follow the template and provide clear and concise steps to reproduce the bug**. 
+Read more about how we expect the issues to be handled [here](https://build.prestashop-project.org/news/2020/how-bug-reports-are-handled/). Feel free to create a new issue if you can provide further information, we will be glad to investigate it. 
 
 Thank you
-</code></pre></div><h4 id="issue-is-a-functional-feature-request">Issue is a functional feature request</h4>
+</code></pre></div><h3 id="issue-is-a-functional-feature-request">Issue is a functional feature request</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
-Thank you for your suggestion. The Maintainer Team will take it into consideration for future developments.
+Thank you for your suggestion. The Maintainer Team will take it into consideration for future developments. 
 
-Please be aware that there is no guarantee that this feature will be developed anytime soon. If this is important to you, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you create it.
+Please be aware that there is no guarantee that this feature will be developed anytime soon. If this is important to you, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you create it. 
 
 If you or anyone else is willing to [contribute this feature](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/) to the PrestaShop Project, the teams will be happy to help by ensuring that it fits well within the project. Please let us know if that is the case!
 
@@ -666,40 +666,48 @@ Thank you
 </code></pre></div><p>For active contributors, it’s not necessary to add this block:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">If this one is important to you [...] Please let us know if that is the case!
 </code></pre></div><p>Instead, you can add this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">We&#39;re waiting for your PR 🚀
-</code></pre></div><h4 id="issue-is-a-support-request">Issue is a support request</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">We’re waiting for your PR 🚀
+</code></pre></div><h3 id="issue-is-a-support-request">Issue is a support request</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 We only use GitHub issues to discuss about bugs and new features in the PrestaShop project. If you need support, you can find resources to help you on this page: [Get help with PrestaShop](https://www.prestashop-project.org/support/).
 
 Thank you
-</code></pre></div><h4 id="issue-is-too-technical-to-reproduce">Issue is too technical to reproduce</h4>
+</code></pre></div><h3 id="issue-is-too-technical-to-reproduce">Issue is too technical to reproduce</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
 Thanks for reporting this issue!
-Ping @PrestaShop/prestashop-core-developers: Could someone please try to reproduce the issue, it&#39;s too technical!
+Ping @PrestaShop/committers : Could someone please try to reproduce the issue, it&#39;s too technical!
 
 Thanks in advance!
-</code></pre></div><h4 id="issue-about-an-archived-module">Issue about an archived module</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">Hello,
+</code></pre></div><h3 id="issue-about-an-archived-module">Issue about an archived module</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Hello,
 
-This module has been archived, it&#39;s no longer maintained but you still can fork it if you need it for your shop.
-
-Also let us know if you are willing to maintain this module.
+This module has been archived, it’s no longer maintained but you still can fork it if you need it for your shop.
+Also let us know if you are voluntary to maintain this module.
 
 Thanks in advance!
 </code></pre></div><h2 id="miscellaneous-notes-to-be-read">Miscellaneous notes (to be read!)</h2>
 <ol>
-<li>The <code>NMI</code> (Need More Info) tag is used at the beginning of the life of the issue, when there are still questions about the issue (quality, completeness, etc).</li>
-<li><code>Waiting for Author</code> is used for conversations with the author and for <code>NMI</code> issues when we answer. The <strong>issue-bot</strong> will delete the label when the author answers (to help us filter the issues that needs answers, check the <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22">filter</a>).</li>
-<li>In case of regression discovery, it is essential to share the regressions on #dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 8.0.0, we put it in the project 8.0.x, then the PM will prioritize it).</li>
-<li>Don&rsquo;t hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label (<code>Waiting for PM</code>, <code>Waiting for Dev</code>, etc).
+<li>
+<p>The &ldquo;NMI&rdquo; (Need More Info) tag is used at the beginning of the life of the issue, when there are still questions about the issue (quality, completeness, etc).</p>
+</li>
+<li>
+<p>&ldquo;Waiting for Author&rdquo; is used for conversations with the author and for NMI issues when we answers. The issue-bot will delete the label when the author answer (to help us filtering the issues that needs answers, check the <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22">filter</a>).</p>
+</li>
+<li>
+<p>In case of regression discovery, it is essential to share the regressions on #dev-core (Public Slack) and to put them in the right project (e.g. if the regression is on PS 1.7.8.5, we put it in the project 1.7.8.5 and in the project <a href="https://github.com/orgs/PrestaShop/projects/7">Maxi Kanban</a>, then the PM will prioritize it).</p>
+</li>
+<li>
+<p>Don&rsquo;t hesitate to ping the devs/product/QA on issues where their expertise could help, and to add the corresponding label (&ldquo;Waiting for PM&rdquo;, &ldquo;Waiting for Dev&rdquo;, etc).</p>
 <ul>
 <li>If you ping someone, ask a direct question! Don&rsquo;t waste their time by making them read the whole thread and guess why did you ping them.</li>
-<li>If the issue is too technical to reproduce, ping the Sheriff on Slack (DM) while adding the <code>TBR</code> and <code>Waiting for Dev</code> labels.</li>
+<li>If the issue is too technical to reproduce, add the “TBR” and “Waiting for Dev” labels. You should also ping @PrestaShop/committers on the issue.</li>
 </ul>
 </li>
-<li>If you don’t know if the issue is <code>Major</code> or <code>Minor</code>, please post it in <code>#dev-core</code> (Public Slack) and ping PM and QA lead, so they can settle the severity. Otherwise, you can check <a href="/get-involved/report-issues/how-issues-are-sorted/">how issues are sorted</a>.</li>
+<li>
+<p>If you don’t know if the issue <code>Major</code> or <code>Minor</code>, please post it in <a href="https://app.slack.com/client/TTJ6M3GPL/C05M16TEEGG">#quality-assurance</a> and ping QA lead (@Robin Fischer), so they can settle the severity.</p>
+</li>
 </ol>
 </div>
       </div>

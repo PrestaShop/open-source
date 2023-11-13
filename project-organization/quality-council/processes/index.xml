@@ -24,8 +24,8 @@ The rules are as follows:
       
       <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/</guid>
       <description>How to manage Issues This document details the processes in place for the position of &amp;ldquo;Issues Manager&amp;rdquo;, a rotating position within the QA community members.
-The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
- Is the issue valid? The issue must be either a bug report or a feature request.</description>
+The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+ Is the issue valid? The issue must be a bug report.</description>
     </item>
     
   </channel>
