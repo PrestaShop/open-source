@@ -82,6 +82,7 @@ Current committers:
 - Boris Hermans ([@boherm](https://github.com/boherm))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 - Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
+- Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
