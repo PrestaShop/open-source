@@ -6,7 +6,7 @@ title: Nightly Board
 
 ## Goal
 
-The nightly board is the dashboard for Software Developers in Test. It is checked every morning in order to stabilise existing tests and escalate issues in the event of regressions detected on all supported branches.
+The nightly board is the dashboard for Software Developers in Test. It is checked every morning in order to stabilize existing tests and escalate issues in the event of regressions detected on all supported branches.
 
 ## Schedule
 
