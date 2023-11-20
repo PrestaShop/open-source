@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/project-organization/quality-council/tooling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Nightly Board</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/nightly-board/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/tooling/nightly-board/</guid>
+      <description>Nightly Board Goal The nightly board is the dashboard for Software Developers in Test. It is checked every morning in order to stabilize existing tests and escalate issues in the event of regressions detected on all supported branches.
+Schedule Every day at 01:00 AM
+Code Nightly tests are executed every day with this process:
+ Create the nightly build (Github worflow) Execute tests and Report  1.7.8.x 8.0.x 8.1.x develop    The nightly board is based on two repositories : Backend &amp;amp; Frontend.</description>
+    </item>
+    
+    <item>
       <title>PrestHubot</title>
       <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

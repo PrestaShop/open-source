@@ -47,7 +47,7 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/" /><meta property="article:section" content="project-organization" />
 
-<meta property="article:modified_time" content="2023-11-20T12:35:45+01:00" />
+<meta property="article:modified_time" content="2023-11-20T15:32:57+01:00" />
 
 
 
@@ -346,7 +346,7 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
 <p>We can divide the process in two parts : QA Functional &amp; QA Automation.</p>
 <h3 id="qa-functional">QA Functional</h3>
 <h4 id="pr-stats-for-qa">PR Stats for QA</h4>
-<p><img src="./images/presthubot-1.png" alt="PR Stats for QA"></p>
+<p><img src="images/presthubot-1.png" alt="PR Stats for QA"></p>
 <p>This returns the number of Pull Requests that are pending:</p>
 <ul>
 <li>on the various branches under development</li>
@@ -355,24 +355,24 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
 </ul>
 <p>But also the PRs awaiting their author, and those that are blocked.</p>
 <h4 id="pr-ready-to-test">PR Ready to Test</h4>
-<p><img src="./images/presthubot-2.png" alt="PR Ready to Test"></p>
+<p><img src="images/presthubot-2.png" alt="PR Ready to Test"></p>
 <p>This returns Pull Requests that are awaiting QA on the various branches under development and on the modules.</p>
 <h3 id="qa-automation">QA Automation</h3>
 <h4 id="nightly-board">Nightly Board</h4>
-<p><img src="./images/presthubot-3.png" alt="Nightly Board"></p>
+<p><img src="images/presthubot-3.png" alt="Nightly Board"></p>
 <p>This returns the nightly status of the various branches under development and the autoupgrade module.</p>
 <p>By status, we mean the number of tests that have passed, failed and are skipped, as well as the processing time.</p>
 <h4 id="pr-ready-to-test-1">PR Ready to Test</h4>
-<p><img src="./images/presthubot-4.png" alt="PR Ready to Test"></p>
+<p><img src="images/presthubot-4.png" alt="PR Ready to Test"></p>
 <p>This returns the various Pull Requests to be reviewed by the project&rsquo;s Software Developers in Test. It also indicates which maintainers have already approved them.</p>
 <h4 id="jira-need-a-github-path">JIRA (Need a Github Path)</h4>
-<p><img src="./images/presthubot-5.png" alt="JIRA (Need a Github Path)"></p>
+<p><img src="images/presthubot-5.png" alt="JIRA (Need a Github Path)"></p>
 <p>This returns the various scenarios on JIRA which have been automated but which have not defined the test URL.</p>
 <h4 id="jira-have-an-invalid-github-path">JIRA (Have an invalid Github Path)</h4>
-<p><img src="./images/presthubot-6.png" alt="JIRA (Have an invalid Github Path)"></p>
+<p><img src="images/presthubot-6.png" alt="JIRA (Have an invalid Github Path)"></p>
 <p>This returns the various scenarios on JIRA which have been automated but which have an invalid URL for the test.</p>
 <h4 id="github-issues-todo-exist-but-gh-are-closed">Github issues (ToDo exist but GH are closed)</h4>
-<p><img src="./images/presthubot-7.png" alt="Github issues (ToDo exist but GH are closed)"></p>
+<p><img src="images/presthubot-7.png" alt="Github issues (ToDo exist but GH are closed)"></p>
 <p>In UI tests, the Software Developer in Test skips some tests due to the presence of bugs. To do this, they add a comment with the link to the issue representing the bug. Presthubot checks every day that the issues remain open as long as the comments are present. This means that a test can be activated as soon as the bug has been corrected (when the developer has not activated the test).</p>
 </div>
       </div>
