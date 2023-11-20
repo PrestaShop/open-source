@@ -304,6 +304,20 @@ PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under t
     </item>
     
     <item>
+      <title>PrestHubot</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/</guid>
+      <description>PrestHubot Goal Presthubot is the QA team&amp;rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.
+Schedule Every week day at 06:45 AM
+Code You can find the workflow on Github.
+How it works We can divide the process in two parts : QA Functional &amp;amp; QA Automation.
+QA Functional PR Stats for QA This returns the number of Pull Requests that are pending:
+ on the various branches under development on modules on specifications  But also the PRs awaiting their author, and those that are blocked.</description>
+    </item>
+    
+    <item>
       <title>Security policy</title>
       <link>https://www.prestashop-project.org/security/security-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

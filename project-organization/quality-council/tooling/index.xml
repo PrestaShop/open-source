@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tooling on PrestaShop Project - Open Source e-Commerce platform</title>
+    <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/</link>
+    <description>Recent content in Tooling on PrestaShop Project - Open Source e-Commerce platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.prestashop-project.org/project-organization/quality-council/tooling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestHubot</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/</guid>
+      <description>PrestHubot Goal Presthubot is the QA team&amp;rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.
+Schedule Every week day at 06:45 AM
+Code You can find the workflow on Github.
+How it works We can divide the process in two parts : QA Functional &amp;amp; QA Automation.
+QA Functional PR Stats for QA This returns the number of Pull Requests that are pending:
+ on the various branches under development on modules on specifications  But also the PRs awaiting their author, and those that are blocked.</description>
+    </item>
+    
+  </channel>
+</rss>
