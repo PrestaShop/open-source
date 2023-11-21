@@ -114,8 +114,6 @@ Current issue managers:
   - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
   - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
   - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-* Committers: 
-  - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
 
 ### Software Testers
 
@@ -134,7 +132,6 @@ Current Software Testers:
   - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
   - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
 * Committers: 
-  - Achraf Kchaou ([@AchrafKchaou1991](https://github.com/AchrafKchaou1991))
   - Serhii Zavadskyi ([@szavadskiy](https://github.com/szavadskiy))
 
 ### Software Developers in Test
