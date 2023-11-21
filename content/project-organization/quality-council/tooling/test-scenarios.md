@@ -9,13 +9,13 @@ title: Test Scenarios
 The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:
 
 * a tool for generating Markdown pages from XRay scenarios on JIRA
-* a tool for synchronising scenarios to be automated or in the process of being automated in issues
+* a tool for synchronizing scenarios to be automated or in the process of being automated in issues
 * a tool for updating a kanban based on the status of scenarios
 
 ## Schedule
 
 * Every week day at 06:00 AM (for the generation of Markdown pages)
-* Every week day at 07:00 AM (for the synchronisation of scenarios in issues)
+* Every week day at 07:00 AM (for the synchronization of scenarios in issues)
 
 ## Code
 
@@ -50,7 +50,7 @@ The script use the following process:
     * THEN the script update the Github issue (title & description);
   * IF the linked Github issue has not the good assignee from JIRA,
     * THEN the script update the Github issue (assignee);
-  * IF the linked Github issue has no labels, or the linked Github issue has late labels,
+  * IF the linked Github issue has no label, or the linked Github issue has late labels,
     * THEN the script update the Github issue (labels); 
   * IF the Github label is different of the XRay status
     * THEN the script update the XRay scenario (status).
