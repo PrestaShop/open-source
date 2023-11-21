@@ -3,15 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
-<title>PrestHubot | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="PrestHubot Goal Presthubot is the QA team&rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.
-Schedule Every week day at 06:45 AM
-Code You can find the workflow on Github.
-How it works We can divide the process in two parts : QA Functional &amp; QA Automation.
-QA Functional PR Stats for QA This returns the number of Pull Requests that are pending:
- on the various branches under development on modules on specifications  But also the PRs awaiting their author, and those that are blocked."/>
+<title>Test Scenarios | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Test Scenarios Goal The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:
+ a tool for generating Markdown pages from XRay scenarios on JIRA a tool for synchronizing scenarios to be automated or in the process of being automated in issues a tool for updating a kanban based on the status of scenarios  Schedule  Every week day at 06:00 AM (for the generation of Markdown pages) Every week day at 07:00 AM (for the synchronization of scenarios in issues)  Code You can find workflows :"/>
 
-<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/" itemprop="url" />
+<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/tooling/test-scenarios/" itemprop="url" />
 
 
 
@@ -30,24 +26,16 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="PrestHubot"/>
-<meta name="twitter:description" content="PrestHubot Goal Presthubot is the QA team&rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.
-Schedule Every week day at 06:45 AM
-Code You can find the workflow on Github.
-How it works We can divide the process in two parts : QA Functional &amp; QA Automation.
-QA Functional PR Stats for QA This returns the number of Pull Requests that are pending:
- on the various branches under development on modules on specifications  But also the PRs awaiting their author, and those that are blocked."/>
-<meta property="og:title" content="PrestHubot" />
-<meta property="og:description" content="PrestHubot Goal Presthubot is the QA team&rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.
-Schedule Every week day at 06:45 AM
-Code You can find the workflow on Github.
-How it works We can divide the process in two parts : QA Functional &amp; QA Automation.
-QA Functional PR Stats for QA This returns the number of Pull Requests that are pending:
- on the various branches under development on modules on specifications  But also the PRs awaiting their author, and those that are blocked." />
+<meta name="twitter:title" content="Test Scenarios"/>
+<meta name="twitter:description" content="Test Scenarios Goal The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:
+ a tool for generating Markdown pages from XRay scenarios on JIRA a tool for synchronizing scenarios to be automated or in the process of being automated in issues a tool for updating a kanban based on the status of scenarios  Schedule  Every week day at 06:00 AM (for the generation of Markdown pages) Every week day at 07:00 AM (for the synchronization of scenarios in issues)  Code You can find workflows :"/>
+<meta property="og:title" content="Test Scenarios" />
+<meta property="og:description" content="Test Scenarios Goal The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:
+ a tool for generating Markdown pages from XRay scenarios on JIRA a tool for synchronizing scenarios to be automated or in the process of being automated in issues a tool for updating a kanban based on the status of scenarios  Schedule  Every week day at 06:00 AM (for the generation of Markdown pages) Every week day at 07:00 AM (for the synchronization of scenarios in issues)  Code You can find workflows :" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/tooling/presthubot/" /><meta property="article:section" content="project-organization" />
+<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/tooling/test-scenarios/" /><meta property="article:section" content="project-organization" />
 
-<meta property="article:modified_time" content="2023-11-21T14:34:45+01:00" />
+<meta property="article:modified_time" content="2023-11-21T14:48:00+01:00" />
 
 
 
@@ -287,7 +275,7 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">PrestHubot</li>
+        <li class="breadcrumb-item active" aria-current="page">Test Scenarios</li>
       
     
   </ol>
@@ -302,28 +290,16 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
     <div class="toc-title">Table of Contents</div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#presthubot">PrestHubot</a>
+    <li><a href="#test-scenarios">Test Scenarios</a>
       <ul>
         <li><a href="#goal">Goal</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#code">Code</a></li>
         <li><a href="#how-it-works">How it works</a>
           <ul>
-            <li><a href="#qa-functional">QA Functional</a>
-              <ul>
-                <li><a href="#pr-stats-for-qa">PR Stats for QA</a></li>
-                <li><a href="#pr-ready-to-test">PR Ready to Test</a></li>
-              </ul>
-            </li>
-            <li><a href="#qa-automation">QA Automation</a>
-              <ul>
-                <li><a href="#nightly-board">Nightly Board</a></li>
-                <li><a href="#pr-ready-to-test-1">PR Ready to Test</a></li>
-                <li><a href="#jira-need-a-github-path">JIRA (Need a Github Path)</a></li>
-                <li><a href="#jira-have-an-invalid-github-path">JIRA (Have an invalid Github Path)</a></li>
-                <li><a href="#github-issues-todo-exist-but-gh-are-closed">Github issues (ToDo exist but GH are closed)</a></li>
-              </ul>
-            </li>
+            <li><a href="#generate-markdown-pages-from-xray-scenarios">Generate Markdown pages from XRay scenarios</a></li>
+            <li><a href="#synchronize-xray-scenarios-and-github-issues">Synchronize XRay scenarios and Github Issues</a></li>
+            <li><a href="#update-kanban-based-on-the-status-of-scenarios">Update Kanban based on the status of scenarios</a></li>
           </ul>
         </li>
       </ul>
@@ -335,45 +311,75 @@ QA Functional PR Stats for QA This returns the number of Pull Requests that are 
 
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="presthubot">PrestHubot</h1>
+        <div class="content"><h1 id="test-scenarios">Test Scenarios</h1>
 <h2 id="goal">Goal</h2>
-<p>Presthubot is the QA team&rsquo;s Slack Notifier. It checks several rules and sends a report via Slack.</p>
-<h2 id="schedule">Schedule</h2>
-<p>Every week day at 06:45 AM</p>
-<h2 id="code">Code</h2>
-<p>You can find the workflow on <a href="https://github.com/PrestaShop/presthubot/blob/master/.github/workflows/slacknotifier.yml">Github</a>.</p>
-<h2 id="how-it-works">How it works</h2>
-<p>We can divide the process in two parts : QA Functional &amp; QA Automation.</p>
-<h3 id="qa-functional">QA Functional</h3>
-<h4 id="pr-stats-for-qa">PR Stats for QA</h4>
-<p><img src="../images/presthubot-1.png" alt="PR Stats for QA"></p>
-<p>This returns the number of Pull Requests that are pending:</p>
+<p>The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:</p>
 <ul>
-<li>on the various branches under development</li>
-<li>on modules</li>
-<li>on specifications</li>
+<li>a tool for generating Markdown pages from XRay scenarios on JIRA</li>
+<li>a tool for synchronizing scenarios to be automated or in the process of being automated in issues</li>
+<li>a tool for updating a kanban based on the status of scenarios</li>
 </ul>
-<p>But also the PRs awaiting their author, and those that are blocked.</p>
-<h4 id="pr-ready-to-test">PR Ready to Test</h4>
-<p><img src="../images/presthubot-2.png" alt="PR Ready to Test"></p>
-<p>This returns Pull Requests that are awaiting QA on the various branches under development and on the modules.</p>
-<h3 id="qa-automation">QA Automation</h3>
-<h4 id="nightly-board">Nightly Board</h4>
-<p><img src="../images/presthubot-3.png" alt="Nightly Board"></p>
-<p>This returns the nightly status of the various branches under development and the autoupgrade module.</p>
-<p>By status, we mean the number of tests that have passed, failed and are skipped, as well as the processing time.</p>
-<h4 id="pr-ready-to-test-1">PR Ready to Test</h4>
-<p><img src="../images/presthubot-4.png" alt="PR Ready to Test"></p>
-<p>This returns the various Pull Requests to be reviewed by the project&rsquo;s Software Developers in Test. It also indicates which maintainers have already approved them.</p>
-<h4 id="jira-need-a-github-path">JIRA (Need a Github Path)</h4>
-<p><img src="../images/presthubot-5.png" alt="JIRA (Need a Github Path)"></p>
-<p>This returns the various scenarios on JIRA which have been automated but which have not defined the test URL.</p>
-<h4 id="jira-have-an-invalid-github-path">JIRA (Have an invalid Github Path)</h4>
-<p><img src="../images/presthubot-6.png" alt="JIRA (Have an invalid Github Path)"></p>
-<p>This returns the various scenarios on JIRA which have been automated but which have an invalid URL for the test.</p>
-<h4 id="github-issues-todo-exist-but-gh-are-closed">Github issues (ToDo exist but GH are closed)</h4>
-<p><img src="../images/presthubot-7.png" alt="Github issues (ToDo exist but GH are closed)"></p>
-<p>In UI tests, the Software Developer in Test skips some tests due to the presence of bugs. To do this, they add a comment with the link to the issue representing the bug. Presthubot checks every day that the issues remain open as long as the comments are present. This means that a test can be activated as soon as the bug has been corrected (when the developer has not activated the test).</p>
+<h2 id="schedule">Schedule</h2>
+<ul>
+<li>Every week day at 06:00 AM (for the generation of Markdown pages)</li>
+<li>Every week day at 07:00 AM (for the synchronization of scenarios in issues)</li>
+</ul>
+<h2 id="code">Code</h2>
+<p>You can find workflows :</p>
+<ul>
+<li>Generate Markdown pages from XRay scenarios (<a href="https://github.com/PrestaShop/test-scenarios/blob/master/.github/workflows/gh-pages.yml">Github</a>)</li>
+<li>Synchronize XRay scenarios and Github Issues (<a href="https://github.com/PrestaShop/test-scenarios/blob/master/.github/workflows/sync-jira-gh.yml">Github</a>)</li>
+<li>Update Kanban based on the status of scenarios (<a href="https://github.com/PrestaShop/test-scenarios/blob/master/.github/workflows/gh-project-test.yml">Github</a>)</li>
+</ul>
+<h2 id="how-it-works">How it works</h2>
+<h3 id="generate-markdown-pages-from-xray-scenarios">Generate Markdown pages from XRay scenarios</h3>
+<p>Two folders (<strong>Core</strong> and <strong>Modules</strong>) on JIRA are exported. The script uses the XRay API to retrieve the scenarios and their folders. Each XRay folder corresponds to a Hugo content directory. Each XRay scenario corresponds to a page of Hugo content.</p>
+<p><strong>From XRay&hellip;</strong></p>
+<p><img src="../images/test-scenarios-xray.png" alt="XRay : Page with a scenario"></p>
+<p><strong>&hellip; to Hugo.</strong>
+<img src="../images/test-scenarios-hugo.png" alt="Hugo : Page with a scenario"></p>
+<h3 id="synchronize-xray-scenarios-and-github-issues">Synchronize XRay scenarios and Github Issues</h3>
+<p>The script use the following process:</p>
+<ul>
+<li>Fetch all XRay scenarios (To Be Automated / Automation In Progress / Automated)</li>
+<li>For each scenario:
+<ul>
+<li>IF the XRay scenario has not linked Github issue
+<ul>
+<li>THEN the script create a new issue;</li>
+</ul>
+</li>
+<li>IF the XRay scenario has been updated (title or description)
+<ul>
+<li>THEN the script update the Github issue (title &amp; description);</li>
+</ul>
+</li>
+<li>IF the linked Github issue has not the good assignee from JIRA,
+<ul>
+<li>THEN the script update the Github issue (assignee);</li>
+</ul>
+</li>
+<li>IF the linked Github issue has no label, or the linked Github issue has late labels,
+<ul>
+<li>THEN the script update the Github issue (labels);</li>
+</ul>
+</li>
+<li>IF the Github label is different of the XRay status
+<ul>
+<li>THEN the script update the XRay scenario (status).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="update-kanban-based-on-the-status-of-scenarios">Update Kanban based on the status of scenarios</h3>
+<p>The workflow use the <code>Machine-Maker/add-to-project-action</code> action to move in <a href="https://github.com/orgs/PrestaShop/projects/30">Github project</a> some issues based on their labels:</p>
+<ul>
+<li>Label &ldquo;<code>STATE : To Be Automated</code>&rdquo; : Column &ldquo;<code>Todo</code>&rdquo;</li>
+<li>Label &ldquo;<code>STATE : Automation in progress</code>&rdquo; : Column &ldquo;<code>In Progress</code>&rdquo;</li>
+<li>Label &ldquo;<code>STATE : Automated</code>&rdquo; : Column &ldquo;<code>Done</code>&rdquo;</li>
+</ul>
+<p><img src="../images/test-scenarios-github-project.png" alt="Github project"></p>
 </div>
       </div>
     </div>

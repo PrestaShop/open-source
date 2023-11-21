@@ -382,6 +382,16 @@ Request a new channel Creating a new channel is reserved to the administrators.<
     </item>
     
     <item>
+      <title>Test Scenarios</title>
+      <link>https://www.prestashop-project.org/project-organization/quality-council/tooling/test-scenarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/project-organization/quality-council/tooling/test-scenarios/</guid>
+      <description>Test Scenarios Goal The Test Scenarios repository focuses on scenarios written by Software Testers (on a JIRA, not accessible to the public). Several tools have been developed:
+ a tool for generating Markdown pages from XRay scenarios on JIRA a tool for synchronizing scenarios to be automated or in the process of being automated in issues a tool for updating a kanban based on the status of scenarios  Schedule  Every week day at 06:00 AM (for the generation of Markdown pages) Every week day at 07:00 AM (for the synchronization of scenarios in issues)  Code You can find workflows :</description>
+    </item>
+    
+    <item>
       <title>Using the Vagrant virtual machine</title>
       <link>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
