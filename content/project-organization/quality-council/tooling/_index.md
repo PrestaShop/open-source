@@ -6,4 +6,4 @@ title: Tooling
 
 * [Nightly Board](./nightly-board)
 * [PrestHubot](./presthubot)
-<!-- * [Test Scenarios](./test-scenarios) -->
+* [Test Scenarios](./test-scenarios)
