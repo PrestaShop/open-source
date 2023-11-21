@@ -50,7 +50,7 @@ The API has several endpoints:
 
 ### Nightly board
 
-![Nightly ](images/nightly-board-1.png)
+![Nightly ](../images/nightly-board-1.png)
 
 The nightly board is based on Nuxt 2 & Vue 2.7. 
 
