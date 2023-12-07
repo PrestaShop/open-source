@@ -67,9 +67,6 @@ Current members:
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
 - Pablo Borowicz ([@eternoendless](https://github.com/eternoendless))
-- Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
-- Thomas Baccelli ([@atomiix](https://github.com/atomiix))
-- Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
 ### Committers
 
@@ -91,9 +88,12 @@ Current committers:
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
+- Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
+- Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
+- Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
 ## Quality Council
 
