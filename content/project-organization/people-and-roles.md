@@ -67,9 +67,6 @@ Current members:
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
 - Pablo Borowicz ([@eternoendless](https://github.com/eternoendless))
-- Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
-- Thomas Baccelli ([@atomiix](https://github.com/atomiix))
-- Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
 ### Committers
 
