@@ -46,10 +46,9 @@ Candidates can apply to become maintainer over the whole project, or just a scop
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</guid>
       <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
+1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights (doc to create a new version on Addons).
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&amp;rsquo;t need to be performed again for the final release).</description>
+ This only needs to be done once per release.</description>
     </item>
     
     <item>
