@@ -10,7 +10,7 @@ A bug bounty for security flaws is hosted on YesWeHack platform.
 The program is currently paused. Please report security issues to security-core@prestashop.com instead.
 {{% /notice %}}
 
-<a class="btn btn-warning" style="margin: 2rem auto" href="https://yeswehack.com/programs/prestashop">Visit the Bug Bounty page</a>
+<a class="cta cta-dark cta--pattern" href="https://yeswehack.com/programs/prestashop"><span class="mb-0">Visit the Bug Bounty page</span></a>
 {.text-center}
 
 This bounty program covers code from the GitHub repository PrestaShop/PrestaShop and all PrestaShop modules defined in the composer.json file.
