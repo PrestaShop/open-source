@@ -142,10 +142,10 @@ Current Software Developers in Test:
 
 * Maintainers:
   - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
+  - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
   - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
 * Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
-  - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
 
 ## Dedicated maintainers
