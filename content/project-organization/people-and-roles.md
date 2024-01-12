@@ -90,6 +90,7 @@ Current committers:
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
+- Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
