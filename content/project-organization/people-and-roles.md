@@ -95,6 +95,14 @@ Current committers:
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 - Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
+### Alumni
+
+Alumni are former technical council members or committers that do not wish to participate actively in the project. They can still review and merge code contributions and their advice is always welcomed.
+
+Alumni:
+
+_Nobody yet_
+
 ## Quality Council
 
 The quality council provides the quality assurance vision for the project and has authority on related subjects, such as verification of pull requests, test automation strategy, bug triage process, and quality assessment.
