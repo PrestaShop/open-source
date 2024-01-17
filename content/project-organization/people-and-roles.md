@@ -75,7 +75,6 @@ Committers can review and merge code contributions. They summon the technical co
 Current committers:
 
 - Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
-- Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 - Boris Hermans ([@boherm](https://github.com/boherm))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
@@ -102,7 +101,7 @@ Alumni are former technical council members or committers that do not wish to pa
 
 Alumni:
 
-_Nobody yet_
+- Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 
 ## Quality Council
 
