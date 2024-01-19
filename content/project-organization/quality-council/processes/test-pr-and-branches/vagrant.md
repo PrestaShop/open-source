@@ -83,7 +83,9 @@ You can login into the virtual machine with `vagrant ssh`
 If something went wrong during the installation, the error is displayed explaining which command is failing.
 
 * Invalid branch name:
-{{< figure src="img/vagrant/build-failed.png" alt="Invalid git branch name" >}}
+
+<img src="img/vagrant/build-failed.png" alt="Invalid git branch name" class="mx-lg-4" style="max-width: 700px">
 
 * Invalid PHP version:
-{{< figure src="img/vagrant/invalid-php-version.png" alt="Invalid PHP version" >}}
+
+<img src="img/vagrant/invalid-php-version.png" alt="Invalid PHP version" class="mx-lg-4" style="max-width: 700px">
