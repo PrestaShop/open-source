@@ -35,7 +35,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/" /><meta property="article:section" content="project-organization" />
 
-<meta property="article:modified_time" content="2023-10-31T16:31:03+00:00" />
+<meta property="article:modified_time" content="2024-01-19T12:25:00+01:00" />
 
 
 
@@ -340,19 +340,19 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">prc = &#34;!f() { git checkout $3 &amp;&amp; git branch -D pr-$2; git fetch $1 pull/$2/head:pr-$2 &amp;&amp; git checkout pr-$2 &amp;&amp; git reset --hard &amp;&amp; git clean -fd &amp;&amp; git rebase $1/$3 &amp;&amp; composer install;  }; f&#34; 
 </code></pre></div><p>For the color code, we always use <strong>violet</strong> for the <strong>Branch</strong> and this time we&rsquo;ll use <strong>green</strong> for the <strong>PR number</strong>.</p>
 <p>We can find this <strong>number</strong> in the title of the PR, as you can see.</p>
-<p><img src="images/readme11.png" alt="img.png"></p>
+<img src="images/readme11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>All you have to do now is try to reproduce the issue again to see if the PR corrects it correctly.
 If it&rsquo;s all good, you can proceed to the next step of this documentation (step 4). If not, you can directly check step 5!</p>
 <h3 id="4-check-that-the-pr-doesnt-create-another-issue">4. Check that the PR doesn&rsquo;t create another issue</h3>
 <p>Now that you&rsquo;ve checked that the PR has corrected the issue, you need to make sure that it doesn&rsquo;t create another one instead. To do this, you need test axes.</p>
 <p>To find them, go to the Files changed tab:</p>
-<p><img src="images/readme12.png" alt="img.png"></p>
+<img src="images/readme12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>You&rsquo;ll then have all the changes made to the PR. To do this, you&rsquo;ll get this view:</p>
-<p><img src="images/readme13.png" alt="img.png"></p>
+<img src="images/readme13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>Seen like this, it may seem rather difficult to see the differences and what might be impacted, so we advise you to modify the split view and save.</p>
-<p><img src="images/readme14.png" alt="img.png"></p>
+<img src="images/readme14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>You now have a better view of the various modifications, and can read the whole thing.</p>
-<p><img src="images/readme15.png" alt="img.png"></p>
+<img src="images/readme15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>No computer skills? But you still need to check that it&rsquo;s not overflowing? There are two things you can do:</p>
 <ul>
 <li>From which <strong>file</strong> the modification was made. You can see on the screen the name of the <strong>file</strong> framed in <strong>Orange</strong>. By seeing the names, I can tell that it will be on the front by the name &ldquo;FrontController&rdquo;.</li>
@@ -366,24 +366,24 @@ If you still have so many failures on the automated tests, you can test them man
 <li>The PR is valid, it doesn&rsquo;t create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it&rsquo;s the desired behavior but it&rsquo;s not) and to put the link to the automated tests if you ran them.
 In your comment, you&rsquo;ll need to select the Approve option before submitting the review.</li>
 </ul>
-<p><img src="images/readme16.png" alt="img.png"></p>
+<img src="images/readme16.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
 <ul>
 <li>The PR is not valid. In this case, indicate that it doesn&rsquo;t work, put a video showing that it doesn&rsquo;t work and put the link to the automated tests if you ran them (to prove that it brings issues).
 If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
 In your comment, you&rsquo;ll need to select the Comment option before submitting the review. The Request changes option will force the same QA to respond to the same PR, whereas it would be preferable for someone else to test it once the changes have been made.</li>
 </ul>
-<p><img src="images/readme17.png" alt="img.png"></p>
+<img src="images/readme17.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>As you can see, in both cases, you&rsquo;ll have to provide a video and a link to the automated tests to show your good faith.</p>
 <p>ℹ️ Yes, even when the PR is valid, it&rsquo;s better to offer a video. This will allow future QAs to see how we&rsquo;re supposed to behave with the PR. Very useful when we&rsquo;re doing test plans / release plans or when we have to go back on a PR.</p>
 <h3 id="bonus---module-testing">Bonus - Module testing</h3>
 <p>If you come across a Module PR, the process remains the same as for a PR (in broad terms). What will change is the installation process.</p>
 <p>To do this, start by opening your PR:</p>
-<p><img src="images/readme18.png" alt="img.png"></p>
+<img src="images/readme18.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>We&rsquo;ve framed the PR version in <strong>Green</strong> and the &ldquo;branch &ldquo;** in **Purple**, represented here by **autoupgrade**.</p>
 <p>We&rsquo;re going to perform the same operations from the beginning to step 3</p>
 <p>ℹ️ We don&rsquo;t need to run the auto test, as it doesn&rsquo;t work with modules.</p>
 <p>So we&rsquo;re going to run a special command in the terminal linked to our shop folder:</p>
-<p><img src="images/readme19.png" alt="img.png"></p>
+<img src="images/readme19.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>ℹ️ If your module includes a .json package, you need to add this command line for your module to function correctly</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">&amp;&amp;</span> <span class="nx">npm</span> <span class="nx">run</span> <span class="nx">build</span>
 </code></pre></div><p>ℹ️ If you want to install your module directly (if it&rsquo;s not native), you can run this command in your terminal:</p>
@@ -392,9 +392,9 @@ In your comment, you&rsquo;ll need to select the Comment option before submittin
 <p>This is one of the few things that is different from a &ldquo;normal&rdquo; PR. We can now test the module PR and repeat the same process as in step 4.</p>
 <p>For your information ℹ️:</p>
 <p>If you still can&rsquo;t install the module PR, you&rsquo;ll probably find some hint in its <em>readme</em>.</p>
-<p><img src="images/readme20.png" alt="img.png"></p>
+<img src="images/readme20.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>Click on the <strong>branch</strong> link then scroll down and you&rsquo;ll find an Installation section:</p>
-<p><img src="images/readme21.png" alt="img.png"></p>
+<img src="images/readme21.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 </div>
       </div>
     </div>
