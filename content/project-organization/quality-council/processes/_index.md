@@ -12,7 +12,7 @@ title: Processes
 
 * [Testing Pull Request](./pr-management)
 
-## Software Testing
+## Testing with vagrant
 
 * [How to test Pull Requests](./test-pr-and-branches)
 

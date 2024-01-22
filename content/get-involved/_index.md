@@ -30,7 +30,7 @@ More information: [How to contribute (DevDocs)][how-to-contribute]
 [request-feature]: {{< relref "request-features" >}}
 [review-code]: {{< relref "/maintainers-guide/processes/reviewing-pull-requests.md" >}}
 [test-code]: {{< relref "/project-organization/quality-council/processes/test-pr-and-branches/" >}}
-[issue-gardening]: {{< relref "/project-organization/quality-council/processes/issue-management.md" >}}
+[issue-gardening]: {{< relref "/project-organization/quality-council/processes/issue-management/" >}}
 [slack]: {{< relref "/slack/" >}}
 [github]: https://github.com/PrestaShop/PrestaShop/
 [how-to-contribute]: {{< devdocs "contribute/" >}}
