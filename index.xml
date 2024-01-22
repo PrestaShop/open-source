@@ -134,16 +134,6 @@ So, let&amp;rsquo;s build a knowledge base. If you want to contribute to this pa
     
     <item>
       <title></title>
-      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/</guid>
-      <description>Testing Pull Request How to test a PR manually You want to take care of a PR and you don&amp;rsquo;t know how to handle it, or you&amp;rsquo;ve simply forgotten how? No problem, this github page is for you.
-1. Taking information from a PR One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you&amp;rsquo;ll find this table at the start of each PR</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://www.prestashop-project.org/slack/apps-and-integrationsapps-and-integrations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -217,17 +207,6 @@ Please note that severity is to be distinguished from priority. Indeed, severity
     </item>
     
     <item>
-      <title>How to contribute to UI tests</title>
-      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/contribute-ui-tests/</guid>
-      <description>How to contribute to UI tests Introduction Branches The first question to ask when making a contribution is &amp;ldquo;Which branch should I target?&amp;rdquo;.
-The rules are as follows:
- The development branch for UI testing is the current development branch. The branch changes as soon as the final release is out.  Differences between scenarios &amp;amp; tests Scenarios are the base of UI Tests. They are available on the PrestaShop Tests Documentation.</description>
-    </item>
-    
-    <item>
       <title>How to create merge Pull Requests active branches</title>
       <link>https://www.prestashop-project.org/maintainers-guide/processes/creating-merge-pull-requests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -236,28 +215,6 @@ The rules are as follows:
       <description>Creating merge Pull Requests for all active branches What it is We need to progress on the next minor/major version and the maintained patch version.
 Merge Pull Request Here is the explanation of how you should create your merge pull request (from the 1.7.8.x to 8.0.x branch in this example):
  Clone the repository locally You’ll need to checkout/create branches for both your source branch and your target branch, or update them if you already have them locally  git checkout -b 1.</description>
-    </item>
-    
-    <item>
-      <title>How to Manage a release</title>
-      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/release-manager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/release-manager/</guid>
-      <description>How to create a Test Plan / Release Plan When a new release is made by the developers, a Test Plan and a Release Plan must be created on the QA side.
-Although these tickets are currently created on an internal company Jira, the purpose of this documentation is to explain what information is needed to prepare the release, and how to obtain it, before carrying out a release.
-1. Know the release The first thing to do is to find out about the release you&amp;rsquo;re going to test.</description>
-    </item>
-    
-    <item>
-      <title>How to manage Issues</title>
-      <link>https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/issue-management/</guid>
-      <description>How to manage Issues This document details the processes in place for the position of &amp;ldquo;Issues Manager&amp;rdquo;, a rotating position within the QA community members.
-The Issue Manager job Your job is to qualify issues submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
- Is the issue valid? The issue must be a bug report.</description>
     </item>
     
     <item>

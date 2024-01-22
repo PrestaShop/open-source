@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 <title>PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Testing Pull Request How to test a PR manually You want to take care of a PR and you don&rsquo;t know how to handle it, or you&rsquo;ve simply forgotten how? No problem, this github page is for you.
-1. Taking information from a PR One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you&rsquo;ll find this table at the start of each PR"/>
+<meta name="description" content=""/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/" itemprop="url" />
 
@@ -27,15 +26,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="PrestaShop Project - Open Source e-Commerce platform"/>
-<meta name="twitter:description" content="Testing Pull Request How to test a PR manually You want to take care of a PR and you don&rsquo;t know how to handle it, or you&rsquo;ve simply forgotten how? No problem, this github page is for you.
-1. Taking information from a PR One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you&rsquo;ll find this table at the start of each PR"/>
+<meta name="twitter:description" content=""/>
 <meta property="og:title" content="" />
-<meta property="og:description" content="Testing Pull Request How to test a PR manually You want to take care of a PR and you don&rsquo;t know how to handle it, or you&rsquo;ve simply forgotten how? No problem, this github page is for you.
-1. Taking information from a PR One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you&rsquo;ll find this table at the start of each PR" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/" /><meta property="article:section" content="project-organization" />
-
-<meta property="article:modified_time" content="2024-01-19T12:25:00+01:00" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/pr-management/" />
 
 
 
@@ -228,7 +223,7 @@
 
 
 
-
+  
 <section class="section">
   <div class="container">
     <div class="row mx-xl-2">
@@ -313,11 +308,11 @@
 <p>You want to take care of a PR and you don&rsquo;t know how to handle it, or you&rsquo;ve simply forgotten how? No problem, this github page is for you.</p>
 <h3 id="1-taking-information-from-a-pr">1. Taking information from a PR</h3>
 <p>One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you&rsquo;ll find this table at the start of each PR</p>
-<p><img src="images/readme7.png" alt="img.png"></p>
+<img src="img/pr-management1.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>To begin with, we have the <strong>Branch</strong>, which will be useful for preparing our shop and automated tests. So we can already set up a shop accordingly if we don&rsquo;t already have a shop in this branch.</p>
 <p>To do this, go to your terminal and execute the commands below:</p>
 <p>ℹ️ For your information, we recommend that you put it in the <em>Computer/var/www/html</em> folder (this recommendation only applies to Linux users).</p>
-<p><img src="images/readme8.png" alt="img.png"></p>
+<img src="img/pr-management2.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>We can see that in <strong>violet</strong> we&rsquo;ve put the &ldquo;<strong>Branch &ldquo;</strong> we&rsquo;re interested in and in <strong>brown</strong> the name of our file, which can be modified as we wish.</p>
 <p>Still with this <strong>Branch</strong>, We advise you to launch the automated Tests.</p>
 <p>ℹ️ To start the automated tests, you can go to <a href="https://github.com/PrestaShop/ga.tests.ui.pr,">https://github.com/PrestaShop/ga.tests.ui.pr,</a> on the readme.md file, you will have all the information you need to run the automated tests</p>
@@ -329,30 +324,30 @@
 <li>Fixed issue or discussion: When you click on the indicated issue, you&rsquo;ll have all the information you need to reproduce it.</li>
 </ul>
 <p>Once on the issue, all you have to do is scroll down to find the &ldquo;Steps to reproduce&rdquo; section and follow the steps one by one, taking the example of our same PR:</p>
-<p><img src="images/readme9.png" alt="img.png"></p>
+<img src="img/pr-management3.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>If the issue has been validated by our testers, (⚠️ any PR that mentions an issue must have this issue validated by the QA, otherwise the PR will not be taken into account) the steps to reproduce must have been reviewed by them and are therefore easily reproducible.</p>
 <p>ℹ️ If the issue has been validated by a Developer, the PR in question should be reviewed and tested by a Dev, unless otherwise specified.</p>
 <p>ℹ️ If you have installed your shop in <em>Computer/var/www/html,</em> you will be able to use your shop from a web browser and put the link : <em>localhost/PR_81x</em> (this recommendation only applies to Linux users).</p>
 <h3 id="3-installing-the-pr">3 Installing the PR</h3>
 <p>Once we&rsquo;ve reproduced the issue, we now need to check that the PR actually fixes the problem. To do this, we first need to install it in our shop. We&rsquo;ll take out the terminal in the <strong>PR_81x</strong> folder and you&rsquo;ll be able to type these commands:</p>
-<p><img src="images/readme10.png" alt="img.png"></p>
+<img src="img/pr-management4.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>ℹ️ prc here is an alias that we set up earlier like this :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">prc = &#34;!f() { git checkout $3 &amp;&amp; git branch -D pr-$2; git fetch $1 pull/$2/head:pr-$2 &amp;&amp; git checkout pr-$2 &amp;&amp; git reset --hard &amp;&amp; git clean -fd &amp;&amp; git rebase $1/$3 &amp;&amp; composer install;  }; f&#34; 
 </code></pre></div><p>For the color code, we always use <strong>violet</strong> for the <strong>Branch</strong> and this time we&rsquo;ll use <strong>green</strong> for the <strong>PR number</strong>.</p>
 <p>We can find this <strong>number</strong> in the title of the PR, as you can see.</p>
-<img src="images/readme11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management5.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>All you have to do now is try to reproduce the issue again to see if the PR corrects it correctly.
 If it&rsquo;s all good, you can proceed to the next step of this documentation (step 4). If not, you can directly check step 5!</p>
 <h3 id="4-check-that-the-pr-doesnt-create-another-issue">4. Check that the PR doesn&rsquo;t create another issue</h3>
 <p>Now that you&rsquo;ve checked that the PR has corrected the issue, you need to make sure that it doesn&rsquo;t create another one instead. To do this, you need test axes.</p>
 <p>To find them, go to the Files changed tab:</p>
-<img src="images/readme12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management6.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>You&rsquo;ll then have all the changes made to the PR. To do this, you&rsquo;ll get this view:</p>
-<img src="images/readme13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management7.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>Seen like this, it may seem rather difficult to see the differences and what might be impacted, so we advise you to modify the split view and save.</p>
-<img src="images/readme14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management8.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>You now have a better view of the various modifications, and can read the whole thing.</p>
-<img src="images/readme15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management9.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>No computer skills? But you still need to check that it&rsquo;s not overflowing? There are two things you can do:</p>
 <ul>
 <li>From which <strong>file</strong> the modification was made. You can see on the screen the name of the <strong>file</strong> framed in <strong>Orange</strong>. By seeing the names, I can tell that it will be on the front by the name &ldquo;FrontController&rdquo;.</li>
@@ -366,24 +361,24 @@ If you still have so many failures on the automated tests, you can test them man
 <li>The PR is valid, it doesn&rsquo;t create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it&rsquo;s the desired behavior but it&rsquo;s not) and to put the link to the automated tests if you ran them.
 In your comment, you&rsquo;ll need to select the Approve option before submitting the review.</li>
 </ul>
-<img src="images/readme16.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
+<img src="img/pr-management10.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
 <ul>
 <li>The PR is not valid. In this case, indicate that it doesn&rsquo;t work, put a video showing that it doesn&rsquo;t work and put the link to the automated tests if you ran them (to prove that it brings issues).
 If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
 In your comment, you&rsquo;ll need to select the Comment option before submitting the review. The Request changes option will force the same QA to respond to the same PR, whereas it would be preferable for someone else to test it once the changes have been made.</li>
 </ul>
-<img src="images/readme17.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>As you can see, in both cases, you&rsquo;ll have to provide a video and a link to the automated tests to show your good faith.</p>
 <p>ℹ️ Yes, even when the PR is valid, it&rsquo;s better to offer a video. This will allow future QAs to see how we&rsquo;re supposed to behave with the PR. Very useful when we&rsquo;re doing test plans / release plans or when we have to go back on a PR.</p>
 <h3 id="bonus---module-testing">Bonus - Module testing</h3>
 <p>If you come across a Module PR, the process remains the same as for a PR (in broad terms). What will change is the installation process.</p>
 <p>To do this, start by opening your PR:</p>
-<img src="images/readme18.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>We&rsquo;ve framed the PR version in <strong>Green</strong> and the &ldquo;branch &ldquo;** in **Purple**, represented here by **autoupgrade**.</p>
 <p>We&rsquo;re going to perform the same operations from the beginning to step 3</p>
 <p>ℹ️ We don&rsquo;t need to run the auto test, as it doesn&rsquo;t work with modules.</p>
 <p>So we&rsquo;re going to run a special command in the terminal linked to our shop folder:</p>
-<img src="images/readme19.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>ℹ️ If your module includes a .json package, you need to add this command line for your module to function correctly</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">&amp;&amp;</span> <span class="nx">npm</span> <span class="nx">run</span> <span class="nx">build</span>
 </code></pre></div><p>ℹ️ If you want to install your module directly (if it&rsquo;s not native), you can run this command in your terminal:</p>
@@ -392,15 +387,14 @@ In your comment, you&rsquo;ll need to select the Comment option before submittin
 <p>This is one of the few things that is different from a &ldquo;normal&rdquo; PR. We can now test the module PR and repeat the same process as in step 4.</p>
 <p>For your information ℹ️:</p>
 <p>If you still can&rsquo;t install the module PR, you&rsquo;ll probably find some hint in its <em>readme</em>.</p>
-<img src="images/readme20.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 <p>Click on the <strong>branch</strong> link then scroll down and you&rsquo;ll find an Installation section:</p>
-<img src="images/readme21.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
