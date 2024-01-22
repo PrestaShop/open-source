@@ -68,7 +68,7 @@ For the color code, we always use **violet** for the **Branch** and this time we
 We can find this **number** in the title of the PR, as you can see. 
 
 
-![img.png](images/readme11.png)
+<img src="images/readme11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 
 All you have to do now is try to reproduce the issue again to see if the PR corrects it correctly.
@@ -80,19 +80,19 @@ Now that you've checked that the PR has corrected the issue, you need to make su
 
 To find them, go to the Files changed tab: 
 
-![img.png](images/readme12.png)
+<img src="images/readme12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 You'll then have all the changes made to the PR. To do this, you'll get this view: 
 
-![img.png](images/readme13.png)
+<img src="images/readme13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 Seen like this, it may seem rather difficult to see the differences and what might be impacted, so we advise you to modify the split view and save.
 
-![img.png](images/readme14.png)
+<img src="images/readme14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 You now have a better view of the various modifications, and can read the whole thing. 
 
-![img.png](images/readme15.png)
+<img src="images/readme15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 No computer skills? But you still need to check that it's not overflowing? There are two things you can do: 
 
@@ -111,14 +111,14 @@ Once the PR test has been completed, there are two possible situations:
 
 - The PR is valid, it doesn't create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it's the desired behavior but it's not) and to put the link to the automated tests if you ran them.
 In your comment, you'll need to select the Approve option before submitting the review.
-    
-![img.png](images/readme16.png)
+
+<img src="images/readme16.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
     
 - The PR is not valid. In this case, indicate that it doesn't work, put a video showing that it doesn't work and put the link to the automated tests if you ran them (to prove that it brings issues).
 If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
 In your comment, you'll need to select the Comment option before submitting the review. The Request changes option will force the same QA to respond to the same PR, whereas it would be preferable for someone else to test it once the changes have been made.
-    
-![img.png](images/readme17.png)
+
+<img src="images/readme17.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 As you can see, in both cases, you'll have to provide a video and a link to the automated tests to show your good faith.
 
@@ -130,7 +130,7 @@ If you come across a Module PR, the process remains the same as for a PR (in bro
 
 To do this, start by opening your PR: 
 
-![img.png](images/readme18.png)
+<img src="images/readme18.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 We've framed the PR version in **Green** and the "branch "** in **Purple**, represented here by **autoupgrade**. 
 
@@ -140,7 +140,7 @@ We're going to perform the same operations from the beginning to step 3
 
 So we're going to run a special command in the terminal linked to our shop folder: 
 
-![img.png](images/readme19.png)
+<img src="images/readme19.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 ℹ️ If your module includes a .json package, you need to add this command line for your module to function correctly
 
@@ -162,8 +162,8 @@ For your information ℹ️:
 
 If you still can't install the module PR, you'll probably find some hint in its *readme*. 
 
-![img.png](images/readme20.png)
+<img src="images/readme20.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 Click on the **branch** link then scroll down and you'll find an Installation section:
 
-![img.png](images/readme21.png)
+<img src="images/readme21.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">

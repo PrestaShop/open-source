@@ -8,6 +8,10 @@ title: Processes
 
 * [How to manage Issues](./issue-management)
 
+## Pull Request Management
+
+* [Testing Pull Request](./pr-management)
+
 ## Software Testing
 
 * [How to test Pull Requests](./test-pr-and-branches)

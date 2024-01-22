@@ -162,13 +162,13 @@ In case any information is missing:
 
 1. Reply using the "Incomplete Issue" template.
 2. Set status label to `NMI` (Need More Info) with `Waiting for author` label.
-3. **Don’t forget** to add the necessary labels like : **version** (`1.7.8.x`, `8.1.x`, …), **Categoy** (`BO`, `FO`, …), **Pages** (`Products`, `Module`, `Order`, …), …
+3. **Don’t forget** to add the necessary labels like : **version** (`1.7.8.x`, `8.1.x`, …), **Category** (`BO`, `FO`, …), **Pages** (`Products`, `Module`, `Order`, …), …
 
 If it is a `Task`, add the necessary labels and place it in Project Kanban:
 
 1. If the task is dev oriented, add the `Developer Feature` label.
 2. If the issue seems properly specified, set the status label to `Ready`. Otherwise, set it to `Needs specs`.
-3. **Don’t forget** to add these labels like : **Categoy** (`BO`, `FO`, …), **Pages** (`Products`, `Module`, `Order`, …), ….
+3. **Don’t forget** to add these labels like : **Category** (`BO`, `FO`, …), **Pages** (`Products`, `Module`, `Order`, …), ….
 
 {{% notice warning %}}
 Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/) for 1.7 or [PrestaShop's system requirements](https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/) for 8.

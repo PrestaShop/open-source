@@ -18,19 +18,20 @@ To do this, simply :
 
 1. Go to Prestashop Pull requests: 
 
-![Pull request](images/release_manager_img_1.png)
+<img src="images/release_manager_img_1.png" alt="Pull request" class="mx-lg-4" style="max-width: 700px">
 
 2. Click on Milestones
 
-![Milestones](images/release_manager_img_2.png)
+<img src="images/release_manager_img_2.png" alt="Milestones" class="mx-lg-4" style="max-width: 700px">
 
-1. Click on the version you require (for this example, it will be 1.7.8.9) 
 
-![Version](images/release_manager_img_3.png)
+3. Click on the version you require (for this example, it will be 1.7.8.9) 
+
+<img src="images/release_manager_img_3.png" alt="Version" class="mx-lg-4" style="max-width: 700px">
 
 4. Click on Closed (these are the merged PRs for the selected version) 
 
-![Closed](images/release_manager_img_4.png)
+<img src="images/release_manager_img_4.png" alt="Closed" class="mx-lg-4" style="max-width: 700px">
 
 You now have the list of all the PRs merged in your release. It's highly recommended that you check them all to find out what these PRs might affect. 
 
@@ -45,16 +46,16 @@ Again, we'll do this in a few steps:
 
 1. Open [Prestashop project](https://build.prestashop-project.org/test-scenarios/)
 
-![Tests](images/release_manager_img_19.png)
 
-1. Select the various repository affected by the PRs (e.g. a change in product creation) 
+<img src="images/release_manager_img_19.png" alt="Closed" class="mx-lg-4" style="max-width: 700px">
 
-![test repos](images/release_manager_img_20.png)
+2. Select the various repository affected by the PRs (e.g. a change in product creation) 
+
+<img src="images/release_manager_img_20.png" alt="test repos" class="mx-lg-4" style="max-width: 700px">
 
 3. Once you've identified the different scenarios that interest you, write them down (or mark them in your notepad). 
 
-![Tests2](images/release_manager_img_21.png)
-
+<img src="images/release_manager_img_21.png" alt="Tests2" class="mx-lg-4" style="max-width: 700px">
 
 If you've followed all these steps, you should now have your list of test scenarios which should be tested for this release, which you can share with your team members and developers. 
 
