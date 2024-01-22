@@ -47,7 +47,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-10-20T16:17:51+02:00" />
+<meta property="article:modified_time" content="2024-01-22T12:05:53+01:00" />
 
 
 
@@ -349,6 +349,9 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the P
 </ul>
 <p>For new major/minor version you will have to create a new dedicated branch node.</p>
 <p>Once this step is done, update the Release Tracker GitHub issue by ticking the &ldquo;Available for upgrade&rdquo; box.</p>
+
+<div class="notices tip" >The release note announcing the new version can be published after this change is effective. Please verify <a href="https://api.prestashop.com/xml/channel.xml">https://api.prestashop.com/xml/channel.xml</a> file status. You might need to wait for the cache to be cleared.</div>
+
 <h2 id="2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</h2>
 <ul>
 <li>Checkout the <a href="https://github.com/PrestaShop/docker">project</a>, install the project and create a new branch</li>
