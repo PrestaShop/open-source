@@ -33,6 +33,10 @@ For new major/minor version you will have to create a new dedicated branch node.
 
 Once this step is done, update the Release Tracker GitHub issue by ticking the "Available for upgrade" box.
 
+{{% notice tip %}}
+The release note announcing the new version can be published after this change is effective. Please verify https://api.prestashop.com/xml/channel.xml file status. You might need to wait for the cache to be cleared.
+{{% /notice %}}
+
 ## 2. Create Docker images for the new version
 
 * Checkout the [project][docker-repository], install the project and create a new branch

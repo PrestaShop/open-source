@@ -101,4 +101,8 @@ It's not unusual to have very long changelogs, especially in minor versions. To 
 Congratulations! You can now update the Release Tracker GitHub issue: tick the "QA" and "Development" boxes and [add a comment](https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-653083656).
 
 
+{{% notice tip %}}
+In the past, we used to publish the release note at this step of the release process. Please keep it on hold a little longer and do it after the Update API stream for 1-click upgrade has been updated.
+{{% /notice %}}
+
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
