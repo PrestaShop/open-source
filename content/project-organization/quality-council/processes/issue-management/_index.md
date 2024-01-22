@@ -10,17 +10,17 @@ This document details the processes in place for the position of "Issues Manager
 
 ## The Issue Manager job
 
-Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
+Your job is to **qualify issues** submitted to the GitHub project. Good issues help us discover bugs and provide ideas to improve PrestaShop and the native modules. These are the three questions you must ask yourself:
 
 - **Is the issue valid?** The issue must be a bug report. We only cover the PrestaShop project (Core + native modules). Request for feature should be converted in GitHub Discussions.
-- **Has all the needed information been provided?** The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.
-- **Can it be reproduced?** An issue can't be fixed if we can't reproduce it.
+- **Has all the needed information been provided?** The issue must be understandable and contain the required information as provided in the issue template, complemented with any other detail needed for reproduction.
+- **Can it be reproduced?** An issue can't be fixed if we can't reproduce it.
 
 Here are some tips:
 
-- **Don't provide free support.** Your job isn't to help the reporter fix their problem, but to determine if the problem is caused by a defect in the software (or in documentation).
-- **Be pragmatic about your efforts.** It's the reporter's responsibility to provide the information needed to reproduce the problem in an understandable way. Don't waste your energy doing guesswork or waiting for a response.
-- **Don't be a robot either.** Don't take these guidelines to the letter. If the reporter makes an effort, try to be flexible.
+- **Don't provide free support.** Your job isn't to help the reporter fix their problem, but to determine if the problem is caused by a defect in the software (or in documentation).
+- **Be pragmatic about your efforts.** It's the reporter's responsibility to provide the information needed to reproduce the problem in an understandable way. Don't waste your energy doing guesswork or waiting for a response.
+- **Don't be a robot either.** Don't take these guidelines to the letter. If the reporter makes an effort, try to be flexible.
 
 ## Issue state & labels
 
@@ -73,13 +73,13 @@ Don’t use the **`develop`**  label, try to specify the branch like **`8.1.x`**
 
 ### Flow overview
 
-Source: [https://miro.com/app/board/o9J_kwzVdW0=/](https://miro.com/app/board/o9J_kwzVdW0=/)
+<img src="img/Issue_state_flow.jpg" alt="Issue Flow" class="mx-lg-4" style="max-width: 700px">
 
 ## Your routine
 
 ### New issues
 
-The first thing to do is to deal with the new issues. This can be done by [filtering out New issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3ANew). Each of these issues must be managed according to the issue processing protocol.
+The first thing to do is to deal with the new issues. This can be done by [filtering out New issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3ANew). Each of these issues must be managed according to the issue processing protocol.
 
 
 {{% notice warning %}}
@@ -88,7 +88,7 @@ This step should be repeated regularly during the day, to deal with issues as th
 
 ### Issues with the NMI label
 
-The second step is to deal with issues labelled `NMI` (Need More Info) without `Waiting for author` label, which could have been updated by the author or any member of the community. To do this, you have to display the [NMI labeled issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+-label%3A%22Waiting+for+dev%22+sort%3Aupdated-asc+) without `Waiting for author` and sort them by decreasing date of update. NMI issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author or any member of the community has replied and provided the requested details, the issue will proceed according to the issue handling protocol.
+The second step is to deal with issues labelled `NMI` (Need More Info) without `Waiting for author` label, which could have been updated by the author or any member of the community. To do this, you have to display the [NMI labeled issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+-label%3A%22Waiting+for+author%22+-label%3A%22Waiting+for+dev%22+sort%3Aupdated-asc+) without `Waiting for author` and sort them by decreasing date of update. NMI issues are issues where crucial information is missing that only the author can provide, usually details on the reproduction steps. If the author or any member of the community has replied and provided the requested details, the issue will proceed according to the issue handling protocol.
 
 {{% notice warning %}}
 Make sure you inspect all issues updated in the last few days and not just in the last 24 hours!
@@ -96,7 +96,7 @@ Make sure you inspect all issues updated in the last few days and not just in th
 
 ### Issues to be closed
 
-Finally, the third step consists in tracing the issues that have not been updated for more than 20 days, and closing them. To do this, you have to [filter by increasing date](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+label%3A%22Waiting+for+author%22+sort%3Aupdated-asc) and on the `NMI` + `Waiting for author`filter. Steps :
+Finally, the third step consists in tracing the issues that have not been updated for more than 20 days, and closing them. To do this, you have to [filter by increasing date](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3ANMI+label%3A%22Waiting+for+author%22+sort%3Aupdated-asc) and on the `NMI` + `Waiting for author`filter. Steps :
 
 1. Comment with the "Issue without answer" model
 2. Remove the `NMI` label
@@ -106,7 +106,7 @@ Finally, the third step consists in tracing the issues that have not been update
 ### End of the day
 
 Take the time to list the issues reproduced and taken into account during the day. 
-Send an email to [coreteam@prestashop.com](mailto:coreteam@prestashop.com), [support-team@prestashop.com](mailto:support-team@prestashop.com), [qa-core@prestashop.com](mailto:qa-core@prestashop.com) AND [coreproduct@prestashop.com](mailto:coreproduct@prestashop.com) with a brief report, with a list of validated issues (aka taken into account) and duplicated issues and share the same content on Public Slack with **[project-members](https://app.slack.com/client/TTJ6M3GPL/G01D794JQTE)**. 
+Send an email to [coreteam@prestashop.com](mailto:coreteam@prestashop.com), [support-team@prestashop.com](mailto:support-team@prestashop.com), [qa-core@prestashop.com](mailto:qa-core@prestashop.com) AND [coreproduct@prestashop.com](mailto:coreproduct@prestashop.com) with a brief report, with a list of validated issues (aka taken into account) and duplicated issues and share the same content on Public Slack with **[project-members](https://app.slack.com/client/TTJ6M3GPL/G01D794JQTE)**. 
 
 Example:
 
@@ -135,9 +135,9 @@ The handling of issues follows a detailed process. Here are the different steps,
 
 **Check that the report is really an issue!**
 
-- *Deprecated - if it's a feature request, redirect to the [appropriate template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Feature%2CNew&template=2_feature_request.yml). (since April 2023)*
-- **If it's a question** you're not obliged to answer it. Remember that the issues section is not a Q&A forum and that your job isn't to provide free support. Redirect the reporter to a support plan using the "Issue is a support request" response.
-- **If it's something that you think should be described in documentation**, consider pinging the developers or moving the issue to the [docs project](https://github.com/PrestaShop/docs).
+- *Deprecated - if it's a feature request, redirect to the [appropriate template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Feature%2CNew&template=2_feature_request.yml). (since April 2023)*
+- **If it's a question** you're not obliged to answer it. Remember that the issues section is not a Q&A forum and that your job isn't to provide free support. Redirect the reporter to a support plan using the "Issue is a support request" response.
+- **If it's something that you think should be described in documentation**, consider pinging the developers or moving the issue to the [docs project](https://github.com/PrestaShop/docs).
 - **If it is a clearly incomprehensible request**, close the issue by adding the `Invalid` label and answer using the "Issue not completed" response.
 
 ### Issue language
@@ -149,12 +149,12 @@ Issues must be written in English. If that’s not the case:
 
 ### Issue content
 
-The issue (Bug) must be complete. In particular, all mandatory fields in the [template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Bug%2CNew&template=1_bug_report.yml) must be completed:
+The issue (Bug) must be complete. In particular, all mandatory fields in the [template](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Bug%2CNew&template=1_bug_report.yml) must be completed:
 
-- **Describe the bug and add screenshots:** full details about the bug. This part represents the "observed behavior" following user manipulations.
-- **Expected behavior:** the "behavior expected" by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.
-- **Steps to Reproduce:** the steps to reproduce the problem. This is the most important part and must be completed in a comprehensive manner.
-- **PrestaShop version(s) where the bug happened:** all affected versions
+- **Describe the bug and add screenshots:** full details about the bug. This part represents the "observed behavior" following user manipulations.
+- **Expected behavior:** the "behavior expected" by the user, to be opposed to the observed behavior detailed above. This is the nominal behavior of the application. Pay attention to the specifications.
+- **Steps to Reproduce:** the steps to reproduce the problem. This is the most important part and must be completed in a comprehensive manner.
+- **PrestaShop version(s) where the bug happened:** all affected versions
 - **PHP version(s) where the bug happened:** PHP version
 - **If your bug is related to a module, specify its name and its version:** the module name and its version
 
@@ -186,7 +186,7 @@ If a duplicate is found:
 
 ### Reproducing the issue
 
-We must be able to reproduce the bug in a controlled environment. You can record your attempt, use a screen recorder (like [Screencastify](https://www.screencastify.com/), a Chrome extension), download it and then upload it on Github, post it in a comment so that the issue’s author can see the steps you used to reproduce their issue, either on the current branch or on develop branch, depending of what the author declared in his issue.
+We must be able to reproduce the bug in a controlled environment. You can record your attempt, use a screen recorder (like [Screencastify](https://www.screencastify.com/), a Chrome extension), download it and then upload it on Github, post it in a comment so that the issue’s author can see the steps you used to reproduce their issue, either on the current branch or on develop branch, depending of what the author declared in his issue.
 
 #### If the **issue cannot be reproduced**
 
@@ -198,17 +198,17 @@ We were not able to reproduce the issue like the author described, even with all
 
 #### If the **issue CAN be reproduced**
 
-Once we have reproduced the issue with all the details given by the author, we need to check if the bug exists in the **next stable PrestaShop version to be released**.
+Once we have reproduced the issue with all the details given by the author, we need to check if the bug exists in the **next stable PrestaShop version to be released**.
 
-#### **The issue is not reproduced in the next stable PrestaShop version**
+#### **The issue is not reproduced in the next stable PrestaShop version**
 
-That means the issue has since been corrected. So you have to find the PR that fixes the problem (it can be a migration PR, or a PR that fixes something else and fixes the problem by side effect!). We then answer the author to give him the information about the PR that fixes the problem, and tell him to update his version of PrestaShop. The issue is then closed. Add the label "Fixed" and don’t forget to add the milestone.
+That means the issue has since been corrected. So you have to find the PR that fixes the problem (it can be a migration PR, or a PR that fixes something else and fixes the problem by side effect!). We then answer the author to give him the information about the PR that fixes the problem, and tell him to update his version of PrestaShop. The issue is then closed. Add the label "Fixed" and don’t forget to add the milestone.
 
-#### **The issue is reproduced in the next stable PrestaShop version**
+#### **The issue is reproduced in the next stable PrestaShop version**
 
 Now we can say that the report is indeed a bug: we now add the `Verified` label. 
 
-Now we have to go back up the chain to find the source of the problem. To do this, test the latest stable version of the previous minor release.
+Now we have to go back up the chain to find the source of the problem. To do this, test the latest stable version of the previous minor release.
 
 If the issue is reproduced: the bug follows the normal course: go to the next step.
 
@@ -224,7 +224,7 @@ The regression of the develop branch must be placed in the Kanban of the corresp
 
 ### Labelling
 
-**This step is critical** cause **labelling** consists on tagging the issue according to its different characteristics and it helps us find a bug when we’re looking for a `duplicate`. The different tags are:
+**This step is critical** cause **labelling** consists on tagging the issue according to its different characteristics and it helps us find a bug when we’re looking for a `duplicate`. The different tags are:
 
 - Type (`Bug` or `Task`),
 - [Severity (major, minor, ...)](../../../../get-involved/report-issues/how-issues-are-sorted/)
@@ -236,7 +236,7 @@ The regression of the develop branch must be placed in the Kanban of the corresp
 - Status (NMI, Needs Specs, Ready...)
 - ... (non-exhaustive list)
 
-A list of labels and their use is [available here](https://docs.google.com/spreadsheets/d/118iqWIkW24Rwn6eY8_7FnPhAacGXwA2RdGPzR_LXvy4/edit#gid=0).
+A list of labels and their use is [available here](https://docs.google.com/spreadsheets/d/118iqWIkW24Rwn6eY8_7FnPhAacGXwA2RdGPzR_LXvy4/edit#gid=0).
 
 ### Connecting an issue to an EPIC
 
@@ -252,7 +252,7 @@ Note that the product team must be able to understand the bug to be able to clas
 
 ### Rewriting the issue
 
-Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue! It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug.Pay special attention to the **reproduction steps** ("how to reproduce")!
+Once all the steps have been completed, the content of the issue should be rewritten if it is unclear, or if the author has clarified in the comments. All necessary information should be available in the body of the issue! It may be necessary to rewrite the title if it is too generic (e.g. "Help! BUG!") or if it does not accurately reflect the bug.Pay special attention to the **reproduction steps** ("how to reproduce")!
 
 ### Validating the issue
 

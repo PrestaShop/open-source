@@ -11,7 +11,7 @@ You want to take care of a PR and you don't know how to handle it, or you've sim
 
 One of the first things to do when starting a PR is to find out as much as possible about it. To do this, you'll find this table at the start of each PR
 
-![img.png](images/readme7.png)
+<img src="img/pr-management1.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 To begin with, we have the **Branch**, which will be useful for preparing our shop and automated tests. So we can already set up a shop accordingly if we don't already have a shop in this branch. 
 
@@ -20,7 +20,7 @@ To do this, go to your terminal and execute the commands below:
 
 ℹ️ For your information, we recommend that you put it in the *Computer/var/www/html* folder (this recommendation only applies to Linux users).
 
-![img.png](images/readme8.png)
+<img src="img/pr-management2.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 
 We can see that in **violet** we've put the "**Branch "** we're interested in and in **brown** the name of our file, which can be modified as we wish. 
@@ -40,7 +40,7 @@ Now that we have an installed shop in which the issue is still present, you can 
 
 Once on the issue, all you have to do is scroll down to find the "Steps to reproduce" section and follow the steps one by one, taking the example of our same PR:
 
-![img.png](images/readme9.png)
+<img src="img/pr-management3.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 If the issue has been validated by our testers, (⚠️ any PR that mentions an issue must have this issue validated by the QA, otherwise the PR will not be taken into account) the steps to reproduce must have been reviewed by them and are therefore easily reproducible. 
 
@@ -54,7 +54,7 @@ If the issue has been validated by our testers, (⚠️ any PR that mentions an 
 Once we've reproduced the issue, we now need to check that the PR actually fixes the problem. To do this, we first need to install it in our shop. We'll take out the terminal in the **PR_81x** folder and you'll be able to type these commands: 
 
 
-![img.png](images/readme10.png)
+<img src="img/pr-management4.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 
 ℹ️ prc here is an alias that we set up earlier like this :
@@ -68,7 +68,7 @@ For the color code, we always use **violet** for the **Branch** and this time we
 We can find this **number** in the title of the PR, as you can see. 
 
 
-<img src="images/readme11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management5.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 
 All you have to do now is try to reproduce the issue again to see if the PR corrects it correctly.
@@ -80,19 +80,19 @@ Now that you've checked that the PR has corrected the issue, you need to make su
 
 To find them, go to the Files changed tab: 
 
-<img src="images/readme12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management6.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 You'll then have all the changes made to the PR. To do this, you'll get this view: 
 
-<img src="images/readme13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management7.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 Seen like this, it may seem rather difficult to see the differences and what might be impacted, so we advise you to modify the split view and save.
 
-<img src="images/readme14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management8.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 You now have a better view of the various modifications, and can read the whole thing. 
 
-<img src="images/readme15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management9.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 No computer skills? But you still need to check that it's not overflowing? There are two things you can do: 
 
@@ -112,13 +112,13 @@ Once the PR test has been completed, there are two possible situations:
 - The PR is valid, it doesn't create any other issue. In this case, we advise you to indicate that it works, to put a video proving it (you may think it's the desired behavior but it's not) and to put the link to the automated tests if you ran them.
 In your comment, you'll need to select the Approve option before submitting the review.
 
-<img src="images/readme16.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
+<img src="img/pr-management10.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">    
     
 - The PR is not valid. In this case, indicate that it doesn't work, put a video showing that it doesn't work and put the link to the automated tests if you ran them (to prove that it brings issues).
 If the PR corrects the issue but creates others, it is necessary to specify the steps to reproduce the issue(s) caused by the PR, so that the PR author can correct the errors more easily.
 In your comment, you'll need to select the Comment option before submitting the review. The Request changes option will force the same QA to respond to the same PR, whereas it would be preferable for someone else to test it once the changes have been made.
 
-<img src="images/readme17.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management11.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 As you can see, in both cases, you'll have to provide a video and a link to the automated tests to show your good faith.
 
@@ -130,7 +130,7 @@ If you come across a Module PR, the process remains the same as for a PR (in bro
 
 To do this, start by opening your PR: 
 
-<img src="images/readme18.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management12.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 We've framed the PR version in **Green** and the "branch "** in **Purple**, represented here by **autoupgrade**. 
 
@@ -140,7 +140,7 @@ We're going to perform the same operations from the beginning to step 3
 
 So we're going to run a special command in the terminal linked to our shop folder: 
 
-<img src="images/readme19.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management13.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 ℹ️ If your module includes a .json package, you need to add this command line for your module to function correctly
 
@@ -162,8 +162,8 @@ For your information ℹ️:
 
 If you still can't install the module PR, you'll probably find some hint in its *readme*. 
 
-<img src="images/readme20.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management14.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
 
 Click on the **branch** link then scroll down and you'll find an Installation section:
 
-<img src="images/readme21.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
+<img src="img/pr-management15.png" alt="img.png" class="mx-lg-4" style="max-width: 700px">
