@@ -41,7 +41,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-12-13T11:05:14+01:00" />
+<meta property="article:modified_time" content="2024-02-01T10:06:03+01:00" />
 
 
 
@@ -354,6 +354,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 </code></pre></div></li>
 </ul>
 <p>Make a pull request and have it merged.</p>
+<p>Be careful: changing the version number has impacts on UI tests. You need to update the Distribution API to acknowledge the new version even though it does not exist yet, to allow UI tests to run. Submit a PR similar to <a href="https://github.com/PrestaShop/distribution-api/pull/36">this example</a> to do so.</p>
 
 <div class="notices tip" >If you&rsquo;re lost, check out <a href="https://github.com/PrestaShop/PrestaShop/pull/19980">this example</a> from the 1.7.6.6 release.</div>
 
