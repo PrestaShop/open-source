@@ -53,6 +53,8 @@ Check the following files and update them if necessary:
 
 Make a pull request and have it merged.
 
+Be careful: changing the version number has impacts on UI tests. You need to update the Distribution API to acknowledge the new version even though it does not exist yet, to allow UI tests to run. Submit a PR similar to [this example][pr-bump-dist-api] to do so.
+
 {{% notice tip %}}
 If you're lost, check out [this example][bump-core-version-pr-example] from the 1.7.6.6 release.
 
@@ -159,4 +161,4 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [nightly-build-board]: https://nightly.prestashop-project.org/
 [security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
-
+[pr-bump-dist-api]: https://github.com/PrestaShop/distribution-api/pull/36
