@@ -1,14 +1,10 @@
----
-title: How issues are sorted
----
-
 # How issues are sorted
 
 ## What happens to the issue you have reported
 
-PrestaShop Quality Assurance team (aka QA) uses a transparent definition for the criteria used to qualify issues' severity, and how they should be applied through labels on GitHub issues.
+The PrestaShop Quality Assurance team (aka QA) uses a transparent definition for the criteria used to qualify issues' severity and how they should be applied through labels on GitHub issues.
 
-Please note that severity is to be distinguished from priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development. It is usually defined by the QA team. As for the priority, it is used to organize all the tasks (bugs, improvements, features, technical tasks) that have to be done in order to meet the project's deadlines. 
+Please note that the severity is to be distinguished from the priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development. It is usually defined by the QA team. As for the priority, it is used to organize all the tasks (bugs, improvements, features, technical tasks) that have to be done in order to meet the project's deadlines. 
 
 
 ## Issue Severity Criteria
@@ -27,7 +23,7 @@ A critical issue affects a very large percentage of users (> 60%) and matches at
 
 Examples:
 
-- Difficulty accessing the front office or back office (significant slowdown, error during installation or update, fatal error)
+- Difficulty to access the Front Office or Back Office (significant slowdown, error during installation or update, fatal error)
 - Difficulty to globally manage categories, products or customers
 - Difficulty to globally place and manage orders
 
@@ -41,19 +37,18 @@ The bug affects major functionality or major data and there is a workaround, but
 A major issue affects a large percentage of users (> 30%) and matches at least one of the following:
 
 - It impacts law compliance
-- It has a strong impact on the usability of the front office / back office or blocks another project
-- It is an important problem but not necessarily blocking the main activity of the seller
+- It has a strong impact on the usability of the Front Office / Back Office or blocks another project
+- It is an important problem but doesn't necessarily block the main activity of the seller
 
 Examples:
 
-- Being unable to add, configure or delete a theme or a module
-- Difficulty in operating a module properly
-- Impacts the price the customer pays
+- Inability to add, configure or delete a theme or a module
+- Difficulty to operate a module properly
+- Impact on the price the customer pays
 
 ### Minor
 
 The bug affects minor functionality or non-critical data and there is a reasonable workaround, even if it can be annoying when using your shop.
-
 
 Examples:
 
@@ -80,11 +75,11 @@ Examples:
 
 Assessing severity helps to prioritize issues, but it is not the only criterion at stake. Given two equally severe issues, how to choose one over the other?
 
-Prioritization is done by representatives of the Development team, the Product Management team, and the Quality Assurance team.
+Prioritization is done by representatives of the Development team, the Product Management team and the Quality Assurance team.
 
-Together, during regular meetings, they look at the new confirmed issues and they sort them.
+Together, during regular meetings, they look at the new confirmed issues and sort them.
 
-In order to make sure that a given bug does not damage PrestaShop's image nor it affects the confidence merchants can have in PrestaShop, they take special care and strive to make every version of PrestaShop better than the one before. Since no one wants to introduce new bugs while fixing other bugs, regressions (new bugs created accidentally when fixing or improving an existing feature) are usually prioritized higher than older bugs. By doing this, the overall software stability is ever increasing.
+In order to make sure that a given bug does not damage PrestaShop's image nor it affects the confidence merchants can have in PrestaShop, they take special care and strive to make every version of PrestaShop better than the previous one. Since no one wants to introduce new bugs while fixing other bugs, regressions (new bugs created accidentally when fixing or improving an existing feature) are usually prioritized higher than older bugs. By doing this, the overall software stability is ever increasing.
 
 Then the issue's technical complexity is also studied: that is, whether the bug is easy or complex to fix.
 
@@ -93,7 +88,7 @@ Also sometimes some bugs will be prioritized just because of the “opportunity 
 
 The last criterion used is the business impact, of course.
 
-In the end, handling bugs requires two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue in the context of the whole project.
+In the end, handling bugs requires two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue within the context of the whole project.
 
 ---
 
