@@ -90,7 +90,6 @@ Current committers:
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
-- Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 - Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
@@ -102,6 +101,7 @@ Alumni are former technical council members or committers that do not wish to pa
 Alumni:
 
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
+- Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 
 ## Quality Council
 
