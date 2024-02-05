@@ -82,13 +82,11 @@ Current committers:
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
 - Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
-- Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
-- Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
@@ -101,6 +99,8 @@ Alumni are former technical council members or committers that do not wish to pa
 Alumni:
 
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
+- Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
+- Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 
 ## Quality Council
