@@ -79,7 +79,6 @@ Current committers:
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
-- Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
 - Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
@@ -99,6 +98,7 @@ Alumni are former technical council members or committers that do not wish to pa
 Alumni:
 
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
+- Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
