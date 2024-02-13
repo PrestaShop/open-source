@@ -79,7 +79,7 @@ Current committers:
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
-- Leemy Pakvn ([@leemyongpakvn](https://github.com/leemyongpakvn))
+- Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
 - Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
