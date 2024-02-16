@@ -1,3 +1,7 @@
+---
+title: How issues are sorted
+---
+
 # How issues are sorted
 
 ## What happens to the issue you have reported
