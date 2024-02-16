@@ -202,8 +202,8 @@ We require from maintainers to take the necessary steps to make sure this accoun
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/get-involved/report-issues/how-issues-are-sorted/</guid>
-      <description>How issues are sorted What happens to the issue you have reported PrestaShop Quality Assurance team (aka QA) uses a transparent definition for the criteria used to qualify issues&#39; severity, and how they should be applied through labels on GitHub issues.
-Please note that severity is to be distinguished from priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development.</description>
+      <description>How issues are sorted What happens to the issue you have reported The PrestaShop Quality Assurance team (aka QA) uses a transparent definition for the criteria used to qualify issues&#39; severity and how they should be applied through labels on GitHub issues.
+Please note that the severity is to be distinguished from the priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development.</description>
     </item>
     
     <item>
