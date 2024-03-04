@@ -7,7 +7,7 @@ aliases:
 
 # People and roles in the project
 
-The project is organized by councils who have authority over the different domains.
+The project is organized by councils that have authority over the different domains.
 
 To learn more about the project's organization, read [How we work]({{< relref "how-we-work.md" >}}).
 
@@ -34,8 +34,6 @@ Current members:
 - Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
-- Rosa Benouamer ([@RosaBenouamer](https://github.com/RosaBenouamer))
-- Zoé Finders ([@Zoefinders](https://github.com/Zoefinders))
 
 ### UX Designers
 
@@ -52,7 +50,7 @@ Wording managers ensure that wordings are adequate, follow the project's tone of
 
 Current wording managers:
 
-- Léa Delin ([@l-delin](https://github.com/l-delin))
+- Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
 
 ## Technical Council
 
@@ -93,7 +91,7 @@ Current committers:
 
 ### Alumni
 
-Alumni are former technical council members or committers that do not wish to participate actively in the project. They can still review and merge code contributions and their advice is always welcomed.
+Alumni are former technical council members or committers who do not wish to participate actively in the project. They can still review and merge code contributions and their advice is always welcomed.
 
 Alumni:
 
@@ -160,5 +158,5 @@ Current Software Developers in Test:
 
 Some projects have dedicated maintainers who are responsible for them:
 
-* [User documentation](https://docs.prestashop-project.org/): Léa Delin ([@l-delin](https://github.com/l-delin))
-* [Developer documentation](https://devdocs.prestashop-project.org/): Thomas Nares ([@thomasnares](https://github.com/thomasnares))
+* [User documentation](https://docs.prestashop-project.org/): Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+* [Developer documentation](https://devdocs.prestashop-project.org/): TBD
