@@ -28,3 +28,5 @@ privacy:
     googleAnalytics:
         defaultGtagStorageDenied: true
         waitForUpdate: 500
+
+favicon: images/favicon.svg
