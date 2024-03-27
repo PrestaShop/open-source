@@ -10,11 +10,9 @@ title: Processes
 
 ## Pull Request Management
 
+* [Testing Hooks with `ps_qualityassurance`](./test-hooks-with-ps_qualityassurance)
 * [Testing Pull Request](./pr-management)
-
-## Testing with vagrant
-
-* [How to test Pull Requests](./test-pr-and-branches)
+* [Testing Pull Request with Vagrant](./test-pr-and-branches)
 
 ## Software Development in Test
 
