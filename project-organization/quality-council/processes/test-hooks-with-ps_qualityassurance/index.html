@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Processes | PrestaShop Project - Open Source e-Commerce platform</title>
+<title>Testing Hooks with `ps_qualityassurance` | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content=""/>
 
-<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/" itemprop="url" />
+<link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/test-hooks-with-ps_qualityassurance/" itemprop="url" />
 
 
 
@@ -25,12 +25,12 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Processes"/>
+<meta name="twitter:title" content="Testing Hooks with `ps_qualityassurance`"/>
 <meta name="twitter:description" content=""/>
-<meta property="og:title" content="Processes" />
+<meta property="og:title" content="Testing Hooks with `ps_qualityassurance`" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/" />
+<meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/test-hooks-with-ps_qualityassurance/" />
 
 
 
@@ -243,6 +243,9 @@
         
       
       
+        
+      
+      
       
         <li class="breadcrumb-item"><a href="/">Home</a></li>
       
@@ -259,7 +262,12 @@
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Processes</li>
+        <li class="breadcrumb-item"><a href="/project-organization/quality-council/processes/">Processes</a></li>
+      
+    
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">Testing Hooks with `ps_qualityassurance`</li>
       
     
   </ol>
@@ -269,27 +277,105 @@
     </div>
     <div class="row mx-xl-2">
       
+<div id="toc" class="col-xl-2 order-xl-1">
+  <div class="wrapper">
+    <div class="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#testing-hooks-with-ps_qualityassurance">Testing Hooks with <code>ps_qualityassurance</code></a>
+      <ul>
+        <li><a href="#installation">Installation</a>
+          <ul>
+            <li><a href="#fetch-the-zip-module">Fetch the ZIP module</a></li>
+            <li><a href="#install-the-module">Install the module</a></li>
+          </ul>
+        </li>
+        <li><a href="#usage">Usage</a>
+          <ul>
+            <li><a href="#test-an-action-hook">Test an <code>action</code> Hook</a>
+              <ul>
+                <li><a href="#context">Context</a></li>
+                <li><a href="#example">Example</a></li>
+              </ul>
+            </li>
+            <li><a href="#test-a-display-hook">Test a <code>display</code> Hook</a>
+              <ul>
+                <li><a href="#context-1">Context</a></li>
+                <li><a href="#example-1">Example</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="processes">Processes</h1>
-<h2 id="issue-management">Issue Management</h2>
+        <div class="content"><h1 id="testing-hooks-with-ps_qualityassurance">Testing Hooks with <code>ps_qualityassurance</code></h1>
+<p>Hooks are not easily testable. So a module <a href="https://github.com/PrestaShop/ps_qualityassurance"><code>ps_qualityassurance</code></a> has been created to test this module.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="fetch-the-zip-module">Fetch the ZIP module</h3>
 <ul>
-<li><a href="./issue-management">How to manage Issues</a></li>
+<li>Go to the <a href="https://github.com/PrestaShop/ps_qualityassurance/releases">releases page of the module</a></li>
+<li>Download the ZIP asset of the module linked to the latest release</li>
 </ul>
-<h2 id="pull-request-management">Pull Request Management</h2>
+<h3 id="install-the-module">Install the module</h3>
 <ul>
-<li><a href="./test-hooks-with-ps_qualityassurance">Testing Hooks with <code>ps_qualityassurance</code></a></li>
-<li><a href="./pr-management">Testing Pull Request</a></li>
-<li><a href="./test-pr-and-branches">Testing Pull Request with Vagrant</a></li>
+<li>Go to your BackOffice</li>
+<li>Go to the &ldquo;Modules&rdquo; &gt; &ldquo;Module Manager&rdquo; page</li>
+<li>Click on the &ldquo;Upload a module&rdquo; button</li>
+<li>Select the previous downloaded file</li>
+<li>The module is installed.</li>
 </ul>
-<h2 id="software-development-in-test">Software Development in Test</h2>
+<p class="text-center"><img src="./installed-module.png" alt="The module is installed."></p>
+<h2 id="usage">Usage</h2>
+<h3 id="test-an-action-hook">Test an <code>action</code> Hook</h3>
+<h4 id="context">Context</h4>
+<p>In this example, we try to check if the hook <code>actionProductPriceCalculation</code> is called in frontoffice.</p>
+<p class="text-center"><img src="./hook-actionProductPriceCalculation.png" alt="Hook actionProductPriceCalculation"></p>
+<p>We can see that the price is passed as reference. We will modify the price with <code>ps_qualityassurance</code>.</p>
+<h4 id="example">Example</h4>
 <ul>
-<li><a href="./contribute-ui-tests">How to contribute to UI tests</a></li>
+<li>Go the configuration page of the module</li>
+<li>Click on the tab &ldquo;Register Hook&rdquo;</li>
+<li>For the hook name, use <code>actionProductPriceCalculation</code></li>
+<li>For the content, use</li>
 </ul>
-<h2 id="release-manager">Release Manager</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="k">if</span> <span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;use_tax&#39;</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">42.00</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">35.00</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div><ul>
+<li>Register the hook</li>
+<li>Go to the frontoffice</li>
+<li>The hook runs well</li>
+</ul>
+<p class="text-center"><img src="./hooked-actionProductPriceCalculation.png" alt="The hook runs well"></p>
+<h3 id="test-a-display-hook">Test a <code>display</code> Hook</h3>
+<h4 id="context-1">Context</h4>
+<p>In this example, we try to check if the hook <code>displayProductListReviews</code> is called in frontoffice.</p>
+<p class="text-center"><img src="./hook-displayProductListReviews.png" alt="Hook displayProductListReviews"></p>
+<p>We can see that the product is passed as parameter. We will use the product for displaying a new text with <code>ps_qualityassurance</code>.</p>
+<h4 id="example-1">Example</h4>
 <ul>
-<li><a href="./release-manager">How to contribute to Test and Release plan</a></li>
+<li>Go the configuration page of the module</li>
+<li>Click on the tab &ldquo;Register Hook&rdquo;</li>
+<li>For the hook name, use <code>displayProductListReviews</code></li>
+<li>For the content, use</li>
 </ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php">  <span class="k">return</span> <span class="s1">&#39;Your product &#34;&#39;</span> <span class="o">.</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;&#34; has the ID &#39;</span> <span class="o">.</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;.&#39;</span><span class="p">;</span>
+</code></pre></div><ul>
+<li>Register the hook</li>
+<li>Go to the frontoffice</li>
+<li>Go to a category page</li>
+<li>The hook runs well</li>
+</ul>
+<p class="text-center"><img src="./hooked-displayProductListReviews.png" alt="The hook runs well"></p>
 </div>
       </div>
     </div>
