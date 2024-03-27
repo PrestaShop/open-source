@@ -50,7 +50,7 @@ We can see that the price is passed as reference. We will modify the price with 
       $params['price'] = 35.00;
   }
 ```
-* Save
+* Register the hook
 * Go to the frontoffice
 * The hook runs well
 
@@ -77,7 +77,7 @@ We can see that the product is passed as parameter. We will use the product for 
 ```php
   return 'Your product "' . $params['product']['name'] . '" has the ID ' . $params['product']['id'] . '.';
 ```
-* Save
+* Register the hook
 * Go to the frontoffice
 * Go to a category page
 * The hook runs well
