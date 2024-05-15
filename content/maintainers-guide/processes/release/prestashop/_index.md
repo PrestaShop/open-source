@@ -52,7 +52,7 @@ Some of steps will require special tools or access rights which are currently no
      _These files must be included in the build._
 
    - **Push your work into a build branch.**  
-     _Allows the base branch to continue receiving merges while your build is being validated.._
+     _Allows the base branch to continue receiving merges while your build is being validated._
    
    - **Build and store the zip archive.**  
      _The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies & tests._
