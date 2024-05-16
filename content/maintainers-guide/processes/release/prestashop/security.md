@@ -7,7 +7,7 @@ weight: 10
 
 ## Context
 
-In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contain only the security fixes.
+In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.
 
 Examples: [PrestaShop 8.1.6][8.1.6] or [PrestaShop 8.1.4][8.1.4]
 
