@@ -3,13 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Create the build | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over.
-Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request."/>
+<title>Security patch releases | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Security patch releases Context In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.
+Examples: PrestaShop 8.1.6 or PrestaShop 8.1.4
+For regular patch releases, we start from the content of the patch branch to create a new build."/>
 
-<link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/" itemprop="url" />
+<link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/security/" itemprop="url" />
 
 
 
@@ -28,20 +27,18 @@ Before you go further, make sure to tick the &ldquo;Development&rdquo; box in th
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Create the build"/>
-<meta name="twitter:description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over.
-Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request."/>
-<meta property="og:title" content="Create the build" />
-<meta property="og:description" content="Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over.
-Before you go further, make sure to tick the &ldquo;Development&rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request." />
+<meta name="twitter:title" content="Security patch releases"/>
+<meta name="twitter:description" content="Security patch releases Context In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.
+Examples: PrestaShop 8.1.6 or PrestaShop 8.1.4
+For regular patch releases, we start from the content of the patch branch to create a new build."/>
+<meta property="og:title" content="Security patch releases" />
+<meta property="og:description" content="Security patch releases Context In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.
+Examples: PrestaShop 8.1.6 or PrestaShop 8.1.4
+For regular patch releases, we start from the content of the patch branch to create a new build." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/" /><meta property="article:section" content="maintainers-guide" />
+<meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/security/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2024-05-15T21:56:59+02:00" />
+<meta property="article:modified_time" content="2024-05-16T09:23:50+02:00" />
 
 
 
@@ -286,7 +283,7 @@ Before you go further, make sure to tick the &ldquo;Development&rdquo; box in th
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">Create the build</li>
+        <li class="breadcrumb-item active" aria-current="page">Security patch releases</li>
       
     
   </ol>
@@ -296,178 +293,35 @@ Before you go further, make sure to tick the &ldquo;Development&rdquo; box in th
     </div>
     <div class="row mx-xl-2">
       
-<div id="toc" class="col-xl-2 order-xl-1">
-  <div class="wrapper">
-    <div class="toc-title">Table of Contents</div>
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#create-a-build-package">Create a build package</a>
-      <ul>
-        <li><a href="#1-communicate">1. Communicate</a></li>
-        <li><a href="#2-create-a-local-branch-for-your-build">2. Create a local branch for your build</a></li>
-        <li><a href="#3-merge-any-not-yet-merged-security-fixes-into-your-branch">3. Merge any not-yet merged security fixes into your branch</a></li>
-        <li><a href="#4-update-the-changelog--contributors-list">4. Update the Changelog &amp; Contributors list</a>
-          <ul>
-            <li><a href="#extract-list-of-changes-and-contributors-using-the-changelog-tool">Extract list of changes and contributors using the changelog tool</a></li>
-            <li><a href="#update-the-projects-files">Update the project&rsquo;s files</a></li>
-          </ul>
-        </li>
-        <li><a href="#5-push-your-work-into-a-build-branch">5. Push your work into a build branch</a>
-          <ul>
-            <li><a href="#if-the-branch-does-not-contain-security-fixes">If the branch does not contain security fixes</a></li>
-            <li><a href="#if-the-branch-contains-security-fixes">If the branch contains security fixes</a></li>
-          </ul>
-        </li>
-        <li><a href="#6-build-the-zip-archive">6. Build the ZIP archive</a></li>
-        <li><a href="#7-archive-your-build">7. Archive your build</a>
-          <ul>
-            <li><a href="#rename-files">Rename files</a></li>
-            <li><a href="#upload-files-to-the-archive">Upload files to the archive</a></li>
-          </ul>
-        </li>
-        <li><a href="#8-communicate-and-wait-for-qa-validation">8. Communicate and wait for QA validation</a>
-          <ul>
-            <li><a href="#if-the-qa-rejects-the-build">If the QA rejects the build</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="create-a-build-package">Create a build package</h1>
-<p>Once preliminary tasks have been completed, the project is ready to be built.</p>
-<h2 id="1-communicate">1. Communicate</h2>
-<p>Starting this step means that the Development phase of this release is over.</p>
-<p>Before you go further, make sure to <strong>tick the &ldquo;Development&rdquo; box</strong> in the Release Tracker GitHub issue (there is one per version, see the <a href="https://github.com/PrestaShop/PrestaShop/issues/19959">1.7.6.6 example</a>).</p>
-<h2 id="2-create-a-local-branch-for-your-build">2. Create a local branch for your build</h2>
-<p>The following tasks will require you to perform changes and submit them as a Pull Request.</p>
+        <div class="content"><h1 id="security-patch-releases">Security patch releases</h1>
+<h2 id="context">Context</h2>
+<p>In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.</p>
+<p>Examples: <a href="https://github.com/PrestaShop/PrestaShop/compare/8.1.5...8.1.6">PrestaShop 8.1.6</a> or <a href="https://github.com/PrestaShop/PrestaShop/compare/8.1.3...8.1.4">PrestaShop 8.1.4</a></p>
+<p>For regular patch releases, we start from the content of the patch branch to create a new build. For example for 8.1.x patch releases, when we decide to release a new version, we fetch the current state of 8.1.x branch.</p>
+<p>For security patch releases instead, we fetch the latest stable version of the software. Meaning: when we decided to release the security release PrestaShop 8.1.6, we did not fetch the current state of 8.1.x branch, we fetched the 8.1.5 tag and worked from that instead.</p>
+<p>By only bundling the changes to fix the security issue and nothing else in a release, we create a lightweight patch, easy to build, test, deploy, and easy for users to apply or upgrade.</p>
+<h2 id="process-changes">Process changes</h2>
+<p>The first part of the release process, <a href="/maintainers-guide/processes/release/prestashop/preliminary-tasks/">&ldquo;Perform preliminary tasks&rdquo;</a> is then changed:</p>
 <ul>
 <li>
-<p><strong>Clone the project</strong> on your computer using Git (only if you don&rsquo;t already have a local copy of the repository).</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git clone git@github.com:PrestaShop/PrestaShop.git
-</code></pre></div></li>
-<li>
-<p><strong>Make sure that you switch to the appropriate branch</strong> regarding the version you&rsquo;ll be building (e.g. you must be on branch 1.7.7.x if you&rsquo;re building a 1.7.7 release).</p>
+<p><strong>Fetch the last released git tag and create a branch from it.</strong></p>
 </li>
 <li>
-<p><strong>Make sure your branch is up-to-date with upstream.</strong> Especially if you already had a local clone of the repository.</p>
+<p><strong>Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.</strong></p>
 </li>
 <li>
-<p><strong>Create a local branch for your work.</strong> Keep it! You will need to go back to it later.</p>
+<p><strong>Update the version number in the created branch.</strong></p>
 </li>
 </ul>
-<h2 id="3-merge-any-not-yet-merged-security-fixes-into-your-branch">3. Merge any not-yet merged security fixes into your branch</h2>
-<p>To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub <em>after</em> the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.</p>
-<p>If this release includes security PRs:</p>
+<p>The rest of the process can be applied without changes.</p>
+<p>The built ZIP should only contain:</p>
 <ul>
-<li>Add the different private temporary repositories for each Security Advisory as remotes of your local git repository.</li>
-<li>Merge each one of those PRs into your working local branch.</li>
+<li>the security fixes</li>
+<li>the version number change</li>
+<li>the Changelog</li>
 </ul>
-
-<div class="notices warning" >If there are security PRs to be merged, they are fixing minor security issues. Otherwise, a security release would have been done instead.</div>
-
-<h2 id="4-update-the-changelog--contributors-list">4. Update the Changelog &amp; Contributors list</h2>
-<h3 id="extract-list-of-changes-and-contributors-using-the-changelog-tool">Extract list of changes and contributors using the changelog tool</h3>
-
-<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
-<p>Ask a maintainer from the PrestaShop Company with access to the Changelog Tool to perform this step.</p>
-</div>
-
-<p>After this step, you should obtain two files:</p>
-<ul>
-<li>the Changelog file – including a list of all the merged Pull Requests. Make sure to keep this file, you&rsquo;ll need it later.</li>
-<li>the New Contributors file – a list of all the people who contributed code for this version for their first time.</li>
-</ul>
-<h3 id="update-the-projects-files">Update the project&rsquo;s files</h3>
-<ul>
-<li>Add the contents of the changelog at the top of PrestaShop&rsquo;s <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt">Changelog file</a>.</li>
-<li>Update PrestaShop&rsquo;s <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTORS.md">Contributors file</a> by adding the new contributors. Keep the alphabetical order.</li>
-<li>Commit your changed files with following message: &ldquo;// Changelog [version]&rdquo;</li>
-</ul>
-<h2 id="5-push-your-work-into-a-build-branch">5. Push your work into a build branch</h2>
-<p>The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.</p>
-<p>If your build is rejected because of a bug, the fixes will have to be merged into your build branch, instead of the base branch.</p>
-<h3 id="if-the-branch-does-not-contain-security-fixes">If the branch does not contain security fixes</h3>
-<ul>
-<li>Push your changes to a new branch in the public repository.<br>
-Name your branch following this scheme: <code>[version]-build</code> (for example: &ldquo;1.7.8.1-build&rdquo;)</li>
-<li>Create a new pull request to merge your changes. If you&rsquo;re lost, see <a href="https://github.com/PrestaShop/PrestaShop/pull/20032">this example</a> from the 1.7.6.6 release.</li>
-</ul>
-
-<div class="notices warning" ><p><strong>Make sure your PR is not merged accidentally!</strong></p>
-<p>The build must be validated before the PR can be merged.</p>
-</div>
-
-<h3 id="if-the-branch-contains-security-fixes">If the branch contains security fixes</h3>
-<ul>
-<li>Push your local branch into a private repository, in order to avoid disclosing the security bugs.</li>
-<li>Share access to your private repository with other maintainers so that they can verify your work.</li>
-</ul>
-<h2 id="6-build-the-zip-archive">6. Build the ZIP archive</h2>
-<p>Use the <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/tools/build/README.md">Release Creator CLI script</a> included with PrestaShop&rsquo;s sources to create the ZIP archive.</p>
-<p>From the root path of your repository, execute:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">php tools/build/CreateRelease.php --version<span class="o">=</span><span class="s2">&#34;1.7.6.6&#34;</span>
-</code></pre></div>
-<div class="notices note" >Note: the version number will be the same for pre-release versions and final release versions.</div>
-
-<p>This tool creates a build based on the state of your workspace using git archive. Therefore, files not tracked by git won&rsquo;t be included in the build.</p>
-<p><strong>Make sure you&rsquo;re building from the branch you updated in the previous step.</strong> Otherwise the package won&rsquo;t include the updated changelog and contributors files.</p>
-<p>By default, the release package will create two files in a new subdirectory in <code>/tools/build/releases</code>:</p>
-<ul>
-<li>A ZIP package, containing the software.</li>
-<li>An XML file, containing md5 checksums for every file within the package.</li>
-</ul>
-
-<div class="notices warning" ><strong>Make sure to keep them both!</strong> You will need them later on.</div>
-
-<p>As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.</p>
-<h2 id="7-archive-your-build">7. Archive your build</h2>
-<h3 id="rename-files">Rename files</h3>
-<p>Rename both files according to our naming convention:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">prestashop_&lt;version&gt;-[beta.&lt;beta number&gt;|rc.&lt;rc number&gt;]+build.&lt;build number&gt;.&lt;zip|xml&gt;
-</code></pre></div>
-<div class="callout">
-<h5 id="examples">Examples</h5>
-<ul>
-<li><code>prestashop_1.7.4.0-beta.1+build.1.zip</code> – First build of beta 1</li>
-<li><code>prestashop_1.7.4.0-beta.1+build.2.zip</code> – Second build of beta 1</li>
-<li><code>prestashop_1.7.4.0-beta.2+build.1.zip</code> – First build of beta 2</li>
-<li><code>prestashop_1.7.4.0-rc.1+build.1.zip</code>  – First build of RC 1</li>
-<li><code>prestashop_1.7.4.0+build.1.zip</code> – First build of final version</li>
-<li><code>prestashop_1.7.4.0+build.2.zip</code> – Second build of final version</li>
-</ul>
-<p>For major versions, we may build a Beta Version (example: <code>prestashop_1.7.4.0-beta.1+build.1.zip</code>).</p>
-<p>When the beta testing phase is over, we build one Release Candidate (example: <code>prestashop_1.7.4.0-rc.1+build.1.zip</code>).</p>
-<p>For patch versions, the beta and RC phase can be skipped (example: <code>prestashop_1.7.4.1+build.1.zip</code>)</p>
-
-</div>
-
-<h3 id="upload-files-to-the-archive">Upload files to the archive</h3>
-
-<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
-<p>Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step. If the branch does not contain security fixes, the maintainer must share publicly the ZIP file.</p>
-</div>
-
-<h2 id="8-communicate-and-wait-for-qa-validation">8. Communicate and wait for QA validation</h2>
-<p>At this point, the build process is over.</p>
-<ul>
-<li>Make sure the build files have been submitted to the QA team.</li>
-<li><strong>Update the Release Tracker GitHub issue</strong>. Tick the &ldquo;Build&rdquo; box, and add a comment to announce that the build has been submitted to QA (<a href="https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-651685219">see example</a>).</li>
-<li>Wait for QA to validate the build.</li>
-</ul>
-<h3 id="if-the-qa-rejects-the-build">If the QA rejects the build</h3>
-<p>In case the QA team finds blocking defects in the build, then these issues <em>must</em> be fixed and merged before the branch can be built again.</p>
-<ul>
-<li><strong>Communicate</strong> that the build validation has failed by updating the Release Tracker GitHub issue.</li>
-<li><strong>Fix the issues</strong> or wait for them to be fixed and merged in the <strong>build</strong> branch you created above <em>(and <strong>NOT</strong> in the base branch!)</em>.</li>
-<li><strong>Repeat the build process from the top</strong>. Make sure that you have checked out the head of the updated version branch.</li>
-</ul>
-<p>Once the QA has greenlighted the build, you can move on to publishing the version.</p>
 </div>
       </div>
     </div>

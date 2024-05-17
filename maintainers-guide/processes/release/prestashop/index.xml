@@ -19,6 +19,17 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
     </item>
     
     <item>
+      <title>Security patch releases</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/security/</guid>
+      <description>Security patch releases Context In the past, we used to mix security fixes for major security issues and regular Pull Requests, but that made releasing new versions of PrestaShop harder. Today when there is a major security vulnerability reported, we fix it in a scoped security patch release which contains only the security fixes.
+Examples: PrestaShop 8.1.6 or PrestaShop 8.1.4
+For regular patch releases, we start from the content of the patch branch to create a new build.</description>
+    </item>
+    
+    <item>
       <title>Create the build</title>
       <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
