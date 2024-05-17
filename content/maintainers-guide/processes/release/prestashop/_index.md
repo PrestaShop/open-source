@@ -37,6 +37,8 @@ Some of steps will require special tools or access rights which are currently no
    _To make any new wordings translatable._
 
    - **Lock the theme version.**  
+
+   - **Make sure to trigger the release of the Upgrade module if necessary.**  
     
    - **Perform manual verifications.**  
    _To make sure that the project is ready to be built._

@@ -109,8 +109,17 @@ When a new release is built, this tag is needed to lock the theme version.
 
 * Update `composer.lock` to target the new tag
 
+## 5. Make sure to trigger the release of the Upgrade module if necessary.
 
-## 5. Manual verifications
+Some releases do need an update of the [Autoupgrade][autoupgrade] module, some do not. For example if the MySQL schema of the database has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be to the [list][autoupgrade-sql-list].
+
+Please verify whether or not this new version of PrestaShop requires
+- to modify the source code of the Autoupgrade module
+- to publish a new version (using the up-to-date content of the source code) of the Autoupgrade module
+
+If yes, please follow [the release process of the Autoupgrade module][autoupgrade-release-process].
+
+## 6. Manual verifications
 
 Make sure that in the current branch:
 
@@ -162,3 +171,6 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [pr-bump-dist-api]: https://github.com/PrestaShop/distribution-api/pull/36
+[autoupgrade]: https://github.com/PrestaShop/autoupgrade/
+[autoupgrade-sql-list]: https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql
+[autoupgrade-release-process]: {{< relref "../autoupgrade.md" >}}
