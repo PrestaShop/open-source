@@ -22,6 +22,17 @@ To perform a build, you will need the following:
 Some of steps will require special tools or access rights which are currently not accessible for maintainers outside the PrestaShop Company. A notice indicates when this is the case.
 {{% /notice %}}
 
+## Different types of releases
+
+We currently have 4 kind of new releases for PrestaShop:
+
+- security patch releases
+- regular patch releases
+- minor releases
+- major releases
+
+Security patch releases contain security fixes for major security issues. Please read [about them][security-releases].
+
 ## Process overview
 
 1. **[Perform preliminary tasks][preliminary-tasks]**: (click to see the full step)
@@ -52,7 +63,7 @@ Some of steps will require special tools or access rights which are currently no
      _These files must be included in the build._
 
    - **Push your work into a build branch.**  
-     _Allows the base branch to continue receiving merges while your build is being validated.._
+     _Allows the base branch to continue receiving merges while your build is being validated._
    
    - **Build and store the zip archive.**  
      _The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies & tests._
@@ -101,3 +112,4 @@ Some of steps will require special tools or access rights which are currently no
 [create-build]: {{< relref "create-build.md" >}}
 [release-publicly]: {{< relref "release-publicly.md" >}}
 [final-steps]: {{< relref "final-steps.md" >}}
+[security-releases]: {{< relref "security.md" >}}

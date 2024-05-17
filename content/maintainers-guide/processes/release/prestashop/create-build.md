@@ -40,6 +40,9 @@ If this release includes security PRs:
 - Add the different private temporary repositories for each Security Advisory as remotes of your local git repository.
 - Merge each one of those PRs into your working local branch.
 
+{{% notice warning %}}
+If there are security PRs to be merged, they are fixing minor security issues. Otherwise, a security release would have been done instead.
+{{% /notice %}}
 
 ## 4. Update the Changelog & Contributors list
 
