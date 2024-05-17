@@ -48,6 +48,8 @@ Security patch releases contain security fixes for major security issues. Please
    _To make any new wordings translatable._
 
    - **Lock the theme version.**  
+
+   - **Make sure to trigger the release of the Upgrade module if necessary.**  
     
    - **Perform manual verifications.**  
    _To make sure that the project is ready to be built._
