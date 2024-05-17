@@ -41,7 +41,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2024-02-01T10:06:03+01:00" />
+<meta property="article:modified_time" content="2024-05-17T17:40:00+02:00" />
 
 
 
@@ -307,7 +307,8 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
         <li><a href="#2-make-sure-the-version-number-has-been-updated-in-the-core">2. Make sure the version number has been updated in the Core</a></li>
         <li><a href="#3-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">3. Make sure the default translation catalogue has been updated and pushed to Crowdin</a></li>
         <li><a href="#4-lock-the-theme-version">4. Lock the theme version.</a></li>
-        <li><a href="#5-manual-verifications">5. Manual verifications</a></li>
+        <li><a href="#5-make-sure-to-trigger-the-release-of-the-upgrade-module-if-necessary">5. Make sure to trigger the release of the Upgrade module if necessary.</a></li>
+        <li><a href="#6-manual-verifications">6. Manual verifications</a></li>
       </ul>
     </li>
   </ul>
@@ -407,7 +408,15 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
 <ul>
 <li>Update <code>composer.lock</code> to target the new tag</li>
 </ul>
-<h2 id="5-manual-verifications">5. Manual verifications</h2>
+<h2 id="5-make-sure-to-trigger-the-release-of-the-upgrade-module-if-necessary">5. Make sure to trigger the release of the Upgrade module if necessary.</h2>
+<p>Some releases do need an update of the <a href="https://github.com/PrestaShop/autoupgrade/">Autoupgrade</a> module, some do not. For example if the MySQL schema of the database has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be to the <a href="https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql">list</a>.</p>
+<p>Please verify whether or not this new version of PrestaShop requires</p>
+<ul>
+<li>to modify the source code of the Autoupgrade module</li>
+<li>to publish a new version (using the up-to-date content of the source code) of the Autoupgrade module</li>
+</ul>
+<p>If yes, please follow <a href="/maintainers-guide/processes/release/autoupgrade/">the release process of the Autoupgrade module</a>.</p>
+<h2 id="6-manual-verifications">6. Manual verifications</h2>
 <p>Make sure that in the current branch:</p>
 <ul>
 <li>
