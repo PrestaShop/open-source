@@ -17,9 +17,8 @@ The Leadership Council is in charge of providing structure and a general directi
 
 Current members:
 
-- Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
+- Amine Ouanes ([@amine-O](https://github.com/amine-O))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
-- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
 
@@ -29,11 +28,10 @@ The product council is in charge of product vision for the project, ensuring tha
 
 Current members:
 
-- Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon)) - **Council Lead**
+- Amine Ouanes ([@amine-O](https://github.com/amine-O)) - **Council Lead**
 - Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
 - Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
-- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
 
 ### UX Designers
 
@@ -52,6 +50,15 @@ Current wording managers:
 
 - Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
 
+### Alumni
+
+Alumni are former Product council members who do not wish to participate actively in the project.
+
+Alumni:
+
+- Fabien Vallon ([@fabienvallon](https://github.com/fabienvallon))
+- Mateus Shirlaw ([@MatShir](https://github.com/MatShir))
+
 ## Technical Council
 
 The technical council provides the technical vision for the whole project, reviewing and merging code contributions, while ensuring that the software is developed according to the product vision. It decides on technical subjects, including architecture and implementation choices.
@@ -60,11 +67,11 @@ Current members:
 
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre)) - **Council Lead**
 - Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox))
-- Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
 - Pablo Borowicz ([@eternoendless](https://github.com/eternoendless))
+- Thomas Nabord ([@Quetzacoalt91](https://github.com/Quetzacoalt91))
 
 ### Committers
 
@@ -78,8 +85,6 @@ Current committers:
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
-- Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
-- Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
@@ -98,6 +103,9 @@ Alumni:
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
+- Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
+- Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
+- Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
 
@@ -105,40 +113,18 @@ Alumni:
 
 The quality council provides the quality assurance vision for the project and has authority on related subjects, such as verification of pull requests, test automation strategy, bug triage process, and quality assessment.
 
-### Issue Managers
-
-Issue managers reproduce and qualify new issues to avoid duplicates and, if they are indeed defects in the software, their severity. They also redirect new improvement suggestions to the right Product Manager.
-
-Current issue managers:
-
-* Maintainers:
-  - Aurélien Rita ([@AureRita](https://github.com/AureRita))
-  - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
-  - Florine Hea ([@florine2623](https://github.com/florine2623))
-  - Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
-  - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
-  - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-  - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
-  - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-
 ### Software Testers
 
 Software Testers make sure that the quality of the software improves over time, by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop's releases and its built-in modules.
 
 Current Software Testers:
 
-* Maintainers:
   - Aurélien Rita ([@AureRita](https://github.com/AureRita))
-  - Faten Mhiri ([@MhiriFaten](https://github.com/MhiriFaten))
   - Florine Hea ([@florine2623](https://github.com/florine2623))
-  - Hajer Elleuch ([@djoelleuch](https://github.com/djoelleuch))
-  - Hana Rebai ([@HanaRebaiQA](https://github.com/HanaRebaiQA))
-  - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
-  - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
   - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
   - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
-* Committers: 
-  - Serhii Zavadskyi ([@szavadskiy](https://github.com/szavadskiy))
+  - Sarah Cavrot ([@sLorenzini](https://github.com/sLorenzini))
+  - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
 
 ### Software Developers in Test
 
@@ -147,16 +133,24 @@ Software Developers in Test provide technical vision, review contribution and wr
 Current Software Developers in Test:
 
 * Maintainers:
-  - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
   - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
   - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
 * Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
 
+### Alumni
+
+Alumni are former QA council members who do not wish to participate actively in the project.
+
+Alumni:
+
+  - Boubker Bribri ([@boubkerbribri](https://github.com/boubkerbribri))
+  - Ines Sallemi ([@sallemiines](https://github.com/sallemiines))
+  - Hibatallah Aouadni ([@hibatallahAouadni](https://github.com/hibatallahAouadni))
+
 ## Dedicated maintainers
 
 Some projects have dedicated maintainers who are responsible for them:
 
 * [User documentation](https://docs.prestashop-project.org/): Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
-* [Developer documentation](https://devdocs.prestashop-project.org/): TBD
