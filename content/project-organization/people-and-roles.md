@@ -85,14 +85,12 @@ Current committers:
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
-- Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Leone ([@tleon](https://github.com/tleon))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
-- Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
 ### Alumni
 
@@ -103,11 +101,13 @@ Alumni:
 - Antonin Clauzier ([@0x346e3730](https://github.com/0x346e3730))
 - Julius Žukauskas ([@zuk3975](https://github.com/zuk3975))
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
+- Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
 - Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
 - Thomas Baccelli ([@atomiix](https://github.com/atomiix))
+- Valentin Szczupak ([@NeOMakinG](https://github.com/NeOMakinG))
 
 ## Quality Council
 
