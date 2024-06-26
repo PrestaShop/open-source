@@ -85,6 +85,7 @@ Current committers:
 - Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
+- Matthias Goudjil ([@mattgoud](https://github.com/mattgoud))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
