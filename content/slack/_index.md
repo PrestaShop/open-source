@@ -34,4 +34,3 @@ The project's Slack chat is open to anyone who wants to discuss, help and contri
 
 - [List of current active channels]({{< relref "channels.md#active-channels" >}})
 - [Request a new channel]({{< relref "channels.md#request-a-new-channel" >}})
-- [List of active applications]({{< relref "apps-and-integrationsapps-and-integrations" >}})
