@@ -7,16 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.prestashop-project.org/slack/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://www.prestashop-project.org/slack/apps-and-integrationsapps-and-integrations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.prestashop-project.org/slack/apps-and-integrationsapps-and-integrations/</guid>
-      <description>List of apps and integrations used in Slack Productboard  Description: Productboard is a product management tool, used by the PrestaShop Core&amp;rsquo;s product team to gather feedback, organize and prioritize features and improvements to build, and to follow their development. These feedback are grouped together to create &amp;ldquo;features ideas&amp;rdquo; that you can see at http://feedback.prestashop.com/. The Productboard app connects this Slack to the PrestaShop&amp;rsquo;s Productboard.
-It allows the product managers to transform a Slack message (and its comments) into a feedback &amp;ldquo;note&amp;rdquo; on productboard.</description>
-    </item>
-    
-    <item>
       <title>Slack channels</title>
       <link>https://www.prestashop-project.org/slack/channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
