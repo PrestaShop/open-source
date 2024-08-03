@@ -82,7 +82,7 @@ Current committers:
 - Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
 - Boris Hermans ([@boherm](https://github.com/boherm))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
-- Dominik Shaim ([@ShaiMagal](https://github.com/ShaiMagal))
+- Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
 - Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
 - Matthias Goudjil ([@mattgoud](https://github.com/mattgoud))
