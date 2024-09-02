@@ -9,6 +9,10 @@ aliases:
 
 The PrestaShop project follows the [Semantic Versioning convention](https://semver.org) and alternates between major and minor releases.
 
+## Important note
+
+While we strive to adhere to the release cycles outlined below, please note that these timelines are guidelines rather than strict rules. Various factors, such as critical updates, new feature opportunities, or unforeseen challenges, may necessitate adjustments to our planned release schedule. We are committed to maintaining transparency and will communicate any significant changes to our release cycle.
+
 ##### Major versions
 
 Major versions (e.g., 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
