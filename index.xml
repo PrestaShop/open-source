@@ -13,8 +13,7 @@
       
       <guid>https://www.prestashop-project.org/project-organization/release-cycle/</guid>
       <description>PrestaShop&amp;rsquo;s release and support cycle The PrestaShop project follows the Semantic Versioning convention and alternates between major and minor releases.
-Major versions Major versions (eg. 8.0.0, 9.0.0) are important milestones. These versions contain new features, bug fixes, and above all, backward-incompatible changes that can impact modules and themes.
- Release cycle: every 12–18 months. Support: bug fixes until the next minor release.  Example: v8.0 receives bug fixes until v8.1 is released.</description>
+Important note While we strive to adhere to the release cycles outlined below, please note that these timelines are guidelines rather than strict rules. Various factors, such as critical updates, new feature opportunities, or unforeseen challenges, may necessitate adjustments to our planned release schedule. We are committed to maintaining transparency and will communicate any significant changes to our release cycle.</description>
     </item>
     
     <item>
