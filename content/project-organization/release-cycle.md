@@ -32,7 +32,7 @@ Minor versions (e.g., 8.1.0, 8.2.0, 9.1.0) are incremental updates to the previo
 * **Support:** bug fixes until the next major release. Critical bug fixes until the major release following it.
 
 {{% notice note %}}
-Example: v8.1 receives bug fixes until v9.0 is released. Afterward, it may only receive critical bug fixes until v10.0 is released. If v8.2 is released, v8.1 will receive bug fixes until v8.2 is released.
+Example: v8.1 receives bug fixes until v9.0 is released. Afterward, it may only receive critical bug fixes until v10.0 is released. If v8.2 is released, bug fixes will be delivered through v8.2 patch versions, and v8.1 will not receive patch versions anymore.
 {{% /notice %}}
 
 ##### Patch versions 
