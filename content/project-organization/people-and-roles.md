@@ -29,8 +29,9 @@ The product council is in charge of product vision for the project, ensuring tha
 Current members:
 
 - Amine Ouanes ([@amine-O](https://github.com/amine-O)) - **Council Lead**
-- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) - external contributor not affiliated with PrestaShop SA 
-- Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier)) - external contributor not affiliated with PrestaShop SA 
+- Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) - external contributor not affiliated with PrestaShop SA
+- Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps))
+- Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier)) - external contributor not affiliated with PrestaShop SA
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 
 ### UX Designers
