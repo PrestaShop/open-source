@@ -8,17 +8,18 @@ aliases:
 # Create a new branch for a new major/minor version.
 
 
-## 1) create the new branch and push it to the main repo
+### 1) Create the new branch and push it to the main repo
 
-## 2) open PRs based on the new branch and modify those files :
+Create the branch on you local git and push it to the main repository. You will need to push it to the main repository and not to your fork.
 
-There are multiples repo to update.
+### 2) Open PRs based on the new branch and modify those files:
 
-I'll list the file I modified for the creation of the 9.0.x branch as well as the corresponding pull request.
+To create the new branch, we need to update several repositories to complete the necessary work.
 
-Changed files :
+Below is a list of repositories with modified files for creating the `9.0.x` branch.
 
-PrestaShop/PrestaShop :  https://github.com/PrestaShop/PrestaShop/pull/37188
+
+`PrestaShop/PrestaShop`:
 
 - .github/workflows/cron_js_routing.yml
 - .github/workflows/cron_nightly_build.yml
@@ -29,32 +30,29 @@ PrestaShop/PrestaShop :  https://github.com/PrestaShop/PrestaShop/pull/37188
 - .github/workflows/cron_php_update_modules.yml
 - .github/PULL_REQUEST_TEMPLATE.md
 
-PrestaShop/test-scenarios : https://github.com/PrestaShop/test-scenarios/pull/558/files
+`PrestaShop/test-scenarios`:
 
 - .github/workflows/gh-pages.yml
 - config.json
-- src/content/scenarios/known-bugs/core/9.0.x.md ( created )
-- src/content/scenarios/known-bugs/_index.md
 
-PrestaShop/presthubot : https://github.com/PrestaShop/presthubot/pull/277
+`PrestaShop/presthubot`:
 
 - src/App/Command/SlackNotifierCommand.php
 
 
-PrestaShop/prestashop.github.io : ( no PR needed this time )
+`PrestaShop/prestashop.github.io`: ( no PR needed this time )
 
-- data/tags.yml ( check if already updated )
+- data/tags.yml (make sure the tag doesn't exists already)
 
-PrestaShop/kanbanbot : https://github.com/PrestaShop/kanbanbot/pull/58
+`PrestaShop/kanbanbot`:
 
 - src/PullRequest/Domain/Aggregate/PullRequest/PullRequest.php
 - src/PullRequest/Domain/Aggregate/PullRequest/PullRequestDescription.php
 - tests/Shared/Infrastructure/Provider/TranslationsCatalogProviderTest.php
 - tests/PullRequest/Application/CommandHandler/CheckTableDescriptionCommandHandlerTest.php
 
-The following repo should be updated by the QA autom team but anyway here are the files I updated.
-
-PrestaShop/ga.tests.ui.pr : https://github.com/PrestaShop/ga.tests.ui.pr/pull/79
+The QA Automation Team should update the following repositories:
+`PrestaShop/ga.tests.ui.pr`:
 
 - .github/workflows/build-shop.yml
 - .github/workflows/pr_test.yml
