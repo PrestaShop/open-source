@@ -73,6 +73,16 @@ Prerequisites to become a committer  Active participation in the project  Have a
     </item>
     
     <item>
+      <title>Create a new version branch</title>
+      <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-version-branch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-version-branch/</guid>
+      <description>Create a new branch for a new major/minor version. 1) Create the new branch and push it to the main repo Create the branch on you local git and push it to the main repository. You will need to push it to the main repository and not to your fork.
+2) Open PRs based on the new branch and modify those files: To create the new branch, we need to update several repositories to complete the necessary work.</description>
+    </item>
+    
+    <item>
       <title>Create the build</title>
       <link>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
