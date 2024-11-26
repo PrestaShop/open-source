@@ -85,6 +85,12 @@ If one "Waiting for ..." label has been applied, the team in charge will process
 
 There are some automated bots running on GitHub that will help maintainers to label the Pull Requests. For example Prestonbot is able to extract the new wordings and add the "Waiting for wording" label. You can read more about them [here][how-pull-requests].
 
+### Needs autoupgrade label
+
+If your Pull Request modifies the database structure, adds new configuration fields, or is automatically assigned with the “Needs Autoupgrade PR” label, you must create a corresponding PR for the Autoupgrade module. 
+
+For more information on this process, see Contributions to the [Autoupgrade module](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/upgrade-module/).
+
 ### About the code
 
 If the Pull Request is validated and there are no more "Waiting for ..." labels, then it awaits a [code review]. Maintainers provide this code review.
