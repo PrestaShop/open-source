@@ -5,7 +5,7 @@ title: Legal notice
 # Legal notice
 
 The website [www.prestashop-project.org/](https://www.prestashop-project.org/) is owned by PrestaShop SA, a private company with a capital of 380,645.55 euros.
-Its headquarters are located at 4, rue Jules Lefebvre, 75009 Paris, France.
+Its headquarters are located at 198, Avenue de France, 75013 Paris, France.
 
 - CS registration number: B 497 916 635
 - VAT number: FR66497916635
