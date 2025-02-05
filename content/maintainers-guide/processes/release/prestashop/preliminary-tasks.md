@@ -61,7 +61,7 @@ Ask a maintainer from the PrestaShop Company with access to the Translation Tool
 It is usually only done once per release as well.
 {{% /notice %}}
 
-1. [Use the command to extract wordings from the TranslationTool repository](<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
+1. [Use the Github Action to extract wordings from the TranslationTool repository](<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
    <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need a special right access to use it.
 
 2. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
