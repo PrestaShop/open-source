@@ -9,21 +9,7 @@ aliases:
 
 Before you can start your build, you must make sure that the project is ready to be built.
 
-## 1. Create the new version in Addons Marketplace and update native module compatibility
-
-{{% notice warning %}}
-**This step requires special rights ([doc to create a new version on Addons](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-4aae19abe5b641f9a77e904cd913e50a?pvs=4)).**
-
-Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
-{{% /notice %}}
-
-{{% notice note %}}
-**This only needs to be done once per release.**
-
-_(i.e. if done for a beta, it doesn't need to be performed again for the final release)._
-{{% /notice %}}
-
-## 2. Make sure the version number has been updated in the Core
+## 1. Make sure the version number has been updated in the Core
 
 {{% notice note %}}
 **This only needs to be done once per release.**
@@ -61,7 +47,7 @@ If you're lost, check out [this example][bump-core-version-pr-example] from the 
 [bump-core-version-pr-example]: https://github.com/PrestaShop/PrestaShop/pull/19980
 {{% /notice %}}
 
-## 3. Make sure the default translation catalogue has been updated and pushed to Crowdin
+## 2. Make sure the default translation catalogue has been updated and pushed to Crowdin
 
 {{% notice warning %}}
 **This step requires special rights.**
@@ -75,8 +61,7 @@ Ask a maintainer from the PrestaShop Company with access to the Translation Tool
 It is usually only done once per release as well.
 {{% /notice %}}
 
-1. [Use the command to extract wordings from the TranslationTool repository]
-   (<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
+1. [Use the command to extract wordings from the TranslationTool repository](<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
    <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need a special right access to use it.
 
 2. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
@@ -87,7 +72,7 @@ It is usually only done once per release as well.
 
 5. Once all the wordings have been corrected, validated and merged, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml) to push the catalogs to Crowdin (the repository need right access).
 
-## 4. Lock the theme version
+## 3. Lock the theme version
 
 {{% notice tip %}}
 You can do this step using Git or directly on GitHub on the next step.
@@ -113,7 +98,7 @@ When a new release is built, this tag is needed to lock the theme version.
 
 * Update `composer.lock` to target the new tag
 
-## 5. Make sure to trigger the release of the Upgrade module if necessary
+## 4. Make sure to trigger the release of the Upgrade module if necessary
 
 Some releases do need an update of the [Autoupgrade][autoupgrade] module, some do not. For example if the MySQL schema of the database has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be to the [list][autoupgrade-sql-list].
 
@@ -124,7 +109,7 @@ Please verify whether or not this new version of PrestaShop requires
 
 If yes, please follow [the release process of the Autoupgrade module][autoupgrade-release-process].
 
-## 6. Manual verifications
+## 5. Manual verifications
 
 Make sure that in the current branch:
 
@@ -137,12 +122,16 @@ Make sure that in the current branch:
 * All controllers are secured by annotations, and legacy link are provided for Symfony routes:
   
   ```bash
-  php bin/console prestashop:linter:security-annotation
+  php bin/console prestashop:linter:security-annotation find-missing
   php bin/console prestashop:linter:legacy-link
   ```
   
 * There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]. Consider using [this][security-checker-installer] if installing Fabpot Security Checker proves troublesome.
 
+{{% notice warning %}}
+This repository is now archived. Use composer audit instead
+{{% /notice %}}
+  
 * _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
 
 * All new hooks have been [registered][register-new-hook]
@@ -162,6 +151,20 @@ Make sure that in the current branch:
   ```
 
 * [Nightly builds][nightly-build-board] are green
+
+## 6. Create the new version in Addons Marketplace and update native module compatibility
+
+{{% notice warning %}}
+**This step requires special rights ([doc to create a new version on Addons](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-4aae19abe5b641f9a77e904cd913e50a?pvs=4)).**
+
+Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
+{{% /notice %}}
+
+{{% notice note %}}
+**This only needs to be done once per release.**
+
+_(i.e. if done for a beta, it doesn't need to be performed again for the final release)._
+{{% /notice %}}
 
 {{% notice warning %}}
 If any of above verifications fails, it MUST be addressed in a Pull Requests and merged before moving forward.
