@@ -155,7 +155,7 @@ This repository is now archived. Use composer audit instead
 ## 6. Create the new version in Addons Marketplace and update native module compatibility
 
 {{% notice warning %}}
-**This step requires special rights ([doc to create a new version on Addons](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-4aae19abe5b641f9a77e904cd913e50a?pvs=4)).**
+**This step requires special rights ([doc to create a new version on Addons](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-c665ab0777204e2d95ce6df22b140747)).**
 
 Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
 {{% /notice %}}
