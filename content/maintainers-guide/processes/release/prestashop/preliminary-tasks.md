@@ -75,18 +75,19 @@ Ask a maintainer from the PrestaShop Company with access to the Translation Tool
 It is usually only done once per release as well.
 {{% /notice %}}
 
-1. [Use the command to extract wordings from the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
-   https://github.com/PrestaShopCorp/TranslationTool is PRIVATE, and then you need a special right access to use it.
+1. [Use the command to extract wordings from the TranslationTool repository]
+   (<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
+   <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need a special right access to use it.
 
-3. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
+2. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
 
-4. If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.
+3. If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.
 
-5. If the wording to be corrected is found in /mails/themes/modern, you should first correct it in https://github.com/PrestaShop/mjml-theme-converter and the mail templates in the Prestashop CORE should also be regenerated (using https://github.com/PrestaShop/mjml-theme-converter ).
+4. If the wording to be corrected is found in /mails/themes/modern, you should first correct it in <https://github.com/PrestaShop/mjml-theme-converter> and the mail templates in the Prestashop CORE should also be regenerated (using <https://github.com/PrestaShop/mjml-theme-converter> ).
 
-6. Once all the wordings have been corrected, validated and merged, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml) to push the catalogs to Crowdin (the repository need right access).
+5. Once all the wordings have been corrected, validated and merged, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml) to push the catalogs to Crowdin (the repository need right access).
 
-## 4. Lock the theme version.
+## 4. Lock the theme version
 
 {{% notice tip %}}
 You can do this step using Git or directly on GitHub on the next step.
@@ -98,24 +99,28 @@ The theme has been moved outside of the Core repository since version 8.0.0.
 
 When a new release is built, this tag is needed to lock the theme version.
 
-- [Tag][git-tag] the new version:
+* [Tag][git-tag] the new version:
+
     ```bash
     git tag 2.0.0-rc1 # replace with your version
     ```
-- Push the tag:
+
+* Push the tag:
+
     ```bash
     git push 2.0.0-rc1 # replace with your version
     ```
 
 * Update `composer.lock` to target the new tag
 
-## 5. Make sure to trigger the release of the Upgrade module if necessary.
+## 5. Make sure to trigger the release of the Upgrade module if necessary
 
 Some releases do need an update of the [Autoupgrade][autoupgrade] module, some do not. For example if the MySQL schema of the database has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be to the [list][autoupgrade-sql-list].
 
 Please verify whether or not this new version of PrestaShop requires
-- to modify the source code of the Autoupgrade module
-- to publish a new version (using the up-to-date content of the source code) of the Autoupgrade module
+
+* to modify the source code of the Autoupgrade module
+* to publish a new version (using the up-to-date content of the source code) of the Autoupgrade module
 
 If yes, please follow [the release process of the Autoupgrade module][autoupgrade-release-process].
 
@@ -155,9 +160,8 @@ Make sure that in the current branch:
   ```bash
   composer outdated -D "prestashop/*"
   ```
-    
-* [Nightly builds][nightly-build-board] are green
 
+* [Nightly builds][nightly-build-board] are green
 
 {{% notice warning %}}
 If any of above verifications fails, it MUST be addressed in a Pull Requests and merged before moving forward.
@@ -165,12 +169,12 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 
 [security-checker]: https://github.com/fabpot/local-php-security-checker
 [register-new-hook]: {{< devdocs "development/components/hook/register-new-hook/" >}}
-[fos-js-routing]: https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
+[fos-js-routing]: <https://github.com/FriendsOfSymfony/FOSJsRoutingBundle>
 [how-to-build-assets]: {{< devdocs "development/compile-assets/" >}}
-[nightly-build-board]: https://nightly.prestashop-project.org/
-[security-checker-installer]: https://github.com/thislg/local-php-security-checker-installer
-[git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
-[pr-bump-dist-api]: https://github.com/PrestaShop/distribution-api/pull/36
-[autoupgrade]: https://github.com/PrestaShop/autoupgrade/
-[autoupgrade-sql-list]: https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql
+[nightly-build-board]: <https://nightly.prestashop-project.org/>
+[security-checker-installer]: <https://github.com/thislg/local-php-security-checker-installer>
+[git-tag]: <https://git-scm.com/book/en/v2/Git-Basics-Tagging>
+[pr-bump-dist-api]: <https://github.com/PrestaShop/distribution-api/pull/36>
+[autoupgrade]: <https://github.com/PrestaShop/autoupgrade/>
+[autoupgrade-sql-list]: <https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql>
 [autoupgrade-release-process]: {{< relref "../autoupgrade.md" >}}

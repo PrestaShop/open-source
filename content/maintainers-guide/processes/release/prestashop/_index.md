@@ -36,28 +36,28 @@ Security patch releases contain security fixes for major security issues. Please
 ## Process overview
 
 1. **[Perform preliminary tasks][preliminary-tasks]**: (click to see the full step)
-   
+
    Short summary:
-   
+
    - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
     _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
-    
+
    - **Update the version number in the Core.**
-   
+
    - **Make sure the default translation catalogue has been updated and pushed to Crowdin.**  
    _To make any new wordings translatable._
 
    - **Lock the theme version.**  
 
    - **Make sure to trigger the release of the Upgrade module if necessary.**  
-    
+
    - **Perform manual verifications.**  
    _To make sure that the project is ready to be built._
 
 2. **[Create a new build][create-build]**: (click to see the full step)
 
    Short summary:
-   
+
    - **Merge security PRs locally.**  
      _Any security PRs must be merged on a local branch before making them public._
 
@@ -66,7 +66,7 @@ Security patch releases contain security fixes for major security issues. Please
 
    - **Push your work into a build branch.**  
      _Allows the base branch to continue receiving merges while your build is being validated._
-   
+
    - **Build and store the zip archive.**  
      _The ZIP archive contains the software (including third party dependencies) and compiled assets (Javascript and CSS), but not the development sources, dev dependencies & tests._
 
@@ -80,7 +80,7 @@ Security patch releases contain security fixes for major security issues. Please
      _And publish the security advisories._
 
    - **Merge the updated Changelog and Contributors list on GitHub.**
-   
+
    - **Tag the version using Git and publish the release on GitHub.**
 
    - **Communicate.**
