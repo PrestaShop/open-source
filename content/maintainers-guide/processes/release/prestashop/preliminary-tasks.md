@@ -170,6 +170,8 @@ _(i.e. if done for a beta, it doesn't need to be performed again for the final r
 If any of above verifications fails, it MUST be addressed in a Pull Requests and merged before moving forward.
 {{% /notice %}}
 
+The preliminary steps are completed, you can now proceed to the [build steps][create-build].
+
 [security-checker]: https://github.com/fabpot/local-php-security-checker
 [register-new-hook]: {{< devdocs "development/components/hook/register-new-hook/" >}}
 [fos-js-routing]: <https://github.com/FriendsOfSymfony/FOSJsRoutingBundle>
@@ -181,3 +183,4 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 [autoupgrade]: <https://github.com/PrestaShop/autoupgrade/>
 [autoupgrade-sql-list]: <https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql>
 [autoupgrade-release-process]: {{< relref "../autoupgrade.md" >}}
+[create-build]: {{< relref "create-build.md" >}}

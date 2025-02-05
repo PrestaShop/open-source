@@ -39,9 +39,6 @@ Security patch releases contain security fixes for major security issues. Please
 
    Short summary:
 
-   - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
-    _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
-
    - **Update the version number in the Core.**
 
    - **Make sure the default translation catalogue has been updated and pushed to Crowdin.**  
@@ -53,6 +50,9 @@ Security patch releases contain security fixes for major security issues. Please
 
    - **Perform manual verifications.**  
    _To make sure that the project is ready to be built._
+
+   - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
+   _To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version._
 
 2. **[Create a new build][create-build]**: (click to see the full step)
 
@@ -106,8 +106,8 @@ Security patch releases contain security fixes for major security issues. Please
 [github-repository]: https://github.com/prestashop/prestashop
 [php]: https://www.php.net/
 [compatible-php-versions]: {{< devdocs "basics/installation/system-requirements.md#php-requirements" >}}
-[get-composer]: https://getcomposer.org/
-[nodejs]: https://nodejs.org/
+[get-composer]: <https://getcomposer.org/>
+[nodejs]: <https://nodejs.org/>
 [nodejs-requirements]: {{< devdocs "development/compile-assets.md#requirements" >}}
 
 [preliminary-tasks]: {{< relref "preliminary-tasks.md" >}}
