@@ -129,7 +129,7 @@ Make sure that in the current branch:
   php bin/console prestashop:licenses:update
   ```
 
-* Before PrestaShop 9.x: all controllers are secured by annotations, and legacy link are provided for Symfony routes:
+* All controllers are secured by annotations, and legacy link are provided for Symfony routes (starying from 9.0.x this step is obsolete as it is checked in the CI already):
 
   ```bash
   php bin/console prestashop:linter:security-annotation
