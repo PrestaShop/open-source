@@ -135,9 +135,7 @@ Make sure that in the current branch:
   php bin/console prestashop:linter:security-annotation
   php bin/console prestashop:linter:legacy-link
 
-* Before PrestaShop 9.x: There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]. Consider using [this][security-checker-installer] if installing Fabpot Security Checker proves troublesome.
-
-* For PrestaShop 9.x and above: please execute `composer audit` to check vulnerabilities.
+* There are no known vulnerabilities in composer dependencies using `composer audit` to check vulnerabilities.
 
 * _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
 
