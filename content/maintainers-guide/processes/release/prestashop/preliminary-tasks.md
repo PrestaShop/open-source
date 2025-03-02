@@ -128,15 +128,14 @@ Make sure that in the current branch:
   ```bash
   php bin/console prestashop:licenses:update
   ```
-  
-* All controllers are secured by annotations, and legacy link are provided for Symfony routes:
-  
+
+* All controllers are secured by annotations, and legacy link are provided for Symfony routes (starting from 9.0.x this step is obsolete as it is checked in the CI already):
+
   ```bash
   php bin/console prestashop:linter:security-annotation
   php bin/console prestashop:linter:legacy-link
-  ```
-  
-* There are no known vulnerabilities in composer dependencies using [Fabpot Local PHP Security Checker][security-checker]. Consider using [this][security-checker-installer] if installing Fabpot Security Checker proves troublesome.
+
+* There are no known vulnerabilities in composer dependencies using `composer audit` to check vulnerabilities.
 
 * _(Minor and major releases only)_ – No important `@todo` annotations have been left forgotten in new code
 
