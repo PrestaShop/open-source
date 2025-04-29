@@ -17,38 +17,36 @@ The Leadership Council is in charge of providing structure and a general directi
 
 Current members:
 
-- Amine Ouanes ([@amine-O](https://github.com/amine-O))
+- Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
 
 ## Product Council
 
-The product council is in charge of product vision for the project, ensuring that the software meets the needs of its various users. It has authority over product management subjects, including what features belong in the project, specifications, UI/UX guidelines, and wordings.
+The product council is in charge of the project's product vision, ensuring that the software meets the needs of its various users. It has authority over product management subjects, including what features belong in the project, specifications, UI/UX guidelines, and wording.
 
 Current members:
 
-- Amine Ouanes ([@amine-O](https://github.com/amine-O)) - **Council Lead**
-- Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps))
+- Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps)) - **Council Lead**
 - Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier)) - external contributor not affiliated with PrestaShop SA
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 
 ### UX Designers
 
-UX Designers make sure that interfaces follow the best practices in usability and design.
+UX Designers ensure that interfaces follow the best practices in usability and design.
 
 Current UX designers:
 
-- Elodie Prokhoroff ([@ElodieOS](https://github.com/ElodieOS))
 - Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
 
 ### Wording Manager
 
-Wording managers ensure that wordings are adequate, follow the project's tone of voice, and are categorized properly.
+Wording managers ensure that wordings are adequate, follow the project's tone of voice, and are correctly categorized.
 
 Current wording managers:
 
-- Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+- The wording is now validated by the members of the product council
 
 ### Alumni
 
@@ -87,6 +85,7 @@ Current committers:
 - Matthias Goudjil ([@mattgoud](https://github.com/mattgoud))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
+- Paolo Cunti ([@codencode](https://github.com/codencode))
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Leone ([@tleon](https://github.com/tleon))
@@ -111,11 +110,11 @@ Alumni:
 
 ## Quality Council
 
-The quality council provides the quality assurance vision for the project and has authority on related subjects, such as verification of pull requests, test automation strategy, bug triage process, and quality assessment.
+The quality council provides the project's quality assurance vision and has authority on related subjects, such as verifying pull requests, test automation strategy, bug triage process, and quality assessment.
 
 ### Software Testers
 
-Software Testers make sure that the quality of the software improves over time, by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop's releases and its built-in modules.
+Software Testers ensure that software quality improves over time by verifying that code changes behave as expected. To do this, they extensively test Pull Requests, PrestaShop's releases, and its built-in modules.
 
 Current Software Testers:
 
@@ -128,7 +127,7 @@ Current Software Testers:
 
 ### Software Developers in Test
 
-Software Developers in Test provide technical vision, review contribution and write automated tests, which help accelerate the testing process.
+Software Developers in Test provide technical vision, review contributions, and write automated tests, which help accelerate the testing process.
 
 Current Software Developers in Test:
 
@@ -153,4 +152,4 @@ Alumni:
 
 Some projects have dedicated maintainers who are responsible for them:
 
-* [User documentation](https://docs.prestashop-project.org/): Julie Varisellaz ([@Julievrz](https://github.com/Julievrz))
+* [User documentation](https://docs.prestashop-project.org/): TBD
