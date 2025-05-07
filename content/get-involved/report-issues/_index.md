@@ -18,7 +18,7 @@ To create your first issue, go to the [list of issues](https://github.com/Presta
 
 On the next screen, choose "Bug report" and click on "Get started"
 
-<img src="img/github-select-issue-type.png" alt="Choose Bug report" class="mx-lg-4" style="max-width: 700px">
+<img src="img/github-select-issue-type.jpeg" alt="Choose Bug report" class="mx-lg-4" style="max-width: 700px">
 
 Now fill out the form and click the "Submit new issue" button when you are done.
 
