@@ -48,7 +48,7 @@ Security patch releases contain security fixes for major security issues. Please
 
    - **Make sure to trigger the release of the Upgrade module if necessary.**  
 
-   - **Perform manual verifications.**  
+   - **Perform manual verifications.**
    _To make sure that the project is ready to be built._
 
    - **Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.**  
@@ -80,17 +80,18 @@ Security patch releases contain security fixes for major security issues. Please
      _And publish the security advisories._
 
    - **Merge the updated Changelog and Contributors list on GitHub.**
-
-   - **Tag the version using Git and publish the release on GitHub.**
-
-   - **Communicate.**
+  
+   - **Tag the version using Git. Do not push it just yet.**
+     
+   - **Communicate and push/publish the tag and the release on GitHub.**
+     _Make sure to link to the PrestaShop SA versions page from the GitHub release description to ease access to the latest built package of PrestaShop_
 
 4. **[Final steps][final-steps]**: (click to see the full step)
 
    Short summary:
 
-   - **Update API stream for 1-click upgrade.**  
-     _So that the 1-Click Upgrade (autoupgrade) module becomes aware of the new release._
+   - **Update API stream for Update Assistant (1-click upgrade).**  
+     _So that the Update Assistant (1-Click Upgrade / autoupgrade) module becomes aware of the new release._
 
    - **Create Docker images for the new version.**
 
