@@ -4,6 +4,12 @@ aliases:
   - /maintainers-guide/test-pr-and-branches/vagrant/
 ---
 
+{{% notice warning %}}
+**Vagrant repository is no longer updated.** 
+
+To test the PrestaShop pull requests, we recommend using the [Docker environment](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/contribute_using_docker/) or local installation.
+{{% /notice %}}
+
 # Using the Vagrant virtual machine
 
 We recommend using our virtual machine to quickly get a testing environment in place.
