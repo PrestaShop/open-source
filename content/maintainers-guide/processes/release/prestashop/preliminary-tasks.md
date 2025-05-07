@@ -14,7 +14,7 @@ Before you can start your build, you must make sure that the project is ready to
 {{% notice note %}}
 **This only needs to be done once per release.**
 
-PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless if the release is alpha, beta, RC or stable.
+PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
 {{% /notice %}}
 
 Check the following files and update them if necessary:
@@ -39,7 +39,7 @@ Check the following files and update them if necessary:
 
 Make a pull request and have it merged.
 
-Be careful: changing the version number has impacts on UI tests. You need to update the Distribution API to acknowledge the new version even though it does not exist yet, to allow UI tests to run. Submit a PR similar to [this example][pr-bump-dist-api] to do so.
+Be careful: changing the version number impacts UI tests. To allow UI tests to run, you need to update the Distribution API to acknowledge the new version even though it does not exist yet. To do so, submit a PR similar to [this example][pr-bump-dist-api].
 
 {{% notice tip %}}
 If you're lost, check out [this example][bump-core-version-pr-example] from the 1.7.6.6 release.
@@ -62,27 +62,27 @@ It is usually only done once per release as well.
 {{% /notice %}}
 
 1. [Use the Github Action to extract wordings from the TranslationTool repository](<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
-   <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need a special right access to use it.
+   <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need special access rights to use it.
 
-2. If the team content member requests wording corrections, they can be found either in the Prestashop CORE, a module or in the directory /mails of the Prestashop CORE.
+2. If the team content member requests wording corrections, they can be found either in the PrestaShop CORE, a module, or in the directory /mails of the PrestaShop CORE.
 
 3. If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.
 
-4. If the wording to be corrected is found in /mails/themes/modern, you should first correct it in <https://github.com/PrestaShop/mjml-theme-converter> and the mail templates in the Prestashop CORE should also be regenerated (using <https://github.com/PrestaShop/mjml-theme-converter> ).
+4. If the wording to be corrected is found in `/mails/themes/modern`, you should first correct it in <https://github.com/PrestaShop/mjml-theme-converter> and the mail templates in the PrestaShop CORE should also be regenerated (using <https://github.com/PrestaShop/mjml-theme-converter> ).
 
 5. Once all the wordings have been corrected, validated and merged, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml) to push the catalogs to Crowdin (the repository need right access).
 
 ## 3. Lock the theme version
 
 {{% notice tip %}}
-You can do this step using Git or directly on GitHub on the next step.
+You can do this step using Git or directly on GitHub in the next step.
 {{% /notice %}}
 
 The theme has been moved outside of the Core repository since version 8.0.0.
 
-* Create git tag on the Theme repository
+* Create a git tag on the Theme repository
 
-When a new release is built, this tag is needed to lock the theme version.
+This tag is needed to lock the theme version when a new release is built.
 
 * [Tag][git-tag] the new version:
 
@@ -100,14 +100,14 @@ When a new release is built, this tag is needed to lock the theme version.
 
 ## 4. Make sure to trigger the release of the Upgrade module if necessary
 
-Some releases do need an update of the [Autoupgrade][autoupgrade] module, some do not. For example if the MySQL schema of the database has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be to the [list][autoupgrade-sql-list].
+Some releases need an update of the [Update Assistant][autoupgrade] module, and some do not. For example, if the MySQL database schema has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be added to the [list][autoupgrade-sql-list].
 
 Please verify whether or not this new version of PrestaShop requires
 
-* to modify the source code of the Autoupgrade module
-* to publish a new version (using the up-to-date content of the source code) of the Autoupgrade module
+* to modify the source code of the Update Assistant (autoupgrade) module
+* to publish a new version (using the up-to-date content of the source code) of the Update Assistant (autoupgrade) module
 
-If yes, please follow [the release process of the Autoupgrade module][autoupgrade-release-process].
+If yes, please follow [the release process of the Update Assistant module][autoupgrade-release-process].
 
 ## 5. Manual verifications
 
@@ -152,12 +152,12 @@ This repository is now archived. Use composer audit instead
 
 * [Nightly builds][nightly-build-board] are green
 
-## 6. Create the new version in Addons Marketplace and update native module compatibility
+## 6. Create the new version in the PrestaShop Marketplace and update native module compatibility
 
 {{% notice warning %}}
-**This step requires special rights ([doc to create a new version on Addons](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-c665ab0777204e2d95ce6df22b140747)).**
+**This step requires special rights ([doc to create a new version on PrestaShop Marketplace](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-c665ab0777204e2d95ce6df22b140747)).**
 
-Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
+Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop Marketplace to perform this step.
 {{% /notice %}}
 
 {{% notice note %}}
