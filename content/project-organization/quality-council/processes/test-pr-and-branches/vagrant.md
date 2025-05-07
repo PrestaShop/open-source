@@ -35,10 +35,10 @@ Second, execute the script `run.sh` (or `run.bat` if you're under Windows) and f
 
 Most of the time, there is a prompt asking for a network interface, remember it's the communication between the virtual machine and the network card.
 
-{{< figure src="img/vagrant/run-script.png" alt="Running the run.sh script" >}}
+{{< figure src="../img/vagrant/run-script.png" alt="Running the run.sh script" >}}
 
 The first installation will take a while, because it needs to download the vagrant box, installs all needed packages and configures the system to make it compatible with PrestaShop.
-{{< figure src="img/vagrant/script-ended-successful.png" alt="Script running successfuly" >}}
+{{< figure src="../img/vagrant/script-ended-successful.png" alt="Script running successfuly" >}}
 
 Then, visit [http://192.168.42.42/prestashop](http://192.168.42.42/prestashop).
 
@@ -84,8 +84,8 @@ If something went wrong during the installation, the error is displayed explaini
 
 * Invalid branch name:
 
-<img src="img/vagrant/build-failed.png" alt="Invalid git branch name" class="mx-lg-4" style="max-width: 700px">
+<img src="../img/vagrant/build-failed.png" alt="Invalid git branch name" class="mx-lg-4" style="max-width: 700px">
 
 * Invalid PHP version:
 
-<img src="img/vagrant/invalid-php-version.png" alt="Invalid PHP version" class="mx-lg-4" style="max-width: 700px">
+<img src="../img/vagrant/invalid-php-version.png" alt="Invalid PHP version" class="mx-lg-4" style="max-width: 700px">
