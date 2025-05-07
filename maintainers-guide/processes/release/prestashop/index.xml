@@ -13,9 +13,9 @@
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</guid>
       <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights (doc to create a new version on Addons).
-Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.</description>
+1. Make sure the version number has been updated in the Core This only needs to be done once per release.
+PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
+ Check the following files and update them if necessary:</description>
     </item>
     
     <item>

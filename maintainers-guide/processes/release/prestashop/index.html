@@ -308,10 +308,6 @@
 <p>Short summary:</p>
 <ul>
 <li>
-<p><strong>Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.</strong><br>
-<em>To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version.</em></p>
-</li>
-<li>
 <p><strong>Update the version number in the Core.</strong></p>
 </li>
 <li>
@@ -325,8 +321,12 @@
 <p><strong>Make sure to trigger the release of the Upgrade module if necessary.</strong></p>
 </li>
 <li>
-<p><strong>Perform manual verifications.</strong><br>
+<p><strong>Perform manual verifications.</strong>
 <em>To make sure that the project is ready to be built.</em></p>
+</li>
+<li>
+<p><strong>Set up the new version on the PrestaShop Addons Marketplace and update native modules' compatibility.</strong><br>
+<em>To allow the PrestaShop Addons Marketplace and its API to serve modules compatible with this new PrestaShop version.</em></p>
 </li>
 </ul>
 </li>
@@ -367,10 +367,11 @@
 <p><strong>Merge the updated Changelog and Contributors list on GitHub.</strong></p>
 </li>
 <li>
-<p><strong>Tag the version using Git and publish the release on GitHub.</strong></p>
+<p><strong>Tag the version using Git. Do not push it just yet.</strong></p>
 </li>
 <li>
-<p><strong>Communicate.</strong></p>
+<p><strong>Communicate and push/publish the tag and the release on GitHub.</strong>
+<em>Make sure to link to the PrestaShop SA versions page from the GitHub release description to ease access to the latest built package of PrestaShop</em></p>
 </li>
 </ul>
 </li>
@@ -379,8 +380,8 @@
 <p>Short summary:</p>
 <ul>
 <li>
-<p><strong>Update API stream for 1-click upgrade.</strong><br>
-<em>So that the 1-Click Upgrade (autoupgrade) module becomes aware of the new release.</em></p>
+<p><strong>Update API stream for Update Assistant (1-click upgrade).</strong><br>
+<em>So that the Update Assistant (1-Click Upgrade / autoupgrade) module becomes aware of the new release.</em></p>
 </li>
 <li>
 <p><strong>Create Docker images for the new version.</strong></p>
