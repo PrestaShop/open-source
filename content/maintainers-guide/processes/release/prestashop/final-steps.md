@@ -23,7 +23,7 @@ to provide the best experience on the Update Assistant module:
 If you needed to release a new version of the module Update Assistant, update the `autoupgrade_recommended` property as well.
 You may have to create a new entry if the new Update Assistant is compliant with a range of PrestaShop version that is unrelated to the existing ones.
 
-Once this step is done, update the Release Tracker GitHub issue by ticking the "Available for upgrade" box.
+Once this step is done, update the Release Tracker GitHub issue by ticking the "Available for update" box.
 
 {{% notice tip %}}
 **Application of changes check.**
