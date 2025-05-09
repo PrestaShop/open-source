@@ -15,15 +15,14 @@ aliases:
 _(i.e. if not for betas and RCs)._
 {{% /notice %}}
 
-Additional changes must be brought to the [Distribution API repository](https://github.com/PrestaShop/distribution-api) 
-to provide the best experience on the Update Assistant module:
+Additional changes must be brought to the [Distribution API repository](https://github.com/PrestaShop/distribution-api) to provide the best experience on the Update Assistant module:
 
 - Add in the file [releaseNotes.json](https://github.com/PrestaShop/distribution-api/blob/main/resources/json/releaseNotes.json) the new version and the link to its release notes,
 - Update the file [autoupgrade.json](https://github.com/PrestaShop/distribution-api/blob/main/public/json/autoupgrade.json) to make the new release available for update.
 If you needed to release a new version of the module Update Assistant, update the `autoupgrade_recommended` property as well.
 You may have to create a new entry if the new Update Assistant is compliant with a range of PrestaShop version that is unrelated to the existing ones.
 
-Once this step is done, update the Release Tracker GitHub issue by ticking the "Available for update" box.
+Once this step is done and your changes have been merged, update the Release Tracker GitHub issue by ticking the "Available for update" box.
 
 {{% notice tip %}}
 **Application of changes check.**

@@ -12,7 +12,7 @@ However, after the release has been published, more steps can be necessary.
 
 Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes.
 
-For example, if a user is using version 4.16.1 and version 4.16.3 has been released, the module will inform the user that they are using an outdated version and should update.
+For example, if a user is using version 7.0.0 and version 7.0.1 has been released, the module will inform the user that they are using an outdated version and should update.
 
 <img src="../../../images/autoupgrade-update-needed.png" alt="Update of the module needed">
 
