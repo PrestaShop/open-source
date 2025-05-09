@@ -22,7 +22,7 @@ The file maps ranges of PrestaShop versions to a recommended version of Update A
 * Warn users when their current version is outdated,
 * Ensure updates are only allowed if the PrestaShop version falls within one of the defined ranges.
 
-To enable this check, update the contents of the closest exising version entry. For instance:
+To enable this check, update the contents of the closest exising version entry in the file [autoupgrade.json in the Distribution API repository](https://github.com/PrestaShop/distribution-api/blob/main/public/json/autoupgrade.json). For instance:
 
 ```json
 {
