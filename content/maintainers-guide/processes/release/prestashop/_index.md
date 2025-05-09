@@ -46,7 +46,7 @@ Security patch releases contain security fixes for major security issues. Please
 
    - **Lock the theme version.**  
 
-   - **Make sure to trigger the release of the Upgrade module if necessary.**  
+   - **Release any necessary improvement on the Update Assistant module.**  
 
    - **Perform manual verifications.**
    _To make sure that the project is ready to be built._
@@ -90,8 +90,8 @@ Security patch releases contain security fixes for major security issues. Please
 
    Short summary:
 
-   - **Update API stream for Update Assistant (1-click upgrade).**  
-     _So that the Update Assistant (1-Click Upgrade / autoupgrade) module becomes aware of the new release._
+   - **Update API stream for Update Assistant.**  
+     _So that the Update Assistant (autoupgrade) module becomes aware of the new release._
 
    - **Create Docker images for the new version.**
 

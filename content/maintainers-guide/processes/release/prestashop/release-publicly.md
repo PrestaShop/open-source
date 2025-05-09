@@ -102,7 +102,7 @@ Congratulations! You can now update the Release Tracker GitHub issue: tick the "
 
 
 {{% notice tip %}}
-In the past, we used to publish the release note at this step of the release process. Please keep it on hold a little longer and do it after the Update API stream for 1-click upgrade has been updated.
+In the past, we used to publish the release note at this step of the release process. Please keep it on hold a little longer and do it after the Update API stream for Update Assistant has been updated.
 {{% /notice %}}
 
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging

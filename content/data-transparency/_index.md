@@ -47,7 +47,7 @@ Set the `PS_URL_TRACKING` environment variable to `false`. You can do this using
 
 ## Data collected through the update assistant module
 
-Technical data are collected by the PrestaShop project teams through the Update assistant module ([link](https://github.com/PrestaShop/autoupgrade)). 
+Technical data are collected by the PrestaShop project teams through the Update Assistant module ([link](https://github.com/PrestaShop/autoupgrade)). 
 
 These data helps the module's contributors to better understand usage and any associated errors. The aim is to enable continuous optimization of the Update assistant module, based on good data-driven decisions.
 
@@ -78,8 +78,8 @@ PrestaShop project may collect your Data for the following purposes:
 
 We collect technical data on the Update assistant module with the following tools:
 
-- **Segment** - Collection of technical data related to the use of the Update assistant module. This data will help us better understand user actions on the module (clicks on CTAs, upgrade channels used, number of successful upgrades, number of failed upgrades, etc.). Only technical data will be collected, no personal data or data allowing the identification of a physical person will be recovered.
-- **Sentry -** A technical report will be collected in the event of upgrade or rollback errors, upon voluntary action by the user (via a click on the "Report a bug" CTA). This data will help us better understand the nature of the errors (module version, PrestaShop version, PHP version, etc.).
+- **Segment** - Collection of technical data related to the use of the Update assistant module. This data will help us better understand user actions on the module (clicks on CTAs, update channels used, number of successful updates, number of failed updates, etc.). Only technical data will be collected, no personal data or data allowing the identification of a physical person will be recovered.
+- **Sentry -** A technical report will be collected in the event of update or restore errors, upon voluntary action by the user (via a click on the "Report a bug" CTA). This data will help us better understand the nature of the errors (module version, PrestaShop version, PHP version, etc.).
 
 ### Who process your data?
 

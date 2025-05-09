@@ -98,7 +98,7 @@ This tag is needed to lock the theme version when a new release is built.
 
 * Update `composer.lock` to target the new tag
 
-## 4. Make sure to trigger the release of the Upgrade module if necessary
+## 4. Release any necessary improvement on the Update Assistant module
 
 Some releases need an update of the [Update Assistant][autoupgrade] module, and some do not. For example, if the MySQL database schema has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be added to the [list][autoupgrade-sql-list].
 
