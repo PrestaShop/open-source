@@ -41,7 +41,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2025-05-07T15:23:30+02:00" />
+<meta property="article:modified_time" content="2025-05-08T16:08:55+01:00" />
 
 
 
@@ -306,7 +306,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
         <li><a href="#1-make-sure-the-version-number-has-been-updated-in-the-core">1. Make sure the version number has been updated in the Core</a></li>
         <li><a href="#2-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">2. Make sure the default translation catalogue has been updated and pushed to Crowdin</a></li>
         <li><a href="#3-lock-the-theme-version">3. Lock the theme version</a></li>
-        <li><a href="#4-make-sure-to-trigger-the-release-of-the-upgrade-module-if-necessary">4. Make sure to trigger the release of the Upgrade module if necessary</a></li>
+        <li><a href="#4-release-any-necessary-improvement-on-the-update-assistant-module">4. Release any necessary improvement on the Update Assistant module</a></li>
         <li><a href="#5-manual-verifications">5. Manual verifications</a></li>
         <li><a href="#6-create-the-new-version-in-the-prestashop-marketplace-and-update-native-module-compatibility">6. Create the new version in the PrestaShop Marketplace and update native module compatibility</a></li>
       </ul>
@@ -399,7 +399,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <p>Update <code>composer.lock</code> to target the new tag</p>
 </li>
 </ul>
-<h2 id="4-make-sure-to-trigger-the-release-of-the-upgrade-module-if-necessary">4. Make sure to trigger the release of the Upgrade module if necessary</h2>
+<h2 id="4-release-any-necessary-improvement-on-the-update-assistant-module">4. Release any necessary improvement on the Update Assistant module</h2>
 <p>Some releases need an update of the <a href="https://github.com/PrestaShop/autoupgrade/">Update Assistant</a> module, and some do not. For example, if the MySQL database schema has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be added to the <a href="https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql">list</a>.</p>
 <p>Please verify whether or not this new version of PrestaShop requires</p>
 <ul>

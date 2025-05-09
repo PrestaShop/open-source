@@ -19,14 +19,14 @@ Requirements Mandatory requirements The module should be valid which means:</des
     </item>
     
     <item>
-      <title>How to release a new AutoUpgrade version</title>
+      <title>How to release a new Update Assistant version</title>
       <link>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</guid>
-      <description>Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
-However, after the release has been published, a last step is necessary.
-Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version.</description>
+      <description>Release a new version of Update Assistant New versions of Update Assistant (autoupgrade module) are released following the same process as the native modules.
+However, after the release has been published, more steps can be necessary.
+Mark the new version as latest Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes.</description>
     </item>
     
   </channel>

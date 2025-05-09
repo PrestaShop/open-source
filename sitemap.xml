@@ -15,7 +15,7 @@
     <lastmod>2023-01-06T10:55:58+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</loc>
-    <lastmod>2025-05-07T15:23:30+02:00</lastmod>
+    <lastmod>2025-05-08T16:08:55+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/security/</loc>
     <lastmod>2024-05-16T09:23:50+02:00</lastmod>
@@ -33,10 +33,10 @@
     <lastmod>2024-11-26T10:59:59+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/release-publicly/</loc>
-    <lastmod>2024-01-22T12:05:53+01:00</lastmod>
+    <lastmod>2025-05-08T16:47:48+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/</loc>
-    <lastmod>2024-01-22T12:05:53+01:00</lastmod>
+    <lastmod>2025-05-09T09:50:30+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/</loc>
     <lastmod>2023-12-18T17:58:11+01:00</lastmod>
@@ -71,7 +71,7 @@
     <lastmod>2023-03-30T15:26:22+02:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/data-transparency/</loc>
-    <lastmod>2024-07-15T16:12:09+01:00</lastmod>
+    <lastmod>2025-05-08T16:47:48+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/get-involved/</loc>
     <lastmod>2024-01-22T10:05:02+01:00</lastmod>
@@ -100,11 +100,11 @@
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/native-module/</loc>
     <lastmod>2023-04-24T17:02:58+02:00</lastmod>
   </url><url>
-    <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</loc>
-    <lastmod>2023-09-12T09:42:53+02:00</lastmod>
-  </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/</loc>
-    <lastmod>2025-05-07T15:19:00+02:00</lastmod>
+    <lastmod>2025-05-08T16:08:55+01:00</lastmod>
+  </url><url>
+    <loc>https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/</loc>
+    <lastmod>2025-05-09T09:51:47+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</loc>
     <lastmod>2023-07-21T10:18:59+02:00</lastmod>
@@ -176,7 +176,7 @@
     <lastmod>2023-05-29T16:11:35+02:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/security/security-release-process/</loc>
-    <lastmod>2023-05-29T16:11:35+02:00</lastmod>
+    <lastmod>2025-05-08T16:47:48+01:00</lastmod>
   </url><url>
     <loc>https://www.prestashop-project.org/slack/channels/</loc>
     <lastmod>2023-09-13T16:41:40+02:00</lastmod>

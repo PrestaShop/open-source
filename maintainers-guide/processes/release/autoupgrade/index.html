@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-<title>How to release a new AutoUpgrade version | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
-However, after the release has been published, a last step is necessary.
-Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version."/>
+<title>How to release a new Update Assistant version | PrestaShop Project - Open Source e-Commerce platform</title>
+<meta name="description" content="Release a new version of Update Assistant New versions of Update Assistant (autoupgrade module) are released following the same process as the native modules.
+However, after the release has been published, more steps can be necessary.
+Mark the new version as latest Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/" itemprop="url" />
 
@@ -27,18 +27,18 @@ Mark the new version as latest The AutoUpgrade module is able to detect whether 
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="How to release a new AutoUpgrade version"/>
-<meta name="twitter:description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
-However, after the release has been published, a last step is necessary.
-Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version."/>
-<meta property="og:title" content="How to release a new AutoUpgrade version" />
-<meta property="og:description" content="Release a new version of AutoUpgrade module The AutoUpgrade module is released following the same process as the native modules.
-However, after the release has been published, a last step is necessary.
-Mark the new version as latest The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version." />
+<meta name="twitter:title" content="How to release a new Update Assistant version"/>
+<meta name="twitter:description" content="Release a new version of Update Assistant New versions of Update Assistant (autoupgrade module) are released following the same process as the native modules.
+However, after the release has been published, more steps can be necessary.
+Mark the new version as latest Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes."/>
+<meta property="og:title" content="How to release a new Update Assistant version" />
+<meta property="og:description" content="Release a new version of Update Assistant New versions of Update Assistant (autoupgrade module) are released following the same process as the native modules.
+However, after the release has been published, more steps can be necessary.
+Mark the new version as latest Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/autoupgrade/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2023-09-12T09:42:53+02:00" />
+<meta property="article:modified_time" content="2025-05-09T09:51:47+01:00" />
 
 
 
@@ -275,7 +275,7 @@ Mark the new version as latest The AutoUpgrade module is able to detect whether 
     
       
       
-        <li class="breadcrumb-item active" aria-current="page">How to release a new AutoUpgrade version</li>
+        <li class="breadcrumb-item active" aria-current="page">How to release a new Update Assistant version</li>
       
     
   </ol>
@@ -287,19 +287,34 @@ Mark the new version as latest The AutoUpgrade module is able to detect whether 
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="release-a-new-version-of-autoupgradehttpsgithubcomprestashopautoupgrade-module">Release a new version of <a href="https://github.com/PrestaShop/autoupgrade/">AutoUpgrade</a> module</h1>
-<p>The AutoUpgrade module is released following <a href="/maintainers-guide/processes/release/native-module/">the same process as the native modules</a>.</p>
-<p>However, after the release has been published, a last step is necessary.</p>
+        <div class="content"><h1 id="release-a-new-version-of-update-assistant">Release a new version of Update Assistant</h1>
+<p>New versions of Update Assistant (<a href="https://github.com/PrestaShop/autoupgrade/"><code>autoupgrade</code> module</a>) are released following <a href="/maintainers-guide/processes/release/native-module/">the same process as the native modules</a>.</p>
+<p>However, after the release has been published, more steps can be necessary.</p>
 <h2 id="mark-the-new-version-as-latest">Mark the new version as latest</h2>
-<p>The AutoUpgrade module is able to detect whether a new version is available. If it detects a new version is available it will suggest to user to upgrade itself to the new higher version.</p>
-<p>For example if user is using module 4.16.1 and it detects that version 4.16.3 has been published, the module will inform the user that he is using an outdated version and should perform a module upgrade to version 4.16.3 .</p>
-<p>The detection mechanism is a simple verification of the file <a href="https://api.prestashop.com/xml/channel.xml">https://api.prestashop.com/xml/channel.xml</a> .</p>
-<p>Consequently when a new version of the AutoUpgrade module is published, the file <a href="https://api.prestashop.com/xml/channel.xml">https://api.prestashop.com/xml/channel.xml</a> must be modified. It is stored in the PrestaShop API repository.</p>
-
-<div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
-<p>Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.</p>
-</div>
-
+<p>Update Assistant can determine whether a newer version is recommended. When the current version is older than the recommended one, the module suggests upgrading to the latest version. Given the critical nature of the process, this check ensures updates are performed with all the latest improvements and bug fixes.</p>
+<p>For example, if a user is using version 7.0.0 and version 7.0.1 has been released, the module will inform the user that they are using an outdated version and should update.</p>
+<img src="../../../images/autoupgrade-update-needed.png" alt="Update of the module needed">
+<p>This detection mechanism is based on the contents of the <a href="https://api.prestashop-project.org/autoupgrade"><code>/autoupgrade</code></a> endpoint of the Distribution API.</p>
+<p>The file maps ranges of PrestaShop versions to a recommended version of Update Assistant. This allows the module to:</p>
+<ul>
+<li>Warn users when their current version is outdated,</li>
+<li>Ensure updates are only allowed if the PrestaShop version falls within one of the defined ranges.</li>
+</ul>
+<p>To enable this check, update the contents of the closest exising version entry in the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/public/json/autoupgrade.json">autoupgrade.json in the Distribution API repository</a>. For instance:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;prestashop_min&#34;</span><span class="p">:</span> <span class="s2">&#34;1.7.0.0&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;prestashop_max&#34;</span><span class="p">:</span> <span class="s2">&#34;8.2.1&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;autoupgrade_recommended&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;last_version&#34;</span><span class="p">:</span> <span class="s2">&#34;7.0.0&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;download&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;link&#34;</span><span class="p">:</span> <span class="s2">&#34;https://github.com/PrestaShop/autoupgrade/releases/download/v7.0.0/autoupgrade-v7.0.0.zip&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;md5&#34;</span><span class="p">:</span> <span class="s2">&#34;c0d83aea9dbb03d7f2f698d011144d43&#34;</span>
+        <span class="p">},</span>
+        <span class="nt">&#34;changelog&#34;</span><span class="p">:</span> <span class="s2">&#34;https://build.prestashop-project.org/news/2025/autoupgrade-v7.0-release/&#34;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>If the new module version supports a different range of PrestaShop versions, you’ll need to add a new entry.</p>
+<p>The updated file will be published as part of the API release.</p>
 </div>
       </div>
     </div>
