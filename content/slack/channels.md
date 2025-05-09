@@ -6,7 +6,7 @@ title: Slack channels
 
 A Slack dedicated to the PrestaShop open source project is now available. Its purpose is to foster the development of the software and of its ecosystem. The current priority is to configure channels for development and product management purpose. Once done, it will be open more progressively to other needs, like community management, business, etc.
 
-[More information about prestashop.slack.com](https://github.com/PrestaShop/open-source/blob/master/content/slack/_index.md)
+[More information about prestashop.slack.com](../)
 
 ## Request a new channel
 
@@ -58,6 +58,27 @@ Please note that like any open source project, the main language on this Slack i
 - Owners: PrestaShop project maintainers
 - Status: Public
 - Language: FR
+
+**#dev-polish**
+- Description: For discussions in polish
+- Users: For the polish community at large
+- Owners: PrestaShop project maintainers
+- Status: Public
+- Language: PL
+
+**#dev-spanish**
+- Description: For discussions in spanish
+- Users: For the spanish community at large
+- Owners: PrestaShop project maintainers
+- Status: Public
+- Language: ES
+
+**#dev-italian**
+- Description: For discussions in italian
+- Users: For the italian community at large
+- Owners: PrestaShop project maintainers
+- Status: Public
+- Language: IT
 
 **#dev-modules**
 - Description: The best place on earth to discuss about module development for PrestaShop

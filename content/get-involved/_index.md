@@ -29,7 +29,7 @@ More information: [How to contribute (DevDocs)][how-to-contribute]
 [report-bug]: {{< relref "report-issues" >}}
 [request-feature]: {{< relref "request-features" >}}
 [review-code]: {{< relref "/maintainers-guide/processes/reviewing-pull-requests.md" >}}
-[test-code]: {{< relref "/project-organization/quality-council/processes/test-pr-and-branches/" >}}
+[test-code]: {{< relref "/project-organization/quality-council/processes/pr-management/#how-to-test-a-pr-manually" >}}
 [issue-gardening]: {{< relref "/project-organization/quality-council/processes/issue-management/" >}}
 [slack]: {{< relref "/slack/" >}}
 [github]: https://github.com/PrestaShop/PrestaShop/

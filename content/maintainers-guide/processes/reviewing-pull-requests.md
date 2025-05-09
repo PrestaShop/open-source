@@ -17,7 +17,7 @@ label[type=needsdoc] { background-color: #D93E0B; color: #fff; }
 label[type=needsupgrade] { background-color: #D93E0B; color: #fff; }
 label[type=needstheme] { background-color: #D93E0B; color: #fff; }
 label[type=wip] { background-color: #FF8800; }
-label[type=e2e] { background-color: #EDEDED; }
+label[type=e2e], label[type=targetedcontributions] { background-color: #EDEDED; }
 label[type=migration] { background-color: #00E031; }
 </style>
 
@@ -134,7 +134,7 @@ A Pull Request may only be merged after the following requirements have been ful
 - The change does not have any outstanding merge conflicts.
 - Automated checks (including automated tests) are passing.
 
-On the [PrestaShop Core repository][prestashop-core-repository]), two approvals are required.
+On the [PrestaShop Core repository][prestashop-core-repository], two approvals are required.
 
 ### After merging
 
@@ -144,7 +144,7 @@ After merging a Pull Request on the Core Repository, maintainers must make sure 
 - Add the label <label type="keyfeature">Key feature</label> if the Pull Request must be mentioned in the Release Note.
 - Add the label <label type="bcbreak">BC break</label> if the Pull Request introduces a [BC Break][bc-break].
 - Add the label <label type="needsdoc">Needs documentation</label> if the Pull Request introduces changes that need to be documented in [DevDocs][dev-doc].
-- Add the label <label type="needsupgrade">Needs autoupgrade PR</label> if the Pull Request introduces changes in configuration or data structure and existing installs need to be modified.
+- Add the label <label type="needsupgrade">Needs autoupgrade PR</label> if the Pull Request introduces changes in configuration or data structure and existing installs need to be modified. This label may be created automatically.
 - Add the label <label type="needstheme">Needs theme PR</label> if the Pull Request introduces changes that need theme modification to work.
 
 These actions are very important as they will be key to writing a good Release Note and ChangeLog for the next version.
@@ -163,7 +163,7 @@ Example of such Pull Requests:
 - Thank the Pull Request author and anybody else who invested notable energy into the Pull Request (code review, code suggestions, QA validation, usecase specification ...).
 
 
-![Thank you message](../images/thank-you.png)
+![Thank you message](../../images/thank-you.png)
 
 ## Labeling reference
 
@@ -187,7 +187,7 @@ The following labels are added when an action is required:
 | The PR introduced wording changes                                                          | Wording Managers  | <label type="needs">Waiting for Wording</label>   |    <label type="check">Wording ✓</label>      |
 | The PR is ready for QA verification                                                        | Software Testers  | <label type="needs">Waiting for QA</label>     |      <label type="check">QA ✓</label>             |
 | The PR needs to be documented in DevDocs                                                   |   Maintainers     | <label type="needsdoc">Needs documentation</label> | <label type="check">Documentation ✓</label>   |
-| The PR needs PR for autoupgrade module                                                     |   The PR's author | <label type="needsupgrade">Needs autoupgrade PR</label> | _(no label)_                     |
+| The PR needs PR for autoupgrade module                                                     |   The PR's author | <label type="needsupgrade">Needs autoupgrade PR</label> | <label type="check">PR Autoupgrade opened ✓</label>                     |
 | The PR needs PR for default theme                                                          |   The PR's author | <label type="needstheme">Needs theme PR</label>    | _(no label)_                                  |
 
 ### Meta labels
@@ -206,6 +206,7 @@ The following labels provide metadata and are essentially informative:
 | <label type="wip">WIP</label>                | This PR is a work in progress                                |
 | <label type="e2e">E2E Tests</label>          | This PR is about UI automated tests                          |
 | <label type="migration">migration</label>    | This PR is about the Symfony migration project               |
+| <label type="targetedcontributions">Hook Contribution</label> | This PR is about targeted contributions for Hooks |
 
 ## Process breakdown
 
@@ -215,7 +216,7 @@ Upon opening a PR and you are the first reviewer, please verify:
 
 1. Is the The Pull Request form correctly filled with relevant informations, especially `How to test`?
 2. Does the CI pass?
-3. When relevant, is there a linked GitHub issue (for bugfixes or new features)?
+3. When relevant, is there a linked GitHub issue or discussion (for bugfixes or new features)?
 
 If any of the above items are missing, you can ask the PR author to provide them. Else, you can review the code.
 
@@ -231,7 +232,9 @@ If it has the right number of approvals (Pull Requests submitted to the [PrestaS
 
 You can add `Waiting for QA` label to request a validation from QA team. Some PRs do not need QA testing, for example fixing a typo or a code change that only impacts CI.
 
-If the PR behavior is confirmed by QA Team, the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
+Some other PRs may require QA by a developer, for example if the PR is very technical and does not change the behavior of the software. In that case, you can add `Waiting for QA` and `Waiting for dev` label. This should be discussed with QA functional team.
+
+If the PR behavior is confirmed by QA Team (or a developer, for the "Waiting for dev PRs), the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
 
 [contribution-guidelines]: {{< devdocs "contribute/contribution-guidelines/" >}}
 [prestashop-core-repository]: https://github.com/PrestaShop/PrestaShop/
