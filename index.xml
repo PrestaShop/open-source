@@ -253,7 +253,7 @@ Mark the new version as latest Update Assistant can determine whether a newer ve
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/</guid>
-      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=needsupgrade] { background-color: #D93E0B; color: #fff; } label[type=needstheme] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
+      <description>.content label { display: inline; border-radius: 2em; font-size: 80%; font-weight: bold; color: #000; padding: .3em .8em; white-space: nowrap} label[type=needs] { background-color: #FBCA00; } label[type=check] { background-color: #B9EC4F; } label[type=branch] { background-color: #6270E9; } label[type=type] { background-color: #D4C5F9; } label[type=category] {} label[type=bcbreak] { background-color: #FF7854; } label[type=keyfeature] { background-color: #FFB33A; } label[type=needsdoc] { background-color: #D93E0B; color: #fff; } label[type=needsupgrade] { background-color: #D93E0B; color: #fff; } label[type=needstheme] { background-color: #D93E0B; color: #fff; } label[type=wip] { background-color: #FF8800; } label[type=e2e], label[type=targetedcontributions] { background-color: #EDEDED; } label[type=migration] { background-color: #00E031; }  Reviewing and approving Pull Requests All contributions to the PrestaShop project are subject to review.</description>
     </item>
     
     <item>
@@ -382,10 +382,11 @@ Request a new channel Creating a new channel is reserved to the administrators.<
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/</guid>
-      <description>Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+      <description>Vagrant repository is no longer updated.
+To test the PrestaShop pull requests, we recommend using the Docker environment or local installation.
+ Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github.</description>
+ Vagrant VirtualBox  If you&amp;rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.</description>
     </item>
     
     <item>

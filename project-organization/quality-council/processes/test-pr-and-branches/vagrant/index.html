@@ -4,10 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <title>Using the Vagrant virtual machine | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+<meta name="description" content="Vagrant repository is no longer updated.
+To test the PrestaShop pull requests, we recommend using the Docker environment or local installation.
+ Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/" itemprop="url" />
 
@@ -29,19 +30,21 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Using the Vagrant virtual machine"/>
-<meta name="twitter:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+<meta name="twitter:description" content="Vagrant repository is no longer updated.
+To test the PrestaShop pull requests, we recommend using the Docker environment or local installation.
+ Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github."/>
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell."/>
 <meta property="og:title" content="Using the Vagrant virtual machine" />
-<meta property="og:description" content="Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
+<meta property="og:description" content="Vagrant repository is no longer updated.
+To test the PrestaShop pull requests, we recommend using the Docker environment or local installation.
+ Using the Vagrant virtual machine We recommend using our virtual machine to quickly get a testing environment in place.
 Requirements This is what you need to run this project:
- Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell.
-What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7.2, 7.3, 7.4) MariaDB 10 NodeJS  Getting started First, you must clone the repository https://github." />
+ Vagrant VirtualBox  If you&rsquo;re using Windows, we recommend you to download Git bash and execute all commands under this shell." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/project-organization/quality-council/processes/test-pr-and-branches/vagrant/" /><meta property="article:section" content="project-organization" />
 
-<meta property="article:modified_time" content="2024-01-19T12:25:00+01:00" />
+<meta property="article:modified_time" content="2025-05-07T17:21:58+02:00" />
 
 
 
@@ -281,7 +284,7 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
     
       
       
-        <li class="breadcrumb-item"><a href="/project-organization/quality-council/processes/test-pr-and-branches/">How to test Pull Requests and branches</a></li>
+        <li class="breadcrumb-item"><a href="/project-organization/quality-council/processes/test-pr-and-branches/"></a></li>
       
     
       
@@ -327,7 +330,12 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</h1>
+        <div class="content">
+<div class="notices warning" ><p><strong>Vagrant repository is no longer updated.</strong></p>
+<p>To test the PrestaShop pull requests, we recommend using the <a href="https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/contribute_using_docker/">Docker environment</a> or local installation.</p>
+</div>
+
+<h1 id="using-the-vagrant-virtual-machine">Using the Vagrant virtual machine</h1>
 <p>We recommend using our virtual machine to quickly get a testing environment in place.</p>
 <h2 id="requirements">Requirements</h2>
 <p>This is what you need to run this project:</p>
@@ -349,12 +357,12 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 <p>First, you must clone the repository <a href="https://github.com/PrestaShop/vagrant">https://github.com/PrestaShop/vagrant</a>.</p>
 <p>Second, execute the script <code>run.sh</code> (or <code>run.bat</code> if you&rsquo;re under Windows) and follow instructions.</p>
 <p>Most of the time, there is a prompt asking for a network interface, remember it&rsquo;s the communication between the virtual machine and the network card.</p>
-<figure><img src="img/vagrant/run-script.png"
+<figure><img src="../img/vagrant/run-script.png"
          alt="Running the run.sh script"/>
 </figure>
 
 <p>The first installation will take a while, because it needs to download the vagrant box, installs all needed packages and configures the system to make it compatible with PrestaShop.
-<figure><img src="img/vagrant/script-ended-successful.png"
+<figure><img src="../img/vagrant/script-ended-successful.png"
          alt="Script running successfuly"/>
 </figure>
 </p>
@@ -392,11 +400,11 @@ What is installed  Debian 10 Buster Git Apache 2.4 Multiple PHP versions (7.1, 7
 <ul>
 <li>Invalid branch name:</li>
 </ul>
-<img src="img/vagrant/build-failed.png" alt="Invalid git branch name" class="mx-lg-4" style="max-width: 700px">
+<img src="../img/vagrant/build-failed.png" alt="Invalid git branch name" class="mx-lg-4" style="max-width: 700px">
 <ul>
 <li>Invalid PHP version:</li>
 </ul>
-<img src="img/vagrant/invalid-php-version.png" alt="Invalid PHP version" class="mx-lg-4" style="max-width: 700px">
+<img src="../img/vagrant/invalid-php-version.png" alt="Invalid PHP version" class="mx-lg-4" style="max-width: 700px">
 </div>
       </div>
     </div>
