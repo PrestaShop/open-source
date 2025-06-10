@@ -7,6 +7,7 @@ menu:
 showIntroductionBanner: false
 subtitle: PrestaShop 9 is a major release introducing a modernized architecture, next-gen APIs, improved performance, and flexibility.
 summary: PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API, Hummingbird theme, improved SEO and security, and a faster, fully modern back office.
+image: "images/Version9Banner.png"
 ---
 
 <style>
@@ -103,7 +104,7 @@ summary: PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/releases/images/ps90/Version9Banner.png" class="img-fluid" alt="PrestaShop 9.0">
+                    <img src="/images/Version9Banner.png" class="img-fluid" alt="PrestaShop 9.0">
                 </div>
                 <div class="col-md-6 lead-text">
                     <p>
