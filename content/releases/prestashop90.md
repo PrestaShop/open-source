@@ -516,7 +516,7 @@ summary: PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API
                     </div>
                 </div>
             </section>
-            <section class="section bg-dark" id="update">
+            <section class="section bg-dark" id="updating">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
