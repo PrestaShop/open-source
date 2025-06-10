@@ -36,7 +36,7 @@ _**This part is only available for PrestaShopCorp employees.**_
 ### Review the PR
 * The review is done by [Software Developers in Tests of the project](/project-organization/people-and-roles/#software-developers-in-test).
 * Some checks are done :
-  * The PR complies with [contribution guidelines](https://devdocs.prestashop-project.org/8/contribute/contribution-guidelines/);
+  * The PR complies with [contribution guidelines](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/);
   * The CI is green (lint, typescript check);
   * The scenario is followed;
   * The test is executed without errors in the [nightly](https://github.com/PrestaShop/ga.tests.ui.pr);

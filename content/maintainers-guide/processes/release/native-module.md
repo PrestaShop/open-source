@@ -97,6 +97,6 @@ PrestaShop 1.7 and 1.6 instances were able to download new versions of modules t
 
 When a `master` branch of one of these modules receives an update, Addons API will update the ZIP it delivers with the new content within 24 hours.
 
-PrestaShop 8 now relies on [PrestaShop Modules Distribution API](https://github.com/PrestaShop/distribution-api) that monitors GitHub releases and allow PrestaShop instances to poll for new module versions and download them.
+PrestaShop 8 and later now relies on [PrestaShop Modules Distribution API](https://github.com/PrestaShop/distribution-api) that monitors GitHub releases and allow PrestaShop instances to poll for new module versions and download them.
 
 [contribution-guidelines]: {{< devdocs "contribute/contribution-guidelines/project-modules/" >}}

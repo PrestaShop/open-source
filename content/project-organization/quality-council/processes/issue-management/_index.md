@@ -171,7 +171,7 @@ If it is a `Task`, add the necessary labels and place it in Project Kanban:
 3. **Don’t forget** to add these labels like : **Category** (`BO`, `FO`, …), **Pages** (`Products`, `Module`, `Order`, …), ….
 
 {{% notice warning %}}
-Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/) for 1.7 or [PrestaShop's system requirements](https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/) for 8.
+Take some time to verify that the contributor's environment satisfies [PrestaShop's system requirements](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/) for 1.7, [PrestaShop's system requirements](https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/) for 8, [or for 9](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/). 
 {{% /notice %}}
 
 ### Duplicated issues
@@ -352,7 +352,7 @@ I reproduce the issue with PrestaShop version x.x.x, I'll add this to the backlo
 
 Please be aware that some issues might take a very long time to be resolved. If this one is important to you and you cannot wait for it to be fixed on the project’s own time, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you. 
 
-If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
+If you fix the issue on your end, please [contribute it back to the project](https://devdocs.prestashop-project.org/9/contribute/contribute-pull-requests/). Remember that the more people contribute, the better PrestaShop becomes for everyone.
 
 Thank you
 ```
@@ -391,7 +391,7 @@ Thank you for your suggestion. The Maintainer Team will take it into considerati
 
 Please be aware that there is no guarantee that this feature will be developed anytime soon. If this is important to you, we strongly suggest you consider [contacting a professional](https://www.prestashop-project.org/support/) to help you create it. 
 
-If you or anyone else is willing to [contribute this feature](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/) to the PrestaShop Project, the teams will be happy to help by ensuring that it fits well within the project. Please let us know if that is the case!
+If you or anyone else is willing to [contribute this feature](https://devdocs.prestashop-project.org/9/contribute/contribute-pull-requests/) to the PrestaShop Project, the teams will be happy to help by ensuring that it fits well within the project. Please let us know if that is the case!
 
 Thank you
 ```
