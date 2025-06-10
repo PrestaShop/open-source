@@ -24,5 +24,14 @@
       <description>PrestaShop 8.1 is a minor upgrade, with major improvements. This new release brings along many time-saving features and more.</description>
     </item>
     
+    <item>
+      <title>What&#39;s New in PrestaShop 9.0</title>
+      <link>https://www.prestashop-project.org/releases/prestashop90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/releases/prestashop90/</guid>
+      <description>PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API, Hummingbird theme, improved SEO and security, and a faster, fully modern back office.</description>
+    </item>
+    
   </channel>
 </rss>
