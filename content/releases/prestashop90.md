@@ -98,6 +98,13 @@ image: "images/Version9Banner.png"
         font-weight: bold;
         margin-bottom: 1rem;
     }
+
+    .custom-distro-link a {
+        font-size: 0.9rem;
+    }
+    .custom-distro-link a:hover {
+        text-decoration: underline;
+    }
 </style>
 <div class="container-fluid release-page">
     <div class="hero-banner">
@@ -114,16 +121,19 @@ image: "images/Version9Banner.png"
                         It's a major release introducing a modernized architecture, next-gen APIs, improved performance, and flexibility.
                     </p>
                     <p class="text-center mt-5">
-                        <a href="https://prestashop.com/versions/" class="cta cta--pattern mr-5">
+                        <a target="_blank" href="https://prestashop.com/versions/" class="cta cta--pattern mr-5">
                             <span class="mb-0">
                                 Download Now
                             </span>
                         </a>
-                        <a href="https://build.prestashop-project.org/news/2025/prestashop-9-0-available/" class="cta cta-dark cta--pattern">
+                        <a target="_blank" href="https://build.prestashop-project.org/news/2025/prestashop-9-0-available/" class="cta cta-dark cta--pattern">
                             <span class="mb-0">
                                 Release Notes
                             </span>
                         </a>
+                    </p>
+                    <p class="text-center custom-distro-link">
+                        <a class="text-muted" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/#6-build-the-zip-archive">Looking for a way to create your own distribution of PrestaShop 9?</a>
                     </p>
                 </div>
             </div>
