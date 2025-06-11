@@ -73,6 +73,18 @@ image: "images/Version9Banner.png"
         margin: -10px 0 0 0;
     }
 
+    @media (max-width: 600px) {
+        .toc-sidebar {
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        .toc-sidebar-content {
+            position: static;
+        }
+    }
+
     .iframe-wrapper {
       position: relative;
       width: 100%;
@@ -99,12 +111,29 @@ image: "images/Version9Banner.png"
         margin-bottom: 1rem;
     }
 
+    @media (max-width: 1500px) {
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    img.api-platform-wabby {
+        max-width: 400px;
+    }
+
+    @media (max-width: 767px) {
+        img.api-platform-wabby {
+            max-width: 300px;
+        }
+    }
+
     .custom-distro-link a {
         font-size: 0.9rem;
     }
     .custom-distro-link a:hover {
         text-decoration: underline;
     }
+    
 </style>
 <div class="container-fluid release-page">
     <div class="hero-banner">
@@ -113,7 +142,7 @@ image: "images/Version9Banner.png"
                 <div class="col-md-6">
                     <img src="/images/Version9Banner.png" class="img-fluid" alt="PrestaShop 9.0">
                 </div>
-                <div class="col-md-6 lead-text">
+                <div class="col-md-6 lead-text mt-5">
                     <p>
                         PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API, Hummingbird theme, improved SEO and security, and a faster, fully modern back office. 
                     </p>
@@ -121,12 +150,12 @@ image: "images/Version9Banner.png"
                         It's a major release introducing a modernized architecture, next-gen APIs, improved performance, and flexibility.
                     </p>
                     <p class="text-center mt-5">
-                        <a target="_blank" href="https://prestashop.com/versions/" class="cta cta--pattern mr-5">
+                        <a target="_blank" href="https://prestashop.com/versions/" class="cta cta--pattern mr-md-5">
                             <span class="mb-0">
                                 Download Now
                             </span>
                         </a>
-                        <a target="_blank" href="https://build.prestashop-project.org/news/2025/prestashop-9-0-available/" class="cta cta-dark cta--pattern">
+                        <a target="_blank" href="https://build.prestashop-project.org/news/2025/prestashop-9-0-available/" class="cta cta-dark cta--pattern mt-2 mt-sm-0">
                             <span class="mb-0">
                                 Release Notes
                             </span>
@@ -140,7 +169,7 @@ image: "images/Version9Banner.png"
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 toc-sidebar">
+        <div class="col-md-4 col-xl-2 toc-sidebar">
             <div class="toc-sidebar-content">
                 <p class="h4">PrestaShop 9.0</p>
                 <ul class="toc-links">
@@ -157,7 +186,7 @@ image: "images/Version9Banner.png"
                 </ul>
             </div>
         </div>
-        <div class="col-md-10 px-0">
+        <div class="col-md-8 col-xl-10 px-0">
             <section class="section" id="highlights">
                 <div class="container-fluid release-page-content">
                     <div class="row">
@@ -189,13 +218,13 @@ image: "images/Version9Banner.png"
                         </div>
                          <div class="row">
                             <div class="col-md-5">
-                                <h2 class="section-title">PHP 8.1-8.4 compatibilitty</h2>
+                                <h2 class="section-title">PHP 8.1-8.4 compatibility</h2>
                                 <p>
                                     PrestaShop 9 now requires at least PHP 8.1 and brings compatibility with the most recent <a href="https://www.php.net/releases/8.4/en.php">PHP 8.4</a>. Each new PHP version introduces performance and security improvements, making it worthwhile to run PrestaShop on the most recent PHP version available. Plus, if you target the latest PHP version, you can benefit from all the <a href="https://www.php.net/releases/8.4/en.php">new language features</a>!
                                 </p>
                             </div>
                             <div class="col-md-7">
-                                <p class="mt-5">
+                                <p class="mt-md-5">
                                     <div class="php-logo">
                                         <img loading="lazy" src="/releases/images/ps90/logo_php8_4.svg">
                                     </div>
@@ -210,7 +239,7 @@ image: "images/Version9Banner.png"
                                 </p>
                             </div>
                             <div class="col-md-7">
-                                <p class="mt-5">
+                                <p class="mt-md-5">
                                     <img width="100%" loading="lazy" src="/releases/images/ps8/logo_symfony.svg">
                                 </p>
                             </div>
@@ -223,8 +252,8 @@ image: "images/Version9Banner.png"
                                 </p>
                             </div>
                             <div class="col-md-7">
-                                <p class="mt-5 text-center">
-                                    <img style="max-width: 400px;" loading="lazy" src="/releases/images/ps90/wabby_logo_api-platform.png">
+                                <p class="mt-md-5 text-center">
+                                    <img class="api-platform-wabby" loading="lazy" src="/releases/images/ps90/wabby_logo_api-platform.png">
                                 </p>
                             </div>
                         </div>
@@ -325,7 +354,7 @@ image: "images/Version9Banner.png"
                 <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col">
-                            <p class="display-4 text-center">SEO&URLs</h2>
+                            <p class="display-4 text-center">SEO & URLs</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -416,7 +445,7 @@ image: "images/Version9Banner.png"
                 </div>
             </section>
             <section class="section" id="developer-features">
-                 <div class="row">
+                <div class="container-fluid release-page-content">
                     <div class="col">
                         <p class="display-4 text-center">Developer features</h2>
                         <p class="text-center">
@@ -424,8 +453,6 @@ image: "images/Version9Banner.png"
                             The main improvenet is, of course, Symfony 6.4 LTS and PHP 8.1–8.4 support, but there are also many other improvements that make the development experience smoother and more efficient.
                         </p>
                     </div>
-                </div>
-                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-6">
                             <p class="section-title section-title--subtitle">Restricted access to debug mode</p>
@@ -528,7 +555,7 @@ image: "images/Version9Banner.png"
                 </div>
             </section>
             <section class="section bg-dark" id="updating">
-                <div class="container">
+                <div class="container-fluid release-page-content">
                     <div class="row">
                         <div class="col-md-6">
                             <h2 class="section-title text-light">Update Assistant</h2>
