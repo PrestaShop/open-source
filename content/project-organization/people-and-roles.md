@@ -64,10 +64,10 @@ The technical council provides the technical vision for the whole project, revie
 Current members:
 
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre)) - **Council Lead**
+- Boris Hermans ([@boherm](https://github.com/boherm))
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
-- Pablo Borowicz ([@eternoendless](https://github.com/eternoendless))
 - Thomas Nabord ([@Quetzacoalt91](https://github.com/Quetzacoalt91))
 
 ### Committers
@@ -77,7 +77,6 @@ Committers can review and merge code contributions. They summon the technical co
 Current committers:
 
 - Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
-- Boris Hermans ([@boherm](https://github.com/boherm))
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
 - Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal))
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
@@ -102,6 +101,7 @@ Alumni:
 - Mahmoud Parvazi ([@mparvazi](https://github.com/mparvazi))
 - Maxime Flasquin ([@mflasquin](https://github.com/mflasquin))
 - Marco Salvatore ([@marsaldev](https://github.com/marsaldev))
+- Pablo Borowicz ([@eternoendless](https://github.com/eternoendless))
 - Ibrahima Sow ([@sowbiba](https://github.com/sowbiba))
 - Louis Authie ([@LouisAUTHIE](https://github.com/LouisAUTHIE))
 - Salim Benouamer ([@lartist](https://github.com/lartist))
