@@ -28,5 +28,9 @@ privacy:
     googleAnalytics:
         defaultGtagStorageDenied: true
         waitForUpdate: 500
+        googleAnalyticsId: "GTM-MJ8XZ68L"
+
+cookies:
+    enable: true
 
 favicon: images/favicon.svg
