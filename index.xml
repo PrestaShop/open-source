@@ -338,6 +338,17 @@ Reporting a Vulnerability Security issues can be reported by sending an email to
     </item>
     
     <item>
+      <title>Sharing third-party distributions</title>
+      <link>https://www.prestashop-project.org/security/sharing-third-party-distributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.prestashop-project.org/security/sharing-third-party-distributions/</guid>
+      <description>Sharing third-party distributions For user safety, please do not link to or reference forks or third-party repositories of PrestaShop releases or PrestaShop distributions that are not officially maintained by the PrestaShop project team. This applies to all parts of the project, including comments, issues, pull requests, discussions, Build Blog, and Slack.
+Such links may be removed or hidden by the maintainers. Repeated promotion may result in further moderation.
+Only repositories under the official PrestaShop or PrestaShopCorp GitHub organizations, as well as the official prestashop.</description>
+    </item>
+    
+    <item>
       <title>Slack channels</title>
       <link>https://www.prestashop-project.org/slack/channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
