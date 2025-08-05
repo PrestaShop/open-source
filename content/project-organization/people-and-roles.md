@@ -88,6 +88,7 @@ Current committers:
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Leone ([@tleon](https://github.com/tleon))
+- Thomas Roux ([@Touxten](https://github.com/Touxten))
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
 
 ### Alumni
