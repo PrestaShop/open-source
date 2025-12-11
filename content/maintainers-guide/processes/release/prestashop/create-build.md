@@ -5,33 +5,11 @@ aliases:
   - /maintainers-guide/releasing-prestashop/create-build/
 ---
 
-# Create a build package
+## Create a build package
 
 Once preliminary tasks have been completed, the project is ready to be built.
 
-## 1. Communicate
-
-Starting this step means that the Development phase of this release is over. 
-
-Before you go further, make sure to **tick the "Development" box** in the Release Tracker GitHub issue (there is one per version, see the [1.7.6.6 example][release-tracker-issue]).
-
-## 2. Create a local branch for your build
-
-The following tasks will require you to perform changes and submit them as a Pull Request.
-
-* **Clone the project** on your computer using Git (only if you don't already have a local copy of the repository).
-
-    ```shell
-    git clone git@github.com:PrestaShop/PrestaShop.git
-    ```
-
-* **Make sure that you switch to the appropriate branch** regarding the version you'll be building (e.g. you must be on branch 1.7.7.x if you're building a 1.7.7 release).
-
-* **Make sure your branch is up-to-date with upstream.** Especially if you already had a local clone of the repository.
-
-* **Create a local branch for your work.** Keep it! You will need to go back to it later. 
-
-## 3. Merge any not-yet merged security fixes into your branch
+### 1. Merge any not-yet merged security fixes into your branch
 
 To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub _after_ the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.
 
@@ -44,9 +22,9 @@ If this release includes security PRs:
 If there are security PRs to be merged, they are fixing minor security issues. Otherwise, a security release would have been done instead.
 {{% /notice %}}
 
-## 4. Update the Changelog & Contributors list
+### 2. Update the Changelog & Contributors list
 
-### Extract list of changes and contributors using the changelog tool
+#### Extract list of changes and contributors using the changelog tool
 
 {{% notice warning %}}
 **This step requires special rights.**
@@ -59,38 +37,41 @@ After this step, you should obtain two files:
 - the Changelog file – including a list of all the merged Pull Requests. Make sure to keep this file, you'll need it later.
 - the New Contributors file – a list of all the people who contributed code for this version for their first time.
 
-### Update the project's files
+#### Update the project's files
 
 - Add the contents of the changelog at the top of PrestaShop's [Changelog file][changelog-file].
 - Update PrestaShop's [Contributors file][contributors-file] by adding the new contributors. Keep the alphabetical order.
 - Commit your changed files with following message: "// Changelog [version]"
 
-## 5. Push your work into a build branch
+### 3. Push your work into the build branch
+
+{{% notice %}}
+**As reminder**
+
+Your branch following this scheme: `[version]-build` (for example: "9.0.2-build")
+{{% /notice %}}
 
 The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.
 
 If your build is rejected because of a bug, the fixes will have to be merged into your build branch, instead of the base branch.
 
-### If the branch does not contain security fixes
+#### If the branch does not contain security fixes
 
-- Push your changes to a new branch in the public repository.  
-  Name your branch following this scheme: `[version]-build` (for example: "1.7.8.1-build")
-- Create a new pull request to merge your changes. If you're lost, see [this example](https://github.com/PrestaShop/PrestaShop/pull/20032) from the 1.7.6.6 release.
+- Push your changes to the new build branch in the public repository.
+- Create a new pull request to merge your changes. If you're lost, see [this example](https://github.com/PrestaShop/PrestaShop/pull/40227) from the 9.0.2 release.
 
 {{% notice warning %}}
-**Make sure your PR is not merged accidentally!** 
+**Make sure your PR is not merged accidentally!**
 
 The build must be validated before the PR can be merged.
 {{% /notice %}}
 
-
-### If the branch contains security fixes 
-
+#### If the branch contains security fixes
 
 - Push your local branch into a private repository, in order to avoid disclosing the security bugs.
 - Share access to your private repository with other maintainers so that they can verify your work.
 
-## 6. Build the ZIP archive
+### 4. Build the ZIP archive (OS version)
 
 Use the [Release Creator CLI script][release-creator-readme] included with PrestaShop's sources to create the ZIP archive.
 
@@ -119,9 +100,9 @@ By default, the release package will create two files in a new subdirectory in `
 
 As an optional step, consider downloading the latest stable release package and compare the contents of the zip archives to look for suspicious changes.
 
-## 7. Archive your build
+### 5. Archive your OS version
 
-### Rename files
+#### Rename files
 
 Rename both files according to our naming convention:
 
@@ -130,6 +111,7 @@ prestashop_<version>-[beta.<beta number>|rc.<rc number>]+build.<build number>.<z
 ```
 
 {{% callout %}}
+
 ##### Examples
 
 * `prestashop_1.7.4.0-beta.1+build.1.zip` – First build of beta 1
@@ -146,34 +128,44 @@ When the beta testing phase is over, we build one Release Candidate (example: `p
 For patch versions, the beta and RC phase can be skipped (example: `prestashop_1.7.4.1+build.1.zip`)
 {{% /callout %}}
 
-### Upload files to the archive
+#### Upload files to the archive
 
 {{% notice warning %}}
 **This step requires special rights.**
 
-Send both ZIP and XML files to a maintainer from the PrestaShop Company with access to the Archive Drive to perform this step. If the branch does not contain security fixes, the maintainer must share publicly the ZIP file. 
+Upload both ZIP and XML files to the Archive Google Drive.
+
 {{% /notice %}}
 
-## 8. Communicate and wait for QA validation
+### 6. Build a Classic Version
 
-At this point, the build process is over. 
+{{% notice warning %}}
+**This notion documentation requires special rights.**
+
+Go to [Create a Classic Edition](https://www.notion.so/prestashopcorp/Create-a-Classic-Edition-2c45d6cf071f80789babe11c1b379899) page for more information about
+the internal tool **smb_edition_builder** and follow the different steps in the "Build Process for PrestaShop Classic Edition" section only.
+{{% /notice %}}
+
+### 7. Communicate and wait for QA validation
+
+At this point, the OS build process is over.
 
 - Make sure the build files have been submitted to the QA team.
-- **Update the Release Tracker GitHub issue**. Tick the "Build" box, and add a comment to announce that the build has been submitted to QA ([see example][example-build-comment]). 
+- **Update the Release Tracker GitHub issue**. Tick the "Build" box, and add a comment to announce that the build has been submitted to QA ([see example][example-build-comment]).
 - Wait for QA to validate the build.
 
-### If the QA rejects the build
+#### If the QA rejects the build
 
 In case the QA team finds blocking defects in the build, then these issues _must_ be fixed and merged before the branch can be built again.
 
-- **Communicate** that the build validation has failed by updating the Release Tracker GitHub issue. 
+- **Communicate** that the build validation has failed by updating the Release Tracker GitHub issue.
 - **Fix the issues** or wait for them to be fixed and merged in the **build** branch you created above _(and **NOT** in the base branch!)_.
 - **Repeat the build process from the top**. Make sure that you have checked out the head of the updated version branch.
 
-Once the QA has greenlighted the build, you can move on to publishing the version.
+Once the QA has greenlighted the build, you can move on to [final steps][final-steps] for publishing Classic Editon.
 
-[release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/19959
 [changelog-file]: https://github.com/PrestaShop/PrestaShop/blob/develop/docs/CHANGELOG.txt
 [contributors-file]: https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTORS.md
 [release-creator-readme]: https://github.com/PrestaShop/PrestaShop/blob/develop/tools/build/README.md
 [example-build-comment]: https://github.com/PrestaShop/PrestaShop/issues/19959#issuecomment-651685219
+[final-steps]: {{< relref "final-steps.md" >}}
