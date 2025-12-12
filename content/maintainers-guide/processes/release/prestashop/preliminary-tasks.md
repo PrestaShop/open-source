@@ -5,11 +5,44 @@ aliases:
   - /maintainers-guide/releasing-prestashop/preliminary-tasks/
 ---
 
-# Preliminary tasks
+## Preliminary tasks
 
 Before you can start your build, you must make sure that the project is ready to be built.
 
-## 1. Make sure the version number has been updated in the Core
+### 1. Communicate
+
+Starting this step means that the Development phase of this release is over (freeze step):
+
+Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.
+
+Inform the @prestashop/committers about the release tracking issue.
+If discussions arise regarding critical bugs, inform QA and the PM. They will be responsible for assessing the criticality of the bugs.
+
+Inform the team in charge of Autoupgrade, and ask them if a version update is necessary (PRs with the tag "Needs Autoupgrade PR").
+
+Before you go further, make sure to **tick the "Development" box** in the Release Tracker GitHub issue (there is one per version, see the [1.7.6.6 example][release-tracker-issue]).
+
+### 2. Create a branch for your build
+
+The following tasks will require you to perform changes and submit them as a Pull Request.
+
+example : If the release is `9.0.2`, create a branch from `9.0.x` and name it `9.0.2-build`
+
+* **Clone the project** on your computer using Git (only if you don't already have a local copy of the repository).
+
+    ```shell
+    git clone git@github.com:PrestaShop/PrestaShop.git
+    ```
+
+* **Make sure that you switch to the appropriate branch** regarding the version you'll be building
+
+* **Make sure your branch is up-to-date with upstream.** Especially if you already had a local clone of the repository.
+
+The next steps and PRs to be performed will be done on the build branch (freeze).
+
+NB : **For a minor or major version** see additionnal steps on [create version branch][create-version-branch] page.
+
+### 3. Make sure the version number has been updated in the Core
 
 {{% notice note %}}
 **This only needs to be done once per release.**
@@ -47,7 +80,7 @@ If you're lost, check out [this example][bump-core-version-pr-example] from the 
 [bump-core-version-pr-example]: https://github.com/PrestaShop/PrestaShop/pull/19980
 {{% /notice %}}
 
-## 2. Make sure the default translation catalogue has been updated and pushed to Crowdin
+### 4. Make sure the default translation catalogue has been updated and pushed to Crowdin
 
 {{% notice warning %}}
 **This step requires special rights.**
@@ -55,16 +88,10 @@ If you're lost, check out [this example][bump-core-version-pr-example] from the 
 Ask a maintainer from the PrestaShop Company with access to the Translation Tool to perform this step.
 {{% /notice %}}
 
-{{% notice note %}}
-**This step is only needed for minor and major releases.**
-
-It is usually only done once per release as well.
-{{% /notice %}}
-
 1. [Use the Github Action to extract wordings from the TranslationTool repository](<https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/create-default-catalog-pr.yml>). This command will automatically generates a Pull Request on the PrestaShop/PrestaShop repository (author should be jarvis). It is important to note that this PR must be reviewed by a member of the content team.
    <https://github.com/PrestaShopCorp/TranslationTool> is PRIVATE, and then you need special access rights to use it.
 
-2. If the team content member requests wording corrections, they can be found either in the PrestaShop CORE, a module, or in the directory /mails of the PrestaShop CORE.
+2. Access the Crowdin interface and validate any new translations (they can be found either in the PrestaShop CORE, a module, or in the directory /mails of the PrestaShop CORE).
 
 3. If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.
 
@@ -72,7 +99,7 @@ It is usually only done once per release as well.
 
 5. Once all the wordings have been corrected, validated and merged, [a Github Action can be used on the TranslationTool repository](https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml) to push the catalogs to Crowdin (the repository need right access).
 
-## 3. Lock the theme version
+### 5. Lock the theme version
 
 {{% notice tip %}}
 You can do this step using Git or directly on GitHub in the next step.
@@ -98,7 +125,12 @@ This tag is needed to lock the theme version when a new release is built.
 
 * Update `composer.lock` to target the new tag
 
-## 4. Release any necessary improvement on the Update Assistant module
+### 6. Release any necessary improvement on the Update Assistant module
+
+{{% notice notes %}}
+
+Ask the team in charge of the Autoupgrade module
+{{% /notice %}}
 
 Some releases need an update of the [Update Assistant][autoupgrade] module, and some do not. For example, if the MySQL database schema has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be added to the [list][autoupgrade-sql-list].
 
@@ -109,7 +141,7 @@ Please verify whether or not this new version of PrestaShop requires
 
 If yes, please follow [the release process of the Update Assistant module][autoupgrade-release-process].
 
-## 5. Manual verifications
+### 7. Manual verifications
 
 Make sure that in the current branch:
 
@@ -124,6 +156,13 @@ Make sure that in the current branch:
   ```bash
   php bin/console prestashop:linter:security-annotation find-missing
   php bin/console prestashop:linter:legacy-link
+  ```
+
+* All versions of the composer packages correspond to a release tag and not a development branch tag.
+
+  ```text
+  "prestashop/ps_apiresources": "dev-dev", // incorrect tag
+  ```
 
 * There are no known vulnerabilities in composer dependencies using `composer audit` to check vulnerabilities.
 
@@ -151,7 +190,7 @@ This repository is now archived. Use composer audit instead
 
 * [Nightly builds][nightly-build-board] are green
 
-## 6. Create the new version in the PrestaShop Marketplace and update native module compatibility
+### 8. Create the new version in the PrestaShop Marketplace and update native module compatibility
 
 {{% notice warning %}}
 **This step requires special rights ([doc to create a new version on PrestaShop Marketplace](https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-c665ab0777204e2d95ce6df22b140747)).**
@@ -171,7 +210,8 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 
 The preliminary steps are completed, you can now proceed to the [build steps][create-build].
 
-[security-checker]: https://github.com/fabpot/local-php-security-checker
+[create-version-branch]: {{< relref "create-version-branch.md" >}}
+[release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/19959
 [register-new-hook]: {{< devdocs "development/components/hook/register-new-hook/" >}}
 [fos-js-routing]: <https://github.com/FriendsOfSymfony/FOSJsRoutingBundle>
 [how-to-build-assets]: {{< devdocs "development/compile-assets/" >}}

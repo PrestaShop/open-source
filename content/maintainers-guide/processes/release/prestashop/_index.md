@@ -5,11 +5,11 @@ aliases:
   - /maintainers-guide/releasing-prestashop/
 ---
 
-# How to release a new PrestaShop version
+## How to release a new PrestaShop version
 
 This section describes the release process, step by step. A PrestaShop version release requires all these steps to be completed.
 
-## Prerequisites
+### Prerequisites
 
 To perform a build, you will need the following:
 
@@ -22,7 +22,7 @@ To perform a build, you will need the following:
 Some of steps will require special tools or access rights which are currently not accessible for maintainers outside the PrestaShop Company. A notice indicates when this is the case.
 {{% /notice %}}
 
-## Different types of releases
+### Different types of releases
 
 We currently have 4 kind of new releases for PrestaShop:
 
@@ -33,11 +33,15 @@ We currently have 4 kind of new releases for PrestaShop:
 
 Security patch releases contain security fixes for major security issues. Please read [about them][security-releases].
 
-## Process overview
+### Process overview
 
 1. **[Perform preliminary tasks][preliminary-tasks]**: (click to see the full step)
 
    Short summary:
+
+   - **Communicate and update GitHub milestone**
+  
+   - **Freeze development step and create build branch**
 
    - **Update the version number in the Core.**
 
@@ -64,7 +68,7 @@ Security patch releases contain security fixes for major security issues. Please
    - **Update the Changelog and Contributors list.**  
      _These files must be included in the build._
 
-   - **Push your work into a build branch.**  
+   - **Push your work into the build branch.**  
      _Allows the base branch to continue receiving merges while your build is being validated._
 
    - **Build and store the zip archive.**  
@@ -82,7 +86,7 @@ Security patch releases contain security fixes for major security issues. Please
    - **Merge the updated Changelog and Contributors list on GitHub.**
   
    - **Tag the version using Git. Do not push it just yet.**
-     
+
    - **Communicate and push/publish the tag and the release on GitHub.**
      _Make sure to link to the PrestaShop SA versions page from the GitHub release description to ease access to the latest built package of PrestaShop_
 
@@ -110,7 +114,6 @@ Security patch releases contain security fixes for major security issues. Please
 [get-composer]: <https://getcomposer.org/>
 [nodejs]: <https://nodejs.org/>
 [nodejs-requirements]: {{< devdocs "development/compile-assets.md#requirements" >}}
-
 [preliminary-tasks]: {{< relref "preliminary-tasks.md" >}}
 [create-build]: {{< relref "create-build.md" >}}
 [release-publicly]: {{< relref "release-publicly.md" >}}

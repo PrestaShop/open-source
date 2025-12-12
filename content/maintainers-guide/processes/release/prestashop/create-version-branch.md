@@ -5,14 +5,13 @@ aliases:
   - /maintainers-guide/releasing-prestashop/create-version-branch/
 ---
 
-# Create a new branch for a new major/minor version.
+## Create a new branch for a new major/minor version.
 
-
-### 1) Create the new branch and push it to the main repo
+### 1. Create the new branch and push it to the main repo
 
 Create the branch on you local git and push it to the main repository. You will need to push it to the main repository and not to your fork.
 
-### 2) Open PRs based on the new branch and modify those files:
+### 2. Open PRs based on the new branch and modify those files:
 
 To create the new branch, we need to update several repositories to complete the necessary work.
 
@@ -39,7 +38,6 @@ Below is a list of repositories with modified files for creating the `9.0.x` bra
 
 - src/App/Command/SlackNotifierCommand.php
 
-
 `PrestaShop/prestashop.github.io`: ( no PR needed this time )
 
 - data/tags.yml (make sure the tag doesn't exists already)
@@ -61,4 +59,3 @@ The QA Automation Team should update the following repositories:
 - .github/workflows/test-sanity.yml
 - .github/workflows/test-with-prebuilt-shop.yml
 - .github/workflows/pr_test_single_campaign.yml
-
