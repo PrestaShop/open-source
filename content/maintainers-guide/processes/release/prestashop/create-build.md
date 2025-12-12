@@ -9,7 +9,7 @@ aliases:
 
 Once preliminary tasks have been completed, the project is ready to be built.
 
-### 1. Merge any not-yet merged security fixes into your branch
+### 1. Merge any not yet merged security fixes into your branch
 
 To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub _after_ the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.
 
