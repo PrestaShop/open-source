@@ -48,7 +48,7 @@ After this step, you should obtain two files:
 {{% notice %}}
 **As reminder**
 
-Your branch following this scheme: `[version]-build` (for example: "9.0.2-build")
+Your branch must follow this scheme: `[version]-build` (for example: "9.0.2-build")
 {{% /notice %}}
 
 The build branch helps other people verify your work, and allows the base branch to continue receiving merges while your build is being validated.
