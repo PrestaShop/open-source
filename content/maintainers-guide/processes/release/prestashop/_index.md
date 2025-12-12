@@ -39,7 +39,7 @@ Security patch releases contain security fixes for major security issues. Please
 
    Short summary:
 
-   - **Communicate and update github milestone**
+   - **Communicate and update GitHub milestone**
   
    - **Freeze development step and create build branch**
 
