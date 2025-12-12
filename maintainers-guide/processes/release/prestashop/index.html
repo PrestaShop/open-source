@@ -277,9 +277,9 @@
       
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="how-to-release-a-new-prestashop-version">How to release a new PrestaShop version</h1>
+        <div class="content"><h2 id="how-to-release-a-new-prestashop-version">How to release a new PrestaShop version</h2>
 <p>This section describes the release process, step by step. A PrestaShop version release requires all these steps to be completed.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="prerequisites">Prerequisites</h3>
 <p>To perform a build, you will need the following:</p>
 <ul>
 <li><a href="https://git-scm.com/">Git</a>, so you can clone <a href="https://github.com/prestashop/prestashop">the project&rsquo;s Git repository</a> on your computer.</li>
@@ -290,7 +290,7 @@
 
 <div class="notices note" >Some of steps will require special tools or access rights which are currently not accessible for maintainers outside the PrestaShop Company. A notice indicates when this is the case.</div>
 
-<h2 id="different-types-of-releases">Different types of releases</h2>
+<h3 id="different-types-of-releases">Different types of releases</h3>
 <p>We currently have 4 kind of new releases for PrestaShop:</p>
 <ul>
 <li>security patch releases</li>
@@ -299,12 +299,18 @@
 <li>major releases</li>
 </ul>
 <p>Security patch releases contain security fixes for major security issues. Please read <a href="/maintainers-guide/processes/release/prestashop/security/">about them</a>.</p>
-<h2 id="process-overview">Process overview</h2>
+<h3 id="process-overview">Process overview</h3>
 <ol>
 <li>
 <p><strong><a href="/maintainers-guide/processes/release/prestashop/preliminary-tasks/">Perform preliminary tasks</a></strong>: (click to see the full step)</p>
 <p>Short summary:</p>
 <ul>
+<li>
+<p><strong>Communicate and update GitHub milestone</strong></p>
+</li>
+<li>
+<p><strong>Freeze development step and create build branch</strong></p>
+</li>
 <li>
 <p><strong>Update the version number in the Core.</strong></p>
 </li>
@@ -341,7 +347,7 @@
 <em>These files must be included in the build.</em></p>
 </li>
 <li>
-<p><strong>Push your work into a build branch.</strong><br>
+<p><strong>Push your work into the build branch.</strong><br>
 <em>Allows the base branch to continue receiving merges while your build is being validated.</em></p>
 </li>
 <li>

@@ -13,9 +13,9 @@
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/</guid>
       <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Make sure the version number has been updated in the Core This only needs to be done once per release.
-PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
- Check the following files and update them if necessary:</description>
+1. Communicate Starting this step means that the Development phase of this release is over (freeze step):
+Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.
+Inform the @prestashop/committers about the release tracking issue.</description>
     </item>
     
     <item>
@@ -35,8 +35,8 @@ For regular patch releases, we start from the content of the patch branch to cre
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-version-branch/</guid>
-      <description>Create a new branch for a new major/minor version. 1) Create the new branch and push it to the main repo Create the branch on you local git and push it to the main repository. You will need to push it to the main repository and not to your fork.
-2) Open PRs based on the new branch and modify those files: To create the new branch, we need to update several repositories to complete the necessary work.</description>
+      <description>Create a new branch for a new major/minor version. 1. Create the new branch and push it to the main repo Create the branch on you local git and push it to the main repository. You will need to push it to the main repository and not to your fork.
+2. Open PRs based on the new branch and modify those files: To create the new branch, we need to update several repositories to complete the necessary work.</description>
     </item>
     
     <item>
@@ -46,9 +46,7 @@ For regular patch releases, we start from the content of the patch branch to cre
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/create-build/</guid>
       <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over.
-Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request.</description>
+1. Merge any not yet merged security fixes into your branch To avoid disclosing security issues before the version is released, security Pull Request are merged in GitHub after the build has been validated. In order to include them in your build, you need to retrieve them manually and merge them in your local branch.</description>
     </item>
     
     <item>
@@ -68,10 +66,11 @@ Make certain you have go for publish! Also, avoid starting this process after 4 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/</guid>
-      <description>Final steps 1. Update API stream for Update Assistant This should only be done for stable releases.
+      <description>Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
- Add in the file releaseNotes.json the new version and the link to its release notes, Update the file autoupgrade.json to make the new release available for update.</description>
+  Add in the file releaseNotes.json the new version and the link to its release notes,
+  Verify that the file autoupgrade.</description>
     </item>
     
   </channel>

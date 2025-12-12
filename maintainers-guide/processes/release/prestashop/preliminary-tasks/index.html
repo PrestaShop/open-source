@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 <title>Preliminary tasks | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Make sure the version number has been updated in the Core This only needs to be done once per release.
-PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
- Check the following files and update them if necessary:"/>
+1. Communicate Starting this step means that the Development phase of this release is over (freeze step):
+Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.
+Inform the @prestashop/committers about the release tracking issue."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" itemprop="url" />
 
@@ -30,18 +30,18 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Preliminary tasks"/>
 <meta name="twitter:description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Make sure the version number has been updated in the Core This only needs to be done once per release.
-PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
- Check the following files and update them if necessary:"/>
+1. Communicate Starting this step means that the Development phase of this release is over (freeze step):
+Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.
+Inform the @prestashop/committers about the release tracking issue."/>
 <meta property="og:title" content="Preliminary tasks" />
 <meta property="og:description" content="Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Make sure the version number has been updated in the Core This only needs to be done once per release.
-PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.
- Check the following files and update them if necessary:" />
+1. Communicate Starting this step means that the Development phase of this release is over (freeze step):
+Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.
+Inform the @prestashop/committers about the release tracking issue." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/preliminary-tasks/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2025-05-08T16:08:55+01:00" />
+<meta property="article:modified_time" content="2025-12-12T09:58:09+01:00" />
 
 
 
@@ -299,14 +299,20 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
     <div class="toc-title">Table of Contents</div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#preliminary-tasks">Preliminary tasks</a>
+    <li>
       <ul>
-        <li><a href="#1-make-sure-the-version-number-has-been-updated-in-the-core">1. Make sure the version number has been updated in the Core</a></li>
-        <li><a href="#2-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">2. Make sure the default translation catalogue has been updated and pushed to Crowdin</a></li>
-        <li><a href="#3-lock-the-theme-version">3. Lock the theme version</a></li>
-        <li><a href="#4-release-any-necessary-improvement-on-the-update-assistant-module">4. Release any necessary improvement on the Update Assistant module</a></li>
-        <li><a href="#5-manual-verifications">5. Manual verifications</a></li>
-        <li><a href="#6-create-the-new-version-in-the-prestashop-marketplace-and-update-native-module-compatibility">6. Create the new version in the PrestaShop Marketplace and update native module compatibility</a></li>
+        <li><a href="#preliminary-tasks">Preliminary tasks</a>
+          <ul>
+            <li><a href="#1-communicate">1. Communicate</a></li>
+            <li><a href="#2-create-a-branch-for-your-build">2. Create a branch for your build</a></li>
+            <li><a href="#3-make-sure-the-version-number-has-been-updated-in-the-core">3. Make sure the version number has been updated in the Core</a></li>
+            <li><a href="#4-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">4. Make sure the default translation catalogue has been updated and pushed to Crowdin</a></li>
+            <li><a href="#5-lock-the-theme-version">5. Lock the theme version</a></li>
+            <li><a href="#6-release-any-necessary-improvement-on-the-update-assistant-module">6. Release any necessary improvement on the Update Assistant module</a></li>
+            <li><a href="#7-manual-verifications">7. Manual verifications</a></li>
+            <li><a href="#8-create-the-new-version-in-the-prestashop-marketplace-and-update-native-module-compatibility">8. Create the new version in the PrestaShop Marketplace and update native module compatibility</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -316,9 +322,33 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="preliminary-tasks">Preliminary tasks</h1>
+        <div class="content"><h2 id="preliminary-tasks">Preliminary tasks</h2>
 <p>Before you can start your build, you must make sure that the project is ready to be built.</p>
-<h2 id="1-make-sure-the-version-number-has-been-updated-in-the-core">1. Make sure the version number has been updated in the Core</h2>
+<h3 id="1-communicate">1. Communicate</h3>
+<p>Starting this step means that the Development phase of this release is over (freeze step):</p>
+<p>Verify that the release milestone on github is 100% complete. If there are still PRs remaining, create the milestone for an another release and tag the remaining PRs to it.</p>
+<p>Inform the @prestashop/committers about the release tracking issue.
+If discussions arise regarding critical bugs, inform QA and the PM. They will be responsible for assessing the criticality of the bugs.</p>
+<p>Inform the team in charge of Autoupgrade, and ask them if a version update is necessary (PRs with the tag &ldquo;Needs Autoupgrade PR&rdquo;).</p>
+<p>Before you go further, make sure to <strong>tick the &ldquo;Development&rdquo; box</strong> in the Release Tracker GitHub issue (there is one per version, see the <a href="https://github.com/PrestaShop/PrestaShop/issues/19959">1.7.6.6 example</a>).</p>
+<h3 id="2-create-a-branch-for-your-build">2. Create a branch for your build</h3>
+<p>The following tasks will require you to perform changes and submit them as a Pull Request.</p>
+<p>example : If the release is <code>9.0.2</code>, create a branch from <code>9.0.x</code> and name it <code>9.0.2-build</code></p>
+<ul>
+<li>
+<p><strong>Clone the project</strong> on your computer using Git (only if you don&rsquo;t already have a local copy of the repository).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git clone git@github.com:PrestaShop/PrestaShop.git
+</code></pre></div></li>
+<li>
+<p><strong>Make sure that you switch to the appropriate branch</strong> regarding the version you&rsquo;ll be building</p>
+</li>
+<li>
+<p><strong>Make sure your branch is up-to-date with upstream.</strong> Especially if you already had a local clone of the repository.</p>
+</li>
+</ul>
+<p>The next steps and PRs to be performed will be done on the build branch (freeze).</p>
+<p>NB : <strong>For a minor or major version</strong> see additionnal steps on <a href="/maintainers-guide/processes/release/prestashop/create-version-branch/">create version branch</a> page.</p>
+<h3 id="3-make-sure-the-version-number-has-been-updated-in-the-core">3. Make sure the version number has been updated in the Core</h3>
 
 <div class="notices note" ><p><strong>This only needs to be done once per release.</strong></p>
 <p>PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 will be identified as 1.7.6.0 regardless of whether the release is alpha, beta, RC, or stable.</p>
@@ -346,15 +376,10 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 
 <div class="notices tip" >If you&rsquo;re lost, check out <a href="https://github.com/PrestaShop/PrestaShop/pull/19980">this example</a> from the 1.7.6.6 release.</div>
 
-<h2 id="2-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">2. Make sure the default translation catalogue has been updated and pushed to Crowdin</h2>
+<h3 id="4-make-sure-the-default-translation-catalogue-has-been-updated-and-pushed-to-crowdin">4. Make sure the default translation catalogue has been updated and pushed to Crowdin</h3>
 
 <div class="notices warning" ><p><strong>This step requires special rights.</strong></p>
 <p>Ask a maintainer from the PrestaShop Company with access to the Translation Tool to perform this step.</p>
-</div>
-
-
-<div class="notices note" ><p><strong>This step is only needed for minor and major releases.</strong></p>
-<p>It is usually only done once per release as well.</p>
 </div>
 
 <ol>
@@ -363,7 +388,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <a href="https://github.com/PrestaShopCorp/TranslationTool">https://github.com/PrestaShopCorp/TranslationTool</a> is PRIVATE, and then you need special access rights to use it.</p>
 </li>
 <li>
-<p>If the team content member requests wording corrections, they can be found either in the PrestaShop CORE, a module, or in the directory /mails of the PrestaShop CORE.</p>
+<p>Access the Crowdin interface and validate any new translations (they can be found either in the PrestaShop CORE, a module, or in the directory /mails of the PrestaShop CORE).</p>
 </li>
 <li>
 <p>If the correction occurs in a module, a release must be made, along with a bump in the composer.json of the CORE, before re-extracting.</p>
@@ -375,7 +400,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <p>Once all the wordings have been corrected, validated and merged, <a href="https://github.com/PrestaShopCorp/TranslationTool/actions/workflows/push_catalog_to_crowdin.yml">a Github Action can be used on the TranslationTool repository</a> to push the catalogs to Crowdin (the repository need right access).</p>
 </li>
 </ol>
-<h2 id="3-lock-the-theme-version">3. Lock the theme version</h2>
+<h3 id="5-lock-the-theme-version">5. Lock the theme version</h3>
 
 <div class="notices tip" >You can do this step using Git or directly on GitHub in the next step.</div>
 
@@ -397,7 +422,10 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <p>Update <code>composer.lock</code> to target the new tag</p>
 </li>
 </ul>
-<h2 id="4-release-any-necessary-improvement-on-the-update-assistant-module">4. Release any necessary improvement on the Update Assistant module</h2>
+<h3 id="6-release-any-necessary-improvement-on-the-update-assistant-module">6. Release any necessary improvement on the Update Assistant module</h3>
+
+<div class="notices notes" >Ask the team in charge of the Autoupgrade module</div>
+
 <p>Some releases need an update of the <a href="https://github.com/PrestaShop/autoupgrade/">Update Assistant</a> module, and some do not. For example, if the MySQL database schema has been updated between two versions of PrestaShop, a schema update SQL script is needed, and it has to be added to the <a href="https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql">list</a>.</p>
 <p>Please verify whether or not this new version of PrestaShop requires</p>
 <ul>
@@ -405,7 +433,7 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <li>to publish a new version (using the up-to-date content of the source code) of the Update Assistant (autoupgrade) module</li>
 </ul>
 <p>If yes, please follow <a href="/maintainers-guide/processes/release/autoupgrade/">the release process of the Update Assistant module</a>.</p>
-<h2 id="5-manual-verifications">5. Manual verifications</h2>
+<h3 id="7-manual-verifications">7. Manual verifications</h3>
 <p>Make sure that in the current branch:</p>
 <ul>
 <li>
@@ -416,7 +444,10 @@ PrestaShop does not support pre-release versioning yet. Any build of 1.7.6.0 wil
 <p>All controllers are secured by annotations, and legacy link are provided for Symfony routes (starting from 9.0.x this step is obsolete as it is checked in the CI already):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">php bin/console prestashop:linter:security-annotation find-missing
 php bin/console prestashop:linter:legacy-link
-
+</code></pre></div></li>
+<li>
+<p>All versions of the composer packages correspond to a release tag and not a development branch tag.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">&#34;prestashop/ps_apiresources&#34;: &#34;dev-dev&#34;, // incorrect tag
 </code></pre></div></li>
 <li>
 <p>There are no known vulnerabilities in composer dependencies using <code>composer audit</code> to check vulnerabilities.</p>
@@ -446,7 +477,7 @@ php bin/console prestashop:linter:legacy-link
 <p><a href="https://nightly.prestashop-project.org/">Nightly builds</a> are green</p>
 </li>
 </ul>
-<h2 id="6-create-the-new-version-in-the-prestashop-marketplace-and-update-native-module-compatibility">6. Create the new version in the PrestaShop Marketplace and update native module compatibility</h2>
+<h3 id="8-create-the-new-version-in-the-prestashop-marketplace-and-update-native-module-compatibility">8. Create the new version in the PrestaShop Marketplace and update native module compatibility</h3>
 
 <div class="notices warning" ><p><strong>This step requires special rights (<a href="https://www.notion.so/prestashopcorp/Create-the-new-version-in-the-Addons-Marketplace-update-module-compatibility-c665ab0777204e2d95ce6df22b140747">doc to create a new version on PrestaShop Marketplace</a>).</strong></p>
 <p>Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop Marketplace to perform this step.</p>

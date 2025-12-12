@@ -4,10 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <title>Final steps | PrestaShop Project - Open Source e-Commerce platform</title>
-<meta name="description" content="Final steps 1. Update API stream for Update Assistant This should only be done for stable releases.
+<meta name="description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
- Add in the file releaseNotes.json the new version and the link to its release notes, Update the file autoupgrade.json to make the new release available for update."/>
+  Add in the file releaseNotes.json the new version and the link to its release notes,
+  Verify that the file autoupgrade."/>
 
 <link rel="canonical" href="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" itemprop="url" />
 
@@ -29,19 +30,21 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 <meta name="twitter:title" content="Final steps"/>
-<meta name="twitter:description" content="Final steps 1. Update API stream for Update Assistant This should only be done for stable releases.
+<meta name="twitter:description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
- Add in the file releaseNotes.json the new version and the link to its release notes, Update the file autoupgrade.json to make the new release available for update."/>
+  Add in the file releaseNotes.json the new version and the link to its release notes,
+  Verify that the file autoupgrade."/>
 <meta property="og:title" content="Final steps" />
-<meta property="og:description" content="Final steps 1. Update API stream for Update Assistant This should only be done for stable releases.
+<meta property="og:description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
  Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
- Add in the file releaseNotes.json the new version and the link to its release notes, Update the file autoupgrade.json to make the new release available for update." />
+  Add in the file releaseNotes.json the new version and the link to its release notes,
+  Verify that the file autoupgrade." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2025-05-09T09:50:30+01:00" />
+<meta property="article:modified_time" content="2025-12-11T23:00:56+01:00" />
 
 
 
@@ -299,13 +302,23 @@
     <div class="toc-title">Table of Contents</div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#final-steps">Final steps</a>
+    <li>
       <ul>
-        <li><a href="#1-update-api-stream-for-update-assistant">1. Update API stream for Update Assistant</a></li>
-        <li><a href="#2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</a></li>
-        <li><a href="#3-go-through-the-checklist">3. Go through the checklist</a></li>
-        <li><a href="#4-store-the-zip-archive">4. Store the ZIP archive</a></li>
-        <li><a href="#5-improve-the-process">5. Improve the process</a></li>
+        <li><a href="#final-steps">Final steps</a>
+          <ul>
+            <li><a href="#1-update-api-stream-for-update-assistant">1. Update API stream for Update Assistant</a>
+              <ul>
+                <li><a href="#11-distribution-api">1.1 Distribution API</a></li>
+                <li><a href="#12-legacy-api">1.2 Legacy API</a></li>
+              </ul>
+            </li>
+            <li><a href="#2-deployment-of-the-classic-edition">2. Deployment of the Classic edition</a></li>
+            <li><a href="#3-create-docker-images-for-the-new-version">3. Create Docker images for the new version</a></li>
+            <li><a href="#3-go-through-the-checklist">3. Go through the checklist</a></li>
+            <li><a href="#4-store-the-zip-archive">4. Store the ZIP archive</a></li>
+            <li><a href="#5-improve-the-process">5. Improve the process</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -315,8 +328,9 @@
 
 
       <div class="col-xl ml-auto">
-        <div class="content"><h1 id="final-steps">Final steps</h1>
-<h2 id="1-update-api-stream-for-update-assistant">1. Update API stream for Update Assistant</h2>
+        <div class="content"><h2 id="final-steps">Final steps</h2>
+<h3 id="1-update-api-stream-for-update-assistant">1. Update API stream for Update Assistant</h3>
+<h4 id="11-distribution-api">1.1 Distribution API</h4>
 
 <div class="notices note" ><p><strong>This should only be done for stable releases.</strong></p>
 <p><em>(i.e. if not for betas and RCs).</em></p>
@@ -324,10 +338,14 @@
 
 <p>Additional changes must be brought to the <a href="https://github.com/PrestaShop/distribution-api">Distribution API repository</a> to provide the best experience on the Update Assistant module:</p>
 <ul>
-<li>Add in the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/resources/json/releaseNotes.json">releaseNotes.json</a> the new version and the link to its release notes,</li>
-<li>Update the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/public/json/autoupgrade.json">autoupgrade.json</a> to make the new release available for update.
+<li>
+<p>Add in the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/resources/json/releaseNotes.json">releaseNotes.json</a> the new version and the link to its release notes,</p>
+</li>
+<li>
+<p>Verify that the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/public/json/autoupgrade.json">autoupgrade.json</a> has been updated by the team in charge of autoupgrade to make the new release available for update.
 If you needed to release a new version of the module Update Assistant, update the <code>autoupgrade_recommended</code> property as well.
-You may have to create a new entry if the new Update Assistant is compliant with a range of PrestaShop version that is unrelated to the existing ones.</li>
+You may have to create a new entry if the new Update Assistant is compliant with a range of PrestaShop version that is unrelated to the existing ones.</p>
+</li>
 </ul>
 <p>Once this step is done and your changes have been merged, update the Release Tracker GitHub issue by ticking the &ldquo;Available for update&rdquo; box.</p>
 
@@ -335,12 +353,24 @@ You may have to create a new entry if the new Update Assistant is compliant with
 <p><em>Please verify the contents of <a href="https://api.prestashop-project.org/autoupgrade">https://api.prestashop-project.org/autoupgrade</a>. You might need to wait for the cache to be cleared.</em></p>
 </div>
 
+<h4 id="12-legacy-api">1.2 Legacy API</h4>
 
-<div class="notices note" ><p><strong>API migration.</strong></p>
-<p><em>Update Assistant is using the Distribution API since the version 7.1. Before that, it was using an API only available from people of PrestaShop SA with specific rights.</em></p>
+<div class="notices note" ><p><strong>API migration in progress</strong></p>
+<p><em>Update Assistant is using the Distribution API since the version 7.1. But some steps still need to be performed on the old API (only available from people of PrestaShop SA with specific rights).</em></p>
 </div>
 
-<h2 id="2-create-docker-images-for-the-new-version">2. Create Docker images for the new version</h2>
+<p>See the internal notion page <a href="https://www.notion.so/prestashopcorp/Update-API-stream-for-1-click-upgrade-d547202bbc814407860c134ae01b3b32">Update API stream for 1-click upgrade</a> and follow the different steps.</p>
+<h3 id="2-deployment-of-the-classic-edition">2. Deployment of the Classic edition</h3>
+
+<div class="notices warning" ><p><strong>This notion documentation requires special rights.</strong></p>
+<p>Go to <a href="https://www.notion.so/prestashopcorp/Create-a-Classic-Edition-2c45d6cf071f80789babe11c1b379899">Create a Classic Edition</a> page for more information about
+the internal tool <strong>smb_edition_builder</strong> and follow the different steps in the &ldquo;Deployment&rdquo; section.</p>
+</div>
+
+<h3 id="3-create-docker-images-for-the-new-version">3. Create Docker images for the new version</h3>
+
+<div class="notices note" ><strong>This part is normally no longer necessary and is now automated.</strong></div>
+
 <ul>
 <li>Checkout the <a href="https://github.com/PrestaShop/docker">project</a>, install the project and create a new branch</li>
 <li>Modify the file <code>versions.py</code> to add the new version and the related php matrix compatibility</li>
@@ -353,7 +383,7 @@ You may have to create a new entry if the new Update Assistant is compliant with
 <p>Some other registries depend on this registry to be updated (like <a href="https://hub.docker.com/r/prestashop/docker-internal-images">Docker internal images</a>). The update will be automatic.</p>
 <p>It may take a few hours for the images to be updated.</p>
 <p>You can update the Release Tracker GitHub issue: step &ldquo;Docker image&rdquo; is done.</p>
-<h2 id="3-go-through-the-checklist">3. Go through the checklist</h2>
+<h3 id="3-go-through-the-checklist">3. Go through the checklist</h3>
 <ul>
 <li>
 <p>Check the PrestaShop localization packs are correct (only needed for major and minor releases):</p>
@@ -388,9 +418,9 @@ You may have to create a new entry if the new Update Assistant is compliant with
 <p>Check that if you try to install PrestaShop 1.7.5 from the archive, the installer suggests you install the latest version instead</p>
 </li>
 </ul>
-<h2 id="4-store-the-zip-archive">4. Store the ZIP archive</h2>
+<h3 id="4-store-the-zip-archive">4. Store the ZIP archive</h3>
 <p>Submit a Pull Request to add the ZIP archive to the <a href="https://github.com/PrestaShop/zip-archives">Archives repository</a>.</p>
-<h2 id="5-improve-the-process">5. Improve the process</h2>
+<h3 id="5-improve-the-process">5. Improve the process</h3>
 <p>If during the process you encountered issues or there was some information not 100% clear, please improve this process documentation.</p>
 
 <div class="notices tip" ><p><strong>Congratulations!</strong></p>
