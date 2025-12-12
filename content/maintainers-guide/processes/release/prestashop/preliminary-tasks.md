@@ -40,6 +40,8 @@ example : If the release is `9.0.2`, create a branch from `9.0.x` and name it `9
 
 The next steps and PRs to be performed will be done on the build branch (freeze).
 
+NB : **For a minor or major version** see additionnal steps on [create version branch][create-version-branch] page.
+
 ### 3. Make sure the version number has been updated in the Core
 
 {{% notice note %}}
@@ -208,6 +210,7 @@ If any of above verifications fails, it MUST be addressed in a Pull Requests and
 
 The preliminary steps are completed, you can now proceed to the [build steps][create-build].
 
+[create-version-branch]: {{< relref "create-version-branch.md" >}}
 [release-tracker-issue]: https://github.com/PrestaShop/PrestaShop/issues/19959
 [register-new-hook]: {{< devdocs "development/components/hook/register-new-hook/" >}}
 [fos-js-routing]: <https://github.com/FriendsOfSymfony/FOSJsRoutingBundle>
