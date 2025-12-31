@@ -111,6 +111,7 @@ As a general rule, all Pull Requests undergo the QA verification, except for the
 
 * Version branch merges
 * Changes that have no functional impact (e.g. code comments), cannot be manually verified, or are verified by automated tests.
+* Highly technical changes or changes without user-facing behavior, which may be validated by the maintainer team.
 
 The Pull Request can proceed to merge once the QA verification is successful.
 
@@ -232,7 +233,9 @@ If it has the right number of approvals (Pull Requests submitted to the [PrestaS
 
 You can add `Waiting for QA` label to request a validation from QA team. Some PRs do not need QA testing, for example fixing a typo or a code change that only impacts CI.
 
-Some other PRs may require QA by a developer, for example if the PR is very technical and does not change the behavior of the software. In that case, you can add `Waiting for QA` and `Waiting for dev` label. This should be discussed with QA functional team.
+Some other PRs may require QA by a developer, for example if the PR is very technical and does not change the behavior of the software. In that case, the maintainer team may validate the change.
+
+The decision to validate a Pull Request through developer QA is driven by the maintainer team, based on the technical nature and testability of the change. The QA team may be consulted when clarification is needed. Appropriate labels such as `Waiting for QA` and `Waiting for dev` can be applied accordingly.
 
 If the PR behavior is confirmed by QA Team (or a developer, for the "Waiting for dev PRs), the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
 
