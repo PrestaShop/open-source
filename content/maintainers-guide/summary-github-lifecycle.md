@@ -106,7 +106,7 @@ When the Pull Request has been approved (it needs two approvals on the Core repo
 
 On regular Pull Requests, the QA team is in charge of testing the Pull Request. They will use the "How to test" part of the Pull Request description to validate the behavior implemented, and also run some more tests to validate there are no regressions.
 
-Some Pull Requests however cannot be tested by QA team, the Developers team might validate them.
+Some Pull Requests cannot be tested by the QA team, typically because they are highly technical in nature or do not involve user-facing behavior. In such cases, the maintainer team may validate them. The decision on who performs the validation is made by the QA team or the maintainers.
 
 PrestaShop project has UI tests. These tests can be executed on each Pull Request thanks to [`ga.tests.ui.pr` tool](https://github.com/PrestaShop/ga.tests.ui.pr/). Please read the README file of this tool and fill the Pull Request description with the execution URL. 
 
@@ -114,7 +114,7 @@ If the Pull Request is tested successfully, the label "QA approved" is applied. 
 
 ### Merging the Pull Request
 
-Pull Requests that have been validated by QA can be merged. They must also be milestoned, and if they fix an issue, the issue must be labelled, milestoned, and closed.
+Pull Requests that have been validated and tested can be merged. They must also be milestoned, and if they fix an issue, the issue must be labelled, milestoned, and closed.
 
 [how-pull-requests]: {{< devdocs "contribute/contribution-process/how-pull-requests-are-processed/" >}}
 [code-review]: ({{< relref "reviewing-pull-requests" >}})
