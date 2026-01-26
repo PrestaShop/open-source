@@ -77,23 +77,24 @@ Committers can review and merge code contributions. They summon the technical co
 Current committers:
 
 - Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
-- Clément Désiles ([@jokesterfr](https://github.com/jokesterfr))
-- Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal))
-- Fabien Papet ([@FabienPapet](https://github.com/FabienPapet))
-- Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva))
+- Clément Désiles ([@jokesterfr](https://github.com/jokesterfr)) - external contributor not affiliated with PrestaShop SA
+- Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal)) - external contributor not affiliated with PrestaShop SA
+- Fabien Papet ([@FabienPapet](https://github.com/FabienPapet)) - external contributor not affiliated with PrestaShop SA
+- Jean-François Viguier ([@jf-viguier](https://github.com/jf-viguier)) - external contributor not affiliated with PrestaShop SA
+- Leemy Pakvn ([@leemyongpakva](https://github.com/leemyongpakva)) - external contributor not affiliated with PrestaShop SA
 - Matthias Goudjil ([@mattgoud](https://github.com/mattgoud))
 - Morgan Pichat ([@M0rgan01](https://github.com/M0rgan01))
 - Nicolas Lœuillet ([@nicosomb](https://github.com/nicosomb))
-- Paolo Cunti ([@codencode](https://github.com/codencode))
-- Pululu Kinanga André ([@PululuK](https://github.com/PululuK))
+- Paolo Cunti ([@codencode](https://github.com/codencode)) - external contributor not affiliated with PrestaShop SA
+- Pululu Kinanga André ([@PululuK](https://github.com/PululuK)) - external contributor not affiliated with PrestaShop SA
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
 - Thomas Leone ([@tleon](https://github.com/tleon))
-- Thomas Roux ([@Touxten](https://github.com/Touxten))
-- Tomasz Zając ([@SharakPL](https://github.com/SharakPL))
+- Thomas Roux ([@Touxten](https://github.com/Touxten)) - external contributor not affiliated with PrestaShop SA
+- Tomasz Zając ([@SharakPL](https://github.com/SharakPL)) - external contributor not affiliated with PrestaShop SA
 
 ### Alumni
 
-Alumni are former technical council members or committers who do not wish to participate actively in the project. They can still review and merge code contributions and their advice is always welcomed.
+Alumni are former technical council members or committers who do not wish to participate actively in the project. They can still review and merge code contributions, and their advice is always welcome.
 
 Alumni:
 
