@@ -5,21 +5,20 @@ title: Legal notice
 # Legal notice
 
 The website [www.prestashop-project.org/](https://www.prestashop-project.org/) is owned by PrestaShop SA, a private company with a capital of 380,645.55 euros.
-Its headquarters are located at 198, Avenue de France, 75013 Paris, France.
+Its headquarters are located at 82 Av. du Maine, 75014 Paris, France.
 
 - CS registration number: B 497 916 635
 - VAT number: FR66497916635
-- Publication director: Paolo Fiorelli
 - Phone number: +33 (0)1 76 23 25 25
 - E-mail: contact@prestashop.com
 - Hosting: GitHub - 88 Colin P Kelly Jr St, San Francisco, CA 94107 - United States
 - Number : +1 (877) 958-8742
 
-&copy; 2007-2022 PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
+&copy; 2007-2026 PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
 
 ### Preamble
 
-These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 4, rue Jules Lefebvre - 75009 Paris ("PrestaShop").
+These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 82 Av. du Maine, 75014 Paris, France ("PrestaShop").
 
 The user of the Website (the "User") is informed that by browsing the Website he or she has (i) had the opportunity to access the T&Cs and the documents to which they refer and (ii) has agreed to abide by them.
 
