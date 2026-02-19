@@ -1,9 +1,5 @@
 ---
 title: What's New in PrestaShop 9.0
-menu:
-  main:
-    parent: "Download"
-    name: "What's new"
 showIntroductionBanner: false
 subtitle: PrestaShop 9 is a major release introducing a modernized architecture, next-gen APIs, improved performance, and flexibility.
 summary: PrestaShop 9 brings Symfony 6.4 LTS, PHP 8.4 support, the new Admin API, Hummingbird theme, improved SEO and security, and a faster, fully modern back office.

@@ -5,12 +5,28 @@ main:
   - name: "News"
     url: "https://build.prestashop-project.org"
     weight: 1
+  - name: "Developer's blog"
+    url: "https://build.prestashop-project.org"
+    weight: 20
+    parent: "News"
+  - name: "YouTube channel"
+    url: "https://www.youtube.com/@prestashopproject"
+    weight: 30
+    parent: "News"
+  - name: "Meet PrestaShop 9.0"
+    url: "/releases/prestashop90"
+    weight: 1
+    parent: "News"
   - name: "Download"
     weight: 2
-  - name: "Latest Releases"
+  - name: "Latest release"
+    parent: "Download"
+    url: "https://prestashop.com/versions"
+    weight: 1
+  - name: "All sources"
     parent: "Download"
     url: "https://github.com/PrestaShop/PrestaShop/releases"
-    weight: 1
+    weight: 2
   - name: "Community"
     weight: 3
   - name: "GitHub"
@@ -41,7 +57,7 @@ footer_left:
 
 footer_middle:
   - name: "User documentation"
-    url: "https://docs.prestashop-project.org/v.8-documentation/v/english/"
+    url: "https://docs.prestashop-project.org/v.9-documentation"
     weight: 1
   - name: "Developer documentation"
     url: "https://devdocs.prestashop-project.org"

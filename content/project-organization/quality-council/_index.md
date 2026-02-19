@@ -1,9 +1,5 @@
 ---
 title: Quality Council
-menu:
-  main:
-    parent: "Resources"
-    name: "Quality Council"
 ---
 
 # PrestaShop Quality Council
