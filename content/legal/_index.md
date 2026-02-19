@@ -14,7 +14,7 @@ Its headquarters are located at 82 Avenue du Maine, 75014 Paris, France.
 - Hosting: GitHub - 88 Colin P Kelly Jr St, San Francisco, CA 94107 - United States
 - Number : +1 (877) 958-8742
 
-&copy; 2007-{{ .Now.Year }} PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
+&copy; 2007-{{< year >}} PrestaShop SA. PrestaShop is a registered trademark by PrestaShop SA.
 
 ### Preamble
 
