@@ -21,7 +21,7 @@ main:
     weight: 2
   - name: "Latest release"
     parent: "Download"
-    url: "https://prestashop.com/versions"
+    url: "https://github.com/PrestaShop/PrestaShop/releases"
     weight: 1
   - name: "All sources"
     parent: "Download"
