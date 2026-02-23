@@ -1,0 +1,62 @@
+name: 🐛 Bug Report
+description: Report an issue on the prestashop-project.org website. Do NOT report PrestaShop software bugs here.
+labels: ['Bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ❗️ Read this before submitting a bug report:
+        - This repository is for the **prestashop-project.org website** only. To report a bug in the PrestaShop software, use the [PrestaShop core repository](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
+        - **Write in English.** Reports in other languages will be closed.
+        - **Do not disclose security vulnerabilities here** - contact [security@prestashop.com](mailto:security@prestashop.com) instead.
+
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I understand and accept the project's [Code of Conduct](https://www.prestashop-project.org/code-of-conduct/).
+          required: true
+        - label: I have already [searched for existing issues](./issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+          required: true
+        - label: This issue is about the **prestashop-project.org website**, not the PrestaShop software.
+          required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the affected page
+      description: Paste the URL of the page where you encountered the issue.
+      placeholder: "e.g., https://www.prestashop-project.org/download/"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: What went wrong? Add screenshots or screen recordings if helpful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '…'
+        2. Click on '…'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+
+  - type: input
+    id: browser-os
+    attributes:
+      label: Browser and operating system
+      placeholder: "e.g., Chrome 123 on macOS 14, Firefox 125 on Windows 11"

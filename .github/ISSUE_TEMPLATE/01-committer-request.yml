@@ -1,0 +1,91 @@
+name: 🙋 Request to be a Committer
+description: Apply to become a committer with merge rights on the PrestaShop project.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## About the Committer role
+
+        Committers are contributors with merge rights who participate in reviewing code contributions.
+
+        > **A note on what this role is - and isn't.**
+        > Being a committer is not about gaining power or having the final say on things. It is about showing up: reading pull requests carefully, leaving thoughtful feedback, helping contributors improve their work, and taking shared responsibility for the quality of the codebase. The merge button is a tool for serving the project, not a status symbol.
+
+        ### Prerequisites
+
+        Before applying, make sure you meet the following criteria:
+
+        - **Active participation** in the project
+        - **At least one accepted, quality Pull Request**
+        - A record of **Pull Request reviews**
+        - Real interest in getting involved in code review
+        - Respect for the [Code of Conduct](https://www.prestashop-project.org/code-of-conduct/)
+        - Alignment with the project's goals (Symfony migration, VueJS adoption, etc.)
+
+        ### How the process works
+
+        1. Submit this issue explaining why you'd like to become a committer
+        2. If **three members of technical council approve it**, your application is accepted
+        3. If the issue does not receive three positive votes within **30 days**, it is considered rejected and closed
+        4. Upon approval, you receive full committer rights for a **90-day trial period**
+        5. At the end of the trial, your status is confirmed
+
+        > ℹ️ The voting process is not mandatory if you are offered the role directly by technical council members (with at least three supporters).
+
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I understand and accept the project's [Code of Conduct](https://www.prestashop-project.org/code-of-conduct/).
+          required: true
+        - label: I have a record of accepted Pull Requests in the PrestaShop project.
+          required: true
+        - label: I have reviewed Pull Requests from other contributors.
+          required: true
+        - label: I am aware that this role comes with responsibilities around code review, quality standards, and active participation.
+          required: true
+
+  - type: dropdown
+    id: project-scope
+    attributes:
+      label: Which part of the project are you applying for?
+      description: You can apply for one or several areas.
+      multiple: true
+      options:
+        - Core (PrestaShop/PrestaShop)
+        - Modules
+        - Theme
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: accepted-prs
+    attributes:
+      label: Links to your accepted Pull Requests
+      description: List Pull Requests you authored that were merged into the project.
+      placeholder: |
+        - https://github.com/PrestaShop/PrestaShop/pull/…
+        - https://github.com/PrestaShop/PrestaShop/pull/…
+    validations:
+      required: true
+
+  - type: textarea
+    id: pr-reviews
+    attributes:
+      label: Links to Pull Request reviews you performed
+      description: Show your track record as a reviewer.
+      placeholder: |
+        - https://github.com/PrestaShop/PrestaShop/pull/…#pullrequestreview-…
+        - https://github.com/PrestaShop/PrestaShop/pull/…
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why do you want to become a committer?
+      description: Briefly explain your motivation and what you intend to focus on as a committer.
+    validations:
+      required: true
