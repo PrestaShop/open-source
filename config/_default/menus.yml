@@ -19,14 +19,14 @@ main:
     parent: "News"
   - name: "Download"
     weight: 2
-  - name: "Latest release"
+  - name: "How to download"
     parent: "Download"
-    url: "https://github.com/PrestaShop/PrestaShop/releases"
+    pageRef: "download"
     weight: 1
   - name: "All sources"
     parent: "Download"
     url: "https://github.com/PrestaShop/PrestaShop/releases"
-    weight: 2
+    weight: 3
   - name: "Community"
     weight: 3
   - name: "GitHub"
