@@ -10,6 +10,7 @@ Its headquarters are located at 82 Avenue du Maine, 75014 Paris, France.
 - CS registration number: B 497 916 635
 - VAT number: FR66497916635
 - Phone number: +33 (0)1 76 23 25 25
+- Director publication: Mikołaj Król
 - E-mail: contact@prestashop.com
 - Hosting: GitHub - 88 Colin P Kelly Jr St, San Francisco, CA 94107 - United States
 - Number : +1 (877) 958-8742
@@ -18,7 +19,7 @@ Its headquarters are located at 82 Avenue du Maine, 75014 Paris, France.
 
 ### Preamble
 
-These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €380,645.55, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 82 Avenue du Maine, 75014 Paris, France ("PrestaShop").
+These general terms and conditions of use (the "T&Cs") are intended to define the conditions of access and use of the website [https://www.prestashop-project.org/](https://www.prestashop-project.org/) (the "Website"), published by PrestaShop, a limited liability company with a share capital of €857,946.45, registered in the Paris Trade and Companies Register under number 497 916 635 and whose registered office is located at 82 Avenue du Maine, 75014 Paris, France ("PrestaShop").
 
 The user of the Website (the "User") is informed that by browsing the Website he or she has (i) had the opportunity to access the T&Cs and the documents to which they refer and (ii) has agreed to abide by them.
 
