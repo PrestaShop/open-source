@@ -289,20 +289,32 @@
   <ul>
     <li><a href="#how-to-contribute-to-ui-tests">How to contribute to UI tests</a>
       <ul>
-        <li><a href="#introduction">Introduction</a>
-          <ul>
-            <li><a href="#branches">Branches</a></li>
-            <li><a href="#differences-between-scenarios--tests">Differences between scenarios &amp; tests</a></li>
-          </ul>
-        </li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#introduction">Introduction</a></li>
         <li><a href="#contribute-to-ui-tests">Contribute to UI tests</a>
           <ul>
-            <li><a href="#choose-a-scenario-to-automate">Choose a scenario to automate</a></li>
-            <li><a href="#create-the-pr">Create the PR</a></li>
-            <li><a href="#review-the-pr">Review the PR</a></li>
-            <li><a href="#merge-of-the-pr">Merge of the PR</a></li>
+            <li><a href="#1-choose-a-scenario-to-automate">1. Choose a scenario to automate</a></li>
+            <li><a href="#2-setup-your-environment">2. Setup your environment</a>
+              <ul>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+                <li><a href="#project-setup">Project setup</a></li>
+                <li><a href="#ui-test-setup">UI test setup</a></li>
+                <li><a href="#run-a-test">Run a test</a></li>
+              </ul>
+            </li>
+            <li><a href="#3-create-the-test">3. Create the test</a>
+              <ul>
+                <li><a href="#tech-stack">Tech stack</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+              </ul>
+            </li>
+            <li><a href="#4-create-the-pull-request">4. Create the Pull Request</a></li>
+            <li><a href="#5-review-process">5. Review process</a></li>
+            <li><a href="#6-merge">6. Merge</a></li>
           </ul>
         </li>
+        <li><a href="#best-practices">Best practices</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
       </ul>
     </li>
   </ul>
@@ -313,47 +325,129 @@
 
       <div class="col-xl ml-auto">
         <div class="content"><h1 id="how-to-contribute-to-ui-tests">How to contribute to UI tests</h1>
+<h2 id="overview">Overview</h2>
+<p>Contributing to UI tests involves the following steps:</p>
+<ol>
+<li>Selecting a scenario</li>
+<li>Setting up your environment</li>
+<li>Writing the test</li>
+<li>Submitting a Pull Request (PR)</li>
+<li>Getting it reviewed and merged</li>
+</ol>
+<hr>
 <h2 id="introduction">Introduction</h2>
-<h3 id="branches">Branches</h3>
-<p>The first question to ask when making a contribution is &ldquo;Which branch should I target?&rdquo;.</p>
-<p>The rules are as follows:</p>
-<ul>
-<li>The development branch for UI testing is the current development branch.</li>
-<li>The branch changes as soon as the final release is out.</li>
-</ul>
-<h3 id="differences-between-scenarios--tests">Differences between scenarios &amp; tests</h3>
-<p>Scenarios are the base of UI Tests. They are available on the <a href="https://build.prestashop-project.org/test-scenarios/">PrestaShop Tests Documentation</a>.</p>
-<p>Tests are the code based on scenarios. They are available on the main repository <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tests/UI">in the tests/UI directory</a>.</p>
+<p>Scenarios are the basis of UI tests. They describe expected behaviors in a human-readable format and are available in the <a href="https://build.prestashop-project.org/test-scenarios/">PrestaShop Tests Documentation</a>.</p>
+<p>Tests are the automated implementations of these scenarios. They are located in the <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tests/UI">tests/UI directory of the PrestaShop Core repository</a>.</p>
+<hr>
 <h2 id="contribute-to-ui-tests">Contribute to UI tests</h2>
-<h3 id="choose-a-scenario-to-automate">Choose a scenario to automate</h3>
-<p><em><strong>This part is only available for PrestaShopCorp employees.</strong></em></p>
+<h3 id="1-choose-a-scenario-to-automate">1. Choose a scenario to automate</h3>
 <ul>
-<li>Go to the PrestaShop Forge</li>
-<li>Access to the Test Repositoy</li>
-<li>Find a test in the directory <code>Core</code> or <code>Modules</code> with the state &ldquo;TO BE AUTOMATED&rdquo;</li>
+<li>Go to the <a href="https://github.com/PrestaShop/test-scenarios/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22STATE%20%3A%20To%20Be%20Automated%22"><code>test-scenarios</code> repository</a></li>
+<li>Find an open issue labeled <strong>&ldquo;STATE : To Be Automated&rdquo;</strong></li>
+<li>Select a scenario from the <code>Core</code> or <code>Modules</code> scope</li>
 </ul>
-<h3 id="create-the-pr">Create the PR</h3>
+<hr>
+<h3 id="2-setup-your-environment">2. Setup your environment</h3>
+<h4 id="prerequisites">Prerequisites</h4>
 <ul>
-<li>The contributor create a PR targetting the development branch for UI tests.</li>
-<li>The contributor can check that the PR works with the <a href="https://github.com/PrestaShop/ga.tests.ui.pr">Github Action <code>ga.tests.ui.pr</code></a>.</li>
+<li>Node.js (recommended LTS version)</li>
+<li>npm</li>
+<li>Git</li>
 </ul>
-<h3 id="review-the-pr">Review the PR</h3>
+<h4 id="project-setup">Project setup</h4>
 <ul>
-<li>The review is done by <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Tests of the project</a>.</li>
-<li>Some checks are done :
+<li>
+<p>Checkout your fork of PrestaShop on the <code>develop</code> branch</p>
+</li>
+<li>
+<p>Follow the <a href="https://devdocs.prestashop-project.org/9/basics/installation/">installation guide</a></p>
+</li>
+<li>
+<p>Install your shop with:</p>
 <ul>
-<li>The PR complies with <a href="https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/">contribution guidelines</a>;</li>
-<li>The CI is green (lint, typescript check);</li>
-<li>The scenario is followed;</li>
-<li>The test is executed without errors in the <a href="https://github.com/PrestaShop/ga.tests.ui.pr">nightly</a>;</li>
-<li>The test use the Page Object Model pattern.</li>
+<li>Language: <strong>English</strong></li>
+<li>Country: <strong>France</strong></li>
 </ul>
 </li>
 </ul>
-<h3 id="merge-of-the-pr">Merge of the PR</h3>
+<h4 id="ui-test-setup">UI test setup</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> tests/UI/
+npm install
+cp .env.local .env
+</code></pre></div><p>Update the <code>.env</code> file to match your local environment. Make sure to configure:</p>
 <ul>
-<li>The merge is done after two approvals of <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Tests of the project</a> including a maintainer.</li>
-<li>After that, the contribution will be executed every night in the <a href="https://nightly.prestashop-project.org/">nightly of the project</a> to ensure continuity and stability of the project.</li>
+<li><code>BASE_URL</code></li>
+<li>Browser settings</li>
+<li>Credentials if required</li>
+</ul>
+<h4 id="run-a-test">Run a test</h4>
+<p>You can run a specific E2E test using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">TEST_PATH</span><span class="o">=</span><span class="s2">&#34;functional/BO/00_login/02_login.ts&#34;</span> npm run test:specific:fast-fail
+</code></pre></div><hr>
+<h3 id="3-create-the-test">3. Create the test</h3>
+<p>You can now start writing your test.</p>
+<ul>
+<li>The directory structure mirrors the scenario structure</li>
+<li>Place your test in the corresponding folder</li>
+<li>Follow existing naming conventions</li>
+</ul>
+<h4 id="tech-stack">Tech stack</h4>
+<ul>
+<li><strong>Mocha</strong>: test framework</li>
+<li><strong>Playwright</strong>: browser automation</li>
+<li><strong>@prestashop-core/ui-testing</strong>: utilities and Page Object Models</li>
+</ul>
+<h4 id="guidelines">Guidelines</h4>
+<ul>
+<li>Follow the scenario strictly</li>
+<li>Use the Page Object Model pattern</li>
+<li>Reuse existing utilities and helpers</li>
+<li>Avoid hardcoded values</li>
+<li>Ensure your test is stable and deterministic</li>
+</ul>
+<hr>
+<h3 id="4-create-the-pull-request">4. Create the Pull Request</h3>
+<p>Once your test runs successfully locally:</p>
+<ul>
+<li>Push your branch</li>
+<li>Open a Pull Request targeting the <code>develop</code> branch</li>
+<li>Trigger a run from your fork of the GitHub Action <code>ga.tests.ui.pr</code></li>
+</ul>
+<p>Make sure all checks pass before requesting a review.</p>
+<hr>
+<h3 id="5-review-process">5. Review process</h3>
+<p>The review is performed by <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Test</a>.</p>
+<p>During the review, the following checks are performed:</p>
+<ul>
+<li>Compliance with contribution guidelines</li>
+<li>CI status (lint, TypeScript checks, tests)</li>
+<li>Respect of the original scenario</li>
+<li>Test stability in CI</li>
+<li>Proper use of the Page Object Model pattern</li>
+</ul>
+<hr>
+<h3 id="6-merge">6. Merge</h3>
+<p>The PR is merged after two approvals from <a href="/project-organization/people-and-roles/#software-developers-in-test">Software Developers in Test</a>, including at least one maintainer.</p>
+<p>Once merged, the test is executed nightly to ensure ongoing stability of the project:</p>
+<ul>
+<li><a href="https://nightly.prestashop-project.org/">https://nightly.prestashop-project.org/</a></li>
+</ul>
+<hr>
+<h2 id="best-practices">Best practices</h2>
+<ul>
+<li>Keep tests independent</li>
+<li>Avoid shared state between tests</li>
+<li>Use Page Object Models consistently</li>
+<li>Prefer reusable helpers from <code>@prestashop-core/ui-testing</code></li>
+<li>Keep tests readable and maintainable</li>
+</ul>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Ensure your <code>.env</code> file is correctly configured</li>
+<li>Verify that your shop is properly installed</li>
+<li>Run tests in headed mode for debugging if needed</li>
+<li>Check CI logs if tests fail on the pipeline</li>
 </ul>
 </div>
       </div>
