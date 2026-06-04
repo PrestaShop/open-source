@@ -6,7 +6,7 @@
 <title>Final steps | PrestaShop Project - Open Source e-Commerce platform</title>
 <meta name="description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
- Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
+ The Distribution API repository provides update related information to the module Update Assistant. To enable updates to the PrestaShop version that has been uploaded:
   Add in the file releaseNotes.json the new version and the link to its release notes,
   Verify that the file autoupgrade."/>
 
@@ -32,19 +32,19 @@
 <meta name="twitter:title" content="Final steps"/>
 <meta name="twitter:description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
- Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
+ The Distribution API repository provides update related information to the module Update Assistant. To enable updates to the PrestaShop version that has been uploaded:
   Add in the file releaseNotes.json the new version and the link to its release notes,
   Verify that the file autoupgrade."/>
 <meta property="og:title" content="Final steps" />
 <meta property="og:description" content="Final steps 1. Update API stream for Update Assistant 1.1 Distribution API This should only be done for stable releases.
 (i.e. if not for betas and RCs).
- Additional changes must be brought to the Distribution API repository to provide the best experience on the Update Assistant module:
+ The Distribution API repository provides update related information to the module Update Assistant. To enable updates to the PrestaShop version that has been uploaded:
   Add in the file releaseNotes.json the new version and the link to its release notes,
   Verify that the file autoupgrade." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/release/prestashop/final-steps/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2025-12-11T23:00:56+01:00" />
+<meta property="article:modified_time" content="2026-06-03T17:09:13+01:00" />
 
 
 
@@ -343,7 +343,7 @@
 <p><em>(i.e. if not for betas and RCs).</em></p>
 </div>
 
-<p>Additional changes must be brought to the <a href="https://github.com/PrestaShop/distribution-api">Distribution API repository</a> to provide the best experience on the Update Assistant module:</p>
+<p>The <a href="https://github.com/PrestaShop/distribution-api">Distribution API repository</a> provides update related information to the module Update Assistant. To enable updates to the PrestaShop version that has been uploaded:</p>
 <ul>
 <li>
 <p>Add in the file <a href="https://github.com/PrestaShop/distribution-api/blob/main/resources/json/releaseNotes.json">releaseNotes.json</a> the new version and the link to its release notes,</p>
@@ -354,7 +354,8 @@ If you needed to release a new version of the module Update Assistant, update th
 You may have to create a new entry if the new Update Assistant is compliant with a range of PrestaShop version that is unrelated to the existing ones.</p>
 </li>
 </ul>
-<p>Once this step is done and your changes have been merged, update the Release Tracker GitHub issue by ticking the &ldquo;Available for update&rdquo; box.</p>
+<p>Merging pull-requests on the repository of Distribution API automatically deploys on the pre-production environment. To deploy on production, publish a new version on Github.</p>
+<p>Once this step is done and all the changes have been deployed, update the Release Tracker GitHub issue by ticking the &ldquo;Available for update&rdquo; box.</p>
 
 <div class="notices tip" ><p><strong>Application of changes check.</strong></p>
 <p><em>Please verify the contents of <a href="https://api.prestashop-project.org/autoupgrade">https://api.prestashop-project.org/autoupgrade</a>. You might need to wait for the cache to be cleared.</em></p>
