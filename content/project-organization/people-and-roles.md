@@ -139,6 +139,7 @@ Current Software Developers in Test:
 * Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
+  - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 
 ### Alumni
 
