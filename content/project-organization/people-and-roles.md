@@ -134,11 +134,12 @@ Software Developers in Test provide technical vision, review contributions, and 
 Current Software Developers in Test:
 
 * Maintainers:
-  - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984))
+  - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984)) - external contributor not affiliated with PrestaShop SA
   - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
 * Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
   - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
+  - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 
 ### Alumni
 
