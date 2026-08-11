@@ -120,7 +120,6 @@ Software Testers ensure that software quality improves over time by verifying th
 
 Current Software Testers:
 
-  - Aurélien Rita ([@AureRita](https://github.com/AureRita))
   - Florine Hea ([@florine2623](https://github.com/florine2623))
   - Sarah Cavrot ([@sLorenzini](https://github.com/sLorenzini))
   - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
