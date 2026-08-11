@@ -20,7 +20,7 @@ Current members:
 - Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 - Mathieu Ferment ([@matks](https://github.com/matks))
-- Robin Fischer ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
+- Sarah DIB ([@sarahdib](https://github.com/sarahdib))
 
 ## Product Council
 
@@ -122,8 +122,6 @@ Current Software Testers:
 
   - Aurélien Rita ([@AureRita](https://github.com/AureRita))
   - Florine Hea ([@florine2623](https://github.com/florine2623))
-  - Paul-Noël Cholot ([@paulnoelcholot](https://github.com/paulnoelcholot))
-  - Robin-Fischer-PS ([@Robin-Fischer-PS](https://github.com/Robin-Fischer-PS))
   - Sarah Cavrot ([@sLorenzini](https://github.com/sLorenzini))
   - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
 
