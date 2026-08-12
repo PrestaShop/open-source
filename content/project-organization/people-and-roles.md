@@ -120,9 +120,8 @@ Software Testers ensure that software quality improves over time by verifying th
 
 Current Software Testers:
 
-  - Florine Hea ([@florine2623](https://github.com/florine2623))
   - Sarah Cavrot ([@sLorenzini](https://github.com/sLorenzini))
-  - Sarah Dib ([@sarahdib](https://github.com/sarahdib))
+  - Sarah Dib ([@sarahdib](https://github.com/sarahdib)) - **Council Lead**
 
 ### Software Developers in Test
 
@@ -132,10 +131,9 @@ Current Software Developers in Test:
 
 * Maintainers:
   - Franck Lefèvre ([@Progi1984](https://github.com/Progi1984)) - external contributor not affiliated with PrestaShop SA
-  - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh))) - external contributor not affiliated with PrestaShop SA
+  - Nesrine Abdmouleh ([@nesrineabdmouleh](https://github.com/nesrineabdmouleh)) - external contributor not affiliated with PrestaShop SA
 * Committers: 
   - Chedly Farhani ([@cfarhani06](https://github.com/cfarhani06))
-  - Stéphane Decisy ([@SD1982](https://github.com/SD1982))
   - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre)) - affiliated with PrestaShop SA
 
 ### Alumni
