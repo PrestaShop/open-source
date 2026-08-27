@@ -17,6 +17,7 @@ The Leadership Council is in charge of providing structure and a general directi
 
 Current members:
 
+- Cyril Navarro ([@cnavarro-prestashop](https://github.com/cnavarro-prestashop))
 - Iliès Bahloul ([@ibahloul-ps](https://github.com/ibahloul-ps))
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre))
 - Mathieu Ferment ([@matks](https://github.com/matks))
@@ -38,7 +39,7 @@ UX Designers ensure that interfaces follow the best practices in usability and d
 
 Current UX designers:
 
-- Tristan Lehot ([@TristanLDD](https://github.com/TristanLDD))
+- This role is covered collectively by the PrestaShop SA design team rather than by named individual contributors.
 
 ### Wording Manager
 
@@ -64,7 +65,7 @@ The technical council provides the technical vision for the whole project, revie
 Current members:
 
 - Jonathan Lelièvre ([@jolelievre](https://github.com/jolelievre)) - **Council Lead**
-- Boris Hermans ([@boherm](https://github.com/boherm))
+- Boris Hermans ([@boherm](https://github.com/boherm)) - external contributor not affiliated with PrestaShop SA
 - Krystian Podemski ([@kpodemski](https://github.com/kpodemski))
 - Mathieu Ferment ([@matks](https://github.com/matks))
 - Matthieu Rolland ([@matthieu-rolland](https://github.com/matthieu-rolland))
@@ -88,7 +89,7 @@ Current committers:
 - Paolo Cunti ([@codencode](https://github.com/codencode)) - external contributor not affiliated with PrestaShop SA
 - Pululu Kinanga André ([@PululuK](https://github.com/PululuK)) - external contributor not affiliated with PrestaShop SA
 - Thibault Blivet ([@tblivet](https://github.com/tblivet))
-- Thomas Leone ([@tleon](https://github.com/tleon))
+- Thomas Leone ([@tleon](https://github.com/tleon)) - external contributor not affiliated with PrestaShop SA
 - Thomas Roux ([@Touxten](https://github.com/Touxten)) - external contributor not affiliated with PrestaShop SA
 - Tomasz Zając ([@SharakPL](https://github.com/SharakPL)) - external contributor not affiliated with PrestaShop SA
 
