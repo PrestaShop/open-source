@@ -78,6 +78,7 @@ Committers can review and merge code contributions. They summon the technical co
 Current committers:
 
 - Alexis Guyomar ([@ga-devfront](https://github.com/ga-devfront))
+- Benjamin Bendaoui ([@LameuleFR](https://github.com/LameuleFR)) - external contributor not affiliated with PrestaShop SA
 - Clément Désiles ([@jokesterfr](https://github.com/jokesterfr)) - external contributor not affiliated with PrestaShop SA
 - Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal)) - external contributor not affiliated with PrestaShop SA
 - Fabien Papet ([@FabienPapet](https://github.com/FabienPapet)) - external contributor not affiliated with PrestaShop SA
