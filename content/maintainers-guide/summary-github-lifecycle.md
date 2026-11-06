@@ -108,13 +108,16 @@ On regular Pull Requests, the QA team is in charge of testing the Pull Request. 
 
 Some Pull Requests however cannot be tested by QA team, the Developers team might validate them.
 
+Pull Requests can also be tested by the community: the "Waiting for QA by Community" label is used to request it, and the "QA ✔️ by Community" label is applied once the test is done. This label is equivalent to "QA approved" only if the test was performed by a [Committer][committers]. Otherwise, the Pull Request must still be validated by the QA team (or by a Committer).
+
 PrestaShop project has UI tests. These tests can be executed on each Pull Request thanks to [`ga.tests.ui.pr` tool](https://github.com/PrestaShop/ga.tests.ui.pr/). Please read the README file of this tool and fill the Pull Request description with the execution URL. 
 
 If the Pull Request is tested successfully, the label "QA approved" is applied. Else, the author is notified about the Issues found by the tests.
 
 ### Merging the Pull Request
 
-Pull Requests that have been validated by QA can be merged. They must also be milestoned, and if they fix an issue, the issue must be labelled, milestoned, and closed.
+Pull Requests that have been validated by QA (including a "QA ✔️ by Community" validation performed by a Committer) can be merged. They must also be milestoned, and if they fix an issue, the issue must be labelled, milestoned, and closed.
 
 [how-pull-requests]: {{< devdocs "contribute/contribution-process/how-pull-requests-are-processed/" >}}
 [code-review]: ({{< relref "reviewing-pull-requests" >}})
+[committers]: {{< relref "/project-organization/people-and-roles#committers" >}}
