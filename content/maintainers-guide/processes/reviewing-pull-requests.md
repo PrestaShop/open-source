@@ -112,6 +112,12 @@ As a general rule, all Pull Requests undergo the QA verification, except for the
 * Version branch merges
 * Changes that have no functional impact (e.g. code comments), cannot be manually verified, or are verified by automated tests.
 
+### QA verification by the community
+
+QA verification can also be performed by community members. In that case, the <label type="needs">Waiting for QA by Community</label> label is used to request it, and the <label type="check">QA ✔️ by Community</label> label is applied once the verification is done.
+
+A <label type="check">QA ✔️ by Community</label> label is considered **equivalent to a <label type="check">QA ✔️</label> label** only if the verification was performed by a [Committer][committers]. Otherwise, it is informative only: the Pull Request still needs to be verified by the QA team (or by a Committer) before it can be merged.
+
 The Pull Request can proceed to merge once the QA verification is successful.
 
 ## Requesting changes
@@ -186,6 +192,7 @@ The following labels are added when an action is required:
 | The PR introduced visual changes                                                           |   UX Designers    | <label type="needs">Waiting for UX</label>     |      <label type="check">UX ✓</label>             |
 | The PR introduced wording changes                                                          | Wording Managers  | <label type="needs">Waiting for Wording</label>   |    <label type="check">Wording ✓</label>      |
 | The PR is ready for QA verification                                                        | Software Testers  | <label type="needs">Waiting for QA</label>     |      <label type="check">QA ✓</label>             |
+| The PR is ready for QA verification by the community<br><small>(only counts as QA validation if done by a Committer)</small> | Community members | <label type="needs">Waiting for QA by Community</label> | <label type="check">QA ✔️ by Community</label> |
 | The PR needs to be documented in DevDocs                                                   |   Maintainers     | <label type="needsdoc">Needs documentation</label> | <label type="check">Documentation ✓</label>   |
 | The PR needs PR for autoupgrade module                                                     |   The PR's author | <label type="needsupgrade">Needs autoupgrade PR</label> | <label type="check">PR Autoupgrade opened ✓</label>                     |
 | The PR needs PR for default theme                                                          |   The PR's author | <label type="needstheme">Needs theme PR</label>    | _(no label)_                                  |
@@ -234,12 +241,15 @@ You can add `Waiting for QA` label to request a validation from QA team. Some PR
 
 Some other PRs may require QA by a developer, for example if the PR is very technical and does not change the behavior of the software. In that case, you can add `Waiting for QA` and `Waiting for dev` label. This should be discussed with QA functional team.
 
-If the PR behavior is confirmed by QA Team (or a developer, for the "Waiting for dev PRs), the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
+QA verification can also be requested from the community with the `Waiting for QA by Community` label. Once the verification is done, the `QA ✔️ by Community` label is applied. This label is equivalent to `QA ✔️` only if the verification was performed by a [Committer][committers]; otherwise the PR still needs a validation from the QA team (or a Committer).
+
+If the PR behavior is confirmed by QA Team (or a developer, for the "Waiting for dev PRs, or a Committer, for the "QA ✔️ by Community" PRs), the PR can be merged. See above section `Merging Pull Requests` for the different actions needed following the merge.
 
 [contribution-guidelines]: {{< devdocs "contribute/contribution-guidelines/" >}}
 [prestashop-core-repository]: https://github.com/PrestaShop/PrestaShop/
 [bc-break]: https://stackoverflow.com/questions/8891005/what-does-bc-break-mean
 [slack]: {{< relref "/slack/" >}}
+[committers]: {{< relref "/project-organization/people-and-roles#committers" >}}
 [adr]: https://github.com/prestashop/ADR
 [prestonbot]: https://github.com/PrestaShop/prestonbot
 [issuebot]: https://github.com/PrestaShop/issuebot
