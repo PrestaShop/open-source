@@ -32,7 +32,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.prestashop-project.org/maintainers-guide/processes/reviewing-pull-requests/" /><meta property="article:section" content="maintainers-guide" />
 
-<meta property="article:modified_time" content="2025-05-07T16:47:25+02:00" />
+<meta property="article:modified_time" content="2026-11-06T14:20:35+01:00" />
 
 
 
@@ -294,7 +294,11 @@
           </ul>
         </li>
         <li><a href="#product-ux--wording-review">Product, UX &amp; Wording review</a></li>
-        <li><a href="#qa-verification">QA verification</a></li>
+        <li><a href="#qa-verification">QA verification</a>
+          <ul>
+            <li><a href="#qa-verification-by-the-community">QA verification by the community</a></li>
+          </ul>
+        </li>
         <li><a href="#requesting-changes">Requesting changes</a></li>
         <li><a href="#merging-pull-requests">Merging Pull Requests</a>
           <ul>
@@ -417,6 +421,9 @@ label[type=migration] { background-color: #00E031; }
 <li>Version branch merges</li>
 <li>Changes that have no functional impact (e.g. code comments), cannot be manually verified, or are verified by automated tests.</li>
 </ul>
+<h3 id="qa-verification-by-the-community">QA verification by the community</h3>
+<p>QA verification can also be performed by community members. In that case, the <label type="needs">Waiting for QA by Community</label> label is used to request it, and the <label type="check">QA ✔️ by Community</label> label is applied once the verification is done.</p>
+<p>A <label type="check">QA ✔️ by Community</label> label is considered <strong>equivalent to a <label type="check">QA ✔️</label> label</strong> only if the verification was performed by a <a href="/project-organization/people-and-roles/#committers">Committer</a>. Otherwise, it is informative only: the Pull Request still needs to be verified by the QA team (or by a Committer) before it can be merged.</p>
 <p>The Pull Request can proceed to merge once the QA verification is successful.</p>
 <h2 id="requesting-changes">Requesting changes</h2>
 <p>Be polite and respectful. Remember that you&rsquo;re reviewing the hard work of other people. The Symfony project provides good tips on providing <a href="https://symfony.com/doc/current/contributing/community/review-comments.html">respectful review comments</a>.</p>
@@ -510,6 +517,12 @@ label[type=migration] { background-color: #00E031; }
 <td style="text-align:center">Software Testers</td>
 <td style="text-align:center"><label type="needs">Waiting for QA</label></td>
 <td style="text-align:center"><label type="check">QA ✓</label></td>
+</tr>
+<tr>
+<td>The PR is ready for QA verification by the community<br><small>(only counts as QA validation if done by a Committer)</small></td>
+<td style="text-align:center">Community members</td>
+<td style="text-align:center"><label type="needs">Waiting for QA by Community</label></td>
+<td style="text-align:center"><label type="check">QA ✔️ by Community</label></td>
 </tr>
 <tr>
 <td>The PR needs to be documented in DevDocs</td>
@@ -606,7 +619,8 @@ label[type=migration] { background-color: #00E031; }
 <p>If it has the right number of approvals (Pull Requests submitted to the <a href="https://github.com/PrestaShop/PrestaShop/">PrestaShop Core repository</a> require approval from at least two different maintainers while other repositories require approval from at least one maintainer), the last step for most PRs is QA validation.</p>
 <p>You can add <code>Waiting for QA</code> label to request a validation from QA team. Some PRs do not need QA testing, for example fixing a typo or a code change that only impacts CI.</p>
 <p>Some other PRs may require QA by a developer, for example if the PR is very technical and does not change the behavior of the software. In that case, you can add <code>Waiting for QA</code> and <code>Waiting for dev</code> label. This should be discussed with QA functional team.</p>
-<p>If the PR behavior is confirmed by QA Team (or a developer, for the &ldquo;Waiting for dev PRs), the PR can be merged. See above section <code>Merging Pull Requests</code> for the different actions needed following the merge.</p>
+<p>QA verification can also be requested from the community with the <code>Waiting for QA by Community</code> label. Once the verification is done, the <code>QA ✔️ by Community</code> label is applied. This label is equivalent to <code>QA ✔️</code> only if the verification was performed by a <a href="/project-organization/people-and-roles/#committers">Committer</a>; otherwise the PR still needs a validation from the QA team (or a Committer).</p>
+<p>If the PR behavior is confirmed by QA Team (or a developer, for the &ldquo;Waiting for dev PRs, or a Committer, for the &ldquo;QA ✔️ by Community&rdquo; PRs), the PR can be merged. See above section <code>Merging Pull Requests</code> for the different actions needed following the merge.</p>
 </div>
       </div>
     </div>
